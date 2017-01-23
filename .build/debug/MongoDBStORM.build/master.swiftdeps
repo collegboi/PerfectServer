@@ -1,0 +1,7 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "187e88f243e5fb8cc0b401c58d481208"
+build_time: [538230263, 182845000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.0/Sources/Convenience.swift": [538230167, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.0/Sources/MongoDBStORM.swift": [538230167, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.0/Sources/parseRows.swift": [538230167, 0]

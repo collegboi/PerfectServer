@@ -1,0 +1,353 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "MongoDatabase"
+provides-nominal:
+- "C7MongoDB13MongoDatabase"
+provides-member:
+- ["C7MongoDB13MongoDatabase", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "mongoc_database_destroy"
+- "BSON"
+- !private "StringLiteralType"
+- "MongoClient"
+- "MongoDatabase"
+- !private "bson_error_t"
+- !private "mongoc_database_get_collection"
+- "MongoResult"
+- !private "mongoc_database_get_name"
+- !private "mongoc_database_get_collection_names"
+- "AssignmentPrecedence"
+- !private "??"
+- !private "bson_strfreev"
+- "String"
+- !private "mongoc_database_create_collection"
+- !private "mongoc_database_drop"
+- "OpaquePointer"
+- "FloatLiteralType"
+- !private "!="
+- "IntegerLiteralType"
+- !private "mongoc_client_get_database"
+- "MongoCollection"
+depends-member:
+- !private ["Ps9AnyObject", "MongoCollection"]
+- ["Ps9AnyObject", "OpaquePointer"]
+- !private ["Ps9AnyObject", "Result"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "bson_error_t"]
+- !private ["Ps9AnyObject", "bson_strfreev"]
+- !private ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "doc"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "mongoc_client_get_database"]
+- !private ["Ps9AnyObject", "mongoc_database_create_collection"]
+- !private ["Ps9AnyObject", "mongoc_database_destroy"]
+- !private ["Ps9AnyObject", "mongoc_database_drop"]
+- !private ["Ps9AnyObject", "mongoc_database_get_collection"]
+- !private ["Ps9AnyObject", "mongoc_database_get_collection_names"]
+- !private ["Ps9AnyObject", "mongoc_database_get_name"]
+- !private ["Ps9AnyObject", "ptr"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "init"]
+- !private ["C7MongoDB4BSON", "doc"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "pointee"]
+- !private ["Ps7CVarArg", "successor"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "doc"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "pointee"]
+- !private ["Ps10Comparable", "successor"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "pointee"]
+- !private ["Ps28CustomDebugStringConvertible", "successor"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "pointee"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "successor"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "pointee"]
+- !private ["Ps17CustomReflectable", "successor"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "doc"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "doc"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "pointee"]
+- !private ["Ps9Equatable", "successor"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "pointee"]
+- !private ["Ps8Hashable", "successor"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["C7MongoDB11MongoClient", "ptr"]
+- !private ["C7MongoDB15MongoCollection", "init"]
+- ["C7MongoDB13MongoDatabase", "BSON"]
+- ["C7MongoDB13MongoDatabase", "MongoClient"]
+- ["C7MongoDB13MongoDatabase", "MongoCollection"]
+- ["C7MongoDB13MongoDatabase", "MongoResult"]
+- ["C7MongoDB13MongoDatabase", "OpaquePointer"]
+- ["C7MongoDB13MongoDatabase", "Result"]
+- ["C7MongoDB13MongoDatabase", "String"]
+- !private ["C7MongoDB13MongoDatabase", "bson_error_t"]
+- !private ["C7MongoDB13MongoDatabase", "bson_strfreev"]
+- ["C7MongoDB13MongoDatabase", "close"]
+- ["C7MongoDB13MongoDatabase", "collectionNames"]
+- ["C7MongoDB13MongoDatabase", "createCollection"]
+- ["C7MongoDB13MongoDatabase", "deinit"]
+- ["C7MongoDB13MongoDatabase", "drop"]
+- ["C7MongoDB13MongoDatabase", "getCollection"]
+- ["C7MongoDB13MongoDatabase", "init"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_client_get_database"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_create_collection"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_destroy"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_drop"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_get_collection"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_get_collection_names"]
+- !private ["C7MongoDB13MongoDatabase", "mongoc_database_get_name"]
+- ["C7MongoDB13MongoDatabase", "name"]
+- ["C7MongoDB13MongoDatabase", "ptr"]
+- !private ["O7MongoDB11MongoResult", "error"]
+- !private ["O7MongoDB11MongoResult", "fromError"]
+- !private ["O7MongoDB11MongoResult", "replyCollection"]
+- !private ["O7MongoDB11MongoResult", "success"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "init"]
+- ["Vs13OpaquePointer", "init"]
+- !private ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps10Strideable", "pointee"]
+- !private ["Ps10Strideable", "successor"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Sp", "pointee"]
+- !private ["Sp", "successor"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "pointee"]
+- !private ["Ps9_Hashable", "successor"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps8_Pointer", "pointee"]
+- !private ["Ps8_Pointer", "successor"]
+- !private ["Ps11_Strideable", "pointee"]
+- !private ["Ps11_Strideable", "successor"]
+- !private ["VSC13_bson_error_t", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Sa"
+- !private "C7MongoDB4BSON"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Sb"
+- "Ps7CVarArg"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "C7MongoDB11MongoClient"
+- !private "C7MongoDB15MongoCollection"
+- "C7MongoDB13MongoDatabase"
+- !private "O7MongoDB11MongoResult"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "Vs13OpaquePointer"
+- !private "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Sp"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps8_Pointer"
+- !private "Ps11_Strideable"
+- !private "VSC13_bson_error_t"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-handshake.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-topology-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-server-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-apm.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bcon.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-writer.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-value.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-utf8.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-string.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-reader.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-oid.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-memory.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-md5.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-keys.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-json.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-iter.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-decimal128.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-clock.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-endian.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-types.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-context.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-atomic.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-stdint.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-macros.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-compat.h"
+- "/usr/local/include/libmongoc-1.0/mongoc.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "9a1e5a5847c57b9f0fff16a18e390229"

@@ -1,0 +1,43 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : 9223372036854775807,
+    "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : 9223372036854775807,
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : 9223372036854775807,
+    "3B905509A4DD1F5305D27EF37A9F71F239F93941" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B29487F9-13FA-41D4-B4A5-FE8D21096D56",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : "PerfectServer\/Packages\/PerfectLogger-1.0.0\/",
+    "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : "PerfectServer\/Packages\/PerfectNotifications-2.0.1\/",
+    "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : "PerfectServer\/Packages\/PerfectThread-2.0.4\/",
+    "3B905509A4DD1F5305D27EF37A9F71F239F93941" : "PerfectServer\/Packages\/PerfectCURL-2.0.4\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MyAwesomeProject",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MyAwesomeProject.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-CURL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3B905509A4DD1F5305D27EF37A9F71F239F93941"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Thread.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "615FD99B652E80AC2E813EEEE7964BA10A9886D5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Notifications.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Logger.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1"
+    }
+  ]
+}

@@ -1,0 +1,1303 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "BSONError"
+- "BSON"
+- "=="
+- "<"
+- "NoDestroyBSON"
+provides-nominal:
+- "O7MongoDB9BSONError"
+- "C7MongoDB4BSON"
+- "VC7MongoDB4BSON3OID"
+- "C7MongoDB13NoDestroyBSON"
+- "OC7MongoDB4BSON8BSONType"
+- "VC7MongoDB4BSON9BSONValue"
+- "VC7MongoDB4BSON8Iterator"
+provides-member:
+- ["O7MongoDB9BSONError", ""]
+- ["C7MongoDB4BSON", ""]
+- ["VC7MongoDB4BSON3OID", ""]
+- ["C7MongoDB13NoDestroyBSON", ""]
+- ["OC7MongoDB4BSON8BSONType", ""]
+- ["VC7MongoDB4BSON9BSONValue", ""]
+- ["VC7MongoDB4BSON8Iterator", ""]
+- ["C7MongoDB4BSON", "BSONType"]
+- ["C7MongoDB4BSON", "BSONValue"]
+- ["C7MongoDB4BSON", "Iterator"]
+- ["C7MongoDB4BSON", "iterator"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int64"
+- !private "bson_new_from_json"
+- !private "bson_append_array_end"
+- "bson_oid_t"
+- "BSONError"
+- !private "bson_append_time_t"
+- !private "bson_append_int32"
+- !private "bson_append_document"
+- !private "BooleanLiteralType"
+- "Int"
+- !private "bson_iter_document"
+- !private "bson_append_double"
+- !private "StringLiteralType"
+- ">"
+- !private "bson_oid_to_string"
+- !private "bson_append_bool"
+- !private "bson_iter_find_descendant"
+- !private "bson_array_as_json"
+- !private "bson_destroy"
+- !private "??"
+- "Comparable"
+- "<"
+- !private "!="
+- !private "bson_get_data"
+- !private "bson_iter_init"
+- "bson_iter_t"
+- !private "bson_count_keys"
+- !private "CChar"
+- "time_t"
+- !private "bson_error_t"
+- !private "bson_append_regex"
+- !private "Int8"
+- !private "bson_iter_recurse"
+- !private "bson_append_array"
+- !private "bson_concat"
+- !private "bson_new_from_data"
+- !private "..<"
+- "UInt32"
+- "Bool"
+- "bson_value_t"
+- !private "ptr2Str"
+- !private "bson_iter_value"
+- "String"
+- "UnsafePointer"
+- !private "bson_oid_init_from_string"
+- !private "bson_compare"
+- !private "bson_append_null"
+- !private "bson_new"
+- !private "BSON_SUBTYPE_BINARY"
+- !private "bson_as_json"
+- "CustomStringConvertible"
+- "Error"
+- !private "bson_has_field"
+- ">="
+- "BSON"
+- "Int32"
+- !private "bson_append_binary"
+- !private "UnsafeBufferPointer"
+- !private "Array"
+- !private "bson_iter_next"
+- !private "bson_iter_find_case"
+- "CastingPrecedence"
+- "NoDestroyBSON"
+- !private "UnicodeScalarType"
+- !private "bson_append_utf8"
+- "=="
+- "AssignmentPrecedence"
+- !private "~="
+- !private "bson_append_array_begin"
+- !private "bson_append_date_time"
+- !private "bson_free"
+- "UInt8"
+- "<="
+- !private "withUnsafePointer"
+- "UnsafeMutablePointer"
+- !private "bson_iter_key"
+- "FloatLiteralType"
+- !private "bson_iter_type"
+- !private "bson_copy"
+- "Double"
+- !private "bson_append_oid"
+- "IntegerLiteralType"
+- !private "bson_iter_find"
+- "bson_t"
+- !private "bson_append_int64"
+- "TernaryPrecedence"
+depends-member:
+- !private ["Ps16AbsoluteValuable", "init"]
+- !private ["Ps9AnyObject", "Array"]
+- !private ["Ps9AnyObject", "BSON"]
+- !private ["Ps9AnyObject", "BSONError"]
+- !private ["Ps9AnyObject", "BSONType"]
+- !private ["Ps9AnyObject", "BSONValue"]
+- !private ["Ps9AnyObject", "BSON_SUBTYPE_BINARY"]
+- !private ["Ps9AnyObject", "CChar"]
+- !private ["Ps9AnyObject", "Double"]
+- !private ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int32"]
+- !private ["Ps9AnyObject", "Int64"]
+- !private ["Ps9AnyObject", "Iterator"]
+- !private ["Ps9AnyObject", "OID"]
+- !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UInt32"]
+- !private ["Ps9AnyObject", "UInt8"]
+- !private ["Ps9AnyObject", "UnsafeBufferPointer"]
+- !private ["Ps9AnyObject", "UnsafeMutablePointer"]
+- !private ["Ps9AnyObject", "UnsafePointer"]
+- !private ["Ps9AnyObject", "asString"]
+- !private ["Ps9AnyObject", "bson_append_array"]
+- !private ["Ps9AnyObject", "bson_append_array_begin"]
+- !private ["Ps9AnyObject", "bson_append_array_end"]
+- !private ["Ps9AnyObject", "bson_append_binary"]
+- !private ["Ps9AnyObject", "bson_append_bool"]
+- !private ["Ps9AnyObject", "bson_append_date_time"]
+- !private ["Ps9AnyObject", "bson_append_document"]
+- !private ["Ps9AnyObject", "bson_append_double"]
+- !private ["Ps9AnyObject", "bson_append_int32"]
+- !private ["Ps9AnyObject", "bson_append_int64"]
+- !private ["Ps9AnyObject", "bson_append_null"]
+- !private ["Ps9AnyObject", "bson_append_oid"]
+- !private ["Ps9AnyObject", "bson_append_regex"]
+- !private ["Ps9AnyObject", "bson_append_time_t"]
+- !private ["Ps9AnyObject", "bson_append_utf8"]
+- !private ["Ps9AnyObject", "bson_array_as_json"]
+- !private ["Ps9AnyObject", "bson_as_json"]
+- !private ["Ps9AnyObject", "bson_concat"]
+- !private ["Ps9AnyObject", "bson_copy"]
+- !private ["Ps9AnyObject", "bson_count_keys"]
+- !private ["Ps9AnyObject", "bson_destroy"]
+- !private ["Ps9AnyObject", "bson_error_t"]
+- !private ["Ps9AnyObject", "bson_free"]
+- !private ["Ps9AnyObject", "bson_get_data"]
+- !private ["Ps9AnyObject", "bson_has_field"]
+- !private ["Ps9AnyObject", "bson_iter_document"]
+- !private ["Ps9AnyObject", "bson_iter_find"]
+- !private ["Ps9AnyObject", "bson_iter_find_case"]
+- !private ["Ps9AnyObject", "bson_iter_find_descendant"]
+- !private ["Ps9AnyObject", "bson_iter_init"]
+- !private ["Ps9AnyObject", "bson_iter_key"]
+- !private ["Ps9AnyObject", "bson_iter_next"]
+- !private ["Ps9AnyObject", "bson_iter_recurse"]
+- ["Ps9AnyObject", "bson_iter_t"]
+- !private ["Ps9AnyObject", "bson_iter_type"]
+- !private ["Ps9AnyObject", "bson_iter_value"]
+- !private ["Ps9AnyObject", "bson_new"]
+- !private ["Ps9AnyObject", "bson_new_from_data"]
+- !private ["Ps9AnyObject", "bson_new_from_json"]
+- !private ["Ps9AnyObject", "bson_oid_init_from_string"]
+- !private ["Ps9AnyObject", "bson_oid_t"]
+- !private ["Ps9AnyObject", "bson_oid_to_string"]
+- ["Ps9AnyObject", "close"]
+- ["Ps9AnyObject", "description"]
+- !private ["Ps9AnyObject", "doc"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "ptr2Str"]
+- !private ["Ps9AnyObject", "withUnsafePointer"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- !private ["Sa", "IndexDistance"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- !private ["Sa", "init"]
+- !private ["C7MongoDB4BSON", "Array"]
+- ["C7MongoDB4BSON", "BSON"]
+- !private ["C7MongoDB4BSON", "BSONError"]
+- ["C7MongoDB4BSON", "BSONType"]
+- ["C7MongoDB4BSON", "BSONValue"]
+- !private ["C7MongoDB4BSON", "BSON_SUBTYPE_BINARY"]
+- ["C7MongoDB4BSON", "Bool"]
+- !private ["C7MongoDB4BSON", "CChar"]
+- ["C7MongoDB4BSON", "CustomStringConvertible"]
+- ["C7MongoDB4BSON", "Double"]
+- ["C7MongoDB4BSON", "Int"]
+- ["C7MongoDB4BSON", "Int32"]
+- ["C7MongoDB4BSON", "Int64"]
+- !private ["C7MongoDB4BSON", "Int8"]
+- ["C7MongoDB4BSON", "Iterator"]
+- ["C7MongoDB4BSON", "OID"]
+- ["C7MongoDB4BSON", "String"]
+- ["C7MongoDB4BSON", "UInt32"]
+- ["C7MongoDB4BSON", "UInt8"]
+- !private ["C7MongoDB4BSON", "UnsafeBufferPointer"]
+- ["C7MongoDB4BSON", "UnsafeMutablePointer"]
+- ["C7MongoDB4BSON", "UnsafePointer"]
+- ["C7MongoDB4BSON", "append"]
+- ["C7MongoDB4BSON", "appendArray"]
+- ["C7MongoDB4BSON", "appendArrayBegin"]
+- ["C7MongoDB4BSON", "appendArrayEnd"]
+- ["C7MongoDB4BSON", "asArrayString"]
+- ["C7MongoDB4BSON", "asBytes"]
+- ["C7MongoDB4BSON", "asString"]
+- !private ["C7MongoDB4BSON", "bson_append_array"]
+- !private ["C7MongoDB4BSON", "bson_append_array_begin"]
+- !private ["C7MongoDB4BSON", "bson_append_array_end"]
+- !private ["C7MongoDB4BSON", "bson_append_binary"]
+- !private ["C7MongoDB4BSON", "bson_append_bool"]
+- !private ["C7MongoDB4BSON", "bson_append_date_time"]
+- !private ["C7MongoDB4BSON", "bson_append_document"]
+- !private ["C7MongoDB4BSON", "bson_append_double"]
+- !private ["C7MongoDB4BSON", "bson_append_int32"]
+- !private ["C7MongoDB4BSON", "bson_append_int64"]
+- !private ["C7MongoDB4BSON", "bson_append_null"]
+- !private ["C7MongoDB4BSON", "bson_append_oid"]
+- !private ["C7MongoDB4BSON", "bson_append_regex"]
+- !private ["C7MongoDB4BSON", "bson_append_time_t"]
+- !private ["C7MongoDB4BSON", "bson_append_utf8"]
+- !private ["C7MongoDB4BSON", "bson_array_as_json"]
+- !private ["C7MongoDB4BSON", "bson_as_json"]
+- !private ["C7MongoDB4BSON", "bson_concat"]
+- !private ["C7MongoDB4BSON", "bson_copy"]
+- !private ["C7MongoDB4BSON", "bson_count_keys"]
+- !private ["C7MongoDB4BSON", "bson_destroy"]
+- !private ["C7MongoDB4BSON", "bson_error_t"]
+- !private ["C7MongoDB4BSON", "bson_free"]
+- !private ["C7MongoDB4BSON", "bson_get_data"]
+- !private ["C7MongoDB4BSON", "bson_has_field"]
+- !private ["C7MongoDB4BSON", "bson_iter_document"]
+- !private ["C7MongoDB4BSON", "bson_iter_find"]
+- !private ["C7MongoDB4BSON", "bson_iter_find_case"]
+- !private ["C7MongoDB4BSON", "bson_iter_find_descendant"]
+- !private ["C7MongoDB4BSON", "bson_iter_init"]
+- !private ["C7MongoDB4BSON", "bson_iter_key"]
+- !private ["C7MongoDB4BSON", "bson_iter_next"]
+- !private ["C7MongoDB4BSON", "bson_iter_recurse"]
+- ["C7MongoDB4BSON", "bson_iter_t"]
+- !private ["C7MongoDB4BSON", "bson_iter_type"]
+- !private ["C7MongoDB4BSON", "bson_iter_value"]
+- !private ["C7MongoDB4BSON", "bson_new"]
+- !private ["C7MongoDB4BSON", "bson_new_from_data"]
+- !private ["C7MongoDB4BSON", "bson_new_from_json"]
+- !private ["C7MongoDB4BSON", "bson_oid_init_from_string"]
+- ["C7MongoDB4BSON", "bson_oid_t"]
+- !private ["C7MongoDB4BSON", "bson_oid_to_string"]
+- ["C7MongoDB4BSON", "bson_t"]
+- ["C7MongoDB4BSON", "bson_value_t"]
+- ["C7MongoDB4BSON", "close"]
+- ["C7MongoDB4BSON", "concat"]
+- ["C7MongoDB4BSON", "countKeys"]
+- ["C7MongoDB4BSON", "deinit"]
+- ["C7MongoDB4BSON", "description"]
+- ["C7MongoDB4BSON", "doc"]
+- ["C7MongoDB4BSON", "hasField"]
+- ["C7MongoDB4BSON", "init"]
+- ["C7MongoDB4BSON", "iterator"]
+- !private ["C7MongoDB4BSON", "ptr2Str"]
+- ["C7MongoDB4BSON", "time_t"]
+- !private ["C7MongoDB4BSON", "withUnsafePointer"]
+- ["C7MongoDB4BSON", ""]
+- ["O7MongoDB9BSONError", "String"]
+- ["O7MongoDB9BSONError", "_code"]
+- ["O7MongoDB9BSONError", "_domain"]
+- ["O7MongoDB9BSONError", "_getEmbeddedNSError"]
+- ["O7MongoDB9BSONError", "_userInfo"]
+- ["O7MongoDB9BSONError", "deinit"]
+- ["O7MongoDB9BSONError", "syntaxError"]
+- ["OC7MongoDB4BSON8BSONType", "RawValue"]
+- ["OC7MongoDB4BSON8BSONType", "_toAnyHashable"]
+- ["OC7MongoDB4BSON8BSONType", "array"]
+- ["OC7MongoDB4BSON8BSONType", "binary"]
+- ["OC7MongoDB4BSON8BSONType", "bool"]
+- ["OC7MongoDB4BSON8BSONType", "code"]
+- ["OC7MongoDB4BSON8BSONType", "codewscope"]
+- ["OC7MongoDB4BSON8BSONType", "dateTime"]
+- ["OC7MongoDB4BSON8BSONType", "dbpointer"]
+- ["OC7MongoDB4BSON8BSONType", "deinit"]
+- ["OC7MongoDB4BSON8BSONType", "document"]
+- ["OC7MongoDB4BSON8BSONType", "double"]
+- ["OC7MongoDB4BSON8BSONType", "eod"]
+- ["OC7MongoDB4BSON8BSONType", "hashValue"]
+- ["OC7MongoDB4BSON8BSONType", "init"]
+- ["OC7MongoDB4BSON8BSONType", "int32"]
+- ["OC7MongoDB4BSON8BSONType", "int64"]
+- ["OC7MongoDB4BSON8BSONType", "maxKey"]
+- ["OC7MongoDB4BSON8BSONType", "minKey"]
+- ["OC7MongoDB4BSON8BSONType", "null"]
+- ["OC7MongoDB4BSON8BSONType", "oid"]
+- ["OC7MongoDB4BSON8BSONType", "rawValue"]
+- ["OC7MongoDB4BSON8BSONType", "regex"]
+- ["OC7MongoDB4BSON8BSONType", "symbol"]
+- ["OC7MongoDB4BSON8BSONType", "timestamp"]
+- ["OC7MongoDB4BSON8BSONType", "undefined"]
+- ["OC7MongoDB4BSON8BSONType", "utf8"]
+- !private ["VC7MongoDB4BSON9BSONValue", "Array"]
+- ["VC7MongoDB4BSON9BSONValue", "BSON"]
+- ["VC7MongoDB4BSON9BSONValue", "BSONType"]
+- !private ["VC7MongoDB4BSON9BSONValue", "BSON_SUBTYPE_BINARY"]
+- !private ["VC7MongoDB4BSON9BSONValue", "Base"]
+- ["VC7MongoDB4BSON9BSONValue", "Bool"]
+- ["VC7MongoDB4BSON9BSONValue", "Double"]
+- ["VC7MongoDB4BSON9BSONValue", "Int"]
+- !private ["VC7MongoDB4BSON9BSONValue", "Int32"]
+- !private ["VC7MongoDB4BSON9BSONValue", "Int64"]
+- ["VC7MongoDB4BSON9BSONValue", "OID"]
+- ["VC7MongoDB4BSON9BSONValue", "String"]
+- !private ["VC7MongoDB4BSON9BSONValue", "UInt32"]
+- ["VC7MongoDB4BSON9BSONValue", "UInt8"]
+- !private ["VC7MongoDB4BSON9BSONValue", "UnsafeBufferPointer"]
+- ["VC7MongoDB4BSON9BSONValue", "UnsafePointer"]
+- ["VC7MongoDB4BSON9BSONValue", "bool"]
+- !private ["VC7MongoDB4BSON9BSONValue", "bson_iter_document"]
+- ["VC7MongoDB4BSON9BSONValue", "bson_iter_t"]
+- !private ["VC7MongoDB4BSON9BSONValue", "bson_new_from_data"]
+- ["VC7MongoDB4BSON9BSONValue", "bson_value_t"]
+- ["VC7MongoDB4BSON9BSONValue", "bytes"]
+- ["VC7MongoDB4BSON9BSONValue", "doc"]
+- ["VC7MongoDB4BSON9BSONValue", "double"]
+- ["VC7MongoDB4BSON9BSONValue", "init"]
+- ["VC7MongoDB4BSON9BSONValue", "int"]
+- ["VC7MongoDB4BSON9BSONValue", "oid"]
+- !private ["VC7MongoDB4BSON9BSONValue", "ptr2Str"]
+- ["VC7MongoDB4BSON9BSONValue", "string"]
+- ["VC7MongoDB4BSON9BSONValue", "type"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps23BidirectionalCollection", "IndexDistance"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "count"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps19BinaryFloatingPoint", "init"]
+- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Ps17BitwiseOperations", "hashValue"]
+- !private ["Ps17BitwiseOperations", "init"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "allocate"]
+- !private ["Ps7CVarArg", "deallocate"]
+- !private ["Ps7CVarArg", "hashValue"]
+- !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "pointee"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "withMemoryRebound"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "IndexDistance"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "Array"]
+- !private ["Ps10Comparable", "BSON"]
+- !private ["Ps10Comparable", "BSONError"]
+- !private ["Ps10Comparable", "BSONType"]
+- !private ["Ps10Comparable", "BSONValue"]
+- !private ["Ps10Comparable", "BSON_SUBTYPE_BINARY"]
+- !private ["Ps10Comparable", "CChar"]
+- !private ["Ps10Comparable", "Double"]
+- !private ["Ps10Comparable", "Int"]
+- !private ["Ps10Comparable", "Int32"]
+- !private ["Ps10Comparable", "Int64"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Iterator"]
+- !private ["Ps10Comparable", "OID"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "String"]
+- !private ["Ps10Comparable", "UInt32"]
+- !private ["Ps10Comparable", "UInt8"]
+- !private ["Ps10Comparable", "UnsafeBufferPointer"]
+- !private ["Ps10Comparable", "UnsafeMutablePointer"]
+- !private ["Ps10Comparable", "UnsafePointer"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "allocate"]
+- !private ["Ps10Comparable", "asString"]
+- !private ["Ps10Comparable", "bson_append_array"]
+- !private ["Ps10Comparable", "bson_append_array_begin"]
+- !private ["Ps10Comparable", "bson_append_array_end"]
+- !private ["Ps10Comparable", "bson_append_binary"]
+- !private ["Ps10Comparable", "bson_append_bool"]
+- !private ["Ps10Comparable", "bson_append_date_time"]
+- !private ["Ps10Comparable", "bson_append_document"]
+- !private ["Ps10Comparable", "bson_append_double"]
+- !private ["Ps10Comparable", "bson_append_int32"]
+- !private ["Ps10Comparable", "bson_append_int64"]
+- !private ["Ps10Comparable", "bson_append_null"]
+- !private ["Ps10Comparable", "bson_append_oid"]
+- !private ["Ps10Comparable", "bson_append_regex"]
+- !private ["Ps10Comparable", "bson_append_time_t"]
+- !private ["Ps10Comparable", "bson_append_utf8"]
+- !private ["Ps10Comparable", "bson_array_as_json"]
+- !private ["Ps10Comparable", "bson_as_json"]
+- !private ["Ps10Comparable", "bson_concat"]
+- !private ["Ps10Comparable", "bson_copy"]
+- !private ["Ps10Comparable", "bson_count_keys"]
+- !private ["Ps10Comparable", "bson_destroy"]
+- !private ["Ps10Comparable", "bson_error_t"]
+- !private ["Ps10Comparable", "bson_free"]
+- !private ["Ps10Comparable", "bson_get_data"]
+- !private ["Ps10Comparable", "bson_has_field"]
+- !private ["Ps10Comparable", "bson_iter_document"]
+- !private ["Ps10Comparable", "bson_iter_find"]
+- !private ["Ps10Comparable", "bson_iter_find_case"]
+- !private ["Ps10Comparable", "bson_iter_find_descendant"]
+- !private ["Ps10Comparable", "bson_iter_init"]
+- !private ["Ps10Comparable", "bson_iter_key"]
+- !private ["Ps10Comparable", "bson_iter_next"]
+- !private ["Ps10Comparable", "bson_iter_recurse"]
+- ["Ps10Comparable", "bson_iter_t"]
+- !private ["Ps10Comparable", "bson_iter_type"]
+- !private ["Ps10Comparable", "bson_iter_value"]
+- !private ["Ps10Comparable", "bson_new"]
+- !private ["Ps10Comparable", "bson_new_from_data"]
+- !private ["Ps10Comparable", "bson_new_from_json"]
+- !private ["Ps10Comparable", "bson_oid_init_from_string"]
+- !private ["Ps10Comparable", "bson_oid_t"]
+- !private ["Ps10Comparable", "bson_oid_to_string"]
+- ["Ps10Comparable", "close"]
+- !private ["Ps10Comparable", "deallocate"]
+- ["Ps10Comparable", "description"]
+- !private ["Ps10Comparable", "doc"]
+- !private ["Ps10Comparable", "hashValue"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "pointee"]
+- !private ["Ps10Comparable", "ptr2Str"]
+- !private ["Ps10Comparable", "subscript"]
+- !private ["Ps10Comparable", "utf8"]
+- !private ["Ps10Comparable", "withMemoryRebound"]
+- !private ["Ps10Comparable", "withUnsafePointer"]
+- ["Ps10Comparable", ""]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "Iterator"]
+- !private ["Vs14CountableRange", "_Element"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "allocate"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- !private ["Ps28CustomDebugStringConvertible", "deallocate"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "pointee"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "utf8"]
+- !private ["Ps28CustomDebugStringConvertible", "withMemoryRebound"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IndexDistance"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "allocate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "count"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "deallocate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "pointee"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "utf8"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "withMemoryRebound"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "IndexDistance"]
+- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "allocate"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- !private ["Ps17CustomReflectable", "deallocate"]
+- !private ["Ps17CustomReflectable", "hashValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "pointee"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps17CustomReflectable", "utf8"]
+- !private ["Ps17CustomReflectable", "withMemoryRebound"]
+- !private ["Ps23CustomStringConvertible", "Array"]
+- !private ["Ps23CustomStringConvertible", "BSON"]
+- !private ["Ps23CustomStringConvertible", "BSONError"]
+- !private ["Ps23CustomStringConvertible", "BSONType"]
+- !private ["Ps23CustomStringConvertible", "BSONValue"]
+- !private ["Ps23CustomStringConvertible", "BSON_SUBTYPE_BINARY"]
+- !private ["Ps23CustomStringConvertible", "CChar"]
+- !private ["Ps23CustomStringConvertible", "Double"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "Int"]
+- !private ["Ps23CustomStringConvertible", "Int32"]
+- !private ["Ps23CustomStringConvertible", "Int64"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "OID"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "String"]
+- !private ["Ps23CustomStringConvertible", "UInt32"]
+- !private ["Ps23CustomStringConvertible", "UInt8"]
+- !private ["Ps23CustomStringConvertible", "UnsafeBufferPointer"]
+- !private ["Ps23CustomStringConvertible", "UnsafeMutablePointer"]
+- !private ["Ps23CustomStringConvertible", "UnsafePointer"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "asString"]
+- !private ["Ps23CustomStringConvertible", "bson_append_array"]
+- !private ["Ps23CustomStringConvertible", "bson_append_array_begin"]
+- !private ["Ps23CustomStringConvertible", "bson_append_array_end"]
+- !private ["Ps23CustomStringConvertible", "bson_append_binary"]
+- !private ["Ps23CustomStringConvertible", "bson_append_bool"]
+- !private ["Ps23CustomStringConvertible", "bson_append_date_time"]
+- !private ["Ps23CustomStringConvertible", "bson_append_document"]
+- !private ["Ps23CustomStringConvertible", "bson_append_double"]
+- !private ["Ps23CustomStringConvertible", "bson_append_int32"]
+- !private ["Ps23CustomStringConvertible", "bson_append_int64"]
+- !private ["Ps23CustomStringConvertible", "bson_append_null"]
+- !private ["Ps23CustomStringConvertible", "bson_append_oid"]
+- !private ["Ps23CustomStringConvertible", "bson_append_regex"]
+- !private ["Ps23CustomStringConvertible", "bson_append_time_t"]
+- !private ["Ps23CustomStringConvertible", "bson_append_utf8"]
+- !private ["Ps23CustomStringConvertible", "bson_array_as_json"]
+- !private ["Ps23CustomStringConvertible", "bson_as_json"]
+- !private ["Ps23CustomStringConvertible", "bson_concat"]
+- !private ["Ps23CustomStringConvertible", "bson_copy"]
+- !private ["Ps23CustomStringConvertible", "bson_count_keys"]
+- !private ["Ps23CustomStringConvertible", "bson_destroy"]
+- !private ["Ps23CustomStringConvertible", "bson_error_t"]
+- !private ["Ps23CustomStringConvertible", "bson_free"]
+- !private ["Ps23CustomStringConvertible", "bson_get_data"]
+- !private ["Ps23CustomStringConvertible", "bson_has_field"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_document"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_find"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_find_case"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_find_descendant"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_init"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_key"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_next"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_recurse"]
+- ["Ps23CustomStringConvertible", "bson_iter_t"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_type"]
+- !private ["Ps23CustomStringConvertible", "bson_iter_value"]
+- !private ["Ps23CustomStringConvertible", "bson_new"]
+- !private ["Ps23CustomStringConvertible", "bson_new_from_data"]
+- !private ["Ps23CustomStringConvertible", "bson_new_from_json"]
+- !private ["Ps23CustomStringConvertible", "bson_oid_init_from_string"]
+- !private ["Ps23CustomStringConvertible", "bson_oid_t"]
+- !private ["Ps23CustomStringConvertible", "bson_oid_to_string"]
+- ["Ps23CustomStringConvertible", "close"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "doc"]
+- !private ["Ps23CustomStringConvertible", "hashValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "oid"]
+- !private ["Ps23CustomStringConvertible", "ptr2Str"]
+- !private ["Ps23CustomStringConvertible", "utf8"]
+- !private ["Ps23CustomStringConvertible", "withUnsafePointer"]
+- ["Ps23CustomStringConvertible", ""]
+- !private ["Sd", "deinit"]
+- !private ["Sd", "init"]
+- !private ["Ps9Equatable", "Array"]
+- !private ["Ps9Equatable", "BSON"]
+- !private ["Ps9Equatable", "BSONError"]
+- !private ["Ps9Equatable", "BSONType"]
+- !private ["Ps9Equatable", "BSONValue"]
+- !private ["Ps9Equatable", "BSON_SUBTYPE_BINARY"]
+- !private ["Ps9Equatable", "CChar"]
+- !private ["Ps9Equatable", "Double"]
+- !private ["Ps9Equatable", "Int"]
+- !private ["Ps9Equatable", "Int32"]
+- !private ["Ps9Equatable", "Int64"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Iterator"]
+- !private ["Ps9Equatable", "OID"]
+- ["Ps9Equatable", "RawValue"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "String"]
+- !private ["Ps9Equatable", "UInt32"]
+- !private ["Ps9Equatable", "UInt8"]
+- !private ["Ps9Equatable", "UnsafeBufferPointer"]
+- !private ["Ps9Equatable", "UnsafeMutablePointer"]
+- !private ["Ps9Equatable", "UnsafePointer"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_Element"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "allocate"]
+- ["Ps9Equatable", "array"]
+- !private ["Ps9Equatable", "asString"]
+- ["Ps9Equatable", "binary"]
+- ["Ps9Equatable", "bool"]
+- !private ["Ps9Equatable", "bson_append_array"]
+- !private ["Ps9Equatable", "bson_append_array_begin"]
+- !private ["Ps9Equatable", "bson_append_array_end"]
+- !private ["Ps9Equatable", "bson_append_binary"]
+- !private ["Ps9Equatable", "bson_append_bool"]
+- !private ["Ps9Equatable", "bson_append_date_time"]
+- !private ["Ps9Equatable", "bson_append_document"]
+- !private ["Ps9Equatable", "bson_append_double"]
+- !private ["Ps9Equatable", "bson_append_int32"]
+- !private ["Ps9Equatable", "bson_append_int64"]
+- !private ["Ps9Equatable", "bson_append_null"]
+- !private ["Ps9Equatable", "bson_append_oid"]
+- !private ["Ps9Equatable", "bson_append_regex"]
+- !private ["Ps9Equatable", "bson_append_time_t"]
+- !private ["Ps9Equatable", "bson_append_utf8"]
+- !private ["Ps9Equatable", "bson_array_as_json"]
+- !private ["Ps9Equatable", "bson_as_json"]
+- !private ["Ps9Equatable", "bson_concat"]
+- !private ["Ps9Equatable", "bson_copy"]
+- !private ["Ps9Equatable", "bson_count_keys"]
+- !private ["Ps9Equatable", "bson_destroy"]
+- !private ["Ps9Equatable", "bson_error_t"]
+- !private ["Ps9Equatable", "bson_free"]
+- !private ["Ps9Equatable", "bson_get_data"]
+- !private ["Ps9Equatable", "bson_has_field"]
+- !private ["Ps9Equatable", "bson_iter_document"]
+- !private ["Ps9Equatable", "bson_iter_find"]
+- !private ["Ps9Equatable", "bson_iter_find_case"]
+- !private ["Ps9Equatable", "bson_iter_find_descendant"]
+- !private ["Ps9Equatable", "bson_iter_init"]
+- !private ["Ps9Equatable", "bson_iter_key"]
+- !private ["Ps9Equatable", "bson_iter_next"]
+- !private ["Ps9Equatable", "bson_iter_recurse"]
+- ["Ps9Equatable", "bson_iter_t"]
+- !private ["Ps9Equatable", "bson_iter_type"]
+- !private ["Ps9Equatable", "bson_iter_value"]
+- !private ["Ps9Equatable", "bson_new"]
+- !private ["Ps9Equatable", "bson_new_from_data"]
+- !private ["Ps9Equatable", "bson_new_from_json"]
+- !private ["Ps9Equatable", "bson_oid_init_from_string"]
+- !private ["Ps9Equatable", "bson_oid_t"]
+- !private ["Ps9Equatable", "bson_oid_to_string"]
+- ["Ps9Equatable", "close"]
+- ["Ps9Equatable", "code"]
+- ["Ps9Equatable", "codewscope"]
+- ["Ps9Equatable", "dateTime"]
+- ["Ps9Equatable", "dbpointer"]
+- !private ["Ps9Equatable", "deallocate"]
+- ["Ps9Equatable", "description"]
+- !private ["Ps9Equatable", "doc"]
+- ["Ps9Equatable", "document"]
+- ["Ps9Equatable", "double"]
+- ["Ps9Equatable", "eod"]
+- ["Ps9Equatable", "hashValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps9Equatable", "int32"]
+- ["Ps9Equatable", "int64"]
+- ["Ps9Equatable", "maxKey"]
+- ["Ps9Equatable", "minKey"]
+- ["Ps9Equatable", "null"]
+- ["Ps9Equatable", "oid"]
+- !private ["Ps9Equatable", "pointee"]
+- !private ["Ps9Equatable", "ptr2Str"]
+- ["Ps9Equatable", "rawValue"]
+- ["Ps9Equatable", "regex"]
+- !private ["Ps9Equatable", "subscript"]
+- ["Ps9Equatable", "symbol"]
+- ["Ps9Equatable", "timestamp"]
+- ["Ps9Equatable", "undefined"]
+- ["Ps9Equatable", "utf8"]
+- !private ["Ps9Equatable", "withMemoryRebound"]
+- !private ["Ps9Equatable", "withUnsafePointer"]
+- ["Ps9Equatable", ""]
+- ["Ps5Error", "_code"]
+- ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
+- ["Ps5Error", "_userInfo"]
+- !private ["Ps5Error", "syntaxError"]
+- ["Ps5Error", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "utf8"]
+- !private ["Ps25ExpressibleByFloatLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "utf8"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "utf8"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "utf8"]
+- !private ["Sf", "deinit"]
+- !private ["Ps13FloatingPoint", "init"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- ["Ps8Hashable", "RawValue"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "allocate"]
+- ["Ps8Hashable", "array"]
+- ["Ps8Hashable", "binary"]
+- ["Ps8Hashable", "bool"]
+- ["Ps8Hashable", "code"]
+- ["Ps8Hashable", "codewscope"]
+- ["Ps8Hashable", "dateTime"]
+- ["Ps8Hashable", "dbpointer"]
+- !private ["Ps8Hashable", "deallocate"]
+- ["Ps8Hashable", "document"]
+- ["Ps8Hashable", "double"]
+- ["Ps8Hashable", "eod"]
+- ["Ps8Hashable", "hashValue"]
+- ["Ps8Hashable", "init"]
+- ["Ps8Hashable", "int32"]
+- ["Ps8Hashable", "int64"]
+- ["Ps8Hashable", "maxKey"]
+- ["Ps8Hashable", "minKey"]
+- ["Ps8Hashable", "null"]
+- ["Ps8Hashable", "oid"]
+- !private ["Ps8Hashable", "pointee"]
+- ["Ps8Hashable", "rawValue"]
+- ["Ps8Hashable", "regex"]
+- !private ["Ps8Hashable", "subscript"]
+- ["Ps8Hashable", "symbol"]
+- ["Ps8Hashable", "timestamp"]
+- ["Ps8Hashable", "undefined"]
+- ["Ps8Hashable", "utf8"]
+- !private ["Ps8Hashable", "withMemoryRebound"]
+- ["Ps8Hashable", ""]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "IndexDistance"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps13IndexableBase", "IndexDistance"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "count"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "_DisabledRangeIndex"]
+- !private ["Si", "deinit"]
+- !private ["Si", "hashValue"]
+- !private ["Si", "init"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int32", "init"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs5Int64", "init"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps7Integer", "hashValue"]
+- !private ["Ps7Integer", "init"]
+- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "hashValue"]
+- !private ["Ps17IntegerArithmetic", "init"]
+- ["VC7MongoDB4BSON8Iterator", "BSON"]
+- ["VC7MongoDB4BSON8Iterator", "BSONType"]
+- ["VC7MongoDB4BSON8Iterator", "BSONValue"]
+- ["VC7MongoDB4BSON8Iterator", "Bool"]
+- ["VC7MongoDB4BSON8Iterator", "Iterator"]
+- ["VC7MongoDB4BSON8Iterator", "String"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_find"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_find_case"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_find_descendant"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_init"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_key"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_next"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_recurse"]
+- ["VC7MongoDB4BSON8Iterator", "bson_iter_t"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_type"]
+- !private ["VC7MongoDB4BSON8Iterator", "bson_iter_value"]
+- ["VC7MongoDB4BSON8Iterator", "currentChildIterator"]
+- ["VC7MongoDB4BSON8Iterator", "currentKey"]
+- ["VC7MongoDB4BSON8Iterator", "currentType"]
+- ["VC7MongoDB4BSON8Iterator", "currentValue"]
+- ["VC7MongoDB4BSON8Iterator", "find"]
+- ["VC7MongoDB4BSON8Iterator", "findDescendant"]
+- ["VC7MongoDB4BSON8Iterator", "init"]
+- ["VC7MongoDB4BSON8Iterator", "iter"]
+- ["VC7MongoDB4BSON8Iterator", "next"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "utf8"]
+- !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- !private ["Ps10MirrorPath", "hashValue"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "utf8"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps17MutableCollection", "IndexDistance"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps16MutableIndexable", "Element"]
+- !private ["Ps16MutableIndexable", "IndexDistance"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "init"]
+- ["C7MongoDB13NoDestroyBSON", "close"]
+- ["C7MongoDB13NoDestroyBSON", "deinit"]
+- !private ["C7MongoDB13NoDestroyBSON", "doc"]
+- ["C7MongoDB13NoDestroyBSON", "init"]
+- !private ["VC7MongoDB4BSON3OID", "Int8"]
+- ["VC7MongoDB4BSON3OID", "String"]
+- !private ["VC7MongoDB4BSON3OID", "UnsafeMutablePointer"]
+- !private ["VC7MongoDB4BSON3OID", "bson_oid_init_from_string"]
+- ["VC7MongoDB4BSON3OID", "bson_oid_t"]
+- !private ["VC7MongoDB4BSON3OID", "bson_oid_to_string"]
+- ["VC7MongoDB4BSON3OID", "deinit"]
+- ["VC7MongoDB4BSON3OID", "description"]
+- ["VC7MongoDB4BSON3OID", "init"]
+- ["VC7MongoDB4BSON3OID", "oid"]
+- !private ["VC7MongoDB4BSON3OID", "ptr2Str"]
+- !private ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps22RandomAccessCollection", "IndexDistance"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "count"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "count"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- ["Ps16RawRepresentable", "RawValue"]
+- ["Ps16RawRepresentable", "_toAnyHashable"]
+- ["Ps16RawRepresentable", "array"]
+- ["Ps16RawRepresentable", "binary"]
+- ["Ps16RawRepresentable", "bool"]
+- ["Ps16RawRepresentable", "code"]
+- ["Ps16RawRepresentable", "codewscope"]
+- ["Ps16RawRepresentable", "dateTime"]
+- ["Ps16RawRepresentable", "dbpointer"]
+- ["Ps16RawRepresentable", "document"]
+- ["Ps16RawRepresentable", "double"]
+- ["Ps16RawRepresentable", "eod"]
+- ["Ps16RawRepresentable", "hashValue"]
+- ["Ps16RawRepresentable", "init"]
+- ["Ps16RawRepresentable", "int32"]
+- ["Ps16RawRepresentable", "int64"]
+- ["Ps16RawRepresentable", "maxKey"]
+- ["Ps16RawRepresentable", "minKey"]
+- ["Ps16RawRepresentable", "null"]
+- ["Ps16RawRepresentable", "oid"]
+- ["Ps16RawRepresentable", "rawValue"]
+- ["Ps16RawRepresentable", "regex"]
+- ["Ps16RawRepresentable", "symbol"]
+- ["Ps16RawRepresentable", "timestamp"]
+- ["Ps16RawRepresentable", "undefined"]
+- ["Ps16RawRepresentable", "utf8"]
+- ["Ps16RawRepresentable", ""]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "IndexDistance"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps13SignedInteger", "init"]
+- !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps12SignedNumber", "init"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- !private ["Ps10Strideable", "allocate"]
+- !private ["Ps10Strideable", "deallocate"]
+- !private ["Ps10Strideable", "hashValue"]
+- !private ["Ps10Strideable", "init"]
+- !private ["Ps10Strideable", "pointee"]
+- !private ["Ps10Strideable", "subscript"]
+- !private ["Ps10Strideable", "withMemoryRebound"]
+- !private ["SS", "init"]
+- !private ["SS", "utf8"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "utf8"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "utf8"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "Stride"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt32", "init"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["VSS8UTF8View", "IndexDistance"]
+- !private ["VSS8UTF8View", "count"]
+- !private ["Sc", "deinit"]
+- !private ["SR", "Iterator"]
+- !private ["SR", "_Element"]
+- !private ["SR", "init"]
+- !private ["Sp", "allocate"]
+- !private ["Sp", "deallocate"]
+- !private ["Sp", "pointee"]
+- !private ["SP", "init"]
+- !private ["SP", "pointee"]
+- !private ["SP", "subscript"]
+- !private ["SP", "withMemoryRebound"]
+- !private ["Ps15UnsignedInteger", "Stride"]
+- !private ["Ps15UnsignedInteger", "init"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps14_ArrayProtocol", "IndexDistance"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["Ps22_CVarArgPassedAsDouble", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "utf8"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "utf8"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "utf8"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
+- !private ["Ps9_Hashable", "IntegerLiteralType"]
+- ["Ps9_Hashable", "RawValue"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "allocate"]
+- ["Ps9_Hashable", "array"]
+- ["Ps9_Hashable", "binary"]
+- ["Ps9_Hashable", "bool"]
+- ["Ps9_Hashable", "code"]
+- ["Ps9_Hashable", "codewscope"]
+- ["Ps9_Hashable", "dateTime"]
+- ["Ps9_Hashable", "dbpointer"]
+- !private ["Ps9_Hashable", "deallocate"]
+- ["Ps9_Hashable", "document"]
+- ["Ps9_Hashable", "double"]
+- ["Ps9_Hashable", "eod"]
+- ["Ps9_Hashable", "hashValue"]
+- ["Ps9_Hashable", "init"]
+- ["Ps9_Hashable", "int32"]
+- ["Ps9_Hashable", "int64"]
+- ["Ps9_Hashable", "maxKey"]
+- ["Ps9_Hashable", "minKey"]
+- ["Ps9_Hashable", "null"]
+- ["Ps9_Hashable", "oid"]
+- !private ["Ps9_Hashable", "pointee"]
+- ["Ps9_Hashable", "rawValue"]
+- ["Ps9_Hashable", "regex"]
+- !private ["Ps9_Hashable", "subscript"]
+- ["Ps9_Hashable", "symbol"]
+- ["Ps9_Hashable", "timestamp"]
+- ["Ps9_Hashable", "undefined"]
+- ["Ps9_Hashable", "utf8"]
+- !private ["Ps9_Hashable", "withMemoryRebound"]
+- ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps14_Incrementable", "hashValue"]
+- !private ["Ps14_Incrementable", "init"]
+- !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "hashValue"]
+- !private ["Ps8_Integer", "init"]
+- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "hashValue"]
+- !private ["Ps18_IntegerArithmetic", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps8_Pointer", "allocate"]
+- !private ["Ps8_Pointer", "deallocate"]
+- !private ["Ps8_Pointer", "init"]
+- !private ["Ps8_Pointer", "pointee"]
+- !private ["Ps8_Pointer", "subscript"]
+- !private ["Ps8_Pointer", "withMemoryRebound"]
+- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps14_SignedInteger", "init"]
+- !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "allocate"]
+- !private ["Ps11_Strideable", "deallocate"]
+- !private ["Ps11_Strideable", "hashValue"]
+- !private ["Ps11_Strideable", "init"]
+- !private ["Ps11_Strideable", "pointee"]
+- !private ["Ps11_Strideable", "subscript"]
+- !private ["Ps11_Strideable", "withMemoryRebound"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_binary", "data"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_binary", "data_len"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_binary", "subtype"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_code", "code"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_code", "code_len"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value24__Unnamed_struct_v_regex", "options"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value24__Unnamed_struct_v_regex", "regex"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_symbol", "len"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_symbol", "symbol"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_utf8", "len"]
+- !private ["VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_utf8", "str"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_binary"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_bool"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_code"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_datetime"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_double"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_int32"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_int64"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_oid"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_regex"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_symbol"]
+- !private ["VVSC13_bson_value_t21__Unnamed_union_value", "v_utf8"]
+- !private ["VSC13_bson_error_t", "init"]
+- !private ["VSC13_bson_error_t", "message"]
+- !private ["VSC7_bson_t", "len"]
+- !private ["VSC13_bson_value_t", "value"]
+- !private ["VSC13_bson_value_t", "value_type"]
+- ["VSC11bson_iter_t", "init"]
+- !private ["VSC10bson_oid_t", "init"]
+- !private ["VSC14bson_subtype_t", "rawValue"]
+- !private ["VSC11bson_type_t", "rawValue"]
+depends-nominal:
+- !private "Ps16AbsoluteValuable"
+- "Ps9AnyObject"
+- !private "Sa"
+- "C7MongoDB4BSON"
+- "O7MongoDB9BSONError"
+- "OC7MongoDB4BSON8BSONType"
+- "VC7MongoDB4BSON9BSONValue"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
+- !private "Sb"
+- !private "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Ps13FloatingPoint"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "VC7MongoDB4BSON8Iterator"
+- !private "Ps16IteratorProtocol"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "C7MongoDB13NoDestroyBSON"
+- "VC7MongoDB4BSON3OID"
+- !private "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- "Ps16RawRepresentable"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- !private "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "VSS8UTF8View"
+- !private "Sc"
+- !private "SR"
+- !private "Sp"
+- !private "SP"
+- !private "Ps15UnsignedInteger"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps8_Pointer"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_binary"
+- !private "VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_code"
+- !private "VVVSC13_bson_value_t21__Unnamed_union_value24__Unnamed_struct_v_regex"
+- !private "VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_symbol"
+- !private "VVVSC13_bson_value_t21__Unnamed_union_value23__Unnamed_struct_v_utf8"
+- !private "VVSC13_bson_value_t21__Unnamed_union_value"
+- !private "VSC13_bson_error_t"
+- !private "VSC7_bson_t"
+- !private "VSC13_bson_value_t"
+- "VSC11bson_iter_t"
+- !private "VSC10bson_oid_t"
+- !private "VSC14bson_subtype_t"
+- !private "VSC11bson_type_t"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-handshake.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-topology-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-server-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-apm.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bcon.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-writer.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-value.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-utf8.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-string.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-reader.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-oid.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-memory.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-md5.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-keys.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-json.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-iter.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-decimal128.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-clock.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-endian.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-types.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-context.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-atomic.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-stdint.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-macros.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-compat.h"
+- "/usr/local/include/libmongoc-1.0/mongoc.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+interface-hash: "a391e4faf38c1ca06dd55ebff07695b6"

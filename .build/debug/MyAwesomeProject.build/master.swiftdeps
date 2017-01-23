@@ -1,0 +1,8 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "abb7c4bf27a2363c611782c00d7e6648"
+build_time: [538241428, 356243000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": [538241058, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": [538231940, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": [538241424, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Weather.swift": [538231642, 0]

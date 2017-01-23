@@ -1,0 +1,851 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AuthAccount"
+provides-nominal:
+- "C23PerfectTurnstileMongoDB11AuthAccount"
+provides-member:
+- ["C23PerfectTurnstileMongoDB11AuthAccount", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "StORMRow"
+- !private "??"
+- "Bool"
+- "AuthAccount"
+- !private "BCrypt"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- !private "print"
+- "Account"
+- !private "Dictionary"
+- "StringLiteralType"
+- "String"
+- !private "BooleanLiteralType"
+- "MongoDBStORM"
+- !private "..<"
+- "AccessTokenStore"
+- !private "StORMError"
+depends-member:
+- ["C23PerfectTurnstileMongoDB16AccessTokenStore", "deinit"]
+- ["C23PerfectTurnstileMongoDB16AccessTokenStore", "init"]
+- ["P9Turnstile7Account", "AccessTokenStore"]
+- !private ["P9Turnstile7Account", "AuthAccount"]
+- !private ["P9Turnstile7Account", "BCrypt"]
+- !private ["P9Turnstile7Account", "StORMError"]
+- !private ["P9Turnstile7Account", "_collection"]
+- !private ["P9Turnstile7Account", "email"]
+- !private ["P9Turnstile7Account", "facebookID"]
+- !private ["P9Turnstile7Account", "find"]
+- !private ["P9Turnstile7Account", "firstname"]
+- !private ["P9Turnstile7Account", "googleID"]
+- !private ["P9Turnstile7Account", "init"]
+- !private ["P9Turnstile7Account", "lastname"]
+- !private ["P9Turnstile7Account", "password"]
+- !private ["P9Turnstile7Account", "print"]
+- !private ["P9Turnstile7Account", "results"]
+- !private ["P9Turnstile7Account", "save"]
+- !private ["P9Turnstile7Account", "to"]
+- ["P9Turnstile7Account", "uniqueID"]
+- !private ["P9Turnstile7Account", "username"]
+- ["P9Turnstile7Account", ""]
+- ["Ps9AnyObject", "AccessTokenStore"]
+- !private ["Ps9AnyObject", "AuthAccount"]
+- !private ["Ps9AnyObject", "BCrypt"]
+- !private ["Ps9AnyObject", "StORMError"]
+- !private ["Ps9AnyObject", "_collection"]
+- !private ["Ps9AnyObject", "data"]
+- ["Ps9AnyObject", "email"]
+- ["Ps9AnyObject", "exists"]
+- ["Ps9AnyObject", "facebookID"]
+- !private ["Ps9AnyObject", "find"]
+- ["Ps9AnyObject", "firstname"]
+- ["Ps9AnyObject", "get"]
+- ["Ps9AnyObject", "googleID"]
+- !private ["Ps9AnyObject", "hash"]
+- ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "internal_token"]
+- ["Ps9AnyObject", "lastname"]
+- ["Ps9AnyObject", "make"]
+- ["Ps9AnyObject", "password"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "results"]
+- ["Ps9AnyObject", "rows"]
+- !private ["Ps9AnyObject", "save"]
+- ["Ps9AnyObject", "to"]
+- ["Ps9AnyObject", "uniqueID"]
+- ["Ps9AnyObject", "username"]
+- !private ["Ps9AnyObject", "verify"]
+- ["Ps9AnyObject", ""]
+- !private ["Sa", "Index"]
+- !private ["Sa", "IndexDistance"]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "SubSequence"]
+- !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
+- ["Sa", "deinit"]
+- !private ["Sa", "init"]
+- !private ["Sa", "subscript"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "AccessTokenStore"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "AuthAccount"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "BCrypt"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "Bool"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "StORMError"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "StORMRow"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "String"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "_collection"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "deinit"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "email"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "exists"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "facebookID"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "find"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "firstname"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "get"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "googleID"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "id"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "init"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "internal_token"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "lastname"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "make"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "password"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "print"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "results"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "rows"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "save"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "to"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "uniqueID"]
+- ["C23PerfectTurnstileMongoDB11AuthAccount", "username"]
+- !private ["C15TurnstileCrypto6BCrypt", "hash"]
+- !private ["C15TurnstileCrypto6BCrypt", "verify"]
+- !private ["Ps23BidirectionalCollection", "Index"]
+- !private ["Ps23BidirectionalCollection", "IndexDistance"]
+- !private ["Ps23BidirectionalCollection", "Indices"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "SubSequence"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
+- !private ["Ps23BidirectionalCollection", "init"]
+- !private ["Ps23BidirectionalCollection", "subscript"]
+- !private ["Ps22BidirectionalIndexable", "Index"]
+- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
+- !private ["Ps22BidirectionalIndexable", "Indices"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "SubSequence"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "count"]
+- !private ["Ps22BidirectionalIndexable", "init"]
+- !private ["Ps22BidirectionalIndexable", "subscript"]
+- !private ["Vs18BidirectionalSlice", "Index"]
+- !private ["Vs18BidirectionalSlice", "IndexDistance"]
+- !private ["Vs18BidirectionalSlice", "Indices"]
+- !private ["Vs18BidirectionalSlice", "Iterator"]
+- !private ["Vs18BidirectionalSlice", "SubSequence"]
+- !private ["Vs18BidirectionalSlice", "_Element"]
+- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "IndexDistance"]
+- !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Key"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "Value"]
+- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "count"]
+- ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "IndexDistance"]
+- !private ["Ps10Collection", "Indices"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "Key"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "Value"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
+- !private ["Ps10Collection", "init"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "IntegerLiteralType"]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- ["Ps10Comparable", "init"]
+- !private ["Vs14CountableRange", "Iterator"]
+- !private ["Vs14CountableRange", "_Element"]
+- ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "Key"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "Value"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "IndexDistance"]
+- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Key"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "Value"]
+- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
+- !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "IndexDistance"]
+- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Key"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "Value"]
+- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs27DefaultBidirectionalIndices", "Index"]
+- !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
+- !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
+- !private ["Vs27DefaultBidirectionalIndices", "_Element"]
+- !private ["Vs26DefaultRandomAccessIndices", "Index"]
+- !private ["Vs26DefaultRandomAccessIndices", "IndexDistance"]
+- !private ["Vs26DefaultRandomAccessIndices", "Indices"]
+- !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
+- !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
+- !private ["Vs26DefaultRandomAccessIndices", "_Element"]
+- !private ["Vs10Dictionary", "Key"]
+- !private ["Vs10Dictionary", "Value"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "IntegerLiteralType"]
+- !private ["Ps9Equatable", "Iterator"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_DisabledRangeIndex"]
+- !private ["Ps9Equatable", "_Element"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- ["Ps5Error", "deinit"]
+- !private ["Ps5Error", "noRecordFound"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Index"]
+- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
+- !private ["Ps25ExpressibleByArrayLiteral", "init"]
+- !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "IntegerLiteralType"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_DisabledRangeIndex"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "IndexDistance"]
+- !private ["Ps9Indexable", "Indices"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "Key"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "Value"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
+- !private ["Ps9Indexable", "init"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "IndexDistance"]
+- !private ["Ps13IndexableBase", "Indices"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "Key"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "Value"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "count"]
+- !private ["Ps13IndexableBase", "init"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["Si", "Stride"]
+- !private ["Si", "_DisabledRangeIndex"]
+- ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "IntegerLiteralType"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisabledRangeIndex"]
+- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["P10PerfectLib15JSONConvertible", "Index"]
+- !private ["P10PerfectLib15JSONConvertible", "IndexDistance"]
+- !private ["P10PerfectLib15JSONConvertible", "IntegerLiteralType"]
+- !private ["P10PerfectLib15JSONConvertible", "Iterator"]
+- !private ["P10PerfectLib15JSONConvertible", "Key"]
+- !private ["P10PerfectLib15JSONConvertible", "Stride"]
+- !private ["P10PerfectLib15JSONConvertible", "SubSequence"]
+- !private ["P10PerfectLib15JSONConvertible", "Value"]
+- !private ["P10PerfectLib15JSONConvertible", "_DisabledRangeIndex"]
+- !private ["P10PerfectLib15JSONConvertible", "_Element"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- !private ["P10PerfectLib15JSONConvertible", "append"]
+- !private ["P10PerfectLib15JSONConvertible", "count"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "IntegerLiteralType"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- ["Ps10MirrorPath", "init"]
+- ["C12MongoDBStORM12MongoDBStORM", "AccessTokenStore"]
+- ["C12MongoDBStORM12MongoDBStORM", "AuthAccount"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "BCrypt"]
+- ["C12MongoDBStORM12MongoDBStORM", "Bool"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "StORMError"]
+- ["C12MongoDBStORM12MongoDBStORM", "StORMRow"]
+- ["C12MongoDBStORM12MongoDBStORM", "String"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "_collection"]
+- ["C12MongoDBStORM12MongoDBStORM", "deinit"]
+- ["C12MongoDBStORM12MongoDBStORM", "email"]
+- ["C12MongoDBStORM12MongoDBStORM", "exists"]
+- ["C12MongoDBStORM12MongoDBStORM", "facebookID"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "find"]
+- ["C12MongoDBStORM12MongoDBStORM", "firstname"]
+- ["C12MongoDBStORM12MongoDBStORM", "get"]
+- ["C12MongoDBStORM12MongoDBStORM", "googleID"]
+- ["C12MongoDBStORM12MongoDBStORM", "id"]
+- ["C12MongoDBStORM12MongoDBStORM", "init"]
+- ["C12MongoDBStORM12MongoDBStORM", "internal_token"]
+- ["C12MongoDBStORM12MongoDBStORM", "lastname"]
+- ["C12MongoDBStORM12MongoDBStORM", "make"]
+- ["C12MongoDBStORM12MongoDBStORM", "password"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "print"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "results"]
+- ["C12MongoDBStORM12MongoDBStORM", "rows"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "save"]
+- ["C12MongoDBStORM12MongoDBStORM", "to"]
+- ["C12MongoDBStORM12MongoDBStORM", "uniqueID"]
+- ["C12MongoDBStORM12MongoDBStORM", "username"]
+- ["C12MongoDBStORM12MongoDBStORM", ""]
+- !private ["Ps17MutableCollection", "Index"]
+- !private ["Ps17MutableCollection", "IndexDistance"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "SubSequence"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
+- !private ["Ps17MutableCollection", "init"]
+- !private ["Ps17MutableCollection", "subscript"]
+- !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "IndexDistance"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
+- !private ["Ps16MutableIndexable", "init"]
+- !private ["Ps16MutableIndexable", "subscript"]
+- ["PSo8NSCoding", "init"]
+- ["PSo9NSCopying", "init"]
+- ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSObject", "init"]
+- ["PSo16NSObjectProtocol", "init"]
+- ["PSo14NSSecureCoding", "init"]
+- ["CSo8NSString", "init"]
+- ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Index"]
+- !private ["Ps22RandomAccessCollection", "IndexDistance"]
+- !private ["Ps22RandomAccessCollection", "Indices"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "SubSequence"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
+- !private ["Ps22RandomAccessCollection", "init"]
+- !private ["Ps22RandomAccessCollection", "subscript"]
+- !private ["Ps21RandomAccessIndexable", "Index"]
+- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
+- !private ["Ps21RandomAccessIndexable", "Indices"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "SubSequence"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "count"]
+- !private ["Ps21RandomAccessIndexable", "init"]
+- !private ["Ps21RandomAccessIndexable", "subscript"]
+- !private ["Vs17RandomAccessSlice", "Index"]
+- !private ["Vs17RandomAccessSlice", "IndexDistance"]
+- !private ["Vs17RandomAccessSlice", "Indices"]
+- !private ["Vs17RandomAccessSlice", "Iterator"]
+- !private ["Vs17RandomAccessSlice", "SubSequence"]
+- !private ["Vs17RandomAccessSlice", "_Element"]
+- !private ["Vs5Range", "Iterator"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Index"]
+- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "SubSequence"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
+- !private ["Ps26RangeReplaceableCollection", "init"]
+- !private ["Ps26RangeReplaceableCollection", "subscript"]
+- !private ["Ps25RangeReplaceableIndexable", "Index"]
+- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "count"]
+- !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "IndexDistance"]
+- !private ["Ps8Sequence", "Indices"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "Key"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "Value"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
+- !private ["Ps8Sequence", "init"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "IntegerLiteralType"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps12SignedNumber", "IntegerLiteralType"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- ["C5StORM5StORM", "AccessTokenStore"]
+- ["C5StORM5StORM", "AuthAccount"]
+- !private ["C5StORM5StORM", "BCrypt"]
+- ["C5StORM5StORM", "Bool"]
+- !private ["C5StORM5StORM", "StORMError"]
+- ["C5StORM5StORM", "StORMRow"]
+- ["C5StORM5StORM", "String"]
+- !private ["C5StORM5StORM", "_collection"]
+- ["C5StORM5StORM", "email"]
+- ["C5StORM5StORM", "exists"]
+- ["C5StORM5StORM", "facebookID"]
+- !private ["C5StORM5StORM", "find"]
+- ["C5StORM5StORM", "firstname"]
+- ["C5StORM5StORM", "get"]
+- ["C5StORM5StORM", "googleID"]
+- ["C5StORM5StORM", "id"]
+- ["C5StORM5StORM", "init"]
+- ["C5StORM5StORM", "internal_token"]
+- ["C5StORM5StORM", "lastname"]
+- ["C5StORM5StORM", "make"]
+- ["C5StORM5StORM", "password"]
+- !private ["C5StORM5StORM", "print"]
+- !private ["C5StORM5StORM", "results"]
+- ["C5StORM5StORM", "rows"]
+- !private ["C5StORM5StORM", "save"]
+- ["C5StORM5StORM", "to"]
+- ["C5StORM5StORM", "uniqueID"]
+- ["C5StORM5StORM", "username"]
+- ["O5StORM10StORMError", "deinit"]
+- !private ["O5StORM10StORMError", "noRecordFound"]
+- ["P5StORM13StORMProtocol", "AccessTokenStore"]
+- !private ["P5StORM13StORMProtocol", "AuthAccount"]
+- !private ["P5StORM13StORMProtocol", "BCrypt"]
+- !private ["P5StORM13StORMProtocol", "StORMError"]
+- !private ["P5StORM13StORMProtocol", "_collection"]
+- ["P5StORM13StORMProtocol", "email"]
+- ["P5StORM13StORMProtocol", "exists"]
+- ["P5StORM13StORMProtocol", "facebookID"]
+- !private ["P5StORM13StORMProtocol", "find"]
+- ["P5StORM13StORMProtocol", "firstname"]
+- ["P5StORM13StORMProtocol", "get"]
+- ["P5StORM13StORMProtocol", "googleID"]
+- ["P5StORM13StORMProtocol", "id"]
+- ["P5StORM13StORMProtocol", "init"]
+- ["P5StORM13StORMProtocol", "internal_token"]
+- ["P5StORM13StORMProtocol", "lastname"]
+- ["P5StORM13StORMProtocol", "make"]
+- ["P5StORM13StORMProtocol", "password"]
+- !private ["P5StORM13StORMProtocol", "print"]
+- !private ["P5StORM13StORMProtocol", "results"]
+- ["P5StORM13StORMProtocol", "rows"]
+- !private ["P5StORM13StORMProtocol", "save"]
+- ["P5StORM13StORMProtocol", "to"]
+- ["P5StORM13StORMProtocol", "uniqueID"]
+- ["P5StORM13StORMProtocol", "username"]
+- ["P5StORM13StORMProtocol", ""]
+- !private ["C5StORM14StORMResultSet", "rows"]
+- !private ["C5StORM8StORMRow", "data"]
+- ["C5StORM8StORMRow", "deinit"]
+- !private ["Ps10Strideable", "IntegerLiteralType"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisabledRangeIndex"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Index"]
+- !private ["Ps14_ArrayProtocol", "IndexDistance"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "SubSequence"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
+- !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
+- !private ["Ps24_DestructorSafeContainer", "init"]
+- !private ["Ps24_DestructorSafeContainer", "subscript"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "IntegerLiteralType"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "init"]
+- !private ["Ps14_Incrementable", "IntegerLiteralType"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
+- !private ["Ps8_Integer", "IntegerLiteralType"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Key"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "Value"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps11_Strideable", "IntegerLiteralType"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
+depends-nominal:
+- "C23PerfectTurnstileMongoDB16AccessTokenStore"
+- "P9Turnstile7Account"
+- "Ps9AnyObject"
+- "Sa"
+- "C23PerfectTurnstileMongoDB11AuthAccount"
+- !private "C15TurnstileCrypto6BCrypt"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Vs18BidirectionalSlice"
+- !private "Ps17BitwiseOperations"
+- "Sb"
+- "Ps7CVarArg"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- "Ps10Comparable"
+- "Vs14CountableRange"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "Vs27DefaultBidirectionalIndices"
+- !private "Vs26DefaultRandomAccessIndices"
+- "Vs10Dictionary"
+- !private "Sd"
+- "Ps9Equatable"
+- "Ps5Error"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
+- "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- "P10PerfectLib15JSONConvertible"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "C12MongoDBStORM12MongoDBStORM"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs17RandomAccessSlice"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Vs5Slice"
+- "C5StORM5StORM"
+- "O5StORM10StORMError"
+- "P5StORM13StORMProtocol"
+- !private "C5StORM14StORMResultSet"
+- "C5StORM8StORMRow"
+- !private "Ps10Strideable"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
+- "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Turnstile.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDB.swiftmodule"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-handshake.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-topology-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-server-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-apm.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bcon.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-writer.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-value.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-utf8.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-string.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-reader.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-oid.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-memory.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-md5.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-keys.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-json.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-iter.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-decimal128.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-clock.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-endian.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-types.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-context.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-atomic.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-stdint.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-macros.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-compat.h"
+- "/usr/local/include/libmongoc-1.0/mongoc.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/StORM.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl23.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pqueue.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dtls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../tls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl3.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../kssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../hmac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../e_os2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pkcs7.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509_vfy.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../sha.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../rsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ec.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bn.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../asn1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../obj_mac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../objects.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../evp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../buffer.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../comp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../lhash.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../err.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../symhacks.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ossl_typ.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslv.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../safestack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../stack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../crypto.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstilePerfect.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.10/Sources/CZlib/include/czlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
+interface-hash: "b1a49af81143519b718ee9b235f854a8"

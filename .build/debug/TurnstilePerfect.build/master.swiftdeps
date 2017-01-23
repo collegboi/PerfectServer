@@ -1,0 +1,10 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "e3c5cc4e0387d20d3d64c1cb71f66740"
+build_time: [538230270, 215171000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthenticationConfig.swift": [538230220, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthFilter.swift": [538230220, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/HTTPRequest+Turnstile.swift": [538230220, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/MustacheHandler.swift": [538230220, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstileFilter.swift": [538230220, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstilePerfect.swift": [538230220, 0]
