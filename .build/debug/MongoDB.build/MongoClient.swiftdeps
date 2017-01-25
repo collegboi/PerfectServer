@@ -11,35 +11,36 @@ provides-member:
 - ["O7MongoDB11MongoResult", ""]
 - ["O7MongoDB16MongoClientError", ""]
 - ["C7MongoDB11MongoClient", ""]
+provides-dynamic-lookup:
 depends-top-level:
-- !private "withUnsafePointer"
-- "bson_error_t"
-- !private "UnicodeScalarType"
-- !private "mongoc_client_destroy"
-- !private "bson_strfreev"
-- "BSON"
-- "Int"
-- !private "mongoc_client_get_server_status"
-- !private "??"
-- !private "StringLiteralType"
-- !private "mongoc_client_get_database_names"
-- "MongoClientError"
-- "AssignmentPrecedence"
-- !private "mongoc_read_prefs_destroy"
-- "OpaquePointer"
-- "UInt32"
-- "MongoCollection"
-- "IntegerLiteralType"
-- !private "mongoc_read_prefs_new"
-- "Error"
-- "FloatLiteralType"
-- "MongoDatabase"
 - !private "mongoc_client_new"
-- !private "CChar"
-- "MongoClient"
-- "String"
-- !private "MONGOC_READ_PRIMARY"
+- "BSON"
+- "MongoClientError"
 - "MongoResult"
+- !private "bson_strfreev"
+- "OpaquePointer"
+- "Int"
+- !private "withUnsafePointer"
+- !private "StringLiteralType"
+- "bson_error_t"
+- !private "CChar"
+- "MongoDatabase"
+- "UInt32"
+- !private "UnicodeScalarType"
+- !private "MONGOC_READ_PRIMARY"
+- !private "??"
+- "AssignmentPrecedence"
+- !private "mongoc_client_get_database_names"
+- !private "mongoc_read_prefs_new"
+- !private "mongoc_client_destroy"
+- "String"
+- !private "mongoc_client_get_server_status"
+- "FloatLiteralType"
+- "Error"
+- "IntegerLiteralType"
+- "MongoCollection"
+- "MongoClient"
+- !private "mongoc_read_prefs_destroy"
 depends-member:
 - !private ["Ps9AnyObject", "BSON"]
 - !private ["Ps9AnyObject", "MONGOC_READ_PRIMARY"]
@@ -96,7 +97,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "successor"]
 - !private ["Ps28CustomDebugStringConvertible", "withMemoryRebound"]
@@ -110,7 +110,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "init"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "successor"]
 - !private ["Ps17CustomReflectable", "withMemoryRebound"]
@@ -129,6 +128,7 @@ depends-member:
 - !private ["Ps9Equatable", "withMemoryRebound"]
 - ["Ps5Error", "_code"]
 - ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
 - ["Ps5Error", "_userInfo"]
 - !private ["Ps5Error", "initError"]
 - ["Ps5Error", ""]
@@ -138,7 +138,6 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -194,6 +193,7 @@ depends-member:
 - ["O7MongoDB16MongoClientError", "String"]
 - ["O7MongoDB16MongoClientError", "_code"]
 - ["O7MongoDB16MongoClientError", "_domain"]
+- ["O7MongoDB16MongoClientError", "_getEmbeddedNSError"]
 - ["O7MongoDB16MongoClientError", "_userInfo"]
 - ["O7MongoDB16MongoClientError", "deinit"]
 - ["O7MongoDB16MongoClientError", "initError"]
@@ -224,7 +224,6 @@ depends-member:
 - !private ["Ps16MutableIndexable", "init"]
 - ["Vs13OpaquePointer", "init"]
 - !private ["Sq", "deinit"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
@@ -302,7 +301,7 @@ depends-nominal:
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- "Ps17CustomReflectable"
+- !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - !private "Sd"
 - "Ps9Equatable"
@@ -310,7 +309,6 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -335,7 +333,7 @@ depends-nominal:
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
 - "Vs13OpaquePointer"
-- "Sq"
+- !private "Sq"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
@@ -366,84 +364,75 @@ depends-nominal:
 - !private "VSC13_bson_error_t"
 depends-dynamic-lookup:
 depends-external:
-- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
-- "/usr/lib/swift/shims/Visibility.h"
-- "/usr/lib/swift/shims/SwiftStdint.h"
-- "/usr/lib/swift/shims/UnicodeShims.h"
-- "/usr/lib/swift/shims/SwiftStddef.h"
-- "/usr/lib/swift/shims/LibcShims.h"
-- "/usr/lib/swift/shims/RuntimeStubs.h"
-- "/usr/lib/swift/shims/RuntimeShims.h"
-- "/usr/lib/swift/shims/RefCount.h"
-- "/usr/lib/swift/shims/HeapObject.h"
-- "/usr/lib/swift/shims/GlobalObjects.h"
-- "/usr/lib/swift/shims/FoundationShims.h"
-- "/usr/lib/swift/shims/DispatchShims.h"
-- "/usr/lib/swift/shims/CoreFoundationShims.h"
-- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
-- "/usr/lib/swift/shims/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/usr/include/libmongoc-1.0/mongoc-stream-tls.h"
-- "/usr/include/libmongoc-1.0/mongoc-rand.h"
-- "/usr/include/libmongoc-1.0/mongoc-version-functions.h"
-- "/usr/include/libmongoc-1.0/mongoc-version.h"
-- "/usr/include/libmongoc-1.0/mongoc-stream-socket.h"
-- "/usr/include/libmongoc-1.0/mongoc-stream-gridfs.h"
-- "/usr/include/libmongoc-1.0/mongoc-stream-file.h"
-- "/usr/include/libmongoc-1.0/mongoc-stream-buffered.h"
-- "/usr/include/libmongoc-1.0/mongoc-log.h"
-- "/usr/include/libmongoc-1.0/mongoc-opcode.h"
-- "/usr/include/libmongoc-1.0/mongoc-matcher.h"
-- "/usr/include/libmongoc-1.0/mongoc-init.h"
-- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
-- "/usr/include/libmongoc-1.0/mongoc-error.h"
-- "/usr/include/libmongoc-1.0/mongoc-client-pool.h"
-- "/usr/include/libmongoc-1.0/mongoc-uri.h"
-- "/usr/include/libmongoc-1.0/mongoc-ssl.h"
-- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
-- "/usr/include/libmongoc-1.0/mongoc-gridfs-file.h"
-- "/usr/include/libmongoc-1.0/mongoc-socket.h"
-- "/usr/include/libmongoc-1.0/mongoc-iovec.h"
-- "/usr/include/libmongoc-1.0/mongoc-stream.h"
-- "/usr/include/libmongoc-1.0/mongoc-gridfs.h"
-- "/usr/include/libmongoc-1.0/mongoc-database.h"
-- "/usr/include/libmongoc-1.0/mongoc-config.h"
-- "/usr/include/libmongoc-1.0/mongoc-find-and-modify.h"
-- "/usr/include/libmongoc-1.0/mongoc-read-concern.h"
-- "/usr/include/libmongoc-1.0/mongoc-read-prefs.h"
-- "/usr/include/libmongoc-1.0/mongoc-index.h"
-- "/usr/include/libmongoc-1.0/mongoc-host-list.h"
-- "/usr/include/libmongoc-1.0/mongoc-cursor.h"
-- "/usr/include/libmongoc-1.0/mongoc-flags.h"
-- "/usr/include/libmongoc-1.0/mongoc-collection.h"
-- "/usr/include/libmongoc-1.0/mongoc-client.h"
-- "/usr/include/libmongoc-1.0/mongoc-write-concern.h"
-- "/usr/include/libmongoc-1.0/mongoc-bulk-operation.h"
-- "/usr/include/libbson-1.0/bson.h"
-- "/usr/include/libbson-1.0/bcon.h"
-- "/usr/include/libbson-1.0/bson-writer.h"
-- "/usr/include/libbson-1.0/bson-version-functions.h"
-- "/usr/include/libbson-1.0/bson-version.h"
-- "/usr/include/libbson-1.0/bson-value.h"
-- "/usr/include/libbson-1.0/bson-utf8.h"
-- "/usr/include/libbson-1.0/bson-string.h"
-- "/usr/include/libbson-1.0/bson-reader.h"
-- "/usr/include/libbson-1.0/bson-oid.h"
-- "/usr/include/libbson-1.0/bson-memory.h"
-- "/usr/include/libbson-1.0/bson-md5.h"
-- "/usr/include/libbson-1.0/bson-keys.h"
-- "/usr/include/libbson-1.0/bson-json.h"
-- "/usr/include/libbson-1.0/bson-endian.h"
-- "/usr/include/libbson-1.0/bson-iter.h"
-- "/usr/include/libbson-1.0/bson-error.h"
-- "/usr/include/libbson-1.0/bson-clock.h"
-- "/usr/include/libbson-1.0/bson-types.h"
-- "/usr/include/libbson-1.0/bson-context.h"
-- "/usr/include/libbson-1.0/bson-atomic.h"
-- "/usr/include/libbson-1.0/bson-stdint.h"
-- "/usr/include/libbson-1.0/bson-macros.h"
-- "/usr/include/libbson-1.0/bson-config.h"
-- "/usr/include/libbson-1.0/bson-compat.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-handshake.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-topology-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-server-description.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0/mongoc-apm.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bcon.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-writer.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version-functions.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-version.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-value.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-utf8.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-string.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-reader.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-oid.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-memory.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-md5.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-keys.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-json.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-iter.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-error.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-decimal128.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-clock.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-endian.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-types.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-context.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-atomic.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-stdint.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-macros.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-config.h"
+- "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
-- "/home/collegboi/PerfectServer/Packages/libmongoc-2.0.1/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 interface-hash: "dbbd5bd119245d3a0843ddea6e3dfccc"

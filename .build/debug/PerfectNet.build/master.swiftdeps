@@ -1,9 +1,9 @@
-version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
-options: "11f8c761b8002d4564d5734fcfbf6656"
-build_time: [538625213, 823360000]
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "91c3cf5b4aef5516e8d9eabfc3f50cad"
+build_time: [538661509, 588996000]
 inputs:
-  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCP.swift": [538524057, 0]
-  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCPSSL.swift": [538524057, 0]
-  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/Net.swift": [538523728, 0]
-  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetEvent.swift": [538523728, 0]
-  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetNamedPipe.swift": [538524057, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/Net.swift": [538230842, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetEvent.swift": [538230842, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetNamedPipe.swift": [538230843, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCP.swift": [538230843, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCPSSL.swift": [538230843, 0]

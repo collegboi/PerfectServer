@@ -1,10 +1,10 @@
-version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
-options: "2d1cf78c342d170302a040f8089180d7"
-build_time: [538524067, 513288000]
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "bfd1b8efb5d9aed9299f645448d6d3c8"
+build_time: [538661507, 187655000]
 inputs:
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Operators.swift": [538524060, 0]
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Moment.swift": [538524060, 0]
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/MomentFromNow.swift": [538524060, 0]
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/TimeUnit.swift": [538524060, 0]
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Duration.swift": [538524060, 0]
-  "/home/collegboi/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Extensions.swift": [538524060, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Duration.swift": [538231201, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Extensions.swift": [538231201, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Moment.swift": [538231201, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/MomentFromNow.swift": [538231201, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/Operators.swift": [538231201, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftMoment-0.9.1/Sources/SwiftMoment/TimeUnit.swift": [538231201, 0]

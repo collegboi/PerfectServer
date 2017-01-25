@@ -1,17 +1,17 @@
 {
   "": {
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/master.swiftdeps"
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/master.swiftdeps"
   },
-  "/home/collegboi/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": {
-    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.d",
-    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.swift.o",
-    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/FileLogger~partial.swiftmodule",
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.swiftdeps"
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/FileLogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/FileLogger.swiftdeps"
   },
-  "/home/collegboi/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": {
-    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.d",
-    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.swift.o",
-    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger~partial.swiftmodule",
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.swiftdeps"
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.build/RemoteLogger.swiftdeps"
   }
 }

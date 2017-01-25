@@ -15,128 +15,128 @@ provides-member:
 - ["O10PerfectNet9TLSMethod", ""]
 - ["C10PerfectNet9NetTCPSSL", ""]
 - ["CC10PerfectNet9NetTCPSSL4X509", ""]
+provides-dynamic-lookup:
 depends-top-level:
-- !private "TLSv1_1_method"
-- !private "BIO_new_file"
-- !private "SSL_CTX_check_private_key"
-- "X509_STORE_CTX"
-- "NetTCPSSL"
-- !private "+="
-- "VerifyCACallbackFunc"
-- !private "SSL_ERROR_SYSCALL"
-- !private "SSL_CTRL_MODE"
-- !private "SSL_MODE_AUTO_RETRY"
-- "SSL_VERIFY_FAIL_IF_NO_PEER_CERT"
+- "COpenSSL"
+- !private "UnicodeScalarType"
+- !private "SSL_CTRL_OPTIONS"
+- "CRYPTO_set_id_callback"
 - !private "SSL_CTX_set_default_passwd_cb_userdata"
-- "Bool"
+- !private "UnsafeRawPointer"
+- !private "TLSv1_1_method"
+- !private "SSL_get_peer_certificate"
+- !private "SSL_OP_ALL"
+- !private "SSL_ERROR_WANT_READ"
+- !private "SSL_ERROR_SYSCALL"
+- !private "||"
+- !private "OpaquePointer"
+- !private "BIO_new_file"
+- "TLSMethod"
 - !private "SSL_set_connect_state"
+- !private "ERR_reason_error_string"
+- !private "SSL_ERROR_WANT_WRITE"
+- !private "+="
+- !private "SSL_CTRL_MODE"
+- !private "SSL_CTX_set_default_verify_paths"
+- "CRYPTO_LOCK"
+- !private "SSL_MODE_AUTO_RETRY"
+- "Bool"
+- !private "Unmanaged"
+- "..<"
+- !private "SSL_set_cipher_list"
+- !private "NetEvent"
+- !private "SSL_get_cipher_list"
+- "UnsafeMutableRawPointer"
+- "&"
+- !private "invalidSocket"
+- "Threading"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "=="
+- !private "~="
+- "SSL_VERIFY_NONE"
+- !private "X509_get_pubkey"
+- !private "SSL_new"
+- "UnsafePointer"
+- "NetTCPSSL"
+- "FloatLiteralType"
+- !private "SSL_FILETYPE_PEM"
+- !private "print"
+- "NetTCP"
+- !private "PEM_read_bio_DHparams"
+- !private "passwordCallbackFunc"
+- "IntegerLiteralType"
+- !private "SSL_CTX_use_certificate_file"
+- !private "SSL_set_fd"
+- !private "memmove"
+- !private "SSL_CTRL_SET_TMP_DH"
+- !private "i2d_PUBKEY"
+- "BooleanLiteralType"
+- !private "SSL_CTX_check_private_key"
+- !private "SSL_shutdown"
 - !private "X509_free"
+- "pthread_self"
+- !private "+"
 - "OptionSet"
 - "StringLiteralType"
-- !private "SSL_get_peer_certificate"
-- !private "SSL_connect"
-- "String"
-- !private "SSL_OP_ALL"
-- "SSL_VERIFY_CLIENT_ONCE"
-- !private "memmove"
-- "Int32"
-- !private "SSL_CTRL_OPTIONS"
-- !private "SSL_CTX_set_default_passwd_cb"
-- !private "PEM_read_bio_DHparams"
-- "BooleanLiteralType"
-- "TLSMethod"
-- "FloatLiteralType"
-- !private "SSL_get_error"
-- "UInt8"
-- !private "SSL_CTX_new"
-- !private "SSL_CTX_use_certificate_chain_file"
-- "openSSLLocks"
-- !private "&&"
-- "Double"
-- !private "SSL_CTX_set_client_CA_list"
-- "pthread_self"
-- "SSL_VERIFY_NONE"
-- "..<"
-- "unsafeBitCast"
-- !private "SSL_read"
-- !private "UnsafeRawPointer"
-- "Threading"
-- "Int"
-- !private "SSL_load_client_CA_file"
-- !private "SSL_accept"
-- !private "print"
-- !private "~="
-- "=="
-- "AssignmentPrecedence"
-- !private "SSL_CTX_set_default_verify_paths"
 - "UInt"
-- !private "SSL_set_cipher_list"
-- "!="
-- "COpenSSL"
-- !private "TLSv1_2_method"
-- "CRYPTO_set_id_callback"
-- "CastingPrecedence"
-- "UnsafeMutablePointer"
-- "UnsafePointer"
-- !private "OpaquePointer"
-- "SSL_VERIFY_PEER"
-- "IntegerLiteralType"
-- !private "SSL_CTX_get_client_CA_list"
-- !private "OPENSSL_VERSION_NUMBER"
-- !private "DH_free"
-- "CRYPTO_set_locking_callback"
-- !private "SSL_set_fd"
-- !private "SSL_set_accept_state"
-- !private "X509_get_pubkey"
-- "UnsafeMutableRawPointer"
-- "SSL_CTX"
-- !private "??"
-- !private "SSL_write"
-- !private "SSL_CTRL_SET_TMP_DH"
-- !private "ERR_error_string_n"
-- !private "UnicodeScalarType"
-- !private "NetEvent"
-- "NetTCP"
-- "CRYPTO_num_locks"
+- "unsafeBitCast"
 - !private "SSL_CTX_ctrl"
-- !private "SSL_CTRL_SET_ECDH_AUTO"
-- !private "i2d_PUBKEY"
-- !private "invalidSocket"
-- !private "SSL_CTX_set_verify"
-- !private "openssl_compat_have_ecdh_auto"
-- !private "SSL_CTX_free"
-- !private "SSL_new"
-- !private "+"
-- !private "SSL_CTX_load_verify_locations"
-- !private "SSL_CTX_use_PrivateKey_file"
-- "Int8"
-- "Array"
-- !private "free"
-- !private "passwordCallbackFunc"
-- !private "SSL_get_cipher_list"
-- "ERR_load_crypto_strings"
-- "OpenSSLVerifyMode"
 - !private "TLSv1_method"
-- !private "EVP_PKEY_free"
-- "SSL_load_error_strings"
+- "UInt8"
+- !private "DH_free"
+- !private "SSL_write"
+- "CRYPTO_num_locks"
+- "Int32"
 - !private "OPENSSL_VERSION_TEXT"
-- !private "SSL_CTX_set_cipher_list"
-- !private "SSL_shutdown"
-- !private "||"
-- !private "!"
-- !private "SSL_ERROR_WANT_WRITE"
-- !private "ERR_get_error"
-- !private "SSL_CTX_use_certificate_file"
-- "SSL"
-- "SSL_library_init"
-- !private "BIO_free"
+- "String"
+- !private "free"
 - !private "SSL_free"
-- !private "ERR_reason_error_string"
-- !private "SSL_ERROR_WANT_READ"
-- "&"
-- !private "Unmanaged"
-- "CRYPTO_LOCK"
-- !private "SSL_FILETYPE_PEM"
+- "VerifyCACallbackFunc"
+- "Array"
+- !private "SSL_CTX_get_client_CA_list"
+- "X509_STORE_CTX"
+- "SSL_VERIFY_CLIENT_ONCE"
+- !private "SSL_CTX_load_verify_locations"
+- !private "SSL_read"
+- !private "&&"
+- !private "SSL_load_client_CA_file"
+- "Double"
+- !private "SSL_CTX_set_cipher_list"
+- !private "EVP_PKEY_free"
+- !private "SSL_set_accept_state"
+- !private "SSL_CTX_set_client_CA_list"
+- "Int8"
+- "Int"
+- !private "ERR_get_error"
+- !private "BIO_free"
+- "CRYPTO_set_locking_callback"
+- "OpenSSLVerifyMode"
+- !private "!"
+- "ERR_load_crypto_strings"
+- !private "SSL_get_error"
+- !private "SSL_CTX_use_certificate_chain_file"
+- !private "??"
+- !private "SSL_connect"
+- !private "TLSv1_2_method"
+- !private "SSL_CTX_use_PrivateKey_file"
+- !private "OPENSSL_VERSION_NUMBER"
+- "SSL_VERIFY_PEER"
+- "SSL"
+- !private "SSL_CTX_new"
+- !private "SSL_CTX_set_verify"
+- "SSL_library_init"
+- !private "SSL_CTX_free"
+- !private "SSL_CTRL_SET_ECDH_AUTO"
+- "openSSLLocks"
+- "!="
+- !private "SSL_accept"
+- "UnsafeMutablePointer"
+- "SSL_load_error_strings"
+- !private "SSL_CTX_set_default_passwd_cb"
+- !private "ERR_error_string_n"
+- "SSL_VERIFY_FAIL_IF_NO_PEER_CERT"
+- "SSL_CTX"
 depends-member:
 - !private ["Ps9AnyObject", "BIO_free"]
 - !private ["Ps9AnyObject", "BIO_new_file"]
@@ -233,6 +233,7 @@ depends-member:
 - ["Ps9AnyObject", "initSocket"]
 - !private ["Ps9AnyObject", "invalidSocket"]
 - ["Ps9AnyObject", "isEAgain"]
+- !private ["Ps9AnyObject", "isEmpty"]
 - ["Ps9AnyObject", "keyFilePassword"]
 - ["Ps9AnyObject", "lock"]
 - ["Ps9AnyObject", "makeFromFd"]
@@ -241,7 +242,6 @@ depends-member:
 - ["Ps9AnyObject", "openSSLLocks"]
 - ["Ps9AnyObject", "opensslVersionNumber"]
 - ["Ps9AnyObject", "opensslVersionText"]
-- !private ["Ps9AnyObject", "openssl_compat_have_ecdh_auto"]
 - ["Ps9AnyObject", "passwordCallback"]
 - ["Ps9AnyObject", "peerCertificate"]
 - !private ["Ps9AnyObject", "print"]
@@ -271,6 +271,7 @@ depends-member:
 - ["Ps9AnyObject", "useCertificateFile"]
 - ["Ps9AnyObject", "usePrivateKeyFile"]
 - ["Ps9AnyObject", "usingSSL"]
+- !private ["Ps9AnyObject", "utf8"]
 - !private ["Ps9AnyObject", "write"]
 - ["Ps9AnyObject", "writeIncomplete"]
 - ["Ps9AnyObject", ""]
@@ -280,6 +281,7 @@ depends-member:
 - ["Sa", "SubSequence"]
 - ["Sa", "_Element"]
 - ["Sa", "append"]
+- ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["Sa", "joined"]
 - !private ["Sa", "reserveCapacity"]
@@ -324,16 +326,26 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - ["Ps17BitwiseOperations", "init"]
 - ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
+- ["Sb", "deinit"]
+- ["Ps7CVarArg", "Index"]
+- ["Ps7CVarArg", "IndexDistance"]
 - ["Ps7CVarArg", "IntegerLiteralType"]
+- ["Ps7CVarArg", "Iterator"]
 - ["Ps7CVarArg", "Stride"]
+- ["Ps7CVarArg", "SubSequence"]
 - ["Ps7CVarArg", "_DisabledRangeIndex"]
+- ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "allocate"]
+- ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "deallocate"]
 - !private ["Ps7CVarArg", "hashValue"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "isEmpty"]
+- !private ["Ps7CVarArg", "joined"]
 - !private ["Ps7CVarArg", "pointee"]
-- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "reserveCapacity"]
+- ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "utf8"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Vs11ClosedRange", "deinit"]
 - ["Ps10Collection", "Index"]
@@ -365,7 +377,7 @@ depends-member:
 - !private ["Vs20CountableClosedRange", "deinit"]
 - ["Vs14CountableRange", "Iterator"]
 - ["Vs14CountableRange", "_Element"]
-- !private ["Vs14CountableRange", "deinit"]
+- ["Vs14CountableRange", "deinit"]
 - ["Ps28CustomDebugStringConvertible", "Index"]
 - ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - ["Ps28CustomDebugStringConvertible", "Iterator"]
@@ -382,7 +394,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "lock"]
 - !private ["Ps28CustomDebugStringConvertible", "pointee"]
 - !private ["Ps28CustomDebugStringConvertible", "reserveCapacity"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - ["Ps28CustomDebugStringConvertible", "subscript"]
 - ["Ps28CustomDebugStringConvertible", "unlock"]
 - !private ["Ps28CustomDebugStringConvertible", "utf8"]
@@ -422,7 +433,6 @@ depends-member:
 - ["Ps17CustomReflectable", "lock"]
 - !private ["Ps17CustomReflectable", "pointee"]
 - !private ["Ps17CustomReflectable", "reserveCapacity"]
-- ["Ps17CustomReflectable", "some"]
 - ["Ps17CustomReflectable", "subscript"]
 - ["Ps17CustomReflectable", "unlock"]
 - !private ["Ps17CustomReflectable", "utf8"]
@@ -456,7 +466,7 @@ depends-member:
 - ["Vs26DefaultRandomAccessIndices", "Iterator"]
 - ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - ["Vs26DefaultRandomAccessIndices", "_Element"]
-- !private ["Sd", "deinit"]
+- ["Sd", "deinit"]
 - ["Ps9Equatable", "Element"]
 - ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "Iterator"]
@@ -553,7 +563,6 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "advanced"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "isEmpty"]
 - !private ["Ps32ExpressibleByStringInterpolation", "utf8"]
@@ -563,6 +572,7 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "isEmpty"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "utf8"]
+- ["OC10PerfectNet8NetEvent6Filter", "deinit"]
 - !private ["OC10PerfectNet8NetEvent6Filter", "read"]
 - !private ["OC10PerfectNet8NetEvent6Filter", "timer"]
 - !private ["OC10PerfectNet8NetEvent6Filter", "write"]
@@ -585,7 +595,7 @@ depends-member:
 - ["Ps8Hashable", "tlsV1_2"]
 - !private ["Ps8Hashable", "utf8"]
 - ["Ps8Hashable", ""]
-- !private ["SQ", "deinit"]
+- ["SQ", "deinit"]
 - ["Ps9Indexable", "Index"]
 - ["Ps9Indexable", "IndexDistance"]
 - ["Ps9Indexable", "Indices"]
@@ -618,12 +628,12 @@ depends-member:
 - ["Si", "IntegerLiteralType"]
 - ["Si", "Stride"]
 - ["Si", "_DisabledRangeIndex"]
-- !private ["Si", "deinit"]
+- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
 - ["Si", "init"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "Stride"]
-- !private ["Vs5Int32", "deinit"]
+- ["Vs5Int32", "deinit"]
 - !private ["Vs5Int32", "init"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
@@ -638,6 +648,7 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - ["Ps17IntegerArithmetic", "init"]
 - ["Ps16IteratorProtocol", "Element"]
+- ["CV13PerfectThread9Threading4Lock", "deinit"]
 - ["CV13PerfectThread9Threading4Lock", "init"]
 - ["CV13PerfectThread9Threading4Lock", "lock"]
 - ["CV13PerfectThread9Threading4Lock", "unlock"]
@@ -678,6 +689,27 @@ depends-member:
 - ["Ps16MutableIndexable", "unlock"]
 - ["Vs12MutableSlice", "lock"]
 - ["Vs12MutableSlice", "unlock"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "isEmpty"]
+- !private ["PSo8NSCoding", "utf8"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "isEmpty"]
+- !private ["PSo9NSCopying", "utf8"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "isEmpty"]
+- !private ["PSo16NSMutableCopying", "utf8"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "isEmpty"]
+- !private ["CSo8NSObject", "utf8"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "isEmpty"]
+- !private ["PSo16NSObjectProtocol", "utf8"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "isEmpty"]
+- !private ["PSo14NSSecureCoding", "utf8"]
+- ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "isEmpty"]
+- !private ["CSo8NSString", "utf8"]
 - !private ["C10PerfectNet8NetEvent", "Filter"]
 - !private ["C10PerfectNet8NetEvent", "add"]
 - !private ["C10PerfectNet8NetEvent", "noTimeout"]
@@ -774,6 +806,7 @@ depends-member:
 - ["C10PerfectNet6NetTCP", "checkPrivateKey"]
 - ["C10PerfectNet6NetTCP", "cipherList"]
 - ["C10PerfectNet6NetTCP", "close"]
+- ["C10PerfectNet6NetTCP", "deinit"]
 - ["C10PerfectNet6NetTCP", "endSSL"]
 - ["C10PerfectNet6NetTCP", "errorCode"]
 - ["C10PerfectNet6NetTCP", "errorStr"]
@@ -793,7 +826,6 @@ depends-member:
 - ["C10PerfectNet6NetTCP", "openSSLLocks"]
 - ["C10PerfectNet6NetTCP", "opensslVersionNumber"]
 - ["C10PerfectNet6NetTCP", "opensslVersionText"]
-- !private ["C10PerfectNet6NetTCP", "openssl_compat_have_ecdh_auto"]
 - ["C10PerfectNet6NetTCP", "passwordCallback"]
 - !private ["C10PerfectNet6NetTCP", "passwordCallbackFunc"]
 - ["C10PerfectNet6NetTCP", "peerCertificate"]
@@ -938,7 +970,6 @@ depends-member:
 - ["C10PerfectNet9NetTCPSSL", "openSSLLocks"]
 - ["C10PerfectNet9NetTCPSSL", "opensslVersionNumber"]
 - ["C10PerfectNet9NetTCPSSL", "opensslVersionText"]
-- !private ["C10PerfectNet9NetTCPSSL", "openssl_compat_have_ecdh_auto"]
 - ["C10PerfectNet9NetTCPSSL", "passwordCallback"]
 - !private ["C10PerfectNet9NetTCPSSL", "passwordCallbackFunc"]
 - ["C10PerfectNet9NetTCPSSL", "peerCertificate"]
@@ -1033,8 +1064,7 @@ depends-member:
 - ["Ps9OptionSet", "update"]
 - ["Ps9OptionSet", ""]
 - !private ["Sq", "advanced"]
-- !private ["Sq", "deinit"]
-- ["Sq", "some"]
+- ["Sq", "deinit"]
 - ["Ps22RandomAccessCollection", "Index"]
 - ["Ps22RandomAccessCollection", "IndexDistance"]
 - ["Ps22RandomAccessCollection", "Indices"]
@@ -1122,6 +1152,7 @@ depends-member:
 - ["Ps16RawRepresentable", "union"]
 - ["Ps16RawRepresentable", "update"]
 - ["Ps16RawRepresentable", ""]
+- ["CC10PerfectNet6NetTCP15ReferenceBuffer", "deinit"]
 - ["Ps8Sequence", "Element"]
 - ["Ps8Sequence", "Index"]
 - ["Ps8Sequence", "IndexDistance"]
@@ -1191,7 +1222,7 @@ depends-member:
 - ["Ps10Strideable", "init"]
 - !private ["Ps10Strideable", "pointee"]
 - !private ["Ps10Strideable", "subscript"]
-- !private ["SS", "deinit"]
+- ["SS", "deinit"]
 - ["SS", "init"]
 - !private ["SS", "isEmpty"]
 - !private ["SS", "utf8"]
@@ -1209,7 +1240,7 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "isEmpty"]
 - !private ["Ps20TextOutputStreamable", "utf8"]
 - ["V13PerfectThread9Threading", "Lock"]
-- !private ["Su", "deinit"]
+- ["Su", "deinit"]
 - !private ["Su", "init"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -1217,19 +1248,24 @@ depends-member:
 - !private ["Vs5UInt8", "deinit"]
 - !private ["VSS8UTF8View", "IndexDistance"]
 - !private ["VSS8UTF8View", "count"]
+- ["VSS8UTF8View", "deinit"]
 - !private ["Sc", "deinit"]
+- ["Vs9Unmanaged", "deinit"]
 - !private ["Vs9Unmanaged", "fromOpaque"]
 - !private ["Vs9Unmanaged", "passUnretained"]
 - !private ["Vs9Unmanaged", "takeUnretainedValue"]
 - !private ["Vs9Unmanaged", "toOpaque"]
 - !private ["Sp", "allocate"]
 - !private ["Sp", "deallocate"]
+- ["Sp", "deinit"]
 - !private ["Sp", "init"]
 - !private ["Sp", "pointee"]
 - !private ["Sp", "subscript"]
+- ["Sv", "deinit"]
 - !private ["Sv", "init"]
-- !private ["SP", "deinit"]
+- ["SP", "deinit"]
 - !private ["SV", "advanced"]
+- ["SV", "deinit"]
 - !private ["SV", "init"]
 - !private ["Ps15UnsignedInteger", "init"]
 - ["CC10PerfectNet9NetTCPSSL4X509", "COpenSSL"]
@@ -1289,6 +1325,9 @@ depends-member:
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "isEmpty"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "isEmpty"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "utf8"]
 - ["Ps9_Hashable", "IntegerLiteralType"]
 - ["Ps9_Hashable", "Stride"]
 - ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -1322,6 +1361,24 @@ depends-member:
 - ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
 - ["Ps18_IntegerArithmetic", "init"]
+- ["Ps21_ObjectiveCBridgeable", "Index"]
+- ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
+- ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- ["Ps21_ObjectiveCBridgeable", "Stride"]
+- ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- ["Ps21_ObjectiveCBridgeable", "_Element"]
+- ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "advanced"]
+- ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "isEmpty"]
+- !private ["Ps21_ObjectiveCBridgeable", "joined"]
+- !private ["Ps21_ObjectiveCBridgeable", "reserveCapacity"]
+- ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "utf8"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps8_Pointer", "advanced"]
 - !private ["Ps8_Pointer", "allocate"]
@@ -1368,26 +1425,26 @@ depends-nominal:
 - "Ps23CustomStringConvertible"
 - "Vs27DefaultBidirectionalIndices"
 - "Vs26DefaultRandomAccessIndices"
-- !private "Sd"
+- "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
-- "Ps23ExpressibleByNilLiteral"
+- !private "Ps23ExpressibleByNilLiteral"
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "OC10PerfectNet8NetEvent6Filter"
+- "OC10PerfectNet8NetEvent6Filter"
 - !private "Sf"
 - "Ps8Hashable"
-- !private "SQ"
+- "SQ"
 - "Ps9Indexable"
 - "Ps13IndexableBase"
 - "Vs16IndexingIterator"
 - "Si"
 - !private "Vs5Int16"
-- !private "Vs5Int32"
+- "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
 - "Ps7Integer"
@@ -1399,6 +1456,13 @@ depends-nominal:
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
 - "Vs12MutableSlice"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - !private "C10PerfectNet8NetEvent"
 - "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"
@@ -1412,6 +1476,7 @@ depends-nominal:
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
 - "Ps16RawRepresentable"
+- "CC10PerfectNet6NetTCP15ReferenceBuffer"
 - "Ps8Sequence"
 - "Ps10SetAlgebra"
 - "Ps13SignedInteger"
@@ -1424,18 +1489,18 @@ depends-nominal:
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - "V13PerfectThread9Threading"
-- !private "Su"
+- "Su"
 - !private "Vs6UInt16"
 - !private "Vs6UInt32"
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
-- !private "VSS8UTF8View"
+- "VSS8UTF8View"
 - !private "Sc"
-- !private "Vs9Unmanaged"
-- !private "Sp"
-- !private "Sv"
-- !private "SP"
-- !private "SV"
+- "Vs9Unmanaged"
+- "Sp"
+- "Sv"
+- "SP"
+- "SV"
 - !private "Ps15UnsignedInteger"
 - "CC10PerfectNet9NetTCPSSL4X509"
 - "Ps14_ArrayProtocol"
@@ -1447,10 +1512,12 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps14_Incrementable"
 - "Ps8_Integer"
 - "Ps18_IntegerArithmetic"
+- "Ps21_ObjectiveCBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps8_Pointer"
 - "Ps14_SignedInteger"
@@ -1459,26 +1526,55 @@ depends-nominal:
 - !private "VSC18stack_st_X509_NAME"
 depends-dynamic-lookup:
 depends-external:
-- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
-- "/usr/lib/swift/shims/Visibility.h"
-- "/usr/lib/swift/shims/SwiftStdint.h"
-- "/usr/lib/swift/shims/UnicodeShims.h"
-- "/usr/lib/swift/shims/SwiftStddef.h"
-- "/usr/lib/swift/shims/LibcShims.h"
-- "/usr/lib/swift/shims/RuntimeStubs.h"
-- "/usr/lib/swift/shims/RuntimeShims.h"
-- "/usr/lib/swift/shims/RefCount.h"
-- "/usr/lib/swift/shims/HeapObject.h"
-- "/usr/lib/swift/shims/GlobalObjects.h"
-- "/usr/lib/swift/shims/FoundationShims.h"
-- "/usr/lib/swift/shims/DispatchShims.h"
-- "/usr/lib/swift/shims/CoreFoundationShims.h"
-- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
-- "/usr/lib/swift/shims/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/home/collegboi/PerfectServer/.build/debug/PerfectThread.swiftmodule"
-- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
-- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
-- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
-- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl23.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pqueue.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dtls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../tls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl3.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../kssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../hmac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../e_os2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pkcs7.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509_vfy.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../sha.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../rsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ec.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bn.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../asn1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../obj_mac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../objects.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../evp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../buffer.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../comp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../lhash.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../err.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../symhacks.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ossl_typ.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslv.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../safestack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../stack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../crypto.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 interface-hash: "acf54772d1655ada76db5f2474dd8629"

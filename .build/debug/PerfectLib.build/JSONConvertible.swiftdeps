@@ -44,67 +44,66 @@ provides-member:
 - ["Vs10Dictionary", ""]
 - ["C10PerfectLib21JSONConvertibleObject", "getJSONValue"]
 - ["SS", "jsonDecode"]
+provides-dynamic-lookup:
 depends-top-level:
-- !private "lowSurrogateUpperBound"
-- "Dictionary"
-- "Int32"
-- "JSONDecoding"
-- !private "&&"
-- "Array"
-- !private "-"
-- !private "jsonBackSlash"
-- !private "highSurrogateUpperBound"
-- !private "||"
-- "Double"
-- !private "highSurrogateLowerBound"
+- "Int64"
+- !private "jsonCR"
+- "JSONConversionError"
+- !private "jsonBackSpace"
+- !private "jsonOpenObject"
+- !private "jsonCloseArray"
+- !private "BooleanLiteralType"
+- "Int"
+- "UInt"
 - "String"
 - "StringLiteralType"
-- !private "surrogateBase"
-- "JSONConvertibleObject"
-- !private "UnicodeScalarType"
-- "UnicodeScalar"
-- "Error"
-- !private "jsonLF"
-- "strtoul"
-- !private "jsonQuoteDouble"
-- !private "jsonColon"
-- "UInt64"
-- !private "jsonCloseObject"
-- !private "!"
-- !private "!="
-- !private "Character"
-- "Int"
-- "FloatLiteralType"
-- !private "jsonBackSpace"
-- "Int64"
-- !private "lowSurrogateLowerBound"
-- !private "jsonCloseArray"
-- "UInt"
-- "JSONConversionError"
-- !private "BooleanLiteralType"
-- !private "+"
-- !private "jsonComma"
-- !private "jsonOpenObject"
-- !private "*"
-- "JSONConvertible"
-- !private "jsonCR"
-- !private "jsonWhiteSpace"
-- !private "JSONDecodeState"
-- !private "jsonTab"
-- "JSONConvertibleNull"
-- "Optional"
-- !private "jsonOpenArray"
-- !private "~="
 - !private "surrogateStep"
-- !private "=="
-- !private "..."
-- "CastingPrecedence"
-- "AssignmentPrecedence"
-- !private "jsonFormFeed"
 - "jsonEncodedStringWorkAround"
+- !private "jsonComma"
+- "UInt64"
+- "Array"
+- !private "..."
+- !private "*"
+- "Optional"
+- "JSONConvertibleNull"
+- !private "Character"
+- !private "jsonColon"
+- !private "highSurrogateUpperBound"
+- "Dictionary"
+- !private "lowSurrogateUpperBound"
+- !private "+"
+- "Int32"
+- !private "&&"
+- "JSONDecoding"
+- !private "jsonCloseObject"
+- "strtoul"
+- !private "JSONDecodeState"
+- !private "jsonLF"
+- !private "UnicodeScalarType"
+- !private "jsonQuoteDouble"
+- "Error"
+- "UnicodeScalar"
+- !private "surrogateBase"
+- "CastingPrecedence"
 - "Bool"
+- "AssignmentPrecedence"
+- !private "~="
+- !private "||"
+- !private "=="
+- !private "jsonBackSlash"
+- !private "highSurrogateLowerBound"
+- !private "jsonFormFeed"
 - "UInt32"
-- "IntegerLiteralType"
+- !private "!="
+- "Double"
+- "JSONConvertible"
+- !private "!"
+- !private "jsonTab"
+- !private "lowSurrogateLowerBound"
+- !private "jsonWhiteSpace"
+- !private "jsonOpenArray"
+- "JSONConvertibleObject"
+- !private "-"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "String"]
 - !private ["Ps16AbsoluteValuable", "init"]
@@ -120,12 +119,13 @@ depends-member:
 - ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UInt32"]
 - !private ["Ps9AnyObject", "UnicodeScalar"]
+- !private ["Ps9AnyObject", "append"]
 - !private ["Ps9AnyObject", "createJSONConvertibleObject"]
 - !private ["Ps9AnyObject", "g"]
 - !private ["Ps9AnyObject", "getJSONValues"]
 - !private ["Ps9AnyObject", "highSurrogateLowerBound"]
 - !private ["Ps9AnyObject", "highSurrogateUpperBound"]
-- !private ["Ps9AnyObject", "init"]
+- ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "jsonBackSlash"]
 - !private ["Ps9AnyObject", "jsonBackSpace"]
 - !private ["Ps9AnyObject", "jsonCR"]
@@ -157,6 +157,7 @@ depends-member:
 - !private ["Ps9AnyObject", "strtoul"]
 - !private ["Ps9AnyObject", "surrogateBase"]
 - !private ["Ps9AnyObject", "surrogateStep"]
+- !private ["Ps9AnyObject", "unicodeScalars"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Iterator"]
 - ["Sa", "String"]
@@ -193,12 +194,29 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - ["Sb", "jsonEncodedString"]
+- !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "JSONConversionError"]
+- !private ["Ps7CVarArg", "JSONDecodeState"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "String"]
+- !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
+- !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "jsonBackSlash"]
+- !private ["Ps7CVarArg", "jsonBackSpace"]
+- !private ["Ps7CVarArg", "jsonCR"]
 - ["Ps7CVarArg", "jsonEncodedString"]
+- !private ["Ps7CVarArg", "jsonEncodedStringWorkAround"]
+- !private ["Ps7CVarArg", "jsonFormFeed"]
+- !private ["Ps7CVarArg", "jsonLF"]
+- !private ["Ps7CVarArg", "jsonQuoteDouble"]
+- !private ["Ps7CVarArg", "jsonTab"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Ps7CVarArg", "unicodeScalars"]
 - ["Vs9Character", "deinit"]
 - !private ["Vs9Character", "init"]
 - !private ["Vs11ClosedRange", "deinit"]
@@ -261,7 +279,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "jsonQuoteDouble"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonTab"]
 - !private ["Ps28CustomDebugStringConvertible", "makeIterator"]
-- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "unicodeScalars"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
@@ -316,7 +333,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "jsonQuoteDouble"]
 - !private ["Ps17CustomReflectable", "jsonTab"]
 - !private ["Ps17CustomReflectable", "makeIterator"]
-- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "unicodeScalars"]
 - !private ["Ps23CustomStringConvertible", "Index"]
@@ -392,6 +408,7 @@ depends-member:
 - !private ["Ps9Equatable", "unicodeScalars"]
 - ["Ps5Error", "_code"]
 - ["Ps5Error", "_domain"]
+- ["Ps5Error", "_getEmbeddedNSError"]
 - ["Ps5Error", "_userInfo"]
 - !private ["Ps5Error", "invalidKey"]
 - !private ["Ps5Error", "notConvertible"]
@@ -438,7 +455,6 @@ depends-member:
 - ["Ps27ExpressibleByIntegerLiteral", "jsonEncodedString"]
 - !private ["Ps23ExpressibleByNilLiteral", "JSONConversionError"]
 - ["Ps23ExpressibleByNilLiteral", "jsonEncodedString"]
-- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "JSONConversionError"]
 - !private ["Ps32ExpressibleByStringInterpolation", "JSONDecodeState"]
 - !private ["Ps32ExpressibleByStringInterpolation", "String"]
@@ -566,6 +582,7 @@ depends-member:
 - !private ["Ps16IteratorProtocol", "next"]
 - ["O10PerfectLib19JSONConversionError", "_code"]
 - ["O10PerfectLib19JSONConversionError", "_domain"]
+- ["O10PerfectLib19JSONConversionError", "_getEmbeddedNSError"]
 - ["O10PerfectLib19JSONConversionError", "_userInfo"]
 - ["O10PerfectLib19JSONConversionError", "deinit"]
 - ["O10PerfectLib19JSONConversionError", "invalidKey"]
@@ -596,7 +613,6 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "jsonQuoteDouble"]
 - !private ["P10PerfectLib15JSONConvertible", "jsonTab"]
 - !private ["P10PerfectLib15JSONConvertible", "setJSONValues"]
-- ["P10PerfectLib15JSONConvertible", "some"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["P10PerfectLib15JSONConvertible", "unicodeScalars"]
 - ["P10PerfectLib15JSONConvertible", ""]
@@ -670,12 +686,39 @@ depends-member:
 - !private ["Ps16MutableIndexable", "init"]
 - ["Ps16MutableIndexable", "jsonEncodedString"]
 - !private ["Ps16MutableIndexable", "jsonEncodedStringWorkAround"]
+- !private ["PSo8NSCoding", "append"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "jsonEncodedString"]
+- !private ["PSo8NSCoding", "unicodeScalars"]
+- !private ["PSo9NSCopying", "append"]
+- ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "jsonEncodedString"]
+- !private ["PSo9NSCopying", "unicodeScalars"]
+- !private ["PSo16NSMutableCopying", "append"]
+- ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "jsonEncodedString"]
+- !private ["PSo16NSMutableCopying", "unicodeScalars"]
+- !private ["CSo8NSObject", "append"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "jsonEncodedString"]
+- !private ["CSo8NSObject", "unicodeScalars"]
+- !private ["PSo16NSObjectProtocol", "append"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "jsonEncodedString"]
+- !private ["PSo16NSObjectProtocol", "unicodeScalars"]
+- !private ["PSo14NSSecureCoding", "append"]
+- ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "jsonEncodedString"]
+- !private ["PSo14NSSecureCoding", "unicodeScalars"]
+- !private ["CSo8NSString", "append"]
+- ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "jsonEncodedString"]
+- !private ["CSo8NSString", "unicodeScalars"]
 - !private ["Sq", "JSONConversionError"]
 - !private ["Sq", "JSONConvertible"]
 - ["Sq", "String"]
 - ["Sq", "deinit"]
 - ["Sq", "jsonEncodedString"]
-- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
@@ -817,33 +860,6 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "init"]
 - ["Ps14_ArrayProtocol", "jsonEncodedString"]
 - !private ["Ps14_ArrayProtocol", "jsonEncodedStringWorkAround"]
-- !private ["P10Foundation13_BitShiftable", "IntegerLiteralType"]
-- !private ["P10Foundation13_BitShiftable", "Stride"]
-- !private ["P10Foundation13_BitShiftable", "String"]
-- !private ["P10Foundation13_BitShiftable", "_DisabledRangeIndex"]
-- ["P10Foundation13_BitShiftable", "init"]
-- ["P10Foundation13_BitShiftable", "jsonEncodedString"]
-- !private ["P10Foundation12_CFBridgable", "Index"]
-- !private ["P10Foundation12_CFBridgable", "Iterator"]
-- !private ["P10Foundation12_CFBridgable", "JSONConversionError"]
-- !private ["P10Foundation12_CFBridgable", "JSONDecodeState"]
-- !private ["P10Foundation12_CFBridgable", "String"]
-- !private ["P10Foundation12_CFBridgable", "SubSequence"]
-- !private ["P10Foundation12_CFBridgable", "_Element"]
-- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
-- !private ["P10Foundation12_CFBridgable", "append"]
-- ["P10Foundation12_CFBridgable", "init"]
-- !private ["P10Foundation12_CFBridgable", "jsonBackSlash"]
-- !private ["P10Foundation12_CFBridgable", "jsonBackSpace"]
-- !private ["P10Foundation12_CFBridgable", "jsonCR"]
-- ["P10Foundation12_CFBridgable", "jsonEncodedString"]
-- !private ["P10Foundation12_CFBridgable", "jsonEncodedStringWorkAround"]
-- !private ["P10Foundation12_CFBridgable", "jsonFormFeed"]
-- !private ["P10Foundation12_CFBridgable", "jsonLF"]
-- !private ["P10Foundation12_CFBridgable", "jsonQuoteDouble"]
-- !private ["P10Foundation12_CFBridgable", "jsonTab"]
-- !private ["P10Foundation12_CFBridgable", "subscript"]
-- !private ["P10Foundation12_CFBridgable", "unicodeScalars"]
 - !private ["Ps15_CVarArgAligned", "String"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - ["Ps15_CVarArgAligned", "jsonEncodedString"]
@@ -931,12 +947,10 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "jsonQuoteDouble"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "jsonTab"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "unicodeScalars"]
-- !private ["P10Foundation20_FloatArithmeticType", "String"]
-- !private ["P10Foundation20_FloatArithmeticType", "init"]
-- ["P10Foundation20_FloatArithmeticType", "jsonEncodedString"]
-- !private ["P10Foundation10_FloatLike", "String"]
-- !private ["P10Foundation10_FloatLike", "init"]
-- ["P10Foundation10_FloatLike", "jsonEncodedString"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "append"]
+- ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "jsonEncodedString"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "unicodeScalars"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "JSONConversionError"]
 - !private ["Ps9_Hashable", "JSONDecodeState"]
@@ -977,80 +991,30 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - ["Ps18_IntegerArithmetic", "init"]
 - ["Ps18_IntegerArithmetic", "jsonEncodedString"]
-- !private ["P10Foundation12_IntegerLike", "IntegerLiteralType"]
-- !private ["P10Foundation12_IntegerLike", "Stride"]
-- !private ["P10Foundation12_IntegerLike", "String"]
-- !private ["P10Foundation12_IntegerLike", "_DisabledRangeIndex"]
-- ["P10Foundation12_IntegerLike", "init"]
-- ["P10Foundation12_IntegerLike", "jsonEncodedString"]
-- !private ["P10Foundation12_NSBridgable", "Index"]
-- !private ["P10Foundation12_NSBridgable", "Iterator"]
-- !private ["P10Foundation12_NSBridgable", "JSONConversionError"]
-- !private ["P10Foundation12_NSBridgable", "JSONDecodeState"]
-- !private ["P10Foundation12_NSBridgable", "String"]
-- !private ["P10Foundation12_NSBridgable", "SubSequence"]
-- !private ["P10Foundation12_NSBridgable", "_Element"]
-- !private ["P10Foundation12_NSBridgable", "append"]
-- ["P10Foundation12_NSBridgable", "init"]
-- !private ["P10Foundation12_NSBridgable", "jsonBackSlash"]
-- !private ["P10Foundation12_NSBridgable", "jsonBackSpace"]
-- !private ["P10Foundation12_NSBridgable", "jsonCR"]
-- ["P10Foundation12_NSBridgable", "jsonEncodedString"]
-- !private ["P10Foundation12_NSBridgable", "jsonEncodedStringWorkAround"]
-- !private ["P10Foundation12_NSBridgable", "jsonFormFeed"]
-- !private ["P10Foundation12_NSBridgable", "jsonLF"]
-- !private ["P10Foundation12_NSBridgable", "jsonQuoteDouble"]
-- !private ["P10Foundation12_NSBridgable", "jsonTab"]
-- !private ["P10Foundation12_NSBridgable", "subscript"]
-- !private ["P10Foundation12_NSBridgable", "unicodeScalars"]
-- !private ["P10Foundation17_ObjectBridgeable", "Index"]
-- !private ["P10Foundation17_ObjectBridgeable", "IntegerLiteralType"]
-- !private ["P10Foundation17_ObjectBridgeable", "Iterator"]
-- !private ["P10Foundation17_ObjectBridgeable", "JSONConversionError"]
-- !private ["P10Foundation17_ObjectBridgeable", "JSONDecodeState"]
-- !private ["P10Foundation17_ObjectBridgeable", "Stride"]
-- !private ["P10Foundation17_ObjectBridgeable", "String"]
-- !private ["P10Foundation17_ObjectBridgeable", "SubSequence"]
-- !private ["P10Foundation17_ObjectBridgeable", "_DisabledRangeIndex"]
-- !private ["P10Foundation17_ObjectBridgeable", "_Element"]
-- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
-- !private ["P10Foundation17_ObjectBridgeable", "append"]
-- ["P10Foundation17_ObjectBridgeable", "init"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonBackSlash"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonBackSpace"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonCR"]
-- ["P10Foundation17_ObjectBridgeable", "jsonEncodedString"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonEncodedStringWorkAround"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonFormFeed"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonLF"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonQuoteDouble"]
-- !private ["P10Foundation17_ObjectBridgeable", "jsonTab"]
-- !private ["P10Foundation17_ObjectBridgeable", "subscript"]
-- !private ["P10Foundation17_ObjectBridgeable", "unicodeScalars"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "Index"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "IntegerLiteralType"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "Iterator"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "JSONConversionError"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "JSONDecodeState"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "Stride"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "String"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "SubSequence"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "_DisabledRangeIndex"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "_Element"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "append"]
-- ["P10Foundation21_ObjectTypeBridgeable", "init"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonBackSlash"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonBackSpace"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonCR"]
-- ["P10Foundation21_ObjectTypeBridgeable", "jsonEncodedString"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonEncodedStringWorkAround"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonFormFeed"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonLF"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonQuoteDouble"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "jsonTab"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "subscript"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "unicodeScalars"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "JSONConversionError"]
+- !private ["Ps21_ObjectiveCBridgeable", "JSONDecodeState"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "String"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonBackSlash"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonBackSpace"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonCR"]
+- ["Ps21_ObjectiveCBridgeable", "jsonEncodedString"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonEncodedStringWorkAround"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonFormFeed"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonLF"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonQuoteDouble"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonTab"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "unicodeScalars"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -1123,6 +1087,13 @@ depends-nominal:
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
 - "Ps16MutableIndexable"
+- "PSo8NSCoding"
+- "PSo9NSCopying"
+- "PSo16NSMutableCopying"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- "PSo14NSSecureCoding"
+- "CSo8NSString"
 - "Sq"
 - "Ps22RandomAccessCollection"
 - "Ps21RandomAccessIndexable"
@@ -1145,8 +1116,6 @@ depends-nominal:
 - "SP"
 - "Ps15UnsignedInteger"
 - "Ps14_ArrayProtocol"
-- "P10Foundation13_BitShiftable"
-- "P10Foundation12_CFBridgable"
 - "Ps15_CVarArgAligned"
 - "Ps22_CVarArgPassedAsDouble"
 - "Ps24_DestructorSafeContainer"
@@ -1158,42 +1127,23 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- "P10Foundation20_FloatArithmeticType"
-- "P10Foundation10_FloatLike"
+- "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps14_Incrementable"
 - "Ps8_Integer"
 - "Ps18_IntegerArithmetic"
-- "P10Foundation12_IntegerLike"
-- "P10Foundation12_NSBridgable"
-- "P10Foundation17_ObjectBridgeable"
-- "P10Foundation21_ObjectTypeBridgeable"
+- "Ps21_ObjectiveCBridgeable"
 - "Vs26_OptionalNilComparisonType"
 - "Ps14_SignedInteger"
 - "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
-- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
-- "/usr/lib/swift/shims/Visibility.h"
-- "/usr/lib/swift/shims/SwiftStdint.h"
-- "/usr/lib/swift/shims/UnicodeShims.h"
-- "/usr/lib/swift/shims/SwiftStddef.h"
-- "/usr/lib/swift/shims/LibcShims.h"
-- "/usr/lib/swift/shims/RuntimeStubs.h"
-- "/usr/lib/swift/shims/RuntimeShims.h"
-- "/usr/lib/swift/shims/RefCount.h"
-- "/usr/lib/swift/shims/HeapObject.h"
-- "/usr/lib/swift/shims/GlobalObjects.h"
-- "/usr/lib/swift/shims/FoundationShims.h"
-- "/usr/lib/swift/shims/DispatchShims.h"
-- "/usr/lib/swift/shims/CoreFoundationShims.h"
-- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
-- "/usr/lib/swift/shims/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
-- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
-- "/usr/lib/swift/dispatch/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
-- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
-- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 interface-hash: "fe16054c092fb9817b0eea4f1d38b999"

@@ -1,17 +1,17 @@
 {
   "": {
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/master.swiftdeps"
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/master.swiftdeps"
   },
-  "/home/collegboi/PerfectServer/Packages/PerfectThread-2.0.4/Sources/ThreadQueue.swift": {
-    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.d",
-    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.swift.o",
-    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue~partial.swiftmodule",
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.swiftdeps"
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectThread-2.0.4/Sources/Threading.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/Threading.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/Threading.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/Threading~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/Threading.swiftdeps"
   },
-  "/home/collegboi/PerfectServer/Packages/PerfectThread-2.0.4/Sources/Threading.swift": {
-    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/Threading.d",
-    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/Threading.swift.o",
-    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/Threading~partial.swiftmodule",
-    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectThread.build/Threading.swiftdeps"
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectThread-2.0.4/Sources/ThreadQueue.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.build/ThreadQueue.swiftdeps"
   }
 }

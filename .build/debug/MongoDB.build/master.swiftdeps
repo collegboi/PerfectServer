@@ -1,11 +1,10 @@
-version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
-options: "02292d8734c842f6b55abd5267d106e3"
-build_time: [538528113, 312854000]
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "1dc2f115ec632d644d6eb1e373b2c79b"
+build_time: [538661507, 188988000]
 inputs:
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoClient.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoConnectionPool.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoGridFS.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoCollection.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoCursor.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/BSON.swift": [538523734, 0]
-  "/home/collegboi/PerfectServer/Packages/MongoDB-2.0.8/Sources/MongoDB/MongoDatabase.swift": [538523734, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/BSON.swift": [538231191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/MongoClient.swift": [538231191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/MongoCollection.swift": [538231191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/MongoConnectionPool.swift": [538231191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/MongoCursor.swift": [538231191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDB-2.0.6/Sources/MongoDB/MongoDatabase.swift": [538231191, 0]

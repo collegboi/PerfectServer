@@ -10,12 +10,13 @@ provides-member:
 - ["Si", "months"]
 - ["Si", "quarters"]
 - ["Si", "years"]
+provides-dynamic-lookup:
 depends-top-level:
-- !private "IntegerLiteralType"
-- !private "FloatLiteralType"
-- !private "*"
 - "Int"
+- !private "FloatLiteralType"
 - "Duration"
+- !private "IntegerLiteralType"
+- !private "*"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Duration"]
 - !private ["Ps7CVarArg", "Duration"]
@@ -46,15 +47,12 @@ depends-member:
 - !private ["Ps13SignedInteger", "Duration"]
 - !private ["Ps12SignedNumber", "Duration"]
 - !private ["Ps10Strideable", "Duration"]
-- !private ["P10Foundation13_BitShiftable", "Duration"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Duration"]
 - !private ["Ps9_Hashable", "Duration"]
 - !private ["Ps14_Incrementable", "Duration"]
 - !private ["Ps8_Integer", "Duration"]
 - !private ["Ps18_IntegerArithmetic", "Duration"]
-- !private ["P10Foundation12_IntegerLike", "Duration"]
-- !private ["P10Foundation17_ObjectBridgeable", "Duration"]
-- !private ["P10Foundation21_ObjectTypeBridgeable", "Duration"]
+- !private ["Ps21_ObjectiveCBridgeable", "Duration"]
 - !private ["Ps14_SignedInteger", "Duration"]
 - !private ["Ps11_Strideable", "Duration"]
 depends-nominal:
@@ -76,38 +74,22 @@ depends-nominal:
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
-- !private "P10Foundation13_BitShiftable"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- !private "P10Foundation12_IntegerLike"
-- !private "P10Foundation17_ObjectBridgeable"
-- !private "P10Foundation21_ObjectTypeBridgeable"
+- !private "Ps21_ObjectiveCBridgeable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
-- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
-- "/usr/lib/swift/shims/Visibility.h"
-- "/usr/lib/swift/shims/SwiftStdint.h"
-- "/usr/lib/swift/shims/UnicodeShims.h"
-- "/usr/lib/swift/shims/SwiftStddef.h"
-- "/usr/lib/swift/shims/LibcShims.h"
-- "/usr/lib/swift/shims/RuntimeStubs.h"
-- "/usr/lib/swift/shims/RuntimeShims.h"
-- "/usr/lib/swift/shims/RefCount.h"
-- "/usr/lib/swift/shims/HeapObject.h"
-- "/usr/lib/swift/shims/GlobalObjects.h"
-- "/usr/lib/swift/shims/FoundationShims.h"
-- "/usr/lib/swift/shims/DispatchShims.h"
-- "/usr/lib/swift/shims/CoreFoundationShims.h"
-- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
-- "/usr/lib/swift/shims/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
-- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
-- "/usr/lib/swift/dispatch/module.modulemap"
-- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 interface-hash: "5e849ec9947801db66604f7dbf34ad23"
