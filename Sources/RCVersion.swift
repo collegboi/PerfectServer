@@ -55,9 +55,10 @@ class RCVersion {
         do {
             
             //let scoreArray: [String:Any] = dict
-            result = try dict.jsonEncodedString()
+            let dictStr = try dict.jsonEncodedString()
+            result = dictStr
             
-        } catch let error as NSError {
+        } catch let error {
             print(error)
         }
         
