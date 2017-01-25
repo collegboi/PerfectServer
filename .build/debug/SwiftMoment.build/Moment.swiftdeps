@@ -20,48 +20,47 @@ provides-nominal:
 - "V11SwiftMoment6Moment"
 provides-member:
 - ["V11SwiftMoment6Moment", ""]
-provides-dynamic-lookup:
 depends-top-level:
-- "<"
-- !private "DateComponents"
-- "moment"
-- "future"
-- "past"
-- "since"
-- "CustomStringConvertible"
-- !private "StringLiteralType"
-- !private "Array"
 - "TimeUnit"
-- "TimeInterval"
-- ">="
-- !private "abs"
-- "maximum"
-- !private "-"
-- "Date"
+- "future"
 - "Bool"
-- "CastingPrecedence"
-- !private "/"
-- "CustomDebugStringConvertible"
-- "=="
-- "utc"
-- "minimum"
-- "Duration"
-- "Double"
-- "<="
-- "Moment"
-- !private "*"
-- "AssignmentPrecedence"
-- "FloatLiteralType"
-- !private "DateFormatter"
-- "String"
-- "TimeZone"
-- "Locale"
 - "IntegerLiteralType"
+- !private "/"
+- !private "Array"
+- "TimeInterval"
+- "Locale"
 - ">"
-- "Int"
-- !private "Calendar"
+- !private "-"
 - "Comparable"
+- "Int"
 - "TernaryPrecedence"
+- "Moment"
+- "past"
+- "<"
+- !private "DateFormatter"
+- "<="
+- "CustomDebugStringConvertible"
+- "FloatLiteralType"
+- "Duration"
+- "minimum"
+- "Date"
+- ">="
+- "CustomStringConvertible"
+- !private "DateComponents"
+- !private "*"
+- "utc"
+- "maximum"
+- "since"
+- !private "Calendar"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- "=="
+- "moment"
+- !private "abs"
+- "TimeZone"
+- "Double"
+- !private "StringLiteralType"
+- "String"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "date"]
@@ -118,26 +117,11 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "seconds"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "Element"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_Element"]
-- !private ["Ps7CVarArg", "append"]
-- !private ["Ps7CVarArg", "count"]
-- !private ["Ps7CVarArg", "date"]
-- !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "locale"]
-- !private ["Ps7CVarArg", "monthSymbols"]
 - !private ["Ps7CVarArg", "seconds"]
-- !private ["Ps7CVarArg", "string"]
-- !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "timeZone"]
 - !private ["V10Foundation8Calendar", "Identifier"]
 - !private ["V10Foundation8Calendar", "current"]
 - !private ["V10Foundation8Calendar", "date"]
@@ -257,6 +241,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "monthSymbols"]
 - !private ["Ps28CustomDebugStringConvertible", "quarter"]
 - !private ["Ps28CustomDebugStringConvertible", "second"]
+- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "startOf"]
 - !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
@@ -308,6 +293,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "quarter"]
 - !private ["Ps17CustomReflectable", "second"]
 - !private ["Ps17CustomReflectable", "seconds"]
+- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "timeIntervalSince"]
 - !private ["Ps17CustomReflectable", "timeIntervalSince1970"]
@@ -398,14 +384,14 @@ depends-member:
 - !private ["V10Foundation14DateComponents", "weekday"]
 - !private ["V10Foundation14DateComponents", "weekdayOrdinal"]
 - !private ["V10Foundation14DateComponents", "year"]
-- !private ["CSo13DateFormatter", "date"]
-- !private ["CSo13DateFormatter", "dateFormat"]
-- ["CSo13DateFormatter", "deinit"]
-- !private ["CSo13DateFormatter", "init"]
-- !private ["CSo13DateFormatter", "locale"]
-- !private ["CSo13DateFormatter", "monthSymbols"]
-- !private ["CSo13DateFormatter", "string"]
-- !private ["CSo13DateFormatter", "timeZone"]
+- !private ["C10Foundation13DateFormatter", "date"]
+- !private ["C10Foundation13DateFormatter", "dateFormat"]
+- ["C10Foundation13DateFormatter", "deinit"]
+- !private ["C10Foundation13DateFormatter", "init"]
+- !private ["C10Foundation13DateFormatter", "locale"]
+- !private ["C10Foundation13DateFormatter", "monthSymbols"]
+- !private ["C10Foundation13DateFormatter", "string"]
+- !private ["C10Foundation13DateFormatter", "timeZone"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -515,17 +501,18 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "seconds"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps13FloatingPoint", "init"]
-- !private ["CSo9Formatter", "date"]
-- !private ["CSo9Formatter", "dateFormat"]
-- !private ["CSo9Formatter", "init"]
-- !private ["CSo9Formatter", "locale"]
-- !private ["CSo9Formatter", "monthSymbols"]
-- !private ["CSo9Formatter", "string"]
-- !private ["CSo9Formatter", "timeZone"]
+- !private ["C10Foundation9Formatter", "date"]
+- !private ["C10Foundation9Formatter", "dateFormat"]
+- !private ["C10Foundation9Formatter", "init"]
+- !private ["C10Foundation9Formatter", "locale"]
+- !private ["C10Foundation9Formatter", "monthSymbols"]
+- !private ["C10Foundation9Formatter", "string"]
+- !private ["C10Foundation9Formatter", "timeZone"]
 - ["Ps8Hashable", "Days"]
 - !private ["Ps8Hashable", "Element"]
 - ["Ps8Hashable", "Hours"]
@@ -690,38 +677,36 @@ depends-member:
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "subscript"]
-- !private ["PSo8NSCoding", "date"]
-- !private ["PSo8NSCoding", "dateFormat"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "locale"]
-- !private ["PSo8NSCoding", "monthSymbols"]
-- !private ["PSo8NSCoding", "string"]
-- !private ["PSo8NSCoding", "timeZone"]
-- !private ["PSo9NSCopying", "date"]
-- !private ["PSo9NSCopying", "dateFormat"]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "locale"]
-- !private ["PSo9NSCopying", "monthSymbols"]
-- !private ["PSo9NSCopying", "string"]
-- !private ["PSo9NSCopying", "timeZone"]
-- !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "date"]
-- !private ["CSo8NSObject", "dateFormat"]
-- !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "locale"]
-- !private ["CSo8NSObject", "monthSymbols"]
-- !private ["CSo8NSObject", "string"]
-- !private ["CSo8NSObject", "timeZone"]
-- !private ["PSo16NSObjectProtocol", "date"]
-- !private ["PSo16NSObjectProtocol", "dateFormat"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "locale"]
-- !private ["PSo16NSObjectProtocol", "monthSymbols"]
-- !private ["PSo16NSObjectProtocol", "string"]
-- !private ["PSo16NSObjectProtocol", "timeZone"]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
+- !private ["P10Foundation8NSCoding", "date"]
+- !private ["P10Foundation8NSCoding", "dateFormat"]
+- !private ["P10Foundation8NSCoding", "init"]
+- !private ["P10Foundation8NSCoding", "locale"]
+- !private ["P10Foundation8NSCoding", "monthSymbols"]
+- !private ["P10Foundation8NSCoding", "string"]
+- !private ["P10Foundation8NSCoding", "timeZone"]
+- !private ["P10Foundation9NSCopying", "date"]
+- !private ["P10Foundation9NSCopying", "dateFormat"]
+- !private ["P10Foundation9NSCopying", "init"]
+- !private ["P10Foundation9NSCopying", "locale"]
+- !private ["P10Foundation9NSCopying", "monthSymbols"]
+- !private ["P10Foundation9NSCopying", "string"]
+- !private ["P10Foundation9NSCopying", "timeZone"]
+- !private ["C10Foundation8NSObject", "date"]
+- !private ["C10Foundation8NSObject", "dateFormat"]
+- !private ["C10Foundation8NSObject", "init"]
+- !private ["C10Foundation8NSObject", "locale"]
+- !private ["C10Foundation8NSObject", "monthSymbols"]
+- !private ["C10Foundation8NSObject", "string"]
+- !private ["C10Foundation8NSObject", "timeZone"]
+- !private ["P10Foundation16NSObjectProtocol", "date"]
+- !private ["P10Foundation16NSObjectProtocol", "dateFormat"]
+- !private ["P10Foundation16NSObjectProtocol", "init"]
+- !private ["P10Foundation16NSObjectProtocol", "locale"]
+- !private ["P10Foundation16NSObjectProtocol", "monthSymbols"]
+- !private ["P10Foundation16NSObjectProtocol", "string"]
+- !private ["P10Foundation16NSObjectProtocol", "timeZone"]
 - ["Sq", "deinit"]
+- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
@@ -863,6 +848,33 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["P10Foundation13_BitShiftable", "IntegerLiteralType"]
+- !private ["P10Foundation13_BitShiftable", "Stride"]
+- !private ["P10Foundation13_BitShiftable", "_DisabledRangeIndex"]
+- !private ["P10Foundation13_BitShiftable", "init"]
+- !private ["P10Foundation13_BitShiftable", "seconds"]
+- !private ["P10Foundation12_CFBridgable", "Element"]
+- !private ["P10Foundation12_CFBridgable", "Identifier"]
+- !private ["P10Foundation12_CFBridgable", "Index"]
+- !private ["P10Foundation12_CFBridgable", "IndexDistance"]
+- !private ["P10Foundation12_CFBridgable", "Iterator"]
+- !private ["P10Foundation12_CFBridgable", "SubSequence"]
+- !private ["P10Foundation12_CFBridgable", "_Element"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "addingTimeInterval"]
+- !private ["P10Foundation12_CFBridgable", "append"]
+- !private ["P10Foundation12_CFBridgable", "count"]
+- !private ["P10Foundation12_CFBridgable", "current"]
+- !private ["P10Foundation12_CFBridgable", "date"]
+- !private ["P10Foundation12_CFBridgable", "dateComponents"]
+- !private ["P10Foundation12_CFBridgable", "distantFuture"]
+- !private ["P10Foundation12_CFBridgable", "distantPast"]
+- !private ["P10Foundation12_CFBridgable", "init"]
+- !private ["P10Foundation12_CFBridgable", "locale"]
+- !private ["P10Foundation12_CFBridgable", "subscript"]
+- !private ["P10Foundation12_CFBridgable", "timeIntervalSince"]
+- !private ["P10Foundation12_CFBridgable", "timeIntervalSince1970"]
+- !private ["P10Foundation12_CFBridgable", "timeZone"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
@@ -886,7 +898,8 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["P10Foundation20_FloatArithmeticType", "init"]
+- !private ["P10Foundation10_FloatLike", "init"]
 - ["Ps9_Hashable", "Days"]
 - !private ["Ps9_Hashable", "Element"]
 - ["Ps9_Hashable", "Hours"]
@@ -943,6 +956,11 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps18_IntegerArithmetic", "seconds"]
+- !private ["P10Foundation12_IntegerLike", "IntegerLiteralType"]
+- !private ["P10Foundation12_IntegerLike", "Stride"]
+- !private ["P10Foundation12_IntegerLike", "_DisabledRangeIndex"]
+- !private ["P10Foundation12_IntegerLike", "init"]
+- !private ["P10Foundation12_IntegerLike", "seconds"]
 - !private ["P10Foundation14_MutableBoxing", "Identifier"]
 - !private ["P10Foundation14_MutableBoxing", "current"]
 - !private ["P10Foundation14_MutableBoxing", "date"]
@@ -960,42 +978,109 @@ depends-member:
 - !private ["P10Foundation14_MutableBoxing", "weekday"]
 - !private ["P10Foundation14_MutableBoxing", "weekdayOrdinal"]
 - !private ["P10Foundation14_MutableBoxing", "year"]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "Identifier"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "addingTimeInterval"]
-- !private ["Ps21_ObjectiveCBridgeable", "append"]
-- !private ["Ps21_ObjectiveCBridgeable", "count"]
-- !private ["Ps21_ObjectiveCBridgeable", "current"]
-- !private ["Ps21_ObjectiveCBridgeable", "date"]
-- !private ["Ps21_ObjectiveCBridgeable", "dateComponents"]
-- !private ["Ps21_ObjectiveCBridgeable", "day"]
-- !private ["Ps21_ObjectiveCBridgeable", "distantFuture"]
-- !private ["Ps21_ObjectiveCBridgeable", "distantPast"]
-- !private ["Ps21_ObjectiveCBridgeable", "hour"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "locale"]
-- !private ["Ps21_ObjectiveCBridgeable", "minute"]
-- !private ["Ps21_ObjectiveCBridgeable", "month"]
-- !private ["Ps21_ObjectiveCBridgeable", "quarter"]
-- !private ["Ps21_ObjectiveCBridgeable", "second"]
-- !private ["Ps21_ObjectiveCBridgeable", "seconds"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- !private ["Ps21_ObjectiveCBridgeable", "timeIntervalSince"]
-- !private ["Ps21_ObjectiveCBridgeable", "timeIntervalSince1970"]
-- !private ["Ps21_ObjectiveCBridgeable", "timeZone"]
-- !private ["Ps21_ObjectiveCBridgeable", "weekOfYear"]
-- !private ["Ps21_ObjectiveCBridgeable", "weekday"]
-- !private ["Ps21_ObjectiveCBridgeable", "weekdayOrdinal"]
-- !private ["Ps21_ObjectiveCBridgeable", "year"]
+- !private ["P10Foundation12_NSBridgable", "Element"]
+- !private ["P10Foundation12_NSBridgable", "Identifier"]
+- !private ["P10Foundation12_NSBridgable", "Index"]
+- !private ["P10Foundation12_NSBridgable", "IndexDistance"]
+- !private ["P10Foundation12_NSBridgable", "Iterator"]
+- !private ["P10Foundation12_NSBridgable", "SubSequence"]
+- !private ["P10Foundation12_NSBridgable", "_Element"]
+- !private ["P10Foundation12_NSBridgable", "addingTimeInterval"]
+- !private ["P10Foundation12_NSBridgable", "append"]
+- !private ["P10Foundation12_NSBridgable", "count"]
+- !private ["P10Foundation12_NSBridgable", "current"]
+- !private ["P10Foundation12_NSBridgable", "date"]
+- !private ["P10Foundation12_NSBridgable", "dateComponents"]
+- !private ["P10Foundation12_NSBridgable", "day"]
+- !private ["P10Foundation12_NSBridgable", "distantFuture"]
+- !private ["P10Foundation12_NSBridgable", "distantPast"]
+- !private ["P10Foundation12_NSBridgable", "hour"]
+- !private ["P10Foundation12_NSBridgable", "init"]
+- !private ["P10Foundation12_NSBridgable", "locale"]
+- !private ["P10Foundation12_NSBridgable", "minute"]
+- !private ["P10Foundation12_NSBridgable", "month"]
+- !private ["P10Foundation12_NSBridgable", "quarter"]
+- !private ["P10Foundation12_NSBridgable", "second"]
+- !private ["P10Foundation12_NSBridgable", "subscript"]
+- !private ["P10Foundation12_NSBridgable", "timeIntervalSince"]
+- !private ["P10Foundation12_NSBridgable", "timeIntervalSince1970"]
+- !private ["P10Foundation12_NSBridgable", "timeZone"]
+- !private ["P10Foundation12_NSBridgable", "weekOfYear"]
+- !private ["P10Foundation12_NSBridgable", "weekday"]
+- !private ["P10Foundation12_NSBridgable", "weekdayOrdinal"]
+- !private ["P10Foundation12_NSBridgable", "year"]
+- !private ["P10Foundation17_ObjectBridgeable", "Element"]
+- !private ["P10Foundation17_ObjectBridgeable", "Identifier"]
+- !private ["P10Foundation17_ObjectBridgeable", "Index"]
+- !private ["P10Foundation17_ObjectBridgeable", "IndexDistance"]
+- !private ["P10Foundation17_ObjectBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation17_ObjectBridgeable", "Iterator"]
+- !private ["P10Foundation17_ObjectBridgeable", "Stride"]
+- !private ["P10Foundation17_ObjectBridgeable", "SubSequence"]
+- !private ["P10Foundation17_ObjectBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation17_ObjectBridgeable", "_Element"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "addingTimeInterval"]
+- !private ["P10Foundation17_ObjectBridgeable", "append"]
+- !private ["P10Foundation17_ObjectBridgeable", "count"]
+- !private ["P10Foundation17_ObjectBridgeable", "current"]
+- !private ["P10Foundation17_ObjectBridgeable", "date"]
+- !private ["P10Foundation17_ObjectBridgeable", "dateComponents"]
+- !private ["P10Foundation17_ObjectBridgeable", "day"]
+- !private ["P10Foundation17_ObjectBridgeable", "distantFuture"]
+- !private ["P10Foundation17_ObjectBridgeable", "distantPast"]
+- !private ["P10Foundation17_ObjectBridgeable", "hour"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "locale"]
+- !private ["P10Foundation17_ObjectBridgeable", "minute"]
+- !private ["P10Foundation17_ObjectBridgeable", "month"]
+- !private ["P10Foundation17_ObjectBridgeable", "quarter"]
+- !private ["P10Foundation17_ObjectBridgeable", "second"]
+- !private ["P10Foundation17_ObjectBridgeable", "seconds"]
+- !private ["P10Foundation17_ObjectBridgeable", "subscript"]
+- !private ["P10Foundation17_ObjectBridgeable", "timeIntervalSince"]
+- !private ["P10Foundation17_ObjectBridgeable", "timeIntervalSince1970"]
+- !private ["P10Foundation17_ObjectBridgeable", "timeZone"]
+- !private ["P10Foundation17_ObjectBridgeable", "weekOfYear"]
+- !private ["P10Foundation17_ObjectBridgeable", "weekday"]
+- !private ["P10Foundation17_ObjectBridgeable", "weekdayOrdinal"]
+- !private ["P10Foundation17_ObjectBridgeable", "year"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Identifier"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Index"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IndexDistance"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Iterator"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Stride"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "SubSequence"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "addingTimeInterval"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "append"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "count"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "current"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "date"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "dateComponents"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "day"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "distantFuture"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "distantPast"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "hour"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "locale"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "minute"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "month"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "quarter"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "second"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "seconds"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "subscript"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "timeIntervalSince"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "timeIntervalSince1970"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "timeZone"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "weekOfYear"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "weekday"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "weekdayOrdinal"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "year"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "IntegerLiteralType"]
 - !private ["Ps14_SignedInteger", "Stride"]
@@ -1024,11 +1109,11 @@ depends-nominal:
 - "OV10Foundation8Calendar9Component"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "V10Foundation4Date"
 - "V10Foundation14DateComponents"
-- "CSo13DateFormatter"
+- "C10Foundation13DateFormatter"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - "Vs10Dictionary"
@@ -1041,11 +1126,12 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
+- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Ps13FloatingPoint"
-- !private "CSo9Formatter"
+- !private "C10Foundation9Formatter"
 - "Ps8Hashable"
 - "OV10Foundation8Calendar10Identifier"
 - !private "SQ"
@@ -1062,13 +1148,10 @@ depends-nominal:
 - "V11SwiftMoment6Moment"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- !private "PSo16NSMutableCopying"
-- !private "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
+- !private "P10Foundation8NSCoding"
+- !private "P10Foundation9NSCopying"
+- !private "C10Foundation8NSObject"
+- !private "P10Foundation16NSObjectProtocol"
 - "Sq"
 - !private "Ps22RandomAccessCollection"
 - !private "Ps21RandomAccessIndexable"
@@ -1090,6 +1173,8 @@ depends-nominal:
 - "O11SwiftMoment8TimeUnit"
 - "V10Foundation8TimeZone"
 - !private "Ps14_ArrayProtocol"
+- !private "P10Foundation13_BitShiftable"
+- !private "P10Foundation12_CFBridgable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"
@@ -1100,24 +1185,41 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
+- !private "P10Foundation20_FloatArithmeticType"
+- !private "P10Foundation10_FloatLike"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "P10Foundation12_IntegerLike"
 - !private "P10Foundation14_MutableBoxing"
-- !private "Ps21_ObjectiveCBridgeable"
+- !private "P10Foundation12_NSBridgable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
 - !private "Vs26_OptionalNilComparisonType"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/DispatchShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/dispatch/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
 interface-hash: "3f51a18d9a59bc6da093bea89b44dd25"

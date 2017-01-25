@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "f86ebb9bd25545da621f0a724b9bc241"
-build_time: [538231210, 897466000]
+version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
+options: "354618bffdae4dd3791709f52fe95f0f"
+build_time: [538625217, 908312000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": [538231198, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": [538231198, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/FileLogger.swift": [538524058, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLogger-1.0.0/Sources/RemoteLogger.swift": [538524058, 0]

@@ -6,8 +6,6 @@
 //
 //
 
-import Foundation
-
 class ResultBody {
     
     class func errorBody( value: String) -> String {

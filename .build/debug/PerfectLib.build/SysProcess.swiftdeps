@@ -1,62 +1,61 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "WUNTRACED"
+- "WNOHANG"
+- "SIGTERM"
 - "SysProcess"
 provides-nominal:
 - "C10PerfectLib10SysProcess"
 provides-member:
 - ["C10PerfectLib10SysProcess", ""]
-provides-dynamic-lookup:
 depends-top-level:
-- !private "posix_spawn_file_actions_adddup2"
-- "File"
-- "Int32"
-- "BooleanLiteralType"
-- !private "SIGTERM"
-- !private "+"
-- !private "StringLiteralType"
-- !private "UnsafeMutableRawPointer"
-- !private "STDOUT_FILENO"
-- !private "posix_spawn_file_actions_addclose"
-- !private "posix_spawn_file_actions_destroy"
-- !private "posix_spawn_file_actions_init"
-- !private "EINTR"
-- !private "&&"
-- !private "errno"
-- !private "strdup"
-- !private "pipe"
-- !private "??"
-- !private "WNOHANG"
-- !private "STDIN_FILENO"
-- "Bool"
-- !private "CChar"
-- !private "ThrowSystemError"
-- !private "|"
-- !private "!="
-- !private "Darwin"
-- !private "OpaquePointer"
-- !private "free"
-- !private "STDERR_FILENO"
-- !private "WUNTRACED"
-- !private "!"
-- "String"
-- !private "&"
-- !private "posix_spawn_file_actions_t"
-- !private "UnsafeMutablePointer"
 - !private "..<"
-- "CastingPrecedence"
+- "String"
+- !private "UnsafeMutableRawPointer"
+- !private "strdup"
+- !private "STDOUT_FILENO"
+- !private "??"
+- !private "posix_spawn_file_actions_destroy"
+- !private "STDERR_FILENO"
 - !private "posix_spawnp"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "waitpid"
+- "WNOHANG"
+- !private "EINTR"
+- !private "ThrowSystemError"
+- !private "errno"
+- !private "&&"
+- !private "+"
 - "FloatLiteralType"
-- "pid_t"
-- "IntegerLiteralType"
-- !private ">>"
-- "SysProcess"
+- "BooleanLiteralType"
+- !private "STDIN_FILENO"
+- !private "SwiftGlibc"
+- !private "posix_spawn_file_actions_t"
+- !private "posix_spawn_file_actions_init"
+- "Int32"
+- "WUNTRACED"
+- !private "|"
+- "AssignmentPrecedence"
 - !private "UnicodeScalarType"
+- !private "=="
+- "Bool"
+- "SIGTERM"
+- !private "waitpid"
 - "TernaryPrecedence"
+- !private "posix_spawn_file_actions_adddup2"
+- !private "UnsafeMutablePointer"
+- "IntegerLiteralType"
+- !private "posix_spawn_file_actions_addclose"
+- !private "StringLiteralType"
+- "File"
+- "SysProcess"
+- !private "&"
+- !private ">>"
+- !private "free"
+- "pid_t"
+- !private "pipe"
+- !private "!="
+- !private "CChar"
+- !private "!"
 depends-member:
-- !private ["Ps9AnyObject", "Darwin"]
 - !private ["Ps9AnyObject", "EINTR"]
 - !private ["Ps9AnyObject", "File"]
 - !private ["Ps9AnyObject", "Int32"]
@@ -64,6 +63,7 @@ depends-member:
 - !private ["Ps9AnyObject", "STDERR_FILENO"]
 - !private ["Ps9AnyObject", "STDIN_FILENO"]
 - !private ["Ps9AnyObject", "STDOUT_FILENO"]
+- !private ["Ps9AnyObject", "SwiftGlibc"]
 - !private ["Ps9AnyObject", "ThrowSystemError"]
 - !private ["Ps9AnyObject", "UnsafeMutablePointer"]
 - !private ["Ps9AnyObject", "UnsafeMutableRawPointer"]
@@ -125,15 +125,10 @@ depends-member:
 - ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "allocate"]
-- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "deallocate"]
 - !private ["Ps7CVarArg", "deinitialize"]
 - ["Ps7CVarArg", "init"]
@@ -322,13 +317,6 @@ depends-member:
 - !private ["Ps16MutableIndexable", "_Element"]
 - !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "subscript"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "init"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["CSo8NSString", "init"]
 - ["Os5Never", "deinit"]
 - !private ["Sq", "assumingMemoryBound"]
 - ["Sq", "deinit"]
@@ -401,16 +389,15 @@ depends-member:
 - !private ["SS", "init"]
 - ["C10PerfectLib10SysProcess", "Bool"]
 - !private ["C10PerfectLib10SysProcess", "CChar"]
-- !private ["C10PerfectLib10SysProcess", "Darwin"]
 - !private ["C10PerfectLib10SysProcess", "EINTR"]
 - ["C10PerfectLib10SysProcess", "File"]
 - ["C10PerfectLib10SysProcess", "Int32"]
-- !private ["C10PerfectLib10SysProcess", "OpaquePointer"]
 - !private ["C10PerfectLib10SysProcess", "SIGTERM"]
 - !private ["C10PerfectLib10SysProcess", "STDERR_FILENO"]
 - !private ["C10PerfectLib10SysProcess", "STDIN_FILENO"]
 - !private ["C10PerfectLib10SysProcess", "STDOUT_FILENO"]
 - ["C10PerfectLib10SysProcess", "String"]
+- !private ["C10PerfectLib10SysProcess", "SwiftGlibc"]
 - !private ["C10PerfectLib10SysProcess", "ThrowSystemError"]
 - !private ["C10PerfectLib10SysProcess", "UnsafeMutablePointer"]
 - !private ["C10PerfectLib10SysProcess", "UnsafeMutableRawPointer"]
@@ -455,6 +442,18 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
+- !private ["P10Foundation13_BitShiftable", "IntegerLiteralType"]
+- !private ["P10Foundation13_BitShiftable", "Stride"]
+- !private ["P10Foundation13_BitShiftable", "_DisabledRangeIndex"]
+- ["P10Foundation13_BitShiftable", "init"]
+- !private ["P10Foundation12_CFBridgable", "Index"]
+- !private ["P10Foundation12_CFBridgable", "IndexDistance"]
+- !private ["P10Foundation12_CFBridgable", "SubSequence"]
+- !private ["P10Foundation12_CFBridgable", "_Element"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "count"]
+- !private ["P10Foundation12_CFBridgable", "init"]
+- !private ["P10Foundation12_CFBridgable", "subscript"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
@@ -470,7 +469,6 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
@@ -493,18 +491,39 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "Stride"]
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - ["Ps18_IntegerArithmetic", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "assumingMemoryBound"]
-- !private ["Ps21_ObjectiveCBridgeable", "count"]
-- ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["P10Foundation12_IntegerLike", "IntegerLiteralType"]
+- !private ["P10Foundation12_IntegerLike", "Stride"]
+- !private ["P10Foundation12_IntegerLike", "_DisabledRangeIndex"]
+- ["P10Foundation12_IntegerLike", "init"]
+- !private ["P10Foundation12_NSBridgable", "Index"]
+- !private ["P10Foundation12_NSBridgable", "IndexDistance"]
+- !private ["P10Foundation12_NSBridgable", "SubSequence"]
+- !private ["P10Foundation12_NSBridgable", "_Element"]
+- !private ["P10Foundation12_NSBridgable", "count"]
+- !private ["P10Foundation12_NSBridgable", "init"]
+- !private ["P10Foundation12_NSBridgable", "subscript"]
+- !private ["P10Foundation17_ObjectBridgeable", "Index"]
+- !private ["P10Foundation17_ObjectBridgeable", "IndexDistance"]
+- !private ["P10Foundation17_ObjectBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation17_ObjectBridgeable", "Stride"]
+- !private ["P10Foundation17_ObjectBridgeable", "SubSequence"]
+- !private ["P10Foundation17_ObjectBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation17_ObjectBridgeable", "_Element"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "count"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "subscript"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Index"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IndexDistance"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Stride"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "SubSequence"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "count"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "subscript"]
 - ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps8_Pointer", "allocate"]
 - !private ["Ps8_Pointer", "assumingMemoryBound"]
@@ -525,6 +544,8 @@ depends-member:
 - !private ["Ps11_Strideable", "deinitialize"]
 - ["Ps11_Strideable", "init"]
 - !private ["Ps11_Strideable", "subscript"]
+- ["VSC26posix_spawn_file_actions_t", "deinit"]
+- !private ["VSC26posix_spawn_file_actions_t", "init"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
@@ -568,13 +589,6 @@ depends-nominal:
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- !private "PSo16NSMutableCopying"
-- !private "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - "Os5Never"
 - "Sq"
 - !private "Ps22RandomAccessCollection"
@@ -595,6 +609,8 @@ depends-nominal:
 - "Sp"
 - "Sv"
 - !private "Ps14_ArrayProtocol"
+- "P10Foundation13_BitShiftable"
+- !private "P10Foundation12_CFBridgable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
@@ -602,24 +618,42 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps14_Incrementable"
 - "Ps8_Integer"
 - "Ps18_IntegerArithmetic"
-- "Ps21_ObjectiveCBridgeable"
+- "P10Foundation12_IntegerLike"
+- !private "P10Foundation12_NSBridgable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
 - "Vs26_OptionalNilComparisonType"
 - !private "Ps8_Pointer"
 - "Ps14_SignedInteger"
 - "Ps11_Strideable"
+- "VSC26posix_spawn_file_actions_t"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/DispatchShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/dispatch/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
+- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
 interface-hash: "2002f3c40728b78543c7a34b9103c41c"

@@ -9,56 +9,53 @@ provides-member:
 - ["V11PerfectHTTP17StaticFileHandler", ""]
 - ["VSS8UTF8View", "sha1"]
 - ["Vs5UInt8", "hexString"]
-provides-dynamic-lookup:
 depends-top-level:
-- !private "Int32"
-- !private "SHA_DIGEST_LENGTH"
-- "File"
-- "Int"
-- !private "UnsafeMutablePointer"
+- !private "-"
 - !private "||"
-- "BooleanLiteralType"
-- !private "SHA1"
-- !private "Array"
-- !private "MimeType"
-- !private ">"
+- !private "UnsafeMutablePointer"
 - !private "StringLiteralType"
+- !private "NetTCPSSL"
+- "Bool"
+- "StaticFileHandler"
+- !private ">"
+- "Range"
+- "String"
+- !private "Array"
+- !private "Int32"
+- "File"
+- !private "SHA1"
+- !private "+"
+- "BooleanLiteralType"
+- !private "sendfile"
+- !private "..<"
+- !private "UnicodeScalarType"
+- "Int"
+- "FloatLiteralType"
+- !private "MimeType"
+- !private "errno"
+- "UInt8"
+- !private "!"
+- !private "SHA_DIGEST_LENGTH"
+- "*"
+- "IntegerLiteralType"
+- !private ">="
+- "CastingPrecedence"
+- !private "=="
+- "AssignmentPrecedence"
 - !private "min"
 - !private "off_t"
-- !private "NetEvent"
-- "UInt8"
-- !private "ExtendedGraphemeClusterType"
 - !private "&&"
-- "StaticFileHandler"
-- "Bool"
-- "Range"
-- "HTTPRequest"
-- !private "+"
-- "CastingPrecedence"
-- "String"
-- !private "=="
-- "HTTPResponse"
-- !private "NetTCPSSL"
-- "AssignmentPrecedence"
 - !private "EAGAIN"
-- !private "errno"
-- "*"
-- !private "..<"
-- !private "-"
-- !private "UnicodeScalarType"
-- !private "!"
-- !private "sendfile"
+- !private "ExtendedGraphemeClusterType"
+- "HTTPResponse"
+- "HTTPRequest"
+- !private "NetEvent"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "add"]
-- !private ["Ps9AnyObject", "append"]
-- !private ["Ps9AnyObject", "characters"]
 - !private ["Ps9AnyObject", "close"]
-- !private ["Ps9AnyObject", "endIndex"]
 - !private ["Ps9AnyObject", "exists"]
 - !private ["Ps9AnyObject", "fd"]
-- !private ["Ps9AnyObject", "filePathExtension"]
-- !private ["Ps9AnyObject", "index"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "marker"]
 - !private ["Ps9AnyObject", "modificationTime"]
@@ -66,9 +63,7 @@ depends-member:
 - !private ["Ps9AnyObject", "path"]
 - !private ["Ps9AnyObject", "readSomeBytes"]
 - !private ["Ps9AnyObject", "size"]
-- !private ["Ps9AnyObject", "subscript"]
 - !private ["Ps9AnyObject", "usingSSL"]
-- !private ["Ps9AnyObject", "utf8"]
 - !private ["Vs11AnySequence", "Iterator"]
 - !private ["Vs11AnySequence", "deinit"]
 - !private ["Sa", "Index"]
@@ -126,30 +121,15 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "String"]
-- !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "allocate"]
-- !private ["Ps7CVarArg", "append"]
-- !private ["Ps7CVarArg", "characters"]
-- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "deallocate"]
-- !private ["Ps7CVarArg", "endIndex"]
-- !private ["Ps7CVarArg", "filePathExtension"]
-- !private ["Ps7CVarArg", "flatMap"]
 - !private ["Ps7CVarArg", "hexString"]
-- !private ["Ps7CVarArg", "index"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "joined"]
-- !private ["Ps7CVarArg", "map"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "utf8"]
 - ["Vs9Character", "deinit"]
 - !private ["Vs9Character", "init"]
 - !private ["VSS13CharacterView", "IndexDistance"]
@@ -224,6 +204,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "lowerBound"]
 - !private ["Ps28CustomDebugStringConvertible", "map"]
 - !private ["Ps28CustomDebugStringConvertible", "sha1"]
+- ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "upperBound"]
 - !private ["Ps28CustomDebugStringConvertible", "utf8"]
@@ -285,6 +266,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "lowerBound"]
 - !private ["Ps17CustomReflectable", "map"]
 - !private ["Ps17CustomReflectable", "sha1"]
+- ["Ps17CustomReflectable", "some"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps17CustomReflectable", "upperBound"]
 - !private ["Ps17CustomReflectable", "utf8"]
@@ -393,7 +375,7 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hexString"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps23ExpressibleByNilLiteral", "Iterator"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
 - !private ["Ps32ExpressibleByStringInterpolation", "Iterator"]
 - !private ["Ps32ExpressibleByStringInterpolation", "append"]
 - !private ["Ps32ExpressibleByStringInterpolation", "characters"]
@@ -530,8 +512,7 @@ depends-member:
 - !private ["Vs5Int16", "deinit"]
 - ["Vs5Int32", "deinit"]
 - !private ["Vs5Int32", "init"]
-- ["Vs5Int64", "deinit"]
-- !private ["Vs5Int64", "init"]
+- !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
@@ -565,6 +546,7 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "joined"]
 - !private ["P10PerfectLib15JSONConvertible", "map"]
+- ["P10PerfectLib15JSONConvertible", "some"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["P10PerfectLib15JSONConvertible", "utf8"]
 - !private ["Ps25LosslessStringConvertible", "Iterator"]
@@ -614,62 +596,6 @@ depends-member:
 - !private ["Ps16MutableIndexable", "joined"]
 - !private ["Ps16MutableIndexable", "map"]
 - !private ["Ps16MutableIndexable", "subscript"]
-- !private ["PSo8NSCoding", "append"]
-- !private ["PSo8NSCoding", "characters"]
-- !private ["PSo8NSCoding", "endIndex"]
-- !private ["PSo8NSCoding", "filePathExtension"]
-- !private ["PSo8NSCoding", "index"]
-- !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "subscript"]
-- !private ["PSo8NSCoding", "utf8"]
-- !private ["PSo9NSCopying", "append"]
-- !private ["PSo9NSCopying", "characters"]
-- !private ["PSo9NSCopying", "endIndex"]
-- !private ["PSo9NSCopying", "filePathExtension"]
-- !private ["PSo9NSCopying", "index"]
-- !private ["PSo9NSCopying", "init"]
-- !private ["PSo9NSCopying", "subscript"]
-- !private ["PSo9NSCopying", "utf8"]
-- !private ["PSo16NSMutableCopying", "append"]
-- !private ["PSo16NSMutableCopying", "characters"]
-- !private ["PSo16NSMutableCopying", "endIndex"]
-- !private ["PSo16NSMutableCopying", "filePathExtension"]
-- !private ["PSo16NSMutableCopying", "index"]
-- !private ["PSo16NSMutableCopying", "init"]
-- !private ["PSo16NSMutableCopying", "subscript"]
-- !private ["PSo16NSMutableCopying", "utf8"]
-- !private ["CSo8NSObject", "append"]
-- !private ["CSo8NSObject", "characters"]
-- !private ["CSo8NSObject", "endIndex"]
-- !private ["CSo8NSObject", "filePathExtension"]
-- !private ["CSo8NSObject", "index"]
-- !private ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "subscript"]
-- !private ["CSo8NSObject", "utf8"]
-- !private ["PSo16NSObjectProtocol", "append"]
-- !private ["PSo16NSObjectProtocol", "characters"]
-- !private ["PSo16NSObjectProtocol", "endIndex"]
-- !private ["PSo16NSObjectProtocol", "filePathExtension"]
-- !private ["PSo16NSObjectProtocol", "index"]
-- !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "subscript"]
-- !private ["PSo16NSObjectProtocol", "utf8"]
-- !private ["PSo14NSSecureCoding", "append"]
-- !private ["PSo14NSSecureCoding", "characters"]
-- !private ["PSo14NSSecureCoding", "endIndex"]
-- !private ["PSo14NSSecureCoding", "filePathExtension"]
-- !private ["PSo14NSSecureCoding", "index"]
-- !private ["PSo14NSSecureCoding", "init"]
-- !private ["PSo14NSSecureCoding", "subscript"]
-- !private ["PSo14NSSecureCoding", "utf8"]
-- !private ["CSo8NSString", "append"]
-- !private ["CSo8NSString", "characters"]
-- !private ["CSo8NSString", "endIndex"]
-- !private ["CSo8NSString", "filePathExtension"]
-- !private ["CSo8NSString", "index"]
-- !private ["CSo8NSString", "init"]
-- !private ["CSo8NSString", "subscript"]
-- !private ["CSo8NSString", "utf8"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "ifNoneMatch"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "range"]
@@ -687,8 +613,8 @@ depends-member:
 - !private ["C10PerfectNet9NetTCPSSL", "usingSSL"]
 - ["OC10PerfectLib4File8OpenMode", "deinit"]
 - !private ["OC10PerfectLib4File8OpenMode", "read"]
-- !private ["Sq", "Iterator"]
 - ["Sq", "deinit"]
+- ["Sq", "some"]
 - !private ["Ps22RandomAccessCollection", "Index"]
 - !private ["Ps22RandomAccessCollection", "IndexDistance"]
 - !private ["Ps22RandomAccessCollection", "Indices"]
@@ -893,7 +819,28 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "joined"]
 - !private ["Ps14_ArrayProtocol", "map"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
-- !private ["Ps15_CVarArgAligned", "init"]
+- !private ["P10Foundation13_BitShiftable", "IntegerLiteralType"]
+- !private ["P10Foundation13_BitShiftable", "Stride"]
+- !private ["P10Foundation13_BitShiftable", "_DisabledRangeIndex"]
+- !private ["P10Foundation13_BitShiftable", "init"]
+- !private ["P10Foundation12_CFBridgable", "Index"]
+- !private ["P10Foundation12_CFBridgable", "IndexDistance"]
+- !private ["P10Foundation12_CFBridgable", "Iterator"]
+- !private ["P10Foundation12_CFBridgable", "SubSequence"]
+- !private ["P10Foundation12_CFBridgable", "_Element"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "append"]
+- !private ["P10Foundation12_CFBridgable", "characters"]
+- !private ["P10Foundation12_CFBridgable", "count"]
+- !private ["P10Foundation12_CFBridgable", "endIndex"]
+- !private ["P10Foundation12_CFBridgable", "filePathExtension"]
+- !private ["P10Foundation12_CFBridgable", "flatMap"]
+- !private ["P10Foundation12_CFBridgable", "index"]
+- !private ["P10Foundation12_CFBridgable", "init"]
+- !private ["P10Foundation12_CFBridgable", "joined"]
+- !private ["P10Foundation12_CFBridgable", "map"]
+- !private ["P10Foundation12_CFBridgable", "subscript"]
+- !private ["P10Foundation12_CFBridgable", "utf8"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
@@ -951,14 +898,6 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "subscript"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "append"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "characters"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "endIndex"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "filePathExtension"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "index"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "subscript"]
-- !private ["Ps35_HasCustomAnyHashableRepresentation", "utf8"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - !private ["Ps9_Hashable", "Iterator"]
 - !private ["Ps9_Hashable", "Stride"]
@@ -998,29 +937,69 @@ depends-member:
 - !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "hexString"]
 - !private ["Ps18_IntegerArithmetic", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "String"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Ps21_ObjectiveCBridgeable", "append"]
-- !private ["Ps21_ObjectiveCBridgeable", "characters"]
-- !private ["Ps21_ObjectiveCBridgeable", "count"]
-- !private ["Ps21_ObjectiveCBridgeable", "endIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "filePathExtension"]
-- !private ["Ps21_ObjectiveCBridgeable", "flatMap"]
-- !private ["Ps21_ObjectiveCBridgeable", "hexString"]
-- !private ["Ps21_ObjectiveCBridgeable", "index"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "joined"]
-- !private ["Ps21_ObjectiveCBridgeable", "map"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- !private ["Ps21_ObjectiveCBridgeable", "utf8"]
+- !private ["P10Foundation12_IntegerLike", "IntegerLiteralType"]
+- !private ["P10Foundation12_IntegerLike", "Stride"]
+- !private ["P10Foundation12_IntegerLike", "_DisabledRangeIndex"]
+- !private ["P10Foundation12_IntegerLike", "init"]
+- !private ["P10Foundation12_NSBridgable", "Index"]
+- !private ["P10Foundation12_NSBridgable", "IndexDistance"]
+- !private ["P10Foundation12_NSBridgable", "Iterator"]
+- !private ["P10Foundation12_NSBridgable", "SubSequence"]
+- !private ["P10Foundation12_NSBridgable", "_Element"]
+- !private ["P10Foundation12_NSBridgable", "append"]
+- !private ["P10Foundation12_NSBridgable", "characters"]
+- !private ["P10Foundation12_NSBridgable", "count"]
+- !private ["P10Foundation12_NSBridgable", "endIndex"]
+- !private ["P10Foundation12_NSBridgable", "filePathExtension"]
+- !private ["P10Foundation12_NSBridgable", "flatMap"]
+- !private ["P10Foundation12_NSBridgable", "index"]
+- !private ["P10Foundation12_NSBridgable", "init"]
+- !private ["P10Foundation12_NSBridgable", "joined"]
+- !private ["P10Foundation12_NSBridgable", "map"]
+- !private ["P10Foundation12_NSBridgable", "subscript"]
+- !private ["P10Foundation12_NSBridgable", "utf8"]
+- !private ["P10Foundation17_ObjectBridgeable", "Index"]
+- !private ["P10Foundation17_ObjectBridgeable", "IndexDistance"]
+- !private ["P10Foundation17_ObjectBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation17_ObjectBridgeable", "Iterator"]
+- !private ["P10Foundation17_ObjectBridgeable", "Stride"]
+- !private ["P10Foundation17_ObjectBridgeable", "SubSequence"]
+- !private ["P10Foundation17_ObjectBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation17_ObjectBridgeable", "_Element"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "append"]
+- !private ["P10Foundation17_ObjectBridgeable", "characters"]
+- !private ["P10Foundation17_ObjectBridgeable", "count"]
+- !private ["P10Foundation17_ObjectBridgeable", "endIndex"]
+- !private ["P10Foundation17_ObjectBridgeable", "filePathExtension"]
+- !private ["P10Foundation17_ObjectBridgeable", "flatMap"]
+- !private ["P10Foundation17_ObjectBridgeable", "index"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "joined"]
+- !private ["P10Foundation17_ObjectBridgeable", "map"]
+- !private ["P10Foundation17_ObjectBridgeable", "subscript"]
+- !private ["P10Foundation17_ObjectBridgeable", "utf8"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Index"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IndexDistance"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "IntegerLiteralType"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Iterator"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Stride"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "SubSequence"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_DisabledRangeIndex"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "append"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "characters"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "count"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "endIndex"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "filePathExtension"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "flatMap"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "index"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "joined"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "map"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "subscript"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "utf8"]
 - !private ["Ps8_Pointer", "allocate"]
 - !private ["Ps8_Pointer", "deallocate"]
 - !private ["Ps8_Pointer", "subscript"]
@@ -1055,9 +1034,9 @@ depends-nominal:
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Vs14CountableRange"
-- !private "Ps28CustomDebugStringConvertible"
+- "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
+- "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
@@ -1068,7 +1047,7 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps23ExpressibleByNilLiteral"
+- "Ps23ExpressibleByNilLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
@@ -1088,24 +1067,17 @@ depends-nominal:
 - "Si"
 - !private "Vs5Int16"
 - "Vs5Int32"
-- "Vs5Int64"
+- !private "Vs5Int64"
 - !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
-- !private "P10PerfectLib15JSONConvertible"
+- "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "V11PerfectHTTP8MimeType"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
-- !private "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- !private "PSo16NSMutableCopying"
-- !private "CSo8NSObject"
-- !private "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
-- !private "CSo8NSString"
 - "OO11PerfectHTTP17HTTPRequestHeader4Name"
 - "OO11PerfectHTTP18HTTPResponseHeader4Name"
 - !private "C10PerfectNet8NetEvent"
@@ -1139,7 +1111,8 @@ depends-nominal:
 - "Sp"
 - !private "Ps15UnsignedInteger"
 - !private "Ps14_ArrayProtocol"
-- !private "Ps15_CVarArgAligned"
+- !private "P10Foundation13_BitShiftable"
+- !private "P10Foundation12_CFBridgable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -1148,69 +1121,46 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
-- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- !private "Ps21_ObjectiveCBridgeable"
+- !private "P10Foundation12_IntegerLike"
+- !private "P10Foundation12_NSBridgable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
 - !private "Ps8_Pointer"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 - !private "Ps14_StringElement"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl23.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pqueue.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dtls1.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../tls1.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl3.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl2.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../kssl.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../hmac.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem2.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../e_os2.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pkcs7.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509_vfy.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../sha.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dh.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dsa.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../rsa.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdh.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdsa.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ec.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bn.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../asn1.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../obj_mac.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../objects.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../evp.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../buffer.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../comp.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../lhash.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../err.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../symhacks.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ossl_typ.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslv.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../safestack.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../stack.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../crypto.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/DispatchShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/dispatch/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
+- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 interface-hash: "996f9e02ced8dbafe95b8f87893a0d0b"

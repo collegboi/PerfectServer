@@ -1,11 +1,11 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectCURL.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectCURL-2.0.4/Sources/cURL.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.build/cURL.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.build/cURL.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.build/cURL~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.build/cURL.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectCURL-2.0.4/Sources/cURL.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectCURL.build/cURL.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectCURL.build/cURL.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectCURL.build/cURL~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectCURL.build/cURL.swiftdeps"
   }
 }

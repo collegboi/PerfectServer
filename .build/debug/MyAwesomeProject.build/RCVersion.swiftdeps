@@ -1,0 +1,223 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "RCVersion"
+provides-nominal:
+- "C16MyAwesomeProject9RCVersion"
+provides-member:
+- ["C16MyAwesomeProject9RCVersion", ""]
+depends-top-level:
+- "StringLiteralType"
+- "Bool"
+- "RCVersion"
+- !private "DatabaseController"
+- "AssignmentPrecedence"
+- !private "RemoteConfig"
+- !private "BooleanLiteralType"
+- "FloatLiteralType"
+- "String"
+- "Int"
+- "IntegerLiteralType"
+depends-member:
+- !private ["Ps9AnyObject", "DatabaseController"]
+- !private ["Ps9AnyObject", "RemoteConfig"]
+- !private ["Ps9AnyObject", "insertDocument"]
+- !private ["Ps9AnyObject", "parseJSONConfig"]
+- !private ["Ps9AnyObject", "updateContentsOfFile"]
+- !private ["Ps9AnyObject", "versionDate"]
+- !private ["Ps9AnyObject", "versionID"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- ["Ps10Comparable", "init"]
+- ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps23CustomStringConvertible", "init"]
+- !private ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- ["Ps9Equatable", "init"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps32ExpressibleByStringInterpolation", "init"]
+- ["Ps26ExpressibleByStringLiteral", "init"]
+- ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- ["Ps8Hashable", "init"]
+- ["Si", "deinit"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Ps25LosslessStringConvertible", "init"]
+- ["Ps10MirrorPath", "init"]
+- ["Sq", "deinit"]
+- ["C16MyAwesomeProject9RCVersion", "Bool"]
+- !private ["C16MyAwesomeProject9RCVersion", "DatabaseController"]
+- ["C16MyAwesomeProject9RCVersion", "Int"]
+- !private ["C16MyAwesomeProject9RCVersion", "RemoteConfig"]
+- ["C16MyAwesomeProject9RCVersion", "String"]
+- ["C16MyAwesomeProject9RCVersion", "deinit"]
+- ["C16MyAwesomeProject9RCVersion", "init"]
+- ["C16MyAwesomeProject9RCVersion", "parseJSONConfig"]
+- ["C16MyAwesomeProject9RCVersion", "parseJSONToStr"]
+- ["C16MyAwesomeProject9RCVersion", "released"]
+- ["C16MyAwesomeProject9RCVersion", "sendRemoteConfig"]
+- ["C16MyAwesomeProject9RCVersion", "versionDate"]
+- ["C16MyAwesomeProject9RCVersion", "versionID"]
+- ["C16MyAwesomeProject9RCVersion", "versionPath"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "updateContentsOfFile"]
+- ["SS", "deinit"]
+- ["SS", "init"]
+- ["Ps16TextOutputStream", "init"]
+- ["Ps20TextOutputStreamable", "init"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- ["P10Foundation12_CFBridgable", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- ["Ps9_Hashable", "init"]
+- ["P10Foundation12_NSBridgable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- ["P10Foundation21_ObjectTypeBridgeable", "init"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- "Ps23CustomStringConvertible"
+- !private "C16MyAwesomeProject18DatabaseController"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps32ExpressibleByStringInterpolation"
+- "Ps26ExpressibleByStringLiteral"
+- "Ps33ExpressibleByUnicodeScalarLiteral"
+- "Ps8Hashable"
+- "Si"
+- "P10PerfectLib15JSONConvertible"
+- "Ps25LosslessStringConvertible"
+- "Ps10MirrorPath"
+- "Sq"
+- "C16MyAwesomeProject9RCVersion"
+- !private "C16MyAwesomeProject12RemoteConfig"
+- "SS"
+- "Ps16TextOutputStream"
+- "Ps20TextOutputStreamable"
+- "P10Foundation12_CFBridgable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- "Ps34_ExpressibleByBuiltinStringLiteral"
+- "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps9_Hashable"
+- "P10Foundation12_NSBridgable"
+- "P10Foundation17_ObjectBridgeable"
+- "P10Foundation21_ObjectTypeBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/DispatchShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/dispatch/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
+- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/MongoDB.swiftmodule"
+- "/usr/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/include/libbson-1.0/bson.h"
+- "/usr/include/libbson-1.0/bcon.h"
+- "/usr/include/libbson-1.0/bson-writer.h"
+- "/usr/include/libbson-1.0/bson-version-functions.h"
+- "/usr/include/libbson-1.0/bson-version.h"
+- "/usr/include/libbson-1.0/bson-value.h"
+- "/usr/include/libbson-1.0/bson-utf8.h"
+- "/usr/include/libbson-1.0/bson-string.h"
+- "/usr/include/libbson-1.0/bson-reader.h"
+- "/usr/include/libbson-1.0/bson-oid.h"
+- "/usr/include/libbson-1.0/bson-memory.h"
+- "/usr/include/libbson-1.0/bson-md5.h"
+- "/usr/include/libbson-1.0/bson-keys.h"
+- "/usr/include/libbson-1.0/bson-json.h"
+- "/usr/include/libbson-1.0/bson-endian.h"
+- "/usr/include/libbson-1.0/bson-iter.h"
+- "/usr/include/libbson-1.0/bson-error.h"
+- "/usr/include/libbson-1.0/bson-clock.h"
+- "/usr/include/libbson-1.0/bson-types.h"
+- "/usr/include/libbson-1.0/bson-context.h"
+- "/usr/include/libbson-1.0/bson-atomic.h"
+- "/usr/include/libbson-1.0/bson-stdint.h"
+- "/usr/include/libbson-1.0/bson-macros.h"
+- "/usr/include/libbson-1.0/bson-config.h"
+- "/usr/include/libbson-1.0/bson-compat.h"
+- "/usr/local/include/libmongoc-1.0/mongoc.h"
+- "/home/collegboi/PerfectServer/Packages/libmongoc-2.0.1/module.modulemap"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
+- "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
+- "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/module.modulemap"
+interface-hash: "720118b33943d4af44a07d59357b6671"

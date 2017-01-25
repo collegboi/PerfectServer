@@ -1,47 +1,47 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HPACK.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerEx.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Request.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Response.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServer.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP2.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Request.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Request.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServer.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServer.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Response.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP11Response.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerEx.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerEx.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP2.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTP2.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.build/HTTPServerExConfig.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HPACK.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.build/HPACK.swiftdeps"
   }
 }

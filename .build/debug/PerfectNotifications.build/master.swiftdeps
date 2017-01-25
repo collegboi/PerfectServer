@@ -1,5 +1,5 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "644685ecad9d866eb14f73641bd037c0"
-build_time: [538231209, 428683000]
+version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
+options: "1f1c8cd757222e0911f14c346b6e4588"
+build_time: [538625229, 730157000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNotifications-2.0.1/Sources/NotificationPusher.swift": [538231196, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectNotifications-2.0.2/Sources/NotificationPusher.swift": [538523739, 0]

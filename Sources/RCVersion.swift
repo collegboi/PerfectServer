@@ -6,7 +6,13 @@
 //
 //
 
-import Cocoa
+#if os(Linux)
+    import LinuxBridge
+#else
+    import Darwin
+    import Cocoa
+#endif
+
 
 class RCVersion {
     
@@ -25,19 +31,19 @@ class RCVersion {
         
         var returnData = ""
         
-        do {
+        //do {
             
-            let data: NSData = dataStr.data(using: String.Encoding.utf8)! as NSData
+            //let data = dataStr.data(using: String.Encoding.utf8)!
             
-            let parsedData = try JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as! [String:Any]
+            //let parsedData = try JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as! [String:Any]
             
-            let dict = parsedData[key] as! [String:Any]
+            //let dict = parsedData[key] as! [String:Any]
             
-            returnData = parseJSONToStr(dict: dict)
+            returnData = ""//parseJSONToStr(dict: dict)
             
-        } catch let error as NSError {
-            print(error)
-        }
+        //} catch let error {
+        //    print(error)
+        //}
         
         return returnData
     }
@@ -47,14 +53,14 @@ class RCVersion {
         
         var result = ""
         
-        do {
-            let jsonData: NSData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted ) as NSData
+        //do {
+            //let jsonData: NSData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted ) as Data
             
-            result = NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
+            result = ""//NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
             
-        } catch let error as NSError {
-            print(error)
-        }
+       // } catch let error {
+         //   print(error)
+       // }
         
         return result
     }

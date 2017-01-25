@@ -1,35 +1,35 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/Net.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/Net.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/Net.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/Net~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/Net.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCP.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCP.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCP.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCP~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCP.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetEvent.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetEvent.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetEvent.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetEvent~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetEvent.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCPSSL.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetNamedPipe.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/Net.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/Net.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/Net.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/Net~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/Net.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCP.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCP.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCP.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCP~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCP.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetEvent.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetEvent.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetEvent.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetEvent~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetEvent.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetTCPSSL.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.build/NetTCPSSL.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNet-2.0.5/Sources/NetNamedPipe.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNet.build/NetNamedPipe.swiftdeps"
   }
 }

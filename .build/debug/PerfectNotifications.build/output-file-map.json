@@ -1,11 +1,11 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNotifications.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNotifications-2.0.1/Sources/NotificationPusher.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectNotifications-2.0.2/Sources/NotificationPusher.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.swiftdeps"
   }
 }

@@ -1,29 +1,53 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swiftdeps"
+  "/home/collegboi/PerfectServer/Sources/RCHandler.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swiftdeps"
+  "/home/collegboi/PerfectServer/Sources/Weather.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/Weather~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.swiftdeps"
+  "/home/collegboi/PerfectServer/Sources/RemoteConfig.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Weather.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swiftdeps"
+  "/home/collegboi/PerfectServer/Sources/DatabaseController.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swiftdeps"
+  },
+  "/home/collegboi/PerfectServer/Sources/RouteHandlers.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.swiftdeps"
+  },
+  "/home/collegboi/PerfectServer/Sources/main.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/main.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/main.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/main~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/main.swiftdeps"
+  },
+  "/home/collegboi/PerfectServer/Sources/ResultBody.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.swiftdeps"
+  },
+  "/home/collegboi/PerfectServer/Sources/RCVersion.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.swiftdeps"
   }
 }

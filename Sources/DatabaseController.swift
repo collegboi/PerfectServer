@@ -56,7 +56,7 @@ class DatabaseController {
         }
 
         
-        let returnValue = collection.insert(document: document)
+        let _ = collection.insert(document: document)
         
         return ""
 //        if returnValue == MongoResult.success {

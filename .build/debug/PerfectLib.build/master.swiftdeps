@@ -1,14 +1,14 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "38ef6147be448938fe489741430e7f68"
-build_time: [538230880, 244906000]
+version: "Swift version 3.0 (swift-3.0-GM-CANDIDATE)"
+options: "92b5a35ffeb9d909c1b0936dac1ffb0f"
+build_time: [538625210, 619787000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Bytes.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Dir.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/File.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/JSONConvertible.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Log.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectError.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectServer.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SwiftCompatibility.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SysProcess.swift": [538230832, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Utilities.swift": [538230832, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectError.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/File.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Log.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SwiftCompatibility.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Dir.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectServer.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SysProcess.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Bytes.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/JSONConvertible.swift": [538523718, 0]
+  "/home/collegboi/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Utilities.swift": [538523718, 0]

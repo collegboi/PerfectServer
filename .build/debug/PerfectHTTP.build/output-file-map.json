@@ -1,59 +1,59 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/master.swiftdeps"
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPFilter.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/MimeType.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeType~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPHeaders.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/Routing.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/Routing.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/Routing.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/Routing~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/Routing.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPMethod.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPRequest.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPRequest.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPRequest.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPMethod.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPMethod.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPResponse.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPFilter.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPFilter.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/MimeReader.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/StaticFileHandler.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/MimeType.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeType~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/MimeType.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPHeaders.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPHeaders.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/Routing.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/Routing.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/Routing.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/Routing~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/Routing.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/MimeReader.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/MimeReader.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/StaticFileHandler.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.build/StaticFileHandler.swiftdeps"
+  "/home/collegboi/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPResponse.swift": {
+    "dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.d",
+    "object": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.swift.o",
+    "swiftmodule": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse~partial.swiftmodule",
+    "swift-dependencies": "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.build/HTTPResponse.swiftdeps"
   }
 }

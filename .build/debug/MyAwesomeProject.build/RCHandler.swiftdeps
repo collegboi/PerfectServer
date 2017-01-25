@@ -1,0 +1,316 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "makeRCRoutes"
+- "indexRCHandler"
+- "getRemoteConfig"
+- "sendRemoteConfig"
+provides-nominal:
+provides-member:
+depends-top-level:
+- !private "echo4Handler"
+- !private "UnicodeScalarType"
+- !private "print"
+- "HTTPRequest"
+- !private "ResultBody"
+- "HTTPResponse"
+- "getRemoteConfig"
+- !private "rawPOSTHandler"
+- "AssignmentPrecedence"
+- "indexRCHandler"
+- !private "RCVersion"
+- "Routes"
+- !private "RemoteConfig"
+- "sendRemoteConfig"
+- "makeRCRoutes"
+- !private "StringLiteralType"
+- !private "Array"
+depends-member:
+- !private ["Ps9AnyObject", "errorBody"]
+- !private ["Ps9AnyObject", "getContentsOfFile"]
+- !private ["Ps9AnyObject", "sendRemoteConfig"]
+- !private ["Ps9AnyObject", "successBody"]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Element"]
+- !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- ["Ps28CustomDebugStringConvertible", "some"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- ["Ps17CustomReflectable", "some"]
+- !private ["Ps23CustomStringConvertible", "Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "description"]
+- !private ["Ps23CustomStringConvertible", "get"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "post"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "get"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "post"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- ["Ps23ExpressibleByNilLiteral", "some"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
+- ["O11PerfectHTTP10HTTPMethod", "deinit"]
+- !private ["O11PerfectHTTP10HTTPMethod", "get"]
+- !private ["O11PerfectHTTP10HTTPMethod", "post"]
+- ["P11PerfectHTTP11HTTPRequest", "deinit"]
+- !private ["P11PerfectHTTP11HTTPRequest", "path"]
+- !private ["P11PerfectHTTP11HTTPRequest", "postBodyString"]
+- !private ["P11PerfectHTTP12HTTPResponse", "appendBody"]
+- !private ["P11PerfectHTTP12HTTPResponse", "completed"]
+- ["P11PerfectHTTP12HTTPResponse", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "get"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "post"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["P10PerfectLib15JSONConvertible", "Element"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
+- !private ["P10PerfectLib15JSONConvertible", "init"]
+- ["P10PerfectLib15JSONConvertible", "some"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
+- ["Sq", "deinit"]
+- ["Sq", "some"]
+- !private ["C16MyAwesomeProject9RCVersion", "sendRemoteConfig"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "getContentsOfFile"]
+- !private ["C16MyAwesomeProject10ResultBody", "errorBody"]
+- !private ["C16MyAwesomeProject10ResultBody", "successBody"]
+- ["P11PerfectHTTP14RouteNavigator", "deinit"]
+- !private ["P11PerfectHTTP14RouteNavigator", "description"]
+- !private ["V11PerfectHTTP6Routes", "add"]
+- ["V11PerfectHTTP6Routes", "deinit"]
+- !private ["V11PerfectHTTP6Routes", "init"]
+- !private ["V11PerfectHTTP6Routes", "navigator"]
+- !private ["Ps8Sequence", "Element"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["P10Foundation12_CFBridgable", "Element"]
+- !private ["P10Foundation12_CFBridgable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation12_CFBridgable", "init"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "get"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "post"]
+- !private ["P10Foundation12_NSBridgable", "Element"]
+- !private ["P10Foundation12_NSBridgable", "init"]
+- !private ["P10Foundation17_ObjectBridgeable", "Element"]
+- !private ["P10Foundation17_ObjectBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation17_ObjectBridgeable", "init"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "Element"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "_getBuiltinLogicValue"]
+- !private ["P10Foundation21_ObjectTypeBridgeable", "init"]
+depends-nominal:
+- !private "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- "Sb"
+- !private "Vs9Character"
+- !private "Ps10Collection"
+- !private "Ps10Comparable"
+- "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- !private "Sd"
+- !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- "Ps23ExpressibleByNilLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- "O11PerfectHTTP10HTTPMethod"
+- "P11PerfectHTTP11HTTPRequest"
+- "P11PerfectHTTP12HTTPResponse"
+- !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- "P10PerfectLib15JSONConvertible"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
+- "Sq"
+- !private "C16MyAwesomeProject9RCVersion"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "C16MyAwesomeProject12RemoteConfig"
+- !private "C16MyAwesomeProject10ResultBody"
+- "P11PerfectHTTP14RouteNavigator"
+- "V11PerfectHTTP6Routes"
+- !private "Ps8Sequence"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
+- !private "Ps14_ArrayProtocol"
+- !private "P10Foundation12_CFBridgable"
+- !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps9_Hashable"
+- !private "P10Foundation12_NSBridgable"
+- !private "P10Foundation17_ObjectBridgeable"
+- !private "P10Foundation21_ObjectTypeBridgeable"
+depends-dynamic-lookup:
+depends-external:
+- "/usr/lib/swift/linux/x86_64/Swift.swiftmodule"
+- "/usr/lib/swift/shims/Visibility.h"
+- "/usr/lib/swift/shims/SwiftStdint.h"
+- "/usr/lib/swift/shims/UnicodeShims.h"
+- "/usr/lib/swift/shims/SwiftStddef.h"
+- "/usr/lib/swift/shims/LibcShims.h"
+- "/usr/lib/swift/shims/RuntimeStubs.h"
+- "/usr/lib/swift/shims/RuntimeShims.h"
+- "/usr/lib/swift/shims/RefCount.h"
+- "/usr/lib/swift/shims/HeapObject.h"
+- "/usr/lib/swift/shims/GlobalObjects.h"
+- "/usr/lib/swift/shims/FoundationShims.h"
+- "/usr/lib/swift/shims/DispatchShims.h"
+- "/usr/lib/swift/shims/CoreFoundationShims.h"
+- "/usr/lib/swift/linux/x86_64/glibc.modulemap"
+- "/usr/lib/swift/shims/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Foundation.swiftmodule"
+- "/usr/lib/swift/linux/x86_64/Dispatch.swiftmodule"
+- "/usr/lib/swift/dispatch/module.modulemap"
+- "/usr/lib/swift/linux/x86_64/Glibc.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/LinuxBridge.build/module.modulemap"
+- "/home/collegboi/PerfectServer/Packages/LinuxBridge-2.0.2/LinuxBridge/include/LinuxBridge.h"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/home/collegboi/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/home/collegboi/PerfectServer/.build/debug/MongoDB.swiftmodule"
+- "/usr/include/libmongoc-1.0/mongoc-stream-tls.h"
+- "/usr/include/libmongoc-1.0/mongoc-rand.h"
+- "/usr/include/libmongoc-1.0/mongoc-version-functions.h"
+- "/usr/include/libmongoc-1.0/mongoc-version.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-socket.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-gridfs.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-file.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream-buffered.h"
+- "/usr/include/libmongoc-1.0/mongoc-log.h"
+- "/usr/include/libmongoc-1.0/mongoc-opcode.h"
+- "/usr/include/libmongoc-1.0/mongoc-matcher.h"
+- "/usr/include/libmongoc-1.0/mongoc-init.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-page.h"
+- "/usr/include/libmongoc-1.0/mongoc-error.h"
+- "/usr/include/libmongoc-1.0/mongoc-client-pool.h"
+- "/usr/include/libmongoc-1.0/mongoc-uri.h"
+- "/usr/include/libmongoc-1.0/mongoc-ssl.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file-list.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs-file.h"
+- "/usr/include/libmongoc-1.0/mongoc-socket.h"
+- "/usr/include/libmongoc-1.0/mongoc-iovec.h"
+- "/usr/include/libmongoc-1.0/mongoc-stream.h"
+- "/usr/include/libmongoc-1.0/mongoc-gridfs.h"
+- "/usr/include/libmongoc-1.0/mongoc-database.h"
+- "/usr/include/libmongoc-1.0/mongoc-config.h"
+- "/usr/include/libmongoc-1.0/mongoc-find-and-modify.h"
+- "/usr/include/libmongoc-1.0/mongoc-read-concern.h"
+- "/usr/include/libmongoc-1.0/mongoc-read-prefs.h"
+- "/usr/include/libmongoc-1.0/mongoc-index.h"
+- "/usr/include/libmongoc-1.0/mongoc-host-list.h"
+- "/usr/include/libmongoc-1.0/mongoc-cursor.h"
+- "/usr/include/libmongoc-1.0/mongoc-flags.h"
+- "/usr/include/libmongoc-1.0/mongoc-collection.h"
+- "/usr/include/libmongoc-1.0/mongoc-client.h"
+- "/usr/include/libmongoc-1.0/mongoc-write-concern.h"
+- "/usr/include/libmongoc-1.0/mongoc-bulk-operation.h"
+- "/usr/include/libbson-1.0/bson.h"
+- "/usr/include/libbson-1.0/bcon.h"
+- "/usr/include/libbson-1.0/bson-writer.h"
+- "/usr/include/libbson-1.0/bson-version-functions.h"
+- "/usr/include/libbson-1.0/bson-version.h"
+- "/usr/include/libbson-1.0/bson-value.h"
+- "/usr/include/libbson-1.0/bson-utf8.h"
+- "/usr/include/libbson-1.0/bson-string.h"
+- "/usr/include/libbson-1.0/bson-reader.h"
+- "/usr/include/libbson-1.0/bson-oid.h"
+- "/usr/include/libbson-1.0/bson-memory.h"
+- "/usr/include/libbson-1.0/bson-md5.h"
+- "/usr/include/libbson-1.0/bson-keys.h"
+- "/usr/include/libbson-1.0/bson-json.h"
+- "/usr/include/libbson-1.0/bson-endian.h"
+- "/usr/include/libbson-1.0/bson-iter.h"
+- "/usr/include/libbson-1.0/bson-error.h"
+- "/usr/include/libbson-1.0/bson-clock.h"
+- "/usr/include/libbson-1.0/bson-types.h"
+- "/usr/include/libbson-1.0/bson-context.h"
+- "/usr/include/libbson-1.0/bson-atomic.h"
+- "/usr/include/libbson-1.0/bson-stdint.h"
+- "/usr/include/libbson-1.0/bson-macros.h"
+- "/usr/include/libbson-1.0/bson-config.h"
+- "/usr/include/libbson-1.0/bson-compat.h"
+- "/usr/local/include/libmongoc-1.0/mongoc.h"
+- "/home/collegboi/PerfectServer/Packages/libmongoc-2.0.1/module.modulemap"
+- "/home/collegboi/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
+- "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
+- "/home/collegboi/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/module.modulemap"
+interface-hash: "cb3d017693a24f85a295d333978d1bd7"
