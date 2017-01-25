@@ -14,6 +14,30 @@
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swiftdeps"
   },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCHandler.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCVersion.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCVersion.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RemoteConfig.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RemoteConfig.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/ResultBody.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/ResultBody.swiftdeps"
+  },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.d",
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RouteHandlers.swift.o",

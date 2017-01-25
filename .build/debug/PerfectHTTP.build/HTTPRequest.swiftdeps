@@ -12,24 +12,24 @@ provides-member:
 - ["P11PerfectHTTP11HTTPRequest", "cookies"]
 provides-dynamic-lookup:
 depends-top-level:
-- "AnyIterator"
-- "Int"
 - "HTTPRequestHeader"
-- "MimeReader"
-- !private "+"
-- !private "UnicodeScalarType"
-- "HTTPMethod"
-- !private "StringLiteralType"
-- !private "!="
 - !private "Character"
-- "UInt16"
-- "UInt8"
-- "HTTPRequest"
+- !private "!="
+- !private "StringLiteralType"
 - "String"
-- "NetTCP"
-- !private "??"
+- "MimeReader"
 - !private "=="
+- !private "UnicodeScalarType"
+- "HTTPRequest"
+- "UInt8"
+- "Int"
+- "NetTCP"
 - !private "ExtendedGraphemeClusterType"
+- "AnyIterator"
+- "HTTPMethod"
+- "UInt16"
+- !private "+"
+- !private "??"
 depends-member:
 - ["Ps9AnyObject", "BodySpec"]
 - !private ["Ps9AnyObject", "characters"]

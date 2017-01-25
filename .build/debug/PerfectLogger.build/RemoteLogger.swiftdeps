@@ -7,24 +7,24 @@ provides-member:
 - ["V13PerfectLogger12RemoteLogger", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "fatalError"
 - !private "CURLOPT_USERAGENT"
+- "RemoteLogger"
+- "String"
+- "ConsoleLogger"
 - !private "CURLOPT_HTTPHEADER"
 - "StringLiteralType"
-- !private "CURLOPT_POSTFIELDSIZE"
-- !private "UInt8"
 - !private "+"
-- "ConsoleLogger"
-- "String"
-- "AssignmentPrecedence"
-- "RemoteLogger"
-- !private "UUID"
-- !private "CURL"
-- !private "UnsafeMutablePointer"
+- !private "UInt8"
 - "Never"
-- !private "!"
-- !private "CURLOPT_POST"
+- !private "CURLOPT_POSTFIELDSIZE"
+- !private "fatalError"
+- "AssignmentPrecedence"
+- !private "UUID"
 - !private "CURLOPT_COPYPOSTFIELDS"
+- !private "UnsafeMutablePointer"
+- !private "CURLOPT_POST"
+- !private "!"
+- !private "CURL"
 depends-member:
 - !private ["Ps9AnyObject", "close"]
 - ["Ps9AnyObject", "init"]

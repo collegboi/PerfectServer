@@ -6,7 +6,12 @@
 //
 //
 
-import Cocoa
+#if os(Linux)
+    import LinuxBridge
+#else
+    import Darwin
+    import Cocoa
+#endif
 
 class RCVersion {
     
@@ -23,9 +28,9 @@ class RCVersion {
     
     class func parseJSONConfig( key:String, dataStr : String) -> String? {
         
-        var returnData = ""
+        //var returnData = ""
         
-        do {
+        /*do {
             
             let data: NSData = dataStr.data(using: String.Encoding.utf8)! as NSData
             
@@ -33,30 +38,30 @@ class RCVersion {
             
             let dict = parsedData[key] as! [String:Any]
             
-            returnData = parseJSONToStr(dict: dict)
+            returnData =parseJSONToStr(dict: dict)
             
         } catch let error as NSError {
             print(error)
-        }
+        } */
         
-        return returnData
+        return ""
     }
     
     
     class func parseJSONToStr( dict: [String:Any] ) -> String  {
         
-        var result = ""
+        //var result = ""
         
-        do {
+        /*do {
             let jsonData: NSData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted ) as NSData
             
             result = NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
             
         } catch let error as NSError {
             print(error)
-        }
+        }*/
         
-        return result
+        return ""
     }
     
     

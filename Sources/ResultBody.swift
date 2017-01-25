@@ -6,7 +6,12 @@
 //
 //
 
-import Foundation
+#if os(Linux)
+    import LinuxBridge
+#else
+    import Darwin
+    import Cocoa
+#endif
 
 class ResultBody {
     

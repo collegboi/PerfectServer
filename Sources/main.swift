@@ -86,6 +86,7 @@ server.addRoutes(makeRCRoutes())
 
 // Set a listen port of 8181
 server.serverPort = 8181
+server.serverAddress = "localhost"
 
 // Where to serve static files from
 server.documentRoot = "./webroot"

@@ -7,21 +7,21 @@ provides-member:
 - ["C7MongoDB15MongoClientPool", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MongoClientPool"
-- !private "mongoc_client_pool_new"
-- "MongoClient"
-- !private "mongoc_client_pool_destroy"
-- !private "mongoc_client_pool_push"
-- "Void"
-- !private "!="
 - !private "mongoc_uri_new"
+- !private "!="
 - "AssignmentPrecedence"
 - !private "mongoc_client_pool_pop"
-- "FloatLiteralType"
-- "String"
-- !private "mongoc_client_pool_try_pop"
-- "IntegerLiteralType"
 - "OpaquePointer"
+- !private "mongoc_client_pool_destroy"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- !private "mongoc_client_pool_try_pop"
+- !private "mongoc_client_pool_new"
+- "MongoClientPool"
+- "MongoClient"
+- "Void"
+- "String"
+- !private "mongoc_client_pool_push"
 depends-member:
 - !private ["Ps9AnyObject", "MongoClient"]
 - ["Ps9AnyObject", "OpaquePointer"]

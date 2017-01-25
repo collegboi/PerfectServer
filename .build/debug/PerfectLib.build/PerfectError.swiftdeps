@@ -10,20 +10,20 @@ provides-member:
 - ["O10PerfectLib12PerfectError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int32"
-- "Never"
-- !private "UnicodeScalarType"
-- "Int"
-- !private "errno"
-- !private "+"
-- "PerfectError"
 - "ThrowNetworkError"
 - !private "strerror"
+- !private "+"
 - "String"
-- "ThrowFileError"
 - "ThrowSystemError"
+- "Int32"
+- !private "UnicodeScalarType"
+- !private "errno"
+- "Never"
+- "Int"
 - "StringLiteralType"
 - "Error"
+- "PerfectError"
+- "ThrowFileError"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sb", "deinit"]

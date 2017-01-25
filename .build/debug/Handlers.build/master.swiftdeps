@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "426e2e6565b8650c84a092ffd597fb1b"
+build_time: [538665662, 140136000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Handlers/RCHandler.swift": !dirty [538479776, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Handlers/RouteHandlers.swift": !dirty [538479776, 0]

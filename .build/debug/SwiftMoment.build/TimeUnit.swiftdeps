@@ -7,9 +7,9 @@ provides-member:
 - ["O11SwiftMoment8TimeUnit", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
 - "UnicodeScalarType"
 - "StringLiteralType"
-- "String"
 - "=="
 - !private "~="
 - "TimeUnit"

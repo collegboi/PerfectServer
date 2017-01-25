@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B25857771E323E8200EF0A1E /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25857751E323E5700EF0A1E /* Weather.swift */; };
 		B25857781E323E8600EF0A1E /* RouteHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25857721E323E3B00EF0A1E /* RouteHandlers.swift */; };
-		B258577C1E323EF100EF0A1E /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258577A1E323EE000EF0A1E /* DatabaseController.swift */; };
 		B27D84451E3399B0007ADB39 /* RemoteConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D84431E339784007ADB39 /* RemoteConfig.swift */; };
 		B27D84481E339B37007ADB39 /* RCHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D84461E339B1A007ADB39 /* RCHandler.swift */; };
 		B27D84491E33A90A007ADB39 /* RCVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D84411E339544007ADB39 /* RCVersion.swift */; };
 		B27D844C1E33B943007ADB39 /* ResultBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27D844A1E33B84D007ADB39 /* ResultBody.swift */; };
+		B2A99F3A1E38DA49003D84FD /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B258577A1E323EE000EF0A1E /* DatabaseController.swift */; };
 		OBJ_1000 /* dso_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_224 /* dso_lib.c */; };
 		OBJ_1001 /* dso_null.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_225 /* dso_null.c */; };
 		OBJ_1002 /* dso_openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_226 /* dso_openssl.c */; };
@@ -1813,7 +1813,7 @@
 		OBJ_770 /* SwiftMoment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftMoment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_771 /* PerfectCURL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectCURL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_772 /* PerfectLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PerfectLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_773 /* MyAwesomeProject */ = {isa = PBXFileReference; lastKnownFileType = text; path = MyAwesomeProject; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_773 /* MyAwesomeProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = MyAwesomeProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_78 /* bio_md.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bio_md.c; sourceTree = "<group>"; };
 		OBJ_79 /* bio_ndef.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bio_ndef.c; sourceTree = "<group>"; };
 		OBJ_80 /* bio_ok.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bio_ok.c; sourceTree = "<group>"; };
@@ -1993,7 +1993,6 @@
 				B27D843D1E3394B0007ADB39 /* Analytics */,
 				B27D843C1E3394A8007ADB39 /* Notifications */,
 				B27D843B1E339456007ADB39 /* Remote Config */,
-				B25857751E323E5700EF0A1E /* Weather.swift */,
 			);
 			name = Apps;
 			sourceTree = "<group>";
@@ -2049,6 +2048,14 @@
 			children = (
 			);
 			name = Backup;
+			sourceTree = "<group>";
+		};
+		B2A99F371E38DA0C003D84FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B25857751E323E5700EF0A1E /* Weather.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		OBJ_19 /* COpenSSL */ = {
@@ -2913,6 +2920,7 @@
 		OBJ_757 /* MyAwesomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				B2A99F371E38DA0C003D84FD /* Models */,
 				B25857791E323ECC00EF0A1E /* Controllers */,
 				B25857741E323E4C00EF0A1E /* Apps */,
 				B25857711E323E1200EF0A1E /* Handlers */,
@@ -3228,6 +3236,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					OBJ_1637 = {
+						DevelopmentTeam = 4EU4PGMLU9;
+						ProvisioningStyle = Automatic;
+					};
+					OBJ_774 = {
+						DevelopmentTeam = 4EU4PGMLU9;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "MyAwesomeProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -3395,10 +3412,10 @@
 			buildActionMask = 0;
 			files = (
 				B27D844C1E33B943007ADB39 /* ResultBody.swift in Sources */,
-				B258577C1E323EF100EF0A1E /* DatabaseController.swift in Sources */,
 				B27D84451E3399B0007ADB39 /* RemoteConfig.swift in Sources */,
 				B27D84491E33A90A007ADB39 /* RCVersion.swift in Sources */,
 				B25857771E323E8200EF0A1E /* Weather.swift in Sources */,
+				B2A99F3A1E38DA49003D84FD /* DatabaseController.swift in Sources */,
 				B25857781E323E8600EF0A1E /* RouteHandlers.swift in Sources */,
 				OBJ_1642 /* main.swift in Sources */,
 				B27D84481E339B37007ADB39 /* RCHandler.swift in Sources */,
@@ -4830,6 +4847,8 @@
 		OBJ_1639 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4EU4PGMLU9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -4868,6 +4887,8 @@
 		OBJ_1640 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4EU4PGMLU9;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -4899,6 +4920,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mongo-c-driver/1.5.3/include/libmongoc-1.0 -I/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0 -I/usr/include";
 				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
 				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGET_NAME = MyAwesomeProject;
 			};
 			name = Release;
@@ -4939,7 +4961,7 @@
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				USE_HEADERMAP = NO;
 			};
@@ -4948,6 +4970,8 @@
 		OBJ_776 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4EU4PGMLU9;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -4969,6 +4993,8 @@
 		OBJ_777 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				DEVELOPMENT_TEAM = 4EU4PGMLU9;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

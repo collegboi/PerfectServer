@@ -6,7 +6,13 @@
 //
 //
 
-import Cocoa
+#if os(Linux)
+    import LinuxBridge
+#else
+    import Darwin
+    import Cocoa
+#endif
+
 import PerfectLib
 
 class RemoteConfig {

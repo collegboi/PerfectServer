@@ -10,21 +10,21 @@ provides-member:
 - ["OV11PerfectHTTP8MimeType7TopType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "ExtendedGraphemeClusterType"
 - "StringLiteralType"
-- !private "defaultSubType"
-- "CustomStringConvertible"
-- "String"
-- "Dictionary"
-- !private "UnicodeScalarType"
-- "AssignmentPrecedence"
-- !private "~="
-- "ExpressibleByStringLiteral"
 - !private "??"
+- "CustomStringConvertible"
+- !private "defaultSubType"
+- !private "ExtendedGraphemeClusterType"
+- !private "UnicodeScalarType"
+- !private "~="
+- !private ">"
+- "AssignmentPrecedence"
+- "ExpressibleByStringLiteral"
+- "String"
+- !private "defaultTopType"
+- "Dictionary"
 - "mimeMap"
 - "MimeType"
-- !private ">"
-- !private "defaultTopType"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "characters"]

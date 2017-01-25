@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/master.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Controller/DatabaseController.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/DatabaseController.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/DatabaseController.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/DatabaseController~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/DatabaseController.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Controller/ResultBody.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/ResultBody.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/ResultBody.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/ResultBody~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Controller.build/ResultBody.swiftdeps"
+  }
+}
