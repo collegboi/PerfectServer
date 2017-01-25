@@ -7,15 +7,15 @@ provides-member:
 - ["C16MyAwesomeProject12RemoteConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- "String"
-- "RemoteConfig"
-- "AssignmentPrecedence"
-- !private "!"
-- !private "StringLiteralType"
-- "Dir"
 - !private "print"
+- "Dir"
+- "String"
+- !private "!"
+- "AssignmentPrecedence"
+- "Bool"
 - !private "File"
+- "RemoteConfig"
+- !private "StringLiteralType"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "Dir"]
@@ -310,4 +310,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
-interface-hash: "3584703e5d3f3fa2b6410d9978393a34"
+interface-hash: "9ee59027f11996844d86b999d7c6180f"

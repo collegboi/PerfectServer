@@ -16,7 +16,7 @@ let package = Package(
         ),
         .Package(url: "https://github.com/PerfectlySoft/Perfect-Logger.git", 
         majorVersion: 1
-        )
-        //.Package(url: "https://github.com/benloong/TidyJSON.git", majorVersion: 1)
+        ),
+        .Package(url: "https://github.com/hkellaway/Gloss.git", majorVersion: 1, minor: 2)
     ]
 )

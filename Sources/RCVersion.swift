@@ -28,40 +28,40 @@ class RCVersion {
     
     class func parseJSONConfig( key:String, dataStr : String) -> String? {
         
-        //var returnData = ""
+        var returnData = ""
         
-        /*do {
+        let encoded = dataStr
+        
+        do {
+        
+            let decoded = try encoded.jsonDecode() as? [String:Any]
             
-            let data: NSData = dataStr.data(using: String.Encoding.utf8)! as NSData
+            let dict = decoded?[key] as! [String:Any]
             
-            let parsedData = try JSONSerialization.jsonObject(with: data as Data, options: .allowFragments) as! [String:Any]
+            returnData = parseJSONToStr(dict: dict)
             
-            let dict = parsedData[key] as! [String:Any]
-            
-            returnData =parseJSONToStr(dict: dict)
-            
-        } catch let error as NSError {
+        } catch let error {
             print(error)
-        } */
+        }
         
-        return ""
+        return returnData
     }
     
     
     class func parseJSONToStr( dict: [String:Any] ) -> String  {
         
-        //var result = ""
+        var result = ""
         
-        /*do {
-            let jsonData: NSData = try JSONSerialization.data(withJSONObject: dict, options: JSONSerialization.WritingOptions.prettyPrinted ) as NSData
+        do {
             
-            result = NSString(data: jsonData as Data, encoding: String.Encoding.utf8.rawValue)! as String
+            //let scoreArray: [String:Any] = dict
+            result = try dict.jsonEncodedString()
             
         } catch let error as NSError {
             print(error)
-        }*/
+        }
         
-        return ""
+        return result
     }
     
     

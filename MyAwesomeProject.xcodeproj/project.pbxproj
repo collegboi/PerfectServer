@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B25DA0BE1E38EACF00B3B740 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25DA0BD1E38EACF00B3B740 /* JSON.swift */; };
 		OBJ_1000 /* dsa_key.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_213 /* dsa_key.c */; };
 		OBJ_1001 /* dsa_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_214 /* dsa_lib.c */; };
 		OBJ_1002 /* dsa_ossl.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_215 /* dsa_ossl.c */; };
@@ -1081,6 +1082,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B25DA0BD1E38EACF00B3B740 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_100 /* bn_mul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_mul.c; sourceTree = "<group>"; };
 		OBJ_101 /* bn_nist.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bn_nist.c; sourceTree = "<group>"; };
@@ -2855,6 +2857,7 @@
 				OBJ_764 /* ResultBody.swift */,
 				OBJ_765 /* RouteHandlers.swift */,
 				OBJ_766 /* Weather.swift */,
+				B25DA0BD1E38EACF00B3B740 /* JSON.swift */,
 			);
 			name = MyAwesomeProject;
 			path = Sources;
@@ -3349,6 +3352,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_790 /* Bytes.swift in Sources */,
+				B25DA0BE1E38EACF00B3B740 /* JSON.swift in Sources */,
 				OBJ_791 /* Dir.swift in Sources */,
 				OBJ_792 /* File.swift in Sources */,
 				OBJ_793 /* JSONConvertible.swift in Sources */,

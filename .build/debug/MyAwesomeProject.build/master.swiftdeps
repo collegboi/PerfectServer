@@ -1,12 +1,13 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "abb7c4bf27a2363c611782c00d7e6648"
-build_time: [538666468, 816557000]
+build_time: [538669999, 38013000]
 inputs:
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": [538665322, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/JSON.swift": [9223372036854775807, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": [538665819, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCHandler.swift": [538479776, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCVersion.swift": [538665648, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RemoteConfig.swift": [538664654, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RemoteConfig.swift": [538666916, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/ResultBody.swift": [538664693, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": [538479776, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Weather.swift": [538665596, 0]

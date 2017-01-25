@@ -8,23 +8,23 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- !private "echo4Handler"
+- "AssignmentPrecedence"
 - "HTTPRequest"
 - !private "RCVersion"
-- !private "Array"
-- !private "echo4Handler"
-- !private "StringLiteralType"
-- !private "UnicodeScalarType"
+- "indexRCHandler"
 - !private "print"
+- "Routes"
 - "HTTPResponse"
 - !private "ResultBody"
-- "sendRemoteConfig"
 - "makeRCRoutes"
-- !private "RemoteConfig"
-- "AssignmentPrecedence"
 - !private "rawPOSTHandler"
-- "Routes"
-- "indexRCHandler"
+- "sendRemoteConfig"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- !private "RemoteConfig"
 - "getRemoteConfig"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getContentsOfFile"]

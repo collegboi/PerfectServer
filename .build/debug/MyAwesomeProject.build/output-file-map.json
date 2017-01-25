@@ -8,6 +8,12 @@
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swiftdeps"
   },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/JSON.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.swiftdeps"
+  },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.d",
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swift.o",

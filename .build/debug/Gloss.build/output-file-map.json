@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/master.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Decoder.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Decoder.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Decoder.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Decoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Decoder.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Encoder.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Encoder.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Encoder.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Encoder~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Encoder.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionArray.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionArray.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionArray.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionArray~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionArray.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionDecodable.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionDictionary.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Gloss.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Gloss.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Gloss.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Gloss~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Gloss.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Operators.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Operators.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Operators.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Operators~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Gloss.build/Operators.swiftdeps"
+  }
+}
