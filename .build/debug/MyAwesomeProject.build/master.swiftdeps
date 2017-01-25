@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "abb7c4bf27a2363c611782c00d7e6648"
-build_time: [538665875, 523809000]
+build_time: [538666468, 816557000]
 inputs:
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": [538665322, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": [538665819, 0]

@@ -7,16 +7,16 @@ provides-member:
 - ["C16MyAwesomeProject12RemoteConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- !private "!"
-- "AssignmentPrecedence"
 - "Bool"
-- "RemoteConfig"
 - "String"
+- "RemoteConfig"
+- "AssignmentPrecedence"
+- !private "!"
 - !private "StringLiteralType"
+- "Dir"
+- !private "print"
 - !private "File"
 - !private "BooleanLiteralType"
-- "Dir"
 depends-member:
 - !private ["Ps9AnyObject", "Dir"]
 - !private ["Ps9AnyObject", "File"]

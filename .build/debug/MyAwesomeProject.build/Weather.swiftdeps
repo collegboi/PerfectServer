@@ -7,11 +7,11 @@ provides-member:
 - ["C16MyAwesomeProject7Weather", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
-- "String"
 - "AssignmentPrecedence"
-- "Weather"
+- !private "UnicodeScalarType"
 - "StringLiteralType"
+- "Weather"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "init"]

@@ -12,9 +12,9 @@ provides-member:
 - ["Si", "years"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Duration"
 - "Int"
 - !private "*"
+- "Duration"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 depends-member:

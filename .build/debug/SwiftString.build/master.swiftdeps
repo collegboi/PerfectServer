@@ -1,7 +1,0 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "99df6fe6977b7a7dcdf8289ff40a682d"
-build_time: [538230253, 90242000]
-inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftString-1.0.13/Sources/StringExtensions.swift": [538230218, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftString-1.0.13/Sources/StringHTML.swift": [538230218, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftString-1.0.13/Sources/StringURL.swift": [538230218, 0]

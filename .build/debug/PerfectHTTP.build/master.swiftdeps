@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "ae72a756a9d295a9a39fcf164513d1b9"
-build_time: [538664266, 598334000]
+build_time: [538666464, 135205000]
 inputs:
   "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPFilter.swift": [538664192, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTP-2.0.7/Sources/HTTPHeaders.swift": [538664194, 0]

@@ -5,15 +5,15 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPServer"
+- "makeRCRoutes"
 - "IntegerLiteralType"
+- "makeRoutes"
 - "FloatLiteralType"
-- "AssignmentPrecedence"
 - "server"
+- "HTTPServer"
+- "AssignmentPrecedence"
 - "StringLiteralType"
 - "fatalError"
-- "makeRoutes"
-- "makeRCRoutes"
 depends-member:
 - ["Ps9AnyObject", "addRoutes"]
 - ["Ps9AnyObject", "documentRoot"]

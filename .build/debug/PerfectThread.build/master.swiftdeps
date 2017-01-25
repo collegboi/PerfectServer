@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "31b81729c6a66a24b42d0c0f85b8bd57"
-build_time: [538664261, 966611000]
+build_time: [538666454, 64292000]
 inputs:
   "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectThread-2.0.5/Sources/Threading.swift": [538664214, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectThread-2.0.5/Sources/ThreadQueue.swift": [538664214, 0]

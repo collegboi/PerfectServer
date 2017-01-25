@@ -7,14 +7,14 @@ provides-member:
 - ["C16MyAwesomeProject18DatabaseController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MongoCollection"
 - "DatabaseController"
-- !private "StringLiteralType"
-- "MongoClient"
 - "MongoDatabase"
-- !private "UnicodeScalarType"
-- !private "BSON"
 - "String"
+- !private "BSON"
+- "MongoClient"
+- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "MongoCollection"
 depends-member:
 - !private ["Ps9AnyObject", "BSON"]
 - !private ["Ps9AnyObject", "Element"]

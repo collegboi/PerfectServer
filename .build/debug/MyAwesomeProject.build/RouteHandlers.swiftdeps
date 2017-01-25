@@ -13,25 +13,25 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "echo2Handler"
-- "echoHandler"
-- "echo3Handler"
 - "echo4Handler"
 - "HTTPRequest"
-- !private "print"
 - !private "DatabaseController"
+- "echo3Handler"
+- "mongoHandler"
+- !private "print"
+- "echo2Handler"
 - !private "ResultBody"
 - "HTTPResponse"
-- "mongoHandler"
-- !private "UnicodeScalarType"
-- "indexHandler"
+- "echoHandler"
 - "rawPOSTHandler"
 - "Routes"
-- !private "StringLiteralType"
-- !private "??"
-- !private "Array"
-- "databasePost"
+- !private "UnicodeScalarType"
 - "makeRoutes"
+- !private "StringLiteralType"
+- "databasePost"
+- !private "Array"
+- "indexHandler"
+- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "init"]
