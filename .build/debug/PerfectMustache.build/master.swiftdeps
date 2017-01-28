@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "f5fbbeb801550df346bcdaf21d65efd8"
+build_time: [538784922, 105752000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectMustache-2.0.3/Sources/Mustache.swift": [538784845, 0]

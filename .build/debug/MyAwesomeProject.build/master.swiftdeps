@@ -1,13 +1,16 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "abb7c4bf27a2363c611782c00d7e6648"
-build_time: [538669999, 38013000]
+options: "354190c3695c1bb01c16f055b90920d9"
+build_time: [538920342, 189359000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": [538665322, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/JSON.swift": [9223372036854775807, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": [538665819, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCHandler.swift": [538479776, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCVersion.swift": [538665648, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RemoteConfig.swift": [538666916, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseController.swift": [538920058, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/IssueTracker.swift": [538920025, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/JSON.swift": [538669822, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": [538920117, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCHandler.swift": [538919354, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCVersion.swift": [538672576, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RemoteConfig.swift": [538672791, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/ResultBody.swift": [538664693, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": [538479776, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RouteHandlers.swift": [538785447, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Storage.swift": [538673189, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/TrackerHandler.swift": [538920238, 0]
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Weather.swift": [538665596, 0]

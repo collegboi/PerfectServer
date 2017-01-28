@@ -12,68 +12,68 @@ provides-member:
 - ["OC17PerfectHTTPServer13HTTP11Request5State", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Threading"
-- !private "httpMaxHeadersSize"
-- "UInt8"
-- !private "httpReadTimeout"
-- "String"
-- !private "!="
-- "HTTP11Request"
-- !private "characterSP"
-- "httpLF"
-- "ExtendedGraphemeClusterType"
-- !private "HPE_HEADER_OVERFLOW"
-- "http_parser"
-- !private "UTF8Encoding"
-- "HTTPRequest"
-- "AnyIterator"
-- !private "httpQuestion"
-- !private "&&"
-- !private "httpReadSize"
-- !private "http_parser_execute"
-- "CastingPrecedence"
-- "=="
-- "MimeReader"
-- "AssignmentPrecedence"
-- "IntegerLiteralType"
 - !private "TernaryPrecedence"
-- "NetTCP"
-- "FloatLiteralType"
-- !private "characterCRLF"
-- "HTTPResponseStatus"
-- !private "http_parser_init"
-- !private "characterCR"
-- "UInt16"
 - "HTTPRequestHeader"
-- "Character"
+- "IntegerLiteralType"
+- "http_parser_settings"
+- "Dictionary"
+- !private "UTF8Encoding"
+- !private "Threading"
+- "FloatLiteralType"
 - !private "HTTP_REQUEST"
-- !private "characterColon"
+- "UnicodeScalarType"
+- !private "Unmanaged"
+- !private "httpReadSize"
+- "UInt8"
+- !private "httpMaxHeadersSize"
+- !private "characterCRLF"
+- !private "Int32"
+- "String"
+- !private "||"
+- "=="
+- "AssignmentPrecedence"
+- !private "httpQuestion"
+- "CastingPrecedence"
+- !private "http_parser_init"
+- "Int"
+- "UnicodeScalar"
+- "Character"
+- !private "..<"
+- "AnyIterator"
+- "http_parser"
+- !private "http_parser_execute"
+- !private "characterCR"
+- "StringLiteralType"
+- "UInt16"
+- "NetTCP"
+- !private "characterLF"
+- "MimeReader"
 - !private "httpSpace"
 - !private ">"
-- !private "||"
-- !private "BooleanLiteralType"
-- "StringLiteralType"
-- "Dictionary"
-- !private "+"
-- !private "??"
-- "UnicodeScalar"
-- !private "characterLF"
-- "UnsafeMutablePointer"
-- "UnicodeScalarType"
-- "Int8"
-- !private "Unmanaged"
-- !private "Int32"
-- "httpCR"
-- "UnsafePointer"
-- !private "..<"
-- !private "characterHT"
-- "HTTPMethod"
-- "*"
-- !private "http_method_str"
-- !private "http_method"
-- "Int"
 - "Bool"
-- "http_parser_settings"
+- !private "BooleanLiteralType"
+- !private "characterColon"
+- !private "HPE_HEADER_OVERFLOW"
+- "ExtendedGraphemeClusterType"
+- !private "characterHT"
+- "HTTPResponseStatus"
+- "*"
+- !private "+"
+- "HTTPMethod"
+- !private "http_method_str"
+- "httpCR"
+- !private "http_method"
+- "HTTPRequest"
+- "UnsafePointer"
+- "httpLF"
+- !private "??"
+- !private "&&"
+- "Int8"
+- "UnsafeMutablePointer"
+- !private "httpReadTimeout"
+- "HTTP11Request"
+- !private "!="
+- !private "characterSP"
 depends-member:
 - !private ["Vs11AnyHashable", "isEmpty"]
 - !private ["Vs11AnyIterator", "Element"]
@@ -143,7 +143,6 @@ depends-member:
 - !private ["Ps9AnyObject", "parserSettings"]
 - !private ["Ps9AnyObject", "parserURL"]
 - ["Ps9AnyObject", "path"]
-- !private ["Ps9AnyObject", "peerName"]
 - ["Ps9AnyObject", "postBodyBytes"]
 - ["Ps9AnyObject", "postBodyString"]
 - ["Ps9AnyObject", "postFileUploads"]
@@ -1010,10 +1009,16 @@ depends-member:
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "cookie"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "fromStandard"]
+- !private ["C10PerfectNet3Net", "readBytesFully"]
+- !private ["C10PerfectNet3Net", "readSomeBytes"]
+- !private ["C10PerfectNet3Net", "remoteAddress"]
+- ["V10PerfectNet10NetAddress", "deinit"]
+- !private ["V10PerfectNet10NetAddress", "host"]
+- !private ["V10PerfectNet10NetAddress", "port"]
 - ["C10PerfectNet6NetTCP", "deinit"]
-- !private ["C10PerfectNet6NetTCP", "peerName"]
 - !private ["C10PerfectNet6NetTCP", "readBytesFully"]
 - !private ["C10PerfectNet6NetTCP", "readSomeBytes"]
+- !private ["C10PerfectNet6NetTCP", "remoteAddress"]
 - !private ["Sq", "Iterator"]
 - ["Sq", "deinit"]
 - !private ["Sq", "isEmpty"]
@@ -1506,6 +1511,8 @@ depends-nominal:
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
 - "OO11PerfectHTTP17HTTPRequestHeader4Name"
+- !private "C10PerfectNet3Net"
+- "V10PerfectNet10NetAddress"
 - "C10PerfectNet6NetTCP"
 - "Sq"
 - "Ps22RandomAccessCollection"
@@ -1620,6 +1627,12 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
 interface-hash: "e9b7ee1128e38adb3971d7aa03614f85"

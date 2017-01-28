@@ -21,72 +21,75 @@ import PerfectLib
 import PerfectHTTP
 import PerfectHTTPServer
 
+import StORM
+import MongoDBStORM
+import PerfectTurnstileMongoDB
+import PerfectRequestLogger
+import TurnstilePerfect
+
+
+//StORMdebug = true
+RequestLogFile.location = "./requests.log"
+
+// Used later in script for the Realm and how the user authenticates.
+let pturnstile = TurnstilePerfect()
+
+
+// Set the connection variables
+MongoDBConnection.host = "localhost"
+MongoDBConnection.database = "locql"
+
+
+//Connect the AccessTokenStore
+//tokenStore = AccessTokenStore()
+//try? tokenStore?.setup()
+
+//let facebook = Facebook(clientID: "CLIENT_ID", clientSecret: "CLIENT_SECRET")
+//let google = Google(clientID: "CLIENT_ID", clientSecret: "CLIENT_SECRET")
+
 let server = HTTPServer()
 
+// Register routes and handlers
+let authWebRoutes = makeWebAuthRoutes()
+let authJSONRoutes = makeJSONAuthRoutes("/api/v1")
+
+// Add the routes to the server.
+server.addRoutes(authWebRoutes)
+server.addRoutes(authJSONRoutes)
 
 server.addRoutes(makeRoutes())
 server.addRoutes(makeRCRoutes())
+server.addRoutes(makeTrackerRoutes())
+
+// Setup logging
+let myLogger = RequestLogger()
 
 
-// An example request handler.
-// This 'handler' function can be referenced directly in the configuration below.
-//func handler(data: [String:Any]) throws -> RequestHandler {
-//	return {
-//		request, response in
-//		// Respond with a simple message.
-//		response.setHeader(.contentType, value: "text/html")
-//		response.appendBody(string: "<html><title>Hello, world!</title><body>Hello, world!</body></html>")
-//		// Ensure that response.completed() is called when your processing is done.
-//		response.completed()
-//	}
-//}
+// add routes to be excluded from auth check
+var authenticationConfig = AuthenticationConfig()
+authenticationConfig.exclude("/api/v1/login")
+authenticationConfig.exclude("/api/v1/register")
+// add routes to be checked for auth
+authenticationConfig.include("/api/v1/count")
+authenticationConfig.include("/api/v1/get/all")
+authenticationConfig.include("/api/v1/update")
+authenticationConfig.include("/api/v1/delete")
 
-// Configuration data for two example servers.
-// This example configuration shows how to launch one or more servers
-// using a configuration dictionary.
 
-//let port1 = 8080, port2 = 8181
-//
-//let confData = [
-//	"servers": [
-//		// Configuration data for one server which:
-//		//	* Serves the hello world message at <host>:<port>/
-//		//	* Serves static files out of the "./webroot"
-//		//		directory (which must be located in the current working directory).
-//		//	* Performs content compression on outgoing data when appropriate.
-//		[
-//			"name":"localhost",
-//			"port":port1,
-//			"routes":[
-//				["method":"get", "uri":"/", "handler":handler],
-//				["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.staticFiles,
-//				 "documentRoot":"./webroot",
-//				 "allowResponseFilters":true]
-//			],
-//			"filters":[
-//				[
-//				"type":"response",
-//				"priority":"high",
-//				"name":PerfectHTTPServer.HTTPFilter.contentCompression,
-//				]
-//			]
-//		],
-//		// Configuration data for another server which:
-//		//	* Redirects all traffic back to the first server.
-//		[
-//			"name":"localhost",
-//			"port":port2,
-//			"routes":[
-//				["method":"get", "uri":"/**", "handler":PerfectHTTPServer.HTTPHandler.redirect,
-//				 "base":"http://localhost:\(port1)"]
-//			]
-//		]
-//	]
-//]
+let authFilter = AuthFilter(authenticationConfig)
+
+// Note that order matters when the filters are of the same priority level
+server.setRequestFilters([pturnstile.requestFilter])
+server.setResponseFilters([pturnstile.responseFilter])
+
+server.setRequestFilters([(authFilter, .high)])
+
+server.setRequestFilters([(myLogger, .high)])
+server.setResponseFilters([(myLogger, .low)])
 
 // Set a listen port of 8181
 server.serverPort = 8181
-server.serverAddress = "localhost"
+//server.serverAddress = "localhost"
 
 // Where to serve static files from
 server.documentRoot = "./webroot"

@@ -7,33 +7,33 @@ provides-member:
 - ["C17PerfectHTTPServer14HTTP11Response", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
-- !private "Threading"
-- !private "&&"
+- !private "Int"
 - !private "..<"
 - !private "!"
-- "Bool"
-- !private "ExtendedGraphemeClusterType"
-- "HTTPResponseStatus"
-- !private "=="
 - "Array"
+- !private "&&"
 - "HTTPResponseHeader"
-- "AssignmentPrecedence"
-- "HTTP11Response"
-- !private "Int"
+- "BooleanLiteralType"
+- !private "ExtendedGraphemeClusterType"
+- "AnyIterator"
+- !private "UnicodeScalarType"
+- "Bool"
+- !private ">"
 - "StringLiteralType"
-- "HTTPRequest"
+- "NetTCP"
+- "HTTPResponseStatus"
+- "HTTP11Response"
+- !private "Threading"
 - "UInt8"
 - "HTTPResponse"
-- !private "UnicodeScalarType"
-- !private ">"
-- "NetTCP"
-- "AnyIterator"
-- "BooleanLiteralType"
-- "String"
-- "HTTPResponseFilter"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "IntegerLiteralType"
 - "IndexingIterator"
+- "HTTPResponseFilter"
+- !private "FloatLiteralType"
+- "HTTPRequest"
+- "String"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Vs11AnyIterator", "Iterator"]
@@ -529,6 +529,8 @@ depends-member:
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "standardName"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "transferEncoding"]
+- !private ["C10PerfectNet3Net", "close"]
+- !private ["C10PerfectNet3Net", "write"]
 - !private ["C10PerfectNet6NetTCP", "close"]
 - ["C10PerfectNet6NetTCP", "deinit"]
 - !private ["C10PerfectNet6NetTCP", "write"]
@@ -799,6 +801,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - !private "OO11PerfectHTTP17HTTPRequestHeader4Name"
 - "OO11PerfectHTTP18HTTPResponseHeader4Name"
+- !private "C10PerfectNet3Net"
 - "C10PerfectNet6NetTCP"
 - "Sq"
 - "Ps22RandomAccessCollection"
@@ -896,6 +899,12 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
 interface-hash: "9fe148aad771b80655f89ff605c3031f"

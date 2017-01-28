@@ -8,19 +8,19 @@ provides-member:
 - ["Vs10Dictionary", "flatMap"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Hashable"
-- !private "-"
-- !private "Int"
 - !private "StringLiteralType"
+- "Hashable"
+- !private "+"
 - "CastingPrecedence"
+- "Dictionary"
+- !private "!="
+- "AssignmentPrecedence"
+- "String"
+- !private "=="
+- !private "Int"
 - !private "print"
 - !private "GlossKeyPathDelimiter"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "+"
-- !private "!="
-- "Dictionary"
-- "String"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "init"]

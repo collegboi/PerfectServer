@@ -1,0 +1,141 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "TurnstilePerfect"
+provides-nominal:
+- "C16TurnstilePerfect16TurnstilePerfect"
+provides-member:
+- ["C16TurnstilePerfect16TurnstilePerfect", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- "Turnstile"
+- "Realm"
+- !private "WebMemoryRealm"
+- !private "TurnstileFilter"
+- "HTTPFilterPriority"
+- "SessionManager"
+- "TurnstilePerfect"
+- !private "MemorySessionManager"
+- "HTTPRequestFilter"
+- "HTTPResponseFilter"
+depends-member:
+- !private ["Ps9AnyObject", "HTTPFilterPriority"]
+- !private ["Ps9AnyObject", "MemorySessionManager"]
+- !private ["Ps9AnyObject", "Turnstile"]
+- !private ["Ps9AnyObject", "TurnstileFilter"]
+- !private ["Ps9AnyObject", "WebMemoryRealm"]
+- !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "requestFilter"]
+- !private ["Ps9AnyObject", "responseFilter"]
+- !private ["Ps9AnyObject", "turnstile"]
+- ["Ps9AnyObject", ""]
+- !private ["Ps9Equatable", "high"]
+- ["O11PerfectHTTP18HTTPFilterPriority", "deinit"]
+- !private ["O11PerfectHTTP18HTTPFilterPriority", "high"]
+- !private ["P11PerfectHTTP17HTTPRequestFilter", "init"]
+- !private ["P11PerfectHTTP18HTTPResponseFilter", "init"]
+- !private ["Ps8Hashable", "high"]
+- !private ["C9Turnstile20MemorySessionManager", "deinit"]
+- !private ["C9Turnstile20MemorySessionManager", "init"]
+- ["P9Turnstile5Realm", "deinit"]
+- !private ["P9Turnstile5Realm", "init"]
+- ["P9Turnstile14SessionManager", "deinit"]
+- !private ["P9Turnstile14SessionManager", "init"]
+- ["C9Turnstile9Turnstile", "deinit"]
+- !private ["C9Turnstile9Turnstile", "init"]
+- ["C16TurnstilePerfect15TurnstileFilter", "deinit"]
+- !private ["C16TurnstilePerfect15TurnstileFilter", "init"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "HTTPFilterPriority"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "HTTPRequestFilter"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "HTTPResponseFilter"]
+- !private ["C16TurnstilePerfect16TurnstilePerfect", "MemorySessionManager"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "Realm"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "SessionManager"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "Turnstile"]
+- !private ["C16TurnstilePerfect16TurnstilePerfect", "TurnstileFilter"]
+- !private ["C16TurnstilePerfect16TurnstilePerfect", "WebMemoryRealm"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "deinit"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "init"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "requestFilter"]
+- ["C16TurnstilePerfect16TurnstilePerfect", "responseFilter"]
+- !private ["C16TurnstilePerfect16TurnstilePerfect", "turnstile"]
+- !private ["C12TurnstileWeb14WebMemoryRealm", "deinit"]
+- !private ["C12TurnstileWeb14WebMemoryRealm", "init"]
+- !private ["Ps9_Hashable", "high"]
+depends-nominal:
+- "Ps9AnyObject"
+- !private "Ps9Equatable"
+- "O11PerfectHTTP18HTTPFilterPriority"
+- !private "P11PerfectHTTP17HTTPRequestFilter"
+- !private "P11PerfectHTTP18HTTPResponseFilter"
+- !private "Ps8Hashable"
+- !private "C9Turnstile20MemorySessionManager"
+- "P9Turnstile5Realm"
+- "P9Turnstile14SessionManager"
+- "C9Turnstile9Turnstile"
+- "C16TurnstilePerfect15TurnstileFilter"
+- "C16TurnstilePerfect16TurnstilePerfect"
+- !private "C12TurnstileWeb14WebMemoryRealm"
+- !private "Ps9_Hashable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl23.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pqueue.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dtls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../tls1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl3.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../kssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../hmac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../e_os2.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pem.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../pkcs7.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509_vfy.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../sha.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../dsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../rsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdh.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ecdsa.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ec.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bn.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../asn1.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../obj_mac.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../objects.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../evp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../buffer.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../x509.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../comp.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../lhash.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../err.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../symhacks.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ossl_typ.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../opensslv.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../safestack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../stack.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../crypto.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Turnstile.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
+interface-hash: "46e8784eea9b34c2ee657a40ed4df63c"

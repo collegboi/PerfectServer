@@ -1,0 +1,15 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "7ada5958c86a9a99575b6cb001145b3f"
+build_time: [538784912, 708477000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORM.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMConnect.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMCursor.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSource.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceCredentials.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceOptions.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMError.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMJoins.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMProtocol.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMRow.swift": [538784626, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMtResultSet.swift": [538784626, 0]

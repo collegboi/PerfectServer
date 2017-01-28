@@ -17,126 +17,127 @@ provides-member:
 - ["CC10PerfectNet9NetTCPSSL4X509", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "SSL_get_error"
-- !private "X509_get_pubkey"
-- !private "+"
-- !private "SSL_connect"
-- !private "SSL_CTX_use_certificate_chain_file"
-- !private "TLSv1_2_method"
-- "Bool"
-- !private "SSL_CTX_new"
-- "Array"
-- "UnsafePointer"
-- !private "SSL_CTX_free"
-- "Int"
-- !private "SSL_CTRL_SET_ECDH_AUTO"
-- "Threading"
-- !private "SSL_CTX_check_private_key"
-- !private "i2d_PUBKEY"
-- !private "UnsafeRawPointer"
-- !private "OPENSSL_VERSION_TEXT"
-- "OpenSSLVerifyMode"
-- "pthread_self"
-- !private "+="
-- !private "ERR_error_string_n"
-- "unsafeBitCast"
-- !private "print"
-- !private "??"
-- "String"
-- !private "TLSv1_1_method"
-- !private "BIO_new_file"
-- "Int8"
-- !private "SSL_write"
-- "Double"
-- !private "&&"
-- "CRYPTO_num_locks"
-- !private "SSL_OP_ALL"
-- !private "free"
-- "UInt"
-- "..<"
-- !private "SSL_set_connect_state"
-- !private "SSL_CTRL_OPTIONS"
-- !private "SSL_CTX_get_client_CA_list"
-- !private "SSL_read"
-- !private "EVP_PKEY_free"
-- !private "SSL_load_client_CA_file"
-- !private "SSL_CTX_set_client_CA_list"
-- !private "SSL_CTX_set_default_verify_paths"
-- !private "SSL_MODE_AUTO_RETRY"
-- "COpenSSL"
-- !private "SSL_set_cipher_list"
-- !private "OPENSSL_VERSION_NUMBER"
-- !private "SSL_CTRL_MODE"
-- "CRYPTO_set_locking_callback"
-- "SSL_library_init"
-- "SSL_CTX"
-- !private "SSL_CTX_set_verify"
-- "BooleanLiteralType"
-- !private "SSL_new"
-- "StringLiteralType"
-- !private "UnicodeScalarType"
-- !private "SSL_FILETYPE_PEM"
-- "ERR_load_crypto_strings"
-- "SSL_VERIFY_PEER"
-- !private "PEM_read_bio_DHparams"
-- !private "invalidSocket"
+- !private "SSL_set_accept_state"
+- "UnsafeMutableRawPointer"
 - !private "SSL_set_fd"
-- !private "memmove"
-- "SSL"
-- !private "SSL_CTX_use_certificate_file"
-- !private "SSL_CTRL_SET_TMP_DH"
-- "&"
-- !private "passwordCallbackFunc"
-- "SSL_load_error_strings"
-- !private "SSL_CTX_set_default_passwd_cb"
-- !private "SSL_shutdown"
-- !private "!"
-- "UnsafeMutablePointer"
-- !private "SSL_accept"
-- "SSL_VERIFY_NONE"
-- !private "SSL_CTX_ctrl"
-- "TLSMethod"
-- !private "TLSv1_method"
-- !private "SSL_CTX_load_verify_locations"
-- !private "DH_free"
-- "!="
-- "Int32"
-- "CRYPTO_set_id_callback"
-- !private "X509_free"
-- !private "SSL_CTX_set_default_passwd_cb_userdata"
-- "SSL_VERIFY_CLIENT_ONCE"
-- !private "SSL_get_peer_certificate"
-- !private "SSL_ERROR_SYSCALL"
-- !private "||"
-- !private "SSL_ERROR_WANT_READ"
+- "SSL_VERIFY_FAIL_IF_NO_PEER_CERT"
+- !private "+"
+- !private "TLSv1_2_method"
 - !private "NetEvent"
-- !private "OpaquePointer"
-- "openSSLLocks"
-- !private "SSL_free"
-- "CastingPrecedence"
-- "X509_STORE_CTX"
-- !private "SSL_CTX_set_cipher_list"
-- !private "ERR_reason_error_string"
-- !private "SSL_ERROR_WANT_WRITE"
+- !private "SSL_CTX_new"
+- !private "SSL_CTX_load_verify_locations"
+- !private "ERR_get_error"
+- "SSL_load_error_strings"
+- !private "X509_free"
+- !private "SSL_get_cipher_list"
+- "SSL_VERIFY_PEER"
+- !private "SSL_CTX_use_certificate_chain_file"
+- "!="
+- !private "SSL_CTRL_SET_ECDH_AUTO"
+- "Int8"
 - "VerifyCACallbackFunc"
+- !private "OPENSSL_VERSION_TEXT"
+- !private "BIO_new_file"
+- "X509_STORE_CTX"
+- !private "free"
+- !private "ERR_error_string_n"
+- "SSL"
+- !private "SSL_CTX_check_private_key"
+- !private "!"
+- "CRYPTO_num_locks"
+- "SSL_VERIFY_NONE"
+- !private "UnsafeRawPointer"
+- !private "SSL_read"
 - "=="
 - "AssignmentPrecedence"
-- "UnsafeMutableRawPointer"
-- !private "SSL_set_accept_state"
-- "NetTCP"
-- !private "SSL_CTX_use_PrivateKey_file"
-- "CRYPTO_LOCK"
-- !private "~="
-- "UInt8"
-- !private "ERR_get_error"
-- "FloatLiteralType"
-- !private "BIO_free"
-- "SSL_VERIFY_FAIL_IF_NO_PEER_CERT"
 - "OptionSet"
-- "NetTCPSSL"
-- !private "Unmanaged"
+- !private "~="
+- "CastingPrecedence"
+- !private "passwordCallbackFunc"
+- !private "&&"
 - "IntegerLiteralType"
-- !private "SSL_get_cipher_list"
+- !private "SSL_get_error"
+- !private "EVP_PKEY_free"
+- "FloatLiteralType"
+- !private "SSL_write"
+- !private "OPENSSL_VERSION_NUMBER"
+- !private "SSL_new"
+- !private "X509_get_pubkey"
+- !private "SSL_set_connect_state"
+- "CRYPTO_set_locking_callback"
+- "ReferenceBuffer"
+- !private "SSL_CTX_set_default_passwd_cb"
+- !private "SSL_get_peer_certificate"
+- !private "SSL_CTX_free"
+- "UnsafePointer"
+- "Int32"
+- "COpenSSL"
+- !private "SSL_shutdown"
+- "..<"
+- !private "SSL_CTX_set_default_passwd_cb_userdata"
+- !private "SSL_CTX_use_certificate_file"
+- "UnsafeMutablePointer"
+- !private "Unmanaged"
+- !private "SSL_CTX_ctrl"
+- !private "SSL_FILETYPE_PEM"
+- "UInt8"
+- "Bool"
+- !private "i2d_PUBKEY"
+- "CRYPTO_set_id_callback"
+- !private "SSL_CTRL_SET_TMP_DH"
+- !private "SSL_CTX_set_verify"
+- "BooleanLiteralType"
+- "unsafeBitCast"
+- !private "BIO_free"
+- "pthread_self"
+- !private "SSL_CTX_set_default_verify_paths"
+- "Array"
+- "UInt"
+- "TLSMethod"
+- !private "OpaquePointer"
+- "NetTCP"
+- !private "SSL_free"
+- !private "??"
+- !private "+="
+- !private "SSL_CTX_use_PrivateKey_file"
+- "StringLiteralType"
+- "Threading"
+- !private "DH_free"
+- !private "TLSv1_method"
+- !private "SSL_accept"
+- !private "SSL_CTX_set_cipher_list"
+- !private "SSL_ERROR_SYSCALL"
+- !private "SSL_ERROR_WANT_WRITE"
+- !private "SSL_CTRL_OPTIONS"
+- !private "ERR_reason_error_string"
+- !private "SSL_set_cipher_list"
+- !private "SSL_OP_ALL"
+- "OpenSSLVerifyMode"
+- !private "TLSv1_1_method"
+- "String"
+- !private "memmove"
+- "&"
+- !private "UnicodeScalarType"
+- !private "print"
+- "SSL_CTX"
+- !private "SSL_ERROR_WANT_READ"
+- "SSL_VERIFY_CLIENT_ONCE"
+- !private "||"
+- !private "SSL_CTX_get_client_CA_list"
+- !private "SSL_connect"
+- "Double"
+- "ERR_load_crypto_strings"
+- "openSSLLocks"
+- !private "SSL_CTRL_MODE"
+- "NetTCPSSL"
+- "Int"
+- !private "SSL_MODE_AUTO_RETRY"
+- !private "SSL_CTX_set_client_CA_list"
+- "SSL_library_init"
+- !private "PEM_read_bio_DHparams"
+- !private "invalidSocket"
+- "CRYPTO_LOCK"
+- !private "SSL_load_client_CA_file"
 depends-member:
 - !private ["Ps9AnyObject", "BIO_free"]
 - !private ["Ps9AnyObject", "BIO_new_file"]
@@ -710,6 +711,148 @@ depends-member:
 - ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "isEmpty"]
 - !private ["CSo8NSString", "utf8"]
+- !private ["C10PerfectNet3Net", "BIO_free"]
+- !private ["C10PerfectNet3Net", "BIO_new_file"]
+- ["C10PerfectNet3Net", "Bool"]
+- ["C10PerfectNet3Net", "COpenSSL"]
+- ["C10PerfectNet3Net", "CRYPTO_LOCK"]
+- ["C10PerfectNet3Net", "CRYPTO_num_locks"]
+- ["C10PerfectNet3Net", "CRYPTO_set_id_callback"]
+- ["C10PerfectNet3Net", "CRYPTO_set_locking_callback"]
+- !private ["C10PerfectNet3Net", "DH_free"]
+- ["C10PerfectNet3Net", "Double"]
+- !private ["C10PerfectNet3Net", "ERR_error_string_n"]
+- !private ["C10PerfectNet3Net", "ERR_get_error"]
+- ["C10PerfectNet3Net", "ERR_load_crypto_strings"]
+- !private ["C10PerfectNet3Net", "ERR_reason_error_string"]
+- !private ["C10PerfectNet3Net", "EVP_PKEY_free"]
+- ["C10PerfectNet3Net", "Int"]
+- ["C10PerfectNet3Net", "Int32"]
+- ["C10PerfectNet3Net", "Int8"]
+- !private ["C10PerfectNet3Net", "NetEvent"]
+- ["C10PerfectNet3Net", "NetTCP"]
+- ["C10PerfectNet3Net", "NetTCPSSL"]
+- !private ["C10PerfectNet3Net", "OPENSSL_VERSION_NUMBER"]
+- !private ["C10PerfectNet3Net", "OPENSSL_VERSION_TEXT"]
+- !private ["C10PerfectNet3Net", "OpaquePointer"]
+- ["C10PerfectNet3Net", "OpenSSLVerifyMode"]
+- !private ["C10PerfectNet3Net", "PEM_read_bio_DHparams"]
+- ["C10PerfectNet3Net", "ReferenceBuffer"]
+- ["C10PerfectNet3Net", "SSL"]
+- !private ["C10PerfectNet3Net", "SSL_CTRL_MODE"]
+- !private ["C10PerfectNet3Net", "SSL_CTRL_OPTIONS"]
+- !private ["C10PerfectNet3Net", "SSL_CTRL_SET_ECDH_AUTO"]
+- !private ["C10PerfectNet3Net", "SSL_CTRL_SET_TMP_DH"]
+- ["C10PerfectNet3Net", "SSL_CTX"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_check_private_key"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_ctrl"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_free"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_get_client_CA_list"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_load_verify_locations"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_new"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_cipher_list"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_client_CA_list"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_default_passwd_cb"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_default_passwd_cb_userdata"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_default_verify_paths"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_set_verify"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_use_PrivateKey_file"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_use_certificate_chain_file"]
+- !private ["C10PerfectNet3Net", "SSL_CTX_use_certificate_file"]
+- !private ["C10PerfectNet3Net", "SSL_ERROR_SYSCALL"]
+- !private ["C10PerfectNet3Net", "SSL_ERROR_WANT_READ"]
+- !private ["C10PerfectNet3Net", "SSL_ERROR_WANT_WRITE"]
+- !private ["C10PerfectNet3Net", "SSL_FILETYPE_PEM"]
+- !private ["C10PerfectNet3Net", "SSL_MODE_AUTO_RETRY"]
+- !private ["C10PerfectNet3Net", "SSL_OP_ALL"]
+- !private ["C10PerfectNet3Net", "SSL_accept"]
+- !private ["C10PerfectNet3Net", "SSL_connect"]
+- !private ["C10PerfectNet3Net", "SSL_free"]
+- !private ["C10PerfectNet3Net", "SSL_get_cipher_list"]
+- !private ["C10PerfectNet3Net", "SSL_get_error"]
+- !private ["C10PerfectNet3Net", "SSL_get_peer_certificate"]
+- ["C10PerfectNet3Net", "SSL_library_init"]
+- !private ["C10PerfectNet3Net", "SSL_load_client_CA_file"]
+- ["C10PerfectNet3Net", "SSL_load_error_strings"]
+- !private ["C10PerfectNet3Net", "SSL_new"]
+- !private ["C10PerfectNet3Net", "SSL_read"]
+- !private ["C10PerfectNet3Net", "SSL_set_accept_state"]
+- !private ["C10PerfectNet3Net", "SSL_set_cipher_list"]
+- !private ["C10PerfectNet3Net", "SSL_set_connect_state"]
+- !private ["C10PerfectNet3Net", "SSL_set_fd"]
+- !private ["C10PerfectNet3Net", "SSL_shutdown"]
+- !private ["C10PerfectNet3Net", "SSL_write"]
+- ["C10PerfectNet3Net", "String"]
+- ["C10PerfectNet3Net", "TLSMethod"]
+- !private ["C10PerfectNet3Net", "TLSv1_1_method"]
+- !private ["C10PerfectNet3Net", "TLSv1_2_method"]
+- !private ["C10PerfectNet3Net", "TLSv1_method"]
+- ["C10PerfectNet3Net", "Threading"]
+- ["C10PerfectNet3Net", "UInt"]
+- ["C10PerfectNet3Net", "UInt8"]
+- !private ["C10PerfectNet3Net", "Unmanaged"]
+- ["C10PerfectNet3Net", "UnsafeMutablePointer"]
+- ["C10PerfectNet3Net", "UnsafeMutableRawPointer"]
+- ["C10PerfectNet3Net", "UnsafePointer"]
+- !private ["C10PerfectNet3Net", "UnsafeRawPointer"]
+- ["C10PerfectNet3Net", "VerifyCACallbackFunc"]
+- ["C10PerfectNet3Net", "X509"]
+- !private ["C10PerfectNet3Net", "X509_free"]
+- !private ["C10PerfectNet3Net", "X509_get_pubkey"]
+- ["C10PerfectNet3Net", "accept"]
+- ["C10PerfectNet3Net", "beginSSL"]
+- ["C10PerfectNet3Net", "checkPrivateKey"]
+- ["C10PerfectNet3Net", "cipherList"]
+- ["C10PerfectNet3Net", "close"]
+- ["C10PerfectNet3Net", "endSSL"]
+- ["C10PerfectNet3Net", "errorCode"]
+- ["C10PerfectNet3Net", "errorStr"]
+- !private ["C10PerfectNet3Net", "fd"]
+- ["C10PerfectNet3Net", "finishAccept"]
+- ["C10PerfectNet3Net", "forEachAccept"]
+- !private ["C10PerfectNet3Net", "free"]
+- !private ["C10PerfectNet3Net", "i2d_PUBKEY"]
+- ["C10PerfectNet3Net", "init"]
+- ["C10PerfectNet3Net", "initOnce"]
+- ["C10PerfectNet3Net", "initSocket"]
+- !private ["C10PerfectNet3Net", "invalidSocket"]
+- ["C10PerfectNet3Net", "isEAgain"]
+- ["C10PerfectNet3Net", "keyFilePassword"]
+- ["C10PerfectNet3Net", "makeFromFd"]
+- !private ["C10PerfectNet3Net", "memmove"]
+- ["C10PerfectNet3Net", "openSSLLocks"]
+- ["C10PerfectNet3Net", "opensslVersionNumber"]
+- ["C10PerfectNet3Net", "opensslVersionText"]
+- ["C10PerfectNet3Net", "passwordCallback"]
+- !private ["C10PerfectNet3Net", "passwordCallbackFunc"]
+- ["C10PerfectNet3Net", "peerCertificate"]
+- !private ["C10PerfectNet3Net", "print"]
+- ["C10PerfectNet3Net", "pthread_self"]
+- !private ["C10PerfectNet3Net", "readBytesFully"]
+- ["C10PerfectNet3Net", "readBytesFullyIncomplete"]
+- ["C10PerfectNet3Net", "reasonErrorStr"]
+- ["C10PerfectNet3Net", "recv"]
+- ["C10PerfectNet3Net", "send"]
+- ["C10PerfectNet3Net", "setAcceptState"]
+- ["C10PerfectNet3Net", "setClientCA"]
+- ["C10PerfectNet3Net", "setConnectState"]
+- ["C10PerfectNet3Net", "setDefaultVerifyPaths"]
+- ["C10PerfectNet3Net", "setTmpDH"]
+- ["C10PerfectNet3Net", "setVerifyLocations"]
+- ["C10PerfectNet3Net", "sharedSSLCtx"]
+- ["C10PerfectNet3Net", "shutdown"]
+- ["C10PerfectNet3Net", "ssl"]
+- ["C10PerfectNet3Net", "sslCtx"]
+- ["C10PerfectNet3Net", "sslErrorCode"]
+- ["C10PerfectNet3Net", "subscribeCAVerify"]
+- ["C10PerfectNet3Net", "tlsMethod"]
+- ["C10PerfectNet3Net", "unsafeBitCast"]
+- ["C10PerfectNet3Net", "useCertificateChainFile"]
+- ["C10PerfectNet3Net", "useCertificateFile"]
+- ["C10PerfectNet3Net", "usePrivateKeyFile"]
+- ["C10PerfectNet3Net", "usingSSL"]
+- !private ["C10PerfectNet3Net", "write"]
+- ["C10PerfectNet3Net", "writeIncomplete"]
 - !private ["C10PerfectNet8NetEvent", "Filter"]
 - !private ["C10PerfectNet8NetEvent", "add"]
 - !private ["C10PerfectNet8NetEvent", "noTimeout"]
@@ -1152,7 +1295,7 @@ depends-member:
 - ["Ps16RawRepresentable", "union"]
 - ["Ps16RawRepresentable", "update"]
 - ["Ps16RawRepresentable", ""]
-- ["CC10PerfectNet6NetTCP15ReferenceBuffer", "deinit"]
+- ["C10PerfectNet15ReferenceBuffer", "deinit"]
 - ["Ps8Sequence", "Element"]
 - ["Ps8Sequence", "Index"]
 - ["Ps8Sequence", "IndexDistance"]
@@ -1463,6 +1606,7 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- "C10PerfectNet3Net"
 - !private "C10PerfectNet8NetEvent"
 - "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"
@@ -1476,7 +1620,7 @@ depends-nominal:
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
 - "Ps16RawRepresentable"
-- "CC10PerfectNet6NetTCP15ReferenceBuffer"
+- "C10PerfectNet15ReferenceBuffer"
 - "Ps8Sequence"
 - "Ps10SetAlgebra"
 - "Ps13SignedInteger"
@@ -1528,8 +1672,8 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
@@ -1577,4 +1721,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
-interface-hash: "acf54772d1655ada76db5f2474dd8629"
+interface-hash: "5d5e2029903cbbcee6f40ee01ff19bd5"

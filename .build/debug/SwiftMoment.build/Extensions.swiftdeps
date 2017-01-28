@@ -13,8 +13,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Int"
-- !private "*"
 - "Duration"
+- !private "*"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 depends-member:

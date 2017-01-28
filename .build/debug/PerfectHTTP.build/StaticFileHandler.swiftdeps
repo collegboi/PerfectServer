@@ -11,43 +11,43 @@ provides-member:
 - ["Vs5UInt8", "hexString"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "&&"
-- "Range"
-- "StaticFileHandler"
-- "Int"
-- "BooleanLiteralType"
-- !private "EAGAIN"
-- !private "NetTCPSSL"
-- !private "-"
-- !private "StringLiteralType"
-- !private "ExtendedGraphemeClusterType"
 - !private "sendfile"
-- !private "+"
-- "CastingPrecedence"
-- !private "UnsafeMutablePointer"
-- !private "!"
-- !private "SHA_DIGEST_LENGTH"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "Int32"
-- "*"
-- "String"
-- !private "..<"
 - !private ">"
-- "UInt8"
-- "Bool"
-- !private "SHA1"
-- !private "UnicodeScalarType"
-- "File"
-- !private "min"
-- !private "||"
-- !private "errno"
-- "HTTPResponse"
 - !private "Array"
-- !private "MimeType"
-- "HTTPRequest"
-- !private "NetEvent"
+- !private "..<"
+- !private "+"
+- "BooleanLiteralType"
+- !private "StringLiteralType"
+- !private "errno"
+- !private "ExtendedGraphemeClusterType"
+- !private "NetTCPSSL"
+- !private "SHA1"
+- !private "!"
 - !private "off_t"
+- "String"
+- !private "MimeType"
+- "File"
+- !private "NetEvent"
+- "CastingPrecedence"
+- !private "||"
+- "Bool"
+- !private "-"
+- !private "=="
+- !private "UnsafeMutablePointer"
+- "AssignmentPrecedence"
+- "*"
+- !private "min"
+- !private "&&"
+- !private "EAGAIN"
+- "UInt8"
+- !private "Int32"
+- "Range"
+- "HTTPRequest"
+- "Int"
+- "HTTPResponse"
+- "StaticFileHandler"
+- !private "UnicodeScalarType"
+- !private "SHA_DIGEST_LENGTH"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "add"]
@@ -191,6 +191,7 @@ depends-member:
 - !private ["Ps10Comparable", "deallocate"]
 - !private ["Ps10Comparable", "endIndex"]
 - !private ["Ps10Comparable", "filePathExtension"]
+- !private ["Ps10Comparable", "forExtension"]
 - !private ["Ps10Comparable", "hexString"]
 - !private ["Ps10Comparable", "index"]
 - !private ["Ps10Comparable", "init"]
@@ -352,6 +353,7 @@ depends-member:
 - !private ["Ps9Equatable", "deallocate"]
 - !private ["Ps9Equatable", "endIndex"]
 - !private ["Ps9Equatable", "filePathExtension"]
+- !private ["Ps9Equatable", "forExtension"]
 - ["Ps9Equatable", "head"]
 - !private ["Ps9Equatable", "hexString"]
 - !private ["Ps9Equatable", "ifNoneMatch"]
@@ -447,6 +449,7 @@ depends-member:
 - !private ["P11PerfectHTTP12HTTPResponse", "appendBody"]
 - !private ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["P11PerfectHTTP12HTTPResponse", "deinit"]
+- !private ["P11PerfectHTTP12HTTPResponse", "isStreaming"]
 - !private ["P11PerfectHTTP12HTTPResponse", "push"]
 - !private ["P11PerfectHTTP12HTTPResponse", "request"]
 - !private ["P11PerfectHTTP12HTTPResponse", "status"]
@@ -679,6 +682,8 @@ depends-member:
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "contentType"]
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "eTag"]
+- !private ["C10PerfectNet3Net", "fd"]
+- !private ["C10PerfectNet3Net", "usingSSL"]
 - !private ["C10PerfectNet8NetEvent", "add"]
 - ["C10PerfectNet6NetTCP", "deinit"]
 - !private ["C10PerfectNet6NetTCP", "fd"]
@@ -1108,6 +1113,7 @@ depends-nominal:
 - !private "CSo8NSString"
 - "OO11PerfectHTTP17HTTPRequestHeader4Name"
 - "OO11PerfectHTTP18HTTPResponseHeader4Name"
+- !private "C10PerfectNet3Net"
 - !private "C10PerfectNet8NetEvent"
 - "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"

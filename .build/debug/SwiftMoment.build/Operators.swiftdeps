@@ -19,21 +19,21 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- ">="
-- ">"
-- "+"
+- "<="
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- "<"
 - "Duration"
+- "~="
+- "=="
+- !private "!"
 - "Moment"
 - "-"
-- "<="
-- "=="
-- "~="
 - "Bool"
+- ">="
+- "+"
 - "!="
-- !private "!"
-- !private "FloatLiteralType"
-- "<"
-- !private "IntegerLiteralType"
+- ">"
 depends-member:
 - ["Sb", "deinit"]
 - !private ["Ps10Comparable", "add"]

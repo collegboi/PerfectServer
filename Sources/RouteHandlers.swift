@@ -72,9 +72,12 @@ func databasePost(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let returnStr = DatabaseController.insertDocument("employee", jsonStr: jsonStr)
+    if Storage.parseAndStoreObject(jsonStr) {
+        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+    } else {
+        response.appendBody(string: ResultBody.successBody(value: "collection added"))
+    }
     
-    response.appendBody(string: returnStr)
     response.completed()
 }
 

@@ -7,14 +7,14 @@ provides-member:
 - ["V10PerfectLib13PerfectServer", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "getpwnam"
+- !private "ThrowSystemError"
+- !private "=="
 - "PerfectServer"
 - !private "setuid"
+- !private "getpwnam"
+- "String"
 - !private "StringLiteralType"
 - !private "setgid"
-- "String"
-- !private "=="
-- !private "ThrowSystemError"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]

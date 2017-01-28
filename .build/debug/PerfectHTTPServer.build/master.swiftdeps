@@ -1,11 +1,12 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "04c36483779f1548a0c9e9127bbb9c8a"
-build_time: [538669998, 783594000]
+options: "48ce795f1dc064ff82f4b925ff2b61e0"
+build_time: [538784922, 507116000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HPACK.swift": [538664190, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Request.swift": [538664191, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP11Response.swift": [538664190, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTP2.swift": [538664190, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServer.swift": [538664191, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerEx.swift": [538664191, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": [538664191, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HPACK.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTP11Request.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTP11Response.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTP2.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTPContentCompression.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTPServer.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTPServerEx.swift": [538784808, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": [538784808, 0]

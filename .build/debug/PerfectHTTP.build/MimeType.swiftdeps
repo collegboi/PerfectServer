@@ -2,6 +2,8 @@
 provides-top-level:
 - "MimeType"
 - "mimeMap"
+- "=="
+- "<"
 provides-nominal:
 - "V11PerfectHTTP8MimeType"
 - "OV11PerfectHTTP8MimeType7TopType"
@@ -10,21 +12,29 @@ provides-member:
 - ["OV11PerfectHTTP8MimeType7TopType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "CustomStringConvertible"
-- "StringLiteralType"
-- "String"
-- "ExpressibleByStringLiteral"
-- !private "ExtendedGraphemeClusterType"
-- !private "defaultSubType"
-- !private "UnicodeScalarType"
-- "Dictionary"
-- !private ">"
-- !private "??"
-- !private "~="
-- "AssignmentPrecedence"
-- !private "defaultTopType"
-- "mimeMap"
 - "MimeType"
+- ">"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
+- !private "??"
+- "CustomStringConvertible"
+- "ExpressibleByStringLiteral"
+- "=="
+- !private "~="
+- !private "ExtendedGraphemeClusterType"
+- !private "||"
+- ">="
+- "AssignmentPrecedence"
+- !private "defaultSubType"
+- "Bool"
+- !private "UnicodeScalarType"
+- "Comparable"
+- "String"
+- !private "defaultTopType"
+- "<"
+- "Dictionary"
+- "mimeMap"
+- "<="
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "characters"]
@@ -108,12 +118,25 @@ depends-member:
 - !private ["Ps10Collection", "map"]
 - !private ["Ps10Collection", "split"]
 - !private ["Ps10Collection", "subscript"]
+- ["Ps10Comparable", "ExtendedGraphemeClusterLiteralType"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "String"]
+- ["Ps10Comparable", "StringLiteralType"]
+- !private ["Ps10Comparable", "TopType"]
+- ["Ps10Comparable", "UnicodeScalarLiteralType"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "characters"]
+- !private ["Ps10Comparable", "defaultSubType"]
+- !private ["Ps10Comparable", "defaultTopType"]
+- ["Ps10Comparable", "description"]
 - ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "longType"]
 - !private ["Ps10Comparable", "lowercased"]
+- !private ["Ps10Comparable", "mimeMap"]
+- !private ["Ps10Comparable", "subType"]
+- !private ["Ps10Comparable", "type"]
+- ["Ps10Comparable", ""]
 - !private ["Vs20CountableClosedRange", "deinit"]
 - !private ["Vs14CountableRange", "deinit"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
@@ -188,8 +211,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "mimeMap"]
 - ["Ps23CustomStringConvertible", "model"]
 - ["Ps23CustomStringConvertible", "multipart"]
+- !private ["Ps23CustomStringConvertible", "subType"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - ["Ps23CustomStringConvertible", "text"]
+- !private ["Ps23CustomStringConvertible", "type"]
 - !private ["Ps23CustomStringConvertible", "typeFrom"]
 - ["Ps23CustomStringConvertible", "video"]
 - ["Ps23CustomStringConvertible", ""]
@@ -210,13 +235,26 @@ depends-member:
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
+- ["Ps9Equatable", "ExtendedGraphemeClusterLiteralType"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "String"]
+- ["Ps9Equatable", "StringLiteralType"]
+- !private ["Ps9Equatable", "TopType"]
+- ["Ps9Equatable", "UnicodeScalarLiteralType"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "characters"]
+- !private ["Ps9Equatable", "defaultSubType"]
+- !private ["Ps9Equatable", "defaultTopType"]
+- ["Ps9Equatable", "description"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "longType"]
 - !private ["Ps9Equatable", "lowercased"]
+- !private ["Ps9Equatable", "mimeMap"]
+- !private ["Ps9Equatable", "subType"]
+- !private ["Ps9Equatable", "type"]
+- ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
@@ -244,6 +282,8 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "longType"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lowercased"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "mimeMap"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "subType"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "type"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", ""]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
@@ -264,6 +304,8 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "longType"]
 - !private ["Ps26ExpressibleByStringLiteral", "lowercased"]
 - !private ["Ps26ExpressibleByStringLiteral", "mimeMap"]
+- !private ["Ps26ExpressibleByStringLiteral", "subType"]
+- !private ["Ps26ExpressibleByStringLiteral", "type"]
 - ["Ps26ExpressibleByStringLiteral", ""]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "ExtendedGraphemeClusterLiteralType"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "String"]
@@ -278,6 +320,8 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "longType"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "lowercased"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "mimeMap"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "subType"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "type"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", ""]
 - !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
@@ -348,8 +392,12 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "characters"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "lowercased"]
+- ["V11PerfectHTTP8MimeType", "<"]
+- ["V11PerfectHTTP8MimeType", "=="]
+- ["V11PerfectHTTP8MimeType", "Bool"]
 - ["V11PerfectHTTP8MimeType", "CustomStringConvertible"]
 - ["V11PerfectHTTP8MimeType", "ExtendedGraphemeClusterLiteralType"]
+- ["V11PerfectHTTP8MimeType", "MimeType"]
 - ["V11PerfectHTTP8MimeType", "String"]
 - ["V11PerfectHTTP8MimeType", "StringLiteralType"]
 - ["V11PerfectHTTP8MimeType", "TopType"]
@@ -741,4 +789,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLib.swiftmodule"
-interface-hash: "2322216d80b4091ba785b8509ed3c4dc"
+interface-hash: "89034ba97976318c86c50a8251c4cd76"

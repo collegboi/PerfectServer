@@ -1,0 +1,17 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "16baa5bcbd5ec97f25d0b29e42a7dce7"
+build_time: [538786609, 484791000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/TurnstileError.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Core/Subject.swift": [538786599, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Core/Turnstile.swift": [538786601, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Credentials/APIKey.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Credentials/Credentials.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Credentials/CredentialsError.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Credentials/Token.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Credentials/UsernamePassword.swift": [538785831, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Realm/Account.swift": [538786555, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Realm/MemoryRealm.swift": [538786518, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/Realm/Realm.swift": [538786528, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/SessionManager/MemorySessionManager.swift": [538786537, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/Turnstile/SessionManager/SessionManager.swift": [538786548, 0]

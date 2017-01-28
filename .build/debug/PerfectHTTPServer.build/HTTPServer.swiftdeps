@@ -7,44 +7,45 @@ provides-member:
 - ["C17PerfectHTTPServer10HTTPServer", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "TernaryPrecedence"
-- !private "StaticFileHandler"
-- !private "HTTPRequest"
-- !private "compatRoutes"
-- "UInt16"
-- "OpenSSLVerifyMode"
-- "Array"
-- "HTTPRequestFilter"
-- "NetTCP"
-- "HTTPResponseFilter"
-- "HTTPFilterPriority"
-- "Routes"
-- !private "IndexingIterator"
-- "HTTP11Request"
-- !private "Log"
-- !private "UInt32"
-- !private "IPPROTO_TCP"
-- !private "Dir"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "HTTP11Response"
-- !private "TCP_NODELAY"
-- "CastingPrecedence"
-- "RouteNavigator"
-- !private "!"
-- !private "NetTCPSSL"
-- "HTTPServer"
-- !private "HTTPResponse"
 - !private "Int32"
-- !private "setsockopt"
-- "StringLiteralType"
-- "String"
-- !private "PerfectError"
+- !private "!"
+- !private "IPPROTO_TCP"
 - !private "!="
-- !private "UnicodeScalarType"
-- !private "PerfectServer"
+- !private "HTTP11Response"
+- !private "??"
+- "HTTPServer"
+- "RouteNavigator"
 - !private "Threading"
+- "Array"
+- !private "compatRoutes"
+- "OpenSSLVerifyMode"
+- "HTTPResponseFilter"
+- !private "IndexingIterator"
+- !private "TCP_NODELAY"
+- "StringLiteralType"
+- "HTTPRequestFilter"
+- !private "Log"
+- "UInt16"
+- !private "Dir"
+- "Routes"
+- !private "PerfectError"
+- "String"
+- "AssignmentPrecedence"
+- !private "NetTCPSSL"
+- "HTTP11Request"
+- !private "PerfectServer"
+- "HTTPFilterPriority"
+- !private "HTTPResponse"
+- !private "UnicodeScalarType"
+- "CastingPrecedence"
+- "TernaryPrecedence"
+- !private "=="
+- !private "StaticFileHandler"
+- "NetTCP"
+- !private "UInt32"
 - !private "MemoryLayout"
+- !private "HTTPRequest"
+- !private "setsockopt"
 depends-member:
 - !private ["Ps9AnyObject", "Dir"]
 - !private ["Ps9AnyObject", "HTTP11Request"]
@@ -86,6 +87,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "isKeepAlive"]
 - !private ["Ps9AnyObject", "listen"]
+- !private ["Ps9AnyObject", "localAddress"]
 - !private ["Ps9AnyObject", "net"]
 - !private ["Ps9AnyObject", "readRequest"]
 - !private ["Ps9AnyObject", "requestFilters"]
@@ -100,7 +102,6 @@ depends-member:
 - !private ["Ps9AnyObject", "serverPort"]
 - !private ["Ps9AnyObject", "setClientCA"]
 - !private ["Ps9AnyObject", "setsockopt"]
-- !private ["Ps9AnyObject", "sockName"]
 - !private ["Ps9AnyObject", "ssl"]
 - !private ["Ps9AnyObject", "start"]
 - !private ["Ps9AnyObject", "startInner"]
@@ -402,6 +403,23 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
+- !private ["C10PerfectNet3Net", "bind"]
+- !private ["C10PerfectNet3Net", "checkPrivateKey"]
+- !private ["C10PerfectNet3Net", "cipherList"]
+- !private ["C10PerfectNet3Net", "close"]
+- !private ["C10PerfectNet3Net", "deinit"]
+- !private ["C10PerfectNet3Net", "errorCode"]
+- !private ["C10PerfectNet3Net", "errorStr"]
+- !private ["C10PerfectNet3Net", "fd"]
+- !private ["C10PerfectNet3Net", "forEachAccept"]
+- !private ["C10PerfectNet3Net", "init"]
+- !private ["C10PerfectNet3Net", "listen"]
+- !private ["C10PerfectNet3Net", "localAddress"]
+- !private ["C10PerfectNet3Net", "setClientCA"]
+- !private ["C10PerfectNet3Net", "useCertificateChainFile"]
+- !private ["C10PerfectNet3Net", "usePrivateKeyFile"]
+- !private ["V10PerfectNet10NetAddress", "deinit"]
+- !private ["V10PerfectNet10NetAddress", "host"]
 - !private ["C10PerfectNet6NetTCP", "bind"]
 - !private ["C10PerfectNet6NetTCP", "checkPrivateKey"]
 - !private ["C10PerfectNet6NetTCP", "cipherList"]
@@ -413,8 +431,8 @@ depends-member:
 - !private ["C10PerfectNet6NetTCP", "forEachAccept"]
 - !private ["C10PerfectNet6NetTCP", "init"]
 - !private ["C10PerfectNet6NetTCP", "listen"]
+- !private ["C10PerfectNet6NetTCP", "localAddress"]
 - !private ["C10PerfectNet6NetTCP", "setClientCA"]
-- !private ["C10PerfectNet6NetTCP", "sockName"]
 - !private ["C10PerfectNet6NetTCP", "useCertificateChainFile"]
 - !private ["C10PerfectNet6NetTCP", "usePrivateKeyFile"]
 - !private ["C10PerfectNet9NetTCPSSL", "bind"]
@@ -626,6 +644,8 @@ depends-nominal:
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
+- !private "C10PerfectNet3Net"
+- !private "V10PerfectNet10NetAddress"
 - "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"
 - "Os5Never"
@@ -733,6 +753,12 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.0.9/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
 interface-hash: "7e71f5b4de734986cdfa93133f8c15e1"

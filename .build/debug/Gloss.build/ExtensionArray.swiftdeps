@@ -8,15 +8,15 @@ provides-member:
 - ["Sa", "toJSONArray"]
 provides-dynamic-lookup:
 depends-top-level:
-- "CastingPrecedence"
-- "JSONSerialization"
-- "JSON"
-- "Data"
-- "JSONSerializer"
-- !private "GlossJSONSerializer"
-- "Decodable"
 - "Encodable"
+- "JSON"
+- "CastingPrecedence"
 - "Array"
+- "JSONSerialization"
+- "Data"
+- !private "GlossJSONSerializer"
+- "JSONSerializer"
+- "Decodable"
 depends-member:
 - ["Ps9AnyObject", "ReadingOptions"]
 - !private ["Ps9AnyObject", "jsonObject"]

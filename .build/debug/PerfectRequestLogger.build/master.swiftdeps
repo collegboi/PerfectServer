@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "1d6d6e123da04307f9bfa6fcfcf5c228"
+build_time: [538784925, 343771000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectRequestLogger-1.0.1/Sources/PerfectRequestLogger.swift": [538784857, 0]

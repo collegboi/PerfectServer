@@ -107,7 +107,7 @@ class RemoteConfig {
         
         var result: String = ""
         
-        setWorkingDirectory("./ConfigFiles")
+        //setWorkingDirectory("./ConfigFiles")
         
         let thisFile = File("config.json")
         

@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/master.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.1/Sources/Convenience.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/Convenience.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/Convenience.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/Convenience~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/Convenience.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.1/Sources/MongoDBStORM.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/MongoDBStORM.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/MongoDBStORM.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/MongoDBStORM~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/MongoDBStORM.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/MongoDBStORM-1.0.1/Sources/parseRows.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/parseRows.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/parseRows.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/parseRows~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.build/parseRows.swiftdeps"
+  }
+}

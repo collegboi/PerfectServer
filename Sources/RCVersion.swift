@@ -10,7 +10,6 @@
     import LinuxBridge
 #else
     import Darwin
-    import Cocoa
 #endif
 
 class RCVersion {
