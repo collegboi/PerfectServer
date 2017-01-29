@@ -15,8 +15,10 @@ import MongoDB
 public func makeTrackerRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/tracker", handler: sendTrackerIssue)
+    routes.add(method: .post, uri: "/tracker/{collection}", handler: sendTrackerIssue)
+    //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
     routes.add(method: .get, uri: "/tracker/{collection}", handler: getTrackerIssues)
+    routes.add(method: .get, uri: "/tracker/{collection}/{objectid}/", handler: getTrackerIssuesObject)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -33,9 +35,29 @@ func getTrackerIssues(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let returning = IssueTracker.getAllIssues()
+    let returning = IssueTracker.getAllIssues(collectionName)
     
     response.appendBody(string: returning)
+    response.completed()
+}
+
+func getTrackerIssuesObject(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    guard let collectionName = request.urlVariables["collection"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+        response.completed()
+        return
+    }
+    
+    guard let documentObject = request.urlVariables["objectid"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "no object id"))
+        response.completed()
+        return
+    }
+    
+    let returnObject = IssueTracker.getIssue(collectionName, documentObject)
+    
+    response.appendBody(string: returnObject)
     response.completed()
 }
 
@@ -50,9 +72,15 @@ func sendTrackerIssue(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
+    guard let collectionName = request.urlVariables["collection"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+        response.completed()
+        return
+    }
+    
     var returnStr =  ResultBody.successBody(value: "notCreated")
     
-    let result = IssueTracker.sendNewIssue(jsonStr)
+    let result = IssueTracker.sendNewIssue( collectionName, jsonStr)
         
     returnStr = ResultBody.successBody(value: result )
     

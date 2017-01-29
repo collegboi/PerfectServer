@@ -125,6 +125,51 @@ class DatabaseController {
         
     }
     
+    
+    static func retrieveCollectionQuery(_ collectioName: String, _ documentID: String ) -> String {
+        
+        // define collection
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return ""
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            collection.close()
+            db.close()
+            client.close()
+        }
+        
+        let query = BSON()
+        query.append(key: "issueID", string: documentID)
+        
+        // Perform a "find" on the perviously defined collection
+        let fnd = collection.find(query: query)
+        
+        // Initialize empty array to receive formatted results
+        var arr = [String]()
+        
+        // The "fnd" cursor is typed as MongoCursor, which is iterable
+        for x in fnd! {
+            arr.append(x.asString)
+        }
+        
+        // return a formatted JSON array.
+        return  "{\"data\":[\(arr.joined(separator: ","))]}"
+        
+    }
+
+    
+    
     static func retrieveCollection(_ collectioName: String) -> String {
         
         // define collection
