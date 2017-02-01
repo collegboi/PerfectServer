@@ -7,22 +7,22 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "MongoDBStORM"
-- "Bool"
-- !private "+"
-- "AccessTokenStore"
-- "AssignmentPrecedence"
-- !private "UnicodeScalarType"
-- "CastingPrecedence"
-- !private "<"
-- !private "print"
-- "StringLiteralType"
-- "Int"
-- !private "Date"
-- !private "BooleanLiteralType"
-- !private "..<"
 - "StORMRow"
+- !private "Date"
+- !private "<"
+- !private "+"
+- !private "print"
+- "AssignmentPrecedence"
+- "CastingPrecedence"
+- "Bool"
+- "Int"
+- !private "UnicodeScalarType"
+- "String"
+- !private "..<"
+- "StringLiteralType"
+- "AccessTokenStore"
+- !private "BooleanLiteralType"
+- "MongoDBStORM"
 - !private "URandom"
 depends-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "AccessTokenStore"]
@@ -34,7 +34,6 @@ depends-member:
 - !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "URandom"]
 - !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "_collection"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "check"]
-- !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "create"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "created"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "deinit"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "idle"]
@@ -55,7 +54,6 @@ depends-member:
 - !private ["Ps9AnyObject", "URandom"]
 - !private ["Ps9AnyObject", "_collection"]
 - ["Ps9AnyObject", "check"]
-- !private ["Ps9AnyObject", "create"]
 - ["Ps9AnyObject", "created"]
 - !private ["Ps9AnyObject", "data"]
 - ["Ps9AnyObject", "idle"]
@@ -314,7 +312,6 @@ depends-member:
 - !private ["C12MongoDBStORM12MongoDBStORM", "URandom"]
 - !private ["C12MongoDBStORM12MongoDBStORM", "_collection"]
 - ["C12MongoDBStORM12MongoDBStORM", "check"]
-- !private ["C12MongoDBStORM12MongoDBStORM", "create"]
 - ["C12MongoDBStORM12MongoDBStORM", "created"]
 - ["C12MongoDBStORM12MongoDBStORM", "deinit"]
 - ["C12MongoDBStORM12MongoDBStORM", "idle"]
@@ -444,7 +441,6 @@ depends-member:
 - !private ["C5StORM5StORM", "URandom"]
 - !private ["C5StORM5StORM", "_collection"]
 - ["C5StORM5StORM", "check"]
-- !private ["C5StORM5StORM", "create"]
 - ["C5StORM5StORM", "created"]
 - ["C5StORM5StORM", "idle"]
 - ["C5StORM5StORM", "init"]
@@ -464,7 +460,6 @@ depends-member:
 - !private ["P5StORM13StORMProtocol", "URandom"]
 - !private ["P5StORM13StORMProtocol", "_collection"]
 - ["P5StORM13StORMProtocol", "check"]
-- !private ["P5StORM13StORMProtocol", "create"]
 - ["P5StORM13StORMProtocol", "created"]
 - ["P5StORM13StORMProtocol", "idle"]
 - ["P5StORM13StORMProtocol", "init"]

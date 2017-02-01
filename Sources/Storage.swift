@@ -40,4 +40,16 @@ class Storage {
         return result
     }
     
+    class func StoreObject(_ collectionName: String, _ jsonString: String ) -> Bool {
+        
+        var result : Bool = false
+            
+        if  DatabaseController.updateInsertDocument(collectionName, jsonStr: jsonString) == "" {
+            result = true
+        }
+        
+        return result
+    }
+
+    
 }

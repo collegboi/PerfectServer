@@ -170,7 +170,7 @@ class DatabaseController {
 
     
     
-    static func retrieveCollection(_ collectioName: String) -> String {
+    static func retrieveCollection(_ collectioName: String, _ objectID: String = "") -> String {
         
         // define collection
         
@@ -193,8 +193,14 @@ class DatabaseController {
             client.close()
         }
         
+        let query = BSON()
+        
+        if objectID != "" {
+            query.append(key: "_id", string: objectID)
+        }
+        
         // Perform a "find" on the perviously defined collection
-        let fnd = collection.find(query: BSON())
+        let fnd = collection.find(query: query)
         
         // Initialize empty array to receive formatted results
         var arr = [String]()

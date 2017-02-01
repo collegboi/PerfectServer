@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Turnstile"
-- "HTTPResponseFilter"
-- "SessionManager"
+- "HTTPRequestFilter"
 - !private "AuthRealm"
 - "HTTPFilterPriority"
-- "HTTPRequestFilter"
-- "Realm"
-- "TurnstilePerfectRealm"
 - "AssignmentPrecedence"
+- "SessionManager"
+- "TurnstilePerfectRealm"
+- !private "MemorySessionManager"
+- "HTTPResponseFilter"
+- "Realm"
 - !private "TurnstileFilter"
-- !private "PerfectSessionManager"
 depends-member:
 - !private ["Ps9AnyObject", "AuthRealm"]
 - !private ["Ps9AnyObject", "HTTPFilterPriority"]
-- !private ["Ps9AnyObject", "PerfectSessionManager"]
+- !private ["Ps9AnyObject", "MemorySessionManager"]
 - !private ["Ps9AnyObject", "Turnstile"]
 - !private ["Ps9AnyObject", "TurnstileFilter"]
 - !private ["Ps9AnyObject", "init"]
@@ -37,8 +37,8 @@ depends-member:
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "init"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "init"]
 - !private ["Ps8Hashable", "high"]
-- !private ["C23PerfectTurnstileMongoDB21PerfectSessionManager", "deinit"]
-- !private ["C23PerfectTurnstileMongoDB21PerfectSessionManager", "init"]
+- !private ["C9Turnstile20MemorySessionManager", "deinit"]
+- !private ["C9Turnstile20MemorySessionManager", "init"]
 - ["P9Turnstile5Realm", "deinit"]
 - !private ["P9Turnstile5Realm", "init"]
 - ["P9Turnstile14SessionManager", "deinit"]
@@ -51,7 +51,7 @@ depends-member:
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "HTTPFilterPriority"]
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "HTTPRequestFilter"]
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "HTTPResponseFilter"]
-- !private ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "PerfectSessionManager"]
+- !private ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "MemorySessionManager"]
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "Realm"]
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "SessionManager"]
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", "Turnstile"]
@@ -70,7 +70,7 @@ depends-nominal:
 - !private "P11PerfectHTTP17HTTPRequestFilter"
 - !private "P11PerfectHTTP18HTTPResponseFilter"
 - !private "Ps8Hashable"
-- !private "C23PerfectTurnstileMongoDB21PerfectSessionManager"
+- !private "C9Turnstile20MemorySessionManager"
 - "P9Turnstile5Realm"
 - "P9Turnstile14SessionManager"
 - "C9Turnstile9Turnstile"
@@ -223,4 +223,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
-interface-hash: "18c86b23a31aac5af55d90b1bde6f2ed"
+interface-hash: "548db0fbe9bcdcad6ee7f729ef3b6e9f"

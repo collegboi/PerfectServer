@@ -22,3 +22,9 @@
 [INFO] [0c12df2d-0760-4dd1-b80d-e188ed252100] [2017-01-27 00:36:03 GMT] [/y6dBJMtj-3] 2017-01-27 00:36:02 GMT "POST /api/v1/login/?username=collegboi&password=tester HTTP/1.1" from 127.0.0.1 - 200 65B in 828ms
 [INFO] [a341a9f4-5c13-4f29-930a-81f31825985a] [2017-01-27 00:36:03 GMT] [/NoRequestID] 2017-01-27 00:36:03 GMT "GET /api/v1/get/all HTTP/1.1" from 127.0.0.1 - 401 0B in 0ms
 [INFO] [38323ada-a533-415d-854d-6f505d1200d6] [2017-01-27 00:36:03 GMT] [/NoRequestID] 2017-01-27 00:36:03 GMT "GET /api/v1/get/all HTTP/1.1" from 127.0.0.1 - 401 0B in 0ms
+[INFO] [1623d986-dd17-49eb-afa5-ae7f16191c8a] [2017-01-30 23:48:56 GMT] [/AuhzXBCk-1] 2017-01-30 23:48:56 GMT "GET /storage/User HTTP/1.1" from 192.168.1.3 - 200 11B in 12ms
+[INFO] [3b557e29-6744-4b27-9a43-8f8a590a506f] [2017-01-30 23:49:03 GMT] [/AuhzXBCk-2] 2017-01-30 23:49:03 GMT "GET /storage/Users HTTP/1.1" from 192.168.1.3 - 200 11B in 1ms
+[INFO] [89c0379b-8500-4393-91e4-681eab94f3b1] [2017-01-30 23:49:16 GMT] [/AuhzXBCk-3] 2017-01-30 23:49:16 GMT "GET /storage/users HTTP/1.1" from 192.168.1.3 - 200 11B in 2ms
+[INFO] [2dc5bcc1-8f2f-4f99-a534-d16423e8d670] [2017-01-30 23:49:33 GMT] [/AuhzXBCk-4] 2017-01-30 23:49:33 GMT "GET /storage/users HTTP/1.1" from 192.168.1.3 - 200 11B in 1ms
+[INFO] [909965b8-8d88-42c3-a3dd-e48b1119d91f] [2017-01-30 23:49:43 GMT] [/AuhzXBCk-5] 2017-01-30 23:49:43 GMT "GET /storage/Issues HTTP/1.1" from 192.168.1.3 - 200 11B in 1ms
+[INFO] [7f2f4688-7e3f-4112-9d38-81bac1f5a1f6] [2017-01-30 23:50:47 GMT] [/5o0s0VI9-1] 2017-01-30 23:50:47 GMT "GET /storage/TestObject HTTP/1.1" from 127.0.0.1 - 200 193B in 4ms

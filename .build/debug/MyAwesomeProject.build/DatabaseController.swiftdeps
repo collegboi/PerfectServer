@@ -3,24 +3,44 @@ provides-top-level:
 - "DatabaseController"
 provides-nominal:
 - "C16MyAwesomeProject18DatabaseController"
+- "VC16MyAwesomeProject18DatabaseController8asMyUUID"
 provides-member:
 - ["C16MyAwesomeProject18DatabaseController", ""]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "MongoDatabase"
-- "MongoClient"
+- !private "UInt8"
+- !private "UnsafeMutablePointer"
+- !private "uuid_unparse_lower"
+- !private "uuid_parse"
+- "uuid_t"
 - !private "UnicodeScalarType"
-- !private "BSON"
-- !private "StringLiteralType"
-- "DatabaseController"
-- "String"
+- "MongoClient"
+- !private "uuid_generate_random"
+- "AssignmentPrecedence"
+- !private "=="
 - "MongoCollection"
+- "CastingPrecedence"
+- !private "memcpy"
+- !private "StringLiteralType"
+- !private "print"
+- !private "BSON"
+- "String"
+- !private "MemoryLayout"
+- "DatabaseController"
+- "MongoDatabase"
+- !private "!="
+- !private "Int8"
 depends-member:
 - !private ["Ps9AnyObject", "BSON"]
 - !private ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "Iterator"]
+- !private ["Ps9AnyObject", "MemoryLayout"]
 - !private ["Ps9AnyObject", "MongoClient"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "UnsafeMutablePointer"]
+- !private ["Ps9AnyObject", "append"]
+- !private ["Ps9AnyObject", "asMyUUID"]
 - !private ["Ps9AnyObject", "asString"]
 - !private ["Ps9AnyObject", "close"]
 - !private ["Ps9AnyObject", "connectDatabase"]
@@ -29,7 +49,16 @@ depends-member:
 - !private ["Ps9AnyObject", "getDatabase"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insert"]
+- !private ["Ps9AnyObject", "insertDocument"]
+- !private ["Ps9AnyObject", "jsonDecode"]
+- !private ["Ps9AnyObject", "memcpy"]
 - !private ["Ps9AnyObject", "openMongoDB"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "update"]
+- !private ["Ps9AnyObject", "uuid_generate_random"]
+- !private ["Ps9AnyObject", "uuid_parse"]
+- !private ["Ps9AnyObject", "uuid_t"]
+- !private ["Ps9AnyObject", "uuid_unparse_lower"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]
@@ -37,6 +66,7 @@ depends-member:
 - ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["Sa", "joined"]
+- !private ["C7MongoDB4BSON", "append"]
 - !private ["C7MongoDB4BSON", "asString"]
 - ["C7MongoDB4BSON", "deinit"]
 - !private ["C7MongoDB4BSON", "init"]
@@ -50,88 +80,181 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "append"]
 - !private ["Ps22BidirectionalIndexable", "init"]
 - !private ["Ps22BidirectionalIndexable", "joined"]
-- !private ["Sb", "deinit"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "allocate"]
 - !private ["Ps7CVarArg", "append"]
+- !private ["Ps7CVarArg", "deallocate"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "joined"]
+- !private ["Ps7CVarArg", "jsonDecode"]
+- !private ["Ps7CVarArg", "subscript"]
 - !private ["Vs9Character", "deinit"]
+- !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "joined"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "allocate"]
+- !private ["Ps10Comparable", "append"]
 - !private ["Ps10Comparable", "asString"]
+- !private ["Ps10Comparable", "deallocate"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps10Comparable", "jsonDecode"]
+- !private ["Ps10Comparable", "subscript"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "allocate"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "deallocate"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "joined"]
+- !private ["Ps28CustomDebugStringConvertible", "jsonDecode"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "allocate"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "deallocate"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "jsonDecode"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "subscript"]
+- !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
 - !private ["Ps17CustomReflectable", "_Element"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "allocate"]
 - !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "deallocate"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "joined"]
+- !private ["Ps17CustomReflectable", "jsonDecode"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "asString"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "joined"]
+- !private ["Ps23CustomStringConvertible", "jsonDecode"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["C16MyAwesomeProject18DatabaseController", "BSON"]
+- !private ["C16MyAwesomeProject18DatabaseController", "Int8"]
+- !private ["C16MyAwesomeProject18DatabaseController", "MemoryLayout"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoClient"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoDatabase"]
 - ["C16MyAwesomeProject18DatabaseController", "String"]
+- !private ["C16MyAwesomeProject18DatabaseController", "UInt8"]
+- !private ["C16MyAwesomeProject18DatabaseController", "UnsafeMutablePointer"]
+- ["C16MyAwesomeProject18DatabaseController", "asMyUUID"]
 - ["C16MyAwesomeProject18DatabaseController", "closeMongoDB"]
 - ["C16MyAwesomeProject18DatabaseController", "connectDatabase"]
 - ["C16MyAwesomeProject18DatabaseController", "deinit"]
 - ["C16MyAwesomeProject18DatabaseController", "init"]
 - ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
+- !private ["C16MyAwesomeProject18DatabaseController", "memcpy"]
+- ["C16MyAwesomeProject18DatabaseController", "myNewUUID"]
 - ["C16MyAwesomeProject18DatabaseController", "openMongoDB"]
+- !private ["C16MyAwesomeProject18DatabaseController", "print"]
 - ["C16MyAwesomeProject18DatabaseController", "retrieveCollection"]
+- ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQuery"]
+- ["C16MyAwesomeProject18DatabaseController", "updateInsertDocument"]
+- !private ["C16MyAwesomeProject18DatabaseController", "uuid_generate_random"]
+- !private ["C16MyAwesomeProject18DatabaseController", "uuid_parse"]
+- ["C16MyAwesomeProject18DatabaseController", "uuid_t"]
+- !private ["C16MyAwesomeProject18DatabaseController", "uuid_unparse_lower"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "allocate"]
+- !private ["Ps9Equatable", "append"]
 - !private ["Ps9Equatable", "asString"]
+- !private ["Ps9Equatable", "deallocate"]
 - !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "jsonDecode"]
+- !private ["Ps9Equatable", "subscript"]
+- ["Ps5Error", "deinit"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "joined"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "jsonDecode"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "jsonDecode"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "jsonDecode"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "jsonDecode"]
 - !private ["Sf", "deinit"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "allocate"]
+- !private ["Ps8Hashable", "deallocate"]
 - !private ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "jsonDecode"]
+- !private ["Ps8Hashable", "subscript"]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "joined"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
 - !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "init"]
 - !private ["Ps13IndexableBase", "joined"]
+- !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "deinit"]
+- ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
+- ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps16IteratorProtocol", "Iterator"]
+- !private ["P10PerfectLib15JSONConvertible", "Index"]
 - !private ["P10PerfectLib15JSONConvertible", "Iterator"]
+- !private ["P10PerfectLib15JSONConvertible", "SubSequence"]
 - !private ["P10PerfectLib15JSONConvertible", "_Element"]
+- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "append"]
+- ["P10PerfectLib15JSONConvertible", "deinit"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "joined"]
+- !private ["P10PerfectLib15JSONConvertible", "jsonDecode"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps25LosslessStringConvertible", "jsonDecode"]
+- !private ["Os12MemoryLayout", "size"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps10MirrorPath", "jsonDecode"]
 - !private ["C7MongoDB11MongoClient", "close"]
 - ["C7MongoDB11MongoClient", "deinit"]
 - !private ["C7MongoDB11MongoClient", "getDatabase"]
@@ -140,6 +263,7 @@ depends-member:
 - ["C7MongoDB15MongoCollection", "deinit"]
 - !private ["C7MongoDB15MongoCollection", "find"]
 - !private ["C7MongoDB15MongoCollection", "insert"]
+- !private ["C7MongoDB15MongoCollection", "update"]
 - !private ["C7MongoDB11MongoCursor", "Element"]
 - !private ["C7MongoDB11MongoCursor", "Iterator"]
 - ["C7MongoDB11MongoCursor", "deinit"]
@@ -158,14 +282,23 @@ depends-member:
 - !private ["Ps16MutableIndexable", "init"]
 - !private ["Ps16MutableIndexable", "joined"]
 - !private ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "jsonDecode"]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "jsonDecode"]
 - !private ["PSo16NSMutableCopying", "init"]
+- !private ["PSo16NSMutableCopying", "jsonDecode"]
 - !private ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "jsonDecode"]
 - !private ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "jsonDecode"]
 - !private ["PSo19NSPasteboardReading", "init"]
+- !private ["PSo19NSPasteboardReading", "jsonDecode"]
 - !private ["PSo19NSPasteboardWriting", "init"]
+- !private ["PSo19NSPasteboardWriting", "jsonDecode"]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "jsonDecode"]
 - !private ["CSo8NSString", "init"]
+- !private ["CSo8NSString", "jsonDecode"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
@@ -188,21 +321,38 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "joined"]
 - !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "joined"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["Ps10Strideable", "allocate"]
+- !private ["Ps10Strideable", "deallocate"]
+- !private ["Ps10Strideable", "subscript"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
+- !private ["SS", "jsonDecode"]
 - !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps16TextOutputStream", "jsonDecode"]
 - !private ["Ps20TextOutputStreamable", "init"]
+- !private ["Ps20TextOutputStreamable", "jsonDecode"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt64", "deinit"]
 - !private ["Vs5UInt8", "deinit"]
 - !private ["Sc", "deinit"]
+- !private ["Sp", "allocate"]
+- !private ["Sp", "deallocate"]
+- ["Sp", "deinit"]
+- !private ["Sp", "subscript"]
 - !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
@@ -213,24 +363,63 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "joined"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "jsonDecode"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "jsonDecode"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "jsonDecode"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "jsonDecode"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "jsonDecode"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "allocate"]
+- !private ["Ps9_Hashable", "deallocate"]
 - !private ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "jsonDecode"]
+- !private ["Ps9_Hashable", "subscript"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "joined"]
+- !private ["Ps21_ObjectiveCBridgeable", "jsonDecode"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps8_Pointer", "allocate"]
+- !private ["Ps8_Pointer", "deallocate"]
+- !private ["Ps8_Pointer", "subscript"]
+- !private ["Ps11_Strideable", "allocate"]
+- !private ["Ps11_Strideable", "deallocate"]
+- !private ["Ps11_Strideable", "subscript"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "Int8"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "MemoryLayout"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "String"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "UInt8"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "UnsafeMutablePointer"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "asMyUUID"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "deinit"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "init"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "memcpy"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "string"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuid"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuidFromPointer"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuid_generate_random"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuid_parse"]
+- ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuid_t"]
+- !private ["VC16MyAwesomeProject18DatabaseController8asMyUUID", "uuid_unparse_lower"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
 - "C7MongoDB4BSON"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
-- !private "Sb"
+- "Sb"
 - !private "Ps7CVarArg"
 - !private "Vs9Character"
 - !private "Ps10Collection"
@@ -240,26 +429,32 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - "C16MyAwesomeProject18DatabaseController"
+- "Vs10Dictionary"
 - !private "Sd"
 - !private "Ps9Equatable"
+- "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
 - !private "Ps8Hashable"
+- "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
-- !private "Si"
+- "Si"
 - !private "Vs5Int16"
-- !private "Vs5Int32"
+- "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
 - !private "Ps16IteratorProtocol"
-- !private "P10PerfectLib15JSONConvertible"
+- "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
+- !private "Os12MemoryLayout"
 - !private "Ps10MirrorPath"
 - "C7MongoDB11MongoClient"
 - "C7MongoDB15MongoCollection"
@@ -283,6 +478,8 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps8Sequence"
+- !private "Vs5Slice"
+- !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -292,8 +489,10 @@ depends-nominal:
 - !private "Vs6UInt64"
 - !private "Vs5UInt8"
 - !private "Sc"
+- "Sp"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps24_DestructorSafeContainer"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -301,10 +500,15 @@ depends-nominal:
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps8_Pointer"
+- !private "Ps11_Strideable"
+- "VC16MyAwesomeProject18DatabaseController8asMyUUID"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
@@ -381,6 +585,10 @@ depends-external:
 - "/usr/local/Cellar/mongo-c-driver/1.5.3/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
@@ -425,7 +633,6 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/cURL-2.0.1/module.modulemap"
@@ -441,11 +648,7 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectTurnstileMongoDB.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
@@ -455,4 +658,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "64021dc34ff771c6a0031874acc9cdf7"
+interface-hash: "a099a658ca91ab9d46bcd9cc45047497"
