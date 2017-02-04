@@ -10,7 +10,6 @@
     import LinuxBridge
 #else
     import Darwin
-    import Cocoa
 #endif
 
 import PerfectLib
@@ -49,6 +48,11 @@ class Storage {
         }
         
         return result
+    }
+    
+    class func getAllCollections() -> String {
+        
+        return DatabaseController.getAllCollections()
     }
 
     

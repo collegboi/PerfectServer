@@ -60,6 +60,7 @@ server.addRoutes(authJSONRoutes)
 server.addRoutes(makeRoutes())
 server.addRoutes(makeRCRoutes())
 server.addRoutes(makeTrackerRoutes())
+server.addRoutes(makeTranslationRoutes())
 
 // Setup logging
 let myLogger = RequestLogger()
@@ -90,6 +91,8 @@ server.setResponseFilters([(myLogger, .low)])
 // Set a listen port of 8181
 server.serverPort = 8181
 //server.serverAddress = "localhost"
+
+FileHandler.init()
 
 // Where to serve static files from
 server.documentRoot = "./webroot"

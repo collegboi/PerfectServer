@@ -7,9 +7,9 @@ provides-member:
 - ["C16MyAwesomeProject12IssueTracker", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "DatabaseController"
 - "IssueTracker"
 - "String"
-- !private "DatabaseController"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
 - !private ["Ps9AnyObject", "retrieveCollection"]

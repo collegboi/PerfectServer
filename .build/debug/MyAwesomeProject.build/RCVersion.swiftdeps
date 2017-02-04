@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Bool"
-- !private "DatabaseController"
 - "RCVersion"
+- "Int"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "print"
-- "String"
-- "Int"
 - !private "RemoteConfig"
 - "StringLiteralType"
+- !private "DatabaseController"
+- "String"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]

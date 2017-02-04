@@ -43,6 +43,36 @@ class DatabaseController {
     }
     
     
+    static func getAllCollections() -> String {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        let collections = db.collectionNames()
+        
+        defer {
+            db.close()
+            client.close()
+        }
+        
+        do {
+        
+            let json = try collections.jsonEncodedString()
+            
+            return  "{\"data\":\(json)}"
+            
+        } catch let error {
+            print(error)
+        }
+        
+        return "{\"data\":[]}"
+        
+    }
+    
+    
     @discardableResult
     static func insertDocument(_ collectionName: String, jsonStr: String ) -> String {
         
@@ -104,9 +134,18 @@ class DatabaseController {
         // set database, assuming "test" exists
         let db = connectDatabase(client)
         
+        
         // define collection
         guard let collection = db.getCollection(name: collectionName) else {
             return "Error with collection name"
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            collection.close()
+            db.close()
+            client.close()
         }
         
         if objectID == "" {

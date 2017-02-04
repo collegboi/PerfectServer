@@ -7,37 +7,44 @@ provides-top-level:
 - "echo3Handler"
 - "echo4Handler"
 - "rawPOSTHandler"
+- "mongoGetCollections"
 - "databasePost"
 - "databaseCollectionPost"
+- "mongoFilterHandler"
 - "mongoHandler"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "HTTPResponse"
-- !private "Array"
-- !private "Storage"
-- !private "UnicodeScalarType"
 - "HTTPRequest"
-- "echoHandler"
-- !private "DatabaseController"
-- "echo2Handler"
-- !private "print"
-- "indexHandler"
-- "echo3Handler"
-- "makeRoutes"
+- !private "StringLiteralType"
+- "mongoFilterHandler"
 - "rawPOSTHandler"
 - "databasePost"
-- !private "??"
-- "Routes"
+- !private "Array"
+- "echo3Handler"
 - !private "ResultBody"
-- !private "StringLiteralType"
+- "echoHandler"
+- "echo2Handler"
+- "Routes"
+- "mongoGetCollections"
+- !private "DatabaseController"
+- !private "UnicodeScalarType"
+- !private "print"
+- "makeRoutes"
+- "echo4Handler"
 - "mongoHandler"
 - "databaseCollectionPost"
-- "echo4Handler"
+- "indexHandler"
+- !private "Storage"
+- !private "=="
+- "AssignmentPrecedence"
+- !private "??"
 depends-member:
 - !private ["Ps9AnyObject", "StoreObject"]
 - !private ["Ps9AnyObject", "errorBody"]
+- !private ["Ps9AnyObject", "getAllCollections"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "parseAndStoreObject"]
 - !private ["Ps9AnyObject", "retrieveCollection"]
@@ -170,6 +177,7 @@ depends-member:
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
 - !private ["C16MyAwesomeProject7Storage", "StoreObject"]
+- !private ["C16MyAwesomeProject7Storage", "getAllCollections"]
 - !private ["C16MyAwesomeProject7Storage", "parseAndStoreObject"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -436,4 +444,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "bd4564866375d77ee927f35b2b5b27c3"
+interface-hash: "1b5b04839eaebf6d6d8edf87a044d5d2"

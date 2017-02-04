@@ -1,0 +1,83 @@
+//
+//  Translations.swift
+//  MyAwesomeProject
+//
+//  Created by Timothy Barnard on 04/02/2017.
+//
+//
+#if os(Linux)
+    import LinuxBridge
+#else
+    import Darwin
+#endif
+
+class Translations {
+    
+    class func getTranslationFile(_ filePath: String, _ version: String ) -> String {
+        
+        //return  "{\"data\":[\(arr.joined(separator: ","))]}"
+        
+        return FileHandler.sharedFileHandler!.getContentsOfFile(filePath, version)
+        
+    }
+    
+    class func parseJSONToStr( dict: [String:Any] ) -> String  {
+        
+        var result = ""
+        
+        do {
+            
+            //let scoreArray: [String:Any] = dict
+            let dictStr = try dict.jsonEncodedString()
+            result = dictStr
+            
+        } catch let error {
+            print(error)
+        }
+        
+        return result
+    }
+
+    
+    class func parseJSONConfig( key:String, dataStr : String) -> String? {
+        
+        var returnData = ""
+        
+        let encoded = dataStr
+        
+        do {
+            
+            let decoded = try encoded.jsonDecode() as? [String:Any]
+            
+            let dict = decoded?[key] as! [String:Any]
+            
+            returnData = parseJSONToStr(dict: dict)
+            
+        } catch let error {
+            print(error)
+        }
+        
+        return returnData
+    }
+
+    
+    @discardableResult
+    class func postTranslationFile(_ jsonStr: String ) -> String {
+        
+        
+        let translationList = parseJSONConfig(key: "translationList", dataStr: jsonStr)
+        
+        let language = parseJSONConfig(key: "language", dataStr: jsonStr)
+        
+        let newVersion = parseJSONConfig(key: "newVersion", dataStr: jsonStr)
+        
+        FileHandler.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList!)
+        
+        DatabaseController.updateInsertDocument("Language", jsonStr: language!)
+        
+        return ""
+    }
+    
+    
+}
+

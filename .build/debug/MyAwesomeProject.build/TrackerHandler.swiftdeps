@@ -2,28 +2,25 @@
 provides-top-level:
 - "makeTrackerRoutes"
 - "getTrackerIssues"
-- "getTrackerIssuesObject"
 - "sendTrackerIssue"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "getTrackerIssues"
-- !private "StringLiteralType"
-- "Routes"
-- !private "print"
+- !private "IssueTracker"
+- !private "ResultBody"
 - "AssignmentPrecedence"
 - "makeTrackerRoutes"
-- "getTrackerIssuesObject"
-- !private "IssueTracker"
 - "sendTrackerIssue"
+- !private "print"
 - "HTTPResponse"
 - "HTTPRequest"
-- !private "ResultBody"
+- "Routes"
+- "getTrackerIssues"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getAllIssues"]
-- !private ["Ps9AnyObject", "getIssue"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "sendNewIssue"]
 - !private ["Ps9AnyObject", "successBody"]
@@ -87,7 +84,6 @@ depends-member:
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["C16MyAwesomeProject12IssueTracker", "getAllIssues"]
-- !private ["C16MyAwesomeProject12IssueTracker", "getIssue"]
 - !private ["C16MyAwesomeProject12IssueTracker", "sendNewIssue"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
@@ -364,4 +360,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "797652d7ea04713edb5a4f710c60cd47"
+interface-hash: "259cde691d56110a0d20ebf23bf46200"

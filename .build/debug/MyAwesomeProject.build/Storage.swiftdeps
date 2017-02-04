@@ -7,22 +7,24 @@ provides-member:
 - ["C16MyAwesomeProject7Storage", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
+- "Bool"
+- !private "StringLiteralType"
+- !private "print"
+- "Storage"
+- !private "BooleanLiteralType"
 - "CastingPrecedence"
 - !private "=="
 - "AssignmentPrecedence"
-- "Storage"
-- !private "StringLiteralType"
-- !private "print"
-- "Bool"
-- "String"
-- !private "BooleanLiteralType"
 - !private "DatabaseController"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
+- !private ["Ps9AnyObject", "getAllCollections"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertDocument"]
 - !private ["Ps9AnyObject", "jsonDecode"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "updateInsertDocument"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
@@ -53,7 +55,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "jsonDecode"]
 - !private ["Ps23CustomStringConvertible", "keys"]
+- !private ["C16MyAwesomeProject18DatabaseController", "getAllCollections"]
 - !private ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
+- !private ["C16MyAwesomeProject18DatabaseController", "updateInsertDocument"]
 - !private ["Vs10Dictionary", "Iterator"]
 - ["Vs10Dictionary", "deinit"]
 - !private ["Vs10Dictionary", "keys"]
@@ -130,6 +134,7 @@ depends-member:
 - ["C16MyAwesomeProject7Storage", "StoreObject"]
 - ["C16MyAwesomeProject7Storage", "String"]
 - ["C16MyAwesomeProject7Storage", "deinit"]
+- ["C16MyAwesomeProject7Storage", "getAllCollections"]
 - ["C16MyAwesomeProject7Storage", "init"]
 - ["C16MyAwesomeProject7Storage", "parseAndStoreObject"]
 - !private ["C16MyAwesomeProject7Storage", "print"]
@@ -368,4 +373,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "8f1820231f85740fa5e04c7be06cec94"
+interface-hash: "15d63177ba604da516a9eff8d5996a4e"

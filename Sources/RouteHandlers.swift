@@ -21,6 +21,7 @@ public func makeRoutes() -> Routes {
     routes.add(method: .get, uri: "/user/{id}/baz", handler: echo2Handler)
     routes.add(method: .get, uri: "/user/{id}", handler: echo2Handler)
     routes.add(method: .post, uri: "/user/{id}/baz", handler: echo3Handler)
+    //routes.add(method: .get, uri: "/storage/Tables", handler: mongoGetCollections)
     routes.add(method: .get, uri: "/storage/{collection}", handler: mongoHandler)
     routes.add(method: .get, uri: "/storage/{collection}/{objectid}", handler: mongoFilterHandler)
     routes.add(method: .post, uri: "/storage", handler: databasePost)
@@ -63,6 +64,15 @@ func echo4Handler(request: HTTPRequest, _ response: HTTPResponse) {
 }
 func rawPOSTHandler(request: HTTPRequest, _ response: HTTPResponse) {
     response.appendBody(string: "<html><body>Raw POST handler: You POSTED to path \(request.path) with content-type \(request.header(.contentType)) and POST body \(request.postBodyString)</body></html>")
+    response.completed()
+}
+
+func mongoGetCollections(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    let returning = Storage.getAllCollections()
+    
+    // Return the JSON string
+    response.appendBody(string: returning)
     response.completed()
 }
 
@@ -135,7 +145,14 @@ func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let returning = DatabaseController.retrieveCollection(collectionName)
+    
+    var returning = ResultBody.errorBody(value: "nocollections")
+    
+    if collectionName == "Tables" {
+        returning = Storage.getAllCollections()
+    } else {
+        returning = DatabaseController.retrieveCollection(collectionName)
+    }
     
     // Return the JSON string
     response.appendBody(string: returning)
