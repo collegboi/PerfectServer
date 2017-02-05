@@ -28,7 +28,7 @@ public class FileHandler {
             _FileHandlerSharedInstance = self
         }
         
-        setWorkingDirectory("./Languages/")
+        setWorkingDirectory("./Languages")
     }
     
     private func createWorkingDirectory(_ filePath: String ) -> Dir {
@@ -65,13 +65,13 @@ public class FileHandler {
     }
     
     
-    private func createFile(_ fileContents: String ) -> Bool {
+    private func createFile(_ filePath: String, _ fileContents: String ) -> Bool {
         
         var result: Bool = true
         
-        //setWorkingDirectory("./ConfigFiles")
+        setWorkingDirectory("./ConfigFiles")
         
-        let thisFile = File("config.txt")
+        let thisFile = File(filePath)
         
         do {
             try thisFile.open(.readWrite)
@@ -79,13 +79,15 @@ public class FileHandler {
             defer {
                 thisFile.close()
             }
-        } catch {
+        } catch let error {
+            print(error)
             result = false
         }
         
         do {
-            try thisFile.write(string: "Hello")
-        } catch {
+            try thisFile.write(string: fileContents)
+        } catch let error {
+            print(error)
             result = false
         }
         
@@ -93,24 +95,64 @@ public class FileHandler {
     }
     
     @discardableResult
-    public func updateContentsOfFile(_ filePath: String, _ fileContents: String ) -> Bool {
+    private func createFileToWrite(_ file: File ) -> Bool {
         
         var result: Bool = true
         
-        //setWorkingDirectory("./ConfigFiles")
-        
-        let thisFile = File(filePath)
-        
         do {
+            try file.open(.readWrite)
             
-            try thisFile.open(.readWrite)
         } catch {
-            
+            result = false
         }
         
+        return result
+    }
+    
+    
+    @discardableResult
+    private func openFileToWrite(_ file: File ) -> Bool {
+        
+        var result: Bool = true
+        
         do {
+            try file.open(.write)
+    
+        } catch let error {
+            print(error)
+            result = false
+        }
+        
+        return result
+    }
+    
+    
+    @discardableResult
+    public func updateContentsOfFile(_ filePath: String, _ fileContents: String ) -> Bool {
+        
+        var result: Bool = true
+                            // filePath - folder/file.filetype
+        let thisFile = File(filePath)
+        
+        if !thisFile.exists {
+            
+            self.createFileToWrite(thisFile)
+            
+        } else {
+            print(thisFile.path)
+            self.openFileToWrite(thisFile)
+        }
+
+        do {
+            
             try thisFile.write(string: fileContents )
-        } catch {
+            
+            defer {
+                thisFile.close()
+            }
+            
+        } catch let error {
+            print(error)
             result = false
         }
         

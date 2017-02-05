@@ -58,6 +58,7 @@ server.addRoutes(authWebRoutes)
 server.addRoutes(authJSONRoutes)
 
 server.addRoutes(makeRoutes())
+server.addRoutes(makeDatabaseRoutes())
 server.addRoutes(makeRCRoutes())
 server.addRoutes(makeTrackerRoutes())
 server.addRoutes(makeTranslationRoutes())

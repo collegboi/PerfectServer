@@ -21,11 +21,6 @@ public func makeRoutes() -> Routes {
     routes.add(method: .get, uri: "/user/{id}/baz", handler: echo2Handler)
     routes.add(method: .get, uri: "/user/{id}", handler: echo2Handler)
     routes.add(method: .post, uri: "/user/{id}/baz", handler: echo3Handler)
-    //routes.add(method: .get, uri: "/storage/Tables", handler: mongoGetCollections)
-    routes.add(method: .get, uri: "/storage/{collection}", handler: mongoHandler)
-    routes.add(method: .get, uri: "/storage/{collection}/{objectid}", handler: mongoFilterHandler)
-    routes.add(method: .post, uri: "/storage", handler: databasePost)
-    routes.add(method: .post, uri: "/storage/{collection}", handler: databaseCollectionPost)
     
     
     // Test this one via command line with curl:
@@ -67,95 +62,4 @@ func rawPOSTHandler(request: HTTPRequest, _ response: HTTPResponse) {
     response.completed()
 }
 
-func mongoGetCollections(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    let returning = Storage.getAllCollections()
-    
-    // Return the JSON string
-    response.appendBody(string: returning)
-    response.completed()
-}
-
-func databasePost(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let jsonStr = request.postBodyString else {
-        response.appendBody(string: ResultBody.errorBody(value: "no json body"))
-        response.completed()
-        return
-    }
-    
-    if Storage.parseAndStoreObject(jsonStr) {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-    } else {
-        response.appendBody(string: ResultBody.successBody(value: "collection added"))
-    }
-    
-    response.completed()
-}
-
-func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
-    guard let jsonStr = request.postBodyString else {
-        response.appendBody(string: ResultBody.errorBody(value: "no json body"))
-        response.completed()
-        return
-    }
-    
-    if Storage.StoreObject(collectionName, jsonStr) {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-    } else {
-        response.appendBody(string: ResultBody.successBody(value: "collection added"))
-    }
-    response.completed()
-}
-
-func mongoFilterHandler(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
-    guard let objectID = request.urlVariables["objectid"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "no objectID"))
-        response.completed()
-        return
-    }
-    
-    let returning = DatabaseController.retrieveCollection(collectionName, objectID)
-    
-    // Return the JSON string
-    response.appendBody(string: returning)
-    response.completed()
-
-}
-
-func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
-    
-    var returning = ResultBody.errorBody(value: "nocollections")
-    
-    if collectionName == "Tables" {
-        returning = Storage.getAllCollections()
-    } else {
-        returning = DatabaseController.retrieveCollection(collectionName)
-    }
-    
-    // Return the JSON string
-    response.appendBody(string: returning)
-    response.completed()
-}
 

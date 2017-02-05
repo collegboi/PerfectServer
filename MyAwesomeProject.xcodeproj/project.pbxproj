@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B225385F1E4750BB00DC0380 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B225385D1E4750B400DC0380 /* DatabaseHandler.swift */; };
 		B2D3BDE51E4651CC00273E9C /* TranslationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3BDE31E4651A600273E9C /* TranslationHandler.swift */; };
 		B2D3BDE81E4652C400273E9C /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3BDE61E4652AA00273E9C /* FileHandler.swift */; };
 		B2D3BDEB1E4656B800273E9C /* Translations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D3BDE91E4655A600273E9C /* Translations.swift */; };
@@ -1738,6 +1739,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B225385D1E4750B400DC0380 /* DatabaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		B2D3BDE31E4651A600273E9C /* TranslationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslationHandler.swift; sourceTree = "<group>"; };
 		B2D3BDE61E4652AA00273E9C /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		B2D3BDE91E4655A600273E9C /* Translations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Translations.swift; sourceTree = "<group>"; };
@@ -4036,6 +4038,7 @@
 				B2D3BDE31E4651A600273E9C /* TranslationHandler.swift */,
 				B2D3BDE61E4652AA00273E9C /* FileHandler.swift */,
 				B2D3BDE91E4655A600273E9C /* Translations.swift */,
+				B225385D1E4750B400DC0380 /* DatabaseHandler.swift */,
 			);
 			name = MyAwesomeProject;
 			path = Sources;
@@ -5569,6 +5572,7 @@
 				B2D4F21E1E3CBEC000106A97 /* IssueTracker.swift in Sources */,
 				B2D3BDEB1E4656B800273E9C /* Translations.swift in Sources */,
 				OBJ_2051 /* JSON.swift in Sources */,
+				B225385F1E4750BB00DC0380 /* DatabaseHandler.swift in Sources */,
 				B2D3BDE51E4651CC00273E9C /* TranslationHandler.swift in Sources */,
 				B2D4F2211E3CC54500106A97 /* DatabaseController.swift in Sources */,
 				OBJ_2053 /* RCHandler.swift in Sources */,

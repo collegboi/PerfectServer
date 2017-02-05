@@ -47,11 +47,20 @@ class Translations {
         
         do {
             
-            let decoded = try encoded.jsonDecode() as? [String:Any]
+            if let decoded = try encoded.jsonDecode() as? [String:Any] {
+             
+                if let  dict = decoded[key] as? [String:Any]  {
+                 
+                    returnData = parseJSONToStr(dict: dict)
+                    
+                } else if let str = decoded[key] as? String {
+                    
+                    returnData = str
+                }
             
-            let dict = decoded?[key] as! [String:Any]
-            
-            returnData = parseJSONToStr(dict: dict)
+            } else if let strDecode = try encoded.jsonDecode() as? String {
+                returnData = strDecode
+            }
             
         } catch let error {
             print(error)
@@ -65,15 +74,15 @@ class Translations {
     class func postTranslationFile(_ jsonStr: String ) -> String {
         
         
-        let translationList = parseJSONConfig(key: "translationList", dataStr: jsonStr)
+        let translationList = "{\"translationList\":" + parseJSONConfig(key: "translationList", dataStr: jsonStr)! + "}"
         
         let language = parseJSONConfig(key: "language", dataStr: jsonStr)
         
         let newVersion = parseJSONConfig(key: "newVersion", dataStr: jsonStr)
         
-        FileHandler.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList!)
+        FileHandler.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList)
         
-        DatabaseController.updateInsertDocument("Language", jsonStr: language!)
+        DatabaseController.updateInsertDocument("Languages", jsonStr: language!)
         
         return ""
     }

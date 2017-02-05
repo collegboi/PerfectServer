@@ -164,6 +164,39 @@ class DatabaseController {
         
     }
     
+    static func remoteDocument(_ collectioName: String, _ documentID: String ) -> Bool {
+    
+        
+        // define collection
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return false
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            collection.close()
+            db.close()
+            client.close()
+        }
+        
+        let query = BSON()
+        query.append(key: "_id", string: documentID)
+        
+        
+        collection.remove(selector: query)
+        
+        // return a formatted JSON array.
+        return  true
+    }
     
     static func retrieveCollectionQuery(_ collectioName: String, _ documentID: String ) -> String {
         
