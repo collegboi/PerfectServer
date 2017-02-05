@@ -28,7 +28,7 @@ public class FileHandler {
             _FileHandlerSharedInstance = self
         }
         
-        setWorkingDirectory("./Languages")
+        setWorkingDirectory("./webroot/Languages")
     }
     
     private func createWorkingDirectory(_ filePath: String ) -> Dir {
@@ -69,7 +69,7 @@ public class FileHandler {
         
         var result: Bool = true
         
-        setWorkingDirectory("./ConfigFiles")
+        //setWorkingDirectory("./ConfigFiles")
         
         let thisFile = File(filePath)
         
@@ -126,6 +126,21 @@ public class FileHandler {
         return result
     }
     
+    public func checkIfFileExits(_ filePath:String) -> Bool {
+        
+        let thisFile = File(filePath)
+        
+        if !thisFile.exists {
+            
+             return false
+            
+        } else {
+            print(thisFile.path)
+             return true
+        }
+        
+        return false
+    }
     
     @discardableResult
     public func updateContentsOfFile(_ filePath: String, _ fileContents: String ) -> Bool {

@@ -27,7 +27,6 @@ import PerfectTurnstileMongoDB
 import PerfectRequestLogger
 import TurnstilePerfect
 
-
 //StORMdebug = true
 RequestLogFile.location = "./requests.log"
 
@@ -93,11 +92,13 @@ server.setResponseFilters([(myLogger, .low)])
 server.serverPort = 8181
 //server.serverAddress = "localhost"
 
-FileHandler.init()
-
 // Where to serve static files from
 server.documentRoot = "./webroot"
 //server.serverAddress = "127.0.0.1"
+
+FileHandler.init()
+
+ConfigureNotfications.init()
 
 do {
     // Launch the servers based on the configuration data.

@@ -7,17 +7,17 @@ provides-member:
 - ["C16MyAwesomeProject9RCVersion", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "StringLiteralType"
+- "String"
+- !private "RemoteConfig"
+- !private "BooleanLiteralType"
 - "Bool"
 - "RCVersion"
+- !private "print"
 - "Int"
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "print"
-- !private "RemoteConfig"
-- "StringLiteralType"
 - !private "DatabaseController"
-- "String"
-- !private "BooleanLiteralType"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
 - !private ["Ps9AnyObject", "RemoteConfig"]

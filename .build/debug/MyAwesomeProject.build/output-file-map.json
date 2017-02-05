@@ -8,6 +8,12 @@
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseController.swiftdeps"
   },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/DatabaseHandler.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler.swiftdeps"
+  },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/FileHandler.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler.d",
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler.swift.o",

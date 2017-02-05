@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "Bool"
-- !private "StringLiteralType"
-- !private "print"
 - "Storage"
+- !private "DatabaseController"
+- !private "StringLiteralType"
 - !private "BooleanLiteralType"
-- "CastingPrecedence"
+- !private "print"
+- "Bool"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "DatabaseController"
+- "CastingPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
 - !private ["Ps9AnyObject", "getAllCollections"]

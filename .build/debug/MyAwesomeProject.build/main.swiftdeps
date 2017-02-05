@@ -7,36 +7,42 @@ provides-top-level:
 - "myLogger"
 - "authenticationConfig"
 - "authFilter"
+- "configurationName"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "fatalError"
+- "server"
 - "authJSONRoutes"
 - "makeRoutes"
-- "AuthFilter"
-- "makeTrackerRoutes"
-- "AssignmentPrecedence"
+- "makeRCRoutes"
+- "StringLiteralType"
+- "myLogger"
+- "pturnstile"
 - "makeJSONAuthRoutes"
 - "authenticationConfig"
-- "makeTranslationRoutes"
-- "RequestLogger"
-- "IntegerLiteralType"
-- "AuthenticationConfig"
-- "makeWebAuthRoutes"
-- "FloatLiteralType"
-- "pturnstile"
-- "MongoDBConnection"
-- "authFilter"
-- "Array"
-- "myLogger"
-- "authWebRoutes"
-- "RequestLogFile"
-- "server"
-- "fatalError"
-- "TurnstilePerfect"
-- "StringLiteralType"
-- "makeRCRoutes"
 - "HTTPServer"
+- "RequestLogFile"
+- "Array"
+- "makeWebAuthRoutes"
+- "NetTCPSSL"
+- "AuthenticationConfig"
+- "makeTranslationRoutes"
+- "AuthFilter"
+- "RequestLogger"
+- "authWebRoutes"
+- "makeDatabaseRoutes"
+- "IntegerLiteralType"
+- "authFilter"
+- "configurationName"
+- "TurnstilePerfect"
+- "FloatLiteralType"
+- "NotificationPusher"
+- "makeTrackerRoutes"
+- "MongoDBConnection"
+- "FileHandler"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "addRoutes"]
 - ["Ps9AnyObject", "documentRoot"]
@@ -80,6 +86,8 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- ["C16MyAwesomeProject11FileHandler", "deinit"]
+- ["C16MyAwesomeProject11FileHandler", "init"]
 - ["Sf", "deinit"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "deinit"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "high"]
@@ -183,6 +191,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- "C16MyAwesomeProject11FileHandler"
 - "Sf"
 - "O11PerfectHTTP18HTTPFilterPriority"
 - "P11PerfectHTTP17HTTPRequestFilter"
@@ -394,4 +403,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "e7db60a723f1040f1c2bda9b988d473a"
+interface-hash: "ed51e304ce8bf2873f13b1d8a11a0bb6"

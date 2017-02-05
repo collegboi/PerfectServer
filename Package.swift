@@ -15,6 +15,10 @@ let package = Package(
             url: "https://github.com/hkellaway/Gloss.git",
                  majorVersion: 1, minor: 2
         ),
+        .Package(
+            url:"https://github.com/PerfectlySoft/Perfect-Notifications.git",
+            majorVersion: 2, minor: 0
+        ),
     ]
 )
 
@@ -35,8 +39,17 @@ majorVersion: 1
  url:"https://github.com/PerfectlySoft/Perfect-MongoDB.git",
  majorVersion: 2, minor: 0
  ),
- .Package(
- url:"https://github.com/PerfectlySoft/Perfect-Notifications.git",
- majorVersion: 2, minor: 0
+
+ targets: [
+ Target(
+ name: "ToDo-API",
+ dependencies: [
+ .Target(name: "ToDoModel")
+ ]
  ),
+ Target(
+ name: "ToDoModel",
+ dependencies: []
+ )
+ ],
  */

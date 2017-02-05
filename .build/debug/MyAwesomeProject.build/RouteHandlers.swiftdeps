@@ -7,54 +7,32 @@ provides-top-level:
 - "echo3Handler"
 - "echo4Handler"
 - "rawPOSTHandler"
-- "mongoGetCollections"
-- "databasePost"
-- "databaseCollectionPost"
-- "mongoFilterHandler"
-- "mongoHandler"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- !private "Array"
+- "echoHandler"
+- "rawPOSTHandler"
 - "HTTPResponse"
 - "HTTPRequest"
-- !private "StringLiteralType"
-- "mongoFilterHandler"
-- "rawPOSTHandler"
-- "databasePost"
-- !private "Array"
-- "echo3Handler"
-- !private "ResultBody"
-- "echoHandler"
-- "echo2Handler"
-- "Routes"
-- "mongoGetCollections"
-- !private "DatabaseController"
 - !private "UnicodeScalarType"
-- !private "print"
-- "makeRoutes"
-- "echo4Handler"
-- "mongoHandler"
-- "databaseCollectionPost"
 - "indexHandler"
-- !private "Storage"
-- !private "=="
-- "AssignmentPrecedence"
+- "Routes"
+- "echo2Handler"
+- "echo3Handler"
+- !private "print"
+- "echo4Handler"
+- "makeRoutes"
 - !private "??"
 depends-member:
-- !private ["Ps9AnyObject", "StoreObject"]
-- !private ["Ps9AnyObject", "errorBody"]
-- !private ["Ps9AnyObject", "getAllCollections"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "parseAndStoreObject"]
-- !private ["Ps9AnyObject", "retrieveCollection"]
-- !private ["Ps9AnyObject", "successBody"]
 - !private ["Sa", "Element"]
 - ["Sa", "deinit"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps22BidirectionalIndexable", "Element"]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
+- !private ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "subscript"]
@@ -69,29 +47,23 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Element"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "get"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "post"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollection"]
 - !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "contentType"]
 - !private ["Ps9Equatable", "get"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "post"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
@@ -109,7 +81,6 @@ depends-member:
 - !private ["P11PerfectHTTP12HTTPResponse", "appendBody"]
 - !private ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["P11PerfectHTTP12HTTPResponse", "deinit"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "contentType"]
 - !private ["Ps8Hashable", "get"]
 - !private ["Ps8Hashable", "init"]
@@ -134,10 +105,8 @@ depends-member:
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P10PerfectLib15JSONConvertible", "Element"]
-- !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Element"]
@@ -158,8 +127,6 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["C16MyAwesomeProject10ResultBody", "errorBody"]
-- !private ["C16MyAwesomeProject10ResultBody", "successBody"]
 - ["P11PerfectHTTP14RouteNavigator", "deinit"]
 - !private ["P11PerfectHTTP14RouteNavigator", "description"]
 - !private ["V11PerfectHTTP6Routes", "add"]
@@ -176,9 +143,6 @@ depends-member:
 - !private ["Vs5Slice", "Iterator"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
-- !private ["C16MyAwesomeProject7Storage", "StoreObject"]
-- !private ["C16MyAwesomeProject7Storage", "getAllCollections"]
-- !private ["C16MyAwesomeProject7Storage", "parseAndStoreObject"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -191,19 +155,16 @@ depends-member:
 - !private ["Sc", "deinit"]
 - !private ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "contentType"]
 - !private ["Ps9_Hashable", "get"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "post"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
@@ -211,7 +172,7 @@ depends-nominal:
 - "Sa"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
-- "Sb"
+- !private "Sb"
 - !private "Ps7CVarArg"
 - !private "Vs9Character"
 - !private "Ps10Collection"
@@ -220,12 +181,10 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
-- !private "C16MyAwesomeProject18DatabaseController"
 - !private "Vs10Dictionary"
 - !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
-- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
@@ -265,12 +224,10 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
-- !private "C16MyAwesomeProject10ResultBody"
 - "P11PerfectHTTP14RouteNavigator"
 - "V11PerfectHTTP6Routes"
 - !private "Ps8Sequence"
 - !private "Vs5Slice"
-- !private "C16MyAwesomeProject7Storage"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -282,7 +239,6 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps14_ArrayProtocol"
 - !private "Ps24_DestructorSafeContainer"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -444,4 +400,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "1b5b04839eaebf6d6d8edf87a044d5d2"
+interface-hash: "31e7b9dfbc787d1389b16c6df7709b85"

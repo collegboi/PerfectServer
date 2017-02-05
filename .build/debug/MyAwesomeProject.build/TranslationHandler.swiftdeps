@@ -8,25 +8,25 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPResponse"
-- !private "Translations"
 - "AssignmentPrecedence"
-- "HTTPRequest"
 - "getTranslationFile"
+- !private "Translations"
 - !private "ResultBody"
-- "Routes"
+- "makeTranslationRoutes"
 - "sendTranslation"
 - "getTrackerIssuesObject"
-- !private "print"
-- "makeTranslationRoutes"
 - !private "IssueTracker"
+- "HTTPRequest"
 - !private "StringLiteralType"
+- "Routes"
+- "HTTPResponse"
+- !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getIssue"]
 - !private ["Ps9AnyObject", "getTranslationFile"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "sendNewIssue"]
+- !private ["Ps9AnyObject", "postTranslationFile"]
 - !private ["Ps9AnyObject", "successBody"]
 - !private ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "init"]
@@ -88,7 +88,6 @@ depends-member:
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["C16MyAwesomeProject12IssueTracker", "getIssue"]
-- !private ["C16MyAwesomeProject12IssueTracker", "sendNewIssue"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
@@ -127,6 +126,7 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["C16MyAwesomeProject12Translations", "getTranslationFile"]
+- !private ["C16MyAwesomeProject12Translations", "postTranslationFile"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]

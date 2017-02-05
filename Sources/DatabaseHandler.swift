@@ -99,6 +99,9 @@ func mongoFilterHandler(request: HTTPRequest, _ response: HTTPResponse) {
 
 func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
+    //ConfigureNotfications.init()
+
+    
     guard let collectionName = request.urlVariables["collection"] else {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
         response.completed()
