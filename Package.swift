@@ -18,7 +18,7 @@ let package = Package(
         .Package(
             url:"https://github.com/PerfectlySoft/Perfect-Notifications.git",
             majorVersion: 2, minor: 0
-        ),
+        )
     ]
 )
 
