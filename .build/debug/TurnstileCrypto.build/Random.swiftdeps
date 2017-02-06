@@ -7,18 +7,18 @@ provides-member:
 - ["P15TurnstileCrypto6Random", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int8"
-- "UInt32"
-- "UInt"
-- "String"
-- "UInt64"
-- "UInt8"
 - "UInt16"
-- "Int32"
-- "Int64"
-- "Int"
 - "Int16"
 - "Random"
+- "UInt32"
+- "Int"
+- "String"
+- "UInt8"
+- "Int8"
+- "UInt"
+- "Int32"
+- "Int64"
+- "UInt64"
 depends-member:
 - ["P15TurnstileCrypto6Random", "Int"]
 - ["P15TurnstileCrypto6Random", "Int16"]

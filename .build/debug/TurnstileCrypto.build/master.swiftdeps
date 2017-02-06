@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "c7a856f48dc1ec461d4c713fd9a52701"
-build_time: [538784910, 358305000]
+build_time: [539728084, 304551000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/BCrypt.swift": [538784853, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/Random.swift": [538784853, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/URandom.swift": [538784853, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/BCrypt.swift": [539728043, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/Random.swift": [539728043, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileCrypto/URandom.swift": [539728043, 0]

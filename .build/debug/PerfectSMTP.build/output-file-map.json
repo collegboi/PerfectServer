@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectSMTP.build/master.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectSMTP-1.0.5/Sources/SMTP.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectSMTP.build/SMTP.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectSMTP.build/SMTP.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectSMTP.build/SMTP~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectSMTP.build/SMTP.swiftdeps"
+  }
+}

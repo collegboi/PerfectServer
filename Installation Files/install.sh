@@ -1,5 +1,14 @@
 #!/bin/bash
 
+openssl pkcs12 -clcerts -nokeys -out cert.pem -in cert.p12
+
+openssl pkcs12 -nocerts -out key.pem -in key.p12
+
+openssl rsa -in key.pem -out key.unencrypted.pem
+
+cat cert.pem key.unencrypted.pem > ck.pem
+
+
 sudo apt-get install make clang libicu-dev pkg-config libssl-dev libsasl2-dev libcurl4-openssl-dev uuid-dev git curl wget unzip -y 
 
 cd /usr/src  

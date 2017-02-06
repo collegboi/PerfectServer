@@ -41,85 +41,85 @@ provides-member:
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "-"
-- "Bytes"
-- "HTTP2_END_STREAM"
-- "Int"
-- "HTTP2_PING_ACK"
-- "HeaderListener"
-- "HTTP2Request"
-- !private "HTTPResponseStatus"
-- !private "&"
-- !private "||"
-- "HTTP2Frame"
-- "HPACKEncoder"
-- "HTTP2Response"
-- "HTTP2_CONTINUATION"
-- "HTTP2_SETTINGS"
-- "HTTP2_SETTINGS_ACK"
-- !private "~"
-- !private "HTTPResponseHeader"
-- !private ">>"
-- "HTTP2_RST_STREAM"
-- "UInt32"
-- !private ">="
-- "HTTP11Request"
-- "HTTP2_WINDOW_UPDATE"
-- !private "??"
-- "String"
-- !private "!="
-- "HTTP2_FLAG_PRIORITY"
-- "HTTPRequest"
-- "UInt8"
-- !private "&&"
-- !private "<<="
-- "NetTCPSSL"
-- "HTTP2_GOAWAY"
-- !private "print"
-- "HTTP2_PRIORITY"
-- "HTTP2Client"
-- "SETTINGS_INITIAL_WINDOW_SIZE"
-- "SETTINGS_MAX_CONCURRENT_STREAMS"
 - "TernaryPrecedence"
-- !private "!"
-- !private "HPACKDecoder"
-- "HTTP2_HEADERS"
-- !private "UTF8Encoding"
-- !private "CastingPrecedence"
+- "HTTP2_DATA"
+- !private ">>"
+- "HTTP2_END_HEADERS"
+- !private "<<"
+- "HTTP2_PUSH_PROMISE"
+- "HTTPResponse"
+- "HTTP2Frame"
+- "SETTINGS_ENABLE_PUSH"
+- "Int"
+- !private "+="
+- !private "-"
+- !private "|"
 - !private "~="
 - "=="
-- "HTTP2_PADDED"
 - "AssignmentPrecedence"
-- !private "UnicodeScalarType"
 - !private "&="
-- "StringLiteralType"
-- "UInt16"
-- "Double"
-- "SETTINGS_ENABLE_PUSH"
-- "SETTINGS_MAX_FRAME_SIZE"
-- !private "<<"
-- "Bool"
-- "HTTP11Response"
-- !private "+"
-- "HTTP2_PING"
-- "HTTP2_END_HEADERS"
-- !private "+="
-- "HTTP2_PUSH_PROMISE"
-- "Threading"
-- !private "|"
-- "HTTP2_DATA"
-- "HTTPResponse"
-- "BooleanLiteralType"
-- "SETTINGS_HEADER_TABLE_SIZE"
-- "SETTINGS_MAX_HEADER_LIST_SIZE"
-- !private "..<"
+- !private "~"
+- "HTTP2_PADDED"
+- "HTTP2Response"
 - !private ">"
+- !private "..<"
+- !private "CastingPrecedence"
+- !private "+"
+- "SETTINGS_MAX_HEADER_LIST_SIZE"
+- "HTTP11Request"
+- "NetTCPSSL"
+- !private "HTTPResponseStatus"
+- !private "HTTPResponseHeader"
+- "HTTP2_HEADERS"
+- "StringLiteralType"
+- "HTTP2_END_STREAM"
+- "Double"
+- "HTTP2_PING"
+- !private "UnicodeScalarType"
+- "SETTINGS_HEADER_TABLE_SIZE"
+- "HTTPRequest"
+- "BooleanLiteralType"
+- "HPACKEncoder"
+- !private "!"
+- "HPACKDecoder"
+- "Bool"
+- "Threading"
+- "HTTP2_SETTINGS_ACK"
+- !private "||"
+- "String"
+- !private "??"
+- !private "UTF8Encoding"
+- "HTTP2_PRIORITY"
+- "HTTP2_CONTINUATION"
+- !private "!="
+- !private ">="
+- "HTTP2_PING_ACK"
+- "HTTP2Client"
+- !private "&&"
+- "SETTINGS_MAX_FRAME_SIZE"
+- "Bytes"
+- "HTTP2_SETTINGS"
+- !private "<<="
+- "HTTP2_GOAWAY"
+- "SETTINGS_MAX_CONCURRENT_STREAMS"
+- "UInt32"
+- "HeaderListener"
+- "HTTP2_FLAG_PRIORITY"
+- !private "&"
+- "SETTINGS_INITIAL_WINDOW_SIZE"
+- "UInt16"
+- "HTTP2Request"
+- !private "print"
+- "UInt8"
+- "HTTP2_RST_STREAM"
+- "HTTP2_WINDOW_UPDATE"
+- "HTTP11Response"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Vs11AnyIterator", "Iterator"]
 - ["Vs11AnyIterator", "deinit"]
 - !private ["Ps9AnyObject", "Bytes"]
-- !private ["Ps9AnyObject", "HPACKDecoder"]
+- ["Ps9AnyObject", "HPACKDecoder"]
 - ["Ps9AnyObject", "HPACKEncoder"]
 - ["Ps9AnyObject", "HTTP2Frame"]
 - !private ["Ps9AnyObject", "HTTP2Request"]
@@ -163,6 +163,7 @@ depends-member:
 - !private ["Ps9AnyObject", "data"]
 - !private ["Ps9AnyObject", "decode"]
 - !private ["Ps9AnyObject", "decodeHeaders"]
+- !private ["Ps9AnyObject", "decoder"]
 - !private ["Ps9AnyObject", "dequeueFrame"]
 - !private ["Ps9AnyObject", "doWithLock"]
 - !private ["Ps9AnyObject", "encodeHeader"]
@@ -447,7 +448,7 @@ depends-member:
 - !private ["Sf", "deinit"]
 - !private ["C17PerfectHTTPServer12HPACKDecoder", "decode"]
 - ["C17PerfectHTTPServer12HPACKDecoder", "deinit"]
-- !private ["C17PerfectHTTPServer12HPACKDecoder", "init"]
+- ["C17PerfectHTTPServer12HPACKDecoder", "init"]
 - ["C17PerfectHTTPServer12HPACKEncoder", "deinit"]
 - !private ["C17PerfectHTTPServer12HPACKEncoder", "encodeHeader"]
 - ["C17PerfectHTTPServer12HPACKEncoder", "init"]
@@ -470,7 +471,7 @@ depends-member:
 - ["C17PerfectHTTPServer11HTTP2Client", "Bool"]
 - ["C17PerfectHTTPServer11HTTP2Client", "Bytes"]
 - ["C17PerfectHTTPServer11HTTP2Client", "Double"]
-- !private ["C17PerfectHTTPServer11HTTP2Client", "HPACKDecoder"]
+- ["C17PerfectHTTPServer11HTTP2Client", "HPACKDecoder"]
 - ["C17PerfectHTTPServer11HTTP2Client", "HPACKEncoder"]
 - ["C17PerfectHTTPServer11HTTP2Client", "HTTP2Frame"]
 - !private ["C17PerfectHTTPServer11HTTP2Client", "HTTP2Request"]
@@ -511,6 +512,7 @@ depends-member:
 - ["C17PerfectHTTPServer11HTTP2Client", "connect"]
 - ["C17PerfectHTTPServer11HTTP2Client", "createRequest"]
 - ["C17PerfectHTTPServer11HTTP2Client", "decodeHeaders"]
+- ["C17PerfectHTTPServer11HTTP2Client", "decoder"]
 - ["C17PerfectHTTPServer11HTTP2Client", "deinit"]
 - ["C17PerfectHTTPServer11HTTP2Client", "dequeueFrame"]
 - ["C17PerfectHTTPServer11HTTP2Client", "encodeHeaders"]
@@ -1235,12 +1237,12 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
-interface-hash: "f83034c1063e2f0db3622601183414be"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
+interface-hash: "0dd6bad05c8c7bbde66585cf20ead2f3"

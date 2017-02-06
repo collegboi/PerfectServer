@@ -13,14 +13,14 @@ provides-member:
 - ["V9Turnstile14SessionAccount", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "SessionManager"
+- "InvalidSessionError"
+- "AssignmentPrecedence"
 - "Account"
 - "String"
-- "SessionAccount"
-- "AssignmentPrecedence"
-- "SessionManager"
-- "StringLiteralType"
 - "TurnstileError"
-- "InvalidSessionError"
+- "SessionAccount"
+- "StringLiteralType"
 depends-member:
 - ["P9Turnstile7Account", "uniqueID"]
 - ["P9Turnstile7Account", ""]

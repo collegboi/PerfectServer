@@ -8,20 +8,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "BooleanLiteralType"
-- "HTTPResponseFilterResult"
+- !private "HTTPCookie"
+- !private "Subject"
 - !private "StringLiteralType"
+- "HTTPRequestFilter"
+- "HTTPResponseFilter"
 - "Turnstile"
 - !private "*"
-- "HTTPResponseFilter"
-- !private "Subject"
 - "AssignmentPrecedence"
-- "HTTPRequestFilterResult"
+- "HTTPRequest"
+- "TurnstileFilter"
 - "HTTPResponse"
 - !private "UnicodeScalarType"
-- "HTTPRequestFilter"
-- !private "HTTPCookie"
-- "TurnstileFilter"
-- "HTTPRequest"
+- "HTTPRequestFilterResult"
+- "HTTPResponseFilterResult"
 depends-member:
 - ["C9Turnstile6APIKey", "deinit"]
 - ["C9Turnstile11AccessToken", "deinit"]

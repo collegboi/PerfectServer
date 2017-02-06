@@ -8,18 +8,21 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "TurnstileError"
-- !private "String"
-- "AssignmentPrecedence"
-- "tokenStore"
-- !private "print"
-- "AccessTokenStore"
-- !private "StringLiteralType"
 - "AuthHandlersJSON"
-- "HTTPRequest"
-- "HTTPResponse"
+- "AssignmentPrecedence"
+- "AccessTokenStore"
+- !private "TurnstileError"
+- !private "StringLiteralType"
+- !private "print"
+- "tokenStore"
+- !private "String"
 - !private "UsernamePassword"
+- "HTTPResponse"
+- "HTTPRequest"
 depends-member:
+- !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "new"]
+- ["P9Turnstile7Account", "deinit"]
+- !private ["P9Turnstile7Account", "uniqueID"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UsernamePassword"]
 - !private ["Ps9AnyObject", "authDetails"]
@@ -27,8 +30,10 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "login"]
 - !private ["Ps9AnyObject", "logout"]
+- !private ["Ps9AnyObject", "new"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "register"]
+- !private ["Ps9AnyObject", "tokenStore"]
 - ["Ps9AnyObject", ""]
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "HTTPRequest"]
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "HTTPResponse"]
@@ -42,6 +47,8 @@ depends-member:
 - !private ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "print"]
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "registerHandlerPOST"]
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "testHandler"]
+- !private ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", "tokenStore"]
+- !private ["V9Turnstile21AuthenticationDetails", "account"]
 - ["V9Turnstile21AuthenticationDetails", "deinit"]
 - !private ["V9Turnstile21AuthenticationDetails", "sessionID"]
 - ["Sb", "deinit"]
@@ -110,6 +117,7 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "new"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -131,6 +139,8 @@ depends-member:
 - !private ["Vs5Slice", "Iterator"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- !private ["C5StORM5StORM", "new"]
+- !private ["P5StORM13StORMProtocol", "new"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["C9Turnstile7Subject", "authDetails"]
@@ -160,6 +170,8 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
+- !private "C23PerfectTurnstileMongoDB16AccessTokenStore"
+- "P9Turnstile7Account"
 - "Ps9AnyObject"
 - "C23PerfectTurnstileMongoDB16AuthHandlersJSON"
 - "V9Turnstile21AuthenticationDetails"
@@ -198,6 +210,7 @@ depends-nominal:
 - !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "C12MongoDBStORM12MongoDBStORM"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
@@ -209,6 +222,8 @@ depends-nominal:
 - "Sq"
 - !private "Ps8Sequence"
 - !private "Vs5Slice"
+- !private "C5StORM5StORM"
+- !private "P5StORM13StORMProtocol"
 - "SS"
 - "C9Turnstile7Subject"
 - !private "Ps16TextOutputStream"
@@ -365,13 +380,13 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
 interface-hash: "fec5df8f8b119d31a173760631a236f1"

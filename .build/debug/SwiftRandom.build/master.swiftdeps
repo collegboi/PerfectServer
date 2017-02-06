@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "f087eb52b4b9e1ed79921f2bf894726e"
-build_time: [538784901, 238324000]
+build_time: [539728078, 25040000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/Random.swift": [538784791, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/Randoms.swift": [538784791, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/URandom.swift": [538784791, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/Random.swift": [539728012, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/Randoms.swift": [539728012, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/SwiftRandom-0.2.4/Sources/SwiftRandom/URandom.swift": [539728012, 0]

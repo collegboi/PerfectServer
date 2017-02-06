@@ -12,11 +12,11 @@ provides-member:
 - ["Si", "years"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
 - "Duration"
-- !private "*"
+- "Int"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- !private "*"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Duration"]
 - !private ["Ps7CVarArg", "Duration"]

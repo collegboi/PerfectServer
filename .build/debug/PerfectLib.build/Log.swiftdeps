@@ -16,26 +16,26 @@ provides-member:
 - ["V10PerfectLib3Log", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "withVaList"
-- !private "print"
-- "Logger"
+- "Log"
 - "SysLogger"
+- !private "vsyslog"
 - !private "+"
 - !private "StringLiteralType"
-- "Never"
-- !private "LOG_EMERG"
+- !private "print"
+- !private "fatalError"
+- "Int32"
 - "String"
+- "Never"
+- !private "LOG_INFO"
 - !private "LOG_DEBUG"
+- "CVarArg"
+- !private "LOG_EMERG"
+- !private "LOG_CRIT"
 - !private "LOG_WARNING"
 - "ConsoleLogger"
+- "Logger"
+- !private "withVaList"
 - !private "LOG_ERR"
-- "Log"
-- !private "LOG_CRIT"
-- !private "LOG_INFO"
-- !private "fatalError"
-- !private "vsyslog"
-- "Int32"
-- "CVarArg"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "withCString"]

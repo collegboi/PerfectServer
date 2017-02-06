@@ -8,11 +8,11 @@ provides-member:
 - ["O5StORM15StORMDataSource", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- "AssignmentPrecedence"
 - "StORMDataSource"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- "=="
+- "AssignmentPrecedence"
 depends-member:
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps7CVarArg", "hashValue"]

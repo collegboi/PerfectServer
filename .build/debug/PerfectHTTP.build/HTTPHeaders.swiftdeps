@@ -16,16 +16,16 @@ provides-member:
 - ["OO11PerfectHTTP18HTTPResponseHeader4Name", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- "Hashable"
-- "StringLiteralType"
-- "HTTPRequestHeader"
 - "HTTPResponseHeader"
-- "String"
-- "=="
+- "Hashable"
+- "HTTPRequestHeader"
 - !private "~="
-- "Bool"
+- "=="
 - "Dictionary"
+- "Int"
+- "StringLiteralType"
+- "Bool"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "hashValue"]
 - ["Ps9AnyObject", "init"]

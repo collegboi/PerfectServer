@@ -10,35 +10,35 @@ provides-member:
 - ["C20PerfectRequestLogger13RequestLogger", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "Double"
-- !private "Randoms"
-- !private "moment"
-- !private "/"
 - "StringLiteralType"
-- "HTTPResponseFilterResult"
-- !private "+="
 - !private "gettimeofday"
-- "HTTPRequestFilter"
-- !private "PerfectNet"
-- "HTTPResponseFilter"
-- !private "UnicodeScalarType"
-- !private "??"
-- "CastingPrecedence"
-- !private "-"
-- "HTTPRequest"
-- "RequestLogger"
-- "AssignmentPrecedence"
 - "HTTPResponse"
-- !private "Int"
-- !private "+"
 - "HTTPRequestFilterResult"
-- !private "timeval"
+- "RequestLogger"
+- "HTTPRequest"
+- "String"
+- !private "Randoms"
+- !private "/"
 - "RequestLogFile"
+- "Double"
+- !private "-"
 - !private "LogFile"
 - !private "*"
-- "TernaryPrecedence"
+- !private "??"
+- !private "PerfectNet"
+- "HTTPResponseFilterResult"
 - "UInt32"
+- "TernaryPrecedence"
+- "CastingPrecedence"
+- "HTTPResponseFilter"
+- !private "timeval"
+- !private "Int"
+- "HTTPRequestFilter"
+- "AssignmentPrecedence"
+- !private "+="
+- !private "UnicodeScalarType"
+- !private "moment"
+- !private "+"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]
@@ -46,6 +46,7 @@ depends-member:
 - !private ["Ps9AnyObject", "LogFile"]
 - !private ["Ps9AnyObject", "Randoms"]
 - ["Ps9AnyObject", "RequestLogFile"]
+- !private ["Ps9AnyObject", "RequestLogger"]
 - ["Ps9AnyObject", "filter"]
 - ["Ps9AnyObject", "filterBody"]
 - ["Ps9AnyObject", "filterHeaders"]
@@ -145,11 +146,13 @@ depends-member:
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "LogFile"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "Randoms"]
 - ["P11PerfectHTTP17HTTPRequestFilter", "RequestLogFile"]
+- !private ["P11PerfectHTTP17HTTPRequestFilter", "RequestLogger"]
 - ["P11PerfectHTTP17HTTPRequestFilter", "filter"]
 - ["P11PerfectHTTP17HTTPRequestFilter", "filterBody"]
 - ["P11PerfectHTTP17HTTPRequestFilter", "filterHeaders"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "getNow"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "gettimeofday"]
+- !private ["P11PerfectHTTP17HTTPRequestFilter", "init"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "moment"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "randomID"]
 - !private ["P11PerfectHTTP17HTTPRequestFilter", "sequence"]
@@ -166,11 +169,13 @@ depends-member:
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "LogFile"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "Randoms"]
 - ["P11PerfectHTTP18HTTPResponseFilter", "RequestLogFile"]
+- !private ["P11PerfectHTTP18HTTPResponseFilter", "RequestLogger"]
 - ["P11PerfectHTTP18HTTPResponseFilter", "filter"]
 - ["P11PerfectHTTP18HTTPResponseFilter", "filterBody"]
 - ["P11PerfectHTTP18HTTPResponseFilter", "filterHeaders"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "getNow"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "gettimeofday"]
+- !private ["P11PerfectHTTP18HTTPResponseFilter", "init"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "moment"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "randomID"]
 - !private ["P11PerfectHTTP18HTTPResponseFilter", "sequence"]
@@ -256,19 +261,24 @@ depends-member:
 - ["V20PerfectRequestLogger14RequestLogFile", "location"]
 - ["C20PerfectRequestLogger13RequestLogger", "Double"]
 - ["C20PerfectRequestLogger13RequestLogger", "HTTPRequest"]
+- ["C20PerfectRequestLogger13RequestLogger", "HTTPRequestFilter"]
 - ["C20PerfectRequestLogger13RequestLogger", "HTTPRequestFilterResult"]
 - ["C20PerfectRequestLogger13RequestLogger", "HTTPResponse"]
+- ["C20PerfectRequestLogger13RequestLogger", "HTTPResponseFilter"]
 - ["C20PerfectRequestLogger13RequestLogger", "HTTPResponseFilterResult"]
 - !private ["C20PerfectRequestLogger13RequestLogger", "Int"]
 - !private ["C20PerfectRequestLogger13RequestLogger", "LogFile"]
 - !private ["C20PerfectRequestLogger13RequestLogger", "PerfectNet"]
 - !private ["C20PerfectRequestLogger13RequestLogger", "Randoms"]
 - ["C20PerfectRequestLogger13RequestLogger", "RequestLogFile"]
+- !private ["C20PerfectRequestLogger13RequestLogger", "RequestLogger"]
 - ["C20PerfectRequestLogger13RequestLogger", "String"]
 - ["C20PerfectRequestLogger13RequestLogger", "UInt32"]
 - ["C20PerfectRequestLogger13RequestLogger", "defaultLogFile"]
 - ["C20PerfectRequestLogger13RequestLogger", "deinit"]
 - ["C20PerfectRequestLogger13RequestLogger", "filter"]
+- ["C20PerfectRequestLogger13RequestLogger", "filterAPIRequest"]
+- ["C20PerfectRequestLogger13RequestLogger", "filterAPIResponse"]
 - ["C20PerfectRequestLogger13RequestLogger", "filterBody"]
 - ["C20PerfectRequestLogger13RequestLogger", "filterHeaders"]
 - ["C20PerfectRequestLogger13RequestLogger", "getNow"]
@@ -518,4 +528,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
-interface-hash: "57e8c220d74586a6e1b060b383ea4214"
+interface-hash: "a8b5ac4444125862ccc6ce5161575c61"

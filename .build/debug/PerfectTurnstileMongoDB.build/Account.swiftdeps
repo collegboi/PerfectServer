@@ -7,24 +7,24 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB11AuthAccount", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Account"
-- "Bool"
-- "AccessTokenStore"
-- "AssignmentPrecedence"
-- "CastingPrecedence"
+- !private "..<"
+- !private "BooleanLiteralType"
 - "MongoDBStORM"
 - "String"
+- "Bool"
+- "StringLiteralType"
+- "Account"
+- "AssignmentPrecedence"
+- !private "Dictionary"
+- "CastingPrecedence"
 - !private "=="
 - !private "print"
-- "AuthAccount"
-- !private "Dictionary"
+- "AccessTokenStore"
 - !private "BCrypt"
-- "StringLiteralType"
-- !private "??"
-- !private "BooleanLiteralType"
 - "StORMRow"
+- !private "??"
 - !private "StORMError"
-- !private "..<"
+- "AuthAccount"
 depends-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "deinit"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "init"]
@@ -33,6 +33,7 @@ depends-member:
 - !private ["P9Turnstile7Account", "BCrypt"]
 - !private ["P9Turnstile7Account", "StORMError"]
 - !private ["P9Turnstile7Account", "_collection"]
+- !private ["P9Turnstile7Account", "create"]
 - !private ["P9Turnstile7Account", "email"]
 - !private ["P9Turnstile7Account", "facebookID"]
 - !private ["P9Turnstile7Account", "find"]
@@ -43,7 +44,6 @@ depends-member:
 - !private ["P9Turnstile7Account", "password"]
 - !private ["P9Turnstile7Account", "print"]
 - !private ["P9Turnstile7Account", "results"]
-- !private ["P9Turnstile7Account", "save"]
 - !private ["P9Turnstile7Account", "to"]
 - ["P9Turnstile7Account", "uniqueID"]
 - !private ["P9Turnstile7Account", "username"]
@@ -53,6 +53,7 @@ depends-member:
 - !private ["Ps9AnyObject", "BCrypt"]
 - !private ["Ps9AnyObject", "StORMError"]
 - !private ["Ps9AnyObject", "_collection"]
+- !private ["Ps9AnyObject", "create"]
 - !private ["Ps9AnyObject", "data"]
 - ["Ps9AnyObject", "email"]
 - ["Ps9AnyObject", "exists"]
@@ -71,7 +72,6 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "results"]
 - ["Ps9AnyObject", "rows"]
-- !private ["Ps9AnyObject", "save"]
 - ["Ps9AnyObject", "to"]
 - ["Ps9AnyObject", "uniqueID"]
 - ["Ps9AnyObject", "username"]
@@ -95,6 +95,7 @@ depends-member:
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "StORMRow"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "String"]
 - !private ["C23PerfectTurnstileMongoDB11AuthAccount", "_collection"]
+- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "create"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "deinit"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "email"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "exists"]
@@ -112,7 +113,6 @@ depends-member:
 - !private ["C23PerfectTurnstileMongoDB11AuthAccount", "print"]
 - !private ["C23PerfectTurnstileMongoDB11AuthAccount", "results"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "rows"]
-- !private ["C23PerfectTurnstileMongoDB11AuthAccount", "save"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "to"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "uniqueID"]
 - ["C23PerfectTurnstileMongoDB11AuthAccount", "username"]
@@ -348,6 +348,7 @@ depends-member:
 - ["C12MongoDBStORM12MongoDBStORM", "StORMRow"]
 - ["C12MongoDBStORM12MongoDBStORM", "String"]
 - !private ["C12MongoDBStORM12MongoDBStORM", "_collection"]
+- !private ["C12MongoDBStORM12MongoDBStORM", "create"]
 - ["C12MongoDBStORM12MongoDBStORM", "deinit"]
 - ["C12MongoDBStORM12MongoDBStORM", "email"]
 - ["C12MongoDBStORM12MongoDBStORM", "exists"]
@@ -365,7 +366,6 @@ depends-member:
 - !private ["C12MongoDBStORM12MongoDBStORM", "print"]
 - !private ["C12MongoDBStORM12MongoDBStORM", "results"]
 - ["C12MongoDBStORM12MongoDBStORM", "rows"]
-- !private ["C12MongoDBStORM12MongoDBStORM", "save"]
 - ["C12MongoDBStORM12MongoDBStORM", "to"]
 - ["C12MongoDBStORM12MongoDBStORM", "uniqueID"]
 - ["C12MongoDBStORM12MongoDBStORM", "username"]
@@ -473,6 +473,7 @@ depends-member:
 - ["C5StORM5StORM", "StORMRow"]
 - ["C5StORM5StORM", "String"]
 - !private ["C5StORM5StORM", "_collection"]
+- !private ["C5StORM5StORM", "create"]
 - ["C5StORM5StORM", "email"]
 - ["C5StORM5StORM", "exists"]
 - ["C5StORM5StORM", "facebookID"]
@@ -489,7 +490,6 @@ depends-member:
 - !private ["C5StORM5StORM", "print"]
 - !private ["C5StORM5StORM", "results"]
 - ["C5StORM5StORM", "rows"]
-- !private ["C5StORM5StORM", "save"]
 - ["C5StORM5StORM", "to"]
 - ["C5StORM5StORM", "uniqueID"]
 - ["C5StORM5StORM", "username"]
@@ -500,6 +500,7 @@ depends-member:
 - !private ["P5StORM13StORMProtocol", "BCrypt"]
 - !private ["P5StORM13StORMProtocol", "StORMError"]
 - !private ["P5StORM13StORMProtocol", "_collection"]
+- !private ["P5StORM13StORMProtocol", "create"]
 - ["P5StORM13StORMProtocol", "email"]
 - ["P5StORM13StORMProtocol", "exists"]
 - ["P5StORM13StORMProtocol", "facebookID"]
@@ -516,7 +517,6 @@ depends-member:
 - !private ["P5StORM13StORMProtocol", "print"]
 - !private ["P5StORM13StORMProtocol", "results"]
 - ["P5StORM13StORMProtocol", "rows"]
-- !private ["P5StORM13StORMProtocol", "save"]
 - ["P5StORM13StORMProtocol", "to"]
 - ["P5StORM13StORMProtocol", "uniqueID"]
 - ["P5StORM13StORMProtocol", "username"]
@@ -839,13 +839,13 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
 interface-hash: "b1a49af81143519b718ee9b235f854a8"

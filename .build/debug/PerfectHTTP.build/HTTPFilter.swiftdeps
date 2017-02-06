@@ -21,14 +21,14 @@ provides-member:
 - ["P11PerfectHTTP18HTTPResponseFilter", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPResponse"
+- "HTTPRequestFilter"
 - "HTTPResponseFilterResult"
 - "HTTPRequest"
-- "HTTPRequestFilter"
-- "HTTPResponseFilter"
+- "HTTPResponse"
 - "=="
-- "HTTPFilterPriority"
 - "HTTPRequestFilterResult"
+- "HTTPResponseFilter"
+- "HTTPFilterPriority"
 depends-member:
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps7CVarArg", "hashValue"]

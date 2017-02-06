@@ -7,12 +7,12 @@ provides-member:
 - ["O11SwiftMoment8TimeUnit", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "=="
-- "TimeUnit"
-- !private "~="
 - "StringLiteralType"
-- "UnicodeScalarType"
+- "TimeUnit"
 - "String"
+- "=="
+- !private "~="
+- "UnicodeScalarType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

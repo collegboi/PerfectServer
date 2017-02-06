@@ -7,23 +7,23 @@ provides-member:
 - ["C12TurnstileWeb14WebMemoryRealm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "URandom"
-- "WebMemoryRealm"
+- !private "String"
+- "MemoryAccount"
 - "Credentials"
 - !private "AccountTakenError"
+- "Account"
+- "Realm"
 - !private "UsernamePassword"
 - !private "GoogleAccount"
-- "Random"
-- !private "UnsupportedCredentialsError"
-- !private "IncorrectCredentialsError"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "FacebookAccount"
+- "WebMemoryRealm"
 - !private "&&"
-- "Account"
-- "MemoryAccount"
-- !private "String"
-- "Realm"
+- !private "IncorrectCredentialsError"
+- "Random"
+- "URandom"
+- !private "FacebookAccount"
+- !private "UnsupportedCredentialsError"
 depends-member:
 - ["P9Turnstile7Account", "deinit"]
 - !private ["P9Turnstile7Account", "facebookID"]

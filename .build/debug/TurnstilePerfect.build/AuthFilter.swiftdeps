@@ -7,18 +7,18 @@ provides-member:
 - ["V16TurnstilePerfect10AuthFilter", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
-- !private "BooleanLiteralType"
-- "StringLiteralType"
-- !private "ExtendedGraphemeClusterType"
-- "AuthenticationConfig"
 - "AuthFilter"
-- "HTTPResponse"
-- "AssignmentPrecedence"
-- "HTTPRequestFilter"
-- !private "&&"
 - "HTTPRequest"
+- !private "BooleanLiteralType"
+- "HTTPRequestFilter"
+- "HTTPResponse"
+- "StringLiteralType"
 - "HTTPRequestFilterResult"
+- !private "ExtendedGraphemeClusterType"
+- !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- "AuthenticationConfig"
+- !private "&&"
 depends-member:
 - !private ["Ps9AnyObject", "authenticated"]
 - !private ["Ps9AnyObject", "contains"]

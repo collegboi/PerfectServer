@@ -7,17 +7,17 @@ provides-member:
 - ["C16TurnstilePerfect16TurnstilePerfect", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
+- "HTTPFilterPriority"
+- "HTTPRequestFilter"
+- !private "MemorySessionManager"
+- "HTTPResponseFilter"
+- "SessionManager"
+- "TurnstilePerfect"
 - "Turnstile"
+- "AssignmentPrecedence"
 - "Realm"
 - !private "WebMemoryRealm"
 - !private "TurnstileFilter"
-- "HTTPFilterPriority"
-- "SessionManager"
-- "TurnstilePerfect"
-- !private "MemorySessionManager"
-- "HTTPRequestFilter"
-- "HTTPResponseFilter"
 depends-member:
 - !private ["Ps9AnyObject", "HTTPFilterPriority"]
 - !private ["Ps9AnyObject", "MemorySessionManager"]

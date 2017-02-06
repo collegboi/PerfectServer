@@ -26,52 +26,65 @@ provides-member:
 - ["C20PerfectNotifications18NotificationPusher", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Array"
-- "IOSNotificationItem"
-- "jsonEncodedStringWorkAround"
-- "UInt8"
-- !private "iosNotificationProductionHost"
 - "BooleanLiteralType"
-- "NetTCPSSL"
-- !private ">"
-- !private "UInt"
-- !private "Double"
-- "StringLiteralType"
-- "HTTPResponseStatus"
-- !private "iosNotificationPort"
-- "NotificationConfiguration"
-- "HTTP2Client"
-- !private "iosDeviceIdLength"
-- "UInt32"
-- !private "JSONConvertibleObject"
-- "Threading"
-- !private "JSONConvertible"
-- "CastingPrecedence"
-- !private "Bool"
+- "jsonEncodedStringWorkAround"
 - "Int"
+- !private "iosNotificationCommand"
+- "HTTPResponseStatus"
+- "Bool"
+- !private "File"
+- !private "UInt"
+- !private "iosDeviceIdLength"
+- "IOSNotificationError"
+- "HTTP2Client"
+- "StringLiteralType"
+- !private "JSONConvertible"
+- !private "fatalError"
+- "UInt32"
+- !private "!="
+- !private "time"
+- "NotificationConfiguration"
+- !private "iosNotificationProductionHost"
+- "CustomStringConvertible"
+- !private "UTF8Encoding"
+- !private ">="
+- !private "-"
+- !private "jsonSerialize"
+- !private "print"
+- !private "iosNotificationDevelopmentHost"
+- "String"
+- "UInt8"
+- "Threading"
+- "NotificationPusher"
+- !private "&+"
+- "UInt16"
+- "NetTCPSSL"
+- !private "Int32"
+- !private "&&"
+- !private "iosNotificationPort"
+- "NotificationHTTP2Client"
+- "CastingPrecedence"
+- "NotificationResponse"
+- "IOSNotificationItem"
+- !private "Array"
+- !private "JSONConversionError"
 - "=="
 - !private "~="
-- "UInt16"
-- "IOSNotificationError"
 - "AssignmentPrecedence"
+- "IntegerLiteralType"
 - "IndexingIterator"
-- "NotificationResponse"
+- !private "*"
+- !private ">"
 - "IOSItemId"
 - "FloatLiteralType"
-- !private "iosNotificationCommand"
-- !private "UTF8Encoding"
-- "NotificationPusher"
-- !private "JSONConversionError"
-- !private "print"
-- !private "&+"
-- !private "jsonSerialize"
-- "String"
-- "IntegerLiteralType"
-- !private "iosNotificationDevelopmentHost"
-- "NotificationHTTP2Client"
+- !private "makeSignature"
+- !private "JSONConvertibleObject"
+- !private "Double"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "jsonEncodedString"]
+- !private ["Ps9AnyObject", "File"]
 - ["Ps9AnyObject", "Int"]
+- !private ["Ps9AnyObject", "Int32"]
 - ["Ps9AnyObject", "NotificationConfiguration"]
 - ["Ps9AnyObject", "NotificationHTTP2Client"]
 - !private ["Ps9AnyObject", "NotificationPusher"]
@@ -81,18 +94,27 @@ depends-member:
 - !private ["Ps9AnyObject", "UInt8"]
 - !private ["Ps9AnyObject", "UTF8Encoding"]
 - !private ["Ps9AnyObject", "activeStreams"]
+- !private ["Ps9AnyObject", "addConfigurationIOS"]
 - !private ["Ps9AnyObject", "apnsTopic"]
+- !private ["Ps9AnyObject", "checkPrivateKey"]
 - !private ["Ps9AnyObject", "close"]
 - !private ["Ps9AnyObject", "configurationsLock"]
 - !private ["Ps9AnyObject", "configurator"]
 - !private ["Ps9AnyObject", "connect"]
 - !private ["Ps9AnyObject", "createRequest"]
+- !private ["Ps9AnyObject", "currentToken"]
+- !private ["Ps9AnyObject", "currentTokenTime"]
 - !private ["Ps9AnyObject", "development"]
 - !private ["Ps9AnyObject", "doWithLock"]
+- !private ["Ps9AnyObject", "errorCode"]
+- !private ["Ps9AnyObject", "errorStr"]
+- !private ["Ps9AnyObject", "exists"]
+- !private ["Ps9AnyObject", "fatalError"]
 - !private ["Ps9AnyObject", "getStreamIOS"]
 - ["Ps9AnyObject", "id"]
 - !private ["Ps9AnyObject", "idCounter"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "initializedCallback"]
 - !private ["Ps9AnyObject", "iosConfigurations"]
 - !private ["Ps9AnyObject", "iosNotificationDevelopmentHost"]
 - !private ["Ps9AnyObject", "iosNotificationPort"]
@@ -101,16 +123,26 @@ depends-member:
 - !private ["Ps9AnyObject", "itemsToPayloadString"]
 - !private ["Ps9AnyObject", "jsonDecode"]
 - !private ["Ps9AnyObject", "jsonEncodedString"]
+- !private ["Ps9AnyObject", "jwtToken"]
+- !private ["Ps9AnyObject", "keyId"]
 - !private ["Ps9AnyObject", "lock"]
+- !private ["Ps9AnyObject", "makeSignature"]
 - !private ["Ps9AnyObject", "net"]
 - ["Ps9AnyObject", "netConfigurator"]
 - !private ["Ps9AnyObject", "notificationHostIOS"]
+- !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "privateKeyPath"]
 - !private ["Ps9AnyObject", "pushIOS"]
 - !private ["Ps9AnyObject", "releaseStreamIOS"]
 - !private ["Ps9AnyObject", "resetResponses"]
 - !private ["Ps9AnyObject", "responses"]
 - !private ["Ps9AnyObject", "sendRequest"]
 - !private ["Ps9AnyObject", "streams"]
+- !private ["Ps9AnyObject", "teamId"]
+- !private ["Ps9AnyObject", "time"]
+- !private ["Ps9AnyObject", "useCertificateFile"]
+- !private ["Ps9AnyObject", "usePrivateKeyFile"]
+- !private ["Ps9AnyObject", "usingJWT"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Element"]
 - !private ["Sa", "IndexDistance"]
@@ -249,11 +281,15 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "UTF8Encoding"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "body"]
 - !private ["Ps23CustomStringConvertible", "count"]
+- ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "first"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
@@ -265,7 +301,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeAll"]
 - !private ["Ps23CustomStringConvertible", "removeLast"]
 - !private ["Ps23CustomStringConvertible", "removeValue"]
+- !private ["Ps23CustomStringConvertible", "status"]
+- !private ["Ps23CustomStringConvertible", "stringBody"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", ""]
 - !private ["Vs10Dictionary", "IndexDistance"]
 - !private ["Vs10Dictionary", "count"]
 - ["Vs10Dictionary", "deinit"]
@@ -279,6 +318,7 @@ depends-member:
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
+- !private ["Ps9Equatable", "authorization"]
 - !private ["Ps9Equatable", "contentType"]
 - !private ["Ps9Equatable", "custom"]
 - ["Ps9Equatable", "hashValue"]
@@ -327,6 +367,9 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "jsonDecode"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "jsonEncodedString"]
+- !private ["C10PerfectLib4File", "deinit"]
+- !private ["C10PerfectLib4File", "exists"]
+- !private ["C10PerfectLib4File", "init"]
 - !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "jsonEncodedString"]
 - ["C17PerfectHTTPServer11HTTP2Client", "Int"]
@@ -356,6 +399,7 @@ depends-member:
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
+- !private ["Ps8Hashable", "authorization"]
 - !private ["Ps8Hashable", "contentType"]
 - !private ["Ps8Hashable", "custom"]
 - ["Ps8Hashable", "hashValue"]
@@ -397,6 +441,7 @@ depends-member:
 - ["O20PerfectNotifications19IOSNotificationItem", "deinit"]
 - ["O20PerfectNotifications19IOSNotificationItem", "mutableContent"]
 - ["O20PerfectNotifications19IOSNotificationItem", "sound"]
+- ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "IndexDistance"]
@@ -434,9 +479,11 @@ depends-member:
 - !private ["Vs16IndexingIterator", "next"]
 - ["Si", "deinit"]
 - !private ["Si", "hashValue"]
+- !private ["Si", "init"]
 - !private ["Si", "jsonEncodedString"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int32", "init"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "Stride"]
@@ -530,19 +577,50 @@ depends-member:
 - ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "jsonDecode"]
 - !private ["CSo8NSString", "jsonEncodedString"]
+- !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "authorization"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "contentType"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "custom"]
 - ["OO11PerfectHTTP17HTTPRequestHeader4Name", "deinit"]
+- !private ["C10PerfectNet3Net", "checkPrivateKey"]
+- !private ["C10PerfectNet3Net", "errorCode"]
+- !private ["C10PerfectNet3Net", "errorStr"]
+- !private ["C10PerfectNet3Net", "initializedCallback"]
+- !private ["C10PerfectNet3Net", "useCertificateFile"]
+- !private ["C10PerfectNet3Net", "usePrivateKeyFile"]
+- !private ["C10PerfectNet6NetTCP", "checkPrivateKey"]
+- !private ["C10PerfectNet6NetTCP", "errorCode"]
+- !private ["C10PerfectNet6NetTCP", "errorStr"]
+- !private ["C10PerfectNet6NetTCP", "initializedCallback"]
+- !private ["C10PerfectNet6NetTCP", "useCertificateFile"]
+- !private ["C10PerfectNet6NetTCP", "usePrivateKeyFile"]
+- !private ["C10PerfectNet9NetTCPSSL", "checkPrivateKey"]
 - ["C10PerfectNet9NetTCPSSL", "deinit"]
+- !private ["C10PerfectNet9NetTCPSSL", "errorCode"]
+- !private ["C10PerfectNet9NetTCPSSL", "errorStr"]
+- !private ["C10PerfectNet9NetTCPSSL", "initializedCallback"]
+- !private ["C10PerfectNet9NetTCPSSL", "useCertificateFile"]
+- !private ["C10PerfectNet9NetTCPSSL", "usePrivateKeyFile"]
 - ["Os5Never", "deinit"]
+- ["C20PerfectNotifications25NotificationConfiguration", "Bool"]
+- !private ["C20PerfectNotifications25NotificationConfiguration", "Int"]
 - ["C20PerfectNotifications25NotificationConfiguration", "NotificationHTTP2Client"]
 - ["C20PerfectNotifications25NotificationConfiguration", "NotificationPusher"]
+- ["C20PerfectNotifications25NotificationConfiguration", "String"]
 - ["C20PerfectNotifications25NotificationConfiguration", "Threading"]
 - ["C20PerfectNotifications25NotificationConfiguration", "configurator"]
+- ["C20PerfectNotifications25NotificationConfiguration", "currentToken"]
+- ["C20PerfectNotifications25NotificationConfiguration", "currentTokenTime"]
 - ["C20PerfectNotifications25NotificationConfiguration", "deinit"]
 - ["C20PerfectNotifications25NotificationConfiguration", "init"]
+- ["C20PerfectNotifications25NotificationConfiguration", "jwtToken"]
+- ["C20PerfectNotifications25NotificationConfiguration", "keyId"]
 - ["C20PerfectNotifications25NotificationConfiguration", "lock"]
+- !private ["C20PerfectNotifications25NotificationConfiguration", "makeSignature"]
+- ["C20PerfectNotifications25NotificationConfiguration", "privateKeyPath"]
 - ["C20PerfectNotifications25NotificationConfiguration", "streams"]
+- ["C20PerfectNotifications25NotificationConfiguration", "teamId"]
+- !private ["C20PerfectNotifications25NotificationConfiguration", "time"]
+- ["C20PerfectNotifications25NotificationConfiguration", "usingJWT"]
 - ["C20PerfectNotifications23NotificationHTTP2Client", "Int"]
 - !private ["C20PerfectNotifications23NotificationHTTP2Client", "connect"]
 - ["C20PerfectNotifications23NotificationHTTP2Client", "deinit"]
@@ -550,10 +628,12 @@ depends-member:
 - ["C20PerfectNotifications23NotificationHTTP2Client", "init"]
 - !private ["C20PerfectNotifications23NotificationHTTP2Client", "net"]
 - ["C20PerfectNotifications18NotificationPusher", "ComponentGenerator"]
+- !private ["C20PerfectNotifications18NotificationPusher", "File"]
 - ["C20PerfectNotifications18NotificationPusher", "HTTP2Client"]
 - ["C20PerfectNotifications18NotificationPusher", "IOSNotificationItem"]
 - ["C20PerfectNotifications18NotificationPusher", "IndexingIterator"]
 - ["C20PerfectNotifications18NotificationPusher", "Int"]
+- !private ["C20PerfectNotifications18NotificationPusher", "Int32"]
 - ["C20PerfectNotifications18NotificationPusher", "NetTCPSSL"]
 - ["C20PerfectNotifications18NotificationPusher", "NotificationConfiguration"]
 - ["C20PerfectNotifications18NotificationPusher", "NotificationHTTP2Client"]
@@ -570,6 +650,7 @@ depends-member:
 - ["C20PerfectNotifications18NotificationPusher", "configurationsLock"]
 - ["C20PerfectNotifications18NotificationPusher", "deinit"]
 - ["C20PerfectNotifications18NotificationPusher", "development"]
+- !private ["C20PerfectNotifications18NotificationPusher", "fatalError"]
 - ["C20PerfectNotifications18NotificationPusher", "getStreamIOS"]
 - ["C20PerfectNotifications18NotificationPusher", "idCounter"]
 - ["C20PerfectNotifications18NotificationPusher", "init"]
@@ -580,6 +661,7 @@ depends-member:
 - ["C20PerfectNotifications18NotificationPusher", "itemsToPayloadString"]
 - ["C20PerfectNotifications18NotificationPusher", "netConfigurator"]
 - ["C20PerfectNotifications18NotificationPusher", "notificationHostIOS"]
+- !private ["C20PerfectNotifications18NotificationPusher", "print"]
 - ["C20PerfectNotifications18NotificationPusher", "pushIOS"]
 - ["C20PerfectNotifications18NotificationPusher", "releaseStreamIOS"]
 - ["C20PerfectNotifications18NotificationPusher", "resetResponses"]
@@ -590,6 +672,7 @@ depends-member:
 - !private ["V20PerfectNotifications20NotificationResponse", "UTF8Encoding"]
 - ["V20PerfectNotifications20NotificationResponse", "body"]
 - ["V20PerfectNotifications20NotificationResponse", "deinit"]
+- ["V20PerfectNotifications20NotificationResponse", "description"]
 - ["V20PerfectNotifications20NotificationResponse", "init"]
 - ["V20PerfectNotifications20NotificationResponse", "jsonObjectBody"]
 - ["V20PerfectNotifications20NotificationResponse", "status"]
@@ -672,8 +755,10 @@ depends-member:
 - !private ["Ps8Sequence", "removeValue"]
 - !private ["Ps8Sequence", "subscript"]
 - !private ["Ps13SignedInteger", "hashValue"]
+- !private ["Ps13SignedInteger", "init"]
 - !private ["Ps13SignedInteger", "jsonEncodedString"]
 - !private ["Ps12SignedNumber", "hashValue"]
+- !private ["Ps12SignedNumber", "init"]
 - !private ["Ps12SignedNumber", "jsonEncodedString"]
 - !private ["Vs5Slice", "Index"]
 - !private ["Vs5Slice", "Iterator"]
@@ -768,6 +853,7 @@ depends-member:
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
+- !private ["Ps9_Hashable", "authorization"]
 - !private ["Ps9_Hashable", "contentType"]
 - !private ["Ps9_Hashable", "custom"]
 - ["Ps9_Hashable", "hashValue"]
@@ -810,6 +896,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps14_SignedInteger", "hashValue"]
+- !private ["Ps14_SignedInteger", "init"]
 - !private ["Ps14_SignedInteger", "jsonEncodedString"]
 - !private ["Ps11_Strideable", "Stride"]
 - !private ["Ps11_Strideable", "hashValue"]
@@ -851,6 +938,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "C10PerfectLib4File"
 - !private "Sf"
 - !private "Ps13FloatingPoint"
 - "C17PerfectHTTPServer11HTTP2Client"
@@ -862,6 +950,7 @@ depends-nominal:
 - "O20PerfectNotifications9IOSItemId"
 - "V20PerfectNotifications20IOSNotificationError"
 - "O20PerfectNotifications19IOSNotificationItem"
+- "SQ"
 - "Ps9Indexable"
 - "Ps13IndexableBase"
 - "Vs16IndexingIterator"
@@ -889,6 +978,8 @@ depends-nominal:
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
 - "OO11PerfectHTTP17HTTPRequestHeader4Name"
+- !private "C10PerfectNet3Net"
+- !private "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"
 - "Os5Never"
 - "C20PerfectNotifications25NotificationConfiguration"
@@ -953,7 +1044,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../srtp.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../ssl23.h"
@@ -996,15 +1086,16 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/../bio.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-interface-hash: "3c10a929e0105f649beab2106c0cde83"
+interface-hash: "a257c1d770a0777ccb62ce6f3ff2a580"

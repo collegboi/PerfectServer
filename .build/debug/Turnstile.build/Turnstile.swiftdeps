@@ -7,10 +7,10 @@ provides-member:
 - ["C9Turnstile9Turnstile", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "SessionManager"
-- "Turnstile"
 - "AssignmentPrecedence"
 - "Realm"
+- "SessionManager"
+- "Turnstile"
 depends-member:
 - !private ["Ps9AnyObject", "realm"]
 - !private ["Ps9AnyObject", "sessionManager"]

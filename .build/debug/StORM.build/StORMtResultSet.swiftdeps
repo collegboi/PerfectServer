@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "StORMRow"
 - "StORMCursor"
-- "FloatLiteralType"
 - "StORMResultSet"
+- "StORMRow"
+- "FloatLiteralType"
 - "IntegerLiteralType"
 depends-member:
 - ["Ps9AnyObject", "StORMCursor"]

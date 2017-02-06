@@ -7,8 +7,8 @@ provides-member:
 - ["O5StORM22StORMDataSourceOptions", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
 - "StORMDataSourceOptions"
+- "Bool"
 depends-member:
 - ["O5StORM22StORMDataSourceOptions", "Bool"]
 - ["O5StORM22StORMDataSourceOptions", "SSL"]

@@ -20,14 +20,6 @@ public func makeRCRoutes() -> Routes {
     routes.add(method: .post, uri: "/remote", handler: sendRemoteConfig)
     routes.add(method: .get, uri: "/remote", handler: getRemoteConfig)
     
-    
-    // Test this one via command line with curl:
-    // curl --data "{\"id\":123}" http://0.0.0.0:8181/raw --header "Content-Type:application/json"
-    routes.add(method: .post, uri: "/raw", handler: rawPOSTHandler)
-    
-    // Trailing wildcard matches any path
-    routes.add(method: .get, uri: "**", handler: echo4Handler)
-    
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
     

@@ -10,13 +10,13 @@ provides-member:
 - ["V12TurnstileWeb29InvalidAuthorizationCodeError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - "StringLiteralType"
-- "AuthorizationCode"
-- "CredentialsError"
-- "AssignmentPrecedence"
+- "String"
 - "Error"
+- "AssignmentPrecedence"
+- "CredentialsError"
 - "InvalidAuthorizationCodeError"
+- "AuthorizationCode"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["V12TurnstileWeb17AuthorizationCode", "String"]

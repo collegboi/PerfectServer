@@ -14,6 +14,12 @@
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/DatabaseHandler.swiftdeps"
   },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/EmailController.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/EmailController.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/EmailController.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/EmailController~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/EmailController.swiftdeps"
+  },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/FileHandler.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler.d",
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler.swift.o",
@@ -32,11 +38,29 @@
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.swiftdeps"
   },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/JSONController.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.swiftdeps"
+  },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/main.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.d",
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swift.o",
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/main.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/NotificationController.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationController.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationController.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationController~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationController.swiftdeps"
+  },
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/NotificationHandler.swift": {
+    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationHandler.d",
+    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationHandler.swift.o",
+    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/NotificationHandler.swiftdeps"
   },
   "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/RCHandler.swift": {
     "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/RCHandler.d",
@@ -91,11 +115,5 @@
     "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Translations.swift.o",
     "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Translations~partial.swiftmodule",
     "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Translations.swiftdeps"
-  },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Sources/Weather.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MyAwesomeProject.build/Weather.swiftdeps"
   }
 }

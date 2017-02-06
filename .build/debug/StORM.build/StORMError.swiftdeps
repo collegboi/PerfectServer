@@ -7,11 +7,11 @@ provides-member:
 - ["O5StORM10StORMError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "AssignmentPrecedence"
-- "Error"
 - "StORMError"
 - !private "StringLiteralType"
+- "Error"
+- "AssignmentPrecedence"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps7CVarArg", "init"]

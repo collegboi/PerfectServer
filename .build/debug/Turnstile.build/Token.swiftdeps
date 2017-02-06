@@ -8,11 +8,11 @@ provides-member:
 - ["C9Turnstile11AccessToken", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Credentials"
 - "AccessToken"
 - "AssignmentPrecedence"
-- "Credentials"
-- "Token"
 - "String"
+- "Token"
 depends-member:
 - ["C9Turnstile11AccessToken", "Token"]
 - ["C9Turnstile11AccessToken", "deinit"]

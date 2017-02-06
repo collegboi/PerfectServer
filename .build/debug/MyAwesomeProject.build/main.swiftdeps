@@ -7,48 +7,45 @@ provides-top-level:
 - "myLogger"
 - "authenticationConfig"
 - "authFilter"
-- "configurationName"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "fatalError"
-- "server"
-- "authJSONRoutes"
-- "makeRoutes"
-- "makeRCRoutes"
-- "StringLiteralType"
-- "myLogger"
-- "pturnstile"
-- "makeJSONAuthRoutes"
-- "authenticationConfig"
-- "HTTPServer"
-- "RequestLogFile"
-- "Array"
-- "makeWebAuthRoutes"
-- "NetTCPSSL"
-- "AuthenticationConfig"
-- "makeTranslationRoutes"
-- "AuthFilter"
-- "RequestLogger"
-- "authWebRoutes"
 - "makeDatabaseRoutes"
-- "IntegerLiteralType"
-- "authFilter"
-- "configurationName"
-- "TurnstilePerfect"
-- "FloatLiteralType"
-- "NotificationPusher"
-- "makeTrackerRoutes"
-- "MongoDBConnection"
-- "FileHandler"
 - "AssignmentPrecedence"
+- "server"
+- "RequestLogger"
+- "FloatLiteralType"
+- "makeWebAuthRoutes"
+- "makeTrackerRoutes"
+- "IntegerLiteralType"
+- "fatalError"
+- "pturnstile"
+- "makeNotificationRoutes"
+- "RequestLogFile"
+- "MongoDBConnection"
+- "HTTPServer"
+- "authWebRoutes"
+- "AuthenticationConfig"
+- "makeRCRoutes"
+- "TurnstilePerfect"
+- "makeRoutes"
+- "AuthFilter"
+- "Array"
+- "StringLiteralType"
+- "makeJSONAuthRoutes"
+- "myLogger"
+- "authFilter"
+- "makeTranslationRoutes"
+- "authJSONRoutes"
+- "authenticationConfig"
 depends-member:
 - ["Ps9AnyObject", "addRoutes"]
 - ["Ps9AnyObject", "documentRoot"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "requestFilter"]
 - ["Ps9AnyObject", "responseFilter"]
+- ["Ps9AnyObject", "serverAddress"]
 - ["Ps9AnyObject", "serverPort"]
 - ["Ps9AnyObject", "setRequestFilters"]
 - ["Ps9AnyObject", "setResponseFilters"]
@@ -86,8 +83,6 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["C16MyAwesomeProject11FileHandler", "deinit"]
-- ["C16MyAwesomeProject11FileHandler", "init"]
 - ["Sf", "deinit"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "deinit"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "high"]
@@ -98,6 +93,7 @@ depends-member:
 - ["C17PerfectHTTPServer10HTTPServer", "deinit"]
 - ["C17PerfectHTTPServer10HTTPServer", "documentRoot"]
 - ["C17PerfectHTTPServer10HTTPServer", "init"]
+- ["C17PerfectHTTPServer10HTTPServer", "serverAddress"]
 - ["C17PerfectHTTPServer10HTTPServer", "serverPort"]
 - ["C17PerfectHTTPServer10HTTPServer", "setRequestFilters"]
 - ["C17PerfectHTTPServer10HTTPServer", "setResponseFilters"]
@@ -191,7 +187,6 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- "C16MyAwesomeProject11FileHandler"
 - "Sf"
 - "O11PerfectHTTP18HTTPFilterPriority"
 - "P11PerfectHTTP17HTTPRequestFilter"
@@ -378,21 +373,22 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/openssl.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/COpenSSL-2.0.2/COpenSSL/include/module.modulemap"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/module.modulemap"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
+- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/cURL-2.0.1/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreImage.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../inftrees.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zutil.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zlib.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/../zconf.h"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectHTTPServer-2.1.11/Sources/CZlib/include/czlib.h"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/MongoDBStORM.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectTurnstileMongoDB.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
@@ -403,4 +399,4 @@ depends-external:
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "ed51e304ce8bf2873f13b1d8a11a0bb6"
+interface-hash: "078c1a13728e8c921b924a631257dc40"

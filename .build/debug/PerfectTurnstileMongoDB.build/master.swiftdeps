@@ -1,13 +1,13 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "e7c48b7a50bed8253bbd9b80f4668f14"
-build_time: [539632892, 736590000]
+options: "6ae58b0523e540b9463a773293484948"
+build_time: [539728108, 145417000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Account.swift": [539632684, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/AuthHandlersJSON.swift": [538792269, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/AuthHandlersWeb.swift": [538784619, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/JSONRoutes.swift": [538784619, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Realm.swift": [538922001, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/SessionManager.swift": [538784619, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Tokens.swift": [539632497, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/TurnstilePerfectRealm.swift": [538922050, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/WebRoutes.swift": [538784619, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Account.swift": [539727991, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/AuthHandlersJSON.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/AuthHandlersWeb.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/JSONRoutes.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Realm.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/SessionManager.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/Tokens.swift": [539727991, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/TurnstilePerfectRealm.swift": [539727990, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectTurnstileMongoDB-0.0.1/Sources/WebRoutes.swift": [539727990, 0]

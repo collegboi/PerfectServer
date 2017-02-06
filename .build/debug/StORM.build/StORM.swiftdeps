@@ -8,24 +8,24 @@ provides-member:
 - ["C5StORM5StORM", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnicodeScalarType"
+- "String"
+- !private "+="
 - "BooleanLiteralType"
 - "StringLiteralType"
+- !private ">="
 - "StORM"
-- "StORMError"
-- !private "Mirror"
+- "StORMResultSet"
+- !private "&&"
+- "Int"
+- !private "!"
+- "StORMdebug"
 - "CastingPrecedence"
-- "String"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "+="
-- "StORMResultSet"
-- !private ">="
-- "StORMdebug"
+- !private "UnicodeScalarType"
+- "StORMError"
 - "Bool"
-- !private "&&"
-- !private "!"
-- "Int"
+- !private "Mirror"
 depends-member:
 - !private ["Vs13AnyCollection", "Iterator"]
 - ["Vs13AnyCollection", "deinit"]

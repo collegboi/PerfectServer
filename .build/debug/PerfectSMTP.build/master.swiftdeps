@@ -1,0 +1,5 @@
+version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
+options: "4fa2bc02eec5dec4e24bcfdbf19dacb1"
+build_time: [539728103, 755651000]
+inputs:
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectSMTP-1.0.5/Sources/SMTP.swift": [539728054, 0]

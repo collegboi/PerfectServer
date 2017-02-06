@@ -9,14 +9,14 @@ provides-member:
 - ["CSo10URLSession", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Data"
-- !private "AssignmentPrecedence"
 - "URLRequest"
-- "URLResponse"
-- !private "Error"
 - "HTTPClient"
-- !private "DispatchSemaphore"
+- !private "Error"
+- !private "AssignmentPrecedence"
+- "URLResponse"
+- "Data"
 - "URLSession"
+- !private "DispatchSemaphore"
 depends-member:
 - !private ["Ps9AnyObject", "DispatchSemaphore"]
 - !private ["Ps9AnyObject", "dataTask"]

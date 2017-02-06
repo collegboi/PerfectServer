@@ -19,20 +19,20 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "<="
-- !private "FloatLiteralType"
-- !private "IntegerLiteralType"
-- "<"
+- "+"
+- ">="
 - "Duration"
-- "~="
-- "=="
-- !private "!"
 - "Moment"
+- "!="
+- "=="
+- "~="
+- "<="
+- "<"
 - "-"
 - "Bool"
-- ">="
-- "+"
-- "!="
+- !private "FloatLiteralType"
+- !private "!"
+- !private "IntegerLiteralType"
 - ">"
 depends-member:
 - ["Sb", "deinit"]

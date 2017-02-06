@@ -10,23 +10,23 @@ provides-member:
 - ["C12MongoDBStORM12MongoDBStORM", "find"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
-- !private "StORMError"
-- !private "UInt8"
-- !private "Int"
-- !private "StringLiteralType"
-- !private "LogFile"
-- "MongoDBStORM"
+- "StORMCursor"
+- !private "Bool"
 - !private "MongoCursor"
-- !private "BSON"
-- "CastingPrecedence"
+- !private "Int8"
+- !private "Double"
+- !private "StringLiteralType"
+- "MongoDBStORM"
 - "String"
+- "CastingPrecedence"
 - "AssignmentPrecedence"
 - !private "=="
-- "StORMCursor"
-- !private "Double"
-- !private "Int8"
-- !private "Bool"
+- !private "!="
+- !private "Int"
+- !private "UInt8"
+- !private "LogFile"
+- !private "StORMError"
+- !private "BSON"
 depends-member:
 - !private ["Ps9AnyObject", "BSON"]
 - !private ["Ps9AnyObject", "LogFile"]

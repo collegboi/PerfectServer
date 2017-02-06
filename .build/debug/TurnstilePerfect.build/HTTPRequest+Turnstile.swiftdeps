@@ -12,17 +12,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "UnicodeScalarType"
-- "APIKey"
+- "AuthorizationHeader"
 - !private "StringLiteralType"
+- "HTTPRequest"
+- "AccessToken"
 - !private "Data"
 - "CastingPrecedence"
-- "Subject"
+- "String"
 - "AssignmentPrecedence"
 - !private "=="
-- "HTTPRequest"
-- "AuthorizationHeader"
-- "AccessToken"
-- "String"
+- "Subject"
+- "APIKey"
 depends-member:
 - ["C9Turnstile6APIKey", "deinit"]
 - !private ["C9Turnstile6APIKey", "init"]

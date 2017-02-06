@@ -7,8 +7,8 @@ provides-member:
 - ["P9Turnstile14TurnstileError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Error"
 - "TurnstileError"
+- "Error"
 - "CustomStringConvertible"
 depends-member:
 - ["Ps23CustomStringConvertible", ""]

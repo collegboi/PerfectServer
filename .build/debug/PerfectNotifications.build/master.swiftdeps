@@ -1,5 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "db5426e3e3d86762d5f5cf21f66baaf1"
-build_time: [539632892, 736614000]
+options: "7fb4e5d2219dcfa6aac7ad13ba1d2387"
+build_time: [539728107, 88382000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNotifications-2.0.3/Sources/NotificationPusher.swift": [539632888, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNotifications-2.0.4/Sources/JWTokenMaker.swift": [539728051, 0]
+  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectNotifications-2.0.4/Sources/NotificationPusher.swift": [539728051, 0]

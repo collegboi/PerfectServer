@@ -27,6 +27,7 @@ import PerfectTurnstileMongoDB
 import PerfectRequestLogger
 import TurnstilePerfect
 
+
 //StORMdebug = true
 RequestLogFile.location = "./requests.log"
 
@@ -61,6 +62,7 @@ server.addRoutes(makeDatabaseRoutes())
 server.addRoutes(makeRCRoutes())
 server.addRoutes(makeTrackerRoutes())
 server.addRoutes(makeTranslationRoutes())
+server.addRoutes(makeNotificationRoutes())
 
 // Setup logging
 let myLogger = RequestLogger()
@@ -94,11 +96,13 @@ server.serverPort = 8181
 
 // Where to serve static files from
 server.documentRoot = "./webroot"
-server.serverAddress = "127.0.0.1"
+//server.serverAddress = "127.0.0.1"
+
+//EmailController.sendEmail()
 
 //FileHandler.init()
 
-ConfigureNotfications.init()
+//NotficationController.sendSingleNotfication(deviceID: "e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a")
 
 do {
     // Launch the servers based on the configuration data.
