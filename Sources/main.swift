@@ -94,9 +94,9 @@ server.serverPort = 8181
 
 // Where to serve static files from
 server.documentRoot = "./webroot"
-//server.serverAddress = "127.0.0.1"
+server.serverAddress = "127.0.0.1"
 
-FileHandler.init()
+//FileHandler.init()
 
 ConfigureNotfications.init()
 

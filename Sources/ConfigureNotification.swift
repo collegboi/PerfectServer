@@ -38,7 +38,7 @@ public class ConfigureNotfications {
             // This code will be called whenever a new connection to the APNS service is required.
             // Configure the SSL related settings.
             
-            net.keyFilePassword = ""
+            net.keyFilePassword = "Apple4ever"
             
 //            if FileHandler.sharedFileHandler!.checkIfFileExits("Certs/cert.pem") {
 //                print("cert.pem exits")
@@ -54,7 +54,7 @@ public class ConfigureNotfications {
 //            }
             
             guard net.useCertificateFile(cert: "cert.pem") &&
-                net.usePrivateKeyFile(cert: "key.pem") &&
+                net.usePrivateKeyFile(cert: "ck.pem") &&
                 net.checkPrivateKey() else {
                     
                     let code = Int32(net.errorCode())
@@ -65,22 +65,19 @@ public class ConfigureNotfications {
         
         NotificationPusher.development = true // set to toggle to the APNS sandbox serer
         
-        self.sendNotification("")
-    }
-    
-    
-    public func sendNotification(_ deviceUUID: String) {
-                    ///"e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a"
+        ///"e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a"
         let deviceId = "e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a"
         let ary = [IOSNotificationItem.alertBody("This is the message"), IOSNotificationItem.sound("default")]
         let n = NotificationPusher()
         
         n.apnsTopic = "barnard.com.DIT-Timetable"
-    
         
-        n.pushIOS(configurationName: configurationName!, deviceToken: deviceId, expiration: 0, priority: 0, notificationItems: ary ) { (response) in
-             print("NotificationResponse: \(response.body)")
+        
+        n.pushIOS(configurationName: configurationName, deviceToken: deviceId, expiration: 0, priority: 0, notificationItems: ary ) { (response) in
+            print("NotificationResponse: \(response.body)")
         }
-        
+
     }
+    
+
 }
