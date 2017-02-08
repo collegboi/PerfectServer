@@ -100,7 +100,7 @@ server.documentRoot = "./webroot"
 
 //EmailController.sendEmail()
 
-//FileHandler.init()
+FileHandler.init()
 
 //NotficationController.sendSingleNotfication(deviceID: "e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a")
 
