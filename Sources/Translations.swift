@@ -17,7 +17,7 @@ class Translations {
         
         //return  "{\"data\":[\(arr.joined(separator: ","))]}"
         
-        return FileHandler.sharedFileHandler!.getContentsOfFile(filePath, version)
+        return FileController.sharedFileHandler!.getContentsOfFile(filePath, version)
         
     }
     
@@ -80,7 +80,7 @@ class Translations {
         
         let newVersion = parseJSONConfig(key: "newVersion", dataStr: jsonStr)
         
-        FileHandler.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList)
+        FileController.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList)
         
         DatabaseController.updateInsertDocument("Languages", jsonStr: language!)
         

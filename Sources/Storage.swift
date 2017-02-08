@@ -39,6 +39,17 @@ class Storage {
         return result
     }
     
+    class func StoreObjects(_ collectionName: String, _ jsonString: String ) -> Bool {
+        
+        var result : Bool = false
+        
+        if  DatabaseController.insertCollection(collectionName, jsonStr: jsonString) == "" {
+            result = true
+        }
+        
+        return result
+    }
+    
     class func StoreObject(_ collectionName: String, _ jsonString: String ) -> Bool {
         
         var result : Bool = false
@@ -50,10 +61,33 @@ class Storage {
         return result
     }
     
+    
     class func getAllCollections() -> String {
-        
         return DatabaseController.getAllCollections()
     }
-
+    
+    
+    class func createIndex(_ collection: String, index: String ) -> String {
+        return DatabaseController.createUniqueIndex(collection, index: index)
+    }
+    
+    
+    class func dropIndex(_ collection: String, index:String) {
+        DatabaseController.removeIndex(collection, index: index)
+    }
+    
+    
+    class func renameCollection(_ oldCollection: String, newCollection: String) {
+        DatabaseController.renameCollection(oldCollection, newCollectionName: newCollection)
+    }
+    
+    
+    class func dropCollection(_ collection: String){
+        DatabaseController.dropCollection(collection)
+    }
+    
+    class func getQueryCollection(_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
+        return DatabaseController.retrieveCollectionQuery(collection, query: json, skip: skip , limit: limit)
+    }
     
 }

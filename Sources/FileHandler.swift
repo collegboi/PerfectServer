@@ -2,203 +2,86 @@
 //  FileHandler.swift
 //  MyAwesomeProject
 //
-//  Created by Timothy Barnard on 04/02/2017.
+//  Created by Timothy Barnard on 08/02/2017.
 //
 //
-
-#if os(Linux)
-    import LinuxBridge
-#else
-    import Darwin
-#endif
 
 import PerfectLib
+import PerfectHTTP
+import MongoDB
 
-private var _FileHandlerSharedInstance: FileHandler?
+/// Defines and returns the Web Authentication routes
+public func makeFileUploadRoutes() -> Routes {
+    var routes = Routes()
+    
+    routes.add(method: .post, uri: "/upload/{type}/", handler: uploadFile)
+    
+    // Check the console to see the logical structure of what was installed.
+    print("\(routes.navigator.description)")
+    
+    return routes
+}
 
-public class FileHandler {
+func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
     
-    public class var sharedFileHandler: FileHandler? {
-        return _FileHandlerSharedInstance
+    guard let type = request.urlVariables["type"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "no type"))
+        response.completed()
+        return
     }
     
-    public init() {
-        
-        if (_FileHandlerSharedInstance == nil) {
-            _FileHandlerSharedInstance = self
-        }
-        
-        setWorkingDirectory("./webroot/Languages")
+    guard let uploads = request.postFileUploads, uploads.count > 0  else {
+        response.appendBody(string: ResultBody.errorBody(value: "uploads empty"))
+        response.completed()
+        return
+    }
+    // Create an array of dictionaries which will show what was uploaded
+    var ary = [[String:Any]]()
+    
+    // create uploads dir to store files
+    let fileDir = Dir(Dir.workingDir.path + "files")
+    do {
+        try fileDir.create()
+    } catch {
+        print(error)
     }
     
-    private func createWorkingDirectory(_ filePath: String ) -> Dir {
-        //// ~/Library/Developer/Xcode/DerivedData/
-        let workingDir = Dir(filePath)
+    for upload in uploads {
         
-        if !workingDir.exists {
-            
-            do {
-                try workingDir.create()
-                print("Working Direcotry (\(workingDir)) created")
-            } catch {
-                print("Could not creat working directory")
-            }
-        }
-        
-        return workingDir
-    }
-    
-    @discardableResult
-    private func setWorkingDirectory(_ filePath: String) -> Dir {
-        
-        
-        let workingDir = createWorkingDirectory(filePath)
-        
+        // move file
+        let thisFile = File(upload.tmpFileName)
         do {
-            try workingDir.setAsWorkingDir()
-            print("Working directory set")
+            let _ = try thisFile.moveTo(path: fileDir.path + upload.fileName, overWrite: true)
         } catch {
-            print("Could not set working directory")
-        }
-        
-        return workingDir
-    }
-    
-    
-    private func createFile(_ filePath: String, _ fileContents: String ) -> Bool {
-        
-        var result: Bool = true
-        
-        //setWorkingDirectory("./ConfigFiles")
-        
-        let thisFile = File(filePath)
-        
-        do {
-            try thisFile.open(.readWrite)
-            
-            defer {
-                thisFile.close()
-            }
-        } catch let error {
             print(error)
-            result = false
         }
         
-        do {
-            try thisFile.write(string: fileContents)
-        } catch let error {
-            print(error)
-            result = false
-        }
+        let fileObject: [String:String] = [
+            "fieldName": upload.fieldName,
+            "timestamp": "12/02/2012 08:00:00",
+            "fileSize": "\(upload.fileSize)",
+            "filePath": fileDir.path + upload.fileName,
+            "type": type
+        ]
         
-        return result
-    }
-    
-    @discardableResult
-    private func createFileToWrite(_ file: File ) -> Bool {
+        let objectStr = JSONController.parseJSONToStr(dict: fileObject)
         
-        var result: Bool = true
-        
-        do {
-            try file.open(.readWrite)
-            
-        } catch {
-            result = false
-        }
-        
-        return result
-    }
-    
-    
-    @discardableResult
-    private func openFileToWrite(_ file: File ) -> Bool {
-        
-        var result: Bool = true
-        
-        do {
-            try file.open(.write)
-    
-        } catch let error {
-            print(error)
-            result = false
-        }
-        
-        return result
-    }
-    
-    public func checkIfFileExits(_ filePath:String) -> Bool {
-        
-        let thisFile = File(filePath)
-        
-        if !thisFile.exists {
-            
-             return false
-            
-        } else {
-            print(thisFile.path)
-             return true
-        }
-        
-        return false
-    }
-    
-    @discardableResult
-    public func updateContentsOfFile(_ filePath: String, _ fileContents: String ) -> Bool {
-        
-        var result: Bool = true
-                            // filePath - folder/file.filetype
-        let thisFile = File(filePath)
-        
-        if !thisFile.exists {
-            
-            self.createFileToWrite(thisFile)
-            
-        } else {
-            print(thisFile.path)
-            self.openFileToWrite(thisFile)
-        }
+        DatabaseController.insertDocument("Files", jsonStr: objectStr)
 
-        do {
-            
-            try thisFile.write(string: fileContents )
-            
-            defer {
-                thisFile.close()
-            }
-            
-        } catch let error {
-            print(error)
-            result = false
-        }
         
-        return result
+        ary.append([
+            "fieldName": upload.fieldName,
+            "contentType": upload.contentType,
+            "fileName": upload.fileName,
+            "fileSize": upload.fileSize,
+            "tmpFileName": upload.tmpFileName
+            ])
+        
+        
     }
-    
-    
-    public func getContentsOfFile(_ filePath: String, _ name: String) -> String {
-        
-        var result: String = ""
-        
-        //setWorkingDirectory("./Languages/"+filePath)
-        
-        let thisFile = File(filePath+"/"+name)
-        
-        do {
-            try thisFile.open(.readWrite)
-            
-            defer {
-                thisFile.close()
-            }
-        } catch {
-            print("Error Opening")
-        }
-        
-        do {
-            result = try thisFile.readString()
-        } catch {
-            print("Error reading file")
-        }
-        
-        return result
-    }
+    //values["files"] = ary
+    //values["count"] = ary.count
+
+    response.appendBody(string: "")
+    response.completed()
 }

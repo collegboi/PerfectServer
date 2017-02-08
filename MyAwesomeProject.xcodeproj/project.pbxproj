@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B253B2561E4B6C9D00E86B9B /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B2541E4B6C8500E86B9B /* FileHandler.swift */; };
 		OBJ_1007 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Random.swift */; };
 		OBJ_1008 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Randoms.swift */; };
 		OBJ_1009 /* URandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* URandom.swift */; };
@@ -894,7 +895,7 @@
 		OBJ_2110 /* DatabaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_870 /* DatabaseController.swift */; };
 		OBJ_2111 /* DatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_871 /* DatabaseHandler.swift */; };
 		OBJ_2112 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_872 /* EmailController.swift */; };
-		OBJ_2113 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_873 /* FileHandler.swift */; };
+		OBJ_2113 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_873 /* FileController.swift */; };
 		OBJ_2114 /* IssueTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_874 /* IssueTracker.swift */; };
 		OBJ_2115 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_875 /* JSON.swift */; };
 		OBJ_2116 /* JSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_876 /* JSONController.swift */; };
@@ -1876,6 +1877,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B253B2541E4B6C8500E86B9B /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_100 /* asn_mime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_mime.c; sourceTree = "<group>"; };
 		OBJ_101 /* asn_moid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_moid.c; sourceTree = "<group>"; };
@@ -2695,7 +2697,7 @@
 		OBJ_870 /* DatabaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseController.swift; sourceTree = "<group>"; };
 		OBJ_871 /* DatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHandler.swift; sourceTree = "<group>"; };
 		OBJ_872 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
-		OBJ_873 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		OBJ_873 /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 		OBJ_874 /* IssueTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTracker.swift; sourceTree = "<group>"; };
 		OBJ_875 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		OBJ_876 /* JSONController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONController.swift; sourceTree = "<group>"; };
@@ -4225,7 +4227,7 @@
 				OBJ_870 /* DatabaseController.swift */,
 				OBJ_871 /* DatabaseHandler.swift */,
 				OBJ_872 /* EmailController.swift */,
-				OBJ_873 /* FileHandler.swift */,
+				OBJ_873 /* FileController.swift */,
 				OBJ_874 /* IssueTracker.swift */,
 				OBJ_875 /* JSON.swift */,
 				OBJ_876 /* JSONController.swift */,
@@ -4241,6 +4243,7 @@
 				OBJ_886 /* TrackerHandler.swift */,
 				OBJ_887 /* TranslationHandler.swift */,
 				OBJ_888 /* Translations.swift */,
+				B253B2541E4B6C8500E86B9B /* FileHandler.swift */,
 			);
 			name = MyAwesomeProject;
 			path = Sources;
@@ -5870,7 +5873,7 @@
 				OBJ_2110 /* DatabaseController.swift in Sources */,
 				OBJ_2111 /* DatabaseHandler.swift in Sources */,
 				OBJ_2112 /* EmailController.swift in Sources */,
-				OBJ_2113 /* FileHandler.swift in Sources */,
+				OBJ_2113 /* FileController.swift in Sources */,
 				OBJ_2114 /* IssueTracker.swift in Sources */,
 				OBJ_2115 /* JSON.swift in Sources */,
 				OBJ_2116 /* JSONController.swift in Sources */,
@@ -5885,6 +5888,7 @@
 				OBJ_2125 /* Storage.swift in Sources */,
 				OBJ_2126 /* TrackerHandler.swift in Sources */,
 				OBJ_2127 /* TranslationHandler.swift in Sources */,
+				B253B2561E4B6C9D00E86B9B /* FileHandler.swift in Sources */,
 				OBJ_2128 /* Translations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

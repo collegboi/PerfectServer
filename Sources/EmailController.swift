@@ -19,7 +19,7 @@ class EmailController {
     class func sendEmail() {
         
         // setup the mail server login information, *NOTE* please modify these information
-        let client = SMTPClient(url: "smtp://smtp.gmx.com", username: "tester88@gmx.com", password:"Tester@1988")
+        let client = SMTPClient(url: "smtps://smtp.gmail.com:465", username: "timbarnard.88@gmail.com", password:"Iloveapp@1988")
         
         // draft an email
         var email = EMail(client: client)
@@ -28,7 +28,7 @@ class EmailController {
         email.subject = "hello"
         
         // set the sender
-        email.from = Recipient(name: "Timothy Barnard", address: "tester88@gmx.com")
+        email.from = Recipient(name: "Timothy Barnard", address: "timbarnard.88@gmail.com")
         
         // set the html content
         email.content = "<h1>Hello, world!</h1><hr><img src='http://www.perfect.org/images/perfect-logo-2-0.svg'>"

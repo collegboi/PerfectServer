@@ -32,14 +32,9 @@ class DatabaseController {
     
     
     static func closeMongoDB(_ collection: MongoCollection, database: MongoDatabase, client: MongoClient ) {
-    
-        // Here we clean up our connection,
-        // by backing out in reverse order created
-        defer {
-            collection.close()
-            database.close()
-            client.close()
-        }
+        collection.close()
+        database.close()
+        client.close()
     }
     
     
@@ -72,6 +67,154 @@ class DatabaseController {
         
     }
     
+    @discardableResult
+    static func dropCollection(_ collectionName:String) -> Bool {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectionName) else {
+            return false
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let _ = collection.drop()
+        
+        return true
+    }
+    
+    
+    @discardableResult
+    static func renameCollection(_ oldCollectionName:String, newCollectionName:String) -> Bool {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: oldCollectionName) else {
+            return false
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let _ = collection.rename(newDbName: db.name(), newCollectionName: newCollectionName, dropExisting: true)
+        
+        return true
+    }
+    
+    @discardableResult
+    static func removeIndex(_ collectionName:String, index:String) -> Bool {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectionName) else {
+            return false
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let _ = collection.dropIndex(name: index)
+        
+        return true
+    }
+    
+    
+    @discardableResult
+    static func createUniqueIndex(_ collectionName: String, index: String) -> String {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectionName) else {
+            return ""
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let mongoIndex = MongoIndexOptions.init(name: "index_"+index, background: nil, unique: true, dropDups: nil, sparse: nil,
+                                                expireAfterSeconds: nil, v: nil, defaultLanguage: nil, languageOverride: nil,
+                                                                            weights: nil, geoOptions: nil, storageOptions: nil)
+        
+        let indexBSON = BSON()
+        indexBSON.append(key: index)
+        
+        let _ = collection.createIndex(keys: indexBSON, options: mongoIndex)
+
+        return "index_"+index
+    }
+    
+    @discardableResult
+    static func insertCollection(_ collectionName: String, jsonStr: String ) -> String {
+        
+        let collectionValues = JSONController.parseJSONToArrDic(jsonStr)
+        
+        var bsonArray = [BSON]()
+        
+        for documentItem in collectionValues {
+         
+            let json = JSONController.parseJSONToStr(dict: documentItem)
+            
+            guard let document = try? BSON.init(json: json) else {
+                return ""
+            }
+            
+            let newObjectID = self.asMyUUID().string
+            
+            document.append(key: "_id", string: newObjectID  )
+            
+            bsonArray.append(document)
+        }
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectionName) else {
+            return "Error with collection name"
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let _ = collection.insert(documents: bsonArray)
+        
+        return ""
+        //        if returnValue == MongoResult.success {
+        //            return "Success"
+        //        } else {
+        //            return "Failure"
+        //        }
+    }
+    
     
     @discardableResult
     static func insertDocument(_ collectionName: String, jsonStr: String ) -> String {
@@ -89,6 +232,10 @@ class DatabaseController {
         // define collection
         guard let collection = db.getCollection(name: collectionName) else {
             return "Error with collection name"
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
         }
         
         let newObjectID = self.asMyUUID().string
@@ -143,9 +290,7 @@ class DatabaseController {
         // Here we clean up our connection,
         // by backing out in reverse order created
         defer {
-            collection.close()
-            db.close()
-            client.close()
+            self.closeMongoDB(collection, database: db, client: client)
         }
         
         if objectID == "" {
@@ -161,10 +306,9 @@ class DatabaseController {
         }
         
         return ""
-        
     }
     
-    static func remoteDocument(_ collectioName: String, _ documentID: String ) -> Bool {
+    static func removeDocument(_ collectioName: String, _ documentID: String ) -> Bool {
     
         
         // define collection
@@ -183,29 +327,25 @@ class DatabaseController {
         // Here we clean up our connection,
         // by backing out in reverse order created
         defer {
-            collection.close()
-            db.close()
-            client.close()
+            self.closeMongoDB(collection, database: db, client: client)
         }
         
         let query = BSON()
         query.append(key: "_id", string: documentID)
         
         
-        collection.remove(selector: query)
+        let _ = collection.remove(selector: query)
         
-        // return a formatted JSON array.
         return  true
     }
     
-    static func retrieveCollectionQuery(_ collectioName: String, _ documentID: String ) -> String {
+    static func retrieveCollectionQuery(_ collectioName: String, _ documentID: String, skip: Int = 0, limit: Int = 100 ) -> String {
         
-        // define collection
         
         // open a connection
         let client = openMongoDB()
         
-        // set database, assuming "test" exists
+        // set database
         let db = connectDatabase(client)
         
         // define collection
@@ -213,19 +353,15 @@ class DatabaseController {
             return ""
         }
         
-        // Here we clean up our connection,
-        // by backing out in reverse order created
         defer {
-            collection.close()
-            db.close()
-            client.close()
+            self.closeMongoDB(collection, database: db, client: client)
         }
         
         let query = BSON()
         query.append(key: "issueID", string: documentID)
         
         // Perform a "find" on the perviously defined collection
-        let fnd = collection.find(query: query)
+        let fnd = collection.find(query: query, fields: nil, flags: .none, skip: skip, limit: limit, batchSize: .allZeros)
         
         // Initialize empty array to receive formatted results
         var arr = [String]()
@@ -237,12 +373,49 @@ class DatabaseController {
         
         // return a formatted JSON array.
         return  "{\"data\":[\(arr.joined(separator: ","))]}"
+    }
+    
+    static func retrieveCollectionQuery(_ collectioName: String, query: String, skip: Int = 0, limit: Int = 100 ) -> String {
         
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database
+        let db = connectDatabase(client)
+        
+        guard let query = try? BSON.init(json: query) else {
+            return ""
+        }
+        
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return ""
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        // Perform a "find" on the perviously defined collection
+        let fnd = collection.find(query: query, fields: nil, flags: .none, skip: skip, limit: limit, batchSize: .allZeros)
+        
+        // Initialize empty array to receive formatted results
+        var arr = [String]()
+        
+        // The "fnd" cursor is typed as MongoCursor, which is iterable
+        for x in fnd! {
+            arr.append(x.asString)
+        }
+        
+        // return a formatted JSON array.
+        return  "{\"data\":[\(arr.joined(separator: ","))]}"
     }
 
     
     
-    static func retrieveCollection(_ collectioName: String, _ objectID: String = "") -> String {
+    static func retrieveCollection(_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> String {
         
         // define collection
         
@@ -257,12 +430,8 @@ class DatabaseController {
             return ""
         }
         
-        // Here we clean up our connection,
-        // by backing out in reverse order created
         defer {
-            collection.close()
-            db.close()
-            client.close()
+            self.closeMongoDB(collection, database: db, client: client)
         }
         
         let query = BSON()
@@ -272,7 +441,7 @@ class DatabaseController {
         }
         
         // Perform a "find" on the perviously defined collection
-        let fnd = collection.find(query: query)
+        let fnd = collection.find(query: query, fields: nil, flags: .none, skip: skip, limit: limit, batchSize: .allZeros)
         
         // Initialize empty array to receive formatted results
         var arr = [String]()
