@@ -162,9 +162,9 @@ class SystemController {
                 
                 if memoryList.count >= 3 {
                     let status : [String:String] = [
-                        "size": memoryList[1],
-                        "used": memoryList[2],
-                        "avilable": memoryList[3]
+                        "size": memoryList[1].substring(to: memoryList[1].index(before: memoryList[1].endIndex)),
+                        "used": memoryList[2].substring(to: memoryList[2].index(before: memoryList[2].endIndex)),
+                        "avilable": memoryList[3].substring(to: memoryList[3].index(before: memoryList[3].endIndex))
                     ]
                     returnStr = status
                 }
