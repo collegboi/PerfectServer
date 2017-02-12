@@ -57,9 +57,21 @@ class SystemController {
                 return returnStr
             }
             
-            //let list: [String] = output.components(separatedBy: "\n")
+            let list: [String] = output.components(separatedBy: "\n")
             
-            returnStr = output
+            if list.count > 0 {
+                
+                let memoryList: [String] = list[1].components(separatedBy: "\n")
+                
+                let status : [String:String] = [
+                    "total": memoryList[1],
+                    "used": memoryList[2],
+                    "free": memoryList[3],
+                    "avilable": memoryList[6]
+                ]
+                
+                returnStr = JSONController.parseJSONToStr(dict: status)
+            }
             
             //print(output)
         } catch let error  {
