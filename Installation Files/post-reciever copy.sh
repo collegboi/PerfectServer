@@ -1,8 +1,8 @@
 #!/bin/bash
-APP_NAME="MyAwesomeProject"  
+APP_NAME="AltTabAPI"  
 USERNAME="ubuntu"  
-HOME="/home/collegboi"  
-APP_FOLDER="PerfectServer/app"  
+HOME="/home/$USERNAME"  
+APP_FOLDER="$HOME/app"  
 RUNNING_FOLDER="$HOME/running"  
 GIT_FOLDER="$APP_FOLDER/.git"  
 echo ""  
