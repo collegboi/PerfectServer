@@ -25,7 +25,7 @@ class RCVersion {
     }
  
     
-    class func parseJSONConfig( key:String, dataStr : String) -> String? {
+    class func parseJSONConfig( key:String, dataStr : String) -> String {
         
         var returnData = ""
         
@@ -35,9 +35,13 @@ class RCVersion {
         
             let decoded = try encoded.jsonDecode() as? [String:Any]
             
-            let dict = decoded?[key] as! [String:Any]
             
-            returnData = parseJSONToStr(dict: dict)
+            guard let dict = decoded?[key] as? String else {
+                return "1.2"
+            }
+            
+            return dict
+            //returnData = parseJSONToStr(dict: dict)
             
         } catch let error {
             print(error)
@@ -69,14 +73,20 @@ class RCVersion {
         
         let versionData = parseJSONConfig(key: "version", dataStr: jsonString)
         
-        DatabaseController.insertDocument("configVersion", jsonStr: versionData!)
+        let path = "ConfigFiles/config_"+versionData+".json"
+        
+        let configData: [String:String] = [
+            "version" : versionData,
+            "path" : path
+        ]
+        let configStr = JSONController.parseJSONToStr(dict: configData)
         
         
-        if RemoteConfig.updateContentsOfFile(jsonString) {
-            return true
-        } else {
-            return false
-        }
+        DatabaseController.insertDocument("RemoteConfig", jsonStr: configStr)
+        
+        FileController.sharedFileHandler?.updateContentsOfFile(path,jsonString)
+        
+        return true
         
     }
 }

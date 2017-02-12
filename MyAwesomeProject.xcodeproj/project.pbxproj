@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23BF81E1E4F462E005E7083 /* SystemHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF81C1E4F4615005E7083 /* SystemHandler.swift */; };
+		B23BF82B1E4F6796005E7083 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF8291E4F6772005E7083 /* LoginHandler.swift */; };
+		B23BF82E1E4F6D4E005E7083 /* AuthenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF82C1E4F696F005E7083 /* AuthenController.swift */; };
+		B23BF8311E4F7BF5005E7083 /* AuthenChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF82F1E4F7BD6005E7083 /* AuthenChecker.swift */; };
+		B23BF83F1E5084D1005E7083 /* RemoteConfigHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF83D1E5084BE005E7083 /* RemoteConfigHandler.swift */; };
+		B23BF8491E50B040005E7083 /* LocalDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23BF8471E50AFF7005E7083 /* LocalDatabaseHandler.swift */; };
 		B253B2561E4B6C9D00E86B9B /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B253B2541E4B6C8500E86B9B /* FileHandler.swift */; };
+		B2D647861E4F296C00D9EF06 /* SystemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D647841E4F286500D9EF06 /* SystemController.swift */; };
 		OBJ_1007 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Random.swift */; };
 		OBJ_1008 /* Randoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Randoms.swift */; };
 		OBJ_1009 /* URandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* URandom.swift */; };
@@ -1877,7 +1884,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B23BF81C1E4F4615005E7083 /* SystemHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemHandler.swift; sourceTree = "<group>"; };
+		B23BF8291E4F6772005E7083 /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		B23BF82C1E4F696F005E7083 /* AuthenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenController.swift; sourceTree = "<group>"; };
+		B23BF82F1E4F7BD6005E7083 /* AuthenChecker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenChecker.swift; sourceTree = "<group>"; };
+		B23BF83D1E5084BE005E7083 /* RemoteConfigHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteConfigHandler.swift; sourceTree = "<group>"; };
+		B23BF8471E50AFF7005E7083 /* LocalDatabaseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDatabaseHandler.swift; sourceTree = "<group>"; };
 		B253B2541E4B6C8500E86B9B /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		B2D647841E4F286500D9EF06 /* SystemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemController.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_100 /* asn_mime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_mime.c; sourceTree = "<group>"; };
 		OBJ_101 /* asn_moid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_moid.c; sourceTree = "<group>"; };
@@ -3153,7 +3167,7 @@
 			path = "Packages/SwiftRandom-0.2.4/Sources/SwiftRandom";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -3165,7 +3179,6 @@
 				OBJ_893 /* webroot */,
 				OBJ_894 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* MongoDB */ = {
@@ -4244,6 +4257,13 @@
 				OBJ_887 /* TranslationHandler.swift */,
 				OBJ_888 /* Translations.swift */,
 				B253B2541E4B6C8500E86B9B /* FileHandler.swift */,
+				B2D647841E4F286500D9EF06 /* SystemController.swift */,
+				B23BF81C1E4F4615005E7083 /* SystemHandler.swift */,
+				B23BF8291E4F6772005E7083 /* LoginHandler.swift */,
+				B23BF82C1E4F696F005E7083 /* AuthenController.swift */,
+				B23BF82F1E4F7BD6005E7083 /* AuthenChecker.swift */,
+				B23BF83D1E5084BE005E7083 /* RemoteConfigHandler.swift */,
+				B23BF8471E50AFF7005E7083 /* LocalDatabaseHandler.swift */,
 			);
 			name = MyAwesomeProject;
 			path = Sources;
@@ -4871,7 +4891,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_894 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -5874,12 +5894,19 @@
 				OBJ_2111 /* DatabaseHandler.swift in Sources */,
 				OBJ_2112 /* EmailController.swift in Sources */,
 				OBJ_2113 /* FileController.swift in Sources */,
+				B23BF8491E50B040005E7083 /* LocalDatabaseHandler.swift in Sources */,
 				OBJ_2114 /* IssueTracker.swift in Sources */,
+				B23BF8311E4F7BF5005E7083 /* AuthenChecker.swift in Sources */,
 				OBJ_2115 /* JSON.swift in Sources */,
+				B2D647861E4F296C00D9EF06 /* SystemController.swift in Sources */,
+				B23BF81E1E4F462E005E7083 /* SystemHandler.swift in Sources */,
 				OBJ_2116 /* JSONController.swift in Sources */,
 				OBJ_2117 /* main.swift in Sources */,
+				B23BF82E1E4F6D4E005E7083 /* AuthenController.swift in Sources */,
 				OBJ_2118 /* NotificationController.swift in Sources */,
 				OBJ_2119 /* NotificationHandler.swift in Sources */,
+				B23BF83F1E5084D1005E7083 /* RemoteConfigHandler.swift in Sources */,
+				B23BF82B1E4F6796005E7083 /* LoginHandler.swift in Sources */,
 				OBJ_2120 /* RCHandler.swift in Sources */,
 				OBJ_2121 /* RCVersion.swift in Sources */,
 				OBJ_2122 /* RemoteConfig.swift in Sources */,

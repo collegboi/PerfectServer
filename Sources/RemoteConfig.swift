@@ -54,9 +54,9 @@ class RemoteConfig {
         
         var result: Bool = true
         
-        setWorkingDirectory("./ConfigFiles")
+        //setWorkingDirectory("./ConfigFiles")
         
-        let thisFile = File("config.txt")
+        let thisFile = File("ConfigFiles/config.txt")
         
         do {
             try thisFile.open(.readWrite)
@@ -82,9 +82,9 @@ class RemoteConfig {
         
         var result: Bool = true
         
-        setWorkingDirectory("./ConfigFiles")
+       // setWorkingDirectory("./ConfigFiles")
         
-        let thisFile = File("config.json")
+        let thisFile = File("ConfigFiles/config.json")
         
         do {
         
@@ -109,7 +109,7 @@ class RemoteConfig {
         
         //setWorkingDirectory("./ConfigFiles")
         
-        let thisFile = File("config.json")
+        let thisFile = File("ConfigFiles/config.json")
         
         do {
             try thisFile.open(.readWrite)

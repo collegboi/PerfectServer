@@ -14,7 +14,7 @@ import MongoDB
 public func makeFileUploadRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/upload/{type}/", handler: uploadFile)
+    routes.add(method: .post, uri: "/upload/{directory}/", handler: uploadFile)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -24,7 +24,7 @@ public func makeFileUploadRoutes() -> Routes {
 
 func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let type = request.urlVariables["type"] else {
+    guard let directory = request.urlVariables["directory"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no type"))
         response.completed()
         return
@@ -39,7 +39,7 @@ func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
     var ary = [[String:Any]]()
     
     // create uploads dir to store files
-    let fileDir = Dir(Dir.workingDir.path + "files")
+    let fileDir = Dir(Dir.workingDir.path + directory)
     do {
         try fileDir.create()
     } catch {
@@ -61,7 +61,7 @@ func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
             "timestamp": "12/02/2012 08:00:00",
             "fileSize": "\(upload.fileSize)",
             "filePath": fileDir.path + upload.fileName,
-            "type": type
+            "type": directory
         ]
         
         let objectStr = JSONController.parseJSONToStr(dict: fileObject)

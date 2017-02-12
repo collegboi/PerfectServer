@@ -27,6 +27,7 @@ public func makeDatabaseRoutes() -> Routes {
     routes.add(method: .post, uri: "/storage/{collection}", handler: databaseCollectionPost)
     routes.add(method: .post, uri: "/storage/all/{collection}", handler: databaseCollectionsPost)
     routes.add(method: .delete, uri: "/storage/{collection}/{objectid}", handler: removeCollectionDoc)
+    routes.add(method: .post, uri: "/storage/remove/{collection}/{objectid}", handler: safeRemoveCollectionDoc)
     routes.add(method: .post, uri: "/storage/query/{collection}/{skip}/{limit}", handler: databaseGetQuery)
     routes.add(method: .post, uri: "/storage/query/{collection}/", handler: databaseGetQuery)
     
@@ -322,5 +323,32 @@ func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
     response.appendBody(string: resultBody)
     response.completed()
 
+}
+
+
+func safeRemoveCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    guard let collectionName = request.urlVariables["collection"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+        response.completed()
+        return
+    }
+    
+    guard let jsonStr = request.postBodyString else {
+        response.appendBody(string: ResultBody.errorBody(value: "no json body"))
+        response.completed()
+        return
+    }
+    
+    
+    var resultBody = ResultBody.successBody(value:  "removed")
+    
+    if !DatabaseController.safeRemoveDocument(collectionName, jsonStr) {
+        resultBody = ResultBody.errorBody(value: "not removed")
+    }
+    
+    response.appendBody(string: resultBody)
+    response.completed()
+    
 }
 

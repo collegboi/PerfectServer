@@ -18,7 +18,7 @@ public func makeTranslationRoutes() -> Routes {
     routes.add(method: .post, uri: "/translation/", handler: sendTranslation)
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
     routes.add(method: .get, uri: "/translation/{translation}/{version}", handler: getTranslationFile)
-    routes.add(method: .get, uri: "/translation/{translation}/{objectid}/", handler: getTrackerIssuesObject)
+    //routes.add(method: .get, uri: "/translation/{translation}/{objectid}/", handler: getTrackerIssuesObject)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -47,25 +47,25 @@ func getTranslationFile(request: HTTPRequest, _ response: HTTPResponse) {
     response.completed()
 }
 
-func getTrackerIssuesObject(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
-    guard let documentObject = request.urlVariables["objectid"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "no object id"))
-        response.completed()
-        return
-    }
-    
-    let returnObject = IssueTracker.getIssue(collectionName, documentObject)
-    
-    response.appendBody(string: returnObject)
-    response.completed()
-}
+//func getTrackerIssuesObject(request: HTTPRequest, _ response: HTTPResponse) {
+//    
+//    guard let collectionName = request.urlVariables["collection"] else {
+//        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+//        response.completed()
+//        return
+//    }
+//    
+//    guard let documentObject = request.urlVariables["objectid"] else {
+//        response.appendBody(string: ResultBody.errorBody(value: "no object id"))
+//        response.completed()
+//        return
+//    }
+//    
+//    let returnObject = IssueTracker.getIssue(collectionName, documentObject)
+//    
+//    response.appendBody(string: returnObject)
+//    response.completed()
+//}
 
 
 func sendTranslation(request: HTTPRequest, _ response: HTTPResponse) {

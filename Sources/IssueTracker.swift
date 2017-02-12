@@ -31,5 +31,4 @@ class IssueTracker {
         
         return DatabaseController.retrieveCollectionQuery(collectionName, issueID)
     }
-    
 }

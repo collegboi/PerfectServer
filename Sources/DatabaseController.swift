@@ -30,13 +30,11 @@ class DatabaseController {
         return client.getDatabase(name: "locql")
     }
     
-    
     static func closeMongoDB(_ collection: MongoCollection, database: MongoDatabase, client: MongoClient ) {
         collection.close()
         database.close()
         client.close()
     }
-    
     
     static func getAllCollections() -> String {
         
@@ -215,6 +213,17 @@ class DatabaseController {
         //        }
     }
     
+    private class var dateFormatter : DateFormatter {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        return dateFormatter
+    }
+    
+    private class var nowDate: String {
+        return self.dateFormatter.string(from: NSDate() as Date)
+    }
+    
     
     @discardableResult
     static func insertDocument(_ collectionName: String, jsonStr: String ) -> String {
@@ -241,11 +250,13 @@ class DatabaseController {
         let newObjectID = self.asMyUUID().string
         
         document.append(key: "_id", string: newObjectID  )
-
+        document.append(key: "created", string: self.nowDate )
+        document.append(key: "updated", string: self.nowDate )
+        document.append(key: "deleted", string: "0")
         
         let _ = collection.insert(document: document)
         
-        return ""
+        return newObjectID
 //        if returnValue == MongoResult.success {
 //            return "Success"
 //        } else {
@@ -301,11 +312,53 @@ class DatabaseController {
             let query = BSON()
             query.append(key: "_id", string: objectID)
             
+            document.append(key: "updated", string: self.nowDate )
+            
             let _ = collection.update(selector: query, update: document)
         
         }
         
         return ""
+    }
+    
+    static func safeRemoveDocument(_ collectioName: String, _ jsonStr: String ) -> Bool {
+        
+        guard let document = try? BSON.init(json: jsonStr) else {
+            return false
+        }
+        document.append(key: "deleted", string: "1")
+        document.append(key: "updated", string: self.nowDate)
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return false
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let jsonObjects = JSONController.parseJSONToDict(jsonStr)
+        
+        guard let documentID = jsonObjects["_id"] as? String else {
+            return false
+        }
+        
+        let query = BSON()
+        
+        query.append(key: "_id", string: documentID)
+        
+        let _ = collection.update(selector: query, update: document)
+        
+        return  true
     }
     
     static func removeDocument(_ collectioName: String, _ documentID: String ) -> Bool {
@@ -332,7 +385,6 @@ class DatabaseController {
         
         let query = BSON()
         query.append(key: "_id", string: documentID)
-        
         
         let _ = collection.remove(selector: query)
         
@@ -411,7 +463,49 @@ class DatabaseController {
         
         // return a formatted JSON array.
         return  "{\"data\":[\(arr.joined(separator: ","))]}"
+    
     }
+    
+    static func checkIfExist(_ collectioName: String, objects: [String:String]  ) -> Bool {
+        
+        let client = openMongoDB()
+        
+        let db = connectDatabase(client)
+        
+        guard let collection = db.getCollection(name: collectioName) else {
+            return false
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let query = BSON()
+        
+        if objects.count > 0 {
+            
+            for ( key, value ) in objects {
+                query.append(key: key, string: value)
+            }
+            
+            let fnd = collection.find(query: query)
+            
+            var arr = [String]()
+            for x in fnd! {
+                arr.append(x.asString)
+            }
+            
+            if arr.count == 1 {
+                return true
+            }
+            
+        } else {
+            return false
+        }
+
+        return false
+    }
+    
 
     
     
