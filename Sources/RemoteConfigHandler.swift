@@ -6,26 +6,26 @@
 //
 //
 
-import PerfectLib
-import PerfectHTTP
-import MongoDB
-
-
-/// Defines and returns the Web Authentication routes
-public func makeRemoteConfigRoutes() -> Routes {
-    var routes = Routes()
-    
-//    routes.add(method: .post, uri: "/remoteconfig/", handler: sendRemoteConfig)
-//    //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-//    routes.add(method: .get, uri: "/remoteconfig/{translation}/{version}", handler: getTranslationFile)
-//    routes.add(method: .get, uri: "/remoteconfig/{translation}/{objectid}/", handler: getTrackerIssuesObject)
-    
-    // Check the console to see the logical structure of what was installed.
-    print("\(routes.navigator.description)")
-    
-    return routes
-}
-
+//import PerfectLib
+//import PerfectHTTP
+//import MongoDB
+//
+//
+///// Defines and returns the Web Authentication routes
+//public func makeRemoteConfigRoutes() -> Routes {
+//    var routes = Routes()
+//    
+////    routes.add(method: .post, uri: "/remoteconfig/", handler: sendRemoteConfig)
+////    //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
+////    routes.add(method: .get, uri: "/remoteconfig/{translation}/{version}", handler: getTranslationFile)
+////    routes.add(method: .get, uri: "/remoteconfig/{translation}/{objectid}/", handler: getTrackerIssuesObject)
+//    
+//    // Check the console to see the logical structure of what was installed.
+//    print("\(routes.navigator.description)")
+//    
+//    return routes
+//}
+//
 
 //func getTranslationFile(request: HTTPRequest, _ response: HTTPResponse) {
 //    

@@ -213,15 +213,21 @@ class DatabaseController {
         //        }
     }
     
-    private class var dateFormatter : DateFormatter {
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        return dateFormatter
+    private class func moment(_ seconds: TimeInterval) -> Date {
+        let interval = TimeInterval(seconds)
+        let date = Date(timeIntervalSince1970: interval)
+        return date
+    }
+    
+    private class func getNow() -> Double {
+        
+        var posixTime = timeval()
+        gettimeofday(&posixTime, nil)
+        return Double((posixTime.tv_sec * 1000) + (Int(posixTime.tv_usec)/1000))
     }
     
     private class var nowDate: String {
-        return self.dateFormatter.string(from: NSDate() as Date)
+        return "\(self.moment(self.getNow()))"
     }
     
     

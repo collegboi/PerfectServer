@@ -22,6 +22,14 @@ public class FileController {
         return _FileControllerSharedInstance
     }
     
+    @discardableResult
+    public class func setup() -> FileController? {
+        
+        let fileController = FileController()
+        
+        return fileController
+    }
+    
     public init() {
         
         if (_FileControllerSharedInstance == nil) {

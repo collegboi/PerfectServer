@@ -28,8 +28,8 @@ public class AuthenChecker {
                 return false
         }
         
-        let apiKeyID = decodedToken.substring(to: separatorRange.lowerBound)
-        let apiKeySecret = decodedToken.substring(from: separatorRange.upperBound)
+        //let apiKeyID = decodedToken.substring(to: separatorRange.lowerBound)
+        //let apiKeySecret = decodedToken.substring(from: separatorRange.upperBound)
         
         return true
     }

@@ -103,7 +103,7 @@ server.documentRoot = "./webroot"
 
 //EmailController.sendEmail()
 
-FileController.init()
+FileController.setup()
 
 SystemController.getMemoryUsusageinMB()
 
