@@ -58,10 +58,10 @@ class SystemController {
     
     class func getLinuxStats() -> String {
         
-        var data = [String:AnyObject]()
+        var data = [String:[String:String]]()
     
-        data["memory"] = SystemController.getMemoryLinuxUsuage() as AnyObject?
-        data["storage"] = SystemController.getStorageLinuxUsuage() as AnyObject?
+        data["memory"] = SystemController.getMemoryLinuxUsuage()
+        data["storage"] = SystemController.getStorageLinuxUsuage()
         
         return JSONController.parseJSONToStr(dict: data)
     }
@@ -104,9 +104,9 @@ class SystemController {
     }
     
     @discardableResult
-    class func getStorageLinuxUsuage() -> String {
+    class func getStorageLinuxUsuage() -> [String:String] {
         
-        var returnStr = "Error"
+        var returnStr = [String:String]()
         
         do {
             guard let output = try runProc(cmd: "df", args: ["-h /dev/vda1"], read: true) else {
@@ -127,7 +127,7 @@ class SystemController {
                         "used": memoryList[2],
                         "avilable": memoryList[3]
                     ]
-                    returnStr = JSONController.parseJSONToStr(dict: status)
+                    returnStr = status
                 }
             }
             

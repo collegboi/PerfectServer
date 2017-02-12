@@ -56,6 +56,20 @@ public class JSONController {
         return decodedJSOn
     }
     
+    class func parseJSONStr( dict: [String:[String:String]] ) -> String {
+        var result = ""
+        
+        do {
+            result = try dict.jsonEncodedString()
+            
+        } catch let error {
+            print(error)
+        }
+        
+        return result
+    }
+    
+    
     class func parseJSONToStr( dict: [String:Any] ) -> String  {
         
         var result = ""
