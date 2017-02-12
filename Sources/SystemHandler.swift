@@ -27,17 +27,12 @@ public func makeSystemRoutes() -> Routes {
 func getSystemStatus(request: HTTPRequest, _ response: HTTPResponse) {
 
     var returnStr = ResultBody.errorBody(value: "error")
-    
-    var data = [String:AnyObject]()
-    
+
     #if os(Linux)
-        data["memory"] = SystemController.getMemoryLinuxUsuage()  as AnyObject?
-        data["storage"] = SystemController.getStorageLinuxUsuage()  as AnyObject?
+        returnStr = SystemController.getLinuxStats()
     #else
-        data["memory"] = SystemController.getMemoryMacUsuage() as AnyObject?
+        returnStr = SystemController.getMemoryMacUsuage()
     #endif
-    
-    returnStr = JSONController.parseJSONToStr(dict: data)
     
     response.appendBody(string: returnStr)
     response.completed()

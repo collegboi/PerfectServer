@@ -55,10 +55,21 @@ class SystemController {
     // ---------------------------------------------------------------------------------------- //
     // --------------------------------LINUX COMMANDS----------------------------------------- //
     // ---------------------------------------------------------------------------------------- //
-    @discardableResult
-    class func getMemoryLinuxUsuage() -> String {
+    
+    class func getLinuxStats() -> String {
         
-        var returnStr = "Error"
+        var data = [String:AnyObject]()
+    
+        data["memory"] = SystemController.getMemoryLinuxUsuage() as AnyObject?
+        data["storage"] = SystemController.getStorageLinuxUsuage() as AnyObject?
+        
+        return JSONController.parseJSONToStr(dict: data)
+    }
+    
+    @discardableResult
+    class func getMemoryLinuxUsuage() -> [String:String] {
+        
+        var returnStr = [String:String]()
         
         do {
             guard let output = try runProc(cmd: "free", args: ["-m"], read: true) else {
@@ -81,7 +92,7 @@ class SystemController {
                         "avilable": memoryList[6]
                     ]
                     
-                    returnStr = JSONController.parseJSONToStr(dict: status)
+                    returnStr = status
                 }
             }
             
