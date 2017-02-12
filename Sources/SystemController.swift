@@ -15,6 +15,14 @@
 import PerfectLib
 
 
+extension String {
+    func condenseWhitespace() -> String {
+        return self.components(separatedBy: .whitespacesAndNewlines)
+            .filter { !$0.isEmpty }
+            .joined(separator: " ")
+    }
+}
+
 class SystemController {
     
     private class func runProc(cmd: String, args: [String], read: Bool = false) throws -> String? {
@@ -53,26 +61,29 @@ class SystemController {
         var returnStr = "Error"
         
         do {
-            guard let output = try runProc(cmd: "free", args: ["-m | awk 'NR==2{printf \"Memory Usage: %s/%sMB (%.2f%%)\n\", $3,$2,$3*100/$2 }'"], read: true) else {
+            guard let output = try runProc(cmd: "free", args: ["-m"], read: true) else {
                 return returnStr
             }
             
-            returnStr = output
+            let list: [String] = output.components(separatedBy: "\n")
             
-//            let list: [String] = output.components(separatedBy: "\n")
-//            
-//            if list.count > 0 {
-//                
-//                let memoryList: [String] = list[1].components(separatedBy: " ")
-//                
-//                if memoryList.count >= 5 {
-//                    let status : [String:AnyObject] = [
-//                        "test": memoryList as AnyObject
-//                    ]
-//                    
-//                    returnStr = JSONController.parseJSONToStr(dict: status)
-//                }
-//            }
+            if list.count > 0 {
+                
+                let condensedStr = list[1].condenseWhitespace()
+                
+                let memoryList: [String] = condensedStr.components(separatedBy: " ")
+                
+                if memoryList.count >= 5 {
+                    let status : [String:String] = [
+                        "total": memoryList[1],
+                        "used": memoryList[2],
+                        "free": memoryList[3],
+                        "avilable": memoryList[6]
+                    ]
+                    
+                    returnStr = JSONController.parseJSONToStr(dict: status)
+                }
+            }
             
             //print(output)
         } catch let error  {
