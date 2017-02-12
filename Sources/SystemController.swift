@@ -62,9 +62,48 @@ class SystemController {
     
         data["memory"] = SystemController.getMemoryLinuxUsuage()
         data["storage"] = SystemController.getStorageLinuxUsuage()
+        data["cpu"] = SystemController.getCPULinuxUsuage()
         
         return JSONController.parseJSONToStr(dict: data)
     }
+    
+    
+    @discardableResult
+    class func getCPULinuxUsuage() -> [String:String] {
+        
+        var returnStr = [String:String]()
+        
+        do {
+            guard let output = try runProc(cmd: "top", args: ["-bn1"], read: true) else {
+                return returnStr
+            }
+            
+            let list: [String] = output.components(separatedBy: "\n")
+            
+            if list.count > 0 {
+                
+                let condensedStr = list[2].condenseWhitespace()
+                
+                let cpuList: [String] = condensedStr.components(separatedBy: " ")
+                
+                if cpuList.count >= 8 {
+                    let status : [String:String] = [
+                        "user": cpuList[1],
+                        "system": cpuList[3],
+                        "idle": cpuList[7]
+                    ]
+                    
+                    returnStr = status
+                }
+            }
+            
+            //print(output)
+        } catch let error  {
+            print(error)
+        }
+        return returnStr
+    }
+    
     
     @discardableResult
     class func getMemoryLinuxUsuage() -> [String:String] {
