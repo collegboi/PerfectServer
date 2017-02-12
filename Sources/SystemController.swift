@@ -92,6 +92,40 @@ class SystemController {
         return returnStr
     }
     
+    @discardableResult
+    class func getStorageLinuxUsuage() -> String {
+        
+        var returnStr = "Error"
+        
+        do {
+            guard let output = try runProc(cmd: "df", args: ["-h /dev/vda1"], read: true) else {
+                return returnStr
+            }
+            
+            let list: [String] = output.components(separatedBy: "\n")
+            
+            if list.count > 0 {
+                
+                let condensedStr = list[1].condenseWhitespace()
+                
+                let memoryList: [String] = condensedStr.components(separatedBy: " ")
+                
+                if memoryList.count >= 3 {
+                    let status : [String:String] = [
+                        "size": memoryList[1],
+                        "used": memoryList[2],
+                        "avilable": memoryList[3]
+                    ]
+                    returnStr = JSONController.parseJSONToStr(dict: status)
+                }
+            }
+            
+            //print(output)
+        } catch let error  {
+            print(error)
+        }
+        return returnStr
+    }
     
     
     // ---------------------------------------------------------------------------------------- //
