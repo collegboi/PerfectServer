@@ -128,7 +128,7 @@ class SystemController {
                         "total": memoryList[1],
                         "used": memoryList[2],
                         "free": memoryList[3],
-                        "avilable": memoryList[6]
+                        "available": memoryList[6]
                     ]
                     
                     returnStr = status
