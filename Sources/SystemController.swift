@@ -53,24 +53,26 @@ class SystemController {
         var returnStr = "Error"
         
         do {
-            guard let output = try runProc(cmd: "free", args: ["-m"], read: true) else {
+            guard let output = try runProc(cmd: "free", args: ["-m | awk 'NR==2{printf \"Memory Usage: %s/%sMB (%.2f%%)\n\", $3,$2,$3*100/$2 }'"], read: true) else {
                 return returnStr
             }
             
-            let list: [String] = output.components(separatedBy: "\n")
+            returnStr = output
             
-            if list.count > 0 {
-                
-                let memoryList: [String] = list[1].components(separatedBy: " ")
-                
-                if memoryList.count >= 5 {
-                    let status : [String:AnyObject] = [
-                        "test": memoryList as! AnyObject
-                    ]
-                    
-                    returnStr = JSONController.parseJSONToStr(dict: status)
-                }
-            }
+//            let list: [String] = output.components(separatedBy: "\n")
+//            
+//            if list.count > 0 {
+//                
+//                let memoryList: [String] = list[1].components(separatedBy: " ")
+//                
+//                if memoryList.count >= 5 {
+//                    let status : [String:AnyObject] = [
+//                        "test": memoryList as AnyObject
+//                    ]
+//                    
+//                    returnStr = JSONController.parseJSONToStr(dict: status)
+//                }
+//            }
             
             //print(output)
         } catch let error  {
