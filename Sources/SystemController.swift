@@ -109,15 +109,15 @@ class SystemController {
         var returnStr = [String:String]()
         
         do {
-            guard let output = try runProc(cmd: "df", args: ["-h /dev/vda1"], read: true) else {
+            guard let output = try runProc(cmd: "df", args: ["-h"], read: true) else {
                 return returnStr
             }
             
             let list: [String] = output.components(separatedBy: "\n")
             
-            if list.count > 0 {
+            if list.count >= 3 {
                 
-                let condensedStr = list[1].condenseWhitespace()
+                let condensedStr = list[3].condenseWhitespace()
                 
                 let memoryList: [String] = condensedStr.components(separatedBy: " ")
                 
