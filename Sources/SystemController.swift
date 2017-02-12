@@ -61,16 +61,18 @@ class SystemController {
             
             if list.count > 0 {
                 
-                let memoryList: [String] = list[1].components(separatedBy: "\n")
+                let memoryList: [String] = list[1].components(separatedBy: " ")
                 
-                let status : [String:String] = [
-                    "total": memoryList[1],
-                    "used": memoryList[2],
-                    "free": memoryList[3],
-                    "avilable": memoryList[6]
-                ]
-                
-                returnStr = JSONController.parseJSONToStr(dict: status)
+                if memoryList.count >= 5 {
+                    let status : [String:String] = [
+                        "total": memoryList[1],
+                        "used": memoryList[2],
+                        "free": memoryList[3],
+                        "avilable": memoryList[6]
+                    ]
+                    
+                    returnStr = JSONController.parseJSONToStr(dict: status)
+                }
             }
             
             //print(output)
