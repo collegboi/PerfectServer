@@ -26,8 +26,14 @@ public func makeSystemRoutes() -> Routes {
 
 func getSystemStatus(request: HTTPRequest, _ response: HTTPResponse) {
 
-    let returning = SystemController.getMemoryUsusageinMB()
+    var returnStr = ResultBody.errorBody(value: "error")
     
-    response.appendBody(string: returning)
+    #if os(Linux)
+        returnStr = SystemController.getMemoryLinuxUsuage()
+    #else
+        returnStr = SystemController.getMemoryMacUsuage()
+    #endif
+    
+    response.appendBody(string: returnStr)
     response.completed()
 }

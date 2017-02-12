@@ -44,8 +44,35 @@ class SystemController {
         }
         return ret
     }
+    // ---------------------------------------------------------------------------------------- //
+    // --------------------------------LINUX COMMANDS----------------------------------------- //
+    // ---------------------------------------------------------------------------------------- //
+    @discardableResult
+    class func getMemoryLinuxUsuage() -> String {
+        
+        var returnStr = "Error"
+        
+        do {
+            guard let output = try runProc(cmd: "free", args: ["-m"], read: true) else {
+                return returnStr
+            }
+            
+            //let list: [String] = output.components(separatedBy: "\n")
+            
+            returnStr = output
+            
+            //print(output)
+        } catch let error  {
+            print(error)
+        }
+        return returnStr
+    }
     
-    //du -sh *
+    
+    
+    // ---------------------------------------------------------------------------------------- //
+    // -------------------------------MAC COMMANDS--------------------------------------------- //
+    // ---------------------------------------------------------------------------------------- //
     class func getDirectorySize() -> String {
         
         var returnStr = "Error"
@@ -75,7 +102,7 @@ class SystemController {
     }
     
     @discardableResult
-    class func getMemoryUsusageinMB() -> String {
+    class func getMemoryMacUsuage() -> String {
         
         var returnStr = "Error"
         
@@ -110,6 +137,6 @@ class SystemController {
         return returnStr
     }
 
-    
+    // ---------------------------------------------------------------------------------------- //
     
 }

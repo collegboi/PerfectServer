@@ -99,13 +99,11 @@ server.serverPort = 8181
 
 // Where to serve static files from
 server.documentRoot = "./webroot"
-//server.serverAddress = "127.0.0.1"
+//server.serverAddress = "127.0.0.1"./
 
 //EmailController.sendEmail()
 
 FileController.setup()
-
-SystemController.getMemoryUsusageinMB()
 
 //NotficationController.sendSingleNotfication(deviceID: "e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a")
 
