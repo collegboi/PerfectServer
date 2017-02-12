@@ -65,10 +65,6 @@ class SystemController {
                 
                 if memoryList.count >= 5 {
                     let status : [String:AnyObject] = [
-                        "total": memoryList[1] as! AnyObject,
-                        "used": memoryList[2] as! AnyObject,
-                        "free": memoryList[3] as! AnyObject,
-                        "avilable": memoryList[6] as! AnyObject,
                         "test": memoryList as! AnyObject
                     ]
                     
