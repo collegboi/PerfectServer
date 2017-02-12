@@ -64,7 +64,7 @@ class SystemController {
         data["storage"] = SystemController.getStorageLinuxUsuage()
         data["cpu"] = SystemController.getCPULinuxUsuage()
         
-        return JSONController.parseJSONToStr(dict: data)
+         return  "{\"data\":\(JSONController.parseJSONToStr(dict: data))}"
     }
     
     
