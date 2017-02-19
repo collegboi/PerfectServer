@@ -16,19 +16,19 @@
 
 class IssueTracker {
     
-    static func sendNewIssue( _ collectionName: String, _ issueObject: String ) -> String {
+    static func sendNewIssue(_ appKey:String, _ collectionName: String, _ issueObject: String ) -> String {
         
-        return DatabaseController.updateInsertDocument(collectionName, jsonStr: issueObject)
+        return DatabaseController.updateInsertDocument(appKey, collectionName, jsonStr: issueObject)
     }
     
-    static func getAllIssues(_ collectionName: String) -> String {
+    static func getAllIssues(_ appKey:String, _ collectionName: String) -> String {
         
-        return DatabaseController.retrieveCollection(collectionName)
+        return DatabaseController.retrieveCollection(appKey, collectionName)
     }
     
     
-    static func getIssue(_ collectionName: String, _ issueID: String ) -> String {
+    static func getIssue(_ appkey:String, _ collectionName: String, _ issueID: String ) -> String {
         
-        return DatabaseController.retrieveCollectionQuery(collectionName, issueID)
+        return DatabaseController.retrieveCollectionQuery(appkey, collectionName, issueID)
     }
 }

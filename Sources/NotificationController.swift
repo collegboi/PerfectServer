@@ -7,13 +7,13 @@
 //
 
 import PerfectNotifications
-
+import Foundation
 
 public class NotficationController {
     
-    private class func setupNotificationPusher() -> String {
+    private class func setupNotificationPusher(_ appKey: String) -> String {
     
-        let notificationSettings = LocalDatabaseHandler.getCollection("NotificationSetting", query: [:])
+        let notificationSettings = LocalDatabaseHandler.getCollection(appKey, "NotificationSetting", query: [:])
         
         let notificationSetting = notificationSettings[0]
 
@@ -43,10 +43,10 @@ public class NotficationController {
     }
     
     
-    private class func sendNotifcation( deviceId: String, messsage: String, silent: Bool = false ) {
+    private class func sendNotifcation(_ appKey:String, deviceId: String, messsage: String, silent: Bool = false ) {
         
         
-        let apnsTopic = self.setupNotificationPusher()
+        let apnsTopic = self.setupNotificationPusher(appKey)
         
         if apnsTopic != "" {
         
@@ -73,10 +73,10 @@ public class NotficationController {
         
     }
     
-    private class func sendManyNotifcation( deviceId: [String], messsage: String, silent: Bool = false ) {
+    private class func sendManyNotifcation(_ appKey: String, deviceId: [String], messsage: String, silent: Bool = false ) {
         
         
-        let apnsTopic = self.setupNotificationPusher()
+        let apnsTopic = self.setupNotificationPusher(appKey)
         
         if apnsTopic != "" {
             
@@ -100,21 +100,31 @@ public class NotficationController {
         } else {
             print("notificaitons empty")
         }
+    }
+    
+    private class func saveNotifcationToDatabase () {
         
+        func nowDateTime() -> String {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+            dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
+            
+            return dateFormatter.string(from: Date())
+        }
     }
 
     
-    public class func sendSilentNotification( deviceIDs: [String], message: String) {
-        self.sendManyNotifcation(deviceId: deviceIDs, messsage: message)
+    public class func sendSilentNotification(_ appKey: String, deviceIDs: [String], message: String) {
+        self.sendManyNotifcation(appKey, deviceId: deviceIDs, messsage: message)
     }
     
-    public class func sendSingleNotfication( deviceID: String, message: String ) {
-        self.sendNotifcation(deviceId: deviceID, messsage: message)
+    public class func sendSingleNotfication(_ appKey: String, deviceID: String, message: String ) {
+        self.sendNotifcation(appKey, deviceId: deviceID, messsage: message)
     }
     
-    public class func sendMultipleNotifications( deviceIDs: [String], message: String ) {
+    public class func sendMultipleNotifications(_ appKey: String, deviceIDs: [String], message: String ) {
         for deviceID in deviceIDs {
-            self.sendNotifcation(deviceId: deviceID, messsage: message)
+            self.sendNotifcation(appKey, deviceId: deviceID, messsage: message)
         }
     }
 }

@@ -39,9 +39,9 @@ class RemoteConfig {
         }
     }
     
-    public func getConfigVerison(_ version: String) -> String {
+    public func getConfigVerison(_ appKey: String , _ version: String) -> String {
         
-        let abTestings = Storage.getCollectionStr("ABTesting")
+        let abTestings = Storage.getCollectionStr(appKey,"ABTesting")
         
         let abTestingObject = JSONController.parseDatabaseAny(abTestings)
         
@@ -53,19 +53,11 @@ class RemoteConfig {
                 return ""
             }
             
-            guard let versionA = dict["versionA"] as? String  else {
+            guard let versionVal = dict["version"] as? String  else {
                 return ""
             }
-            
-            guard let versionB = dict["versionB"] as? String  else {
-                return ""
-            }
-            
-            if  versionA == version {
-                objectVal = dict as [String : AnyObject]?
-                break
-            }
-            else if versionB == version {
+
+            if  versionVal == version {
                 objectVal = dict as [String : AnyObject]?
                 break
             }

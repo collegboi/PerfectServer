@@ -916,7 +916,6 @@
 		OBJ_2153 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_888 /* FileController.swift */; };
 		OBJ_2154 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_889 /* FileHandler.swift */; };
 		OBJ_2155 /* IssueTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_890 /* IssueTracker.swift */; };
-		OBJ_2156 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_891 /* JSON.swift */; };
 		OBJ_2157 /* JSONController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_892 /* JSONController.swift */; };
 		OBJ_2158 /* LocalDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_893 /* LocalDatabaseHandler.swift */; };
 		OBJ_2159 /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_894 /* LoginHandler.swift */; };
@@ -2742,7 +2741,6 @@
 		OBJ_889 /* FileHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
 		OBJ_89 /* aes_ctr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = aes_ctr.c; sourceTree = "<group>"; };
 		OBJ_890 /* IssueTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssueTracker.swift; sourceTree = "<group>"; };
-		OBJ_891 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		OBJ_892 /* JSONController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONController.swift; sourceTree = "<group>"; };
 		OBJ_893 /* LocalDatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseHandler.swift; sourceTree = "<group>"; };
 		OBJ_894 /* LoginHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
@@ -4337,7 +4335,6 @@
 				OBJ_888 /* FileController.swift */,
 				OBJ_889 /* FileHandler.swift */,
 				OBJ_890 /* IssueTracker.swift */,
-				OBJ_891 /* JSON.swift */,
 				OBJ_892 /* JSONController.swift */,
 				OBJ_893 /* LocalDatabaseHandler.swift */,
 				OBJ_894 /* LoginHandler.swift */,
@@ -6042,7 +6039,6 @@
 				OBJ_2153 /* FileController.swift in Sources */,
 				OBJ_2154 /* FileHandler.swift in Sources */,
 				OBJ_2155 /* IssueTracker.swift in Sources */,
-				OBJ_2156 /* JSON.swift in Sources */,
 				OBJ_2157 /* JSONController.swift in Sources */,
 				OBJ_2158 /* LocalDatabaseHandler.swift in Sources */,
 				OBJ_2159 /* LoginHandler.swift in Sources */,

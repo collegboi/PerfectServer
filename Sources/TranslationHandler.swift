@@ -29,6 +29,13 @@ public func makeTranslationRoutes() -> Routes {
 
 func getTranslationFile(request: HTTPRequest, _ response: HTTPResponse) {
     
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
+    
     guard let translationFilePath = request.urlVariables["translation"] else {
         response.appendBody(string: ResultBody.errorBody(value: "missing translation"))
         response.completed()
@@ -70,7 +77,12 @@ func getTranslationFile(request: HTTPRequest, _ response: HTTPResponse) {
 
 func sendTranslation(request: HTTPRequest, _ response: HTTPResponse) {
     
-    //let jsonStr = request.postBodyString //else {
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "postbody"))
@@ -80,7 +92,7 @@ func sendTranslation(request: HTTPRequest, _ response: HTTPResponse) {
     
     var returnStr =  ResultBody.successBody(value: "created")
     
-    Translations.postTranslationFile(jsonStr)
+    Translations.postTranslationFile(appKey, jsonStr)
     
     returnStr = ResultBody.successBody(value: returnStr )
     

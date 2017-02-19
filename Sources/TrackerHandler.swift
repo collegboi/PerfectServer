@@ -15,9 +15,9 @@ import MongoDB
 public func makeTrackerRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/tracker/{collection}", handler: sendTrackerIssue)
+    routes.add(method: .post, uri: "/api/{appkey}/tracker/{collection}", handler: sendTrackerIssue)
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-    routes.add(method: .get, uri: "/tracker/{collection}", handler: getTrackerIssues)
+    routes.add(method: .get, uri: "/api/{appkey}/tracker/{collection}", handler: getTrackerIssues)
     //routes.add(method: .get, uri: "/tracker/{collection}/{objectid}/", handler: getTrackerIssuesObject)
     
     // Check the console to see the logical structure of what was installed.
@@ -29,13 +29,19 @@ public func makeTrackerRoutes() -> Routes {
 
 func getTrackerIssues(request: HTTPRequest, _ response: HTTPResponse) {
     
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+    
     guard let collectionName = request.urlVariables["collection"] else {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
         response.completed()
         return
     }
     
-    let returning = IssueTracker.getAllIssues(collectionName)
+    let returning = IssueTracker.getAllIssues(appKey, collectionName)
     
     response.appendBody(string: returning)
     response.completed()
@@ -64,7 +70,11 @@ func getTrackerIssues(request: HTTPRequest, _ response: HTTPResponse) {
 
 func sendTrackerIssue(request: HTTPRequest, _ response: HTTPResponse) {
     
-    //let jsonStr = request.postBodyString //else {
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "postbody"))
@@ -80,7 +90,7 @@ func sendTrackerIssue(request: HTTPRequest, _ response: HTTPResponse) {
     
     var returnStr =  ResultBody.successBody(value: "notCreated")
     
-    let result = IssueTracker.sendNewIssue( collectionName, jsonStr)
+    let result = IssueTracker.sendNewIssue(appKey, collectionName, jsonStr)
         
     returnStr = ResultBody.successBody(value: result )
     

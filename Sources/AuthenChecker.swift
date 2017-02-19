@@ -24,8 +24,8 @@ public class AuthenChecker {
         guard let data = Data(base64Encoded: token) else { return false }
         
         guard let decodedToken = String(data: data, encoding: .utf8),
-            let separatorRange = decodedToken.range(of: ":") else {
-                return false
+             let _ = decodedToken.range(of: ":") else {
+            return false
         }
         
         //let apiKeyID = decodedToken.substring(to: separatorRange.lowerBound)

@@ -33,11 +33,11 @@ class BackupService {
         
         var collectionVals = [String]()
         
-        let collections: [String] = DatabaseController.getAllColectionsArr()
+        let collections: [String] = DatabaseController.getAllColectionsArr("JKHSDGHFKJGH454645GRRLKJF")
         
         for collection in collections {
             
-            let collectionStr = DatabaseController.retrieveCollectionString(collection)
+            let collectionStr = DatabaseController.retrieveCollectionString("JKHSDGHFKJGH454645GRRLKJF",collection)
             
             FileController.sharedFileHandler?.updateContentsOfFile("backup/"+collection+".json", collectionStr)
             
@@ -62,7 +62,7 @@ class BackupService {
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
-        DatabaseController.insertDocument("Backup", jsonStr: configStr)
+        DatabaseController.insertDocument("JKHSDGHFKJGH454645GRRLKJF","Backup", jsonStr: configStr)
 
     }
 }

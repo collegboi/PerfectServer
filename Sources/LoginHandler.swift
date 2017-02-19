@@ -16,8 +16,8 @@ import Turnstile
 public func makeLoginRoutes() -> Routes {
     var routes = Routes()
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-    routes.add(method: .get, uri: "/serverlogin/{username}/{password}", handler: serverLoginHandler)
-    routes.add(method: .post, uri: "/serverRegister/", handler: serverRegisterHandler)
+    routes.add(method: .get, uri: "/api/{appkey}/serverlogin/{username}/{password}", handler: serverLoginHandler)
+    routes.add(method: .post, uri: "/api/{appkey}/serverRegister/", handler: serverRegisterHandler)
     //routes.add(method: .get, uri: "/login/{uniquekey}/{username}/{password}", handler: loginHandler)
     
     // Check the console to see the logical structure of what was installed.
@@ -27,6 +27,13 @@ public func makeLoginRoutes() -> Routes {
 }
 
 func serverLoginHandler(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
     
     guard let username = request.urlVariables["username"] else {
         response.appendBody(string: ResultBody.errorBody(value: "username missing"))
@@ -40,7 +47,7 @@ func serverLoginHandler(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    if AuthenticationController.tryLoginWith(username, password: password) {
+    if AuthenticationController.tryLoginWith(appKey, username, password: password) {
         response.appendBody(string: ResultBody.successBody(value: "success"))
     } else {
         response.appendBody(string: ResultBody.errorBody(value: "error"))
@@ -52,13 +59,20 @@ func serverLoginHandler(request: HTTPRequest, _ response: HTTPResponse) {
 
 func serverRegisterHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
+    
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))
         response.completed()
         return
     }
     
-    let returning = AuthenticationController.tryRegister(jsonStr)
+    let returning = AuthenticationController.tryRegister(appKey, jsonStr)
     
     response.appendBody(string: ResultBody.successBody(value: returning))
     response.completed()

@@ -5,16 +5,16 @@
 //  Created by Timothy Barnard on 08/02/2017.
 //
 //
-
 import PerfectLib
 import PerfectHTTP
 import MongoDB
+import Foundation
 
 /// Defines and returns the Web Authentication routes
 public func makeFileUploadRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/upload/{directory}/", handler: uploadFile)
+    routes.add(method: .post, uri: "/api/{appkey}/upload/{directory}/", handler: uploadFile)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -23,6 +23,21 @@ public func makeFileUploadRoutes() -> Routes {
 }
 
 func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    func nowDateTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
+        
+        return dateFormatter.string(from: Date())
+    }
+    
+    
+    guard let apkey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "no apkey"))
+        response.completed()
+        return
+    }
     
     guard let directory = request.urlVariables["directory"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no type"))
@@ -58,7 +73,7 @@ func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
         
         let fileObject: [String:String] = [
             "fieldName": upload.fieldName,
-            "timestamp": "12/02/2012 08:00:00",
+            "timestamp": nowDateTime(),
             "fileSize": "\(upload.fileSize)",
             "filePath": fileDir.path + upload.fileName,
             "type": directory
@@ -66,7 +81,7 @@ func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
         
         let objectStr = JSONController.parseJSONToStr(dict: fileObject)
         
-        DatabaseController.insertDocument("Files", jsonStr: objectStr)
+        DatabaseController.insertDocument(apkey,"Files", jsonStr: objectStr)
 
         
         ary.append([

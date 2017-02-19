@@ -15,8 +15,6 @@ class Translations {
     
     class func getTranslationFile(_ filePath: String, _ version: String ) -> String {
         
-        //return  "{\"data\":[\(arr.joined(separator: ","))]}"
-        
         return FileController.sharedFileHandler!.getContentsOfFile(filePath, version)
         
     }
@@ -71,7 +69,7 @@ class Translations {
 
     
     @discardableResult
-    class func postTranslationFile(_ jsonStr: String ) -> String {
+    class func postTranslationFile(_ appkey: String, _ jsonStr: String ) -> String {
         
         
         let translationList = "{\"translationList\":" + parseJSONConfig(key: "translationList", dataStr: jsonStr)! + "}"
@@ -82,7 +80,7 @@ class Translations {
         
         FileController.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList)
         
-        DatabaseController.updateInsertDocument("Languages", jsonStr: language!)
+        DatabaseController.updateInsertDocument(appkey,"Languages", jsonStr: language!)
         
         return ""
     }

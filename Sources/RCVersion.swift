@@ -14,17 +14,6 @@
 
 class RCVersion {
     
-    let versionID: String
-    let versionDate: String
-    var versionPath: String = ""
-    var released: Int = 0
-    
-    init(versionID: String, versionDate: String) {
-        self.versionID = versionID
-        self.versionDate = versionDate
-    }
- 
-    
     class func parseJSONConfig( key:String, dataStr : String) -> String {
         
         let encoded = dataStr
@@ -67,20 +56,22 @@ class RCVersion {
     }
     
     
-    class func sendRemoteConfig( jsonString: String ) -> Bool {
+    class func sendRemoteConfig(_ apid: String, jsonString: String ) -> Bool {
         
         let versionData = parseJSONConfig(key: "version", dataStr: jsonString)
+        let applicationID = parseJSONConfig(key: "applicationID", dataStr: jsonString)
         
         let path = "ConfigFiles/config_"+versionData+".json"
         
         let configData: [String:String] = [
             "version" : versionData,
+            "applicationID": applicationID,
             "path" : path
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
         
-        DatabaseController.insertDocument("RemoteConfig", jsonStr: configStr)
+        DatabaseController.insertDocument(apid,"RemoteConfig", jsonStr: configStr)
         
         FileController.sharedFileHandler?.updateContentsOfFile(path,jsonString)
         

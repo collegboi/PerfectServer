@@ -9,14 +9,15 @@
 import PerfectLib
 import PerfectHTTP
 import MongoDB
+import Foundation
 
 /// Defines and returns the Web Authentication routes
 public func makeNotificationRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/notification/", handler: sendNotificaiton)
+    routes.add(method: .post, uri: "/api/{appkey}/notification/", handler: sendNotificaiton)
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-    routes.add(method: .get, uri: "/notification/", handler: getAllNotificaitons)
+    routes.add(method: .get, uri: "/api/{appkey}/notification/", handler: getAllNotificaitons)
     //routes.add(method: .get, uri: "/tracker/{collection}/{objectid}/", handler: getTrackerIssuesObject)
     
     // Check the console to see the logical structure of what was installed.
@@ -28,13 +29,34 @@ public func makeNotificationRoutes() -> Routes {
 
 func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
     
-    let allNotifications = DatabaseController.retrieveCollection("Notifications")
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
+    
+    let allNotifications = DatabaseController.retrieveCollection(appKey,"Notifications")
     
     response.appendBody(string:allNotifications)
     response.completed()
 }
 
 func sendNotificaiton(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    func nowDateTime() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
+        
+        return dateFormatter.string(from: Date())
+    }
+    
+    guard let appKey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "postbody"))
@@ -48,17 +70,17 @@ func sendNotificaiton(request: HTTPRequest, _ response: HTTPResponse) {
         let deviceid = jsonArry["deviceId"] as! String
         let message = jsonArry["message"] as! String
         
-        NotficationController.sendSingleNotfication(deviceID: deviceid, message: message)
+        NotficationController.sendSingleNotfication(appKey, deviceID: deviceid, message: message)
         
         let notificationObject: [String:String] = [
             "deviceID": deviceid,
-            "timestamp": "12/02/2012 08:00:00",
+            "timestamp": nowDateTime(),
             "message": message
         ]
         
         let objectStr = JSONController.parseJSONToStr(dict: notificationObject)
         
-        DatabaseController.insertDocument("Notifications", jsonStr: objectStr)
+        DatabaseController.insertDocument(appKey,"Notifications", jsonStr: objectStr)
         
     }
     

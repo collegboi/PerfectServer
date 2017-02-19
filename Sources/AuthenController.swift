@@ -10,14 +10,14 @@ import TurnstileCrypto
 
 public class AuthenticationController {
     
-    static func tryLoginWith(_ username: String, password: String ) -> Bool {
+    static func tryLoginWith(_ apkey: String, _ username: String, password: String ) -> Bool {
         
         let encryptedPassword = BCrypt.hash(password: password)
         
-        return DatabaseController.checkIfExist("Users", objects: ["username":username, "password": encryptedPassword])
+        return DatabaseController.checkIfExist(apkey, "Users", objects: ["username":username, "password": encryptedPassword])
     }
     
-    static func tryRegister(_ jsonStr: String ) -> String {
+    static func tryRegister(_ apkey: String, _ jsonStr: String ) -> String {
         
         var registerObjects = JSONController.parseJSONToDict(jsonStr)
         
@@ -31,12 +31,12 @@ public class AuthenticationController {
         
         registerObjects["password"] = BCrypt.hash(password: password)
         
-        if DatabaseController.checkIfExist("Users", objects: ["username": username]) {
+        if DatabaseController.checkIfExist(apkey, "Users", objects: ["username": username]) {
             return "usernmae already exist"
         }
         
         let registerStr = JSONController.parseJSONToStr(dict: registerObjects)
         
-        return DatabaseController.insertDocument("Users", jsonStr: registerStr )
+        return DatabaseController.insertDocument(apkey, "Users", jsonStr: registerStr )
     }
 }

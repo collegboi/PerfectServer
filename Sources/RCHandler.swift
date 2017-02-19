@@ -17,8 +17,8 @@ public func makeRCRoutes() -> Routes {
     
     
     routes.add(method: .get, uris: ["/", "index.html"], handler: indexRCHandler)
-    routes.add(method: .post, uri: "/remote", handler: sendRemoteConfig)
-    routes.add(method: .get, uri: "/remote/{version}", handler: getRemoteConfig)
+    routes.add(method: .post, uri: "/api/{appkey}/remote", handler: sendRemoteConfig)
+    routes.add(method: .get, uri: "/api/{appkey}/remote/{version}", handler: getRemoteConfig)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -33,13 +33,19 @@ func indexRCHandler(request: HTTPRequest, _ response: HTTPResponse) {
 
 func getRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
     
+    guard let apid = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+    
     guard let version = request.urlVariables["version"] else {
         response.appendBody(string: ResultBody.errorBody(value: "version missing"))
         response.completed()
         return
     }
     
-    let returnStr = RemoteConfig.shared?.getConfigVerison(version)
+    let returnStr = RemoteConfig.shared?.getConfigVerison(apid, version)
     
     response.appendBody(string: returnStr ?? "")
     response.completed()
@@ -50,6 +56,13 @@ func sendRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
     
     //let jsonStr = request.postBodyString //else {
     
+    guard let apid = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+
+    
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "postbody"))
         response.completed()
@@ -58,7 +71,7 @@ func sendRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
     
     var returnStr =  ResultBody.successBody(value: "notCreated")
     
-    if RCVersion.sendRemoteConfig(jsonString: jsonStr) {
+    if RCVersion.sendRemoteConfig(apid, jsonString: jsonStr) {
    
         returnStr = ResultBody.successBody(value: "created")
     }

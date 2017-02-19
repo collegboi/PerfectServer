@@ -16,7 +16,7 @@ import PerfectLib
 
 class Storage {
     
-    class func parseAndStoreObject(_ jsonString: String ) -> Bool {
+    class func parseAndStoreObject(_ apID: String,_ jsonString: String ) -> Bool {
         
         var result : Bool = false
         
@@ -28,7 +28,7 @@ class Storage {
                 return false
             }
             
-            if  DatabaseController.insertDocument(dict, jsonStr: jsonString) == "" {
+            if  DatabaseController.insertDocument(apID, dict, jsonStr: jsonString) == "" {
                 result = true
             }
             
@@ -39,63 +39,66 @@ class Storage {
         return result
     }
     
-    class func StoreObjects(_ collectionName: String, _ jsonString: String ) -> Bool {
+    class func StoreObjects(_ apID: String,_ collectionName: String, _ jsonString: String ) -> Bool {
         
         var result : Bool = false
         
-        if  DatabaseController.insertCollection(collectionName, jsonStr: jsonString) == "" {
+        if  DatabaseController.insertCollection(apID, collectionName, jsonStr: jsonString) == "" {
             result = true
         }
         
         return result
     }
     
-    class func StoreObject(_ collectionName: String, _ jsonString: String ) -> Bool {
+    class func StoreObject(_ apID: String,_ collectionName: String, _ jsonString: String ) -> Bool {
         
         var result : Bool = false
             
-        if  DatabaseController.updateInsertDocument(collectionName, jsonStr: jsonString) == "" {
+        if  DatabaseController.updateInsertDocument(apID, collectionName, jsonStr: jsonString ) == "" {
             result = true
         }
         
         return result
     }
     
-    class func getCollectionStr(_ collection:String, query: String) -> String {
-        return DatabaseController.retrieveCollectionQueryStr(collection, query: query)
+    class func getCollectionStr(_ apID: String,_ collection:String, query: String) -> String {
+        return DatabaseController.retrieveCollectionQueryStr(apID, collection, query: query)
     }
     
-    class func getCollectionStr(_ collection: String) ->String{
-        return DatabaseController.retrieveCollectionString(collection)
+    class func getCollectionStr(_ apID: String,_ collection: String) ->String{
+        return DatabaseController.retrieveCollectionString(apID, collection)
     }
     
-    
-    class func getAllCollections() -> String {
-        return DatabaseController.getAllCollections()
+    class func getAllDatabases(_ apID: String) -> String {
+        return DatabaseController.getAllDatabases(apID)
     }
     
-    
-    class func createIndex(_ collection: String, index: String ) -> String {
-        return DatabaseController.createUniqueIndex(collection, index: index)
-    }
-    
-    
-    class func dropIndex(_ collection: String, index:String) {
-        DatabaseController.removeIndex(collection, index: index)
+    class func getAllCollections(_ apID: String) -> String {
+        return DatabaseController.getAllCollections(apID)
     }
     
     
-    class func renameCollection(_ oldCollection: String, newCollection: String) {
-        DatabaseController.renameCollection(oldCollection, newCollectionName: newCollection)
+    class func createIndex(_ apID: String,_ collection: String, index: String ) -> String {
+        return DatabaseController.createUniqueIndex(apID, collection, index: index)
     }
     
     
-    class func dropCollection(_ collection: String){
-        DatabaseController.dropCollection(collection)
+    class func dropIndex(_ apID: String, _ collection: String, index:String) {
+        DatabaseController.removeIndex(apID, collection, index: index)
     }
     
-    class func getQueryCollection(_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
-        return DatabaseController.retrieveCollectionQuery(collection, query: json, skip: skip , limit: limit)
+    
+    class func renameCollection(_ apID: String, _ oldCollection: String, newCollection: String) {
+        DatabaseController.renameCollection(apID, oldCollection, newCollectionName: newCollection)
+    }
+    
+    
+    class func dropCollection(_ apID: String, _ collection: String){
+        DatabaseController.dropCollection(apID, collection)
+    }
+    
+    class func getQueryCollection(_ apID: String,_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
+        return DatabaseController.retrieveCollectionQuery(apID, collection, query: json, skip: skip , limit: limit)
     }
     
 }
