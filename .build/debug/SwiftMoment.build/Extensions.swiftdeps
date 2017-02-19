@@ -13,9 +13,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Duration"
-- "Int"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- "Int"
 - !private "*"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Duration"]

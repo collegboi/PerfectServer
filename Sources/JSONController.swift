@@ -9,6 +9,23 @@
 
 public class JSONController {
     
+    public class func parseDatabaseAny(_ jsonStr: String) -> [Any] {
+        var decodedJSOn = [Any]()
+        
+        do {
+            guard let decoded  = try jsonStr.jsonDecode() as? [Any] else {
+                return decodedJSOn
+            }
+            
+            decodedJSOn = decoded
+            
+        } catch let error {
+            print(error)
+        }
+        return decodedJSOn
+    }
+    
+    
     public class func parseDatabase(_ jsonStr: String) -> [[String:Any]] {
         var decodedJSOn = [[String:Any]]()
         

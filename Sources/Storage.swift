@@ -61,6 +61,14 @@ class Storage {
         return result
     }
     
+    class func getCollectionStr(_ collection:String, query: String) -> String {
+        return DatabaseController.retrieveCollectionQueryStr(collection, query: query)
+    }
+    
+    class func getCollectionStr(_ collection: String) ->String{
+        return DatabaseController.retrieveCollectionString(collection)
+    }
+    
     
     class func getAllCollections() -> String {
         return DatabaseController.getAllCollections()

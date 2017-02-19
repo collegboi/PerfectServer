@@ -1,11 +1,11 @@
 {
   "": {
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.build/master.swiftdeps"
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.build/master.swiftdeps"
   },
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/PerfectRequestLogger-1.0.2/Sources/PerfectRequestLogger.swift": {
-    "dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.d",
-    "object": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.swift.o",
-    "swiftmodule": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger~partial.swiftmodule",
-    "swift-dependencies": "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.swiftdeps"
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectRequestLogger-1.0.2/Sources/PerfectRequestLogger.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.build/PerfectRequestLogger.swiftdeps"
   }
 }

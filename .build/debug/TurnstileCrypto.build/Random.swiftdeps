@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "UInt16"
+- "UInt64"
 - "Int16"
 - "Random"
-- "UInt32"
-- "Int"
 - "String"
-- "UInt8"
 - "Int8"
-- "UInt"
+- "Int"
+- "UInt32"
+- "UInt8"
 - "Int32"
+- "UInt"
 - "Int64"
-- "UInt64"
 depends-member:
 - ["P15TurnstileCrypto6Random", "Int"]
 - ["P15TurnstileCrypto6Random", "Int16"]

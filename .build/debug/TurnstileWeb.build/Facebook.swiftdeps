@@ -13,35 +13,35 @@ provides-member:
 - ["V12TurnstileWeb13FacebookError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AccessToken"
-- !private "Array"
-- !private "URLComponents"
-- !private "JSONSerialization"
-- !private "BooleanLiteralType"
-- !private "StringLiteralType"
-- "Facebook"
-- "Credentials"
 - "TurnstileError"
 - "Account"
-- !private "URLRequest"
+- !private "APIConnectionError"
 - "OAuth2"
-- "String"
+- !private "??"
+- !private "Dictionary"
 - !private "=="
 - "AssignmentPrecedence"
-- "CastingPrecedence"
-- !private "APIConnectionError"
-- "Realm"
 - "FacebookError"
-- !private "InvalidAPIResponse"
-- !private "Bool"
-- !private "Dictionary"
 - "FacebookAccount"
+- "CastingPrecedence"
+- !private "Array"
 - !private "&&"
-- !private "??"
-- !private "+"
-- !private "UnsupportedCredentialsError"
-- !private "URL"
 - !private "IncorrectCredentialsError"
+- !private "JSONSerialization"
+- !private "InvalidAPIResponse"
+- "String"
+- "AccessToken"
+- !private "URLComponents"
+- "Facebook"
+- !private "StringLiteralType"
+- !private "+"
+- "Realm"
+- "Credentials"
+- !private "BooleanLiteralType"
+- !private "Bool"
+- !private "URLRequest"
+- !private "URL"
+- !private "UnsupportedCredentialsError"
 depends-member:
 - ["V12TurnstileWeb18APIConnectionError", "deinit"]
 - !private ["V12TurnstileWeb18APIConnectionError", "init"]
@@ -191,7 +191,9 @@ depends-member:
 - ["C12TurnstileWeb8Facebook", "init"]
 - ["C12TurnstileWeb8Facebook", "register"]
 - !private ["C12TurnstileWeb8Facebook", "urlSession"]
+- ["V12TurnstileWeb15FacebookAccount", "AccessToken"]
 - ["V12TurnstileWeb15FacebookAccount", "String"]
+- ["V12TurnstileWeb15FacebookAccount", "accessToken"]
 - ["V12TurnstileWeb15FacebookAccount", "deinit"]
 - ["V12TurnstileWeb15FacebookAccount", "init"]
 - ["V12TurnstileWeb15FacebookAccount", "uniqueID"]
@@ -447,12 +449,12 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
-interface-hash: "8f704a4438d249713d87bff7a3b5a5bc"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+interface-hash: "451fc7c6f97c11bf62cb02d46046a910"

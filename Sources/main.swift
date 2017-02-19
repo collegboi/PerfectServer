@@ -66,6 +66,7 @@ server.addRoutes(makeNotificationRoutes())
 server.addRoutes(makeFileUploadRoutes())
 server.addRoutes(makeSystemRoutes())
 server.addRoutes(makeLoginRoutes())
+server.addRoutes(makeBackupRoutes())
 
 // Setup logging
 let myLogger = RequestLogger()
@@ -104,6 +105,7 @@ server.documentRoot = "./webroot"
 //EmailController.sendEmail()
 
 FileController.setup()
+RemoteConfig.setup()
 
 //NotficationController.sendSingleNotfication(deviceID: "e4d8fbbe085dfa93e5212a3759a774bed6264b17a437ad94b51359c92105ab3a")
 

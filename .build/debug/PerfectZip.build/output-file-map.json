@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/master.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectZip-2.0.2/Sources/Utilities.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Utilities.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Utilities.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Utilities~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Utilities.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectZip-2.0.2/Sources/Zip.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Zip.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Zip.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Zip~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.build/Zip.swiftdeps"
+  }
+}

@@ -6,6 +6,7 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "52F974CF368298658E2D7486B02A88D6A4358B85" : 9223372036854775807,
     "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : 9223372036854775807,
+    "F31B56B8692846480EC5667F28FC22A254BD5832" : 9223372036854775807,
     "A47270401C4E12170692FDEB5A90EE8AC80F500F" : 9223372036854775807,
     "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : 9223372036854775807,
     "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : 9223372036854775807,
@@ -22,8 +23,9 @@
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "52F974CF368298658E2D7486B02A88D6A4358B85" : "PerfectServer\/Packages\/PerfectRequestLogger-1.0.1\/",
     "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : "PerfectServer\/Packages\/PerfectThread-2.0.4\/",
+    "F31B56B8692846480EC5667F28FC22A254BD5832" : "PerfectServer\/Packages\/PerfectZip-2.0.2\/",
     "A47270401C4E12170692FDEB5A90EE8AC80F500F" : "PerfectServer\/Packages\/StORM-1.0.1\/",
-    "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : "PerfectServer\/Packages\/PerfectTurnstileMongoDB-0.0.1\/",
+    "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : "PerfectServer\/Packages\/PerfectTurnstileMongoDB-1.0.0\/",
     "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : "PerfectServer\/Packages\/PerfectNotifications-2.0.3\/",
     "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : "PerfectServer\/Packages\/PerfectLogger-1.0.0\/",
     "D29B450053EFE7F16640D64672B63711A39399E1" : "PerfectServer\/Packages\/TurnstilePerfect-2.0.2\/",
@@ -102,6 +104,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectSideRepos\/Turnstile-Perfect.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D29B450053EFE7F16640D64672B63711A39399E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Zip.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F31B56B8692846480EC5667F28FC22A254BD5832"
     }
   ]
 }

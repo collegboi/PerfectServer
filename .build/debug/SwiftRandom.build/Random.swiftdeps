@@ -7,18 +7,18 @@ provides-member:
 - ["P11SwiftRandom6Random", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UInt64"
-- "Int32"
-- "Int16"
-- "UInt32"
-- "Random"
-- "UInt16"
 - "UInt8"
-- "String"
-- "Int"
 - "Int64"
 - "UInt"
+- "String"
+- "Random"
+- "Int16"
+- "UInt16"
 - "Int8"
+- "UInt32"
+- "Int"
+- "UInt64"
+- "Int32"
 depends-member:
 - ["P11SwiftRandom6Random", "Int"]
 - ["P11SwiftRandom6Random", "Int16"]

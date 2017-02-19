@@ -183,6 +183,31 @@ public class FileController {
         return result
     }
     
+    public func getContentsOfFile(_ filePath: String) -> String {
+        
+        var result: String = ""
+        
+        let thisFile = File( filePath)
+        
+        do {
+            try thisFile.open(.readWrite)
+            
+            defer {
+                thisFile.close()
+            }
+        } catch {
+            print("Error Opening")
+        }
+        
+        do {
+            result = try thisFile.readString()
+        } catch {
+            print("Error reading file")
+        }
+        
+        return result
+    }
+
     
     public func getContentsOfFile(_ filePath: String, _ name: String) -> String {
         
@@ -190,7 +215,7 @@ public class FileController {
         
         //setWorkingDirectory("./Languages/"+filePath)
         
-        let thisFile = File("Languages/" + filePath+"/"+name)
+        let thisFile = File( filePath+"/"+name)
         
         do {
             try thisFile.open(.readWrite)

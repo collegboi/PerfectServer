@@ -13,36 +13,38 @@ provides-member:
 - ["V12TurnstileWeb11GoogleError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "??"
-- !private "+"
-- "Credentials"
-- "TurnstileError"
+- "Google"
+- !private "IncorrectCredentialsError"
+- "URL"
+- !private "APIConnectionError"
 - "String"
 - !private "StringLiteralType"
-- !private "IncorrectCredentialsError"
-- "AccessToken"
-- "URL"
-- !private "InvalidAPIResponse"
-- "CastingPrecedence"
-- !private "UnicodeScalarType"
-- !private "UnsupportedCredentialsError"
-- !private "JSONSerialization"
-- !private "=="
-- !private "Array"
-- "Google"
-- !private "URLRequest"
-- "GoogleError"
-- "AssignmentPrecedence"
 - "Realm"
-- "OAuth2"
+- "Credentials"
+- !private "UnsupportedCredentialsError"
+- !private "Array"
+- !private "URLRequest"
 - "Account"
-- !private "APIConnectionError"
+- "CastingPrecedence"
+- "GoogleError"
+- !private "=="
+- !private "UnicodeScalarType"
+- "AssignmentPrecedence"
+- "TurnstileError"
+- !private "+"
+- !private "JSONSerialization"
 - "GoogleAccount"
+- "AccessToken"
+- !private "InvalidAPIResponse"
+- "OAuth2"
+- !private "??"
 depends-member:
 - ["V12TurnstileWeb18APIConnectionError", "deinit"]
 - !private ["V12TurnstileWeb18APIConnectionError", "init"]
 - ["C9Turnstile11AccessToken", "deinit"]
 - !private ["C9Turnstile11AccessToken", "string"]
+- !private ["P9Turnstile7Account", "accessToken"]
+- !private ["P9Turnstile7Account", "email"]
 - !private ["P9Turnstile7Account", "init"]
 - ["P9Turnstile7Account", "uniqueID"]
 - ["P9Turnstile7Account", ""]
@@ -94,7 +96,9 @@ depends-member:
 - !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "components"]
 - !private ["Ps10Comparable", "init"]
+- !private ["P9Turnstile11Credentials", "accessToken"]
 - ["P9Turnstile11Credentials", "deinit"]
+- !private ["P9Turnstile11Credentials", "email"]
 - !private ["P9Turnstile11Credentials", "init"]
 - !private ["P9Turnstile11Credentials", "string"]
 - ["P9Turnstile11Credentials", "uniqueID"]
@@ -196,8 +200,11 @@ depends-member:
 - ["C12TurnstileWeb6Google", "init"]
 - ["C12TurnstileWeb6Google", "register"]
 - !private ["C12TurnstileWeb6Google", "urlSession"]
+- ["V12TurnstileWeb13GoogleAccount", "AccessToken"]
 - ["V12TurnstileWeb13GoogleAccount", "String"]
+- ["V12TurnstileWeb13GoogleAccount", "accessToken"]
 - ["V12TurnstileWeb13GoogleAccount", "deinit"]
+- ["V12TurnstileWeb13GoogleAccount", "email"]
 - ["V12TurnstileWeb13GoogleAccount", "init"]
 - ["V12TurnstileWeb13GoogleAccount", "uniqueID"]
 - ["V12TurnstileWeb11GoogleError", "String"]
@@ -478,12 +485,12 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
-interface-hash: "fc0601b6ea08e6eac1c763b7819545f4"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+interface-hash: "d01470b89d596e0b3371f9107b56a713"

@@ -15,18 +15,18 @@ provides-member:
 - ["SS", "joining"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private ">"
 - !private "parentBacktrackRegex"
-- !private "print"
+- "String"
 - !private "..<"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "+="
 - "StringLiteralType"
 - !private "+"
+- !private "print"
+- !private "+="
+- !private "=="
+- "AssignmentPrecedence"
 - !private "UnicodeScalarType"
 - !private "-"
-- "String"
+- !private ">"
 depends-member:
 - !private ["Ps9AnyObject", "cleanPath"]
 - !private ["Ps9AnyObject", "cleanedPath"]

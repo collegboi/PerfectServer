@@ -27,8 +27,6 @@ class RCVersion {
     
     class func parseJSONConfig( key:String, dataStr : String) -> String {
         
-        var returnData = ""
-        
         let encoded = dataStr
         
         do {
@@ -47,7 +45,7 @@ class RCVersion {
             print(error)
         }
         
-        return returnData
+        return ""
     }
     
     

@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "7913ffed95a07638aa4ef167b1a335a7"
-build_time: [539728077, 863160000]
+options: "022efffcabf9ccfd31af133617ae552e"
+build_time: [540764169, 483029000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Decoder.swift": [539728050, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Encoder.swift": [539728048, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionArray.swift": [539728048, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionDecodable.swift": [539728048, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/ExtensionDictionary.swift": [539728048, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Gloss.swift": [539728048, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Gloss-1.2.0/Sources/Operators.swift": [539728048, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Decoder.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Encoder.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionArray.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionDecodable.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionDictionary.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Gloss.swift": [540764129, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Operators.swift": [540764129, 0]

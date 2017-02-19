@@ -49,23 +49,23 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "UUID"
+- "Decodable"
+- !private "Encoder"
 - "JSON"
+- "RawRepresentable"
+- "Encodable"
+- "~~>"
+- "CastingPrecedence"
+- "UInt64"
+- !private "Decoder"
+- "UInt32"
+- "Int64"
+- "String"
+- "UUID"
+- "Decimal"
+- "<~~"
 - "URL"
 - "Int32"
-- "<~~"
-- "UInt32"
-- "UInt64"
-- "Decimal"
-- "Int64"
-- !private "Encoder"
-- !private "Decoder"
-- "Encodable"
-- "CastingPrecedence"
-- "RawRepresentable"
-- "String"
-- "Decodable"
-- "~~>"
 depends-member:
 - !private ["Sa", "deinit"]
 - !private ["V5Gloss7Decoder", "decode"]

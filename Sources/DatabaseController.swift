@@ -30,6 +30,59 @@ class DatabaseController {
         return client.getDatabase(name: "locql")
     }
     
+    static func getAllColectionsArr()-> [String] {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database, assuming "test" exists
+        let db = connectDatabase(client)
+        
+        let collections: [String] = db.collectionNames()
+        
+        defer {
+            self.closeMongoDB(db, client: client)
+        }
+        
+        return collections
+        
+    }
+    
+    static func retrieveCollectionString(_ collectioName: String ) -> String {
+        
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database
+        let db = connectDatabase(client)
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return ""
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        
+        // Perform a "find" on the perviously defined collection
+        let fnd = collection.find()
+        
+        guard let jsonStr = fnd?.jsonString else {
+            return ""
+        }
+        
+        return jsonStr
+        
+    }
+    
+    static func closeMongoDB(_ database: MongoDatabase, client: MongoClient ) {
+        database.close()
+        client.close()
+    }
+    
     static func closeMongoDB(_ collection: MongoCollection, database: MongoDatabase, client: MongoClient ) {
         collection.close()
         database.close()
@@ -47,8 +100,7 @@ class DatabaseController {
         let collections = db.collectionNames()
         
         defer {
-            db.close()
-            client.close()
+            self.closeMongoDB(db, client: client)
         }
         
         do {
@@ -269,6 +321,36 @@ class DatabaseController {
 //            return "Failure"
 //        }
     }
+    
+    static func retrieveCollectionQueryStr(_ collectioName: String, query: String ) -> String {
+        
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        // set database
+        let db = connectDatabase(client)
+        
+        guard let query = try? BSON.init(json: query) else {
+            return ""
+        }
+        
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return ""
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        // Perform a "find" on the perviously defined collection
+        let fnd = collection.find(query: query)
+        
+        return fnd?.jsonString ?? ""
+    }
+
     
     
     @discardableResult

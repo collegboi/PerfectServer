@@ -1,6 +1,6 @@
 #!/bin/bash
 APP_NAME="MyAwesomeProject"  
-USERNAME="ubuntu"  
+USERNAME="collegboi"  
 HOME="/home/collegboi"  
 APP_FOLDER="PerfectServer/app"  
 RUNNING_FOLDER="$HOME/running"  

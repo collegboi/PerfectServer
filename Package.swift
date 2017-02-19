@@ -22,6 +22,10 @@ let package = Package(
         .Package(
             url: "https://github.com/PerfectlySoft/Perfect-SMTP.git",
             majorVersion: 1, minor: 0
+        ),
+        .Package(
+            url: "https://github.com/PerfectlySoft/Perfect-Zip.git",
+            majorVersion: 2, minor: 0
         )
     ]
 )

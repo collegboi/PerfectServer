@@ -7,8 +7,8 @@ provides-member:
 - ["P9Turnstile14TurnstileError", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "TurnstileError"
 - "Error"
+- "TurnstileError"
 - "CustomStringConvertible"
 depends-member:
 - ["Ps23CustomStringConvertible", ""]
@@ -26,5 +26,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 interface-hash: "75c89b13251ec3bce982bdfc61865510"

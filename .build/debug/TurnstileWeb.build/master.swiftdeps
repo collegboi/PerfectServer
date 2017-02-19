@@ -1,12 +1,16 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "bd596b782f65267389829dab100e8f61"
-build_time: [539728096, 5487000]
+options: "8fc2c0cba981c963a82fb8a4726dc6f1"
+build_time: [540764185, 536527000]
 inputs:
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/AuthorizationCode.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/Facebook.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/Google.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/OAuth2.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/OAuth2Error.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/OAuth2Token.swift": [539728044, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/URLSession+Turnstile.swift": [539728043, 0]
-  "/Users/Timbarnard/Documents/Server/PerfectServer/Packages/Turnstile-1.0.3/Sources/TurnstileWeb/WebMemoryRealm.swift": [539728044, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/URLSession+Turnstile.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/WebMemoryRealm.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Digits.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Facebook.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Google.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthDelegator.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthEcho.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthParameters.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/AuthorizationCode.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Error.swift": [540764123, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Token.swift": [540764123, 0]

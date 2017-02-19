@@ -20,20 +20,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "+"
+- "<"
 - ">="
+- "<="
 - "Duration"
-- "Moment"
+- ">"
 - "!="
+- "Moment"
+- "-"
 - "=="
 - "~="
-- "<="
-- "<"
-- "-"
 - "Bool"
 - !private "FloatLiteralType"
 - !private "!"
 - !private "IntegerLiteralType"
-- ">"
 depends-member:
 - ["Sb", "deinit"]
 - !private ["Ps10Comparable", "add"]

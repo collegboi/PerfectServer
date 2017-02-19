@@ -7,19 +7,19 @@ provides-member:
 - ["C9Turnstile11MemoryRealm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AccountTakenError"
-- "String"
-- !private "IncorrectCredentialsError"
 - "Credentials"
+- "Account"
 - !private "MemoryAccount"
+- !private "UsernamePassword"
+- !private "IncorrectCredentialsError"
 - !private "=="
+- !private "AccountTakenError"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- !private "UnsupportedCredentialsError"
-- !private "UsernamePassword"
-- "Realm"
 - "MemoryRealm"
-- "Account"
+- "Realm"
+- !private "UnsupportedCredentialsError"
+- "String"
 depends-member:
 - !private ["P9Turnstile7Account", "init"]
 - !private ["P9Turnstile7Account", "uniqueID"]
@@ -187,5 +187,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 interface-hash: "bfc002cb3bab0c2a8d4135a281da2894"

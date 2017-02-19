@@ -6,19 +6,19 @@ provides-member:
 - ["SS", "decodeHTML"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Character"
-- !private "UnicodeScalar"
+- "String"
 - !private "strtoul"
 - !private "Int32"
-- "Dictionary"
-- "StringLiteralType"
+- "UnicodeScalarType"
 - !private "UInt32"
 - !private "||"
-- "AssignmentPrecedence"
-- "ExtendedGraphemeClusterType"
-- "String"
 - !private "..<"
-- "UnicodeScalarType"
+- "StringLiteralType"
+- !private "UnicodeScalar"
+- "AssignmentPrecedence"
+- !private "Character"
+- "Dictionary"
+- "ExtendedGraphemeClusterType"
 depends-member:
 - !private ["Ps9AnyObject", "append"]
 - !private ["Ps9AnyObject", "decode"]

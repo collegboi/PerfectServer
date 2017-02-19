@@ -10,22 +10,22 @@ provides-member:
 - ["V9Turnstile21AuthenticationDetails", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "TernaryPrecedence"
-- "Subject"
-- !private "!="
-- "AuthenticationDetails"
-- "String"
-- "AssignmentPrecedence"
-- "Credentials"
-- !private "Sesssion"
-- "Account"
-- "Turnstile"
+- !private "Session"
 - "Bool"
 - "BooleanLiteralType"
+- "Turnstile"
+- "Credentials"
+- "Account"
+- "AuthenticationDetails"
+- "String"
+- !private "!="
+- "AssignmentPrecedence"
+- "TernaryPrecedence"
+- "Subject"
 depends-member:
 - ["P9Turnstile7Account", "deinit"]
 - !private ["Ps9AnyObject", "AuthenticationDetails"]
-- !private ["Ps9AnyObject", "Sesssion"]
+- !private ["Ps9AnyObject", "Session"]
 - !private ["Ps9AnyObject", "authDetails"]
 - !private ["Ps9AnyObject", "realm"]
 - !private ["Ps9AnyObject", "restore"]
@@ -54,16 +54,16 @@ depends-member:
 - !private ["P9Turnstile5Realm", "authenticate"]
 - ["P9Turnstile5Realm", "deinit"]
 - !private ["P9Turnstile5Realm", "register"]
+- !private ["V9Turnstile7Session", "deinit"]
 - !private ["P9Turnstile14SessionManager", "createSession"]
 - ["P9Turnstile14SessionManager", "deinit"]
 - !private ["P9Turnstile14SessionManager", "destroySession"]
 - !private ["P9Turnstile14SessionManager", "restoreAccount"]
-- !private ["V9Turnstile8Sesssion", "deinit"]
 - ["SS", "deinit"]
 - ["C9Turnstile7Subject", "AuthenticationDetails"]
 - ["C9Turnstile7Subject", "Bool"]
 - ["C9Turnstile7Subject", "Credentials"]
-- !private ["C9Turnstile7Subject", "Sesssion"]
+- !private ["C9Turnstile7Subject", "Session"]
 - ["C9Turnstile7Subject", "String"]
 - ["C9Turnstile7Subject", "Turnstile"]
 - ["C9Turnstile7Subject", "authDetails"]
@@ -97,8 +97,8 @@ depends-nominal:
 - !private "Ps25LosslessStringConvertible"
 - "Sq"
 - "P9Turnstile5Realm"
+- !private "V9Turnstile7Session"
 - "P9Turnstile14SessionManager"
-- !private "V9Turnstile8Sesssion"
 - "SS"
 - "C9Turnstile7Subject"
 - "C9Turnstile9Turnstile"
@@ -116,5 +116,5 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-- "/Users/Timbarnard/Documents/Server/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 interface-hash: "0589dce81b513fa0edce4f7574500286"
