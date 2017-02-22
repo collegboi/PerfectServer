@@ -459,6 +459,48 @@ class DatabaseController {
     }
     
     @discardableResult
+    static func updateDocument(_ apID: String,_ collectionName: String, jsonStr: String, query: String) -> String {
+        
+        var objectID = ""
+        var databaseName = ""
+        
+        
+        guard let document = try? BSON.init(json: jsonStr) else {
+            return ""
+        }
+        
+        guard let queryDocument = try? BSON.init(json: query) else {
+            return ""
+        }
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        guard let db = connectDatabase(client, apID: apID, name: databaseName) else {
+            return "Error with connecting"
+        }
+        
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectionName) else {
+            return "Error with collection name"
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+            
+        let _ = collection.update(selector: queryDocument, update: document)
+        
+        return "Success"
+    }
+
+    
+    
+    @discardableResult
     static func updateInsertDocument(_ apID: String,_ collectionName: String, jsonStr: String ) -> String {
     
         var objectID = ""
@@ -483,6 +525,8 @@ class DatabaseController {
         guard let document = try? BSON.init(json: jsonStr) else {
             return ""
         }
+        document.append(key: "deleted", string: "0")
+        document.append(key: "updated", string: self.nowDate)
         
         // open a connection
         let client = openMongoDB()
@@ -504,6 +548,7 @@ class DatabaseController {
         }
         
         if objectID == "" {
+            document.append(key: "inserted", string: self.nowDate)
             self.insertDocument(apID, collectionName, jsonStr: jsonStr)
         }
         else {
@@ -669,16 +714,16 @@ class DatabaseController {
     
     }
     
-    static func checkIfExist(_ apID: String,_ collectioName: String, objects: [String:String]  ) -> Bool {
+    static func checkIfExist(_ apID: String,_ collectioName: String, objects: [String:String]  ) -> (Bool, String ) {
         
         let client = openMongoDB()
         
         guard let db = connectDatabase(client, apID: apID) else {
-            return false
+            return ( false, "error" )
         }
         
         guard let collection = db.getCollection(name: collectioName) else {
-            return false
+            return ( false, "error" )
         }
         
         defer {
@@ -701,14 +746,15 @@ class DatabaseController {
             }
             
             if arr.count == 1 {
-                return true
+                
+                return ( true, "[\(arr.joined(separator: ","))]" )
             }
             
         } else {
-            return false
+            return ( false, "error" )
         }
 
-        return false
+        return ( false, "error" )
     }
     
 

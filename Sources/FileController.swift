@@ -213,22 +213,26 @@ public class FileController {
         
         var result: String = ""
         
-        //setWorkingDirectory("./Languages/"+filePath)
+        var thisFile: File?
         
-        let thisFile = File( filePath+"/"+name)
+        if filePath != "" {
+            thisFile = File( filePath+"/"+name)
+        } else {
+            thisFile = File( name)
+        }
         
         do {
-            try thisFile.open(.readWrite)
+            try thisFile!.open(.readWrite)
             
             defer {
-                thisFile.close()
+                thisFile!.close()
             }
         } catch {
             print("Error Opening")
         }
         
         do {
-            result = try thisFile.readString()
+            result = try thisFile!.readString()
         } catch {
             print("Error reading file")
         }

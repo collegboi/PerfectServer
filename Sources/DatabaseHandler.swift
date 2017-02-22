@@ -361,8 +361,8 @@ func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
     if collectionName == "Tables" {
         returning = Storage.getAllCollections(appkey)
-    } else if collectionName == "" {
-        returning = Storage.getAllCollections(appkey)
+    //} else if collectionName == "" {
+        //returning = Storage.getAllCollections(appkey)
     } else {
         returning = DatabaseController.retrieveCollection(appkey, collectionName)
     }

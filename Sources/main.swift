@@ -67,6 +67,7 @@ server.addRoutes(makeFileUploadRoutes())
 server.addRoutes(makeSystemRoutes())
 server.addRoutes(makeLoginRoutes())
 server.addRoutes(makeBackupRoutes())
+server.addRoutes(makeLogsRoutes())
 
 // Setup logging
 let myLogger = RequestLogger()
