@@ -15,9 +15,9 @@ import MongoDB
 public func makeTranslationRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/translation/", handler: sendTranslation)
+    routes.add(method: .post, uri: "/api/{appkey}/translation/", handler: sendTranslation)
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-    routes.add(method: .get, uri: "/translation/{translation}/{version}", handler: getTranslationFile)
+    routes.add(method: .get, uri: "/api/{appkey}/translation/{translation}/{version}", handler: getTranslationFile)
     //routes.add(method: .get, uri: "/translation/{translation}/{objectid}/", handler: getTrackerIssuesObject)
     
     // Check the console to see the logical structure of what was installed.
