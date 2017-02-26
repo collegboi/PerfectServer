@@ -21,7 +21,7 @@ public func makeLoginRoutes() -> Routes {
     routes.add(method: .get, uri: "/api/{appkey}/serverReset/{username}/{password}", handler: serverResetHandler)
     //routes.add(method: .get, uri: "/login/{uniquekey}/{username}/{password}", handler: loginHandler)
     
-    // Check the console to see the logical structure of what was installed.
+    // Check the console to see the logical stucture of what was installed.
     print("\(routes.navigator.description)")
     
     return routes
