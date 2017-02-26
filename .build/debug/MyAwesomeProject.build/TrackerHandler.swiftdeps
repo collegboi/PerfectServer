@@ -7,17 +7,17 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- !private "print"
+- !private "ResultBody"
 - "getTrackerIssues"
+- !private "IssueTracker"
 - "HTTPResponse"
 - "HTTPRequest"
-- !private "IssueTracker"
-- "makeTrackerRoutes"
-- "sendTrackerIssue"
-- "Routes"
-- !private "ResultBody"
 - "AssignmentPrecedence"
+- !private "StringLiteralType"
+- !private "print"
+- "Routes"
+- "sendTrackerIssue"
+- "makeTrackerRoutes"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getAllIssues"]

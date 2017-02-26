@@ -7,17 +7,17 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "makeTranslationRoutes"
-- !private "StringLiteralType"
-- !private "print"
-- !private "Translations"
-- "sendTranslation"
 - "getTranslationFile"
-- "HTTPResponse"
 - "AssignmentPrecedence"
-- "Routes"
-- "HTTPRequest"
+- !private "Translations"
 - !private "ResultBody"
+- !private "StringLiteralType"
+- "HTTPRequest"
+- "HTTPResponse"
+- "makeTranslationRoutes"
+- "sendTranslation"
+- !private "print"
+- "Routes"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getTranslationFile"]

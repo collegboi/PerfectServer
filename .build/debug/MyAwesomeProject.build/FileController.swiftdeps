@@ -7,19 +7,20 @@ provides-member:
 - ["C16MyAwesomeProject14FileController", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
 - !private "Dir"
-- "FileController"
 - !private "!"
-- "Bool"
 - !private "+"
-- !private "_FileControllerSharedInstance"
 - !private "File"
-- !private "BooleanLiteralType"
-- "String"
 - !private "=="
 - "AssignmentPrecedence"
+- !private "_FileControllerSharedInstance"
+- "Bool"
+- !private "!="
+- "String"
+- !private "StringLiteralType"
+- "FileController"
 - !private "UnicodeScalarType"
+- !private "BooleanLiteralType"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "Dir"]
@@ -363,4 +364,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "4898e2ad61c8b67412fca27663c9fa62"
+interface-hash: "16a4c7702b2b4578c60d46f1a6525f6f"

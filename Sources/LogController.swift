@@ -23,4 +23,9 @@ class LogController {
         return (FileController.sharedFileHandler?.getContentsOfFile("", "requests.log"))!
     }
     
+    static func getDatabaseLogs() -> String {
+        
+        return (FileController.sharedFileHandler?.getContentsOfFile("/var/log/mongodb/mongod.log"))!
+    }
+    
 }

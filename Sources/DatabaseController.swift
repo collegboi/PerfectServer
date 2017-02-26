@@ -606,6 +606,35 @@ class DatabaseController {
         return  true
     }
     
+    static func removeCollection(_ apID: String,_ collectioName: String ) -> Bool {
+        
+        
+        // define collection
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        guard let db = connectDatabase(client, apID: apID) else {
+            return false
+        }
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return false
+        }
+        
+        // Here we clean up our connection,
+        // by backing out in reverse order created
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let _ = collection.drop()
+        
+        return  true
+    }
+
+    
     static func removeDocument(_ apID: String,_ collectioName: String, _ documentID: String ) -> Bool {
     
         

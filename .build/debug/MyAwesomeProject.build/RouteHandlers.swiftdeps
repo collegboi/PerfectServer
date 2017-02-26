@@ -12,20 +12,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- "makeRoutes"
-- !private "Array"
 - "indexHandler"
+- "makeRoutes"
 - "rawPOSTHandler"
-- "echo2Handler"
-- "echoHandler"
-- !private "UnicodeScalarType"
-- "HTTPRequest"
-- !private "print"
 - "Routes"
-- "HTTPResponse"
+- "echoHandler"
+- !private "print"
+- "echo2Handler"
 - !private "??"
 - "echo3Handler"
+- "HTTPRequest"
+- "HTTPResponse"
 - "echo4Handler"
+- !private "Array"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Sa", "Element"]

@@ -209,6 +209,17 @@ public class FileController {
     }
 
     
+    public func getContentsOfConfigFile() -> String {
+    
+        return self.getContentsOfFile("ApplicationConfig.json")
+    }
+    
+    public func sendContentsOfConfigFile(_ jsonData: String ) -> Bool {
+        
+        return self.updateContentsOfFile("ApplicationConfig.json", jsonData)
+    }
+
+    
     public func getContentsOfFile(_ filePath: String, _ name: String) -> String {
         
         var result: String = ""

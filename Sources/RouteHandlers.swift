@@ -61,5 +61,3 @@ func rawPOSTHandler(request: HTTPRequest, _ response: HTTPResponse) {
     response.appendBody(string: "<html><body>Raw POST handler: You POSTED to path \(request.path) with content-type \(request.header(.contentType)) and POST body \(request.postBodyString)</body></html>")
     response.completed()
 }
-
-

@@ -1,0 +1,205 @@
+
+{
+    "mainSettings": {
+      "myurl": "www.timothy.org",
+      "ditAuthn": "https://idp.dit.ie/idp/Authn/UserPassword",
+      "url": "www.dit.ie",
+      "ditURL": "https://testtimetables.dit.ie/Web/Timetable"
+    },
+    "controllers": [
+      {
+        "name": "ViewController",
+        "objectsList": [
+          {
+            "objectName": "2",
+            "objectProperties": {
+              "fontSize": 20,
+              "textAlignment": 1,
+              "isHidden": 0,
+              "placeholder": "Enter Name",
+              "backgroundColor": "colorWhite",
+              "textColor": "colorBlack",
+              "text": "hello world",
+              "type": "UITextField",
+              "font": "Avenir Next",
+              "isUserInteractionEnabled": 1,
+              "isEnabled": 1
+            }
+          },
+          {
+            "objectName": "10",
+            "objectProperties": {
+              "fontSize": 20,
+              "textAlignment": 1,
+              "isHidden": 0,
+              "textColor": "colorWhite",
+              "isEnabled": 1,
+              "text": "Testing 1234",
+              "type": "UILabel",
+              "font": "Avenir Next",
+              "isUserInteractionEnabled": 1,
+              "backgroundColor": "colorRed"
+            }
+          },
+          {
+            "objectName": "20",
+            "objectProperties": {
+              "contentMode": 1,
+              "isHidden": 0,
+              "type": "UIImageView",
+              "image": "OldFolk",
+              "isUserInteractionEnabled": 1
+            }
+          },
+          {
+            "objectName": "5",
+            "objectProperties": {
+              "fontSize": 20,
+              "isHidden": 0,
+              "isUserInteractionEnabled": 1,
+              "titleColor": "colorWhite",
+              "title": "Press",
+              "fontName": "Avenir-Heavy",
+              "cornerRadius": 20,
+              "type": "UIButton",
+              "backgroundColor": "colorBlue",
+              "isEnabled": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "HelpPageViewController",
+        "objectsList": [
+          {
+            "objectName": "HelpURLs",
+            "objectProperties": {
+              "Help3": "https://timothybarnard.org/images/help/notifications_help.png",
+              "Help2": "https://timothybarnard.org/images/help/edit_class_help.png",
+              "Help5": "https://timothybarnard.org/images/help/login_help.png",
+              "type": "Object",
+              "Help1": "https://timothybarnard.org/images/help/refresh_classes.png",
+              "Help4": "https://timothybarnard.org/images/help/dit_timetable_help.png"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DITWebViewController",
+        "objectsList": [
+          {
+            "objectName": "giphyURL",
+            "objectProperties": {
+              "giphy4": "https://i.giphy.com/12vJgj7zMN3jPy.gif",
+              "giphy1": "https://media.giphy.com/media/ukmZRuEqc2Rbi/giphy.gif",
+              "giphy5": "https://i.giphy.com/syBlSgDbjsMHC.gif",
+              "giphy2": "https://i.giphy.com/FlWgXEtj5aM5G.gif",
+              "type": "Object",
+              "giphy3": "https://i.giphy.com/10ON6bZYZZL1UQ.gif"
+            }
+          }
+        ]
+      },
+      {
+        "name": " ClassTableViewCell",
+        "objectsList": [
+          {
+            "objectName": "currentClass",
+            "objectProperties": {
+              "type": "Object",
+              "backgroundColor": "navRed",
+              "textColor": "navBar"
+            }
+          },
+          {
+            "objectName": "className",
+            "objectProperties": {
+              "type": "Object",
+              "backgroundColor": "colorBlue",
+              "textColor": "colorBlack"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DayTableViewController",
+        "objectsList": [
+          {
+            "objectName": "tableView",
+            "objectProperties": {
+              "type": "Object",
+              "allowsSelection": 1,
+              "isHidden": 0
+            }
+          }
+        ]
+      },
+      {
+        "name": "EditClassTableViewController",
+        "objectsList": [
+          {
+            "objectName": "deleteLabel",
+            "objectProperties": {
+              "type": "Object",
+              "text": "deleteLabel"
+            }
+          },
+          {
+            "objectName": "saveLabel",
+            "objectProperties": {
+              "type": "Object",
+              "text": "saveLabel"
+            }
+          }
+        ]
+      }
+    ],
+    "colors": [
+      {
+        "red": 236.05941772461,
+        "alpha": 1,
+        "name": "colorWhite",
+        "blue": 238.25254821777,
+        "green": 236.85691833496
+      },
+      {
+        "red": 0,
+        "alpha": 1,
+        "name": "colorBlack",
+        "blue": 0,
+        "green": 0
+      },
+      {
+        "red": 255,
+        "alpha": 0.30492570996284,
+        "name": "colorRed",
+        "blue": 187.50587463379,
+        "green": 0
+      },
+      {
+        "red": 221.69999694824,
+        "alpha": 0.43002346158028,
+        "name": "colorBlue",
+        "blue": 255,
+        "green": 219.11000061035
+      },
+      {
+        "red": 240.02349853516,
+        "alpha": 0.49021142721176,
+        "name": "myColor",
+        "blue": 0,
+        "green": 60.305404663086
+      },
+      {
+        "red": 148.13999938965,
+        "alpha": 1,
+        "name": "navColor",
+        "blue": 136.16999816895,
+        "green": 77.959999084473
+      }
+    ],
+    "languagesList": [
+      "English",
+      "French"
+    ]
+}

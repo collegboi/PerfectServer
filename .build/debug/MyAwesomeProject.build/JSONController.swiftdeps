@@ -7,11 +7,11 @@ provides-member:
 - ["C16MyAwesomeProject14JSONController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- "JSONController"
 - !private "print"
 - "AssignmentPrecedence"
 - "CastingPrecedence"
-- "JSONController"
-- !private "StringLiteralType"
 - "String"
 depends-member:
 - !private ["Ps9AnyObject", "String"]
@@ -103,6 +103,7 @@ depends-member:
 - ["C16MyAwesomeProject14JSONController", "deinit"]
 - ["C16MyAwesomeProject14JSONController", "init"]
 - ["C16MyAwesomeProject14JSONController", "parseDatabase"]
+- ["C16MyAwesomeProject14JSONController", "parseDatabaseAny"]
 - ["C16MyAwesomeProject14JSONController", "parseJSONStr"]
 - ["C16MyAwesomeProject14JSONController", "parseJSONToArrDic"]
 - ["C16MyAwesomeProject14JSONController", "parseJSONToDict"]
@@ -401,4 +402,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "97874568aa08a57aadcdf250246b9505"
+interface-hash: "623ea8f17100aa107576d4a069616565"

@@ -8,10 +8,10 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- !private "RCVersion"
 - "String"
 - "ResultBody"
 - !private "Dictionary"
+- !private "RCVersion"
 depends-member:
 - !private ["Ps9AnyObject", "RCVersion"]
 - !private ["Ps9AnyObject", "init"]

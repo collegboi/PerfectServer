@@ -9,25 +9,27 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- "HTTPResponse"
-- !private "RCVersion"
-- "HTTPRequest"
-- "sendRemoteConfig"
-- !private "RemoteConfig"
-- "makeRCRoutes"
-- !private "print"
 - "indexRCHandler"
 - "getRemoteConfig"
-- "Routes"
 - !private "ResultBody"
-- !private "Array"
-- "AssignmentPrecedence"
+- "HTTPResponse"
+- !private "??"
+- "HTTPRequest"
 - !private "UnicodeScalarType"
+- "Routes"
+- !private "RemoteConfig"
+- "makeRCRoutes"
+- "sendRemoteConfig"
+- !private "print"
+- !private "RCVersion"
+- "AssignmentPrecedence"
+- !private "Array"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
-- !private ["Ps9AnyObject", "getContentsOfFile"]
+- !private ["Ps9AnyObject", "getConfigVerison"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "sendRemoteConfig"]
+- !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "successBody"]
 - !private ["Sa", "Element"]
 - ["Sa", "deinit"]
@@ -37,22 +39,32 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "subscript"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Element"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "get"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "post"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "get"]
@@ -60,6 +72,7 @@ depends-member:
 - !private ["Ps9Equatable", "post"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
@@ -71,6 +84,7 @@ depends-member:
 - ["P11PerfectHTTP11HTTPRequest", "deinit"]
 - !private ["P11PerfectHTTP11HTTPRequest", "path"]
 - !private ["P11PerfectHTTP11HTTPRequest", "postBodyString"]
+- !private ["P11PerfectHTTP11HTTPRequest", "urlVariables"]
 - !private ["P11PerfectHTTP12HTTPResponse", "appendBody"]
 - !private ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["P11PerfectHTTP12HTTPResponse", "deinit"]
@@ -79,15 +93,28 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "post"]
 - !private ["Ps9Indexable", "Element"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
 - !private ["Ps13IndexableBase", "Element"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["P10PerfectLib15JSONConvertible", "Element"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -108,7 +135,9 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["C16MyAwesomeProject12RemoteConfig", "getContentsOfFile"]
+- ["C16MyAwesomeProject12RemoteConfig", "deinit"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "getConfigVerison"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "shared"]
 - !private ["C16MyAwesomeProject10ResultBody", "errorBody"]
 - !private ["C16MyAwesomeProject10ResultBody", "successBody"]
 - ["P11PerfectHTTP14RouteNavigator", "deinit"]
@@ -118,6 +147,15 @@ depends-member:
 - !private ["V11PerfectHTTP6Routes", "init"]
 - !private ["V11PerfectHTTP6Routes", "navigator"]
 - !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -143,6 +181,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
 - !private "Ps9AnyObject"
 - "Sa"
@@ -157,10 +196,12 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
 - !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
@@ -172,11 +213,13 @@ depends-nominal:
 - !private "Ps8Hashable"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
 - !private "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
+- !private "Ps16IteratorProtocol"
 - !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
@@ -197,11 +240,12 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
-- !private "C16MyAwesomeProject12RemoteConfig"
+- "C16MyAwesomeProject12RemoteConfig"
 - !private "C16MyAwesomeProject10ResultBody"
 - "P11PerfectHTTP14RouteNavigator"
 - "V11PerfectHTTP6Routes"
 - !private "Ps8Sequence"
+- !private "Vs5Slice"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"

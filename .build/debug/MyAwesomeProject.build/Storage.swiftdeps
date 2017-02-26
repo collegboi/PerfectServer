@@ -7,13 +7,13 @@ provides-member:
 - ["C16MyAwesomeProject7Storage", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "Storage"
 - !private "StringLiteralType"
 - !private "print"
+- !private "DatabaseController"
 - "Int"
 - !private "BooleanLiteralType"
 - "Bool"
-- "Storage"
-- !private "DatabaseController"
 - "String"
 - !private "=="
 - "AssignmentPrecedence"
@@ -23,6 +23,7 @@ depends-member:
 - !private ["Ps9AnyObject", "createUniqueIndex"]
 - !private ["Ps9AnyObject", "dropCollection"]
 - !private ["Ps9AnyObject", "getAllCollections"]
+- !private ["Ps9AnyObject", "getAllDatabases"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertCollection"]
 - !private ["Ps9AnyObject", "insertDocument"]
@@ -31,6 +32,8 @@ depends-member:
 - !private ["Ps9AnyObject", "removeIndex"]
 - !private ["Ps9AnyObject", "renameCollection"]
 - !private ["Ps9AnyObject", "retrieveCollectionQuery"]
+- !private ["Ps9AnyObject", "retrieveCollectionQueryStr"]
+- !private ["Ps9AnyObject", "retrieveCollectionString"]
 - !private ["Ps9AnyObject", "updateInsertDocument"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -65,11 +68,14 @@ depends-member:
 - !private ["C16MyAwesomeProject18DatabaseController", "createUniqueIndex"]
 - !private ["C16MyAwesomeProject18DatabaseController", "dropCollection"]
 - !private ["C16MyAwesomeProject18DatabaseController", "getAllCollections"]
+- !private ["C16MyAwesomeProject18DatabaseController", "getAllDatabases"]
 - !private ["C16MyAwesomeProject18DatabaseController", "insertCollection"]
 - !private ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
 - !private ["C16MyAwesomeProject18DatabaseController", "removeIndex"]
 - !private ["C16MyAwesomeProject18DatabaseController", "renameCollection"]
 - !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQuery"]
+- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQueryStr"]
+- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionString"]
 - !private ["C16MyAwesomeProject18DatabaseController", "updateInsertDocument"]
 - !private ["Vs10Dictionary", "Iterator"]
 - ["Vs10Dictionary", "deinit"]
@@ -154,6 +160,8 @@ depends-member:
 - ["C16MyAwesomeProject7Storage", "dropCollection"]
 - ["C16MyAwesomeProject7Storage", "dropIndex"]
 - ["C16MyAwesomeProject7Storage", "getAllCollections"]
+- ["C16MyAwesomeProject7Storage", "getAllDatabases"]
+- ["C16MyAwesomeProject7Storage", "getCollectionStr"]
 - ["C16MyAwesomeProject7Storage", "getQueryCollection"]
 - ["C16MyAwesomeProject7Storage", "init"]
 - ["C16MyAwesomeProject7Storage", "parseAndStoreObject"]
@@ -399,4 +407,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "7d115e2a2f26b45c9a3c06880f9c1f8b"
+interface-hash: "c118046dff1456db4ca38504b9af0d8a"

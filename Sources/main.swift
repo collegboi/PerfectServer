@@ -57,6 +57,8 @@ let authJSONRoutes = makeJSONAuthRoutes("/api/v1")
 server.addRoutes(authWebRoutes)
 server.addRoutes(authJSONRoutes)
 
+server.addRoutes(mainHandler())
+
 server.addRoutes(makeRoutes())
 server.addRoutes(makeDatabaseRoutes())
 server.addRoutes(makeRCRoutes())
@@ -68,6 +70,7 @@ server.addRoutes(makeSystemRoutes())
 server.addRoutes(makeLoginRoutes())
 server.addRoutes(makeBackupRoutes())
 server.addRoutes(makeLogsRoutes())
+server.addRoutes(makeConfigSettingRoutes())
 
 // Setup logging
 let myLogger = RequestLogger()

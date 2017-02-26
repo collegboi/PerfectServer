@@ -7,73 +7,146 @@ provides-member:
 - ["C16MyAwesomeProject12RemoteConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "JSONController"
 - !private "StringLiteralType"
-- !private "print"
-- !private "BooleanLiteralType"
-- "Bool"
-- !private "!"
-- "RemoteConfig"
+- !private "FileController"
+- !private "+"
+- "Int"
+- !private "!="
+- !private "Storage"
+- !private "AnyObject"
+- "IntegerLiteralType"
+- "FloatLiteralType"
+- !private "_RemoteConfig"
 - "String"
+- !private "%"
+- "CastingPrecedence"
+- "RemoteConfig"
 - "AssignmentPrecedence"
-- "Dir"
-- !private "File"
+- !private "=="
+- !private "~="
 depends-member:
-- !private ["Ps9AnyObject", "Dir"]
-- !private ["Ps9AnyObject", "File"]
-- !private ["Ps9AnyObject", "close"]
-- !private ["Ps9AnyObject", "createWorkingDirectory"]
+- !private ["Ps9AnyObject", "FileController"]
+- !private ["Ps9AnyObject", "JSONController"]
+- !private ["Ps9AnyObject", "RemoteConfig"]
+- !private ["Ps9AnyObject", "Storage"]
+- !private ["Ps9AnyObject", "_RemoteConfig"]
+- !private ["Ps9AnyObject", "getCollectionStr"]
+- !private ["Ps9AnyObject", "getContentsOfFile"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "open"]
-- !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "readString"]
-- !private ["Ps9AnyObject", "write"]
+- !private ["Ps9AnyObject", "parseDatabaseAny"]
+- !private ["Ps9AnyObject", "requestNo"]
+- !private ["Ps9AnyObject", "sharedFileHandler"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Iterator"]
+- !private ["Sa", "_Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Iterator"]
+- !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "Iterator"]
+- !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps17BitwiseOperations", "Stride"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["Ps7CVarArg", "Index"]
+- !private ["Ps7CVarArg", "Iterator"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "SubSequence"]
+- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Vs9Character", "deinit"]
+- !private ["Ps7CVarArg", "subscript"]
+- !private ["Vs11ClosedRange", "deinit"]
+- !private ["Ps10Collection", "Index"]
+- !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
+- !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "subscript"]
+- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Vs20CountableClosedRange", "deinit"]
+- !private ["Vs14CountableRange", "deinit"]
+- !private ["Ps28CustomDebugStringConvertible", "Index"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
+- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
+- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Index"]
+- !private ["Ps17CustomReflectable", "Iterator"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "SubSequence"]
+- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps17CustomReflectable", "subscript"]
+- !private ["Ps23CustomStringConvertible", "Index"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "SubSequence"]
+- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["V10PerfectLib3Dir", "create"]
-- ["V10PerfectLib3Dir", "deinit"]
-- !private ["V10PerfectLib3Dir", "exists"]
-- !private ["V10PerfectLib3Dir", "init"]
-- !private ["V10PerfectLib3Dir", "setAsWorkingDir"]
-- !private ["Sd", "deinit"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "Index"]
+- !private ["Vs10Dictionary", "SubSequence"]
+- ["Vs10Dictionary", "deinit"]
+- !private ["Vs10Dictionary", "subscript"]
+- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "readWrite"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
+- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "Index"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "SubSequence"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["C10PerfectLib4File", "close"]
-- ["C10PerfectLib4File", "deinit"]
-- !private ["C10PerfectLib4File", "init"]
-- !private ["C10PerfectLib4File", "open"]
-- !private ["C10PerfectLib4File", "readString"]
-- !private ["C10PerfectLib4File", "write"]
-- !private ["Sf", "deinit"]
+- ["C16MyAwesomeProject14FileController", "deinit"]
+- !private ["C16MyAwesomeProject14FileController", "getContentsOfFile"]
+- !private ["C16MyAwesomeProject14FileController", "sharedFileHandler"]
+- !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "readWrite"]
+- !private ["Ps9Indexable", "Index"]
+- !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
+- !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
+- !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
+- !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "subscript"]
+- !private ["Vs16IndexingIterator", "Element"]
+- !private ["Si", "Stride"]
 - ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps16IteratorProtocol", "Element"]
+- !private ["C16MyAwesomeProject14JSONController", "parseDatabaseAny"]
+- !private ["P10PerfectLib15JSONConvertible", "Index"]
+- !private ["P10PerfectLib15JSONConvertible", "Iterator"]
+- !private ["P10PerfectLib15JSONConvertible", "Stride"]
+- !private ["P10PerfectLib15JSONConvertible", "SubSequence"]
+- !private ["P10PerfectLib15JSONConvertible", "_Element"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Iterator"]
+- !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps16MutableIndexable", "Iterator"]
+- !private ["Ps16MutableIndexable", "_Element"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
@@ -83,70 +156,118 @@ depends-member:
 - !private ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- ["OC10PerfectLib4File8OpenMode", "deinit"]
-- !private ["OC10PerfectLib4File8OpenMode", "readWrite"]
-- ["C16MyAwesomeProject12RemoteConfig", "Bool"]
-- ["C16MyAwesomeProject12RemoteConfig", "Dir"]
-- !private ["C16MyAwesomeProject12RemoteConfig", "File"]
+- ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Iterator"]
+- !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "Iterator"]
+- !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Vs5Range", "deinit"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
+- !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
+- !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "AnyObject"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "FileController"]
+- ["C16MyAwesomeProject12RemoteConfig", "Int"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "JSONController"]
+- ["C16MyAwesomeProject12RemoteConfig", "RemoteConfig"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "Storage"]
 - ["C16MyAwesomeProject12RemoteConfig", "String"]
-- ["C16MyAwesomeProject12RemoteConfig", "createFile"]
-- ["C16MyAwesomeProject12RemoteConfig", "createWorkingDirectory"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "_RemoteConfig"]
 - ["C16MyAwesomeProject12RemoteConfig", "deinit"]
-- ["C16MyAwesomeProject12RemoteConfig", "getContentsOfFile"]
+- ["C16MyAwesomeProject12RemoteConfig", "getConfigVerison"]
 - ["C16MyAwesomeProject12RemoteConfig", "init"]
-- !private ["C16MyAwesomeProject12RemoteConfig", "print"]
-- ["C16MyAwesomeProject12RemoteConfig", "setWorkingDirectory"]
-- ["C16MyAwesomeProject12RemoteConfig", "updateContentsOfFile"]
+- ["C16MyAwesomeProject12RemoteConfig", "requestNo"]
+- ["C16MyAwesomeProject12RemoteConfig", "setup"]
+- ["C16MyAwesomeProject12RemoteConfig", "shared"]
+- !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
+- !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
+- !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
+- !private ["C16MyAwesomeProject7Storage", "getCollectionStr"]
+- !private ["Ps10Strideable", "Stride"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
+- !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
+- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "readWrite"]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "Index"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
+- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
+- ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "Stride"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
+- !private "Ps17BitwiseOperations"
 - "Sb"
 - !private "Ps7CVarArg"
-- !private "Vs9Character"
+- !private "Vs11ClosedRange"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
+- !private "Vs20CountableClosedRange"
+- !private "Vs14CountableRange"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
-- "V10PerfectLib3Dir"
-- !private "Sd"
+- "Vs10Dictionary"
 - !private "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "C10PerfectLib4File"
-- !private "Sf"
+- "C16MyAwesomeProject14FileController"
 - !private "Ps8Hashable"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
+- !private "Vs16IndexingIterator"
 - "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- !private "Ps16IteratorProtocol"
+- !private "C16MyAwesomeProject14JSONController"
 - !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
@@ -156,25 +277,39 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "OC10PerfectLib4File8OpenMode"
+- "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Vs5Range"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
 - "C16MyAwesomeProject12RemoteConfig"
+- !private "Ps8Sequence"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Vs5Slice"
+- !private "C16MyAwesomeProject7Storage"
+- !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
+- "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -333,4 +468,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "9ee59027f11996844d86b999d7c6180f"
+interface-hash: "c5220ace7b1bca7ab259f0a2abb2475a"

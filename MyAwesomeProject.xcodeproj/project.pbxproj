@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1595096F1E5DEBAD00D636A8 /* LogsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1595096D1E5DEB8D00D636A8 /* LogsHandler.swift */; };
 		159509721E5DEC2E00D636A8 /* LogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159509701E5DEC1700D636A8 /* LogController.swift */; };
+		15FAA3D31E61E13300AAB1C6 /* ConfigSettingsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA3D11E61E12A00AAB1C6 /* ConfigSettingsHandler.swift */; };
+		15FAA3D51E61E20600AAB1C6 /* ConfigSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA3D41E61E20600AAB1C6 /* ConfigSettingController.swift */; };
+		15FAA3D71E61F28400AAB1C6 /* mainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FAA3D61E61F28400AAB1C6 /* mainHandler.swift */; };
 		OBJ_1004 /* cURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* cURL.swift */; };
 		OBJ_1006 /* PerfectThread.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_919 /* PerfectThread.framework */; };
 		OBJ_1013 /* FileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* FileLogger.swift */; };
@@ -1911,6 +1914,9 @@
 /* Begin PBXFileReference section */
 		1595096D1E5DEB8D00D636A8 /* LogsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogsHandler.swift; sourceTree = "<group>"; };
 		159509701E5DEC1700D636A8 /* LogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogController.swift; sourceTree = "<group>"; };
+		15FAA3D11E61E12A00AAB1C6 /* ConfigSettingsHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigSettingsHandler.swift; sourceTree = "<group>"; };
+		15FAA3D41E61E20600AAB1C6 /* ConfigSettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigSettingController.swift; sourceTree = "<group>"; };
+		15FAA3D61E61F28400AAB1C6 /* mainHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainHandler.swift; sourceTree = "<group>"; };
 		OBJ_10 /* Dir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dir.swift; sourceTree = "<group>"; };
 		OBJ_100 /* asn_mime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_mime.c; sourceTree = "<group>"; };
 		OBJ_101 /* asn_moid.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = asn_moid.c; sourceTree = "<group>"; };
@@ -4358,6 +4364,9 @@
 				OBJ_909 /* Translations.swift */,
 				1595096D1E5DEB8D00D636A8 /* LogsHandler.swift */,
 				159509701E5DEC1700D636A8 /* LogController.swift */,
+				15FAA3D11E61E12A00AAB1C6 /* ConfigSettingsHandler.swift */,
+				15FAA3D41E61E20600AAB1C6 /* ConfigSettingController.swift */,
+				15FAA3D61E61F28400AAB1C6 /* mainHandler.swift */,
 			);
 			name = MyAwesomeProject;
 			path = Sources;
@@ -6042,6 +6051,7 @@
 				OBJ_2151 /* DatabaseHandler.swift in Sources */,
 				OBJ_2152 /* EmailController.swift in Sources */,
 				OBJ_2153 /* FileController.swift in Sources */,
+				15FAA3D71E61F28400AAB1C6 /* mainHandler.swift in Sources */,
 				OBJ_2154 /* FileHandler.swift in Sources */,
 				OBJ_2155 /* IssueTracker.swift in Sources */,
 				OBJ_2157 /* JSONController.swift in Sources */,
@@ -6050,6 +6060,7 @@
 				OBJ_2159 /* LoginHandler.swift in Sources */,
 				OBJ_2160 /* main.swift in Sources */,
 				OBJ_2161 /* NotificationController.swift in Sources */,
+				15FAA3D51E61E20600AAB1C6 /* ConfigSettingController.swift in Sources */,
 				OBJ_2162 /* NotificationHandler.swift in Sources */,
 				OBJ_2163 /* RCHandler.swift in Sources */,
 				OBJ_2164 /* RCVersion.swift in Sources */,
@@ -6061,6 +6072,7 @@
 				OBJ_2170 /* SystemController.swift in Sources */,
 				OBJ_2171 /* SystemHandler.swift in Sources */,
 				OBJ_2172 /* TrackerHandler.swift in Sources */,
+				15FAA3D31E61E13300AAB1C6 /* ConfigSettingsHandler.swift in Sources */,
 				OBJ_2173 /* TranslationHandler.swift in Sources */,
 				OBJ_2174 /* Translations.swift in Sources */,
 				1595096F1E5DEBAD00D636A8 /* LogsHandler.swift in Sources */,

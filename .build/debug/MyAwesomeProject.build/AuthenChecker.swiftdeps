@@ -7,13 +7,13 @@ provides-member:
 - ["C16MyAwesomeProject13AuthenChecker", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Data"
-- !private "UnicodeScalarType"
-- "String"
-- !private "StringLiteralType"
-- "Bool"
-- "AuthenChecker"
 - !private "BooleanLiteralType"
+- "Bool"
+- !private "UnicodeScalarType"
+- !private "StringLiteralType"
+- "AuthenChecker"
+- !private "Data"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "Data"]
 - !private ["Ps9AnyObject", "String"]

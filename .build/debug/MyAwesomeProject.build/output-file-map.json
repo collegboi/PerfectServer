@@ -62,12 +62,6 @@
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/JSON.swift": {
-    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.d",
-    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.swift.o",
-    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSON~partial.swiftmodule",
-    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSON.swiftdeps"
-  },
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/JSONController.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.swift.o",
@@ -80,11 +74,23 @@
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LocalDatabaseHandler~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LocalDatabaseHandler.swiftdeps"
   },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/LogController.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogController.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogController.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogController~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogController.swiftdeps"
+  },
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/LoginHandler.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LoginHandler.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LoginHandler.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LoginHandler~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LoginHandler.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/LogsHandler.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogsHandler.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogsHandler.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogsHandler~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/LogsHandler.swiftdeps"
   },
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/main.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/main.d",

@@ -81,14 +81,9 @@ func serverLoginHandler(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let (result, passwordReset ) =  AuthenticationController.tryLoginWith(appKey, username, password: password)
-    if result {
-        response.appendBody(string: ResultBody.successBody(value:  passwordReset ))
-    } else {
-        response.appendBody(string: ResultBody.errorBody(value: "error"))
-    }
-    
-    
+    let (_, staffMember ) =  AuthenticationController.tryLoginWith(appKey, username, password: password)
+    response.appendBody(string: staffMember)
+
     response.completed()
 }
 

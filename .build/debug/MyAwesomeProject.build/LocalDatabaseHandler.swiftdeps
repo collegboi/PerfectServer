@@ -7,10 +7,10 @@ provides-member:
 - ["C16MyAwesomeProject20LocalDatabaseHandler", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
 - !private "DatabaseController"
-- "LocalDatabaseHandler"
 - !private "JSONController"
+- "String"
+- "LocalDatabaseHandler"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
 - !private ["Ps9AnyObject", "JSONController"]
@@ -196,4 +196,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "c095f47c609aa4c868c5f46d26880cc0"
+interface-hash: "5ec10be84046c4ddf7189765f85ba41e"

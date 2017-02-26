@@ -7,14 +7,14 @@ provides-member:
 - ["C16MyAwesomeProject15EmailController", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "BooleanLiteralType"
+- !private "Recipient"
 - !private "StringLiteralType"
-- !private "SMTPClient"
 - !private "sleep"
 - !private "EMail"
-- "EmailController"
-- !private "Recipient"
-- !private "BooleanLiteralType"
 - "AssignmentPrecedence"
+- !private "SMTPClient"
+- "EmailController"
 - !private "print"
 depends-member:
 - !private ["Ps9AnyObject", "EMail"]

@@ -7,16 +7,16 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- "HTTPResponse"
+- "HTTPRequest"
+- !private "ResultBody"
+- !private "BackupService"
+- "getBackupList"
 - "makeBackupRoutes"
+- !private "StringLiteralType"
+- !private "print"
 - "Routes"
 - "doBackup"
-- !private "BackupService"
-- !private "ResultBody"
-- "getBackupList"
-- !private "StringLiteralType"
-- "HTTPRequest"
-- !private "print"
-- "HTTPResponse"
 depends-member:
 - !private ["Ps9AnyObject", "doBackupNow"]
 - !private ["Ps9AnyObject", "init"]

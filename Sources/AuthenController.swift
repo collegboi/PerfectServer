@@ -13,7 +13,7 @@ public class AuthenticationController {
     static func tryLoginWith(_ apkey: String, _ username: String, password: String ) -> ( Bool, String ) {
         
         
-        let ( resut, strResult ) = DatabaseController.checkIfExist(apkey, "Staff", objects: ["username":username])
+        let ( result, strResult ) = DatabaseController.checkIfExist(apkey, "Staff", objects: ["username":username])
         
         let staffObjects = JSONController.parseDatabaseAny(strResult)
         
@@ -26,8 +26,8 @@ public class AuthenticationController {
                 let resetPassword = staffObject["resetPassword"] as? Int ?? 0
                 
                 if resetPassword == 1 {
-                
-                    return ( resut, "\(resetPassword)")
+                    
+                    return ( result, "{\"data\":[\(JSONController.parseJSONToStr(dict: staffObject))]}" )
                 }
             }
         }
@@ -52,28 +52,26 @@ public class AuthenticationController {
                 
                 let testHashStr = BCrypt.hash(password: password, salt: hashSalt)
             
-                let ( resut, strResult ) = DatabaseController.checkIfExist(apkey, "Staff", objects: ["username":username, "password": testHashStr])
+                let ( result, strResult ) = DatabaseController.checkIfExist(apkey, "Staff", objects: ["username":username, "password": testHashStr])
                 
                 let staffObjects = JSONController.parseDatabaseAny(strResult)
                 
                 if staffObjects.count > 0 {
                     
-                    var staffObject = staffObjects[0] as? [String:Any] ?? [:]
+                    let staffObject = staffObjects[0] as? [String:Any] ?? [:]
                     
                     if staffObject.count > 0 {
-                    
-                        let resetPassword = staffObject["resetPassword"] as? Int ?? 0
                 
-                        return ( resut, "\(resetPassword)")
+                        return ( result, "{\"data\":[\(JSONController.parseJSONToStr(dict: staffObject))]}" )
                     }
                 }
             
             } catch {
-                return ( false, "0")
+                return ( false,  "{\"data\":[]}")
             }
         }
         
-        return ( false, "0")
+        return ( false, "{\"data\":[]}")
     }
     
     static func tryResetPassword(_ apkey: String, _ username: String, password: String ) -> ( Bool, String ) {

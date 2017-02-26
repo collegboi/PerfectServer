@@ -36,7 +36,7 @@ func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
     }
 
     
-    let allNotifications = DatabaseController.retrieveCollection(appKey,"Notifications")
+    let allNotifications = DatabaseController.retrieveCollection(appKey,"TBNotification")
     
     response.appendBody(string:allNotifications)
     response.completed()
@@ -64,28 +64,43 @@ func sendNotificaiton(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
+    response.isStreaming = true
+    
     let jsonArry = JSONController.parseJSONToDict(jsonStr)
+    
+    let resultStr = ResultBody.errorBody(value: "missing data")
     
     if jsonArry.count > 0 {
         let deviceid = jsonArry["deviceId"] as! String
         let message = jsonArry["message"] as! String
+        let development = jsonArry["development"] as! String
+        let developmentBool: Bool = development == "1";
         
-        NotficationController.sendSingleNotfication(appKey, deviceID: deviceid, message: message)
+       NotficationController.sendSingleNotfication(appKey, deviceId: deviceid, message: message, development: developmentBool, notificationCompleted: { (complete, resultString, resultBool) in
         
-        let notificationObject: [String:String] = [
-            "deviceID": deviceid,
-            "timestamp": nowDateTime(),
-            "message": message
-        ]
+            if complete {
+            
+                let notificationObject: [String:String] = [
+                    "deviceID": deviceid,
+                    "timestamp": nowDateTime(),
+                    "message": message,
+                    "status" : resultString,
+                    "sent" : "\(resultBool)"
+                ]
+                
+                let objectStr = JSONController.parseJSONToStr(dict: notificationObject)
+                
+                DatabaseController.insertDocument(appKey,"TBNotification", jsonStr: objectStr)
+            }
         
-        let objectStr = JSONController.parseJSONToStr(dict: notificationObject)
+            response.appendBody(string: resultString)
+            response.completed()
         
-        DatabaseController.insertDocument(appKey,"Notifications", jsonStr: objectStr)
+       })
         
+    } else {
+        
+        response.appendBody(string: resultStr)
+        response.completed()
     }
-    
-    let returnStr =  ResultBody.successBody(value: "sent")
-    
-    response.appendBody(string: returnStr)
-    response.completed()
 }

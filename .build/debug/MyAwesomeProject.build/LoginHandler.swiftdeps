@@ -1,6 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "makeLoginRoutes"
+- "serverResetHandler"
 - "serverLoginHandler"
 - "serverRegisterHandler"
 provides-nominal:
@@ -8,23 +9,26 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- "Routes"
-- "serverRegisterHandler"
+- "serverResetHandler"
 - !private "AuthenticationController"
-- "HTTPResponse"
-- !private "ResultBody"
-- "HTTPRequest"
-- !private "print"
-- "makeLoginRoutes"
 - "serverLoginHandler"
+- "Routes"
+- "makeLoginRoutes"
+- !private "print"
+- !private "ResultBody"
+- "serverRegisterHandler"
+- "HTTPResponse"
+- "HTTPRequest"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "successBody"]
 - !private ["Ps9AnyObject", "tryLoginWith"]
 - !private ["Ps9AnyObject", "tryRegister"]
+- !private ["Ps9AnyObject", "tryResetPassword"]
 - !private ["C16MyAwesomeProject24AuthenticationController", "tryLoginWith"]
 - !private ["C16MyAwesomeProject24AuthenticationController", "tryRegister"]
+- !private ["C16MyAwesomeProject24AuthenticationController", "tryResetPassword"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "init"]
@@ -377,4 +381,4 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "9d29a008ce6b0c3d09b9c1a6dedb4fae"
+interface-hash: "3dcfb35c27f3eed417b2607752840cac"
