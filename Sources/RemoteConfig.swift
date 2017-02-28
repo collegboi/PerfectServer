@@ -90,17 +90,28 @@ class RemoteConfig {
             
         } else {
             
-//            let config : [String:String] = ["verison": version]
-//            
-//            let configJSON = JSONController.parseJSONToStr(dict: config)
-//            
-//            let colleciton = Storage.getCollectionStr("RemoteConfig", query: configJSON)
+            let config : [String:String] = ["version": version]
             
-            return (FileController.sharedFileHandler?.getContentsOfFile("ConfigFiles", "config_"+version+".json"))!
+            let configJSON = JSONController.parseJSONToStr(dict: config)
             
+            let colleciton = Storage.getCollectionStr(appKey, "RemoteConfig", query: configJSON)
+            
+            let collectionList = JSONController.parseDatabaseAny(colleciton)
+            
+            if collectionList.count > 0 {
+             
+                guard let collectionObj = collectionList[0] as? [String:String] else {
+                    return ""
+                }
+                
+                let filePath = collectionObj["path"]!
+                
+                return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
+
+            } else {
+                return ""
+            }
         }
-        
-        return ""
     }
 
 }

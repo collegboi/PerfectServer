@@ -24,7 +24,7 @@ class RCVersion {
             
             
             guard let dict = decoded?[key] as? String else {
-                return "1.2"
+                return ""
             }
             
             return dict
@@ -60,20 +60,19 @@ class RCVersion {
         
         let versionData = parseJSONConfig(key: "version", dataStr: jsonString)
         let applicationID = parseJSONConfig(key: "applicationID", dataStr: jsonString)
-        
-        let path = "ConfigFiles/config_"+versionData+".json"
+        let filePath = parseJSONConfig(key: "filePath", dataStr: jsonString)
         
         let configData: [String:String] = [
             "version" : versionData,
             "applicationID": applicationID,
-            "path" : path
+            "path" : filePath
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
         
         DatabaseController.insertDocument(apid,"RemoteConfig", jsonStr: configStr)
         
-        FileController.sharedFileHandler?.updateContentsOfFile(path,jsonString)
+        FileController.sharedFileHandler?.updateContentsOfFile(filePath,jsonString)
         
         return true
         
