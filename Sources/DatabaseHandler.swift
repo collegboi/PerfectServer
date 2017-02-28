@@ -293,7 +293,7 @@ func mongoFilterHandler(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let returning = DatabaseController.retrieveCollection(appkey, collectionName, objectID)
+    let returning = Storage.getDocumentWithObjectID(appkey, collectionName, objectID)
     
     // Return the JSON string
     response.appendBody(string: returning)
@@ -332,7 +332,7 @@ func mongoQueryLimit(request: HTTPRequest, _ response: HTTPResponse) {
     if collectionName == "Tables" {
         returning = Storage.getAllCollections(appkey)
     } else {
-        returning = DatabaseController.retrieveCollection(appkey, collectionName, "", skip: skip, limit: limit)
+        returning = Storage.getQueryCollection(appkey, collectionName, json: "", skip: skip, limit: limit)
     }
 
     // Return the JSON string
@@ -344,7 +344,16 @@ func mongoQueryLimit(request: HTTPRequest, _ response: HTTPResponse) {
 func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
     //ConfigureNotfications.init()
-
+    
+    var appVersion = "0.0"
+    
+    let queryParams = request.queryParams
+    
+    if queryParams.count > 0 {
+        let (_, version ) = queryParams[0] as (String, String)
+        appVersion = version
+    }
+    
     guard let appkey = request.urlVariables["appkey"] else {
         response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
         response.completed()
@@ -365,7 +374,7 @@ func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
     //} else if collectionName == "" {
         //returning = Storage.getAllCollections(appkey)
     } else {
-        returning = DatabaseController.retrieveCollection(appkey, collectionName)
+        returning = Storage.getCollectionValues(appkey, collectionName, appVersion: appVersion)
     }
     
     // Return the JSON string

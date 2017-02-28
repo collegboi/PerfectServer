@@ -666,19 +666,19 @@ class DatabaseController {
         return  true
     }
     
-    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, _ documentID: String, skip: Int = 0, limit: Int = 100 ) -> String {
+    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, documentID: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
         
         
         // open a connection
         let client = openMongoDB()
         
         guard let db = connectDatabase(client, apID: apID) else {
-            return "Error with connecting"
+            return ["Error with connecting"]
         }
         
         // define collection
         guard let collection = db.getCollection(name: collectioName) else {
-            return ""
+            return ["collection not existing"]
         }
         
         defer {
@@ -699,28 +699,27 @@ class DatabaseController {
             arr.append(x.asString)
         }
         
-        // return a formatted JSON array.
-        return  "{\"data\":[\(arr.joined(separator: ","))]}"
+        return arr
     }
     
-    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, query: String, skip: Int = 0, limit: Int = 100 ) -> String {
+    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, query: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
         
         
         // open a connection
         let client = openMongoDB()
         
         guard let db = connectDatabase(client, apID: apID) else {
-            return "Error with connecting"
+            return ["Error with connecting"]
         }
         
         guard let query = try? BSON.init(json: query) else {
-            return ""
+            return ["parsing query error"]
         }
         
         
         // define collection
         guard let collection = db.getCollection(name: collectioName) else {
-            return ""
+            return ["collection error"]
         }
         
         defer {
@@ -738,9 +737,7 @@ class DatabaseController {
             arr.append(x.asString)
         }
         
-        // return a formatted JSON array.
-        return  "{\"data\":[\(arr.joined(separator: ","))]}"
-    
+        return  arr
     }
     
     static func checkIfExist(_ apID: String,_ collectioName: String, objects: [String:String]  ) -> (Bool, String ) {
@@ -789,7 +786,7 @@ class DatabaseController {
 
     
     
-    static func retrieveCollection(_ apID: String,_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> String {
+    static func retrieveCollection(_ apID: String,_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> [String] {
         
         // define collection
         
@@ -797,12 +794,12 @@ class DatabaseController {
         let client = openMongoDB()
         
         guard let db = connectDatabase(client, apID: apID) else {
-            return "Error with connecting"
+            return ["Error with connecting"]
         }
         
         // define collection
         guard let collection = db.getCollection(name: collectioName) else {
-            return ""
+            return [""]
         }
         
         defer {
@@ -826,9 +823,7 @@ class DatabaseController {
             arr.append(x.asString)
         }
         
-        // return a formatted JSON array.
-        return  "{\"data\":[\(arr.joined(separator: ","))]}"
-        
+        return  arr
     }
     
     func myNewUUID() -> String {

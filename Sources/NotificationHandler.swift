@@ -36,7 +36,7 @@ func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
     }
 
     
-    let allNotifications = DatabaseController.retrieveCollection(appKey,"TBNotification")
+    let allNotifications = Storage.getCollectionStr(appKey, "TBNotification")
     
     response.appendBody(string:allNotifications)
     response.completed()

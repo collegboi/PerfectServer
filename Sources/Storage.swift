@@ -61,6 +61,36 @@ class Storage {
         return result
     }
     
+    class func getCollectionValues(_ appkey: String, _ collectionName: String, appVersion: String ) -> String {
+        
+        let applicationObject: [String:String] = ["appKey": appkey]
+        let applicationString = JSONController.parseJSONToStr(dict: applicationObject)
+        
+        let applicationArr = DatabaseController.retrieveCollectionQuery("JKHSDGHFKJGH454645GRRLKJF", "TBApplication", query: applicationString)
+        let applicationObjects = JSONController.parseJSONToDict("\(applicationArr.joined(separator: ","))")
+        
+        let queryObject: [String:String] = ["version":appVersion, "applicationID": applicationObjects["_id"] as? String ?? ""]
+        let queryString = JSONController.parseJSONToStr(dict: queryObject)
+        
+        let removeVersion = DatabaseController.retrieveCollectionQuery("JKHSDGHFKJGH454645GRRLKJF", "RemoteConfig", query: queryString)
+        
+        let configObjects = JSONController.parseJSONToDict("\(removeVersion.joined(separator: ","))")
+        
+        let objectParams = "\"config\": { \"version\": \"\( configObjects["version"] ?? 0.0 )\", \"date\": \"\(configObjects["updated"] ?? 0.0) \" }"
+    
+        let collectionParms =  DatabaseController.retrieveCollection(appkey, collectionName)
+        let collectionString = "\"count\":\(collectionParms.count),\"data\":[\(collectionParms.joined(separator: ","))]"
+        
+        return "{ \(objectParams), \(collectionString)  }"
+    }
+    
+    class func getDocumentWithObjectID(_ apID: String,_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> String {
+    
+        let document = DatabaseController.retrieveCollection(apID,collectioName, objectID, skip: skip, limit: limit )
+        
+        return "{\"data\":[\(document.joined(separator: ","))]}"
+    }
+    
     class func getCollectionStr(_ apID: String,_ collection:String, query: String) -> String {
         return DatabaseController.retrieveCollectionQueryStr(apID, collection, query: query)
     }
@@ -77,6 +107,12 @@ class Storage {
         return DatabaseController.getAllCollections(apID)
     }
     
+    class func getQueryCollection(_ apID: String,_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
+        
+        let collectionObjs = DatabaseController.retrieveCollectionQuery(apID, collection, query: json, skip: skip , limit: limit)
+        
+        return "{\"count\":\(collectionObjs.count),\"data\":[\(collectionObjs.joined(separator: ","))]}"
+    }
     
     class func createIndex(_ apID: String,_ collection: String, index: String ) -> String {
         return DatabaseController.createUniqueIndex(apID, collection, index: index)
@@ -95,10 +131,6 @@ class Storage {
     
     class func dropCollection(_ apID: String, _ collection: String){
         DatabaseController.dropCollection(apID, collection)
-    }
-    
-    class func getQueryCollection(_ apID: String,_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
-        return DatabaseController.retrieveCollectionQuery(apID, collection, query: json, skip: skip , limit: limit)
     }
     
 }

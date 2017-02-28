@@ -16,6 +16,8 @@ class LocalDatabaseHandler {
         
         let returnData = DatabaseController.retrieveCollectionQuery(appKey, collectionName, query: strQuery)
         
-        return JSONController.parseDatabase(returnData)
+        let returnString = "[\(returnData.joined(separator: ","))]"
+        
+        return JSONController.parseDatabase(returnString)
     }
 }

@@ -23,12 +23,12 @@ class IssueTracker {
     
     static func getAllIssues(_ appKey:String, _ collectionName: String) -> String {
         
-        return DatabaseController.retrieveCollection(appKey, collectionName)
+        return Storage.getCollectionStr(appKey, collectionName)
     }
     
     
     static func getIssue(_ appkey:String, _ collectionName: String, _ issueID: String ) -> String {
         
-        return DatabaseController.retrieveCollectionQuery(appkey, collectionName, issueID)
+        return Storage.getCollectionStr(appkey, collectionName, query: issueID)
     }
 }
