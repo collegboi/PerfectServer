@@ -58,7 +58,12 @@ class RemoteConfig {
             }
 
             if  versionVal == version {
-                objectVal = dict as [String : AnyObject]
+                #if os(Linux)
+                    objectVal = dict as! [String : AnyObject]
+                #else
+                    objectVal = dict as [String : AnyObject]
+                #endif
+                
                 break
             }
         }

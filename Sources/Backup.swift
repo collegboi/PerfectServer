@@ -44,10 +44,19 @@ class BackupService {
         )
         print("ZipResult Result: \(ZipResult.description)")
         
-        let configData: [String:AnyObject] = [
-            "collections": collectionVals as! AnyObject,
-            "path_backup" : thisZipFile as! AnyObject
-        ]
+        #if os(Linux)
+            let configData: [String:AnyObject] = [
+                "collections": collectionVals as! AnyObject,
+                "path_backup" : thisZipFile as! AnyObject
+            ]
+        #else
+            let configData: [String:AnyObject] = [
+                "collections": collectionVals as AnyObject,
+                "path_backup" : thisZipFile as AnyObject
+            ]
+        #endif
+        
+        
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
         DatabaseController.insertDocument("JKHSDGHFKJGH454645GRRLKJF","Backup", jsonStr: configStr)
