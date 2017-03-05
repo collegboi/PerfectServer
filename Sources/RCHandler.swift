@@ -19,7 +19,7 @@ public func makeRCRoutes() -> Routes {
     routes.add(method: .get, uris: ["/", "index.html"], handler: indexRCHandler)
     routes.add(method: .post, uri: "/api/{appkey}/remote", handler: sendRemoteConfig)
     routes.add(method: .get, uri: "/api/{appkey}/remote/{version}", handler: getRemoteConfig)
-    routes.add(method: .get, uri: "/remote/{version}", handler: getRemoteConfig)
+    routes.add(method: .get, uri: "/remote", handler: getRemoteConfig)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -46,13 +46,19 @@ func getRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
 //        return
 //    }
 //    
-    guard let version = request.urlVariables["version"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "version missing"))
-        response.completed()
-        return
+//    guard let version = request.urlVariables["version"] else {
+//        response.appendBody(string: ResultBody.errorBody(value: "version missing"))
+//        response.completed()
+//        return
+//    }
+    
+    var versionNo = "1.2"
+    
+    if let version = request.urlVariables["version"] {
+        versionNo = version
     }
     
-    let returnStr = RemoteConfig.shared?.getConfigVerison(appKeys, version)
+    let returnStr = RemoteConfig.shared?.getConfigVerison(appKeys, versionNo)
     
     response.appendBody(string: returnStr ?? "")
     response.completed()
