@@ -250,7 +250,7 @@ func databaseCollectionsPost(request: HTTPRequest, _ response: HTTPResponse) {
 
 func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
     
-    var appKeys = "appkey"
+    var appKeys = "JKHSDGHFKJGH454645GRRLKJF"
     
     if let appkey = request.urlVariables["appkey"] {
         appKeys = appkey
