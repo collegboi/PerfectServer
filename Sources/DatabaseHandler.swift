@@ -32,6 +32,9 @@ public func makeDatabaseRoutes() -> Routes {
     routes.add(method: .post, uri: "/api/{appkey}/storage/query/{collection}/{skip}/{limit}", handler: databaseGetQuery)
     routes.add(method: .post, uri: "/api/{appkey}/storage/query/{collection}/", handler: databaseGetQuery)
     
+    routes.add(method: .post, uri: "/storage/{collection}", handler: databaseCollectionPost)
+
+    
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
     
@@ -247,11 +250,18 @@ func databaseCollectionsPost(request: HTTPRequest, _ response: HTTPResponse) {
 
 func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
+    var appKeys = "appkey"
+    
+    if let appkey = request.urlVariables["appkey"] {
+        appKeys = appkey
     }
+    
+//    guard let appkey = request.urlVariables["appkey"] else {
+//        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
+//        response.completed()
+//        return
+//    }
+
     
     guard let collectionName = request.urlVariables["collection"] else {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
@@ -265,7 +275,7 @@ func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    if Storage.StoreObject(appkey, collectionName, jsonStr) {
+    if Storage.StoreObject(appKeys, collectionName, jsonStr) {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
     } else {
         response.appendBody(string: ResultBody.successBody(value: "collection added"))
