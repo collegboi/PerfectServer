@@ -36,6 +36,8 @@ sudo apt-get install expect
 
 sudo apt-get install make clang libicu-dev pkg-config libssl-dev libsasl2-dev libcurl4-openssl-dev uuid-dev git curl wget unzip -y 
 
+sudo apt-get install libminizip-dev
+
 #======================#
 #====swift installed===#
 #======================#
