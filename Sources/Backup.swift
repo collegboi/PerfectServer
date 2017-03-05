@@ -8,26 +8,14 @@
 
 import PerfectZip
 import Foundation
+import SwiftMoment
 
 class BackupService {
     
-    private class func moment(_ seconds: TimeInterval) -> Date {
-        let interval = TimeInterval(seconds)
-        let date = Date(timeIntervalSince1970: interval)
-        return date
-    }
-    
-    private class func getNow() -> Double {
-        
-        var posixTime = timeval()
-        gettimeofday(&posixTime, nil)
-        return Double((posixTime.tv_sec * 1000) + (Int(posixTime.tv_usec)/1000))
-    }
-    
     private class var nowDate: String {
-        return "\(self.moment(self.getNow()))"
+        let m = moment()
+        return m.format()
     }
-    
     
     static func doBackupNow() {
         
@@ -57,8 +45,8 @@ class BackupService {
         print("ZipResult Result: \(ZipResult.description)")
         
         let configData: [String:AnyObject] = [
-            "collections": collectionVals as AnyObject,
-            "path_backup" : thisZipFile as AnyObject
+            "collections": collectionVals as! AnyObject,
+            "path_backup" : thisZipFile as! AnyObject
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         

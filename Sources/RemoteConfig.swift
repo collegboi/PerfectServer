@@ -58,7 +58,7 @@ class RemoteConfig {
             }
 
             if  versionVal == version {
-                objectVal = dict as [String : AnyObject]?
+                objectVal = dict as [String : AnyObject]
                 break
             }
         }

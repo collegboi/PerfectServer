@@ -177,17 +177,6 @@ public class NotficationController {
         return result
     }
     
-    private class func saveNotifcationToDatabase () {
-        
-        func nowDateTime() -> String {
-            let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-            dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-            
-            return dateFormatter.string(from: Date())
-        }
-    }
-
     
     public class func sendSilentNotification(_ appKey: String, deviceIDs: [String], message: String, development: Bool = false) -> String {
         return self.sendManyNotifcation(appKey, deviceId: deviceIDs, messsage: message, development: development )

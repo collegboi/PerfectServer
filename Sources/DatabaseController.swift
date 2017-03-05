@@ -10,6 +10,7 @@ import StORM
 import MongoDB
 import PerfectLogger
 import Foundation
+import SwiftMoment
 
 #if os(Linux)
     import LinuxBridge
@@ -324,11 +325,8 @@ class DatabaseController {
     }
     
     private static func nowDateTime() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        
-        return dateFormatter.string(from: Date())
+        let m = moment()
+        return m.format()
     }
     
 //    private class func moment(_ seconds: TimeInterval) -> Date {

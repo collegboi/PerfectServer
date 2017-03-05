@@ -29,7 +29,7 @@ public func makeTranslationRoutes() -> Routes {
 
 func getTranslationFile(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appKey = request.urlVariables["appkey"] else {
+    guard request.urlVariables["appkey"] != nil else {
         response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
         response.completed()
         return

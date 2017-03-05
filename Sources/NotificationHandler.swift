@@ -9,6 +9,7 @@
 import PerfectLib
 import PerfectHTTP
 import MongoDB
+import SwiftMoment
 import Foundation
 
 /// Defines and returns the Web Authentication routes
@@ -45,11 +46,8 @@ func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
 func sendNotificaiton(request: HTTPRequest, _ response: HTTPResponse) {
     
     func nowDateTime() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        
-        return dateFormatter.string(from: Date())
+        let m = moment()
+        return m.format()
     }
     
     guard let appKey = request.urlVariables["appkey"] else {

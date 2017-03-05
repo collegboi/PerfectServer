@@ -9,6 +9,7 @@ import PerfectLib
 import PerfectHTTP
 import MongoDB
 import Foundation
+import SwiftMoment
 
 /// Defines and returns the Web Authentication routes
 public func makeFileUploadRoutes() -> Routes {
@@ -25,11 +26,8 @@ public func makeFileUploadRoutes() -> Routes {
 func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
     
     func nowDateTime() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
-        dateFormatter.timeZone = NSTimeZone(name: "UTC") as TimeZone!
-        
-        return dateFormatter.string(from: Date())
+       let m = moment()
+       return m.format()
     }
     
     
