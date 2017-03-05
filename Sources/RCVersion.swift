@@ -69,7 +69,6 @@ class RCVersion {
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
-        
         DatabaseController.insertDocument(apid,"RemoteConfig", jsonStr: configStr)
         
         FileController.sharedFileHandler?.updateContentsOfFile(filePath,jsonString)

@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseController.swift"
-            timestampString = "509229785.530971"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "399"
-            endingLineNumber = "399"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "retrieveCollectionQueryValues(collectioName:key:value:field:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseController.swift"
-            timestampString = "509229785.530971"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "421"
-            endingLineNumber = "421"
+            startingLineNumber = "419"
+            endingLineNumber = "419"
             landmarkName = "retrieveCollectionQueryValues(collectioName:key:value:field:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseController.swift"
-            timestampString = "509927869.562141"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "745"
-            endingLineNumber = "745"
+            startingLineNumber = "743"
+            endingLineNumber = "743"
             landmarkName = "checkIfExist(_:_:objects:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,11 +186,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseController.swift"
-            timestampString = "509927869.562141"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "774"
-            endingLineNumber = "774"
+            startingLineNumber = "772"
+            endingLineNumber = "772"
             landmarkName = "checkIfExist(_:_:objects:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseHandler.swift"
-            timestampString = "509930719.399768"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "387"
-            endingLineNumber = "387"
+            startingLineNumber = "397"
+            endingLineNumber = "397"
             landmarkName = "removeCollectionDoc(request:_:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseController.swift"
-            timestampString = "509750157.662275"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "646"
-            endingLineNumber = "646"
+            startingLineNumber = "644"
+            endingLineNumber = "644"
             landmarkName = "removeDocument(_:_:_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,29 +250,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sources/DatabaseHandler.swift"
-            timestampString = "509930719.399768"
+            timestampString = "510437696.714917"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "356"
-            endingLineNumber = "356"
+            startingLineNumber = "366"
+            endingLineNumber = "366"
             landmarkName = "mongoHandler(request:_:)"
             landmarkType = "9">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sources/Storage.swift"
-            timestampString = "509932220.321757"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
-            landmarkName = "getCollectionValues(_:_:appVersion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
