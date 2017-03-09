@@ -61,11 +61,13 @@ class RCVersion {
         let versionData = parseJSONConfig(key: "version", dataStr: jsonString)
         let applicationID = parseJSONConfig(key: "applicationID", dataStr: jsonString)
         let filePath = parseJSONConfig(key: "filePath", dataStr: jsonString)
+        let configVersion = parseJSONConfig(key: "configVersion", dataStr: jsonString)
         
         let configData: [String:String] = [
             "version" : versionData,
             "applicationID": applicationID,
-            "path" : filePath
+            "path" : filePath,
+            "configVersion": configVersion
         ]
         let configStr = JSONController.parseJSONToStr(dict: configData)
         

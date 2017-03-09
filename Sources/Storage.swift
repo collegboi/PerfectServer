@@ -76,7 +76,7 @@ class Storage {
         
         let configObjects = JSONController.parseJSONToDict("\(removeVersion.joined(separator: ","))")
         
-        let objectParams = "\"config\": { \"version\": \"\( configObjects["version"] ?? 0.0 )\", \"date\": \"\(configObjects["updated"] ?? 0.0) \" }"
+        let objectParams = "\"config\": { \"version\": \"\( configObjects["version"] ?? 0.0 )\", \"date\": \"\(configObjects["updated"] ?? 0.0)\" }"
     
         let collectionParms =  DatabaseController.retrieveCollection(appkey, collectionName)
         let collectionString = "\"count\":\(collectionParms.count),\"data\":[\(collectionParms.joined(separator: ","))]"

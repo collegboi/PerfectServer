@@ -39,7 +39,7 @@ class RemoteConfig {
         }
     }
     
-    public func getConfigVerison(_ appKey: String , _ version: String) -> String {
+    public func getConfigVerison(_ appKey: String , _ version: String, _ theme: String = "") -> String {
         
         let abTestings = Storage.getCollectionStr(appKey,"ABTesting")
         
@@ -95,7 +95,7 @@ class RemoteConfig {
             
         } else {
             
-            let config : [String:String] = ["version": version]
+            let config : [String:String] = ["version": version, "theme": theme]
             
             let configJSON = JSONController.parseJSONToStr(dict: config)
             

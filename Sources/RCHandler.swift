@@ -19,6 +19,7 @@ public func makeRCRoutes() -> Routes {
     routes.add(method: .get, uris: ["/", "index.html"], handler: indexRCHandler)
     routes.add(method: .post, uri: "/api/{appkey}/remote", handler: sendRemoteConfig)
     routes.add(method: .get, uri: "/api/{appkey}/remote/{version}", handler: getRemoteConfig)
+    routes.add(method: .get, uri: "/api/{appkey}/remote/{version}/{theme}", handler: getRemoteThemeConfig)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -50,6 +51,34 @@ func getRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
     response.appendBody(string: returnStr ?? "")
     response.completed()
 }
+
+func getRemoteThemeConfig(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    guard let apid = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
+        response.completed()
+        return
+    }
+    
+    guard let version = request.urlVariables["version"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "version missing"))
+        response.completed()
+        return
+    }
+    
+    
+    guard let theme = request.urlVariables["theme"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing theme"))
+        response.completed()
+        return
+    }
+    
+    let returnStr = RemoteConfig.shared?.getConfigVerison(apid, version, theme)
+    
+    response.appendBody(string: returnStr ?? "")
+    response.completed()
+}
+
 
 
 func sendRemoteConfig(request: HTTPRequest, _ response: HTTPResponse) {
