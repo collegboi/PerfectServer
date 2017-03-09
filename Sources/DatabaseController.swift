@@ -18,6 +18,12 @@ import SwiftMoment
 
 class DatabaseController {
     
+    static func testBasic(_ message: String) {
+        LogFile.location = "./database.log"
+    
+        LogFile.info(message)
+    }
+    
     static func openMongoDB() -> MongoClient {
         // open a connection
         return try! MongoClient(uri: "mongodb://localhost:27017")
@@ -29,6 +35,8 @@ class DatabaseController {
     }
     
     static func connectDatabase(_ client: MongoClient, apID: String , name: String = "") -> MongoDatabase? {
+        
+        self.testBasic(apID + "-" + name)
         
         //Unique for creating apps
         if apID == "JKHSDGHFKJGH454645GRRLKJF" {
