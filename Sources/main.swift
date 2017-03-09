@@ -75,7 +75,6 @@ server.addRoutes(makeConfigSettingRoutes())
 // Setup logging
 let myLogger = RequestLogger()
 
-
 // add routes to be excluded from auth check
 var authenticationConfig = AuthenticationConfig()
 authenticationConfig.exclude("/api/v1/login")

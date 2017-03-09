@@ -110,7 +110,26 @@ public class FileController {
         
         var result: Bool = true
         
-        let fileDir = Dir(Dir.workingDir.path + filePath )
+        let filePathParts = filePath.components(separatedBy: "/")
+        
+        var directory = ""
+        
+        if filePathParts.count > 0 {
+            
+            for (index, part ) in filePathParts.enumerated() {
+                
+                if (index == filePathParts.count-1 ) {
+                    break
+                }
+                
+                directory += part + "/"
+            }
+            
+        } else {
+            
+        }
+        
+        let fileDir = Dir(Dir.workingDir.path + directory )
         do {
             try fileDir.create()
         } catch {
@@ -163,7 +182,7 @@ public class FileController {
     public func updateContentsOfFile(_ filePath: String, _ fileContents: String ) -> Bool {
         
         var result: Bool = true
-                            // filePath - folder/file.filetype
+        
         var thisFile = File(filePath)
         
         if !thisFile.exists {
