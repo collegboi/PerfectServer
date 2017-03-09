@@ -95,7 +95,13 @@ class RemoteConfig {
             
         } else {
             
-            let config : [String:String] = ["version": version, "theme": theme]
+            var config : [String:String] = [:]
+            
+            if theme != "" {
+                config = ["version": version, "theme": theme]
+            } else {
+                config = ["version": version]
+            }
             
             let configJSON = JSONController.parseJSONToStr(dict: config)
             
