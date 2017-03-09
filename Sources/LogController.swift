@@ -18,9 +18,9 @@ import PerfectLib
 
 class LogController {
 
-    static func getRequestLogs() -> String {
+    static func getRequestLogs( name: String ) -> String {
         
-        return (FileController.sharedFileHandler?.getContentsOfFile("", "requests.log"))!
+        return (FileController.sharedFileHandler?.getContentsOfFile("", name + ".log"))!
     }
     
     static func getDatabaseLogs() -> String {

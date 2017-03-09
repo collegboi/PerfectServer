@@ -18,8 +18,8 @@ import Turnstile
 public func makeLogsRoutes() -> Routes {
     var routes = Routes()
     //routes.add(method: .post, uri: "/tracker/{collection}/{objectid}", handler: sendTrackerIssuesObject)
-    routes.add(method: .get, uri: "/api/{appkey}/logs/", handler: serverLogsHandler)
-    routes.add(method: .get, uri: "/api/{appkey}/dbLogs/", handler: databaseLogsHandler)
+    routes.add(method: .get, uri: "/api/{appkey}/logs/{name}", handler: serverLogsHandler)
+    //routes.add(method: .get, uri: "/api/{appkey}/dbLogs/", handler: databaseLogsHandler)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
@@ -29,13 +29,13 @@ public func makeLogsRoutes() -> Routes {
 
 func serverLogsHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
-//    guard let appKey = request.urlVariables["appkey"] else {
-//        response.appendBody(string: ResultBody.errorBody(value: "missing apID"))
-//        response.completed()
-//        return
-//    }
+    guard let name = request.urlVariables["name"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing name"))
+        response.completed()
+        return
+    }
     
-    let logs = LogController.getRequestLogs()
+    let logs = LogController.getRequestLogs(name: name)
     let logs2  = logs.replacingOccurrences(of: "\"", with: "")
     let allLogs = logs2.components(separatedBy: "\n")
     
