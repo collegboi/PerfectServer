@@ -106,11 +106,19 @@ public class FileController {
     }
     
     @discardableResult
-    private func createFileToWrite(_ file: File ) -> Bool {
+    private func createFileToWrite(_ filePath: String ) -> Bool {
         
         var result: Bool = true
         
+        let fileDir = Dir(Dir.workingDir.path + filePath )
         do {
+            try fileDir.create()
+        } catch {
+            print(error)
+        }
+        
+        do {
+            let file = File(filePath)
             try file.open(.readWrite)
             
         } catch {
@@ -156,11 +164,12 @@ public class FileController {
         
         var result: Bool = true
                             // filePath - folder/file.filetype
-        let thisFile = File(filePath)
+        var thisFile = File(filePath)
         
         if !thisFile.exists {
             
-            self.createFileToWrite(thisFile)
+            self.createFileToWrite(filePath)
+            thisFile = File(filePath)
             
         } else {
             print(thisFile.path)

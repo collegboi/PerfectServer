@@ -50,11 +50,11 @@ class RemoteConfig {
         for object in abTestingObject {
             
             guard let dict = object as? [String:Any] else {
-                return ""
+                return "parsing dict error"
             }
             
             guard let versionVal = dict["version"] as? String  else {
-                return ""
+                return "no version"
             }
 
             if  versionVal == version {
@@ -74,7 +74,7 @@ class RemoteConfig {
             case 0:
                 
                 guard let version = objectVal?["versionA"] as? String else {
-                    return ""
+                    return "versionA is empty"
                 }
                 
                 self.requestNo = (self.requestNo + 1) % 2
@@ -85,7 +85,7 @@ class RemoteConfig {
             default:
                 
                 guard let version = objectVal?["versionB"] as? String else {
-                    return ""
+                    return "versionB is empty"
                 }
                 
                 self.requestNo = (self.requestNo + 1) % 2
@@ -112,7 +112,7 @@ class RemoteConfig {
             if collectionList.count > 0 {
              
                 guard let collectionObj = collectionList[0] as? [String:String] else {
-                    return ""
+                    return "collectionObj  is empty: " + version
                 }
                 
                 let filePath = collectionObj["path"]!
@@ -120,7 +120,7 @@ class RemoteConfig {
                 return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
 
             } else {
-                return ""
+                return "collectionList is empty: " + version
             }
                 
         }
