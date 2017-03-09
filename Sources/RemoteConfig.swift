@@ -39,6 +39,38 @@ class RemoteConfig {
         }
     }
     
+    public func getRemoteConfigVersion(_ appKey: String , _ configVersion: String, _ theme: String = "")-> String {
+        
+        var config : [String:String] = [:]
+        
+        if theme != "" {
+            config = ["version": configVersion, "appTheme": theme]
+        } else {
+            config = ["version": configVersion]
+        }
+        
+        let configJSON = JSONController.parseJSONToStr(dict: config)
+        
+        let colleciton = Storage.getCollectionStr(appKey, "RemoteConfig", query: configJSON)
+        
+        let collectionList = JSONController.parseDatabaseAny(colleciton)
+        
+        if collectionList.count > 0 {
+            
+            guard let collectionObj = collectionList[0] as? [String:String] else {
+                return "collectionObj  is empty: " + configVersion
+            }
+            
+            let filePath = collectionObj["path"]!
+            
+            return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
+            
+        } else {
+            return "collectionList is empty: " + configVersion
+        }
+
+    }
+    
     public func getConfigVerison(_ appKey: String , _ version: String, _ theme: String = "") -> String {
         
         let abTestings = Storage.getCollectionStr(appKey,"ABTesting")
@@ -98,7 +130,7 @@ class RemoteConfig {
             var config : [String:String] = [:]
             
             if theme != "" {
-                config = ["version": version, "theme": theme]
+                config = ["version": version, "appTheme": theme]
             } else {
                 config = ["version": version]
             }
