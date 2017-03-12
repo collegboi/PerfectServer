@@ -275,10 +275,12 @@ func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    if Storage.StoreObject(appKeys, collectionName, jsonStr) {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+    let (result, message) = Storage.StoreObject(appKeys, collectionName, jsonStr)
+    
+    if result {
+        response.appendBody(string: ResultBody.errorBody(value: message))
     } else {
-        response.appendBody(string: ResultBody.successBody(value: "collection added"))
+        response.appendBody(string: ResultBody.successBody(value: message))
     }
     response.completed()
 }

@@ -135,6 +135,7 @@ class RemoteConfig {
                 config = ["version": version]
             }
             
+            
             let configJSON = JSONController.parseJSONToStr(dict: config)
             
             let colleciton = Storage.getCollectionStr(appKey, "RemoteConfig", query: configJSON)
@@ -142,6 +143,19 @@ class RemoteConfig {
             let collectionList = JSONController.parseDatabaseAny(colleciton)
             
             if collectionList.count > 0 {
+                
+                let languages = ["available": "1"] as [String : Any]
+                
+                let languagesJSON = JSONController.parseJSONToStr(dict: languages)
+                
+                let languagesStrings = Storage.getCollectionStrFields(appKey, "Languages", query: languagesJSON, fields: "name")
+                
+                
+                let themes = ["version": version, "appLive": "1"] as [String : Any]
+                
+                let themesJSON = JSONController.parseJSONToStr(dict: themes)
+                
+                let themesStrings = Storage.getCollectionStrFields(appKey, "RemoteConfig", query: themesJSON, fields: "appTheme")
              
                 guard let collectionObj = collectionList[0] as? [String:String] else {
                     return "collectionObj  is empty: " + version
@@ -149,7 +163,11 @@ class RemoteConfig {
                 
                 let filePath = collectionObj["path"]!
                 
-                return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
+                var configObjects = JSONController.parseJSONToDict((FileController.sharedFileHandler?.getContentsOfFile("", filePath))!)
+                configObjects["themes"] = themesStrings
+                configObjects["languagesList"] = languagesStrings
+                
+                return JSONController.parseJSONToStr(dict: configObjects)
 
             } else {
                 return "collectionList is empty: " + version

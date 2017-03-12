@@ -433,6 +433,60 @@ class DatabaseController {
         return field
     }
 
+    static func retrieveCollectionQueryStrFields(_ apID: String,_ collectioName: String, query: String, fields: String ) -> [String] {
+        
+        
+        var fieldRecords = [String]()
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        guard let db = connectDatabase(client, apID: apID) else {
+            return fieldRecords
+        }
+        
+        guard let query = try? BSON.init(json: query) else {
+            return fieldRecords
+        }
+        
+        // define collection
+        guard let collection = db.getCollection(name: collectioName) else {
+            return fieldRecords
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        
+        let fnd = collection.find(query: query)
+        
+        
+        
+        let jsonCollection = fnd?.jsonString ?? ""
+        
+        if jsonCollection != "" {
+            
+            let records = JSONController.parseDatabaseAny(jsonCollection)
+            
+            for record in records {
+                
+                guard let dict = record as? [String:Any] else {
+                    continue
+                }
+                
+                guard let field = dict[fields] as? String else {
+                    continue
+                }
+                
+                fieldRecords.append(field)
+            }
+        }
+        
+        return fieldRecords
+        
+    }
+
     
     static func retrieveCollectionQueryStr(_ apID: String,_ collectioName: String, query: String ) -> String {
         
@@ -555,7 +609,7 @@ class DatabaseController {
         
         if objectID == "" {
             document.append(key: "inserted", string: self.nowDate)
-            self.insertDocument(apID, collectionName, jsonStr: jsonStr)
+            objectID = self.insertDocument(apID, collectionName, jsonStr: jsonStr)
         }
         else {
             
@@ -568,7 +622,7 @@ class DatabaseController {
         
         }
         
-        return ""
+        return objectID
     }
     
     static func safeRemoveDocument(_ apID: String,_ collectioName: String, _ jsonStr: String ) -> Bool {

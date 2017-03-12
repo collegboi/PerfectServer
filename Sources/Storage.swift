@@ -50,16 +50,21 @@ class Storage {
         return result
     }
     
-    class func StoreObject(_ apID: String,_ collectionName: String, _ jsonString: String ) -> Bool {
+    class func StoreObject(_ apID: String,_ collectionName: String, _ jsonString: String ) -> (Bool, String ) {
         
-        var result : Bool = false
+        var result : Bool = true
+        var message: String = ""
             
-        if  DatabaseController.updateInsertDocument(apID, collectionName, jsonStr: jsonString ) == "" {
-            result = true
+        message =  DatabaseController.updateInsertDocument(apID, collectionName, jsonStr: jsonString )
+        
+        if message == "" {
+            result = false
+            message = "error"
         }
         
-        return result
+        return (result, message)
     }
+    
     
     class func getCollectionValues(_ appkey: String, _ collectionName: String, appVersion: String ) -> String {
         
@@ -94,6 +99,11 @@ class Storage {
     class func getCollectionStr(_ apID: String,_ collection:String, query: String) -> String {
         return DatabaseController.retrieveCollectionQueryStr(apID, collection, query: query)
     }
+    
+    class func getCollectionStrFields(_ apID: String,_ collection:String, query: String, fields : String) -> [String] {
+        return DatabaseController.retrieveCollectionQueryStrFields(apID, collection, query: query, fields: fields)
+    }
+    
     
     class func getCollectionStr(_ apID: String,_ collection: String) ->String{
         return DatabaseController.retrieveCollectionString(apID, collection)

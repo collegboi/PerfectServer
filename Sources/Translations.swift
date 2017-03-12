@@ -13,10 +13,61 @@
 
 class Translations {
     
-    class func getTranslationFile(_ filePath: String, _ version: String ) -> String {
+    class func getTranslationVersionFile(_ appKey: String, _ version: String, _ language: String ) -> String {
         
-        return FileController.sharedFileHandler!.getContentsOfFile(filePath, version)
+        var config : [String:String] = [:]
+        config = ["langVersion": version,  "languageName": language ]
         
+        
+        let configJSON = JSONController.parseJSONToStr(dict: config)
+        
+        let colleciton = Storage.getCollectionStr(appKey, "LanguageVersion", query: configJSON)
+        
+        let collectionList = JSONController.parseDatabaseAny(colleciton)
+        
+        if collectionList.count > 0 {
+            
+            
+            guard let collectionObj = collectionList[0] as? [String:String] else {
+                return "collectionObj  is empty: " + version
+            }
+            
+            let filePath = collectionObj["filePath"]!
+            
+            return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
+            
+        } else {
+            return "collectionList is empty: " + version
+        }
+
+    }
+    
+    class func getTranslationFile(_ appKey: String, _ version: String, _ language: String ) -> String {
+        
+        var config : [String:String] = [:]
+        config = ["appVersion": version, "published": "1", "languageName": language ]
+        
+        
+        let configJSON = JSONController.parseJSONToStr(dict: config)
+        
+        let colleciton = Storage.getCollectionStr(appKey, "LanguageVersion", query: configJSON)
+        
+        let collectionList = JSONController.parseDatabaseAny(colleciton)
+        
+        if collectionList.count > 0 {
+            
+            
+            guard let collectionObj = collectionList[0] as? [String:String] else {
+                return "collectionObj  is empty: " + version
+            }
+            
+            let filePath = collectionObj["filePath"]!
+            
+            return (FileController.sharedFileHandler?.getContentsOfFile("", filePath))!
+            
+        } else {
+            return "collectionList is empty: " + version
+        }
     }
     
     class func parseJSONToStr( dict: [String:Any] ) -> String  {
@@ -72,15 +123,28 @@ class Translations {
     class func postTranslationFile(_ appkey: String, _ jsonStr: String ) -> String {
         
         
-        let translationList = "{\"translationList\":" + parseJSONConfig(key: "translationList", dataStr: jsonStr)! + "}"
+        let translationList = "{\"translationList\":" + jsonStr + "}"
         
-        let language = parseJSONConfig(key: "language", dataStr: jsonStr)
+        let filePath = parseJSONConfig(key: "filePath", dataStr: jsonStr)
         
-        let newVersion = parseJSONConfig(key: "newVersion", dataStr: jsonStr)
+//        let versionData = parseJSONConfig(key: "version", dataStr: jsonStr)
+//        let languageID = parseJSONConfig(key: "languageID", dataStr: jsonStr)
+//        let filePath = parseJSONConfig(key: "filePath", dataStr: jsonStr)
+//        let langVersion = parseJSONConfig(key: "langVersion", dataStr: jsonStr)
+//        let appLive = parseJSONConfig(key: "appLive", dataStr: jsonStr)
+//        
+//        let configData: [String:String] = [
+//            "version" : versionData!,
+//            "languageID": languageID!,
+//            "path" : filePath!,
+//            "langVersion": langVersion!,
+//            "appLive":appLive!
+//        ]
+//        let configStr = JSONController.parseJSONToStr(dict: configData)
         
-        FileController.sharedFileHandler?.updateContentsOfFile(newVersion! ,translationList)
+        FileController.sharedFileHandler?.updateContentsOfFile(filePath!,translationList)
         
-        DatabaseController.updateInsertDocument(appkey,"Languages", jsonStr: language!)
+        //DatabaseController.updateInsertDocument(appkey,"LanguageVersion", jsonStr: configStr)
         
         return ""
     }
