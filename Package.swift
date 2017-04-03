@@ -2,6 +2,18 @@ import PackageDescription
  
 let package = Package(
     name: "MyAwesomeProject",
+    targets: [
+        // The `PackageDescription` modules are special, they define the API which
+        // is available to the `Package.swift` manifest files.
+        Target(
+            /** Databsase Package */
+            name: "Database",
+            dependencies: []),
+        Target(
+            /** File Package */
+            name: "File",
+            dependencies: ["Database"]),
+        ],
     dependencies: [
         .Package(
             url: "https://github.com/PerfectlySoft/Perfect-Turnstile-MongoDB.git",
