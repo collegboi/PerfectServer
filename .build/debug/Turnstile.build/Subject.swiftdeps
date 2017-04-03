@@ -10,18 +10,18 @@ provides-member:
 - ["V9Turnstile21AuthenticationDetails", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "Session"
-- "Bool"
-- "BooleanLiteralType"
-- "Turnstile"
-- "Credentials"
-- "Account"
-- "AuthenticationDetails"
-- "String"
-- !private "!="
-- "AssignmentPrecedence"
 - "TernaryPrecedence"
 - "Subject"
+- "String"
+- "Credentials"
+- !private "!="
+- "AuthenticationDetails"
+- "AssignmentPrecedence"
+- "Bool"
+- "Turnstile"
+- "Account"
+- "BooleanLiteralType"
+- !private "Session"
 depends-member:
 - ["P9Turnstile7Account", "deinit"]
 - !private ["Ps9AnyObject", "AuthenticationDetails"]

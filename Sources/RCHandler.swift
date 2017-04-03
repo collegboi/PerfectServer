@@ -15,14 +15,11 @@ import MongoDB
 public func makeRCRoutes() -> Routes {
     var routes = Routes()
     
-    
-    routes.add(method: .get, uris: ["/", "index.html"], handler: indexRCHandler)
     routes.add(method: .post, uri: "/api/{appkey}/remote", handler: sendRemoteConfig)
     routes.add(method: .get, uri: "/api/{appkey}/remote/{version}", handler: getRemoteConfig)
     routes.add(method: .get, uri: "/api/{appkey}/remoteConfig/{version}", handler: getRemoteConfigVersion)
     routes.add(method: .get, uri: "/api/{appkey}/remote/{version}/{theme}", handler: getRemoteThemeConfig)
     
-    // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
     
     return routes

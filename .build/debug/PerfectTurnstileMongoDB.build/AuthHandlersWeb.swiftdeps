@@ -7,18 +7,18 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB15AuthHandlersWeb", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPRequest"
-- "HTTPResponse"
-- !private "HTTPCookie"
 - !private "TurnstileError"
-- !private "UnicodeScalarType"
-- !private "??"
-- !private "UsernamePassword"
-- !private "Dictionary"
-- !private "String"
-- !private "StringLiteralType"
-- "AuthHandlersWeb"
+- "HTTPResponse"
+- "HTTPRequest"
 - !private "BooleanLiteralType"
+- !private "String"
+- !private "UsernamePassword"
+- !private "HTTPCookie"
+- !private "StringLiteralType"
+- !private "??"
+- !private "Dictionary"
+- !private "UnicodeScalarType"
+- "AuthHandlersWeb"
 depends-member:
 - ["P9Turnstile7Account", "deinit"]
 - !private ["P9Turnstile7Account", "uniqueID"]

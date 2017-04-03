@@ -10,9 +10,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - "=="
 - "AssignmentPrecedence"
-- "StORMDataSource"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- "StORMDataSource"
 depends-member:
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps7CVarArg", "hashValue"]

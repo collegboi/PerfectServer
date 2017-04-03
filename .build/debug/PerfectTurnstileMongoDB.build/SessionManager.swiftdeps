@@ -7,18 +7,18 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB21PerfectSessionManager", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Random"
 - "SessionManager"
-- "Account"
-- !private "AccessTokenStore"
+- "URandom"
 - !private "InvalidSessionError"
+- !private "tokenStore"
+- !private "SessionAccount"
+- "PerfectSessionManager"
+- "Random"
+- !private "StringLiteralType"
+- "Account"
 - "String"
 - !private "print"
-- !private "tokenStore"
-- "PerfectSessionManager"
-- !private "SessionAccount"
-- !private "StringLiteralType"
-- "URandom"
+- !private "AccessTokenStore"
 depends-member:
 - !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "check"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "deinit"]

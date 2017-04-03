@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - "URandom"
 - "Random"
-- "String"
-- !private "SessionAccount"
-- "AssignmentPrecedence"
-- "MemorySessionManager"
-- "Account"
-- !private "!="
 - !private "InvalidSessionError"
+- "Account"
+- "AssignmentPrecedence"
+- "String"
+- !private "!="
 - "SessionManager"
+- !private "SessionAccount"
+- "MemorySessionManager"
 depends-member:
 - ["P9Turnstile7Account", "deinit"]
 - !private ["P9Turnstile7Account", "init"]

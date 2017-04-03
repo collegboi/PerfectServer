@@ -6,6 +6,7 @@
 //
 //
 import Foundation
+import PerfectHTTP
 
 public class AuthenChecker {
     
@@ -15,6 +16,49 @@ public class AuthenChecker {
         let token = header.substring(from: range.upperBound)
         return token
     }
+    
+    class func checkTestMode(request: HTTPRequest) -> Int {
+    
+        let queryParams = request.queryParams
+        
+        if queryParams.count > 0 {
+            
+            for query in queryParams {
+                
+                if query.0 == "testMode" {
+                    
+                    let test = query.1
+                    
+                    if test != "1"  && test != "" {
+                        return 0
+                    } else if test == "1" {
+                        return 1
+                    }
+                }
+            }
+        }
+        return 0
+    }
+    
+    class func checkVersion(request: HTTPRequest) -> String {
+        
+        let queryParams = request.queryParams
+        
+        if queryParams.count > 0 {
+            
+            for query in queryParams {
+                
+                if query.0 == "appVersion" {
+                    
+                    let test = query.1
+                
+                    return test
+                }
+            }
+        }
+        return ""
+    }
+
     
     class func checkBaicKey( header: String) -> Bool {
 

@@ -7,17 +7,17 @@ provides-member:
 - ["C9Turnstile11MemoryRealm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Credentials"
 - "Account"
+- "Credentials"
 - !private "MemoryAccount"
 - !private "UsernamePassword"
-- !private "IncorrectCredentialsError"
-- !private "=="
 - !private "AccountTakenError"
+- !private "=="
 - "AssignmentPrecedence"
-- "CastingPrecedence"
 - "MemoryRealm"
+- "CastingPrecedence"
 - "Realm"
+- !private "IncorrectCredentialsError"
 - !private "UnsupportedCredentialsError"
 - "String"
 depends-member:

@@ -5,11 +5,11 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "makeJSONAuthRoutes"
-- "String"
-- !private "AuthHandlersJSON"
 - "Routes"
+- "String"
+- "makeJSONAuthRoutes"
 - "StringLiteralType"
+- !private "AuthHandlersJSON"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "loginHandlerPOST"]

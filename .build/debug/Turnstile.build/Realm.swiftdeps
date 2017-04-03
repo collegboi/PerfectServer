@@ -8,8 +8,8 @@ provides-member:
 - ["P9Turnstile5Realm", "register"]
 provides-dynamic-lookup:
 depends-top-level:
-- "Account"
 - "Credentials"
+- "Account"
 - "Realm"
 - !private "UnsupportedCredentialsError"
 depends-member:

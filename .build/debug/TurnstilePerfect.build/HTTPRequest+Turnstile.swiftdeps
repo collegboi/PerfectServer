@@ -11,18 +11,18 @@ provides-member:
 - ["P11PerfectHTTP11HTTPRequest", "getCookie"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "HTTPRequest"
-- "APIKey"
-- !private "StringLiteralType"
-- !private "Data"
-- "AuthorizationHeader"
-- "CastingPrecedence"
 - "AssignmentPrecedence"
 - !private "=="
-- "AccessToken"
-- !private "UnicodeScalarType"
+- "CastingPrecedence"
+- "APIKey"
+- !private "Data"
 - "Subject"
+- "HTTPRequest"
+- !private "UnicodeScalarType"
+- "AuthorizationHeader"
+- !private "StringLiteralType"
+- "String"
+- "AccessToken"
 depends-member:
 - ["C9Turnstile6APIKey", "deinit"]
 - !private ["C9Turnstile6APIKey", "init"]

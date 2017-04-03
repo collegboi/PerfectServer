@@ -7,25 +7,25 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB9AuthRealm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AuthRealm"
 - !private "IncorrectCredentialsError"
-- !private "print"
-- !private "String"
-- !private "UnsupportedCredentialsError"
-- "Account"
-- !private "AccessTokenStore"
 - "URandom"
+- "Credentials"
+- !private "AuthAccount"
+- "AuthRealm"
+- !private "UnsupportedCredentialsError"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "AccountTakenError"
-- "Credentials"
-- "Random"
 - "UsernamePassword"
+- !private "AccountTakenError"
+- "AccessToken"
+- "Account"
+- !private "AccessTokenStore"
 - !private "StringLiteralType"
 - "Realm"
-- "AccessToken"
+- !private "print"
+- !private "String"
 - !private "BooleanLiteralType"
-- !private "AuthAccount"
+- "Random"
 depends-member:
 - ["C9Turnstile11AccessToken", "deinit"]
 - !private ["C9Turnstile11AccessToken", "string"]

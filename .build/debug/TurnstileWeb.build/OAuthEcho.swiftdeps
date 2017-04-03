@@ -7,11 +7,11 @@ provides-member:
 - ["C12TurnstileWeb9OAuthEcho", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "OAuthParameters"
-- "AssignmentPrecedence"
 - "Credentials"
-- "OAuthEcho"
 - "URL"
+- "AssignmentPrecedence"
+- "OAuthEcho"
+- "OAuthParameters"
 depends-member:
 - !private ["Ps9AnyObject", "authServiceProvider"]
 - !private ["Ps9AnyObject", "oauthParameters"]

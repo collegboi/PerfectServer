@@ -5,11 +5,11 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
+- !private "UnicodeScalarType"
 - "makeWebAuthRoutes"
 - "Routes"
 - !private "AuthHandlersWeb"
 - !private "StringLiteralType"
-- !private "UnicodeScalarType"
 depends-member:
 - !private ["Ps9AnyObject", "indexHandlerGet"]
 - !private ["Ps9AnyObject", "init"]

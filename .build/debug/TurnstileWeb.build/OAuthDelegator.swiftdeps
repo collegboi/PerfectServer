@@ -7,13 +7,13 @@ provides-member:
 - ["C12TurnstileWeb14OAuthDelegator", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLSessionConfiguration"
 - "HTTPClientGenerator"
 - "HTTPClient"
+- "String"
 - "URLSession"
 - "AssignmentPrecedence"
 - "OAuthDelegator"
-- "String"
+- "URLSessionConfiguration"
 depends-member:
 - ["Ps9AnyObject", "URLSession"]
 - ["Ps9AnyObject", "URLSessionConfiguration"]

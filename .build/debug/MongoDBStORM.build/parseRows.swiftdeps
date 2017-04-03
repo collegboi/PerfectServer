@@ -6,13 +6,13 @@ provides-member:
 - ["C12MongoDBStORM12MongoDBStORM", "parseRows"]
 provides-dynamic-lookup:
 depends-top-level:
-- "MongoCursor"
-- "MongoDBStORM"
 - !private "Dictionary"
-- !private "String"
+- "MongoDBStORM"
 - "CastingPrecedence"
-- "StORMRow"
 - "AssignmentPrecedence"
+- !private "String"
+- "StORMRow"
+- "MongoCursor"
 depends-member:
 - !private ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "Iterator"]

@@ -7,17 +7,17 @@ provides-member:
 - ["C12TurnstileWeb15OAuthParameters", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "??"
-- !private "<"
+- !private "OAuthKey"
 - !private "~="
 - !private "=="
-- !private "CharacterSet"
 - "AssignmentPrecedence"
-- "UnicodeScalarType"
-- "StringLiteralType"
+- !private "??"
 - "OAuthParameters"
-- !private "OAuthKey"
+- !private "CharacterSet"
+- "StringLiteralType"
+- "String"
+- "UnicodeScalarType"
+- !private "<"
 depends-member:
 - !private ["Ps9AnyObject", "CharacterSet"]
 - !private ["Ps9AnyObject", "OAuthKey"]

@@ -9,51 +9,47 @@ provides-member:
 - ["VC16MyAwesomeProject18DatabaseController8asMyUUID", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "print"
-- !private "uuid_generate_random"
-- !private "Int8"
-- !private "UnicodeScalarType"
-- !private "??"
-- "Int"
-- !private "memcpy"
-- "MongoDatabase"
-- "MongoCollection"
-- !private ">"
-- !private "Date"
-- !private "+"
-- !private "=="
-- "AssignmentPrecedence"
-- "String"
-- "MongoClient"
-- "CastingPrecedence"
-- "uuid_t"
-- "DatabaseController"
-- !private "JSONController"
-- !private "BSON"
-- !private "UInt8"
-- !private "TimeZone"
-- !private "UnsafeMutablePointer"
-- !private "DateFormatter"
 - !private "StringLiteralType"
-- !private "NSTimeZone"
-- !private "!="
-- "Bool"
-- !private "BooleanLiteralType"
-- !private "uuid_parse"
+- !private "??"
+- !private "BSON"
 - !private "MemoryLayout"
-- !private "MongoIndexOptions"
+- "MongoDatabase"
 - !private "uuid_unparse_lower"
+- !private "Int8"
+- "String"
+- "DatabaseController"
+- !private ">"
+- !private "UInt8"
+- !private "UnsafeMutablePointer"
+- "uuid_t"
+- !private "BooleanLiteralType"
+- "MongoCollection"
+- !private "print"
+- !private "uuid_parse"
+- !private "uuid_generate_random"
+- !private "UnicodeScalarType"
+- !private "!="
+- !private "MongoIndexOptions"
+- !private "moment"
+- "CastingPrecedence"
+- "MongoClient"
+- "Int"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "JSONController"
+- !private "+"
+- !private "memcpy"
+- "Bool"
+- !private "LogFile"
 depends-member:
 - !private ["Ps9AnyObject", "BSON"]
-- !private ["Ps9AnyObject", "Date"]
-- !private ["Ps9AnyObject", "DateFormatter"]
 - !private ["Ps9AnyObject", "Element"]
 - !private ["Ps9AnyObject", "Iterator"]
 - !private ["Ps9AnyObject", "JSONController"]
+- !private ["Ps9AnyObject", "LogFile"]
 - !private ["Ps9AnyObject", "MemoryLayout"]
 - !private ["Ps9AnyObject", "MongoClient"]
 - !private ["Ps9AnyObject", "MongoIndexOptions"]
-- !private ["Ps9AnyObject", "NSTimeZone"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UnsafeMutablePointer"]
 - !private ["Ps9AnyObject", "append"]
@@ -65,7 +61,6 @@ depends-member:
 - !private ["Ps9AnyObject", "connectDatabase"]
 - !private ["Ps9AnyObject", "createIndex"]
 - !private ["Ps9AnyObject", "databaseNames"]
-- !private ["Ps9AnyObject", "dateFormat"]
 - !private ["Ps9AnyObject", "drop"]
 - !private ["Ps9AnyObject", "dropIndex"]
 - !private ["Ps9AnyObject", "find"]
@@ -77,6 +72,7 @@ depends-member:
 - !private ["Ps9AnyObject", "jsonDecode"]
 - !private ["Ps9AnyObject", "jsonString"]
 - !private ["Ps9AnyObject", "memcpy"]
+- !private ["Ps9AnyObject", "moment"]
 - !private ["Ps9AnyObject", "name"]
 - !private ["Ps9AnyObject", "nowDate"]
 - !private ["Ps9AnyObject", "nowDateTime"]
@@ -89,8 +85,7 @@ depends-member:
 - !private ["Ps9AnyObject", "remove"]
 - !private ["Ps9AnyObject", "rename"]
 - !private ["Ps9AnyObject", "retrieveCollectionQueryValues"]
-- !private ["Ps9AnyObject", "string"]
-- !private ["Ps9AnyObject", "timeZone"]
+- !private ["Ps9AnyObject", "testBasic"]
 - !private ["Ps9AnyObject", "update"]
 - !private ["Ps9AnyObject", "uuid_generate_random"]
 - !private ["Ps9AnyObject", "uuid_parse"]
@@ -161,15 +156,12 @@ depends-member:
 - !private ["Ps7CVarArg", "allocate"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "count"]
-- !private ["Ps7CVarArg", "dateFormat"]
 - !private ["Ps7CVarArg", "deallocate"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "joined"]
 - !private ["Ps7CVarArg", "jsonDecode"]
 - !private ["Ps7CVarArg", "jsonEncodedString"]
-- !private ["Ps7CVarArg", "string"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Ps7CVarArg", "timeZone"]
 - !private ["Vs9Character", "deinit"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
@@ -191,6 +183,7 @@ depends-member:
 - !private ["Ps10Comparable", "append"]
 - !private ["Ps10Comparable", "asString"]
 - !private ["Ps10Comparable", "deallocate"]
+- !private ["Ps10Comparable", "format"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "jsonDecode"]
 - !private ["Ps10Comparable", "subscript"]
@@ -202,15 +195,13 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "allocate"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
-- !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "deallocate"]
+- !private ["Ps28CustomDebugStringConvertible", "format"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "joined"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonDecode"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonEncodedString"]
-- !private ["Ps28CustomDebugStringConvertible", "string"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "timeZone"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
@@ -254,29 +245,24 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "asString"]
 - !private ["Ps23CustomStringConvertible", "count"]
-- !private ["Ps23CustomStringConvertible", "dateFormat"]
+- !private ["Ps23CustomStringConvertible", "format"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "joined"]
 - !private ["Ps23CustomStringConvertible", "jsonDecode"]
 - !private ["Ps23CustomStringConvertible", "jsonEncodedString"]
-- !private ["Ps23CustomStringConvertible", "string"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "timeZone"]
 - !private ["C16MyAwesomeProject18DatabaseController", "BSON"]
 - ["C16MyAwesomeProject18DatabaseController", "Bool"]
-- !private ["C16MyAwesomeProject18DatabaseController", "Date"]
-- !private ["C16MyAwesomeProject18DatabaseController", "DateFormatter"]
 - ["C16MyAwesomeProject18DatabaseController", "Int"]
 - !private ["C16MyAwesomeProject18DatabaseController", "Int8"]
 - !private ["C16MyAwesomeProject18DatabaseController", "JSONController"]
+- !private ["C16MyAwesomeProject18DatabaseController", "LogFile"]
 - !private ["C16MyAwesomeProject18DatabaseController", "MemoryLayout"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoClient"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "MongoDatabase"]
 - !private ["C16MyAwesomeProject18DatabaseController", "MongoIndexOptions"]
-- !private ["C16MyAwesomeProject18DatabaseController", "NSTimeZone"]
 - ["C16MyAwesomeProject18DatabaseController", "String"]
-- !private ["C16MyAwesomeProject18DatabaseController", "TimeZone"]
 - !private ["C16MyAwesomeProject18DatabaseController", "UInt8"]
 - !private ["C16MyAwesomeProject18DatabaseController", "UnsafeMutablePointer"]
 - ["C16MyAwesomeProject18DatabaseController", "asMyUUID"]
@@ -293,33 +279,30 @@ depends-member:
 - ["C16MyAwesomeProject18DatabaseController", "insertCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
 - !private ["C16MyAwesomeProject18DatabaseController", "memcpy"]
+- !private ["C16MyAwesomeProject18DatabaseController", "moment"]
 - ["C16MyAwesomeProject18DatabaseController", "myNewUUID"]
 - !private ["C16MyAwesomeProject18DatabaseController", "nowDate"]
 - !private ["C16MyAwesomeProject18DatabaseController", "nowDateTime"]
 - ["C16MyAwesomeProject18DatabaseController", "openMongoDB"]
 - !private ["C16MyAwesomeProject18DatabaseController", "print"]
+- ["C16MyAwesomeProject18DatabaseController", "removeCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "removeDocument"]
 - ["C16MyAwesomeProject18DatabaseController", "removeIndex"]
 - ["C16MyAwesomeProject18DatabaseController", "renameCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "retrieveCollection"]
 - ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQuery"]
 - ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQueryStr"]
+- ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQueryStrFields"]
 - !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQueryValues"]
 - ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionString"]
 - ["C16MyAwesomeProject18DatabaseController", "safeRemoveDocument"]
+- ["C16MyAwesomeProject18DatabaseController", "testBasic"]
 - ["C16MyAwesomeProject18DatabaseController", "updateDocument"]
 - ["C16MyAwesomeProject18DatabaseController", "updateInsertDocument"]
 - !private ["C16MyAwesomeProject18DatabaseController", "uuid_generate_random"]
 - !private ["C16MyAwesomeProject18DatabaseController", "uuid_parse"]
 - ["C16MyAwesomeProject18DatabaseController", "uuid_t"]
 - !private ["C16MyAwesomeProject18DatabaseController", "uuid_unparse_lower"]
-- !private ["V10Foundation4Date", "deinit"]
-- !private ["V10Foundation4Date", "init"]
-- !private ["CSo13DateFormatter", "dateFormat"]
-- !private ["CSo13DateFormatter", "deinit"]
-- !private ["CSo13DateFormatter", "init"]
-- !private ["CSo13DateFormatter", "string"]
-- !private ["CSo13DateFormatter", "timeZone"]
 - !private ["Vs27DefaultBidirectionalIndices", "Index"]
 - !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
 - !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
@@ -347,14 +330,12 @@ depends-member:
 - !private ["Ps9Equatable", "allocate"]
 - !private ["Ps9Equatable", "append"]
 - !private ["Ps9Equatable", "asString"]
-- !private ["Ps9Equatable", "dateFormat"]
 - !private ["Ps9Equatable", "deallocate"]
+- !private ["Ps9Equatable", "format"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "jsonDecode"]
 - !private ["Ps9Equatable", "none"]
-- !private ["Ps9Equatable", "string"]
 - !private ["Ps9Equatable", "subscript"]
-- !private ["Ps9Equatable", "timeZone"]
 - ["Ps5Error", "deinit"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
@@ -388,23 +369,16 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "jsonDecode"]
 - !private ["Sf", "deinit"]
-- !private ["CSo9Formatter", "dateFormat"]
-- !private ["CSo9Formatter", "init"]
-- !private ["CSo9Formatter", "string"]
-- !private ["CSo9Formatter", "timeZone"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "allZeros"]
 - !private ["Ps8Hashable", "allocate"]
-- !private ["Ps8Hashable", "dateFormat"]
 - !private ["Ps8Hashable", "deallocate"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "jsonDecode"]
-- !private ["Ps8Hashable", "string"]
 - !private ["Ps8Hashable", "subscript"]
-- !private ["Ps8Hashable", "timeZone"]
 - ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "IndexDistance"]
@@ -473,6 +447,8 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "jsonDecode"]
 - !private ["P10PerfectLib15JSONConvertible", "jsonEncodedString"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
+- !private ["V13PerfectLogger7LogFile", "info"]
+- !private ["V13PerfectLogger7LogFile", "location"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "jsonDecode"]
@@ -483,6 +459,8 @@ depends-member:
 - !private ["Ps10MirrorPath", "allZeros"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "jsonDecode"]
+- !private ["V11SwiftMoment6Moment", "deinit"]
+- !private ["V11SwiftMoment6Moment", "format"]
 - !private ["C7MongoDB11MongoClient", "close"]
 - !private ["C7MongoDB11MongoClient", "databaseNames"]
 - ["C7MongoDB11MongoClient", "deinit"]
@@ -534,28 +512,16 @@ depends-member:
 - !private ["Ps16MutableIndexable", "joined"]
 - !private ["Ps16MutableIndexable", "jsonEncodedString"]
 - !private ["Ps16MutableIndexable", "subscript"]
-- !private ["PSo8NSCoding", "dateFormat"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "jsonDecode"]
-- !private ["PSo8NSCoding", "string"]
-- !private ["PSo8NSCoding", "timeZone"]
-- !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "jsonDecode"]
-- !private ["PSo9NSCopying", "string"]
-- !private ["PSo9NSCopying", "timeZone"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "jsonDecode"]
-- !private ["CSo8NSObject", "dateFormat"]
 - !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "jsonDecode"]
-- !private ["CSo8NSObject", "string"]
-- !private ["CSo8NSObject", "timeZone"]
-- !private ["PSo16NSObjectProtocol", "dateFormat"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "jsonDecode"]
-- !private ["PSo16NSObjectProtocol", "string"]
-- !private ["PSo16NSObjectProtocol", "timeZone"]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardReading", "jsonDecode"]
 - !private ["PSo19NSPasteboardWriting", "init"]
@@ -564,7 +530,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "jsonDecode"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "jsonDecode"]
-- !private ["CSo10NSTimeZone", "init"]
 - !private ["Ps9OptionSet", "none"]
 - ["Sq", "deinit"]
 - !private ["Ps22RandomAccessCollection", "Index"]
@@ -620,7 +585,6 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "jsonEncodedString"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "none"]
-- !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "IndexDistance"]
@@ -715,13 +679,10 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "allZeros"]
 - !private ["Ps9_Hashable", "allocate"]
-- !private ["Ps9_Hashable", "dateFormat"]
 - !private ["Ps9_Hashable", "deallocate"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "jsonDecode"]
-- !private ["Ps9_Hashable", "string"]
 - !private ["Ps9_Hashable", "subscript"]
-- !private ["Ps9_Hashable", "timeZone"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - !private ["Ps14_Incrementable", "Stride"]
 - !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
@@ -800,8 +761,6 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - "C16MyAwesomeProject18DatabaseController"
-- !private "V10Foundation4Date"
-- !private "CSo13DateFormatter"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
 - "Vs10Dictionary"
@@ -818,7 +777,6 @@ depends-nominal:
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
-- !private "CSo9Formatter"
 - !private "Ps8Hashable"
 - "SQ"
 - !private "Ps9Indexable"
@@ -834,9 +792,11 @@ depends-nominal:
 - !private "Ps16IteratorProtocol"
 - !private "C16MyAwesomeProject14JSONController"
 - "P10PerfectLib15JSONConvertible"
+- !private "V13PerfectLogger7LogFile"
 - !private "Ps25LosslessStringConvertible"
 - !private "Os12MemoryLayout"
 - !private "Ps10MirrorPath"
+- !private "V11SwiftMoment6Moment"
 - "C7MongoDB11MongoClient"
 - "C7MongoDB15MongoCollection"
 - "C7MongoDB11MongoCursor"
@@ -855,7 +815,6 @@ depends-nominal:
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- !private "CSo10NSTimeZone"
 - !private "Ps9OptionSet"
 - "Sq"
 - !private "Ps22RandomAccessCollection"
@@ -864,7 +823,6 @@ depends-nominal:
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
-- !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - !private "Ps13SignedInteger"
@@ -913,6 +871,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -1030,7 +989,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -1058,4 +1016,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "3416f7b1ea08d4221866e8535a04c790"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
+interface-hash: "4329e28b8ea0b06b594656018f2aeabf"

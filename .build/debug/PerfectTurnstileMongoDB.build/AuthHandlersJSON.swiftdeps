@@ -8,17 +8,17 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB16AuthHandlersJSON", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "tokenStore"
-- !private "TurnstileError"
+- "HTTPResponse"
 - "HTTPRequest"
 - "AssignmentPrecedence"
-- "HTTPResponse"
+- "AuthHandlersJSON"
+- "AccessTokenStore"
 - !private "UsernamePassword"
 - !private "StringLiteralType"
-- "AccessTokenStore"
-- !private "print"
-- "AuthHandlersJSON"
 - !private "String"
+- "tokenStore"
+- !private "print"
+- !private "TurnstileError"
 depends-member:
 - !private ["C23PerfectTurnstileMongoDB16AccessTokenStore", "new"]
 - ["P9Turnstile7Account", "deinit"]

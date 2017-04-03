@@ -21,7 +21,11 @@ class Translations {
         
         let configJSON = JSONController.parseJSONToStr(dict: config)
         
-        let colleciton = Storage.getCollectionStr(appKey, "LanguageVersion", query: configJSON)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName("LanguageVersion")
+        
+        let colleciton = storage.getCollectionStr(query: configJSON)
         
         let collectionList = JSONController.parseDatabaseAny(colleciton)
         
@@ -39,7 +43,6 @@ class Translations {
         } else {
             return "collectionList is empty: " + version
         }
-
     }
     
     class func getTranslationFile(_ appKey: String, _ version: String, _ language: String ) -> String {
@@ -50,7 +53,11 @@ class Translations {
         
         let configJSON = JSONController.parseJSONToStr(dict: config)
         
-        let colleciton = Storage.getCollectionStr(appKey, "LanguageVersion", query: configJSON)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName("LanguageVersion")
+
+        let colleciton = storage.getCollectionStr(query: configJSON)
         
         let collectionList = JSONController.parseDatabaseAny(colleciton)
         

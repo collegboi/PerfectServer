@@ -7,11 +7,11 @@ provides-member:
 - ["V5StORM11StORMCursor", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "AssignmentPrecedence"
-- "IntegerLiteralType"
-- "FloatLiteralType"
-- "StORMCursor"
 - "Int"
+- "AssignmentPrecedence"
+- "StORMCursor"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 depends-member:
 - ["Si", "deinit"]
 - ["V5StORM11StORMCursor", "Int"]

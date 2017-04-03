@@ -14,9 +14,13 @@ class LocalDatabaseHandler {
         
         let strQuery = JSONController.parseJSONToStr(dict: query)
         
-        let returnData = DatabaseController.retrieveCollectionQuery(appKey, collectionName, query: strQuery)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName(collectionName)
         
-        let returnString = "[\(returnData.joined(separator: ","))]"
+        let returnData = storage.getCollectionStr(query: strQuery)
+        
+        let returnString = "[\(returnData)]"
         
         return JSONController.parseDatabase(returnString)
     }

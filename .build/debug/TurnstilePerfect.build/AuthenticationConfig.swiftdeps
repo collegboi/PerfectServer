@@ -7,9 +7,9 @@ provides-member:
 - ["V16TurnstilePerfect20AuthenticationConfig", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "+="
 - "AuthenticationConfig"
+- !private "+="
+- "String"
 depends-member:
 - !private ["Sa", "Iterator"]
 - !private ["Sa", "_Element"]

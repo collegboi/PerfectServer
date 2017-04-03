@@ -3,30 +3,35 @@ provides-top-level:
 - "makeRCRoutes"
 - "indexRCHandler"
 - "getRemoteConfig"
+- "getRemoteConfigVersion"
+- "getRemoteThemeConfig"
 - "sendRemoteConfig"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "StringLiteralType"
-- "indexRCHandler"
-- "getRemoteConfig"
-- !private "ResultBody"
-- "HTTPResponse"
 - !private "??"
-- "HTTPRequest"
-- !private "UnicodeScalarType"
-- "Routes"
-- !private "RemoteConfig"
-- "makeRCRoutes"
-- "sendRemoteConfig"
-- !private "print"
-- !private "RCVersion"
-- "AssignmentPrecedence"
 - !private "Array"
+- "sendRemoteConfig"
+- !private "RCVersion"
+- "getRemoteConfig"
+- !private "RemoteConfig"
+- "getRemoteThemeConfig"
+- !private "print"
+- "indexRCHandler"
+- !private "UnicodeScalarType"
+- "HTTPRequest"
+- "Routes"
+- "makeRCRoutes"
+- !private "ResultBody"
+- "AssignmentPrecedence"
+- "getRemoteConfigVersion"
+- "HTTPResponse"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getConfigVerison"]
+- !private ["Ps9AnyObject", "getRemoteConfigVersion"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "sendRemoteConfig"]
 - !private ["Ps9AnyObject", "shared"]
@@ -137,6 +142,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "Element"]
 - ["C16MyAwesomeProject12RemoteConfig", "deinit"]
 - !private ["C16MyAwesomeProject12RemoteConfig", "getConfigVerison"]
+- !private ["C16MyAwesomeProject12RemoteConfig", "getRemoteConfigVersion"]
 - !private ["C16MyAwesomeProject12RemoteConfig", "shared"]
 - !private ["C16MyAwesomeProject10ResultBody", "errorBody"]
 - !private ["C16MyAwesomeProject10ResultBody", "successBody"]
@@ -278,6 +284,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -395,7 +402,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -423,4 +429,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "cb3d017693a24f85a295d333978d1bd7"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
+interface-hash: "37c52fc112ef3c9e461842c321c7a9cc"

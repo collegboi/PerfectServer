@@ -8,12 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "ThrowSystemError"
-- !private "setuid"
-- "String"
-- !private "StringLiteralType"
 - "PerfectServer"
+- !private "setuid"
+- !private "StringLiteralType"
 - !private "getpwnam"
 - !private "=="
+- "String"
 - !private "setgid"
 depends-member:
 - !private ["Ps9AnyObject", "init"]

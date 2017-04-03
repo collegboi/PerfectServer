@@ -18,17 +18,28 @@ class IssueTracker {
     
     static func sendNewIssue(_ appKey:String, _ collectionName: String, _ issueObject: String ) -> String {
         
-        return DatabaseController.updateInsertDocument(appKey, collectionName, jsonStr: issueObject)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName(collectionName)
+        
+        return storage.updateInsertDocument(issueObject)
     }
     
     static func getAllIssues(_ appKey:String, _ collectionName: String) -> String {
         
-        return Storage.getCollectionStr(appKey, collectionName)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName(collectionName)
+        
+        return storage.getCollectionStr()
     }
     
     
     static func getIssue(_ appkey:String, _ collectionName: String, _ issueID: String ) -> String {
+        let storage = Storage()
+        storage.setAppKey(appkey)
+        storage.setCollectionName(collectionName)
         
-        return Storage.getCollectionStr(appkey, collectionName, query: issueID)
+        return storage.getCollectionStr(query: issueID)
     }
 }

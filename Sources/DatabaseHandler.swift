@@ -5,7 +5,6 @@
 //  Created by Timothy Barnard on 05/02/2017.
 //
 //
-
 import PerfectLib
 import PerfectHTTP
 import MongoDB
@@ -13,7 +12,7 @@ import MongoDB
 /// Defines and returns the Web Authentication routes
 public func makeDatabaseRoutes() -> Routes {
     var routes = Routes()
-
+    
     //routes.add(method: .get, uri: "/storage/Tables", handler: mongoGetCollections)
     routes.add(method: .get, uri: "/api/{appkey}/storage/createIndex/{collection}/{index}/", handler: mongoCreateIndex)
     routes.add(method: .get, uri: "/api/{appkey}/storage/dropCollection/{collection}/", handler: mongoDropCollection)
@@ -33,12 +32,53 @@ public func makeDatabaseRoutes() -> Routes {
     routes.add(method: .post, uri: "/api/{appkey}/storage/query/{collection}/", handler: databaseGetQuery)
     
     routes.add(method: .post, uri: "/storage/{collection}", handler: databaseCollectionPost)
-
     
-    // Check the console to see the logical structure of what was installed.
+    routes.add(method: .post, uri: "/api/{appkey}/replicate", handler: replicateDatabase)
+
     print("\(routes.navigator.description)")
     
     return routes
+}
+
+private func getStorageInstanceCol(request: HTTPRequest, _ response: HTTPResponse) -> Storage? {
+    
+    guard let appkey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
+        response.completed()
+        return nil
+    }
+    
+    guard let collectionName = request.urlVariables["collection"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
+        response.completed()
+        return nil
+    }
+    
+    let storage = Storage()
+    storage.setTestMode(AuthenChecker.checkTestMode(request: request))
+    storage.setAppVersion(AuthenChecker.checkVersion(request: request))
+    storage.setAppKey(appkey)
+    storage.setCollectionName(collectionName)
+    
+    return storage
+
+}
+
+private func getStorageInstance(request: HTTPRequest, _ response: HTTPResponse) -> Storage? {
+    
+    guard let appkey = request.urlVariables["appkey"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
+        response.completed()
+        return nil
+    }
+
+    let storage = Storage()
+    storage.setAppVersion(AuthenChecker.checkVersion(request: request))
+    storage.setTestMode(AuthenChecker.checkTestMode(request: request))
+    storage.setAppKey(appkey)
+    
+    return storage
+    
 }
 
 func databaseGetQuery(request: HTTPRequest, _ response: HTTPResponse) {
@@ -46,17 +86,6 @@ func databaseGetQuery(request: HTTPRequest, _ response: HTTPResponse) {
     var skip: Int = 0
     var limit: Int = 100
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
     
     if let skipValue = request.urlVariables["skip"] {
         skip = skipValue.toInt() ?? 0
@@ -72,15 +101,19 @@ func databaseGetQuery(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let data = Storage.getQueryCollection(appkey, collectionName, json: jsonStr, skip: skip, limit: limit)
+    let storageObj = getStorageInstanceCol(request: request, response)
     
-    response.appendBody(string: data)
+    let data = storageObj?.getQueryCollection(jsonStr, skip: skip, limit: limit)
+    
+    //let data = Storage.getQueryCollection(appkey, collectionName, json: jsonStr, skip: skip, limit: limit)
+    
+    response.appendBody(string: data!)
     response.completed()
     
     
 }
 
-func mongoDropCollection(request: HTTPRequest, _ response: HTTPResponse) {
+func replicateDatabase(request: HTTPRequest, _ response: HTTPResponse) {
     
     guard let appkey = request.urlVariables["appkey"] else {
         response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
@@ -88,31 +121,26 @@ func mongoDropCollection(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "no collection"))
-        response.completed()
-        return
-    }
-    Storage.dropCollection(appkey, collectionName)
+    Storage.replicateDatabase(appkey)
     
-    response.appendBody(string: ResultBody.successBody(value: collectionName + " dropped"))
+    response.appendBody(string: ResultBody.successBody(value: ""))
+    response.completed()
+    
+}
+
+func mongoDropCollection(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    let storageObj = getStorageInstanceCol(request: request, response)
+    storageObj?.dropCollection()
+    
+    response.appendBody(string: ResultBody.successBody(value: storageObj?.getCollectioName() ?? "" + " dropped"))
     response.completed()
     
 }
 
 func mongoCreateIndex(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "no collection"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     guard let index = request.urlVariables["index"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no index"))
@@ -120,7 +148,7 @@ func mongoCreateIndex(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
    
-    let indexVal = Storage.createIndex(appkey, collectionName, index: index)
+    let indexVal = storageObj?.createIndex(index) ?? ""
     
     response.appendBody(string: ResultBody.successBody(value: indexVal))
     response.completed()
@@ -130,17 +158,7 @@ func mongoCreateIndex(request: HTTPRequest, _ response: HTTPResponse) {
 
 func mongoDropIndex(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "no collection"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     guard let index = request.urlVariables["index"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no index"))
@@ -148,7 +166,7 @@ func mongoDropIndex(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    Storage.dropIndex(appkey, collectionName, index: index)
+    storageObj?.dropIndex(index)
     
     response.appendBody(string: ResultBody.successBody(value: "dropped index"))
     response.completed()
@@ -174,7 +192,10 @@ func mongoRenameCollection(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    Storage.renameCollection(appkey, oldCollectionName, newCollection: newCollectionName)
+    let storage = Storage()
+    storage.setAppKey(appkey)
+    
+    storage.renameCollection(oldCollectionName, newCollection: newCollectionName)
     
     response.appendBody(string: ResultBody.successBody(value: "collection renamed"))
     response.completed()
@@ -183,15 +204,10 @@ func mongoRenameCollection(request: HTTPRequest, _ response: HTTPResponse) {
 
 func mongoGetCollections(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstance(request: request, response)
     
-    let returning = Storage.getAllCollections(appkey)
+    let returning = storageObj?.getAllCollections() ?? ""
     
-    // Return the JSON string
     response.appendBody(string: returning)
     response.completed()
 }
@@ -199,11 +215,7 @@ func mongoGetCollections(request: HTTPRequest, _ response: HTTPResponse) {
 
 func databasePost(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstance(request: request, response)
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))
@@ -211,7 +223,7 @@ func databasePost(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    if Storage.parseAndStoreObject(appkey, jsonStr) {
+    if (storageObj?.parseAndStoreObject(jsonStr))! {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
     } else {
         response.appendBody(string: ResultBody.successBody(value: "collection added"))
@@ -222,17 +234,7 @@ func databasePost(request: HTTPRequest, _ response: HTTPResponse) {
 
 func databaseCollectionsPost(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))
@@ -240,7 +242,7 @@ func databaseCollectionsPost(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    if Storage.StoreObjects(appkey, collectionName, jsonStr) {
+    if storageObj!.StoreObjects(jsonStr) {
         response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
     } else {
         response.appendBody(string: ResultBody.successBody(value: "collection added"))
@@ -256,26 +258,17 @@ func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
         appKeys = appkey
     }
     
-//    guard let appkey = request.urlVariables["appkey"] else {
-//        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-//        response.completed()
-//        return
-//    }
+    let storageObj = getStorageInstanceCol(request: request, response)
+    storageObj?.setAppKey(appKeys)
+    
 
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))
         response.completed()
         return
     }
     
-    let (result, message) = Storage.StoreObject(appKeys, collectionName, jsonStr)
+    let (result, message) = storageObj!.StoreObject(jsonStr)
     
     if result {
         response.appendBody(string: ResultBody.errorBody(value: message))
@@ -287,17 +280,7 @@ func databaseCollectionPost(request: HTTPRequest, _ response: HTTPResponse) {
 
 func mongoFilterHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     guard let objectID = request.urlVariables["objectid"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no objectID"))
@@ -305,9 +288,8 @@ func mongoFilterHandler(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
     
-    let returning = Storage.getDocumentWithObjectID(appkey, collectionName, objectID)
+    let returning = storageObj!.getDocumentWithObjectID(objectID)
     
-    // Return the JSON string
     response.appendBody(string: returning)
     response.completed()
     
@@ -319,17 +301,7 @@ func mongoQueryLimit(request: HTTPRequest, _ response: HTTPResponse) {
     var skip: Int = 0
     var limit: Int = 100
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     if let skipValue = request.urlVariables["skip"] {
         skip = skipValue.toInt() ?? 0
@@ -341,13 +313,13 @@ func mongoQueryLimit(request: HTTPRequest, _ response: HTTPResponse) {
     
     var returning = ResultBody.errorBody(value: "nocollections")
     
-    if collectionName == "Tables" {
-        returning = Storage.getAllCollections(appkey)
+    if storageObj!.getCollectioName() == "Tables" {
+        returning = storageObj!.getAllCollections()
     } else {
-        returning = Storage.getQueryCollection(appkey, collectionName, json: "", skip: skip, limit: limit)
+        returning = storageObj!.getQueryCollection("", skip: skip, limit: limit)
     }
 
-    // Return the JSON string
+    
     response.appendBody(string: returning)
     response.completed()
 }
@@ -355,58 +327,23 @@ func mongoQueryLimit(request: HTTPRequest, _ response: HTTPResponse) {
 
 func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
     
-    //ConfigureNotfications.init()
-    
-    var appVersion = "0.0"
-    
-    let queryParams = request.queryParams
-    
-    if queryParams.count > 0 {
-        let (_, version ) = queryParams[0] as (String, String)
-        appVersion = version
-    }
-    
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
+    let storageObj = getStorageInstanceCol(request: request, response)
     
     var returning = ResultBody.errorBody(value: "nocollections")
     
-    if collectionName == "Tables" {
-        returning = Storage.getAllCollections(appkey)
-    //} else if collectionName == "" {
-        //returning = Storage.getAllCollections(appkey)
+    if storageObj!.getCollectioName() == "Tables" {
+        returning = storageObj!.getAllCollections()
     } else {
-        returning = Storage.getCollectionValues(appkey, collectionName, appVersion: appVersion)
+        returning = storageObj!.getCollectionValues()
     }
-    
-    // Return the JSON string
+
     response.appendBody(string: returning)
     response.completed()
 }
 
 func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
-    
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
+
+    let storage = getStorageInstance(request: request, response)
     
     guard let objectID = request.urlVariables["objectid"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no objectID"))
@@ -417,7 +354,7 @@ func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
     
     var resultBody = ResultBody.successBody(value:  "removed")
     
-    if !DatabaseController.removeDocument(appkey, collectionName, objectID) {
+    if !storage!.removeDocument(objectID) {
         resultBody = ResultBody.errorBody(value: "not removed")
     }
     
@@ -428,22 +365,11 @@ func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
 
 func removeCollection(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
-    
+   let storage = getStorageInstance(request: request, response)
     
     var resultBody = ResultBody.successBody(value:  "removed")
     
-    if !DatabaseController.removeCollection(appkey, collectionName) {
+    if !storage!.removeCollection() {
         resultBody = ResultBody.errorBody(value: "not removed")
     }
     
@@ -456,17 +382,7 @@ func removeCollection(request: HTTPRequest, _ response: HTTPResponse) {
 
 func safeRemoveCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
     
-    guard let appkey = request.urlVariables["appkey"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "missing appkey"))
-        response.completed()
-        return
-    }
-    
-    guard let collectionName = request.urlVariables["collection"] else {
-        response.appendBody(string: ResultBody.errorBody(value: "nocollection"))
-        response.completed()
-        return
-    }
+    let storage = getStorageInstance(request: request, response)
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))
@@ -477,7 +393,7 @@ func safeRemoveCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
     
     var resultBody = ResultBody.successBody(value:  "removed")
     
-    if !DatabaseController.safeRemoveDocument(appkey, collectionName, jsonStr) {
+    if !storage!.safeRemoveDocument(jsonStr) {
         resultBody = ResultBody.errorBody(value: "not removed")
     }
     

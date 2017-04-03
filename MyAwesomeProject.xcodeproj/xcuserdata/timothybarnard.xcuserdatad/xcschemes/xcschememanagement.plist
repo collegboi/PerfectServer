@@ -17,12 +17,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>OBJ_1000</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_1008</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OBJ_1010</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1017</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +57,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_1042</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_1046</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1055</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -58,6 +78,11 @@
 			<true/>
 		</dict>
 		<key>OBJ_1071</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1080</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -73,6 +98,11 @@
 			<true/>
 		</dict>
 		<key>OBJ_1762</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1768</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -97,7 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_1808</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_1817</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1826</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -108,6 +148,11 @@
 			<true/>
 		</dict>
 		<key>OBJ_1849</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1858</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -123,6 +168,11 @@
 			<true/>
 		</dict>
 		<key>OBJ_1880</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1886</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -147,6 +197,11 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_1912</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_1919</key>
 		<dict>
 			<key>primary</key>
@@ -167,7 +222,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_1942</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_1955</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_1964</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -182,12 +247,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_1996</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_2026</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OBJ_2044</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_2053</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -207,12 +282,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_2084</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_2088</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OBJ_2094</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_2097</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -227,12 +312,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_2121</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_2131</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_2140</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_2141</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_2150</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_2159</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -252,12 +357,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>OBJ_953</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>OBJ_960</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>OBJ_965</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_969</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -273,6 +388,11 @@
 			<true/>
 		</dict>
 		<key>OBJ_985</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>OBJ_988</key>
 		<dict>
 			<key>primary</key>
 			<true/>

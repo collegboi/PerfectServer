@@ -19,19 +19,19 @@ provides-member:
 - ["V12TurnstileWeb12InvalidInput", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "OAuth2Error"
+- "APIConnectionError"
 - "InvalidInput"
+- "String"
 - "OAuth2ErrorCode"
+- !private "??"
 - !private "~="
+- "TurnstileError"
 - "=="
 - "AssignmentPrecedence"
-- "InvalidAPIResponse"
-- !private "??"
 - "CastingPrecedence"
-- "TurnstileError"
+- "InvalidAPIResponse"
 - "StringLiteralType"
-- "String"
-- "APIConnectionError"
+- "OAuth2Error"
 depends-member:
 - ["V12TurnstileWeb18APIConnectionError", "_code"]
 - ["V12TurnstileWeb18APIConnectionError", "_domain"]

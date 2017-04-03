@@ -8,23 +8,23 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "AuthAccount"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
 - !private "..<"
-- "AssignmentPrecedence"
-- !private "=="
+- !private "Dictionary"
 - "CastingPrecedence"
-- "StORMRow"
-- !private "??"
 - !private "StORMError"
 - "Bool"
-- !private "Dictionary"
-- "StringLiteralType"
+- "StORMRow"
+- !private "??"
+- "AssignmentPrecedence"
+- !private "=="
 - "Account"
-- "MongoDBStORM"
 - !private "BCrypt"
-- !private "BooleanLiteralType"
 - !private "print"
-- "String"
 - "AccessTokenStore"
+- "MongoDBStORM"
+- "String"
 depends-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "deinit"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "init"]

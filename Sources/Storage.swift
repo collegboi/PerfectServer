@@ -16,7 +16,44 @@ import PerfectLib
 
 class Storage {
     
-    class func parseAndStoreObject(_ apID: String,_ jsonString: String ) -> Bool {
+    private var appKey: String = ""
+    private var testMode: Int = 0
+    private var appVersion: String = ""
+    private var collectionName: String = ""
+    
+    func setAppKey(_ value: String) {
+        self.appKey = value
+    }
+    func setTestMode(_ value: Int) {
+        self.testMode = value
+    }
+    func setAppVersion(_ value: String) {
+        self.appVersion = value
+    }
+    func setCollectionName(_ value: String) {
+        self.collectionName = value
+    }
+    
+    func getCollectioName() -> String {
+        return self.collectionName
+    }
+    
+    private func getDatabaseController() -> DatabaseController {
+        
+        let databaseController = DatabaseController()
+        databaseController.setAppVersion(appVersion)
+        databaseController.setAppKey(appKey)
+        databaseController.setCollectiomName(collectionName)
+        databaseController.setTestMode(testMode)
+        return databaseController
+    }
+    
+    func checkIfExist(_ objects: [String:String]  ) -> (Bool, String ) {
+        let databaseController = getDatabaseController()
+        return databaseController.checkIfExist(objects)
+    }
+    
+    func parseAndStoreObject(_ jsonString: String ) -> Bool {
         
         var result : Bool = false
         
@@ -28,7 +65,10 @@ class Storage {
                 return false
             }
             
-            if  DatabaseController.insertDocument(apID, dict, jsonStr: jsonString) == "" {
+            let databaseController = getDatabaseController()
+            databaseController.setCollectiomName(dict)
+            
+            if  databaseController.insertDocument(jsonString) == "" {
                 result = true
             }
             
@@ -39,23 +79,27 @@ class Storage {
         return result
     }
     
-    class func StoreObjects(_ apID: String,_ collectionName: String, _ jsonString: String ) -> Bool {
+    func StoreObjects(_ jsonString: String ) -> Bool {
         
         var result : Bool = false
         
-        if  DatabaseController.insertCollection(apID, collectionName, jsonStr: jsonString) == "" {
+        let databaseController = getDatabaseController()
+        
+        if  databaseController.insertCollection(jsonString) == "" {
             result = true
         }
         
         return result
     }
     
-    class func StoreObject(_ apID: String,_ collectionName: String, _ jsonString: String ) -> (Bool, String ) {
+    func StoreObject(_ jsonString: String ) -> (Bool, String ) {
         
         var result : Bool = true
         var message: String = ""
-            
-        message =  DatabaseController.updateInsertDocument(apID, collectionName, jsonStr: jsonString )
+        
+        let databaseController = getDatabaseController()
+        
+        message =  databaseController.updateInsertDocument(jsonString )
         
         if message == "" {
             result = false
@@ -66,81 +110,165 @@ class Storage {
     }
     
     
-    class func getCollectionValues(_ appkey: String, _ collectionName: String, appVersion: String ) -> String {
+    func getCollectionValues() -> String {
         
-        let applicationObject: [String:String] = ["appKey": appkey]
+        let databaseController = getDatabaseController()
+        
+        let applicationObject: [String:String] = ["appKey": self.appKey]
         let applicationString = JSONController.parseJSONToStr(dict: applicationObject)
         
-        let applicationArr = DatabaseController.retrieveCollectionQuery("JKHSDGHFKJGH454645GRRLKJF", "TBApplication", query: applicationString)
+        databaseController.setCollectiomName("TBApplication")
+        databaseController.setAppKey("JKHSDGHFKJGH454645GRRLKJF")
+        
+        let applicationArr = databaseController.retrieveCollectionQuery(applicationString)
         let applicationObjects = JSONController.parseJSONToDict("\(applicationArr.joined(separator: ","))")
         
         let queryObject: [String:String] = ["version":appVersion, "applicationID": applicationObjects["_id"] as? String ?? ""]
         let queryString = JSONController.parseJSONToStr(dict: queryObject)
         
-        let removeVersion = DatabaseController.retrieveCollectionQuery("JKHSDGHFKJGH454645GRRLKJF", "RemoteConfig", query: queryString)
+        databaseController.setCollectiomName("RemoteConfig")
+        let removeVersion = databaseController.retrieveCollectionQuery(queryString)
         
         let configObjects = JSONController.parseJSONToDict("\(removeVersion.joined(separator: ","))")
         
         let objectParams = "\"config\": { \"version\": \"\( configObjects["version"] ?? 0.0 )\", \"date\": \"\(configObjects["updated"] ?? 0.0)\" }"
-    
-        let collectionParms =  DatabaseController.retrieveCollection(appkey, collectionName)
+        
+        let newDatabaseController = getDatabaseController()
+        
+        let collectionParms =  newDatabaseController.retrieveCollection()
         let collectionString = "\"count\":\(collectionParms.count),\"data\":[\(collectionParms.joined(separator: ","))]"
         
         return "{ \(objectParams), \(collectionString)  }"
     }
     
-    class func getDocumentWithObjectID(_ apID: String,_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> String {
-    
-        let document = DatabaseController.retrieveCollection(apID,collectioName, objectID, skip: skip, limit: limit )
+    func getDocumentWithObjectID(_ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> String {
+        
+        let databaseController = getDatabaseController()
+        
+        let document = databaseController.retrieveCollection(objectID, skip: skip, limit: limit )
         
         return "{\"data\":[\(document.joined(separator: ","))]}"
     }
     
-    class func getCollectionStr(_ apID: String,_ collection:String, query: String) -> String {
-        return DatabaseController.retrieveCollectionQueryStr(apID, collection, query: query)
+    @discardableResult
+    func updateDocument(jsonStr: String, query: String) -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.updateDocument(jsonStr, query: query)
     }
     
-    class func getCollectionStrFields(_ apID: String,_ collection:String, query: String, fields : String) -> [String] {
-        return DatabaseController.retrieveCollectionQueryStrFields(apID, collection, query: query, fields: fields)
+    @discardableResult
+    func insertDocument(jsonStr: String) -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.insertDocument(jsonStr)
+    }
+    
+    func removeDocument(_ documentID: String) -> Bool {
+        let databaseController = getDatabaseController()
+        return databaseController.removeDocument(documentID)
+    }
+    
+    @discardableResult
+    func updateInsertDocument(_ jsonStr: String) -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.updateInsertDocument(jsonStr)
+    }
+    
+    func safeRemoveDocument(_ document: String ) -> Bool {
+        let databaseController = getDatabaseController()
+        return databaseController.safeRemoveDocument(document)
+    }
+    
+    func removeCollection() -> Bool {
+        let databaseController = getDatabaseController()
+        return databaseController.removeCollection()
+    }
+    
+    func removeDatabase() -> Bool {
+        let databaseController = getDatabaseController()
+        return databaseController.removeDatabase()
+    }
+    
+    func getCollectionStr(query: String) -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.retrieveCollectionQueryStr(query)
+    }
+    
+    func getCollectionStrFields(query: String, fields : String) -> [String] {
+        let databaseController = getDatabaseController()
+        return databaseController.retrieveCollectionQueryStrFields(query, fields: fields)
+    }
+    
+    func getAllColectionsArr() -> [String] {
+        let databaseController = getDatabaseController()
+        return databaseController.getAllColectionsArr()
     }
     
     
-    class func getCollectionStr(_ apID: String,_ collection: String) ->String{
-        return DatabaseController.retrieveCollectionString(apID, collection)
+    func getCollectionStr() ->String{
+        let databaseController = getDatabaseController()
+        return databaseController.retrieveCollectionString()
     }
     
-    class func getAllDatabases(_ apID: String) -> String {
-        return DatabaseController.getAllDatabases(apID)
+    func getAllDatabases() -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.getAllDatabases()
     }
     
-    class func getAllCollections(_ apID: String) -> String {
-        return DatabaseController.getAllCollections(apID)
+    func getAllCollections() -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.getAllCollections()
     }
     
-    class func getQueryCollection(_ apID: String,_ collection: String, json: String, skip: Int = 0, limit: Int = 100) -> String {
+    func getQueryCollection(_ json: String, skip: Int = 0, limit: Int = 100) -> String {
         
-        let collectionObjs = DatabaseController.retrieveCollectionQuery(apID, collection, query: json, skip: skip , limit: limit)
+        let databaseController = getDatabaseController()
+        let collectionObjs = databaseController.retrieveCollectionQuery(json, skip: skip , limit: limit)
         
         return "{\"count\":\(collectionObjs.count),\"data\":[\(collectionObjs.joined(separator: ","))]}"
     }
     
-    class func createIndex(_ apID: String,_ collection: String, index: String ) -> String {
-        return DatabaseController.createUniqueIndex(apID, collection, index: index)
+    func createIndex(_ index: String ) -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.createUniqueIndex(index)
     }
     
     
-    class func dropIndex(_ apID: String, _ collection: String, index:String) {
-        DatabaseController.removeIndex(apID, collection, index: index)
+    func dropIndex(_ index:String) {
+        let databaseController = getDatabaseController()
+        databaseController.removeIndex(index)
     }
     
     
-    class func renameCollection(_ apID: String, _ oldCollection: String, newCollection: String) {
-        DatabaseController.renameCollection(apID, oldCollection, newCollectionName: newCollection)
+    func renameCollection(_ oldCollection: String, newCollection: String) {
+        let databaseController = getDatabaseController()
+        databaseController.renameCollection(oldCollection, newCollectionName: newCollection)
     }
     
     
-    class func dropCollection(_ apID: String, _ collection: String){
-        DatabaseController.dropCollection(apID, collection)
+    func dropCollection() {
+        let databaseController = getDatabaseController()
+        databaseController.dropCollection()
+    }
+    
+    class func replicateDatabase(_ appID: String) {
+        
+        let databaseController = DatabaseController()
+        databaseController.setAppKey(appID)
+        let collections = databaseController.getAllColectionsArr()
+        
+        if collections.count > 0 {
+            
+            for collection in collections {
+                
+                databaseController.setCollectiomName(collection)
+                let collectionData = databaseController.retrieveCollectionString()
+                
+                databaseController.setTestMode(1)
+                databaseController.insertDocument(collectionData)
+            }
+            
+        }
+        
     }
     
 }

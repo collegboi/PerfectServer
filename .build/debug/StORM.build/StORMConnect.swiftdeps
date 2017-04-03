@@ -7,14 +7,14 @@ provides-member:
 - ["C5StORM12StORMConnect", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "StORMDataSource"
 - "AssignmentPrecedence"
+- "String"
+- "Int"
 - "StORMConnect"
 - "StORMDataSourceCredentials"
 - "StORMError"
-- "String"
-- "StORMDataSource"
 - "StringLiteralType"
-- "Int"
 depends-member:
 - ["Ps9AnyObject", "StORMDataSource"]
 - ["Ps9AnyObject", "StORMDataSourceCredentials"]

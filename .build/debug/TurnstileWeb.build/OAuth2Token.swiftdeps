@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "TernaryPrecedence"
+- !private "UnicodeScalarType"
 - !private "Double"
 - "Date"
-- !private "UnicodeScalarType"
+- "String"
 - "AssignmentPrecedence"
 - "Int"
 - "OAuth2Token"
 - !private "=="
 - "CastingPrecedence"
-- "String"
 - !private "StringLiteralType"
 - "AccessToken"
 - "Token"

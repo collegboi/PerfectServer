@@ -21,11 +21,15 @@ class BackupService {
         
         var collectionVals = [String]()
         
-        let collections: [String] = DatabaseController.getAllColectionsArr("JKHSDGHFKJGH454645GRRLKJF")
+        let storage = Storage()
+        storage.setAppKey("JKHSDGHFKJGH454645GRRLKJF")
+        
+        let collections: [String] = storage.getAllColectionsArr()
         
         for collection in collections {
             
-            let collectionStr = DatabaseController.retrieveCollectionString("JKHSDGHFKJGH454645GRRLKJF",collection)
+            storage.setCollectionName(collection)
+            let collectionStr = storage.getCollectionStr()
             
             FileController.sharedFileHandler?.updateContentsOfFile("backup/"+collection+".json", collectionStr)
             
@@ -59,7 +63,14 @@ class BackupService {
         
         let configStr = JSONController.parseJSONToStr(dict: configData)
         
-        DatabaseController.insertDocument("JKHSDGHFKJGH454645GRRLKJF","Backup", jsonStr: configStr)
-
+        storage.setCollectionName("TBBackups")
+        storage.insertDocument(jsonStr: configStr)
     }
+    
+    static func setupBackupTimes(_ jsonString: String) {
+        
+        
+        
+    }
+    
 }

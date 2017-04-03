@@ -1,26 +1,29 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "makeTranslationRoutes"
+- "getTranslationVersionFile"
 - "getTranslationFile"
 - "sendTranslation"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "getTranslationFile"
-- "AssignmentPrecedence"
-- !private "Translations"
-- !private "ResultBody"
 - !private "StringLiteralType"
-- "HTTPRequest"
-- "HTTPResponse"
-- "makeTranslationRoutes"
-- "sendTranslation"
-- !private "print"
+- !private "Translations"
 - "Routes"
+- "getTranslationFile"
+- "getTranslationVersionFile"
+- !private "print"
+- "sendTranslation"
+- "makeTranslationRoutes"
+- "HTTPResponse"
+- "AssignmentPrecedence"
+- !private "ResultBody"
+- "HTTPRequest"
 depends-member:
 - !private ["Ps9AnyObject", "errorBody"]
 - !private ["Ps9AnyObject", "getTranslationFile"]
+- !private ["Ps9AnyObject", "getTranslationVersionFile"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "postTranslationFile"]
 - !private ["Ps9AnyObject", "successBody"]
@@ -121,6 +124,7 @@ depends-member:
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["C16MyAwesomeProject12Translations", "getTranslationFile"]
+- !private ["C16MyAwesomeProject12Translations", "getTranslationVersionFile"]
 - !private ["C16MyAwesomeProject12Translations", "postTranslationFile"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
@@ -219,6 +223,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -336,7 +341,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -364,4 +368,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "487c6fd2bc550f8d1769c0d582eb6d40"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
+interface-hash: "d3e513233f072c963b7e7cdf994757bb"

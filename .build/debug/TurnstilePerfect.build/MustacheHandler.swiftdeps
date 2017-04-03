@@ -10,16 +10,16 @@ provides-member:
 - ["P11PerfectHTTP12HTTPResponse", "redirect"]
 provides-dynamic-lookup:
 depends-top-level:
-- "MustachePageHandler"
+- !private "+"
+- "HTTPResponse"
+- !private "StringLiteralType"
+- "MustacheHandler"
+- !private "mustacheRequest"
 - "String"
+- "AssignmentPrecedence"
 - "MustacheWebEvaluationContext"
 - "MustacheEvaluationOutputCollector"
-- !private "StringLiteralType"
-- !private "mustacheRequest"
-- !private "+"
-- "AssignmentPrecedence"
-- "HTTPResponse"
-- "MustacheHandler"
+- "MustachePageHandler"
 depends-member:
 - !private ["Ps9AnyObject", "extendValues"]
 - !private ["Ps9AnyObject", "init"]

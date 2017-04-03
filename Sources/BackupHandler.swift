@@ -16,9 +16,9 @@ import MongoDB
 public func makeBackupRoutes() -> Routes {
     var routes = Routes()
     
-    routes.add(method: .post, uri: "/backup/", handler: doBackup)
+    routes.add(method: .post, uri: "/api/{appkey}/backup/now", handler: doBackup)
     
-    routes.add(method: .get, uri: "/backup/", handler: getBackupList)
+    routes.add(method: .get, uri: "/api/{appkey}/backup/", handler: getBackupList)
     
     
     // Check the console to see the logical structure of what was installed.

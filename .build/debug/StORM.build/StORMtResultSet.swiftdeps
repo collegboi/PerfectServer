@@ -7,11 +7,11 @@ provides-member:
 - ["C5StORM14StORMResultSet", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StORMRow"
 - "String"
+- "StORMCursor"
+- "StORMRow"
 - "FloatLiteralType"
 - "IntegerLiteralType"
-- "StORMCursor"
 - "StORMResultSet"
 depends-member:
 - ["Ps9AnyObject", "StORMCursor"]

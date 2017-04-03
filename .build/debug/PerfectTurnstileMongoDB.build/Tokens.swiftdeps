@@ -7,23 +7,23 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Bool"
-- !private "Date"
-- !private "+"
-- "MongoDBStORM"
-- !private "UnicodeScalarType"
-- "String"
-- "AssignmentPrecedence"
-- "AccessTokenStore"
-- !private "print"
-- "CastingPrecedence"
-- !private "URandom"
-- "StORMRow"
 - !private "<"
-- "StringLiteralType"
 - !private "..<"
-- !private "BooleanLiteralType"
+- "AssignmentPrecedence"
 - "Int"
+- "Bool"
+- "CastingPrecedence"
+- "AccessTokenStore"
+- !private "Date"
+- !private "UnicodeScalarType"
+- "StringLiteralType"
+- "StORMRow"
+- !private "URandom"
+- !private "print"
+- "String"
+- !private "+"
+- !private "BooleanLiteralType"
+- "MongoDBStORM"
 depends-member:
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "AccessTokenStore"]
 - ["C23PerfectTurnstileMongoDB16AccessTokenStore", "Bool"]

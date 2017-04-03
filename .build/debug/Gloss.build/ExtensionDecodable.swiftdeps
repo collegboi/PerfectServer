@@ -6,11 +6,11 @@ provides-member:
 - ["P5Gloss9Decodable", "init"]
 provides-dynamic-lookup:
 depends-top-level:
+- "JSONSerialization"
+- "Decodable"
 - "JSONSerializer"
 - !private "GlossJSONSerializer"
 - "Data"
-- "Decodable"
-- "JSONSerialization"
 depends-member:
 - ["Ps9AnyObject", "ReadingOptions"]
 - ["Ps7CVarArg", "ReadingOptions"]

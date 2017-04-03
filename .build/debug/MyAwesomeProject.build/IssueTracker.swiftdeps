@@ -7,30 +7,32 @@ provides-member:
 - ["C16MyAwesomeProject12IssueTracker", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "DatabaseController"
 - "String"
 - "IssueTracker"
+- !private "Storage"
+- !private "DatabaseController"
 depends-member:
 - !private ["Ps9AnyObject", "DatabaseController"]
-- !private ["Ps9AnyObject", "retrieveCollection"]
-- !private ["Ps9AnyObject", "retrieveCollectionQuery"]
+- !private ["Ps9AnyObject", "Storage"]
+- !private ["Ps9AnyObject", "getCollectionStr"]
 - !private ["Ps9AnyObject", "updateInsertDocument"]
 - ["Ps9AnyObject", ""]
-- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollection"]
-- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionQuery"]
 - !private ["C16MyAwesomeProject18DatabaseController", "updateInsertDocument"]
 - !private ["C16MyAwesomeProject12IssueTracker", "DatabaseController"]
+- !private ["C16MyAwesomeProject12IssueTracker", "Storage"]
 - ["C16MyAwesomeProject12IssueTracker", "String"]
 - ["C16MyAwesomeProject12IssueTracker", "deinit"]
 - ["C16MyAwesomeProject12IssueTracker", "getAllIssues"]
 - ["C16MyAwesomeProject12IssueTracker", "getIssue"]
 - ["C16MyAwesomeProject12IssueTracker", "init"]
 - ["C16MyAwesomeProject12IssueTracker", "sendNewIssue"]
+- !private ["C16MyAwesomeProject7Storage", "getCollectionStr"]
 - ["SS", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "C16MyAwesomeProject18DatabaseController"
 - "C16MyAwesomeProject12IssueTracker"
+- !private "C16MyAwesomeProject7Storage"
 - "SS"
 depends-dynamic-lookup:
 depends-external:
@@ -45,6 +47,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -162,7 +165,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -190,4 +192,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
 interface-hash: "002dd65fe2efca402588de331a734a27"

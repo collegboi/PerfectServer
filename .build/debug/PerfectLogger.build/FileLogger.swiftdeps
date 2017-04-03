@@ -10,18 +10,18 @@ provides-member:
 - ["V13PerfectLogger7LogFile", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "fatalError"
-- !private "moment"
-- !private "UUID"
-- "StringLiteralType"
+- "Never"
 - "LogFile"
+- !private "moment"
+- "StringLiteralType"
+- !private "UnicodeScalarType"
+- "FileLogger"
 - !private "File"
+- "AssignmentPrecedence"
+- !private "UUID"
 - "ConsoleLogger"
 - "String"
-- "FileLogger"
-- "AssignmentPrecedence"
-- !private "UnicodeScalarType"
-- "Never"
+- !private "fatalError"
 depends-member:
 - !private ["Ps9AnyObject", "close"]
 - ["Ps9AnyObject", "init"]

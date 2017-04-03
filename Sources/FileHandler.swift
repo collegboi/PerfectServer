@@ -16,11 +16,33 @@ public func makeFileUploadRoutes() -> Routes {
     var routes = Routes()
     
     routes.add(method: .post, uri: "/api/{appkey}/upload/{directory}/", handler: uploadFile)
+    routes.add(method: .get, uri: "/api/{appkey}/upload/{filepath}/", handler: getFile)
     
     // Check the console to see the logical structure of what was installed.
     print("\(routes.navigator.description)")
     
     return routes
+}
+
+func getFile(request: HTTPRequest, _ response: HTTPResponse) {
+    
+//    guard let apkey = request.urlVariables["appkey"] else {
+//        response.appendBody(string: ResultBody.errorBody(value: "no apkey"))
+//        response.completed()
+//        return
+//    }
+    
+    guard let filepath = request.urlVariables["filepath"] else {
+        response.appendBody(string: ResultBody.errorBody(value: "no type"))
+        response.completed()
+        return
+    }
+    
+    let fileContents = FileController.sharedFileHandler?.getContentsOfFile(filepath)
+
+    response.appendBody(string: fileContents ?? "")
+    response.completed()
+    
 }
 
 func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
@@ -79,7 +101,11 @@ func uploadFile(request: HTTPRequest, _ response: HTTPResponse) {
         
         let objectStr = JSONController.parseJSONToStr(dict: fileObject)
         
-        DatabaseController.insertDocument(apkey,"Files", jsonStr: objectStr)
+        let storage = Storage()
+        storage.setAppKey(apkey)
+        storage.setCollectionName("Files")
+        
+        storage.insertDocument(jsonStr: objectStr)
 
         
         ary.append([

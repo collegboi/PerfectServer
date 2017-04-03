@@ -7,21 +7,21 @@ provides-member:
 - ["C16TurnstilePerfect15TurnstileFilter", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPResponse"
-- "AssignmentPrecedence"
-- "HTTPRequestFilter"
-- "HTTPResponseFilterResult"
-- "HTTPRequest"
-- !private "UnicodeScalarType"
-- "HTTPRequestFilterResult"
-- !private "*"
-- !private "Subject"
 - "HTTPResponseFilter"
-- "Turnstile"
 - !private "BooleanLiteralType"
+- "Turnstile"
+- !private "StringLiteralType"
 - !private "HTTPCookie"
 - "TurnstileFilter"
-- !private "StringLiteralType"
+- !private "UnicodeScalarType"
+- "HTTPRequestFilter"
+- "HTTPResponse"
+- "AssignmentPrecedence"
+- "HTTPRequest"
+- "HTTPResponseFilterResult"
+- !private "*"
+- !private "Subject"
+- "HTTPRequestFilterResult"
 depends-member:
 - ["C9Turnstile6APIKey", "deinit"]
 - ["C9Turnstile11AccessToken", "deinit"]

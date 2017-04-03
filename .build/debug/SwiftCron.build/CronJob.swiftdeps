@@ -1,0 +1,123 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CronJob"
+- "=="
+provides-nominal:
+- "C9SwiftCron7CronJob"
+provides-member:
+- ["C9SwiftCron7CronJob", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "Equatable"
+- "Void"
+- "CronJob"
+- "BooleanLiteralType"
+- "Date"
+- "=="
+- "AssignmentPrecedence"
+- "UUID"
+- "TimeInterval"
+- "Bool"
+- !private "!="
+depends-member:
+- !private ["Ps9AnyObject", "Date"]
+- !private ["Ps9AnyObject", "UUID"]
+- !private ["Ps9AnyObject", "_allowsSimultaneous"]
+- !private ["Ps9AnyObject", "_date"]
+- !private ["Ps9AnyObject", "_id"]
+- !private ["Ps9AnyObject", "_repeatInterval"]
+- !private ["Ps9AnyObject", "_repeats"]
+- !private ["Ps9AnyObject", "id"]
+- !private ["Ps9AnyObject", "method"]
+- ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- ["Sb", "deinit"]
+- !private ["Ps10Comparable", "init"]
+- ["C9SwiftCron7CronJob", "=="]
+- ["C9SwiftCron7CronJob", "Bool"]
+- ["C9SwiftCron7CronJob", "CronJob"]
+- ["C9SwiftCron7CronJob", "Date"]
+- ["C9SwiftCron7CronJob", "TimeInterval"]
+- ["C9SwiftCron7CronJob", "UUID"]
+- ["C9SwiftCron7CronJob", "Void"]
+- !private ["C9SwiftCron7CronJob", "_allowsSimultaneous"]
+- !private ["C9SwiftCron7CronJob", "_date"]
+- !private ["C9SwiftCron7CronJob", "_id"]
+- !private ["C9SwiftCron7CronJob", "_repeatInterval"]
+- !private ["C9SwiftCron7CronJob", "_repeats"]
+- ["C9SwiftCron7CronJob", "allowsSimultaneious"]
+- ["C9SwiftCron7CronJob", "date"]
+- ["C9SwiftCron7CronJob", "deinit"]
+- ["C9SwiftCron7CronJob", "id"]
+- ["C9SwiftCron7CronJob", "init"]
+- ["C9SwiftCron7CronJob", "method"]
+- ["C9SwiftCron7CronJob", "repeatInterval"]
+- ["C9SwiftCron7CronJob", "repeats"]
+- ["C9SwiftCron7CronJob", "set"]
+- !private ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "init"]
+- ["V10Foundation4Date", "deinit"]
+- !private ["V10Foundation4Date", "init"]
+- !private ["Ps9Equatable", "Date"]
+- !private ["Ps9Equatable", "UUID"]
+- !private ["Ps9Equatable", "_allowsSimultaneous"]
+- !private ["Ps9Equatable", "_date"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "_id"]
+- !private ["Ps9Equatable", "_repeatInterval"]
+- !private ["Ps9Equatable", "_repeats"]
+- !private ["Ps9Equatable", "id"]
+- !private ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "method"]
+- ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "init"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- ["Sq", "deinit"]
+- !private ["P10Foundation20ReferenceConvertible", "init"]
+- ["V10Foundation4UUID", "deinit"]
+- !private ["V10Foundation4UUID", "init"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "init"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+depends-nominal:
+- "Ps9AnyObject"
+- "Sb"
+- !private "Ps10Comparable"
+- "C9SwiftCron7CronJob"
+- !private "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
+- !private "Ps23CustomStringConvertible"
+- "V10Foundation4Date"
+- "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps8Hashable"
+- !private "Ps25LosslessStringConvertible"
+- "Sq"
+- !private "P10Foundation20ReferenceConvertible"
+- "V10Foundation4UUID"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+interface-hash: "210e5dd02b4e42c989a1d6d574e889a3"

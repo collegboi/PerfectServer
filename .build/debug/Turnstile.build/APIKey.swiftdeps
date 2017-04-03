@@ -7,10 +7,10 @@ provides-member:
 - ["C9Turnstile6APIKey", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Credentials"
 - "AssignmentPrecedence"
-- "String"
 - "APIKey"
+- "String"
+- "Credentials"
 depends-member:
 - ["C9Turnstile6APIKey", "String"]
 - ["C9Turnstile6APIKey", "deinit"]

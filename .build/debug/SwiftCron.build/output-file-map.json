@@ -1,0 +1,23 @@
+{
+  "": {
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/master.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/Cron.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/Cron.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/Cron.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/Cron~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/Cron.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/CronJob.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronJob.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronJob.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronJob~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronJob.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/CronStorage.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronStorage.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronStorage.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.build/CronStorage.swiftdeps"
+  }
+}

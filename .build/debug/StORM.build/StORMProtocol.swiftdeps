@@ -7,8 +7,8 @@ provides-member:
 - ["P5StORM13StORMProtocol", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StORMProtocol"
 - "StORMRow"
+- "StORMProtocol"
 depends-member:
 - ["P5StORM13StORMProtocol", "StORMRow"]
 - ["P5StORM13StORMProtocol", "makeRow"]

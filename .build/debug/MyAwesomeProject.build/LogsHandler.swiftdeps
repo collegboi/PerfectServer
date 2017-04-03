@@ -2,22 +2,27 @@
 provides-top-level:
 - "makeLogsRoutes"
 - "serverLogsHandler"
+- "databaseLogsHandler"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "Routes"
 - !private "StringLiteralType"
+- "Routes"
 - !private "print"
+- "serverLogsHandler"
 - !private "String"
 - !private "LogController"
-- !private "UnicodeScalarType"
-- "HTTPResponse"
-- "serverLogsHandler"
 - "makeLogsRoutes"
 - "HTTPRequest"
+- !private "ResultBody"
+- !private "UnicodeScalarType"
+- "databaseLogsHandler"
+- "HTTPResponse"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
+- !private ["Ps9AnyObject", "errorBody"]
+- !private ["Ps9AnyObject", "getDatabaseLogs"]
 - !private ["Ps9AnyObject", "getRequestLogs"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "replacingOccurrences"]
@@ -45,13 +50,17 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "joined"]
 - !private ["Ps7CVarArg", "replacingOccurrences"]
+- !private ["Ps7CVarArg", "subscript"]
 - !private ["Vs9Character", "deinit"]
 - !private ["V10Foundation12CharacterSet", "deinit"]
+- !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "Iterator"]
+- !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "joined"]
+- !private ["Ps10Collection", "subscript"]
 - !private ["Ps10Comparable", "components"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "replacingOccurrences"]
@@ -62,6 +71,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "joined"]
 - !private ["Ps28CustomDebugStringConvertible", "replacingOccurrences"]
+- !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "components"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "replacingOccurrences"]
@@ -72,6 +82,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "joined"]
 - !private ["Ps17CustomReflectable", "replacingOccurrences"]
+- !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "append"]
@@ -81,6 +92,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "joined"]
 - !private ["Ps23CustomStringConvertible", "replacingOccurrences"]
+- !private ["Ps23CustomStringConvertible", "subscript"]
+- !private ["Vs10Dictionary", "subscript"]
 - !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "components"]
 - !private ["Ps9Equatable", "get"]
@@ -91,6 +104,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "joined"]
+- !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "components"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "replacingOccurrences"]
@@ -106,6 +120,8 @@ depends-member:
 - !private ["Sf", "deinit"]
 - ["O11PerfectHTTP10HTTPMethod", "deinit"]
 - !private ["O11PerfectHTTP10HTTPMethod", "get"]
+- ["P11PerfectHTTP11HTTPRequest", "deinit"]
+- !private ["P11PerfectHTTP11HTTPRequest", "urlVariables"]
 - !private ["P11PerfectHTTP12HTTPResponse", "appendBody"]
 - !private ["P11PerfectHTTP12HTTPResponse", "completed"]
 - ["P11PerfectHTTP12HTTPResponse", "deinit"]
@@ -113,16 +129,22 @@ depends-member:
 - !private ["Ps8Hashable", "get"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "replacingOccurrences"]
+- !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "Iterator"]
+- !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "append"]
 - !private ["Ps9Indexable", "init"]
 - !private ["Ps9Indexable", "joined"]
+- !private ["Ps9Indexable", "subscript"]
+- !private ["Ps13IndexableBase", "Index"]
 - !private ["Ps13IndexableBase", "Iterator"]
+- !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
 - !private ["Ps13IndexableBase", "append"]
 - !private ["Ps13IndexableBase", "init"]
 - !private ["Ps13IndexableBase", "joined"]
+- !private ["Ps13IndexableBase", "subscript"]
 - !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
@@ -137,6 +159,8 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "joined"]
 - !private ["P10PerfectLib15JSONConvertible", "replacingOccurrences"]
+- !private ["P10PerfectLib15JSONConvertible", "subscript"]
+- !private ["C16MyAwesomeProject13LogController", "getDatabaseLogs"]
 - !private ["C16MyAwesomeProject13LogController", "getRequestLogs"]
 - !private ["Ps25LosslessStringConvertible", "components"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -201,6 +225,7 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "append"]
 - !private ["Ps25RangeReplaceableIndexable", "init"]
 - !private ["Ps25RangeReplaceableIndexable", "joined"]
+- !private ["C16MyAwesomeProject10ResultBody", "errorBody"]
 - ["P11PerfectHTTP14RouteNavigator", "deinit"]
 - !private ["P11PerfectHTTP14RouteNavigator", "description"]
 - !private ["V11PerfectHTTP6Routes", "add"]
@@ -208,11 +233,18 @@ depends-member:
 - !private ["V11PerfectHTTP6Routes", "init"]
 - !private ["V11PerfectHTTP6Routes", "navigator"]
 - !private ["Ps8Sequence", "Element"]
+- !private ["Ps8Sequence", "Index"]
 - !private ["Ps8Sequence", "Iterator"]
+- !private ["Ps8Sequence", "SubSequence"]
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "joined"]
+- !private ["Ps8Sequence", "subscript"]
+- !private ["Vs5Slice", "Index"]
+- !private ["Vs5Slice", "Iterator"]
+- !private ["Vs5Slice", "SubSequence"]
+- !private ["Vs5Slice", "_Element"]
 - !private ["SS", "components"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
@@ -265,6 +297,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "joined"]
 - !private ["Ps21_ObjectiveCBridgeable", "replacingOccurrences"]
+- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
 - !private "Ps9AnyObject"
 - "Sa"
@@ -280,15 +313,18 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
+- !private "Vs10Dictionary"
 - !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps25ExpressibleByArrayLiteral"
+- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
 - "O11PerfectHTTP10HTTPMethod"
+- "P11PerfectHTTP11HTTPRequest"
 - "P11PerfectHTTP12HTTPResponse"
 - !private "Ps8Hashable"
 - !private "Ps9Indexable"
@@ -319,9 +355,11 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
+- !private "C16MyAwesomeProject10ResultBody"
 - "P11PerfectHTTP14RouteNavigator"
 - "V11PerfectHTTP6Routes"
 - !private "Ps8Sequence"
+- !private "Vs5Slice"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -353,6 +391,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -470,7 +509,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -498,4 +536,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "0bc9558b72f75d777c4f089d1915259b"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
+interface-hash: "2a0c2e80b3e4637577fcf18d19aee13d"

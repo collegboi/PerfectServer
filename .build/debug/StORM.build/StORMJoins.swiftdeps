@@ -11,12 +11,12 @@ provides-member:
 - ["O5StORM13StORMJoinType", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "StORMJoinType"
+- "StORMDataSourceJoin"
 - "StringLiteralType"
 - "String"
 - "=="
 - "AssignmentPrecedence"
-- "StORMJoinType"
-- "StORMDataSourceJoin"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]

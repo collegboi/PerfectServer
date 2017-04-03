@@ -7,16 +7,16 @@ provides-member:
 - ["C23PerfectTurnstileMongoDB21TurnstilePerfectRealm", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Turnstile"
-- "HTTPRequestFilter"
-- "HTTPFilterPriority"
 - "SessionManager"
-- !private "TurnstileFilter"
+- "HTTPResponseFilter"
 - "Realm"
+- "Turnstile"
+- !private "TurnstileFilter"
+- !private "AuthRealm"
 - "AssignmentPrecedence"
 - !private "PerfectSessionManager"
-- "HTTPResponseFilter"
-- !private "AuthRealm"
+- "HTTPFilterPriority"
+- "HTTPRequestFilter"
 - "TurnstilePerfectRealm"
 depends-member:
 - !private ["Ps9AnyObject", "AuthRealm"]

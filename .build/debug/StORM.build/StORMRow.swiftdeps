@@ -7,17 +7,17 @@ provides-member:
 - ["C5StORM8StORMRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dictionary"
 - "UUID"
 - "StringLiteralType"
-- "Int"
 - "String"
-- "StORMRow"
 - !private "=="
 - "AssignmentPrecedence"
+- "StORMRow"
 - "FloatLiteralType"
 - "idTypeList"
 - "IntegerLiteralType"
+- "Int"
+- "Dictionary"
 depends-member:
 - ["Ps9AnyObject", "Dictionary"]
 - ["Ps9AnyObject", "UUID"]

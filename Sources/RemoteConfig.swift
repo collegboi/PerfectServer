@@ -51,7 +51,11 @@ class RemoteConfig {
         
         let configJSON = JSONController.parseJSONToStr(dict: config)
         
-        let colleciton = Storage.getCollectionStr(appKey, "RemoteConfig", query: configJSON)
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName("RemoteConfig")
+        
+        let colleciton = storage.getCollectionStr(query: configJSON)
         
         let collectionList = JSONController.parseDatabaseAny(colleciton)
         
@@ -73,7 +77,11 @@ class RemoteConfig {
     
     public func getConfigVerison(_ appKey: String , _ version: String, _ theme: String = "") -> String {
         
-        let abTestings = Storage.getCollectionStr(appKey,"ABTesting")
+        let storage = Storage()
+        storage.setAppKey(appKey)
+        storage.setCollectionName("ABTesting")
+        
+        let abTestings = storage.getCollectionStr()
         
         let abTestingObject = JSONController.parseDatabaseAny(abTestings)
         
@@ -138,7 +146,11 @@ class RemoteConfig {
             
             let configJSON = JSONController.parseJSONToStr(dict: config)
             
-            let colleciton = Storage.getCollectionStr(appKey, "RemoteConfig", query: configJSON)
+            let storage = Storage()
+            storage.setAppKey(appKey)
+            storage.setCollectionName("RemoteConfig")
+            
+            let colleciton = storage.getCollectionStr(query: configJSON)
             
             let collectionList = JSONController.parseDatabaseAny(colleciton)
             
@@ -148,14 +160,17 @@ class RemoteConfig {
                 
                 let languagesJSON = JSONController.parseJSONToStr(dict: languages)
                 
-                let languagesStrings = Storage.getCollectionStrFields(appKey, "Languages", query: languagesJSON, fields: "name")
+                storage.setCollectionName("Languages")
                 
+                let languagesStrings = storage.getCollectionStrFields(query: languagesJSON, fields: "name")
                 
                 let themes = ["version": version, "appLive": "1"] as [String : Any]
                 
                 let themesJSON = JSONController.parseJSONToStr(dict: themes)
                 
-                let themesStrings = Storage.getCollectionStrFields(appKey, "RemoteConfig", query: themesJSON, fields: "appTheme")
+                storage.setCollectionName("RemoteConfig")
+                
+                let themesStrings = storage.getCollectionStrFields(query: themesJSON, fields: "appTheme")
              
                 guard let collectionObj = collectionList[0] as? [String:String] else {
                     return "collectionObj  is empty: " + version

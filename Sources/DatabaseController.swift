@@ -5,7 +5,6 @@
 //  Created by Timothy Barnard on 19/01/2017.
 //
 //
-
 import StORM
 import MongoDB
 import PerfectLogger
@@ -18,32 +17,100 @@ import SwiftMoment
 
 class DatabaseController {
     
-    static func testBasic(_ message: String) {
+    private var appVersion: String = ""
+    private var testMode: Int = 0
+    private var appKey: String = ""
+    private var collectioName: String = ""
+    
+    func setAppVersion(_ value: String) {
+        self.appVersion = value
+    }
+    func setTestMode(_ value: Int) {
+        self.testMode = value
+    }
+    func setAppKey(_ value: String) {
+        self.appKey = value
+    }
+    func setCollectiomName(_ value: String) {
+        self.collectioName = value
+    }
+    
+    
+    private func testBasic(_ message: String) {
         LogFile.location = "./database.log"
     
         LogFile.info(message)
     }
     
-    static func openMongoDB() -> MongoClient {
+    private func openMongoDB() -> MongoClient {
         // open a connection
         return try! MongoClient(uri: "mongodb://localhost:27017")
     }
     
-    private static func connectDatabase(_ client: MongoClient) -> MongoDatabase? {
-
+    private func connectDatabaseLocal(_ client: MongoClient) -> MongoDatabase? {
+        
         return client.getDatabase(name: "locql" )
     }
     
-    static func connectDatabase(_ client: MongoClient, apID: String , name: String = "") -> MongoDatabase? {
+    private func closeMongoDB(_ database: MongoDatabase, client: MongoClient ) {
+        database.close()
+        client.close()
+    }
+    
+    private func closeMongoDB(_ collection: MongoCollection, database: MongoDatabase, client: MongoClient ) {
+        collection.close()
+        database.close()
+        client.close()
+    }
+    
+    private func closeMongoDB(client: MongoClient ) {
+        client.close()
+    }
+    
+    private func getDatabaseName() -> String {
         
-        self.testBasic(apID + "-" + name)
+        // open a connection
+        let client = openMongoDB()
+        
+        let db = client.getDatabase(name: "locql")
+        
+        let query = BSON()
+        query.append(key: "appKey", string: self.appKey)
+        
+        
+        // define collection
+        guard let collection = db.getCollection(name: "TBApplication") else {
+            return ""
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        
+        let fnd = collection.find(query: query)
+        
+        let jsonStr = (fnd?.jsonString)!
+        
+        let data = JSONController.parseDatabaseAny(jsonStr)[0] as? [String:Any]
+        
+        guard let field = data?["databaseName"] as? String else {
+            return ""
+        }
+        
+        return field
+    }
+    
+    private func connectDatabase(_ client: MongoClient, name: String = "") -> MongoDatabase? {
+        
+        //self.testBasic(self.appKey + "-" + name)
         
         //Unique for creating apps
-        if apID == "JKHSDGHFKJGH454645GRRLKJF" {
+        if self.appKey == "JKHSDGHFKJGH454645GRRLKJF" {
             return client.getDatabase(name: "locql" )
         }
         
-        let databaseName = self.retrieveCollectionQueryValues(collectioName: "TBApplication", key: "appKey", value: apID, field: "databaseName")
+        let databaseName = self.getDatabaseName()
         
         //That apID does not exits, so not data
         if databaseName == "" {
@@ -55,16 +122,24 @@ class DatabaseController {
             return client.getDatabase(name: name )
         }
         
+        if self.testMode != 0 {
+            return client.getDatabase(name: databaseName + "_Test" )
+        }
+        
         return client.getDatabase(name: databaseName )
     }
     
-    static func getAllColectionsArr(_ apID: String)-> [String] {
+    private func getCollectionObject() -> MongoCollection?  {
+        return nil
+    }
+    
+    func getAllColectionsArr()-> [String] {
         
         // open a connection
         let client = openMongoDB()
         
         // set database, assuming "test" exists
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return []
         }
         
@@ -75,23 +150,22 @@ class DatabaseController {
         }
         
         return collections
-        
     }
     
-    static func retrieveCollectionString(_ apID: String, _ collectioName: String ) -> String {
+    func retrieveCollectionString() -> String {
         
         
         // open a connection
         let client = openMongoDB()
         
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
 
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return "Collection does not exist"
         }
         
@@ -108,23 +182,9 @@ class DatabaseController {
         }
         return jsonStr
     }
+
     
-    static func closeMongoDB(_ database: MongoDatabase, client: MongoClient ) {
-        database.close()
-        client.close()
-    }
-    
-    static func closeMongoDB(_ collection: MongoCollection, database: MongoDatabase, client: MongoClient ) {
-        collection.close()
-        database.close()
-        client.close()
-    }
-    
-    static func closeMongoDB(client: MongoClient ) {
-        client.close()
-    }
-    
-    static func getAllDatabases(_ apID: String) -> String {
+    func getAllDatabases() -> String {
         
         // open a connection
         let client = openMongoDB()
@@ -150,12 +210,12 @@ class DatabaseController {
     }
 
     
-    static func getAllCollections(_ apID: String) -> String {
+    func getAllCollections() -> String {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
@@ -180,17 +240,17 @@ class DatabaseController {
     }
     
     @discardableResult
-    static func dropCollection(_ apID: String,_ collectionName:String) -> Bool {
+    func dropCollection() -> Bool {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return false
         }
         
@@ -205,12 +265,12 @@ class DatabaseController {
     
     
     @discardableResult
-    static func renameCollection(_ apID: String,_ oldCollectionName:String, newCollectionName:String) -> Bool {
+    func renameCollection(_ oldCollectionName:String, newCollectionName:String) -> Bool {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
@@ -229,17 +289,17 @@ class DatabaseController {
     }
     
     @discardableResult
-    static func removeIndex(_ apID: String,_ collectionName:String, index:String) -> Bool {
+    func removeIndex(_ index:String) -> Bool {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return false
         }
         
@@ -254,17 +314,17 @@ class DatabaseController {
     
     
     @discardableResult
-    static func createUniqueIndex(_ apID: String,_ collectionName: String, index: String) -> String {
+    func createUniqueIndex(_ index: String) -> String {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ""
         }
         
@@ -285,7 +345,7 @@ class DatabaseController {
     }
     
     @discardableResult
-    static func insertCollection(_ apID: String,_ collectionName: String, jsonStr: String ) -> String {
+    func insertCollection(_ jsonStr: String ) -> String {
         
         let collectionValues = JSONController.parseJSONToArrDic(jsonStr)
         
@@ -299,7 +359,7 @@ class DatabaseController {
                 return ""
             }
             
-            let newObjectID = self.asMyUUID().string
+            let newObjectID = self.myNewUUID()
             
             document.append(key: "_id", string: newObjectID  )
             
@@ -309,12 +369,12 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return "Error with collection name"
         }
         
@@ -332,31 +392,18 @@ class DatabaseController {
         //        }
     }
     
-    private static func nowDateTime() -> String {
+    private func nowDateTime() -> String {
         let m = moment()
         return m.format()
     }
     
-//    private class func moment(_ seconds: TimeInterval) -> Date {
-//        let interval = TimeInterval(seconds)
-//        let date = Date(timeIntervalSince1970: interval)
-//        return date
-//    }
-//    
-//    private class func getNow() -> Double {
-//        
-//        var posixTime = timeval()
-//        gettimeofday(&posixTime, nil)
-//        return Double((posixTime.tv_sec * 1000) + (Int(posixTime.tv_usec)/1000))
-//    }
-    
-    private class var nowDate: String {
+    private var nowDate: String {
         return self.nowDateTime()
     }
     
     
     @discardableResult
-    static func insertDocument(_ apID: String,_ collectionName: String, jsonStr: String ) -> String {
+    func insertDocument(_ jsonStr: String ) -> String {
         
         guard let document = try? BSON.init(json: jsonStr) else {
             return ""
@@ -365,12 +412,12 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return "Error with collection name"
         }
         
@@ -378,7 +425,7 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let newObjectID = self.asMyUUID().string
+        let newObjectID = self.myNewUUID()
         
         document.append(key: "_id", string: newObjectID  )
         document.append(key: "created", string: self.nowDate )
@@ -396,7 +443,7 @@ class DatabaseController {
     }
     
     
-    private static func retrieveCollectionQueryValues( collectioName: String, key: String, value: String, field: String) -> String {
+    private func retrieveCollectionQueryValues(_ key: String, value: String, field: String, collectionName: String = "") -> String {
         
         
         // open a connection
@@ -411,7 +458,7 @@ class DatabaseController {
         
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ""
         }
         
@@ -433,7 +480,7 @@ class DatabaseController {
         return field
     }
 
-    static func retrieveCollectionQueryStrFields(_ apID: String,_ collectioName: String, query: String, fields: String ) -> [String] {
+    func retrieveCollectionQueryStrFields(_ query: String, fields: String ) -> [String] {
         
         
         var fieldRecords = [String]()
@@ -441,7 +488,7 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return fieldRecords
         }
         
@@ -450,7 +497,7 @@ class DatabaseController {
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return fieldRecords
         }
         
@@ -488,13 +535,13 @@ class DatabaseController {
     }
 
     
-    static func retrieveCollectionQueryStr(_ apID: String,_ collectioName: String, query: String ) -> String {
+    func retrieveCollectionQueryStr(_ query: String ) -> String {
         
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
@@ -504,7 +551,7 @@ class DatabaseController {
         
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ""
         }
         
@@ -519,10 +566,9 @@ class DatabaseController {
     }
     
     @discardableResult
-    static func updateDocument(_ apID: String,_ collectionName: String, jsonStr: String, query: String) -> String {
+    func updateDocument(_ jsonStr: String, query: String) -> String {
         
         var objectID = ""
-        var databaseName = ""
         
         
         guard let document = try? BSON.init(json: jsonStr) else {
@@ -536,13 +582,13 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID, name: databaseName) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return "Error with collection name"
         }
         
@@ -561,10 +607,10 @@ class DatabaseController {
     
     
     @discardableResult
-    static func updateInsertDocument(_ apID: String,_ collectionName: String, jsonStr: String ) -> String {
+    func updateInsertDocument(_ jsonStr: String ) -> String {
     
         var objectID = ""
-        var databaseName = ""
+        //var databaseName = ""
         
         do {
             
@@ -574,9 +620,9 @@ class DatabaseController {
                 objectID =  decoded?["_id"] as! String
             }
             
-            if let database = decoded?["databaseName"] as? String {
-                databaseName = database
-            }
+//            if let database = decoded?["databaseName"] as? String {
+//                databaseName = database
+//            }
             
         } catch let error {
             print(error)
@@ -591,13 +637,13 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID, name: databaseName) else {
+        guard let db = connectDatabase(client) else {
             return "Error with connecting"
         }
         
         
         // define collection
-        guard let collection = db.getCollection(name: collectionName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return "Error with collection name"
         }
         
@@ -609,7 +655,7 @@ class DatabaseController {
         
         if objectID == "" {
             document.append(key: "inserted", string: self.nowDate)
-            objectID = self.insertDocument(apID, collectionName, jsonStr: jsonStr)
+            objectID = self.insertDocument(jsonStr)
         }
         else {
             
@@ -625,7 +671,7 @@ class DatabaseController {
         return objectID
     }
     
-    static func safeRemoveDocument(_ apID: String,_ collectioName: String, _ jsonStr: String ) -> Bool {
+    func safeRemoveDocument(_ jsonStr: String ) -> Bool {
         
         guard let document = try? BSON.init(json: jsonStr) else {
             return false
@@ -636,12 +682,12 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return false
         }
         
@@ -666,20 +712,17 @@ class DatabaseController {
         return  true
     }
     
-    static func removeCollection(_ apID: String,_ collectioName: String ) -> Bool {
-        
-        
-        // define collection
+    func removeCollection() -> Bool {
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return false
         }
         
@@ -693,9 +736,28 @@ class DatabaseController {
         
         return  true
     }
+    
+    func removeDatabase() -> Bool {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        guard let db = connectDatabase(client) else {
+            return false
+        }
+        
+        // by backing out in reverse order created
+        defer {
+            self.closeMongoDB(db, client: client)
+        }
+        
+        let _ = db.drop()
+        
+        return  true
+    }
 
     
-    static func removeDocument(_ apID: String,_ collectioName: String, _ documentID: String ) -> Bool {
+    func removeDocument(_ documentID: String ) -> Bool {
     
         
         // define collection
@@ -703,12 +765,12 @@ class DatabaseController {
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return false
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return false
         }
         
@@ -726,18 +788,18 @@ class DatabaseController {
         return  true
     }
     
-    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, documentID: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
+    func retrieveCollectionDocumentID(_ documentID: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
         
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return ["Error with connecting"]
         }
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ["collection not existing"]
         }
         
@@ -762,13 +824,13 @@ class DatabaseController {
         return arr
     }
     
-    static func retrieveCollectionQuery(_ apID: String,_ collectioName: String, query: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
+    func retrieveCollectionQuery(_ query: String, skip: Int = 0, limit: Int = 100 ) -> [String] {
         
         
         // open a connection
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return ["Error with connecting"]
         }
         
@@ -778,7 +840,7 @@ class DatabaseController {
         
         
         // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ["collection error"]
         }
         
@@ -800,15 +862,54 @@ class DatabaseController {
         return  arr
     }
     
-    static func checkIfExist(_ apID: String,_ collectioName: String, objects: [String:String]  ) -> (Bool, String ) {
+    func retrieveCollection(_ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> [String] {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        guard let db = connectDatabase(client) else {
+            return ["Error with connecting"]
+        }
+        
+        // define collection
+        guard let collection = db.getCollection(name: self.collectioName) else {
+            return ["collection error"]
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let query = BSON()
+        
+        if objectID != "" {
+            query.append(key: "_id", string: objectID)
+        }
+        
+        // Perform a "find" on the perviously defined collection
+        let fnd = collection.find(query: query, fields: nil, flags: .none, skip: skip, limit: limit, batchSize: .allZeros)
+        
+        // Initialize empty array to receive formatted results
+        var arr = [String]()
+        
+        // The "fnd" cursor is typed as MongoCursor, which is iterable
+        for x in fnd! {
+            arr.append(x.asString)
+        }
+        
+        return  arr
+    }
+
+    
+    func checkIfExist(_ objects: [String:String]  ) -> (Bool, String ) {
         
         let client = openMongoDB()
         
-        guard let db = connectDatabase(client, apID: apID) else {
+        guard let db = connectDatabase(client) else {
             return ( false, "error" )
         }
         
-        guard let collection = db.getCollection(name: collectioName) else {
+        guard let collection = db.getCollection(name: self.collectioName) else {
             return ( false, "error" )
         }
         
@@ -843,95 +944,34 @@ class DatabaseController {
         return ( false, "error" )
     }
     
-
-    
-    
-    static func retrieveCollection(_ apID: String,_ collectioName: String, _ objectID: String = "", skip: Int = 0, limit: Int = 100 ) -> [String] {
-        
-        // define collection
-        
-        // open a connection
-        let client = openMongoDB()
-        
-        guard let db = connectDatabase(client, apID: apID) else {
-            return ["Error with connecting"]
-        }
-        
-        // define collection
-        guard let collection = db.getCollection(name: collectioName) else {
-            return [""]
-        }
-        
-        defer {
-            self.closeMongoDB(collection, database: db, client: client)
-        }
-        
-        let query = BSON()
-        
-        if objectID != "" {
-            query.append(key: "_id", string: objectID)
-        }
-        
-        // Perform a "find" on the perviously defined collection
-        let fnd = collection.find(query: query, fields: nil, flags: .none, skip: skip, limit: limit, batchSize: .allZeros)
-        
-        // Initialize empty array to receive formatted results
-        var arr = [String]()
-        
-        // The "fnd" cursor is typed as MongoCursor, which is iterable
-        for x in fnd! {
-            arr.append(x.asString)
-        }
-        
-        return  arr
-    }
-    
-    func myNewUUID() -> String {
+    private func myNewUUID() -> String {
         let x = asMyUUID()
         return x.string
     }
-    struct asMyUUID {
-        let uuid: uuid_t
-        
-        public init() {
-            let u = UnsafeMutablePointer<UInt8>.allocate(capacity:  MemoryLayout<uuid_t>.size)
-            defer {
-                u.deallocate(capacity: MemoryLayout<uuid_t>.size)
-            }
-            uuid_generate_random(u)
-            self.uuid = asMyUUID.uuidFromPointer(u)
-        }
-        
-        public init(_ string: String) {
-            let u = UnsafeMutablePointer<UInt8>.allocate(capacity:  MemoryLayout<uuid_t>.size)
-            defer {
-                u.deallocate(capacity: MemoryLayout<uuid_t>.size)
-            }
-            uuid_parse(string, u)
-            self.uuid = asMyUUID.uuidFromPointer(u)
-        }
-        
-        init(_ uuid: uuid_t) {
-            self.uuid = uuid
-        }
-        
-        private static func uuidFromPointer(_ u: UnsafeMutablePointer<UInt8>) -> uuid_t {
-            // is there a better way?
-            return uuid_t(u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7], u[8], u[9], u[10], u[11], u[12], u[13], u[14], u[15])
-        }
-        
-        public var string: String {
-            let u = UnsafeMutablePointer<UInt8>.allocate(capacity:  MemoryLayout<uuid_t>.size)
-            let unu = UnsafeMutablePointer<Int8>.allocate(capacity:  37) // as per spec. 36 + null
-            defer {
-                u.deallocate(capacity: MemoryLayout<uuid_t>.size)
-                unu.deallocate(capacity: 37)
-            }
-            var uu = self.uuid
-            memcpy(u, &uu, MemoryLayout<uuid_t>.size)
-            uuid_unparse_lower(u, unu)
-            return String(validatingUTF8: unu)!
-        }
-    }
+}
 
+struct asMyUUID {
+    var uuid: uuid_t
+    
+    init() {
+        let u = UnsafeMutablePointer<UInt8>.allocate(capacity:  MemoryLayout<uuid_t>.size)
+        defer {
+            u.deallocate(capacity: MemoryLayout<uuid_t>.size)
+        }
+        uuid_generate_random(u)
+        uuid = uuid_t(u[0], u[1], u[2], u[3], u[4], u[5], u[6], u[7], u[8], u[9], u[10], u[11], u[12], u[13], u[14], u[15])
+    }
+    
+    var string: String {
+        let u = UnsafeMutablePointer<UInt8>.allocate(capacity:  MemoryLayout<uuid_t>.size)
+        let unu = UnsafeMutablePointer<Int8>.allocate(capacity:  37) // as per spec. 36 + null
+        defer {
+            u.deallocate(capacity: MemoryLayout<uuid_t>.size)
+            unu.deallocate(capacity: 37)
+        }
+        var uu = self.uuid
+        memcpy(u, &uu, MemoryLayout<uuid_t>.size)
+        uuid_unparse_lower(u, unu)
+        return String(validatingUTF8: unu)!
+    }
 }

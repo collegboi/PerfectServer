@@ -9,18 +9,18 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "print"
-- "Dictionary"
-- !private "StringLiteralType"
-- !private "-"
-- !private "Int"
-- !private "!="
+- !private "GlossKeyPathDelimiter"
 - "Hashable"
+- !private "!="
+- !private "StringLiteralType"
 - "String"
+- "Dictionary"
+- !private "+"
 - "CastingPrecedence"
+- !private "-"
 - "AssignmentPrecedence"
 - !private "=="
-- !private "+"
-- !private "GlossKeyPathDelimiter"
+- !private "Int"
 depends-member:
 - !private ["Ps9AnyObject", "components"]
 - !private ["Ps9AnyObject", "init"]

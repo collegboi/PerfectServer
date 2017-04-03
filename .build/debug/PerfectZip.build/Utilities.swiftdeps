@@ -14,23 +14,23 @@ provides-member:
 - ["V10PerfectZip12ZipUtilities", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Error"
-- !private "+"
-- !private "BooleanLiteralType"
-- "ProcessedFilePath"
-- !private "StringLiteralType"
-- !private "Dir"
-- !private "UnicodeScalarType"
-- "String"
-- "ZipStatus"
-- !private "+="
+- "ZipUtilities"
 - "CastingPrecedence"
-- !private "File"
 - "=="
 - !private "AssignmentPrecedence"
-- !private "!="
-- "ZipUtilities"
+- "String"
+- "ProcessedFilePath"
+- "Error"
+- !private "StringLiteralType"
+- !private "+"
+- !private "+="
+- "ZipStatus"
 - !private "ExtendedGraphemeClusterType"
+- !private "BooleanLiteralType"
+- !private "!="
+- !private "Dir"
+- !private "File"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["Vs11AnyIterator", "Element"]
 - !private ["Ps9AnyObject", "characters"]

@@ -7,43 +7,29 @@ provides-member:
 - ["C16MyAwesomeProject13BackupService", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- "BackupService"
+- !private "AnyObject"
+- !private "Array"
 - !private "Dictionary"
 - "String"
-- !private "TimeInterval"
-- !private "Double"
-- !private "Date"
+- !private "FileController"
+- !private "BooleanLiteralType"
 - !private "Zip"
-- !private "+"
-- !private "timeval"
-- !private "*"
-- !private "Int"
-- "CastingPrecedence"
-- !private "gettimeofday"
 - !private "DatabaseController"
 - !private "JSONController"
 - !private "print"
-- !private "StringLiteralType"
-- !private "AnyObject"
-- !private "BooleanLiteralType"
-- !private "Array"
-- "BackupService"
-- !private "/"
-- !private "FileController"
+- "CastingPrecedence"
+- !private "+"
+- !private "moment"
 depends-member:
-- !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "DatabaseController"]
-- !private ["Ps9AnyObject", "Date"]
-- !private ["Ps9AnyObject", "Double"]
 - !private ["Ps9AnyObject", "FileController"]
-- !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "JSONController"]
 - !private ["Ps9AnyObject", "String"]
-- !private ["Ps9AnyObject", "TimeInterval"]
 - !private ["Ps9AnyObject", "Zip"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "getAllColectionsArr"]
-- !private ["Ps9AnyObject", "getNow"]
-- !private ["Ps9AnyObject", "gettimeofday"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertDocument"]
 - !private ["Ps9AnyObject", "moment"]
@@ -52,7 +38,6 @@ depends-member:
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "retrieveCollectionString"]
 - !private ["Ps9AnyObject", "sharedFileHandler"]
-- !private ["Ps9AnyObject", "timeval"]
 - !private ["Ps9AnyObject", "updateContentsOfFile"]
 - !private ["Ps9AnyObject", "zipFiles"]
 - ["Ps9AnyObject", ""]
@@ -64,23 +49,17 @@ depends-member:
 - !private ["Sa", "init"]
 - !private ["C16MyAwesomeProject13BackupService", "AnyObject"]
 - !private ["C16MyAwesomeProject13BackupService", "DatabaseController"]
-- !private ["C16MyAwesomeProject13BackupService", "Date"]
-- !private ["C16MyAwesomeProject13BackupService", "Double"]
 - !private ["C16MyAwesomeProject13BackupService", "FileController"]
-- !private ["C16MyAwesomeProject13BackupService", "Int"]
 - !private ["C16MyAwesomeProject13BackupService", "JSONController"]
 - ["C16MyAwesomeProject13BackupService", "String"]
-- !private ["C16MyAwesomeProject13BackupService", "TimeInterval"]
 - !private ["C16MyAwesomeProject13BackupService", "Zip"]
 - ["C16MyAwesomeProject13BackupService", "deinit"]
 - ["C16MyAwesomeProject13BackupService", "doBackupNow"]
-- !private ["C16MyAwesomeProject13BackupService", "getNow"]
-- !private ["C16MyAwesomeProject13BackupService", "gettimeofday"]
 - ["C16MyAwesomeProject13BackupService", "init"]
 - !private ["C16MyAwesomeProject13BackupService", "moment"]
 - !private ["C16MyAwesomeProject13BackupService", "nowDate"]
 - !private ["C16MyAwesomeProject13BackupService", "print"]
-- !private ["C16MyAwesomeProject13BackupService", "timeval"]
+- ["C16MyAwesomeProject13BackupService", "setupBackupTimes"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
@@ -91,8 +70,6 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "_Element"]
 - !private ["Ps22BidirectionalIndexable", "append"]
 - !private ["Ps22BidirectionalIndexable", "init"]
-- !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "init"]
 - ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "Element"]
 - !private ["Ps7CVarArg", "Iterator"]
@@ -109,6 +86,7 @@ depends-member:
 - !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
+- !private ["Ps10Comparable", "format"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Iterator"]
@@ -116,6 +94,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
+- !private ["Ps28CustomDebugStringConvertible", "format"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps17CustomReflectable", "Element"]
@@ -131,18 +110,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "append"]
+- !private ["Ps23CustomStringConvertible", "format"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["C16MyAwesomeProject18DatabaseController", "getAllColectionsArr"]
 - !private ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
 - !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionString"]
-- !private ["V10Foundation4Date", "deinit"]
-- !private ["V10Foundation4Date", "init"]
 - !private ["Vs10Dictionary", "Key"]
 - !private ["Vs10Dictionary", "Value"]
 - ["Vs10Dictionary", "deinit"]
 - !private ["Sd", "deinit"]
-- !private ["Sd", "init"]
 - !private ["Ps9Equatable", "description"]
+- !private ["Ps9Equatable", "format"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps5Error", "description"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
@@ -153,8 +131,6 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
 - !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
@@ -162,10 +138,8 @@ depends-member:
 - !private ["C16MyAwesomeProject14FileController", "sharedFileHandler"]
 - !private ["C16MyAwesomeProject14FileController", "updateContentsOfFile"]
 - !private ["Sf", "deinit"]
-- !private ["Ps13FloatingPoint", "init"]
 - !private ["Ps8Hashable", "description"]
 - !private ["Ps8Hashable", "init"]
-- !private ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Element"]
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "Key"]
@@ -182,13 +156,10 @@ depends-member:
 - !private ["Ps13IndexableBase", "init"]
 - !private ["Vs16IndexingIterator", "Element"]
 - !private ["Si", "deinit"]
-- !private ["Si", "init"]
 - !private ["Vs5Int16", "deinit"]
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "init"]
-- !private ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["C16MyAwesomeProject14JSONController", "parseJSONToStr"]
 - !private ["P10PerfectLib15JSONConvertible", "Element"]
@@ -200,6 +171,8 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["V11SwiftMoment6Moment", "deinit"]
+- !private ["V11SwiftMoment6Moment", "format"]
 - !private ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Iterator"]
 - !private ["Ps17MutableCollection", "_Element"]
@@ -240,7 +213,6 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "append"]
 - !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["P10Foundation20ReferenceConvertible", "init"]
 - !private ["Ps8Sequence", "Element"]
 - !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "Key"]
@@ -248,9 +220,6 @@ depends-member:
 - !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
-- !private ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
@@ -271,25 +240,18 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps15_CVarArgAligned", "init"]
-- !private ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "description"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps14_Incrementable", "init"]
-- !private ["Ps8_Integer", "init"]
-- !private ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
@@ -297,21 +259,12 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "init"]
-- !private ["VSC7timeval", "deinit"]
-- !private ["VSC7timeval", "init"]
-- !private ["VSC7timeval", "tv_sec"]
-- !private ["VSC7timeval", "tv_usec"]
 depends-nominal:
-- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
 - "Sa"
 - "C16MyAwesomeProject13BackupService"
 - !private "Ps23BidirectionalCollection"
 - !private "Ps22BidirectionalIndexable"
-- !private "Ps19BinaryFloatingPoint"
-- !private "Ps17BitwiseOperations"
 - "Sb"
 - !private "Ps7CVarArg"
 - !private "Vs9Character"
@@ -322,7 +275,6 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
 - !private "C16MyAwesomeProject18DatabaseController"
-- !private "V10Foundation4Date"
 - "Vs10Dictionary"
 - !private "Sd"
 - !private "Ps9Equatable"
@@ -330,16 +282,12 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps25ExpressibleByFloatLiteral"
-- !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C16MyAwesomeProject14FileController"
 - !private "Sf"
-- !private "Ps13FloatingPoint"
 - !private "Ps8Hashable"
-- !private "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
@@ -348,13 +296,12 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
-- !private "Ps7Integer"
-- !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - !private "C16MyAwesomeProject14JSONController"
 - !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "V11SwiftMoment6Moment"
 - !private "Ps17MutableCollection"
 - !private "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
@@ -371,11 +318,7 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
-- !private "P10Foundation20ReferenceConvertible"
 - !private "Ps8Sequence"
-- !private "Ps13SignedInteger"
-- !private "Ps12SignedNumber"
-- !private "Ps10Strideable"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
@@ -388,24 +331,14 @@ depends-nominal:
 - "C10PerfectZip3Zip"
 - "O10PerfectZip9ZipStatus"
 - !private "Ps14_ArrayProtocol"
-- !private "Ps15_CVarArgAligned"
-- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
-- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
-- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
-- !private "Ps14_Incrementable"
-- !private "Ps8_Integer"
-- !private "Ps18_IntegerArithmetic"
 - !private "Ps21_ObjectiveCBridgeable"
-- !private "Ps14_SignedInteger"
-- !private "Ps11_Strideable"
-- !private "VSC7timeval"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
@@ -419,6 +352,7 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
@@ -536,7 +470,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
@@ -564,4 +497,5 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-interface-hash: "370215154af738ad0148bf8ff474f903"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
+interface-hash: "c8c7a90a89afbf4fc7ce1bd2e4a3a93e"

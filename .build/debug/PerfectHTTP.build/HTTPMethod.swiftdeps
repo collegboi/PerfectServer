@@ -8,15 +8,15 @@ provides-member:
 - ["O11PerfectHTTP10HTTPMethod", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "HTTPMethod"
-- "Bool"
 - "CustomStringConvertible"
-- !private "StringLiteralType"
-- "String"
-- "Hashable"
-- !private "~="
-- "=="
 - "Int"
+- "Hashable"
+- !private "StringLiteralType"
+- "HTTPMethod"
+- "String"
+- "=="
+- !private "~="
+- "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "hashValue"]
 - !private ["Ps9AnyObject", "init"]

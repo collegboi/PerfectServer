@@ -56,13 +56,49 @@ class SystemController {
     // --------------------------------LINUX COMMANDS----------------------------------------- //
     // ---------------------------------------------------------------------------------------- //
     
+    class func restartDatabaseCMD() {
+        
+        do {
+            guard let _ = try runProc(cmd: "systemctrl", args: ["restart", "mongodb"], read: true) else {
+                return
+            }
+            
+            //print(output)
+        } catch let error  {
+            print(error)
+        }
+
+    }
+    
+    class func getDatabaseStatus() -> String {
+        
+        var returnString = "0"
+        
+        do {
+            guard let output = try runProc(cmd: "systemctrl", args: ["status", "mongodb"], read: true) else {
+                return returnString
+            }
+            
+            if output.contains(string: "active (running)") {
+                returnString = "1"
+            }
+            
+            //print(output)
+        } catch let error  {
+            print(error)
+        }
+
+        return returnString
+    }
+    
     class func getLinuxStats() -> String {
         
-        var data = [String:[String:String]]()
+        var data = [String:AnyObject]()
     
-        data["memory"] = SystemController.getMemoryLinuxUsuage()
-        data["storage"] = SystemController.getStorageLinuxUsuage()
-        data["cpu"] = SystemController.getCPULinuxUsuage()
+        data["memory"] = SystemController.getMemoryLinuxUsuage() as AnyObject?
+        data["storage"] = SystemController.getStorageLinuxUsuage() as AnyObject?
+        data["cpu"] = SystemController.getCPULinuxUsuage() as AnyObject?
+        data["databaseStatus"] = SystemController.getDatabaseStatus() as AnyObject?
         
          return  "{\"data\":\(JSONController.parseJSONToStr(dict: data))}"
     }

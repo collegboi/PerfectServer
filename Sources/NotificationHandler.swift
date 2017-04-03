@@ -36,8 +36,11 @@ func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
         return
     }
 
+    let storage = Storage()
+    storage.setAppKey(appKey)
+    storage.setCollectionName("TBNotification")
     
-    let allNotifications = Storage.getCollectionStr(appKey, "TBNotification")
+    let allNotifications = storage.getCollectionStr()
     
     response.appendBody(string:allNotifications)
     response.completed()
@@ -88,7 +91,11 @@ func sendNotificaiton(request: HTTPRequest, _ response: HTTPResponse) {
                 
                 let objectStr = JSONController.parseJSONToStr(dict: notificationObject)
                 
-                DatabaseController.insertDocument(appKey,"TBNotification", jsonStr: objectStr)
+                let storage = Storage()
+                storage.setAppKey(appKey)
+                storage.setCollectionName("TBNotification")
+                
+                storage.insertDocument(jsonStr: objectStr)
             }
         
             response.appendBody(string: resultString)

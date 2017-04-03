@@ -7,24 +7,24 @@ provides-member:
 - ["V5Gloss7Encoder", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "NSDecimalNumber"
-- "RawRepresentable"
-- "String"
-- !private "GlossDateFormatterISO8601"
 - "URL"
-- "UUID"
-- "Dictionary"
-- "UInt64"
-- "Date"
-- "Encoder"
-- !private "NSNumber"
-- "Encodable"
-- "Decimal"
-- "DateFormatter"
+- "RawRepresentable"
 - "UInt32"
-- "JSON"
+- "Decimal"
 - "Int64"
+- !private "NSDecimalNumber"
+- "Encodable"
+- "String"
+- "Encoder"
+- "JSON"
+- "UUID"
+- !private "NSNumber"
+- !private "GlossDateFormatterISO8601"
 - "Int32"
+- "UInt64"
+- "DateFormatter"
+- "Dictionary"
+- "Date"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "string"]

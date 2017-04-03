@@ -1,6 +1,6 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "022efffcabf9ccfd31af133617ae552e"
-build_time: [540764169, 483029000]
+build_time: [542976562, 655092000]
 inputs:
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Decoder.swift": [540764129, 0]
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Encoder.swift": [540764129, 0]
