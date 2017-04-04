@@ -68,11 +68,23 @@
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/FileHandler.swiftdeps"
   },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/HeaderFilter.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/HeaderFilter.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/HeaderFilter.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/HeaderFilter~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/HeaderFilter.swiftdeps"
+  },
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/IssueTracker.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/IssueTracker.swiftdeps"
+  },
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/JobController.swift": {
+    "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JobController.d",
+    "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JobController.swift.o",
+    "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JobController~partial.swiftmodule",
+    "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JobController.swiftdeps"
   },
   "/Users/timothybarnard/Documents/FYP/PerfectServer/Sources/JSONController.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MyAwesomeProject.build/JSONController.d",

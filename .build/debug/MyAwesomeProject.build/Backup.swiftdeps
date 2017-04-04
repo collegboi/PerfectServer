@@ -7,50 +7,46 @@ provides-member:
 - ["C16MyAwesomeProject13BackupService", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "StringLiteralType"
-- "BackupService"
+- !private "+"
 - !private "AnyObject"
 - !private "Array"
-- !private "Dictionary"
-- "String"
-- !private "FileController"
+- "BackupService"
 - !private "BooleanLiteralType"
-- !private "Zip"
-- !private "DatabaseController"
-- !private "JSONController"
-- !private "print"
 - "CastingPrecedence"
-- !private "+"
+- !private "FileController"
+- !private "JSONController"
+- !private "Storage"
+- "String"
+- !private "StringLiteralType"
+- !private "Zip"
 - !private "moment"
+- !private "print"
 depends-member:
-- !private ["Ps9AnyObject", "DatabaseController"]
 - !private ["Ps9AnyObject", "FileController"]
 - !private ["Ps9AnyObject", "JSONController"]
+- !private ["Ps9AnyObject", "Storage"]
 - !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "Zip"]
-- ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "getAllColectionsArr"]
+- !private ["Ps9AnyObject", "getCollectionStr"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "insertDocument"]
 - !private ["Ps9AnyObject", "moment"]
 - !private ["Ps9AnyObject", "nowDate"]
 - !private ["Ps9AnyObject", "parseJSONToStr"]
 - !private ["Ps9AnyObject", "print"]
-- !private ["Ps9AnyObject", "retrieveCollectionString"]
+- !private ["Ps9AnyObject", "setAppKey"]
+- !private ["Ps9AnyObject", "setCollectionName"]
 - !private ["Ps9AnyObject", "sharedFileHandler"]
 - !private ["Ps9AnyObject", "updateContentsOfFile"]
 - !private ["Ps9AnyObject", "zipFiles"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- ["Sa", "deinit"]
 - !private ["Sa", "init"]
 - !private ["C16MyAwesomeProject13BackupService", "AnyObject"]
-- !private ["C16MyAwesomeProject13BackupService", "DatabaseController"]
 - !private ["C16MyAwesomeProject13BackupService", "FileController"]
 - !private ["C16MyAwesomeProject13BackupService", "JSONController"]
+- !private ["C16MyAwesomeProject13BackupService", "Storage"]
 - ["C16MyAwesomeProject13BackupService", "String"]
 - !private ["C16MyAwesomeProject13BackupService", "Zip"]
 - ["C16MyAwesomeProject13BackupService", "deinit"]
@@ -60,344 +56,221 @@ depends-member:
 - !private ["C16MyAwesomeProject13BackupService", "nowDate"]
 - !private ["C16MyAwesomeProject13BackupService", "print"]
 - ["C16MyAwesomeProject13BackupService", "setupBackupTimes"]
-- !private ["Ps23BidirectionalCollection", "Element"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "init"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "init"]
-- ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "Element"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Key"]
-- !private ["Ps7CVarArg", "Value"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Vs9Character", "deinit"]
-- !private ["Ps10Collection", "Element"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "Key"]
-- !private ["Ps10Collection", "Value"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Comparable", "format"]
 - !private ["Ps10Comparable", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "Key"]
-- !private ["Ps28CustomDebugStringConvertible", "Value"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "format"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
-- !private ["Ps17CustomReflectable", "Element"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Key"]
-- !private ["Ps17CustomReflectable", "Value"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "init"]
-- !private ["Ps23CustomStringConvertible", "Element"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Key"]
-- !private ["Ps23CustomStringConvertible", "Value"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "format"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["C16MyAwesomeProject18DatabaseController", "getAllColectionsArr"]
-- !private ["C16MyAwesomeProject18DatabaseController", "insertDocument"]
-- !private ["C16MyAwesomeProject18DatabaseController", "retrieveCollectionString"]
-- !private ["Vs10Dictionary", "Key"]
-- !private ["Vs10Dictionary", "Value"]
-- ["Vs10Dictionary", "deinit"]
-- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "description"]
 - !private ["Ps9Equatable", "format"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps5Error", "description"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Key"]
-- !private ["Ps30ExpressibleByDictionaryLiteral", "Value"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- ["C16MyAwesomeProject14FileController", "deinit"]
 - !private ["C16MyAwesomeProject14FileController", "sharedFileHandler"]
 - !private ["C16MyAwesomeProject14FileController", "updateContentsOfFile"]
-- !private ["Sf", "deinit"]
 - !private ["Ps8Hashable", "description"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "Key"]
-- !private ["Ps9Indexable", "Value"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "init"]
-- !private ["Ps13IndexableBase", "Element"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "Key"]
-- !private ["Ps13IndexableBase", "Value"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "init"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["C16MyAwesomeProject14JSONController", "parseJSONToStr"]
-- !private ["P10PerfectLib15JSONConvertible", "Element"]
-- !private ["P10PerfectLib15JSONConvertible", "Iterator"]
-- !private ["P10PerfectLib15JSONConvertible", "Key"]
-- !private ["P10PerfectLib15JSONConvertible", "Value"]
-- !private ["P10PerfectLib15JSONConvertible", "_Element"]
 - !private ["P10PerfectLib15JSONConvertible", "append"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["V11SwiftMoment6Moment", "deinit"]
 - !private ["V11SwiftMoment6Moment", "format"]
-- !private ["Ps17MutableCollection", "Element"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "init"]
-- !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
-- !private ["CSo8NSObject", "init"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo19NSPasteboardReading", "init"]
 - !private ["PSo19NSPasteboardWriting", "init"]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
-- ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Element"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "init"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "init"]
-- !private ["Ps26RangeReplaceableCollection", "Element"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "Key"]
-- !private ["Ps8Sequence", "Value"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
-- ["SS", "deinit"]
+- !private ["C16MyAwesomeProject7Storage", "getAllColectionsArr"]
+- !private ["C16MyAwesomeProject7Storage", "getCollectionStr"]
+- !private ["C16MyAwesomeProject7Storage", "init"]
+- !private ["C16MyAwesomeProject7Storage", "insertDocument"]
+- !private ["C16MyAwesomeProject7Storage", "setAppKey"]
+- !private ["C16MyAwesomeProject7Storage", "setCollectionName"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sc", "deinit"]
-- ["C10PerfectZip3Zip", "deinit"]
 - !private ["C10PerfectZip3Zip", "init"]
 - !private ["C10PerfectZip3Zip", "zipFiles"]
-- ["O10PerfectZip9ZipStatus", "deinit"]
 - !private ["O10PerfectZip9ZipStatus", "description"]
-- !private ["Ps14_ArrayProtocol", "Element"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "description"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "Element"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Key"]
-- !private ["Ps21_ObjectiveCBridgeable", "Value"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
+- !private "Sa"
 - "C16MyAwesomeProject13BackupService"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
-- "Sb"
 - !private "Ps7CVarArg"
-- !private "Vs9Character"
 - !private "Ps10Collection"
 - !private "Ps10Comparable"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
-- !private "C16MyAwesomeProject18DatabaseController"
-- "Vs10Dictionary"
-- !private "Sd"
 - !private "Ps9Equatable"
 - !private "Ps5Error"
 - !private "Ps25ExpressibleByArrayLiteral"
-- !private "Ps30ExpressibleByDictionaryLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- "C16MyAwesomeProject14FileController"
-- !private "Sf"
+- !private "C16MyAwesomeProject14FileController"
 - !private "Ps8Hashable"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
-- !private "Ps16IteratorProtocol"
 - !private "C16MyAwesomeProject14JSONController"
 - !private "P10PerfectLib15JSONConvertible"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "V11SwiftMoment6Moment"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
-- !private "CSo8NSObject"
 - !private "PSo16NSObjectProtocol"
 - !private "PSo19NSPasteboardReading"
 - !private "PSo19NSPasteboardWriting"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Sq"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps8Sequence"
-- "SS"
+- !private "C16MyAwesomeProject7Storage"
+- !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sc"
-- "C10PerfectZip3Zip"
-- "O10PerfectZip9ZipStatus"
+- !private "C10PerfectZip3Zip"
+- !private "O10PerfectZip9ZipStatus"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../e_os2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../srtp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl23.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dtls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../tls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl3.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pkcs7.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../sha.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bn.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../asn1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../evp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../comp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ossl_typ.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../crypto.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bio.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCrypto.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl23.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pqueue.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dtls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../tls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl3.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../kssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../hmac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../e_os2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pkcs7.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509_vfy.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../sha.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../rsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ec.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bn.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../asn1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../obj_mac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../objects.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../evp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../buffer.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../comp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../lhash.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../err.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../symhacks.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ossl_typ.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslv.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../safestack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../stack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../crypto.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bio.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/openssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MongoDB.swiftmodule"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libmongoc-1.0/mongoc-stream-tls.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libmongoc-1.0/mongoc-rand.h"
@@ -466,24 +339,30 @@ depends-external:
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-config.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-mongo-c.git-4363366770464592526/module.modulemap"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/minizip-0.1.1/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/cURL-2.0.1/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/minizip.git--6635375312553400769/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-libcurl.git--6269865819486613555/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
@@ -494,8 +373,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
 interface-hash: "c8c7a90a89afbf4fc7ce1bd2e4a3a93e"

@@ -11,12 +11,12 @@ provides-member:
 - ["O5StORM13StORMJoinType", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "StORMJoinType"
-- "StORMDataSourceJoin"
-- "StringLiteralType"
-- "String"
 - "=="
 - "AssignmentPrecedence"
+- "StORMDataSourceJoin"
+- "StORMJoinType"
+- "String"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
@@ -38,7 +38,6 @@ depends-member:
 - ["Ps9Equatable", ""]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "_toAnyHashable"]
@@ -46,7 +45,6 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "normal"]
 - ["Ps8Hashable", ""]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
@@ -58,7 +56,6 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo9NSCopying", "init"]
 - ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
@@ -66,7 +63,6 @@ depends-member:
 - !private ["Ps12SignedNumber", "hashValue"]
 - ["V5StORM19StORMDataSourceJoin", "StORMJoinType"]
 - ["V5StORM19StORMDataSourceJoin", "String"]
-- ["V5StORM19StORMDataSourceJoin", "deinit"]
 - ["V5StORM19StORMDataSourceJoin", "direction"]
 - ["V5StORM19StORMDataSourceJoin", "init"]
 - ["V5StORM19StORMDataSourceJoin", "onCondition"]
@@ -82,7 +78,6 @@ depends-member:
 - ["O5StORM13StORMJoinType", "hashValue"]
 - ["O5StORM13StORMJoinType", "normal"]
 - !private ["Ps10Strideable", "hashValue"]
-- ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
@@ -91,6 +86,7 @@ depends-member:
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - ["Ps9_Hashable", "hashValue"]
@@ -116,11 +112,10 @@ depends-nominal:
 - "Ps9Equatable"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "P10PerfectLib15JSONConvertible"
@@ -129,7 +124,6 @@ depends-nominal:
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo16NSMutableCopying"
-- "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
@@ -146,6 +140,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
@@ -161,8 +156,13 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 interface-hash: "f941be4fd2341697e50b566e9ca1dbb5"

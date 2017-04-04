@@ -1,5 +1,5 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "6b3116a13fe3ead2b177b91a8928a0f4"
-build_time: [542976578, 257846000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "3caf9598f6809bc988acc1c25b1fec14"
+build_time: [544645302, 425155000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectSMTP-1.0.6/Sources/SMTP.swift": [540764134, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-SMTP.git-9132372392332813665/Sources/SMTP.swift": [544645243, 0]

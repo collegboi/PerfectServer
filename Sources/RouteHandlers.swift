@@ -58,6 +58,6 @@ func echo4Handler(request: HTTPRequest, _ response: HTTPResponse) {
     response.completed()
 }
 func rawPOSTHandler(request: HTTPRequest, _ response: HTTPResponse) {
-    response.appendBody(string: "<html><body>Raw POST handler: You POSTED to path \(request.path) with content-type \(request.header(.contentType)) and POST body \(request.postBodyString)</body></html>")
+    response.appendBody(string: "<html><body>Raw POST handler: You POSTED to path \(request.path) with content-type \(String(describing: request.header(.contentType))) and POST body \(String(describing: request.postBodyString))</body></html>")
     response.completed()
 }

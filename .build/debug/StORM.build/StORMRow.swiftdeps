@@ -7,17 +7,17 @@ provides-member:
 - ["C5StORM8StORMRow", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UUID"
-- "StringLiteralType"
-- "String"
 - !private "=="
 - "AssignmentPrecedence"
-- "StORMRow"
-- "FloatLiteralType"
-- "idTypeList"
-- "IntegerLiteralType"
-- "Int"
 - "Dictionary"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "StORMRow"
+- "String"
+- "StringLiteralType"
+- "UUID"
+- "idTypeList"
 depends-member:
 - ["Ps9AnyObject", "Dictionary"]
 - ["Ps9AnyObject", "UUID"]
@@ -40,7 +40,6 @@ depends-member:
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "hashValue"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Vs10Dictionary", "deinit"]
 - ["Vs10Dictionary", "init"]
 - ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "String"]
@@ -52,7 +51,6 @@ depends-member:
 - ["Ps30ExpressibleByDictionaryLiteral", "init"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "Int"]
@@ -62,9 +60,6 @@ depends-member:
 - !private ["Ps8Hashable", "hashValue"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", ""]
-- ["Ps9Indexable", "init"]
-- ["Ps13IndexableBase", "init"]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
@@ -76,7 +71,6 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - ["PSo9NSCopying", "init"]
 - ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
@@ -97,17 +91,16 @@ depends-member:
 - ["C5StORM8StORMRow", "idUUID"]
 - ["C5StORM8StORMRow", "init"]
 - !private ["Ps10Strideable", "hashValue"]
-- ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
-- ["V10PerfectLib4UUID", "deinit"]
 - ["V10PerfectLib4UUID", "init"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "Int"]
 - !private ["Ps9_Hashable", "String"]
@@ -117,6 +110,8 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", ""]
 - !private ["Ps14_Incrementable", "hashValue"]
+- ["Ps10_Indexable", "init"]
+- ["Ps14_IndexableBase", "init"]
 - !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "hashValue"]
@@ -138,13 +133,10 @@ depends-nominal:
 - "Ps30ExpressibleByDictionaryLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- "Si"
+- !private "Si"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "P10PerfectLib15JSONConvertible"
@@ -153,7 +145,6 @@ depends-nominal:
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo16NSMutableCopying"
-- "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
@@ -171,9 +162,12 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
 - "Ps21_ObjectiveCBridgeable"
@@ -186,8 +180,13 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 interface-hash: "133b1781a1f50143ca5f34b4af75beb8"

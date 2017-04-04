@@ -2,37 +2,37 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthenticationConfig.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/AuthenticationConfig.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthenticationConfig.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthenticationConfig.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthenticationConfig~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthenticationConfig.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthFilter.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/AuthFilter.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthFilter.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthFilter.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthFilter~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/AuthFilter.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/HTTPRequest+Turnstile.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/HTTPRequest+Turnstile.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/HTTPRequest+Turnstile.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/HTTPRequest+Turnstile.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/HTTPRequest+Turnstile~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/HTTPRequest+Turnstile.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/MustacheHandler.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/MustacheHandler.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/MustacheHandler.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/MustacheHandler.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/MustacheHandler~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/MustacheHandler.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstileFilter.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/TurnstileFilter.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstileFilter.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstileFilter.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstileFilter~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstileFilter.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstilePerfect.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/TurnstilePerfect.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstilePerfect.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstilePerfect.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.build/TurnstilePerfect~partial.swiftmodule",

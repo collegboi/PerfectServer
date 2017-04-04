@@ -2,52 +2,42 @@
 provides-top-level:
 - "pturnstile"
 - "server"
-- "authWebRoutes"
-- "authJSONRoutes"
 - "myLogger"
-- "authenticationConfig"
-- "authFilter"
+- "headerFilter"
 provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "StringLiteralType"
-- "makeTranslationRoutes"
-- "makeLogsRoutes"
-- "makeDatabaseRoutes"
-- "myLogger"
-- "TurnstilePerfect"
-- "HTTPServer"
-- "server"
-- "makeRCRoutes"
 - "Array"
-- "authWebRoutes"
-- "RemoteConfig"
-- "fatalError"
-- "AuthenticationConfig"
-- "makeJSONAuthRoutes"
-- "makeConfigSettingRoutes"
-- "makeLoginRoutes"
-- "authFilter"
-- "FloatLiteralType"
-- "makeSystemRoutes"
-- "RequestLogger"
-- "makeTrackerRoutes"
-- "pturnstile"
-- "makeWebAuthRoutes"
-- "authenticationConfig"
-- "RequestLogFile"
-- "mainHandler"
-- "IntegerLiteralType"
-- "makeBackupRoutes"
-- "authJSONRoutes"
-- "MongoDBConnection"
-- "makeNotificationRoutes"
 - "AssignmentPrecedence"
-- "AuthFilter"
 - "FileController"
+- "FloatLiteralType"
+- "HTTPServer"
+- "HeaderFilter"
+- "IntegerLiteralType"
+- "JobController"
+- "MongoDBConnection"
+- "RemoteConfig"
+- "RequestLogFile"
+- "RequestLogger"
+- "StringLiteralType"
+- "TurnstilePerfect"
+- "fatalError"
+- "headerFilter"
+- "makeBackupRoutes"
+- "makeConfigSettingRoutes"
+- "makeDatabaseRoutes"
 - "makeFileUploadRoutes"
-- "makeRoutes"
+- "makeLoginRoutes"
+- "makeLogsRoutes"
+- "makeNotificationRoutes"
+- "makeRCRoutes"
+- "makeSystemRoutes"
+- "makeTrackerRoutes"
+- "makeTranslationRoutes"
+- "myLogger"
+- "pturnstile"
+- "server"
 depends-member:
 - ["Ps9AnyObject", "addRoutes"]
 - ["Ps9AnyObject", "documentRoot"]
@@ -59,48 +49,24 @@ depends-member:
 - ["Ps9AnyObject", "setResponseFilters"]
 - ["Ps9AnyObject", "setup"]
 - ["Ps9AnyObject", "start"]
-- ["Sa", "Element"]
-- ["Sa", "deinit"]
-- ["V16TurnstilePerfect10AuthFilter", "deinit"]
-- ["V16TurnstilePerfect10AuthFilter", "init"]
-- ["V16TurnstilePerfect20AuthenticationConfig", "deinit"]
-- ["V16TurnstilePerfect20AuthenticationConfig", "exclude"]
-- ["V16TurnstilePerfect20AuthenticationConfig", "include"]
-- ["V16TurnstilePerfect20AuthenticationConfig", "init"]
-- ["Ps23BidirectionalCollection", "Element"]
-- ["Ps22BidirectionalIndexable", "Element"]
-- ["Sb", "deinit"]
-- ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "init"]
-- ["Vs9Character", "deinit"]
-- ["Ps10Collection", "Element"]
 - ["Ps10Comparable", "init"]
-- ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
-- ["Ps17CustomReflectable", "Element"]
 - ["Ps17CustomReflectable", "init"]
-- ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Sd", "deinit"]
 - ["Ps9Equatable", "high"]
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "low"]
-- ["Ps5Error", "deinit"]
-- ["Ps25ExpressibleByArrayLiteral", "Element"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["C16MyAwesomeProject14FileController", "setup"]
-- ["Sf", "deinit"]
-- ["O11PerfectHTTP18HTTPFilterPriority", "deinit"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "high"]
 - ["O11PerfectHTTP18HTTPFilterPriority", "low"]
 - ["P11PerfectHTTP17HTTPRequestFilter", "init"]
 - ["P11PerfectHTTP18HTTPResponseFilter", "init"]
 - ["C17PerfectHTTPServer10HTTPServer", "addRoutes"]
-- ["C17PerfectHTTPServer10HTTPServer", "deinit"]
 - ["C17PerfectHTTPServer10HTTPServer", "documentRoot"]
 - ["C17PerfectHTTPServer10HTTPServer", "init"]
 - ["C17PerfectHTTPServer10HTTPServer", "serverPort"]
@@ -110,151 +76,87 @@ depends-member:
 - ["Ps8Hashable", "high"]
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "low"]
-- ["Ps9Indexable", "Element"]
-- ["Ps13IndexableBase", "Element"]
-- ["Si", "deinit"]
-- ["Vs5Int16", "deinit"]
-- ["Vs5Int32", "deinit"]
-- ["Vs5Int64", "deinit"]
-- ["Vs4Int8", "deinit"]
-- ["P10PerfectLib15JSONConvertible", "Element"]
+- ["V16MyAwesomeProject12HeaderFilter", "deinit"]
+- ["V16MyAwesomeProject12HeaderFilter", "init"]
 - ["P10PerfectLib15JSONConvertible", "init"]
+- ["C16MyAwesomeProject13JobController", "setup"]
 - ["Ps25LosslessStringConvertible", "init"]
 - ["Ps10MirrorPath", "init"]
 - ["V12MongoDBStORM17MongoDBConnection", "database"]
 - ["V12MongoDBStORM17MongoDBConnection", "host"]
-- ["Ps17MutableCollection", "Element"]
-- ["Ps16MutableIndexable", "Element"]
 - ["PSo8NSCoding", "init"]
 - ["PSo9NSCopying", "init"]
 - ["PSo16NSMutableCopying", "init"]
-- ["CSo8NSObject", "init"]
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo19NSPasteboardReading", "init"]
 - ["PSo19NSPasteboardWriting", "init"]
 - ["PSo14NSSecureCoding", "init"]
 - ["CSo8NSString", "init"]
-- ["Os5Never", "deinit"]
-- ["Sq", "deinit"]
-- ["Ps22RandomAccessCollection", "Element"]
-- ["Ps21RandomAccessIndexable", "Element"]
-- ["Ps26RangeReplaceableCollection", "Element"]
-- ["Ps25RangeReplaceableIndexable", "Element"]
 - ["C16MyAwesomeProject12RemoteConfig", "setup"]
 - ["V20PerfectRequestLogger14RequestLogFile", "location"]
-- ["C20PerfectRequestLogger13RequestLogger", "deinit"]
 - ["C20PerfectRequestLogger13RequestLogger", "init"]
-- ["V11PerfectHTTP6Routes", "deinit"]
-- ["Ps8Sequence", "Element"]
-- ["Vs12StaticString", "deinit"]
 - ["Vs12StaticString", "init"]
-- ["SS", "deinit"]
 - ["SS", "init"]
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
-- ["C16TurnstilePerfect16TurnstilePerfect", "deinit"]
 - ["C16TurnstilePerfect16TurnstilePerfect", "init"]
 - ["C16TurnstilePerfect16TurnstilePerfect", "requestFilter"]
 - ["C16TurnstilePerfect16TurnstilePerfect", "responseFilter"]
-- ["Su", "deinit"]
-- ["Vs6UInt16", "deinit"]
-- ["Vs6UInt32", "deinit"]
-- ["Vs6UInt64", "deinit"]
-- ["Vs5UInt8", "deinit"]
-- ["Sc", "deinit"]
-- ["Ps14_ArrayProtocol", "Element"]
-- ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "high"]
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "low"]
-- ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sa"
-- "V16TurnstilePerfect10AuthFilter"
-- "V16TurnstilePerfect20AuthenticationConfig"
-- "Ps23BidirectionalCollection"
-- "Ps22BidirectionalIndexable"
-- "Sb"
 - "Ps7CVarArg"
-- "Vs9Character"
-- "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "Sd"
 - "Ps9Equatable"
-- "Ps5Error"
-- "Ps25ExpressibleByArrayLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C16MyAwesomeProject14FileController"
-- "Sf"
 - "O11PerfectHTTP18HTTPFilterPriority"
 - "P11PerfectHTTP17HTTPRequestFilter"
 - "P11PerfectHTTP18HTTPResponseFilter"
 - "C17PerfectHTTPServer10HTTPServer"
 - "Ps8Hashable"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- "Si"
-- "Vs5Int16"
-- "Vs5Int32"
-- "Vs5Int64"
-- "Vs4Int8"
+- "V16MyAwesomeProject12HeaderFilter"
 - "P10PerfectLib15JSONConvertible"
+- "C16MyAwesomeProject13JobController"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - "V12MongoDBStORM17MongoDBConnection"
-- "Ps17MutableCollection"
-- "Ps16MutableIndexable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo16NSMutableCopying"
-- "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo19NSPasteboardReading"
 - "PSo19NSPasteboardWriting"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "Os5Never"
-- "Sq"
-- "Ps22RandomAccessCollection"
-- "Ps21RandomAccessIndexable"
-- "Ps26RangeReplaceableCollection"
-- "Ps25RangeReplaceableIndexable"
 - "C16MyAwesomeProject12RemoteConfig"
 - "V20PerfectRequestLogger14RequestLogFile"
 - "C20PerfectRequestLogger13RequestLogger"
-- "V11PerfectHTTP6Routes"
-- "Ps8Sequence"
 - "Vs12StaticString"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - "C16TurnstilePerfect16TurnstilePerfect"
-- "Su"
-- "Vs6UInt16"
-- "Vs6UInt32"
-- "Vs6UInt64"
-- "Vs5UInt8"
-- "Sc"
-- "Ps14_ArrayProtocol"
-- "Ps24_DestructorSafeContainer"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
@@ -263,60 +165,67 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../e_os2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../srtp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl23.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dtls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../tls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl3.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pkcs7.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../sha.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bn.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../asn1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../evp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../comp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ossl_typ.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../crypto.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bio.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNet.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCrypto.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectZip.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftMoment.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl23.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pqueue.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dtls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../tls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl3.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../kssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../hmac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../e_os2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pkcs7.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509_vfy.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../sha.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../rsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ec.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bn.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../asn1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../obj_mac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../objects.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../evp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../buffer.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../comp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../lhash.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../err.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../symhacks.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ossl_typ.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslv.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../safestack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../stack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../crypto.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bio.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/openssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/MongoDB.swiftmodule"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libmongoc-1.0/mongoc-stream-tls.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libmongoc-1.0/mongoc-rand.h"
@@ -385,24 +294,30 @@ depends-external:
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-config.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-mongo-c.git-4363366770464592526/module.modulemap"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLogger.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTPServer.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/minizip-0.1.1/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/cURL-2.0.1/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/minizip.git--6635375312553400769/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-libcurl.git--6269865819486613555/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/XPC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Metal.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/AppKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreData.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/QuartzCore.swiftmodule"
@@ -413,8 +328,6 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectMustache.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftRandom.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstilePerfect.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftString.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectRequestLogger.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/SwiftCron.swiftmodule"
-interface-hash: "a589536ae7ab2440656c0582153ac94d"
+interface-hash: "b4b7eac87ef297a4be6feca06ac494e9"

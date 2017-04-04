@@ -1,5 +1,5 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "f7f21dff54b615d8bd609f01c5009284"
-build_time: [542976580, 559103000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "fef83d641d9001e02b89ae94c67c317c"
+build_time: [544645305, 498294000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectRequestLogger-1.0.2/Sources/PerfectRequestLogger.swift": [540764126, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-RequestLogger.git-3102495399181047151/Sources/PerfectRequestLogger.swift": [544645242, 0]

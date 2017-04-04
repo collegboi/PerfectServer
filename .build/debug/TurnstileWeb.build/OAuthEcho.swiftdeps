@@ -7,11 +7,11 @@ provides-member:
 - ["C12TurnstileWeb9OAuthEcho", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Credentials"
-- "URL"
 - "AssignmentPrecedence"
+- "Credentials"
 - "OAuthEcho"
 - "OAuthParameters"
+- "URL"
 depends-member:
 - !private ["Ps9AnyObject", "authServiceProvider"]
 - !private ["Ps9AnyObject", "oauthParameters"]
@@ -25,24 +25,25 @@ depends-member:
 - ["C12TurnstileWeb9OAuthEcho", "deinit"]
 - ["C12TurnstileWeb9OAuthEcho", "init"]
 - ["C12TurnstileWeb9OAuthEcho", "oauthParameters"]
-- ["C12TurnstileWeb15OAuthParameters", "deinit"]
-- ["V10Foundation3URL", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
 - "P9Turnstile11Credentials"
 - "C12TurnstileWeb9OAuthEcho"
-- "C12TurnstileWeb15OAuthParameters"
-- "V10Foundation3URL"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Turnstile.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 interface-hash: "d96fbc865341a5ee6a9fab1844f28867"

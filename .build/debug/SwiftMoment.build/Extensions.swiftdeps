@@ -13,9 +13,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "*"
-- "Int"
 - "Duration"
 - !private "FloatLiteralType"
+- "Int"
 - !private "IntegerLiteralType"
 depends-member:
 - !private ["Ps17BitwiseOperations", "Duration"]
@@ -25,8 +25,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Duration"]
 - !private ["Ps23CustomStringConvertible", "Duration"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Sd", "deinit"]
-- ["V11SwiftMoment8Duration", "deinit"]
 - !private ["V11SwiftMoment8Duration", "init"]
 - !private ["Ps9Equatable", "Duration"]
 - !private ["Ps9Equatable", "init"]
@@ -34,7 +32,6 @@ depends-member:
 - !private ["Ps8Hashable", "Duration"]
 - ["Si", "Duration"]
 - ["Si", "days"]
-- ["Si", "deinit"]
 - ["Si", "hours"]
 - ["Si", "minutes"]
 - ["Si", "months"]
@@ -62,8 +59,7 @@ depends-nominal:
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
-- !private "Sd"
-- "V11SwiftMoment8Duration"
+- !private "V11SwiftMoment8Duration"
 - !private "Ps9Equatable"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps8Hashable"
@@ -87,9 +83,14 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 interface-hash: "5e849ec9947801db66604f7dbf34ad23"

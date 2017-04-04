@@ -8,15 +8,15 @@ provides-member:
 - ["Sa", "toJSONArray"]
 provides-dynamic-lookup:
 depends-top-level:
-- "JSONSerialization"
-- "Encodable"
-- "JSON"
-- "Data"
-- !private "GlossJSONSerializer"
-- "JSONSerializer"
-- "CastingPrecedence"
-- "Decodable"
 - "Array"
+- "CastingPrecedence"
+- "Data"
+- "Decodable"
+- "Encodable"
+- !private "GlossJSONSerializer"
+- "JSON"
+- "JSONSerialization"
+- "JSONSerializer"
 depends-member:
 - ["Ps9AnyObject", "ReadingOptions"]
 - !private ["Ps9AnyObject", "jsonObject"]
@@ -25,41 +25,25 @@ depends-member:
 - ["Sa", "Element"]
 - ["Sa", "Encodable"]
 - !private ["Sa", "GlossJSONSerializer"]
-- !private ["Sa", "Iterator"]
 - ["Sa", "JSON"]
 - ["Sa", "JSONSerialization"]
 - ["Sa", "JSONSerializer"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- ["Sa", "deinit"]
 - ["Sa", "from"]
 - ["Sa", "toJSONArray"]
 - ["Ps23BidirectionalCollection", "Decodable"]
 - !private ["Ps23BidirectionalCollection", "Element"]
 - ["Ps23BidirectionalCollection", "Encodable"]
 - !private ["Ps23BidirectionalCollection", "GlossJSONSerializer"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "JSONSerialization"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "from"]
-- ["Ps22BidirectionalIndexable", "Decodable"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- ["Ps22BidirectionalIndexable", "Encodable"]
-- !private ["Ps22BidirectionalIndexable", "GlossJSONSerializer"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "JSONSerialization"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "from"]
 - ["Ps7CVarArg", "Decodable"]
 - !private ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "Encodable"]
 - !private ["Ps7CVarArg", "GlossJSONSerializer"]
-- !private ["Ps7CVarArg", "Iterator"]
 - !private ["Ps7CVarArg", "JSONSerialization"]
 - ["Ps7CVarArg", "ReadingOptions"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "from"]
 - !private ["Ps7CVarArg", "jsonObject"]
@@ -67,19 +51,15 @@ depends-member:
 - !private ["Ps10Collection", "Element"]
 - ["Ps10Collection", "Encodable"]
 - !private ["Ps10Collection", "GlossJSONSerializer"]
-- !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "JSONSerialization"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "from"]
 - ["Ps28CustomDebugStringConvertible", "Decodable"]
 - !private ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "Encodable"]
 - !private ["Ps28CustomDebugStringConvertible", "GlossJSONSerializer"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - !private ["Ps28CustomDebugStringConvertible", "JSONSerialization"]
 - ["Ps28CustomDebugStringConvertible", "ReadingOptions"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "from"]
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
@@ -87,25 +67,19 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Element"]
 - ["Ps17CustomReflectable", "Encodable"]
 - !private ["Ps17CustomReflectable", "GlossJSONSerializer"]
-- !private ["Ps17CustomReflectable", "Iterator"]
 - !private ["Ps17CustomReflectable", "JSONSerialization"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "from"]
 - ["Ps23CustomStringConvertible", "Decodable"]
 - !private ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "Encodable"]
 - !private ["Ps23CustomStringConvertible", "GlossJSONSerializer"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "JSONSerialization"]
 - ["Ps23CustomStringConvertible", "ReadingOptions"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "from"]
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
-- ["V10Foundation4Data", "deinit"]
 - !private ["P5Gloss9Decodable", "init"]
-- ["Vs10Dictionary", "deinit"]
 - !private ["P5Gloss9Encodable", "toJSON"]
 - ["Ps9Equatable", "ReadingOptions"]
 - !private ["Ps9Equatable", "jsonObject"]
@@ -114,9 +88,7 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - ["Ps25ExpressibleByArrayLiteral", "Encodable"]
 - !private ["Ps25ExpressibleByArrayLiteral", "GlossJSONSerializer"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "JSONSerialization"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "from"]
 - !private ["Ps25ExpressibleByArrayLiteral", "mutableContainers"]
@@ -124,26 +96,6 @@ depends-member:
 - !private ["V5Gloss19GlossJSONSerializer", "init"]
 - ["Ps8Hashable", "ReadingOptions"]
 - !private ["Ps8Hashable", "jsonObject"]
-- ["Ps9Indexable", "Decodable"]
-- !private ["Ps9Indexable", "Element"]
-- ["Ps9Indexable", "Encodable"]
-- !private ["Ps9Indexable", "GlossJSONSerializer"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "JSONSerialization"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "from"]
-- ["Ps13IndexableBase", "Decodable"]
-- !private ["Ps13IndexableBase", "Element"]
-- ["Ps13IndexableBase", "Encodable"]
-- !private ["Ps13IndexableBase", "GlossJSONSerializer"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "JSONSerialization"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "from"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - ["CSo17JSONSerialization", "ReadingOptions"]
 - !private ["CSo17JSONSerialization", "jsonObject"]
 - !private ["P5Gloss14JSONSerializer", "init"]
@@ -151,72 +103,35 @@ depends-member:
 - !private ["Ps17MutableCollection", "Element"]
 - ["Ps17MutableCollection", "Encodable"]
 - !private ["Ps17MutableCollection", "GlossJSONSerializer"]
-- !private ["Ps17MutableCollection", "Iterator"]
 - !private ["Ps17MutableCollection", "JSONSerialization"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "from"]
-- ["Ps16MutableIndexable", "Decodable"]
-- !private ["Ps16MutableIndexable", "Element"]
-- ["Ps16MutableIndexable", "Encodable"]
-- !private ["Ps16MutableIndexable", "GlossJSONSerializer"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "JSONSerialization"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "from"]
 - ["CSo8NSObject", "ReadingOptions"]
 - !private ["CSo8NSObject", "jsonObject"]
 - ["PSo16NSObjectProtocol", "ReadingOptions"]
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
 - !private ["Ps9OptionSet", "mutableContainers"]
-- ["Sq", "deinit"]
 - ["Ps22RandomAccessCollection", "Decodable"]
 - !private ["Ps22RandomAccessCollection", "Element"]
 - ["Ps22RandomAccessCollection", "Encodable"]
 - !private ["Ps22RandomAccessCollection", "GlossJSONSerializer"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "JSONSerialization"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "from"]
-- ["Ps21RandomAccessIndexable", "Decodable"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- ["Ps21RandomAccessIndexable", "Encodable"]
-- !private ["Ps21RandomAccessIndexable", "GlossJSONSerializer"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "JSONSerialization"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "from"]
 - ["Ps26RangeReplaceableCollection", "Decodable"]
 - !private ["Ps26RangeReplaceableCollection", "Element"]
 - ["Ps26RangeReplaceableCollection", "Encodable"]
 - !private ["Ps26RangeReplaceableCollection", "GlossJSONSerializer"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
 - !private ["Ps26RangeReplaceableCollection", "JSONSerialization"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "from"]
-- ["Ps25RangeReplaceableIndexable", "Decodable"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- ["Ps25RangeReplaceableIndexable", "Encodable"]
-- !private ["Ps25RangeReplaceableIndexable", "GlossJSONSerializer"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "JSONSerialization"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "from"]
 - !private ["Ps16RawRepresentable", "mutableContainers"]
-- ["VCSo17JSONSerialization14ReadingOptions", "deinit"]
 - !private ["VCSo17JSONSerialization14ReadingOptions", "mutableContainers"]
 - ["Ps8Sequence", "Decodable"]
 - !private ["Ps8Sequence", "Element"]
 - ["Ps8Sequence", "Encodable"]
 - !private ["Ps8Sequence", "GlossJSONSerializer"]
-- !private ["Ps8Sequence", "Iterator"]
 - !private ["Ps8Sequence", "JSONSerialization"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "from"]
 - !private ["Ps10SetAlgebra", "mutableContainers"]
@@ -224,81 +139,117 @@ depends-member:
 - !private ["Ps14_ArrayProtocol", "Element"]
 - ["Ps14_ArrayProtocol", "Encodable"]
 - !private ["Ps14_ArrayProtocol", "GlossJSONSerializer"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "JSONSerialization"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "from"]
+- ["Ps23_BidirectionalIndexable", "Decodable"]
+- !private ["Ps23_BidirectionalIndexable", "Element"]
+- ["Ps23_BidirectionalIndexable", "Encodable"]
+- !private ["Ps23_BidirectionalIndexable", "GlossJSONSerializer"]
+- !private ["Ps23_BidirectionalIndexable", "JSONSerialization"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "from"]
 - ["Ps24_DestructorSafeContainer", "Decodable"]
 - !private ["Ps24_DestructorSafeContainer", "Element"]
 - ["Ps24_DestructorSafeContainer", "Encodable"]
 - !private ["Ps24_DestructorSafeContainer", "GlossJSONSerializer"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "JSONSerialization"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "from"]
 - ["Ps9_Hashable", "ReadingOptions"]
 - !private ["Ps9_Hashable", "jsonObject"]
+- ["Ps10_Indexable", "Decodable"]
+- !private ["Ps10_Indexable", "Element"]
+- ["Ps10_Indexable", "Encodable"]
+- !private ["Ps10_Indexable", "GlossJSONSerializer"]
+- !private ["Ps10_Indexable", "JSONSerialization"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "from"]
+- ["Ps14_IndexableBase", "Decodable"]
+- !private ["Ps14_IndexableBase", "Element"]
+- ["Ps14_IndexableBase", "Encodable"]
+- !private ["Ps14_IndexableBase", "GlossJSONSerializer"]
+- !private ["Ps14_IndexableBase", "JSONSerialization"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "from"]
+- ["Ps17_MutableIndexable", "Decodable"]
+- !private ["Ps17_MutableIndexable", "Element"]
+- ["Ps17_MutableIndexable", "Encodable"]
+- !private ["Ps17_MutableIndexable", "GlossJSONSerializer"]
+- !private ["Ps17_MutableIndexable", "JSONSerialization"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "from"]
 - ["Ps21_ObjectiveCBridgeable", "Decodable"]
 - !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - ["Ps21_ObjectiveCBridgeable", "Encodable"]
 - !private ["Ps21_ObjectiveCBridgeable", "GlossJSONSerializer"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "JSONSerialization"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "from"]
+- ["Ps22_RandomAccessIndexable", "Decodable"]
+- !private ["Ps22_RandomAccessIndexable", "Element"]
+- ["Ps22_RandomAccessIndexable", "Encodable"]
+- !private ["Ps22_RandomAccessIndexable", "GlossJSONSerializer"]
+- !private ["Ps22_RandomAccessIndexable", "JSONSerialization"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "from"]
+- ["Ps26_RangeReplaceableIndexable", "Decodable"]
+- !private ["Ps26_RangeReplaceableIndexable", "Element"]
+- ["Ps26_RangeReplaceableIndexable", "Encodable"]
+- !private ["Ps26_RangeReplaceableIndexable", "GlossJSONSerializer"]
+- !private ["Ps26_RangeReplaceableIndexable", "JSONSerialization"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "from"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23BidirectionalCollection"
-- "Ps22BidirectionalIndexable"
 - "Ps7CVarArg"
 - "Ps10Collection"
 - "Ps28CustomDebugStringConvertible"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- "V10Foundation4Data"
 - !private "P5Gloss9Decodable"
-- "Vs10Dictionary"
 - !private "P5Gloss9Encodable"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "V5Gloss19GlossJSONSerializer"
 - "Ps8Hashable"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- !private "Ps16IteratorProtocol"
 - "CSo17JSONSerialization"
 - !private "P5Gloss14JSONSerializer"
 - "Ps17MutableCollection"
-- "Ps16MutableIndexable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "Ps9OptionSet"
-- "Sq"
 - "Ps22RandomAccessCollection"
-- "Ps21RandomAccessIndexable"
 - "Ps26RangeReplaceableCollection"
-- "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
-- "VCSo17JSONSerialization14ReadingOptions"
+- !private "VCSo17JSONSerialization14ReadingOptions"
 - "Ps8Sequence"
 - !private "Ps10SetAlgebra"
 - "Ps14_ArrayProtocol"
+- "Ps23_BidirectionalIndexable"
 - "Ps24_DestructorSafeContainer"
 - "Ps9_Hashable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
+- "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 interface-hash: "c9d26ac9955c5504e1570f7b5dcc9d94"

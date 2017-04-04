@@ -1,12 +1,12 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "c17a459913641350a7199c9a15daa797"
-build_time: [542976578, 521826000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "7d1e683b1c20b3df2e0823974a309c66"
+build_time: [544645302, 690686000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HPACK.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTP11Request.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTP11Response.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTP2.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTPContentCompression.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTPServer.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTPServerEx.swift": [540764102, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": [540764102, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HPACK.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTP11Request.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTP11Response.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTP2.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTPContentCompression.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTPServer.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTPServerEx.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/PerfectHTTPServer/HTTPServerExConfig.swift": [544645238, 0]

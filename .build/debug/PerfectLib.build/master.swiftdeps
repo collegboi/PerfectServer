@@ -1,14 +1,14 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "6bcf0a714fd6863e574db465a2425721"
-build_time: [542976562, 533024000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "63242746456acf3416f6368f423eb229"
+build_time: [544645281, 510310000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Bytes.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Dir.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/File.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/JSONConvertible.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Log.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectError.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/PerfectServer.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SwiftCompatibility.swift": [540764077, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/SysProcess.swift": [540764080, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectLib-2.0.6/Sources/PerfectLib/Utilities.swift": [540764077, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/Bytes.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/Dir.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/File.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/JSONConvertible.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/Log.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/PerfectError.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/PerfectServer.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/SwiftCompatibility.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/SysProcess.swift": [544645240, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/PerfectLib.git-3712999737848873669/Sources/PerfectLib/Utilities.swift": [544645240, 0]

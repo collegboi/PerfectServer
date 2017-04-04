@@ -2,43 +2,43 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Decoder.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/Decoder.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Decoder.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Decoder.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Decoder~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Decoder.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Encoder.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/Encoder.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Encoder.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Encoder.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Encoder~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Encoder.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionArray.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/ExtensionArray.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionArray.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionArray.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionArray~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionArray.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionDecodable.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/ExtensionDecodable.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDecodable.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/ExtensionDictionary.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/ExtensionDictionary.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/ExtensionDictionary.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Gloss.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/Gloss.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Gloss.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Gloss.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Gloss~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Gloss.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Gloss-1.2.1/Sources/Operators.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Gloss.git--9087498511083348710/Sources/Operators.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Operators.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Operators.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/Gloss.build/Operators~partial.swiftmodule",

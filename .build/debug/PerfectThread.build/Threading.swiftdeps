@@ -17,64 +17,63 @@ provides-member:
 - ["V13PerfectThread9Threading", "sleep"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "my_pthread_cond_timedwait_relative_np"
-- !private "pthread_mutexattr_settype"
 - !private "%"
-- "pthread_cond_t"
-- !private "pthread_cond_broadcast"
-- !private "UnsafeMutablePointer"
-- !private "-"
-- "Bool"
-- !private "pthread_mutexattr_init"
-- !private "pthread_rwlock_destroy"
-- !private "Int"
-- !private "pthread_rwlock_unlock"
-- !private "pthread_rwlock_tryrdlock"
-- !private "pthread_cond_timedwait_relative_np"
-- !private "pthread_mutex_trylock"
-- !private ">="
-- "Threading"
-- !private "pthread_mutex_lock"
-- !private "pthread_condattr_t"
-- !private "pthread_cond_init"
-- !private "Int32"
 - !private "*"
-- !private "pthread_mutex_init"
-- !private "pthread_condattr_init"
-- !private "pthread_cond_wait"
-- !private "PTHREAD_MUTEX_RECURSIVE"
-- !private "pthread_rwlock_wrlock"
-- !private "pthread_rwlock_rdlock"
-- !private "pthread_rwlock_init"
-- !private "timeval"
-- !private "floor"
-- !private "pthread_mutex_unlock"
-- "Double"
-- !private "pthread_condattr_destroy"
-- !private "pthread_cond_signal"
-- !private "pthread_mutexattr_t"
-- !private "pthread_rwlock_trywrlock"
+- !private "-"
 - !private "/"
 - !private "=="
+- !private ">="
 - "AssignmentPrecedence"
-- !private "pthread_cond_destroy"
+- "Bool"
+- "Double"
 - "FloatLiteralType"
-- !private "UnsafePointer"
-- !private "timespec"
+- !private "Int"
+- !private "Int32"
 - !private "IntegerLiteralType"
+- !private "PTHREAD_MUTEX_RECURSIVE"
+- "Threading"
+- !private "UnsafeMutablePointer"
+- !private "UnsafePointer"
+- !private "floor"
+- !private "my_pthread_cond_timedwait_relative_np"
+- !private "pthread_cond_broadcast"
+- !private "pthread_cond_destroy"
+- !private "pthread_cond_init"
+- !private "pthread_cond_signal"
+- "pthread_cond_t"
+- !private "pthread_cond_timedwait_relative_np"
+- !private "pthread_cond_wait"
+- !private "pthread_condattr_destroy"
+- !private "pthread_condattr_init"
+- !private "pthread_condattr_t"
 - !private "pthread_mutex_destroy"
-- !private "select"
+- !private "pthread_mutex_init"
+- !private "pthread_mutex_lock"
 - "pthread_mutex_t"
+- !private "pthread_mutex_trylock"
+- !private "pthread_mutex_unlock"
+- !private "pthread_mutexattr_init"
+- !private "pthread_mutexattr_settype"
+- !private "pthread_mutexattr_t"
+- !private "pthread_rwlock_destroy"
+- !private "pthread_rwlock_init"
+- !private "pthread_rwlock_rdlock"
 - "pthread_rwlock_t"
+- !private "pthread_rwlock_tryrdlock"
+- !private "pthread_rwlock_trywrlock"
+- !private "pthread_rwlock_unlock"
+- !private "pthread_rwlock_wrlock"
+- !private "select"
+- !private "timespec"
+- !private "timeval"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "Int32"]
 - !private ["Ps9AnyObject", "PTHREAD_MUTEX_RECURSIVE"]
 - !private ["Ps9AnyObject", "Threading"]
-- ["Ps9AnyObject", "broadcast"]
-- ["Ps9AnyObject", "cond"]
+- !private ["Ps9AnyObject", "cond"]
 - !private ["Ps9AnyObject", "floor"]
-- ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lock"]
 - !private ["Ps9AnyObject", "mutex"]
 - !private ["Ps9AnyObject", "my_pthread_cond_timedwait_relative_np"]
@@ -105,15 +104,12 @@ depends-member:
 - !private ["Ps9AnyObject", "pthread_rwlock_unlock"]
 - !private ["Ps9AnyObject", "pthread_rwlock_wrlock"]
 - !private ["Ps9AnyObject", "readLock"]
-- ["Ps9AnyObject", "signal"]
 - !private ["Ps9AnyObject", "timespec"]
 - !private ["Ps9AnyObject", "unlock"]
-- ["Ps9AnyObject", "wait"]
 - !private ["Ps9AnyObject", "writeLock"]
 - ["Ps9AnyObject", ""]
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -122,7 +118,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- ["Sd", "deinit"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "init"]
 - ["CV13PerfectThread9Threading5Event", "Bool"]
@@ -152,10 +147,7 @@ depends-member:
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "init"]
-- ["SQ", "deinit"]
-- ["Si", "deinit"]
 - !private ["Si", "init"]
-- ["Vs5Int32", "deinit"]
 - !private ["Vs5Int32", "init"]
 - !private ["Ps7Integer", "init"]
 - !private ["Ps17IntegerArithmetic", "init"]
@@ -200,8 +192,6 @@ depends-member:
 - ["CV13PerfectThread9Threading4Lock", ""]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps10MirrorPath", "init"]
-- !private ["CSo8NSNumber", "deinit"]
-- ["Sq", "deinit"]
 - ["CV13PerfectThread9Threading6RWLock", "Bool"]
 - ["CV13PerfectThread9Threading6RWLock", "deinit"]
 - ["CV13PerfectThread9Threading6RWLock", "doWithReadLock"]
@@ -268,13 +258,6 @@ depends-member:
 - ["V13PerfectThread9Threading", "sleep"]
 - !private ["V13PerfectThread9Threading", "timespec"]
 - !private ["V13PerfectThread9Threading", "timeval"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["Sp", "deinit"]
-- !private ["SP", "deinit"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
@@ -286,61 +269,43 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps14_SignedInteger", "init"]
 - !private ["Ps11_Strideable", "init"]
-- ["VSC22_opaque_pthread_cond_t", "deinit"]
 - ["VSC22_opaque_pthread_cond_t", "init"]
-- ["VSC26_opaque_pthread_condattr_t", "deinit"]
 - !private ["VSC26_opaque_pthread_condattr_t", "init"]
-- ["VSC23_opaque_pthread_mutex_t", "deinit"]
 - ["VSC23_opaque_pthread_mutex_t", "init"]
-- ["VSC27_opaque_pthread_mutexattr_t", "deinit"]
 - !private ["VSC27_opaque_pthread_mutexattr_t", "init"]
-- ["VSC24_opaque_pthread_rwlock_t", "deinit"]
 - ["VSC24_opaque_pthread_rwlock_t", "init"]
-- ["VSC8timespec", "deinit"]
 - !private ["VSC8timespec", "init"]
 - !private ["VSC8timespec", "tv_nsec"]
 - !private ["VSC8timespec", "tv_sec"]
-- ["VSC7timeval", "deinit"]
 - !private ["VSC7timeval", "init"]
 - !private ["VSC7timeval", "tv_sec"]
 - !private ["VSC7timeval", "tv_usec"]
 depends-nominal:
 - "Ps9AnyObject"
 - !private "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - !private "Ps7CVarArg"
 - !private "Ps10Comparable"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
-- "Sd"
 - !private "Ps9Equatable"
 - "CV13PerfectThread9Threading5Event"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps8Hashable"
-- "SQ"
-- "Si"
-- "Vs5Int32"
+- !private "Si"
+- !private "Vs5Int32"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "CV13PerfectThread9Threading4Lock"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
-- !private "CSo8NSNumber"
-- "Sq"
 - "CV13PerfectThread9Threading6RWLock"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Ps10Strideable"
 - "V13PerfectThread9Threading"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
-- !private "Sp"
-- !private "SP"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - !private "Ps9_Hashable"
@@ -351,20 +316,25 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 - "VSC22_opaque_pthread_cond_t"
-- "VSC26_opaque_pthread_condattr_t"
+- !private "VSC26_opaque_pthread_condattr_t"
 - "VSC23_opaque_pthread_mutex_t"
-- "VSC27_opaque_pthread_mutexattr_t"
+- !private "VSC27_opaque_pthread_mutexattr_t"
 - "VSC24_opaque_pthread_rwlock_t"
-- "VSC8timespec"
-- "VSC7timeval"
+- !private "VSC8timespec"
+- !private "VSC7timeval"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "cf7dd24483107bd00b4d2b4732f93ef1"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+interface-hash: "d6ef0c91375e5d4b881d35a341984230"

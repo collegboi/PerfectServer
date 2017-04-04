@@ -1,5 +1,5 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "5aa0f627c3d219ede073861e3e7285c0"
-build_time: [542976578, 259214000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "5878de88a099d7d94fbfa359f5c87a6f"
+build_time: [544645302, 462992000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectMustache-2.0.3/Sources/Mustache.swift": [540764116, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Mustache.git-4271886153857801499/Sources/Mustache.swift": [544645235, 0]

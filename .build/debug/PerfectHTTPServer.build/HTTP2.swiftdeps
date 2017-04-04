@@ -41,83 +41,80 @@ provides-member:
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- !private "!="
-- "Bool"
-- "TernaryPrecedence"
-- "HTTP2_WINDOW_UPDATE"
-- !private "&"
-- "HTTPResponse"
-- "HTTP2_FLAG_PRIORITY"
-- "Double"
-- "UInt8"
-- "HPACKEncoder"
-- !private "HTTPResponseStatus"
-- !private "UTF8Encoding"
-- "SETTINGS_MAX_FRAME_SIZE"
-- "HTTP2Request"
-- !private "~="
-- "HTTP2_PRIORITY"
-- "=="
-- "UInt16"
-- "AssignmentPrecedence"
-- !private ">="
-- "HTTP2_GOAWAY"
-- "HTTP2_PING_ACK"
-- "SETTINGS_MAX_CONCURRENT_STREAMS"
-- "HTTP2Response"
-- !private "CastingPrecedence"
-- "UInt32"
-- !private "&&"
-- "Bytes"
-- "HTTP2_SETTINGS"
-- !private "-"
-- "StringLiteralType"
-- "HTTP2_CONTINUATION"
-- !private "<<="
-- "HTTP2_RST_STREAM"
-- "HTTP2_SETTINGS_ACK"
-- !private "&="
-- "BooleanLiteralType"
-- "SETTINGS_INITIAL_WINDOW_SIZE"
-- "HTTP11Response"
-- !private "~"
-- "HTTP2Frame"
-- "NetTCPSSL"
-- "Threading"
-- "HTTP11Request"
-- "HTTP2_DATA"
-- "SETTINGS_ENABLE_PUSH"
-- !private ">>"
-- !private ">"
-- "HTTP2_PUSH_PROMISE"
-- !private "|"
-- "HTTP2_END_STREAM"
-- !private "+"
-- "HTTPRequest"
-- !private "UnicodeScalarType"
-- !private "<<"
-- "HPACKDecoder"
-- "HTTP2_PADDED"
-- !private "+="
-- "HTTP2_HEADERS"
-- !private "print"
-- !private "??"
-- !private "||"
-- "SETTINGS_MAX_HEADER_LIST_SIZE"
-- !private "..<"
-- "HeaderListener"
-- "SETTINGS_HEADER_TABLE_SIZE"
 - !private "!"
+- !private "!="
+- !private "&"
+- !private "&&"
+- !private "&="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "..<"
+- !private "<<"
+- !private "<<="
+- "=="
+- !private ">"
+- !private ">="
+- !private ">>"
+- !private "??"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "Bytes"
+- !private "CastingPrecedence"
+- "Double"
+- "HPACKDecoder"
+- "HPACKEncoder"
+- "HTTP11Request"
+- "HTTP11Response"
 - "HTTP2Client"
-- "HTTP2_PING"
+- "HTTP2Frame"
+- "HTTP2Request"
+- "HTTP2Response"
+- "HTTP2_CONTINUATION"
+- "HTTP2_DATA"
 - "HTTP2_END_HEADERS"
+- "HTTP2_END_STREAM"
+- "HTTP2_FLAG_PRIORITY"
+- "HTTP2_GOAWAY"
+- "HTTP2_HEADERS"
+- "HTTP2_PADDED"
+- "HTTP2_PING"
+- "HTTP2_PING_ACK"
+- "HTTP2_PRIORITY"
+- "HTTP2_PUSH_PROMISE"
+- "HTTP2_RST_STREAM"
+- "HTTP2_SETTINGS"
+- "HTTP2_SETTINGS_ACK"
+- "HTTP2_WINDOW_UPDATE"
+- "HTTPRequest"
+- "HTTPResponse"
 - !private "HTTPResponseHeader"
+- !private "HTTPResponseStatus"
+- "HeaderListener"
 - "Int"
+- "NetTCPSSL"
+- "SETTINGS_ENABLE_PUSH"
+- "SETTINGS_HEADER_TABLE_SIZE"
+- "SETTINGS_INITIAL_WINDOW_SIZE"
+- "SETTINGS_MAX_CONCURRENT_STREAMS"
+- "SETTINGS_MAX_FRAME_SIZE"
+- "SETTINGS_MAX_HEADER_LIST_SIZE"
+- "String"
+- "StringLiteralType"
+- "TernaryPrecedence"
+- "Threading"
+- "UInt16"
+- "UInt32"
+- "UInt8"
+- !private "UTF8Encoding"
+- !private "UnicodeScalarType"
+- !private "print"
+- !private "|"
+- !private "||"
+- !private "~"
+- !private "~="
 depends-member:
-- !private ["Vs11AnyIterator", "Element"]
-- !private ["Vs11AnyIterator", "Iterator"]
-- ["Vs11AnyIterator", "deinit"]
 - !private ["Ps9AnyObject", "Bytes"]
 - ["Ps9AnyObject", "HPACKDecoder"]
 - ["Ps9AnyObject", "HPACKEncoder"]
@@ -198,81 +195,34 @@ depends-member:
 - !private ["Ps9AnyObject", "writeFully"]
 - !private ["Ps9AnyObject", "writeHTTP2Frame"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Index"]
-- !private ["Sa", "IndexDistance"]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "SubSequence"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
-- ["Sa", "deinit"]
 - ["Sa", "init"]
 - !private ["Sa", "remove"]
 - !private ["Sa", "removeFirst"]
 - !private ["Sa", "subscript"]
-- !private ["Ps23BidirectionalCollection", "Index"]
-- !private ["Ps23BidirectionalCollection", "IndexDistance"]
-- !private ["Ps23BidirectionalCollection", "Indices"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "SubSequence"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "count"]
 - ["Ps23BidirectionalCollection", "init"]
 - !private ["Ps23BidirectionalCollection", "remove"]
 - !private ["Ps23BidirectionalCollection", "removeFirst"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
-- !private ["Ps22BidirectionalIndexable", "Index"]
-- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
-- !private ["Ps22BidirectionalIndexable", "Indices"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "SubSequence"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "count"]
-- ["Ps22BidirectionalIndexable", "init"]
-- !private ["Ps22BidirectionalIndexable", "remove"]
-- !private ["Ps22BidirectionalIndexable", "removeFirst"]
-- !private ["Ps22BidirectionalIndexable", "subscript"]
-- !private ["Vs18BidirectionalSlice", "Index"]
-- !private ["Vs18BidirectionalSlice", "IndexDistance"]
-- !private ["Vs18BidirectionalSlice", "Indices"]
-- !private ["Vs18BidirectionalSlice", "Iterator"]
-- !private ["Vs18BidirectionalSlice", "SubSequence"]
-- !private ["Vs18BidirectionalSlice", "_Element"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
-- !private ["Ps17BitwiseOperations", "_DisallowMixedSignArithmetic"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps17BitwiseOperations", "hostToNet"]
 - ["Ps17BitwiseOperations", "init"]
 - !private ["Ps17BitwiseOperations", "netToHost"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - !private ["C10PerfectLib5Bytes", "availableExportBytes"]
 - !private ["C10PerfectLib5Bytes", "data"]
-- ["C10PerfectLib5Bytes", "deinit"]
 - !private ["C10PerfectLib5Bytes", "export16Bits"]
 - !private ["C10PerfectLib5Bytes", "export32Bits"]
 - !private ["C10PerfectLib5Bytes", "export8Bits"]
 - !private ["C10PerfectLib5Bytes", "exportBytes"]
 - !private ["C10PerfectLib5Bytes", "import32Bits"]
 - !private ["C10PerfectLib5Bytes", "init"]
-- !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "Stride"]
-- !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "_DisallowMixedSignArithmetic"]
 - !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "hostToNet"]
 - ["P10PerfectNet28BytesSwappingUnsignedInteger", "init"]
 - !private ["P10PerfectNet28BytesSwappingUnsignedInteger", "netToHost"]
-- !private ["Ps7CVarArg", "Index"]
-- !private ["Ps7CVarArg", "IndexDistance"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "SubSequence"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "hashValue"]
@@ -282,38 +232,17 @@ depends-member:
 - !private ["Ps7CVarArg", "remove"]
 - !private ["Ps7CVarArg", "removeFirst"]
 - !private ["Ps7CVarArg", "subscript"]
-- !private ["Vs9Character", "deinit"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Collection", "Index"]
-- !private ["Ps10Collection", "IndexDistance"]
-- !private ["Ps10Collection", "Indices"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "SubSequence"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
 - ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "remove"]
 - !private ["Ps10Collection", "removeFirst"]
 - !private ["Ps10Collection", "subscript"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
-- !private ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps10Comparable", "append"]
 - !private ["Ps10Comparable", "hashValue"]
 - !private ["Ps10Comparable", "hostToNet"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "netToHost"]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "Iterator"]
-- !private ["Vs14CountableRange", "_Element"]
-- !private ["Vs14CountableRange", "deinit"]
-- !private ["Ps28CustomDebugStringConvertible", "Index"]
-- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "idle"]
@@ -322,25 +251,12 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "remove"]
 - !private ["Ps28CustomDebugStringConvertible", "removeFirst"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "append"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hashValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "hostToNet"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "netToHost"]
-- !private ["Ps17CustomReflectable", "Index"]
-- !private ["Ps17CustomReflectable", "IndexDistance"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "SubSequence"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
-- !private ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "count"]
@@ -353,15 +269,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "remove"]
 - !private ["Ps17CustomReflectable", "removeFirst"]
 - !private ["Ps17CustomReflectable", "subscript"]
-- !private ["Ps23CustomStringConvertible", "Index"]
-- !private ["Ps23CustomStringConvertible", "IndexDistance"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "SubSequence"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
-- !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "count"]
@@ -374,26 +281,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "removeFirst"]
 - !private ["Ps23CustomStringConvertible", "statusFrom"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Vs27DefaultBidirectionalIndices", "Index"]
-- !private ["Vs27DefaultBidirectionalIndices", "Iterator"]
-- !private ["Vs27DefaultBidirectionalIndices", "SubSequence"]
-- !private ["Vs27DefaultBidirectionalIndices", "_Element"]
-- !private ["Vs26DefaultRandomAccessIndices", "Index"]
-- !private ["Vs26DefaultRandomAccessIndices", "IndexDistance"]
-- !private ["Vs26DefaultRandomAccessIndices", "Indices"]
-- !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
-- !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
-- !private ["Vs26DefaultRandomAccessIndices", "_Element"]
-- ["Vs10Dictionary", "deinit"]
 - ["Vs10Dictionary", "init"]
 - !private ["Vs10Dictionary", "subscript"]
-- ["Sd", "deinit"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "Iterator"]
-- !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
-- !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "append"]
@@ -407,17 +296,10 @@ depends-member:
 - !private ["Ps9Equatable", "open"]
 - !private ["Ps9Equatable", "standardName"]
 - ["Ps9Equatable", ""]
-- ["Ps5Error", "deinit"]
 - !private ["CV13PerfectThread9Threading5Event", "broadcast"]
-- ["CV13PerfectThread9Threading5Event", "deinit"]
 - !private ["CV13PerfectThread9Threading5Event", "doWithLock"]
 - ["CV13PerfectThread9Threading5Event", "init"]
 - !private ["CV13PerfectThread9Threading5Event", "wait"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Index"]
-- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
@@ -429,30 +311,20 @@ depends-member:
 - !private ["Ps30ExpressibleByDictionaryLiteral", "subscript"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "append"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hostToNet"]
 - ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "netToHost"]
 - !private ["Ps23ExpressibleByNilLiteral", "idle"]
 - !private ["Ps23ExpressibleByNilLiteral", "open"]
-- !private ["Ps32ExpressibleByStringInterpolation", "append"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "append"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "append"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
-- !private ["Sf", "deinit"]
 - !private ["C17PerfectHTTPServer12HPACKDecoder", "decode"]
-- ["C17PerfectHTTPServer12HPACKDecoder", "deinit"]
 - ["C17PerfectHTTPServer12HPACKDecoder", "init"]
-- ["C17PerfectHTTPServer12HPACKEncoder", "deinit"]
 - !private ["C17PerfectHTTPServer12HPACKEncoder", "encodeHeader"]
 - ["C17PerfectHTTPServer12HPACKEncoder", "init"]
-- ["C17PerfectHTTPServer13HTTP11Request", "deinit"]
 - ["C17PerfectHTTPServer13HTTP11Request", "init"]
 - ["C17PerfectHTTPServer13HTTP11Request", ""]
 - ["C17PerfectHTTPServer14HTTP11Response", "Bool"]
@@ -463,7 +335,6 @@ depends-member:
 - !private ["C17PerfectHTTPServer14HTTP11Response", "UTF8Encoding"]
 - ["C17PerfectHTTPServer14HTTP11Response", "addHeader"]
 - !private ["C17PerfectHTTPServer14HTTP11Response", "appendBody"]
-- ["C17PerfectHTTPServer14HTTP11Response", "deinit"]
 - !private ["C17PerfectHTTPServer14HTTP11Response", "headerStore"]
 - ["C17PerfectHTTPServer14HTTP11Response", "init"]
 - !private ["C17PerfectHTTPServer14HTTP11Response", "status"]
@@ -551,7 +422,6 @@ depends-member:
 - ["V17PerfectHTTPServer10HTTP2Frame", "String"]
 - ["V17PerfectHTTPServer10HTTP2Frame", "UInt32"]
 - ["V17PerfectHTTPServer10HTTP2Frame", "UInt8"]
-- ["V17PerfectHTTPServer10HTTP2Frame", "deinit"]
 - ["V17PerfectHTTPServer10HTTP2Frame", "flags"]
 - ["V17PerfectHTTPServer10HTTP2Frame", "flagsStr"]
 - ["V17PerfectHTTPServer10HTTP2Frame", "headerBytes"]
@@ -575,9 +445,7 @@ depends-member:
 - !private ["C17PerfectHTTPServer13HTTP2Response", "headerStore"]
 - ["C17PerfectHTTPServer13HTTP2Response", "init"]
 - !private ["C17PerfectHTTPServer13HTTP2Response", "status"]
-- ["O11PerfectHTTP10HTTPMethod", "deinit"]
 - !private ["O11PerfectHTTP10HTTPMethod", "description"]
-- ["P11PerfectHTTP11HTTPRequest", "deinit"]
 - !private ["P11PerfectHTTP11HTTPRequest", "headers"]
 - !private ["P11PerfectHTTP11HTTPRequest", "init"]
 - !private ["P11PerfectHTTP11HTTPRequest", "method"]
@@ -595,12 +463,7 @@ depends-member:
 - !private ["P11PerfectHTTP12HTTPResponse", "status"]
 - ["P11PerfectHTTP12HTTPResponse", ""]
 - !private ["O11PerfectHTTP18HTTPResponseHeader", "Name"]
-- ["O11PerfectHTTP18HTTPResponseStatus", "deinit"]
 - !private ["O11PerfectHTTP18HTTPResponseStatus", "statusFrom"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
-- !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "append"]
@@ -620,77 +483,20 @@ depends-member:
 - !private ["P17PerfectHTTPServer14HeaderListener", "UTF8Encoding"]
 - ["P17PerfectHTTPServer14HeaderListener", "addHeader"]
 - !private ["P17PerfectHTTPServer14HeaderListener", "appendBody"]
-- ["P17PerfectHTTPServer14HeaderListener", "deinit"]
 - !private ["P17PerfectHTTPServer14HeaderListener", "headerStore"]
 - !private ["P17PerfectHTTPServer14HeaderListener", "init"]
 - !private ["P17PerfectHTTPServer14HeaderListener", "status"]
 - ["P17PerfectHTTPServer14HeaderListener", ""]
-- !private ["Ps9Indexable", "Index"]
-- !private ["Ps9Indexable", "IndexDistance"]
-- !private ["Ps9Indexable", "Indices"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "count"]
-- ["Ps9Indexable", "init"]
-- !private ["Ps9Indexable", "remove"]
-- !private ["Ps9Indexable", "removeFirst"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Ps13IndexableBase", "Index"]
-- !private ["Ps13IndexableBase", "IndexDistance"]
-- !private ["Ps13IndexableBase", "Indices"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "SubSequence"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "count"]
-- ["Ps13IndexableBase", "init"]
-- !private ["Ps13IndexableBase", "remove"]
-- !private ["Ps13IndexableBase", "removeFirst"]
-- !private ["Ps13IndexableBase", "subscript"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
-- ["Si", "deinit"]
 - !private ["Si", "hashValue"]
 - !private ["Si", "init"]
-- !private ["Vs5Int16", "Stride"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "Stride"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "Stride"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "Stride"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
-- !private ["Ps7Integer", "_DisallowMixedSignArithmetic"]
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps7Integer", "hostToNet"]
 - ["Ps7Integer", "init"]
 - !private ["Ps7Integer", "netToHost"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps17IntegerArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "hostToNet"]
 - ["Ps17IntegerArithmetic", "init"]
 - !private ["Ps17IntegerArithmetic", "netToHost"]
-- !private ["Ps16IteratorProtocol", "Element"]
-- !private ["Ps16IteratorProtocol", "Iterator"]
-- !private ["P10PerfectLib15JSONConvertible", "Index"]
-- !private ["P10PerfectLib15JSONConvertible", "IndexDistance"]
-- !private ["P10PerfectLib15JSONConvertible", "IntegerLiteralType"]
-- !private ["P10PerfectLib15JSONConvertible", "Iterator"]
-- !private ["P10PerfectLib15JSONConvertible", "Stride"]
-- !private ["P10PerfectLib15JSONConvertible", "SubSequence"]
-- !private ["P10PerfectLib15JSONConvertible", "_DisabledRangeIndex"]
-- !private ["P10PerfectLib15JSONConvertible", "_DisallowMixedSignArithmetic"]
-- !private ["P10PerfectLib15JSONConvertible", "_Element"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "append"]
 - !private ["P10PerfectLib15JSONConvertible", "count"]
@@ -704,41 +510,21 @@ depends-member:
 - !private ["P10PerfectLib15JSONConvertible", "removeFirst"]
 - !private ["P10PerfectLib15JSONConvertible", "subscript"]
 - !private ["CV13PerfectThread9Threading4Lock", "broadcast"]
-- ["CV13PerfectThread9Threading4Lock", "deinit"]
 - !private ["CV13PerfectThread9Threading4Lock", "doWithLock"]
 - ["CV13PerfectThread9Threading4Lock", "init"]
 - !private ["CV13PerfectThread9Threading4Lock", "wait"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "append"]
 - ["Ps25LosslessStringConvertible", "init"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "append"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - ["Ps10MirrorPath", "init"]
-- !private ["Ps17MutableCollection", "Index"]
-- !private ["Ps17MutableCollection", "IndexDistance"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "SubSequence"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "count"]
 - ["Ps17MutableCollection", "init"]
 - !private ["Ps17MutableCollection", "remove"]
 - !private ["Ps17MutableCollection", "removeFirst"]
 - !private ["Ps17MutableCollection", "subscript"]
-- !private ["Ps16MutableIndexable", "Index"]
-- !private ["Ps16MutableIndexable", "IndexDistance"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "SubSequence"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "count"]
-- ["Ps16MutableIndexable", "init"]
-- !private ["Ps16MutableIndexable", "remove"]
-- !private ["Ps16MutableIndexable", "removeFirst"]
-- !private ["Ps16MutableIndexable", "subscript"]
 - !private ["PSo8NSCoding", "append"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "append"]
@@ -746,16 +532,13 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "append"]
 - ["PSo16NSMutableCopying", "init"]
 - !private ["CSo8NSObject", "append"]
-- ["CSo8NSObject", "init"]
 - !private ["PSo16NSObjectProtocol", "append"]
 - ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo14NSSecureCoding", "append"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "append"]
 - ["CSo8NSString", "init"]
-- ["OO11PerfectHTTP17HTTPRequestHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP17HTTPRequestHeader4Name", "standardName"]
-- ["OO11PerfectHTTP18HTTPResponseHeader4Name", "deinit"]
 - !private ["OO11PerfectHTTP18HTTPResponseHeader4Name", "fromStandard"]
 - !private ["C10PerfectNet3Net", "beginSSL"]
 - !private ["C10PerfectNet3Net", "close"]
@@ -768,7 +551,6 @@ depends-member:
 - !private ["C10PerfectNet6NetTCP", "beginSSL"]
 - !private ["C10PerfectNet6NetTCP", "close"]
 - !private ["C10PerfectNet6NetTCP", "connect"]
-- ["C10PerfectNet6NetTCP", "deinit"]
 - ["C10PerfectNet6NetTCP", "init"]
 - !private ["C10PerfectNet6NetTCP", "isValid"]
 - !private ["C10PerfectNet6NetTCP", "readBytesFully"]
@@ -777,96 +559,36 @@ depends-member:
 - !private ["C10PerfectNet9NetTCPSSL", "beginSSL"]
 - !private ["C10PerfectNet9NetTCPSSL", "close"]
 - !private ["C10PerfectNet9NetTCPSSL", "connect"]
-- ["C10PerfectNet9NetTCPSSL", "deinit"]
 - ["C10PerfectNet9NetTCPSSL", "init"]
 - !private ["C10PerfectNet9NetTCPSSL", "isValid"]
 - !private ["C10PerfectNet9NetTCPSSL", "readBytesFully"]
 - !private ["C10PerfectNet9NetTCPSSL", "write"]
 - !private ["C10PerfectNet9NetTCPSSL", "writeFully"]
-- ["Sq", "deinit"]
+- !private ["P13PerfectCrypto5Octal", "init"]
 - !private ["Sq", "idle"]
 - !private ["Sq", "open"]
-- !private ["Ps22RandomAccessCollection", "Index"]
-- !private ["Ps22RandomAccessCollection", "IndexDistance"]
-- !private ["Ps22RandomAccessCollection", "Indices"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "SubSequence"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - ["Ps22RandomAccessCollection", "init"]
 - !private ["Ps22RandomAccessCollection", "remove"]
 - !private ["Ps22RandomAccessCollection", "removeFirst"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
-- !private ["Ps21RandomAccessIndexable", "Index"]
-- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
-- !private ["Ps21RandomAccessIndexable", "Indices"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "SubSequence"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "count"]
-- ["Ps21RandomAccessIndexable", "init"]
-- !private ["Ps21RandomAccessIndexable", "remove"]
-- !private ["Ps21RandomAccessIndexable", "removeFirst"]
-- !private ["Ps21RandomAccessIndexable", "subscript"]
-- !private ["Vs17RandomAccessSlice", "Index"]
-- !private ["Vs17RandomAccessSlice", "IndexDistance"]
-- !private ["Vs17RandomAccessSlice", "Indices"]
-- !private ["Vs17RandomAccessSlice", "Iterator"]
-- !private ["Vs17RandomAccessSlice", "SubSequence"]
-- !private ["Vs17RandomAccessSlice", "_Element"]
-- !private ["Vs5Range", "Iterator"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Index"]
-- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "SubSequence"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - ["Ps26RangeReplaceableCollection", "init"]
 - !private ["Ps26RangeReplaceableCollection", "remove"]
 - !private ["Ps26RangeReplaceableCollection", "removeFirst"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
-- !private ["Ps25RangeReplaceableIndexable", "Index"]
-- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "count"]
-- ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "remove"]
-- !private ["Ps25RangeReplaceableIndexable", "removeFirst"]
-- !private ["Ps25RangeReplaceableIndexable", "subscript"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Index"]
-- !private ["Ps8Sequence", "IndexDistance"]
-- !private ["Ps8Sequence", "Indices"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "SubSequence"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
 - ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "remove"]
 - !private ["Ps8Sequence", "removeFirst"]
 - !private ["Ps8Sequence", "subscript"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps12SignedNumber", "init"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "Iterator"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "=="]
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "_toAnyHashable"]
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "closed"]
@@ -879,16 +601,11 @@ depends-member:
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "open"]
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "reservedLocal"]
 - ["OC17PerfectHTTPServer11HTTP2Client11StreamState", "reservedRemote"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
-- !private ["Ps10Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps10Strideable", "hashValue"]
 - !private ["Ps10Strideable", "hostToNet"]
 - ["Ps10Strideable", "init"]
 - !private ["Ps10Strideable", "netToHost"]
 - !private ["SS", "append"]
-- ["SS", "deinit"]
 - ["SS", "init"]
 - !private ["Ps16TextOutputStream", "append"]
 - ["Ps16TextOutputStream", "init"]
@@ -897,70 +614,40 @@ depends-member:
 - ["V13PerfectThread9Threading", "Event"]
 - ["V13PerfectThread9Threading", "Lock"]
 - !private ["V13PerfectThread9Threading", "dispatch"]
-- !private ["Su", "Stride"]
-- !private ["Su", "_DisallowMixedSignArithmetic"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "Stride"]
-- !private ["Vs6UInt16", "_DisallowMixedSignArithmetic"]
-- ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt16", "netToHost"]
-- !private ["Vs6UInt32", "Stride"]
-- !private ["Vs6UInt32", "_DisallowMixedSignArithmetic"]
-- ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt32", "hostToNet"]
 - ["Vs6UInt32", "init"]
 - !private ["Vs6UInt32", "netToHost"]
-- !private ["Vs6UInt64", "Stride"]
-- !private ["Vs6UInt64", "_DisallowMixedSignArithmetic"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "Stride"]
-- !private ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
-- ["Vs5UInt8", "deinit"]
 - !private ["Vs5UInt8", "init"]
 - !private ["V10PerfectLib12UTF8Encoding", "decode"]
 - !private ["V10PerfectLib12UTF8Encoding", "encode"]
-- !private ["Sc", "deinit"]
-- !private ["Ps15UnsignedInteger", "Stride"]
-- !private ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
 - !private ["Ps15UnsignedInteger", "hostToNet"]
 - ["Ps15UnsignedInteger", "init"]
 - !private ["Ps15UnsignedInteger", "netToHost"]
-- !private ["Ps14_ArrayProtocol", "Index"]
-- !private ["Ps14_ArrayProtocol", "IndexDistance"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "SubSequence"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - ["Ps14_ArrayProtocol", "init"]
 - !private ["Ps14_ArrayProtocol", "remove"]
 - !private ["Ps14_ArrayProtocol", "removeFirst"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
-- !private ["Ps15_CVarArgAligned", "Stride"]
-- !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
-- !private ["Ps24_DestructorSafeContainer", "Index"]
-- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "SubSequence"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- ["Ps23_BidirectionalIndexable", "init"]
+- !private ["Ps23_BidirectionalIndexable", "remove"]
+- !private ["Ps23_BidirectionalIndexable", "removeFirst"]
+- !private ["Ps23_BidirectionalIndexable", "subscript"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps24_DestructorSafeContainer", "remove"]
 - !private ["Ps24_DestructorSafeContainer", "removeFirst"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "hostToNet"]
 - ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "netToHost"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "append"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hostToNet"]
 - ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
@@ -971,12 +658,10 @@ depends-member:
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "append"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "append"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "append"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
-- !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "append"]
@@ -990,39 +675,36 @@ depends-member:
 - !private ["Ps9_Hashable", "open"]
 - !private ["Ps9_Hashable", "standardName"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
-- !private ["Ps14_Incrementable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps14_Incrementable", "hostToNet"]
 - ["Ps14_Incrementable", "init"]
 - !private ["Ps14_Incrementable", "netToHost"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
-- !private ["Ps8_Integer", "_DisallowMixedSignArithmetic"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "remove"]
+- !private ["Ps10_Indexable", "removeFirst"]
+- !private ["Ps10_Indexable", "subscript"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "remove"]
+- !private ["Ps14_IndexableBase", "removeFirst"]
+- !private ["Ps14_IndexableBase", "subscript"]
 - !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps8_Integer", "hostToNet"]
 - ["Ps8_Integer", "init"]
 - !private ["Ps8_Integer", "netToHost"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
-- !private ["Ps18_IntegerArithmetic", "_DisallowMixedSignArithmetic"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "hostToNet"]
 - ["Ps18_IntegerArithmetic", "init"]
 - !private ["Ps18_IntegerArithmetic", "netToHost"]
-- !private ["Ps21_ObjectiveCBridgeable", "Index"]
-- !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- ["Ps17_MutableIndexable", "init"]
+- !private ["Ps17_MutableIndexable", "remove"]
+- !private ["Ps17_MutableIndexable", "removeFirst"]
+- !private ["Ps17_MutableIndexable", "subscript"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
@@ -1035,52 +717,43 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "remove"]
 - !private ["Ps21_ObjectiveCBridgeable", "removeFirst"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps22_RandomAccessIndexable", "remove"]
+- !private ["Ps22_RandomAccessIndexable", "removeFirst"]
+- !private ["Ps22_RandomAccessIndexable", "subscript"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- ["Ps26_RangeReplaceableIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "remove"]
+- !private ["Ps26_RangeReplaceableIndexable", "removeFirst"]
+- !private ["Ps26_RangeReplaceableIndexable", "subscript"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
-- !private ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
 - !private ["Ps11_Strideable", "hashValue"]
 - !private ["Ps11_Strideable", "hostToNet"]
 - ["Ps11_Strideable", "init"]
 - !private ["Ps11_Strideable", "netToHost"]
-- !private ["Ps14_StringElement", "Stride"]
-- !private ["Ps14_StringElement", "_DisallowMixedSignArithmetic"]
 - !private ["Ps14_StringElement", "init"]
 - !private ["Ps14_StringElement", "netToHost"]
 depends-nominal:
-- "Vs11AnyIterator"
 - "Ps9AnyObject"
 - "Sa"
 - "Ps23BidirectionalCollection"
-- "Ps22BidirectionalIndexable"
-- !private "Vs18BidirectionalSlice"
 - "Ps17BitwiseOperations"
-- "Sb"
-- "C10PerfectLib5Bytes"
+- !private "Sb"
+- !private "C10PerfectLib5Bytes"
 - "P10PerfectNet28BytesSwappingUnsignedInteger"
 - "Ps7CVarArg"
-- !private "Vs9Character"
-- !private "Vs11ClosedRange"
 - "Ps10Collection"
 - "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
-- !private "Vs27DefaultBidirectionalIndices"
-- !private "Vs26DefaultRandomAccessIndices"
 - "Vs10Dictionary"
-- "Sd"
 - "Ps9Equatable"
-- "Ps5Error"
 - "CV13PerfectThread9Threading5Event"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -1088,10 +761,8 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - "C17PerfectHTTPServer12HPACKDecoder"
 - "C17PerfectHTTPServer12HPACKEncoder"
 - "C17PerfectHTTPServer13HTTP11Request"
@@ -1100,69 +771,53 @@ depends-nominal:
 - "V17PerfectHTTPServer10HTTP2Frame"
 - "C17PerfectHTTPServer12HTTP2Request"
 - "C17PerfectHTTPServer13HTTP2Response"
-- "O11PerfectHTTP10HTTPMethod"
+- !private "O11PerfectHTTP10HTTPMethod"
 - "P11PerfectHTTP11HTTPRequest"
 - "P11PerfectHTTP12HTTPResponse"
 - !private "O11PerfectHTTP18HTTPResponseHeader"
-- "O11PerfectHTTP18HTTPResponseStatus"
+- !private "O11PerfectHTTP18HTTPResponseStatus"
 - "Ps8Hashable"
 - "P17PerfectHTTPServer14HeaderListener"
-- "Ps9Indexable"
-- "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
+- !private "Si"
 - "Ps7Integer"
 - "Ps17IntegerArithmetic"
-- !private "Ps16IteratorProtocol"
 - "P10PerfectLib15JSONConvertible"
 - "CV13PerfectThread9Threading4Lock"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
 - "Ps17MutableCollection"
-- "Ps16MutableIndexable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo16NSMutableCopying"
-- "CSo8NSObject"
+- !private "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "OO11PerfectHTTP17HTTPRequestHeader4Name"
-- "OO11PerfectHTTP18HTTPResponseHeader4Name"
+- !private "OO11PerfectHTTP17HTTPRequestHeader4Name"
+- !private "OO11PerfectHTTP18HTTPResponseHeader4Name"
 - "C10PerfectNet3Net"
 - "C10PerfectNet6NetTCP"
 - "C10PerfectNet9NetTCPSSL"
-- "Sq"
+- !private "P13PerfectCrypto5Octal"
+- !private "Sq"
 - "Ps22RandomAccessCollection"
-- "Ps21RandomAccessIndexable"
-- !private "Vs17RandomAccessSlice"
-- !private "Vs5Range"
 - "Ps26RangeReplaceableCollection"
-- "Ps25RangeReplaceableIndexable"
 - "Ps8Sequence"
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
-- !private "Vs5Slice"
 - "OC17PerfectHTTPServer11HTTP2Client11StreamState"
 - "Ps10Strideable"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
 - "V13PerfectThread9Threading"
-- !private "Su"
-- "Vs6UInt16"
+- !private "Vs6UInt16"
 - "Vs6UInt32"
-- !private "Vs6UInt64"
-- "Vs5UInt8"
+- !private "Vs5UInt8"
 - !private "V10PerfectLib12UTF8Encoding"
-- !private "Sc"
 - "Ps15UnsignedInteger"
 - "Ps14_ArrayProtocol"
-- !private "Ps15_CVarArgAligned"
+- "Ps23_BidirectionalIndexable"
 - "Ps24_DestructorSafeContainer"
 - "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
@@ -1171,13 +826,18 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps14_Incrementable"
+- "Ps10_Indexable"
+- "Ps14_IndexableBase"
 - "Ps8_Integer"
 - "Ps18_IntegerArithmetic"
+- "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
+- "Ps22_RandomAccessIndexable"
+- "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - "Ps11_Strideable"
 - !private "Ps14_StringElement"
@@ -1188,61 +848,68 @@ depends-external:
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectLib.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNet.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../srtp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl23.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pqueue.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dtls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../tls1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl3.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ssl2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../kssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../hmac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../e_os2.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pem.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../pkcs7.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509_vfy.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../sha.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../dsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../rsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdh.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ecdsa.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ec.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bn.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../asn1.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../obj_mac.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../objects.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../evp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../buffer.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../x509.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../comp.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../lhash.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../err.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../symhacks.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../ossl_typ.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../opensslv.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../safestack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../stack.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../crypto.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/../bio.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/openssl.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/COpenSSL-2.0.3/COpenSSL/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../e_os2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rand.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../srtp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl23.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pqueue.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dtls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../tls1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl3.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ssl2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../kssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../hmac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem2.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pem.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../pkcs7.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509_vfy.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../sha.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../dsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../rsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdh.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ecdsa.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ec.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bn.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../asn1.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../obj_mac.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../objects.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../evp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../buffer.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../x509.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../comp.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../lhash.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../err.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../symhacks.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../ossl_typ.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../opensslv.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../safestack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../stack.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../crypto.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/../bio.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/openssl.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-COpenSSL.git--4744624199947727386/COpenSSL/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCrypto.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectThread.swiftmodule"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectHTTP.swiftmodule"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/http_parser.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CHTTPParser/include/module.modulemap"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../inftrees.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zutil.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zlib.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/../zconf.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectHTTPServer-2.1.14/Sources/CZlib/include/czlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/http_parser.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CHTTPParser/include/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../inftrees.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zutil.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zlib.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/../zconf.h"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTPServer.git--6671958091389663080/Sources/CZlib/include/czlib.h"
 interface-hash: "0dd6bad05c8c7bbde66585cf20ead2f3"

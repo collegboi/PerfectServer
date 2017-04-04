@@ -2,73 +2,73 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/URLSession+Turnstile.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/URLSession+Turnstile.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/URLSession+Turnstile.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/URLSession+Turnstile.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/URLSession+Turnstile~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/URLSession+Turnstile.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/WebMemoryRealm.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/WebMemoryRealm.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/WebMemoryRealm.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/WebMemoryRealm.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/WebMemoryRealm~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/WebMemoryRealm.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Digits.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/LoginProviders/Digits.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Digits.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/LoginProviders/Digits.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Digits~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Digits.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Facebook.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/LoginProviders/Facebook.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Facebook.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/LoginProviders/Facebook.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Facebook~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Facebook.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/LoginProviders/Google.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/LoginProviders/Google.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Google.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/LoginProviders/Google.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Google~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Google.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthDelegator.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth/OAuthDelegator.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthDelegator.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth/OAuthDelegator.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthDelegator~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthDelegator.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthEcho.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth/OAuthEcho.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthEcho.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth/OAuthEcho.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthEcho~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthEcho.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth/OAuthParameters.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth/OAuthParameters.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthParameters.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth/OAuthParameters.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthParameters~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuthParameters.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/AuthorizationCode.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth2/AuthorizationCode.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/AuthorizationCode.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth2/AuthorizationCode.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/AuthorizationCode~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/AuthorizationCode.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth2/OAuth2.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Error.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Error.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2Error.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth2/OAuth2Error.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2Error~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2Error.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/Turnstile-1.0.4/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Token.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileWeb/Protocols/OAuth2/OAuth2Token.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2Token.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/Protocols/OAuth2/OAuth2Token.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileWeb.build/OAuth2Token~partial.swiftmodule",
