@@ -2,67 +2,67 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORM.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORM.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORM.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORM.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORM~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORM.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMConnect.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMConnect.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMConnect.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMConnect.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMConnect~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMConnect.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMCursor.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMCursor.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMCursor.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMCursor.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMCursor~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMCursor.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSource.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSource.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSource.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSource.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSource~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSource.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceCredentials.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSourceCredentials.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceCredentials.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceCredentials.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceCredentials~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceCredentials.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceOptions.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSourceOptions.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceOptions.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceOptions.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceOptions~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMDataSourceOptions.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMError.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMError.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMError.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMError.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMError~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMError.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMJoins.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMJoins.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMJoins.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMJoins.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMJoins~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMJoins.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMProtocol.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMProtocol.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMProtocol.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMProtocol.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMProtocol~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMProtocol.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMRow.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMRow.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMRow.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMRow.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMRow~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMRow.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMtResultSet.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMtResultSet.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMtResultSet.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMtResultSet.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/StORM.build/StORMtResultSet~partial.swiftmodule",

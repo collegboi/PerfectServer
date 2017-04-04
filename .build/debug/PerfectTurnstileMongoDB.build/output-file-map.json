@@ -2,55 +2,55 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/Account.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/Account.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Account.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Account.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Account~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Account.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/AuthHandlersJSON.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/AuthHandlersJSON.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersJSON.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersJSON.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersJSON~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersJSON.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/AuthHandlersWeb.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/AuthHandlersWeb.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersWeb.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersWeb.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersWeb~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/AuthHandlersWeb.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/JSONRoutes.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/JSONRoutes.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/JSONRoutes.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/JSONRoutes.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/JSONRoutes~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/JSONRoutes.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/Realm.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/Realm.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Realm.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Realm.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Realm~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Realm.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/SessionManager.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/SessionManager.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/SessionManager.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/SessionManager.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/SessionManager~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/SessionManager.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/Tokens.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/Tokens.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Tokens.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Tokens.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Tokens~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/Tokens.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/TurnstilePerfectRealm.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/TurnstilePerfectRealm.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/TurnstilePerfectRealm.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/TurnstilePerfectRealm.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/TurnstilePerfectRealm~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/TurnstilePerfectRealm.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectTurnstileMongoDB-1.0.0/Sources/WebRoutes.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Turnstile-MongoDB.git-2146371731109985703/Sources/WebRoutes.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/WebRoutes.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/WebRoutes.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectTurnstileMongoDB.build/WebRoutes~partial.swiftmodule",

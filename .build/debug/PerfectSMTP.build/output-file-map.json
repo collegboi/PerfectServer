@@ -2,7 +2,7 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectSMTP-1.0.6/Sources/SMTP.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-SMTP.git-9132372392332813665/Sources/SMTP.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.build/SMTP.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.build/SMTP.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectSMTP.build/SMTP~partial.swiftmodule",

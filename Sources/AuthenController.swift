@@ -121,6 +121,7 @@ public class AuthenticationController {
             
             storage.updateDocument(jsonStr: jsonhash, query: jsonUser)
             
+            storage.setCollectionName("Staff")
             resetObject["password"] = BCrypt.hash(password: password, salt: hashSalt)
             resetObject["resetPassword"] = "0"
     

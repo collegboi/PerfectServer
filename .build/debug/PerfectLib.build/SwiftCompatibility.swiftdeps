@@ -6,15 +6,15 @@ provides-member:
 - ["SS", "range"]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "BooleanLiteralType"
-- "Range"
-- "Bool"
-- !private "&&"
 - !private "!="
+- !private "&&"
+- !private "..<"
 - !private "=="
 - "AssignmentPrecedence"
-- !private "..<"
+- "Bool"
+- "BooleanLiteralType"
+- "Range"
+- "String"
 - "TernaryPrecedence"
 depends-member:
 - !private ["Ps9AnyObject", "endIndex"]
@@ -23,7 +23,6 @@ depends-member:
 - !private ["Ps9AnyObject", "startIndex"]
 - !private ["Ps9AnyObject", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
 - ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "endIndex"]
@@ -32,7 +31,6 @@ depends-member:
 - !private ["Ps7CVarArg", "lowercased"]
 - !private ["Ps7CVarArg", "startIndex"]
 - !private ["Ps7CVarArg", "subscript"]
-- ["Vs9Character", "deinit"]
 - ["Ps10Comparable", "Index"]
 - !private ["Ps10Comparable", "String"]
 - !private ["Ps10Comparable", "endIndex"]
@@ -94,14 +92,6 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lowercased"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "startIndex"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "subscript"]
-- ["Ps32ExpressibleByStringInterpolation", "Index"]
-- !private ["Ps32ExpressibleByStringInterpolation", "String"]
-- !private ["Ps32ExpressibleByStringInterpolation", "endIndex"]
-- !private ["Ps32ExpressibleByStringInterpolation", "index"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "lowercased"]
-- !private ["Ps32ExpressibleByStringInterpolation", "startIndex"]
-- !private ["Ps32ExpressibleByStringInterpolation", "subscript"]
 - ["Ps26ExpressibleByStringLiteral", "Index"]
 - !private ["Ps26ExpressibleByStringLiteral", "String"]
 - !private ["Ps26ExpressibleByStringLiteral", "endIndex"]
@@ -127,7 +117,6 @@ depends-member:
 - !private ["Ps8Hashable", "lowercased"]
 - !private ["Ps8Hashable", "startIndex"]
 - !private ["Ps8Hashable", "subscript"]
-- ["VVSS13CharacterView5Index", "deinit"]
 - ["P10PerfectLib15JSONConvertible", "Index"]
 - !private ["P10PerfectLib15JSONConvertible", "String"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
@@ -189,13 +178,10 @@ depends-member:
 - !private ["CSo8NSString", "lowercased"]
 - !private ["CSo8NSString", "startIndex"]
 - !private ["CSo8NSString", "subscript"]
-- ["Sq", "deinit"]
-- ["Vs5Range", "deinit"]
 - ["SS", "Bool"]
 - ["SS", "Index"]
 - ["SS", "Range"]
 - ["SS", "String"]
-- ["SS", "deinit"]
 - !private ["SS", "endIndex"]
 - !private ["SS", "index"]
 - !private ["SS", "init"]
@@ -252,6 +238,14 @@ depends-member:
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "lowercased"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "startIndex"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "subscript"]
+- ["Ps33_ExpressibleByStringInterpolation", "Index"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "String"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "endIndex"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "index"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "lowercased"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "startIndex"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "subscript"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "endIndex"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "index"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "lowercased"]
@@ -277,9 +271,8 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 depends-nominal:
 - !private "Ps9AnyObject"
-- "Sb"
+- !private "Sb"
 - "Ps7CVarArg"
-- "Vs9Character"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
@@ -288,11 +281,9 @@ depends-nominal:
 - "Ps9Equatable"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- "VVSS13CharacterView5Index"
 - "P10PerfectLib15JSONConvertible"
 - "Ps25LosslessStringConvertible"
 - "Ps10MirrorPath"
@@ -303,8 +294,6 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Sq"
-- "Vs5Range"
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
@@ -313,6 +302,7 @@ depends-nominal:
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - "Ps21_ObjectiveCBridgeable"
@@ -320,10 +310,15 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "a184c06af1a4a65e3c8ef4f8b20b4e0c"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+interface-hash: "180c08ccd3d9b1dfc12214c37de65d3a"

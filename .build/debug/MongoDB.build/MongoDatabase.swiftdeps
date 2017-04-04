@@ -7,28 +7,28 @@ provides-member:
 - ["C7MongoDB13MongoDatabase", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "mongoc_database_create_collection"
-- !private "mongoc_database_get_collection"
-- !private "bson_error_t"
-- !private "mongoc_database_destroy"
-- !private "mongoc_database_get_name"
+- !private "!="
+- !private "??"
+- "AssignmentPrecedence"
+- "BSON"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "MongoClient"
+- "MongoCollection"
 - "MongoDatabase"
-- !private "StringLiteralType"
-- "String"
 - "MongoResult"
 - "OpaquePointer"
-- !private "mongoc_database_drop"
-- !private "??"
-- "MongoCollection"
-- "AssignmentPrecedence"
-- !private "mongoc_database_get_collection_names"
-- "MongoClient"
-- !private "mongoc_client_get_database"
-- "FloatLiteralType"
+- "String"
+- !private "StringLiteralType"
+- !private "bson_error_t"
 - !private "bson_strfreev"
-- "BSON"
-- "IntegerLiteralType"
-- !private "!="
+- !private "mongoc_client_get_database"
+- !private "mongoc_database_create_collection"
+- !private "mongoc_database_destroy"
+- !private "mongoc_database_drop"
+- !private "mongoc_database_get_collection"
+- !private "mongoc_database_get_collection_names"
+- !private "mongoc_database_get_name"
 depends-member:
 - !private ["Ps9AnyObject", "MongoCollection"]
 - ["Ps9AnyObject", "OpaquePointer"]
@@ -48,33 +48,21 @@ depends-member:
 - !private ["Ps9AnyObject", "mongoc_database_get_name"]
 - !private ["Ps9AnyObject", "ptr"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "init"]
 - !private ["C7MongoDB4BSON", "doc"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "init"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "pointee"]
 - !private ["Ps7CVarArg", "successor"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Comparable", "doc"]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "pointee"]
 - !private ["Ps10Comparable", "successor"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "pointee"]
@@ -83,15 +71,11 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "pointee"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "successor"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "append"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "pointee"]
 - !private ["Ps17CustomReflectable", "successor"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "doc"]
@@ -101,29 +85,16 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "pointee"]
 - !private ["Ps9Equatable", "successor"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "pointee"]
 - !private ["Ps8Hashable", "successor"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "init"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "init"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
@@ -158,35 +129,13 @@ depends-member:
 - !private ["O7MongoDB11MongoResult", "fromError"]
 - !private ["O7MongoDB11MongoResult", "replyCollection"]
 - !private ["O7MongoDB11MongoResult", "success"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "init"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "init"]
 - ["Vs13OpaquePointer", "init"]
-- !private ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "init"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "init"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
 - !private ["Ps10Strideable", "pointee"]
@@ -196,12 +145,10 @@ depends-member:
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Sp", "pointee"]
 - !private ["Sp", "successor"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
@@ -209,13 +156,23 @@ depends-member:
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "pointee"]
 - !private ["Ps9_Hashable", "successor"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps8_Pointer", "pointee"]
 - !private ["Ps8_Pointer", "successor"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 - !private ["Ps11_Strideable", "pointee"]
 - !private ["Ps11_Strideable", "successor"]
 - !private ["VSC13_bson_error_t", "init"]
@@ -224,7 +181,6 @@ depends-nominal:
 - !private "Sa"
 - !private "C7MongoDB4BSON"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
 - !private "Sb"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
@@ -237,14 +193,9 @@ depends-nominal:
 - !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "C7MongoDB11MongoClient"
@@ -252,13 +203,9 @@ depends-nominal:
 - "C7MongoDB13MongoDatabase"
 - !private "O7MongoDB11MongoResult"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - "Vs13OpaquePointer"
-- !private "Sq"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps8Sequence"
 - !private "Ps10Strideable"
 - !private "SS"
@@ -266,15 +213,21 @@ depends-nominal:
 - !private "Ps20TextOutputStreamable"
 - !private "Sp"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps24_DestructorSafeContainer"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - "Ps9_Hashable"
-- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
+- !private "Ps17_MutableIndexable"
 - !private "Ps8_Pointer"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps11_Strideable"
 - !private "VSC13_bson_error_t"
 depends-dynamic-lookup:
@@ -348,6 +301,6 @@ depends-external:
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-config.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-mongo-c.git-4363366770464592526/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 interface-hash: "9a1e5a5847c57b9f0fff16a18e390229"

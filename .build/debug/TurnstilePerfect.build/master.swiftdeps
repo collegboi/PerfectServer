@@ -1,10 +1,10 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "3ff393bf4ebcf896ee7fba25cf3d2def"
-build_time: [542976580, 349163000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "6894217de62412a37a7d0654521efc86"
+build_time: [544612520, 777122000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthenticationConfig.swift": [540764121, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/AuthFilter.swift": [540764121, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/HTTPRequest+Turnstile.swift": [540764121, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/MustacheHandler.swift": [540764121, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstileFilter.swift": [540764121, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/TurnstilePerfect-2.0.2/Sources/TurnstilePerfect.swift": [540764121, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/AuthenticationConfig.swift": [544612395, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/AuthFilter.swift": [544612395, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/HTTPRequest+Turnstile.swift": [544612395, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/MustacheHandler.swift": [544612395, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/TurnstileFilter.swift": [544612395, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile-Perfect.git-2479001266429089274/Sources/TurnstilePerfect.swift": [544612395, 0]

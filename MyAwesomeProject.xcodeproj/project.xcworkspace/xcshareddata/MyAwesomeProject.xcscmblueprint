@@ -4,13 +4,18 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : 9223372036854775807,
     "52F974CF368298658E2D7486B02A88D6A4358B85" : 9223372036854775807,
+    "AEAC549E6645F076C27C74BAF8337ECDC636362F" : 9223372036854775807,
     "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : 9223372036854775807,
     "F31B56B8692846480EC5667F28FC22A254BD5832" : 9223372036854775807,
     "A47270401C4E12170692FDEB5A90EE8AC80F500F" : 9223372036854775807,
+    "33C594B0F0A33DF4C96CA1FD1D8CF9B01869E184" : 9223372036854775807,
     "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : 9223372036854775807,
+    "DCD994A20FFF69E73D7DE28EB512BBF004934554" : 9223372036854775807,
     "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : 9223372036854775807,
     "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : 9223372036854775807,
+    "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F" : 9223372036854775807,
     "D29B450053EFE7F16640D64672B63711A39399E1" : 9223372036854775807,
     "C04527CA571837C74AE5715BC4F060EA21A28F2F" : 9223372036854775807,
     "3B905509A4DD1F5305D27EF37A9F71F239F93941" : 9223372036854775807,
@@ -21,19 +26,24 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B29487F9-13FA-41D4-B4A5-FE8D21096D56",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6F1260245BD69EFA9A05D126763C86280510C6E1" : "PerfectServer\/Packages\/PerfectNet-2.1.7\/",
     "52F974CF368298658E2D7486B02A88D6A4358B85" : "PerfectServer\/Packages\/PerfectRequestLogger-1.0.1\/",
+    "AEAC549E6645F076C27C74BAF8337ECDC636362F" : "PerfectServer\/Packages\/PerfectSMTP-1.0.9\/",
     "615FD99B652E80AC2E813EEEE7964BA10A9886D5" : "PerfectServer\/Packages\/PerfectThread-2.0.4\/",
     "F31B56B8692846480EC5667F28FC22A254BD5832" : "PerfectServer\/Packages\/PerfectZip-2.0.2\/",
     "A47270401C4E12170692FDEB5A90EE8AC80F500F" : "PerfectServer\/Packages\/StORM-1.0.1\/",
-    "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : "PerfectServer\/Packages\/PerfectTurnstileMongoDB-1.0.0\/",
+    "33C594B0F0A33DF4C96CA1FD1D8CF9B01869E184" : "PerfectServer\/Packages\/SwiftCron-0.1.7\/",
+    "6AF1D9014060CCF63161793B830D7CB8193ACEC8" : "PerfectServer\/Packages\/PerfectTurnstileMongoDB-1.0.10\/",
+    "DCD994A20FFF69E73D7DE28EB512BBF004934554" : "PerfectServer\/Packages\/COpenSSL-2.0.4\/",
     "71CAF67E2084FA722CF43CDE1FFED94D76CC3E56" : "PerfectServer\/Packages\/PerfectNotifications-2.0.3\/",
     "735A06A83BD3E78D8C3B53C09F33A6FB7CEBF8E1" : "PerfectServer\/Packages\/PerfectLogger-1.0.0\/",
+    "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F" : "PerfectServer\/Packages\/PerfectCrypto-1.0.8\/",
     "D29B450053EFE7F16640D64672B63711A39399E1" : "PerfectServer\/Packages\/TurnstilePerfect-2.0.2\/",
     "C04527CA571837C74AE5715BC4F060EA21A28F2F" : "PerfectServer\/",
     "3B905509A4DD1F5305D27EF37A9F71F239F93941" : "PerfectServer\/Packages\/PerfectCURL-2.0.4\/",
-    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : "PerfectServer\/Packages\/PerfectHTTP-2.1.6\/",
-    "C4127C9B9C8FDF608B532AD72407863CE2797629" : "PerfectServer\/Packages\/PerfectHTTPServer-2.1.14\/",
-    "243DB8A7277B34B6C8533EF5DDC53768F0C6F035" : "PerfectServer\/Packages\/MongoDBStORM-1.0.1\/",
+    "9197B75B1BC29921D6E3B1CCDC2B258350009F3A" : "PerfectServer\/Packages\/PerfectHTTP-2.1.8\/",
+    "C4127C9B9C8FDF608B532AD72407863CE2797629" : "PerfectServer\/Packages\/PerfectHTTPServer-2.1.16\/",
+    "243DB8A7277B34B6C8533EF5DDC53768F0C6F035" : "PerfectServer\/Packages\/MongoDBStORM-1.0.2\/",
     "A9EECFF9405C7376AE51E27811238F18AAFC7246" : "PerfectServer\/Packages\/PerfectMustache-2.0.3\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "MyAwesomeProject",
@@ -44,6 +54,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SwiftORM\/MongoDB-StORM.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "243DB8A7277B34B6C8533EF5DDC53768F0C6F035"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rymcol\/SwiftCron.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "33C594B0F0A33DF4C96CA1FD1D8CF9B01869E184"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-CURL.git",
@@ -64,6 +79,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Turnstile-MongoDB.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6AF1D9014060CCF63161793B830D7CB8193ACEC8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Net.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F1260245BD69EFA9A05D126763C86280510C6E1"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Notifications.git",
@@ -91,6 +111,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A9EECFF9405C7376AE51E27811238F18AAFC7246"
     },
     {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-SMTP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AEAC549E6645F076C27C74BAF8337ECDC636362F"
+    },
+    {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/collegboi\/PerfectServer.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C04527CA571837C74AE5715BC4F060EA21A28F2F"
@@ -104,6 +129,16 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectSideRepos\/Turnstile-Perfect.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D29B450053EFE7F16640D64672B63711A39399E1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-COpenSSL.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DCD994A20FFF69E73D7DE28EB512BBF004934554"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Crypto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E71C9F673135F52EEF9E6F1B8D0895D4850F2E7F"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/PerfectlySoft\/Perfect-Zip.git",

@@ -40,7 +40,7 @@ func getAllNotificaitons(request: HTTPRequest, _ response: HTTPResponse) {
     storage.setAppKey(appKey)
     storage.setCollectionName("TBNotification")
     
-    let allNotifications = storage.getCollectionStr()
+    let allNotifications = storage.getCollectionValues()
     
     response.appendBody(string:allNotifications)
     response.completed()

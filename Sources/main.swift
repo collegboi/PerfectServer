@@ -95,7 +95,7 @@ server.documentRoot = "./webroot"
 
 FileController.setup()
 RemoteConfig.setup()
-JobController.setup()
+//JobController.setup()
 
 do {
     // Launch the servers based on the configuration data.

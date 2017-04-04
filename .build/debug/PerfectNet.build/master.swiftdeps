@@ -1,11 +1,11 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "f94fd8d30279a97e4de25bb8f557dc13"
-build_time: [542976569, 839567000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "5cbf1499bfa190683775ae95e36a8c55"
+build_time: [544612505, 165828000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/Net.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetAddress.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetEvent.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetNamedPipe.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetTCP.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetTCPSSL.swift": [540764107, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNet-2.1.4/Sources/NetUDP.swift": [540764107, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/Net.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetAddress.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetEvent.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetNamedPipe.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetTCP.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetTCPSSL.swift": [544612393, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Net.git-3268755499654502659/Sources/NetUDP.swift": [544612393, 0]

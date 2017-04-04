@@ -27,92 +27,92 @@ provides-member:
 - ["C7MongoDB4BSON", "iterator"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "bson_new_from_data"
-- !private "??"
-- !private "bson_compare"
-- !private "Int8"
-- !private "ptr2Str"
-- !private "bson_iter_key"
-- "time_t"
-- !private "BooleanLiteralType"
-- !private "bson_concat"
-- !private "bson_append_null"
-- !private "bson_new_from_json"
-- !private "StringLiteralType"
-- ">="
-- !private "bson_append_array"
-- !private "bson_oid_to_string"
-- !private "bson_iter_type"
-- !private "UnsafeBufferPointer"
-- !private "bson_append_utf8"
-- !private "bson_destroy"
-- "String"
-- "Double"
-- !private "bson_append_document"
-- !private "bson_iter_next"
-- "Int"
-- "Int32"
-- "bson_iter_t"
+- !private "!="
 - !private "..<"
-- !private "Array"
-- !private "bson_append_array_end"
-- !private "bson_iter_recurse"
-- !private "bson_iter_find_case"
-- !private "bson_error_t"
-- "Bool"
-- "CustomStringConvertible"
-- !private "BSON_SUBTYPE_BINARY"
-- !private "CChar"
-- "BSON"
-- !private "bson_append_binary"
-- !private "bson_free"
-- "Error"
-- "bson_value_t"
-- ">"
-- !private "bson_iter_value"
-- !private "bson_oid_init_from_string"
-- "UnsafePointer"
-- !private "UnicodeScalarType"
-- !private "bson_append_regex"
-- !private "bson_append_array_begin"
-- !private "bson_append_date_time"
-- !private "bson_iter_document"
-- "bson_oid_t"
-- !private "bson_append_int32"
-- "<="
-- "UnsafeMutablePointer"
-- !private "bson_iter_init"
-- "Int64"
-- "UInt32"
-- "UInt8"
 - "<"
-- !private "bson_append_time_t"
-- "bson_t"
+- "<="
+- "=="
+- ">"
+- ">="
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "BSON"
+- "BSONError"
+- !private "BSON_SUBTYPE_BINARY"
+- "Bool"
+- !private "BooleanLiteralType"
+- !private "CChar"
 - "CastingPrecedence"
 - "Comparable"
-- !private "!="
-- !private "bson_copy"
-- "BSONError"
-- "=="
-- "AssignmentPrecedence"
-- !private "~="
-- !private "withUnsafePointer"
-- !private "bson_array_as_json"
-- !private "bson_iter_find_descendant"
-- !private "bson_append_int64"
-- !private "bson_append_double"
-- "NoDestroyBSON"
-- !private "bson_get_data"
+- "CustomStringConvertible"
+- "Double"
+- "Error"
 - "FloatLiteralType"
-- !private "bson_new"
-- !private "bson_append_oid"
-- !private "bson_has_field"
-- !private "bson_as_json"
-- !private "bson_append_bool"
+- "Int"
+- "Int32"
+- "Int64"
+- !private "Int8"
 - "IntegerLiteralType"
-- !private "bson_iter_find"
-- !private "bson_count_keys"
+- "NoDestroyBSON"
+- "String"
+- !private "StringLiteralType"
 - "TernaryPrecedence"
+- "UInt32"
+- "UInt8"
+- !private "UnicodeScalarType"
+- !private "UnsafeBufferPointer"
+- "UnsafeMutablePointer"
+- "UnsafePointer"
+- !private "bson_append_array"
+- !private "bson_append_array_begin"
+- !private "bson_append_array_end"
+- !private "bson_append_binary"
+- !private "bson_append_bool"
+- !private "bson_append_date_time"
+- !private "bson_append_document"
+- !private "bson_append_double"
+- !private "bson_append_int32"
+- !private "bson_append_int64"
+- !private "bson_append_null"
+- !private "bson_append_oid"
+- !private "bson_append_regex"
+- !private "bson_append_time_t"
+- !private "bson_append_utf8"
+- !private "bson_array_as_json"
+- !private "bson_as_json"
+- !private "bson_compare"
+- !private "bson_concat"
+- !private "bson_copy"
+- !private "bson_count_keys"
+- !private "bson_destroy"
+- !private "bson_error_t"
+- !private "bson_free"
+- !private "bson_get_data"
+- !private "bson_has_field"
+- !private "bson_iter_document"
+- !private "bson_iter_find"
+- !private "bson_iter_find_case"
+- !private "bson_iter_find_descendant"
+- !private "bson_iter_init"
+- !private "bson_iter_key"
+- !private "bson_iter_next"
+- !private "bson_iter_recurse"
+- "bson_iter_t"
+- !private "bson_iter_type"
+- !private "bson_iter_value"
+- !private "bson_new"
+- !private "bson_new_from_data"
+- !private "bson_new_from_json"
+- !private "bson_oid_init_from_string"
+- "bson_oid_t"
+- !private "bson_oid_to_string"
+- "bson_t"
+- "bson_value_t"
+- !private "ptr2Str"
+- "time_t"
+- !private "withUnsafePointer"
+- !private "~="
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Array"]
@@ -177,17 +177,13 @@ depends-member:
 - !private ["Ps9AnyObject", "bson_oid_init_from_string"]
 - !private ["Ps9AnyObject", "bson_oid_t"]
 - !private ["Ps9AnyObject", "bson_oid_to_string"]
-- ["Ps9AnyObject", "close"]
+- !private ["Ps9AnyObject", "close"]
 - ["Ps9AnyObject", "description"]
 - !private ["Ps9AnyObject", "doc"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "ptr2Str"]
 - !private ["Ps9AnyObject", "withUnsafePointer"]
 - ["Ps9AnyObject", ""]
-- !private ["Sa", "Element"]
-- !private ["Sa", "IndexDistance"]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
@@ -341,31 +337,13 @@ depends-member:
 - !private ["VC7MongoDB4BSON9BSONValue", "ptr2Str"]
 - ["VC7MongoDB4BSON9BSONValue", "string"]
 - ["VC7MongoDB4BSON9BSONValue", "type"]
-- !private ["Ps23BidirectionalCollection", "Element"]
-- !private ["Ps23BidirectionalCollection", "IndexDistance"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps23BidirectionalCollection", "init"]
-- !private ["Ps22BidirectionalIndexable", "Element"]
-- !private ["Ps22BidirectionalIndexable", "IndexDistance"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "count"]
-- !private ["Ps22BidirectionalIndexable", "init"]
 - !private ["Ps19BinaryFloatingPoint", "init"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Ps17BitwiseOperations", "hashValue"]
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "allocate"]
 - !private ["Ps7CVarArg", "deallocate"]
 - !private ["Ps7CVarArg", "hashValue"]
@@ -373,12 +351,6 @@ depends-member:
 - !private ["Ps7CVarArg", "pointee"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "withMemoryRebound"]
-- !private ["Vs9Character", "deinit"]
-- !private ["Vs11ClosedRange", "deinit"]
-- !private ["Ps10Collection", "Element"]
-- !private ["Ps10Collection", "IndexDistance"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "count"]
 - !private ["Ps10Collection", "init"]
@@ -393,17 +365,14 @@ depends-member:
 - !private ["Ps10Comparable", "Int"]
 - !private ["Ps10Comparable", "Int32"]
 - !private ["Ps10Comparable", "Int64"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Iterator"]
 - !private ["Ps10Comparable", "OID"]
-- !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "String"]
 - !private ["Ps10Comparable", "UInt32"]
 - !private ["Ps10Comparable", "UInt8"]
 - !private ["Ps10Comparable", "UnsafeBufferPointer"]
 - !private ["Ps10Comparable", "UnsafeMutablePointer"]
 - !private ["Ps10Comparable", "UnsafePointer"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "allocate"]
 - !private ["Ps10Comparable", "asString"]
 - !private ["Ps10Comparable", "bson_append_array"]
@@ -448,7 +417,7 @@ depends-member:
 - !private ["Ps10Comparable", "bson_oid_init_from_string"]
 - !private ["Ps10Comparable", "bson_oid_t"]
 - !private ["Ps10Comparable", "bson_oid_to_string"]
-- ["Ps10Comparable", "close"]
+- !private ["Ps10Comparable", "close"]
 - !private ["Ps10Comparable", "deallocate"]
 - ["Ps10Comparable", "description"]
 - !private ["Ps10Comparable", "doc"]
@@ -461,14 +430,6 @@ depends-member:
 - !private ["Ps10Comparable", "withMemoryRebound"]
 - !private ["Ps10Comparable", "withUnsafePointer"]
 - ["Ps10Comparable", ""]
-- !private ["Vs20CountableClosedRange", "deinit"]
-- !private ["Vs14CountableRange", "Iterator"]
-- !private ["Vs14CountableRange", "_Element"]
-- !private ["Vs14CountableRange", "deinit"]
-- !private ["Ps28CustomDebugStringConvertible", "Element"]
-- !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "allocate"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
@@ -478,10 +439,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "utf8"]
 - !private ["Ps28CustomDebugStringConvertible", "withMemoryRebound"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IndexDistance"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "allocate"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "count"]
@@ -492,13 +449,6 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "subscript"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "utf8"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "withMemoryRebound"]
-- !private ["Ps17CustomReflectable", "Element"]
-- !private ["Ps17CustomReflectable", "IndexDistance"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "allocate"]
 - !private ["Ps17CustomReflectable", "append"]
@@ -518,23 +468,17 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "BSON_SUBTYPE_BINARY"]
 - !private ["Ps23CustomStringConvertible", "CChar"]
 - !private ["Ps23CustomStringConvertible", "Double"]
-- !private ["Ps23CustomStringConvertible", "Element"]
-- !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "Int"]
 - !private ["Ps23CustomStringConvertible", "Int32"]
 - !private ["Ps23CustomStringConvertible", "Int64"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - !private ["Ps23CustomStringConvertible", "Iterator"]
 - !private ["Ps23CustomStringConvertible", "OID"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "UInt32"]
 - !private ["Ps23CustomStringConvertible", "UInt8"]
 - !private ["Ps23CustomStringConvertible", "UnsafeBufferPointer"]
 - !private ["Ps23CustomStringConvertible", "UnsafeMutablePointer"]
 - !private ["Ps23CustomStringConvertible", "UnsafePointer"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "asString"]
@@ -580,7 +524,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "bson_oid_init_from_string"]
 - !private ["Ps23CustomStringConvertible", "bson_oid_t"]
 - !private ["Ps23CustomStringConvertible", "bson_oid_to_string"]
-- ["Ps23CustomStringConvertible", "close"]
+- !private ["Ps23CustomStringConvertible", "close"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - ["Ps23CustomStringConvertible", "description"]
 - !private ["Ps23CustomStringConvertible", "doc"]
@@ -591,7 +535,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "utf8"]
 - !private ["Ps23CustomStringConvertible", "withUnsafePointer"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Sd", "deinit"]
 - !private ["Sd", "init"]
 - !private ["Ps9Equatable", "Array"]
 - !private ["Ps9Equatable", "BSON"]
@@ -604,19 +547,14 @@ depends-member:
 - !private ["Ps9Equatable", "Int"]
 - !private ["Ps9Equatable", "Int32"]
 - !private ["Ps9Equatable", "Int64"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
 - !private ["Ps9Equatable", "Iterator"]
 - !private ["Ps9Equatable", "OID"]
-- ["Ps9Equatable", "RawValue"]
-- !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UInt32"]
 - !private ["Ps9Equatable", "UInt8"]
 - !private ["Ps9Equatable", "UnsafeBufferPointer"]
 - !private ["Ps9Equatable", "UnsafeMutablePointer"]
 - !private ["Ps9Equatable", "UnsafePointer"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - ["Ps9Equatable", "_toAnyHashable"]
 - !private ["Ps9Equatable", "allocate"]
@@ -666,7 +604,7 @@ depends-member:
 - !private ["Ps9Equatable", "bson_oid_init_from_string"]
 - !private ["Ps9Equatable", "bson_oid_t"]
 - !private ["Ps9Equatable", "bson_oid_to_string"]
-- ["Ps9Equatable", "close"]
+- !private ["Ps9Equatable", "close"]
 - ["Ps9Equatable", "code"]
 - ["Ps9Equatable", "codewscope"]
 - ["Ps9Equatable", "dateTime"]
@@ -703,10 +641,6 @@ depends-member:
 - ["Ps5Error", "_userInfo"]
 - !private ["Ps5Error", "syntaxError"]
 - ["Ps5Error", ""]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
@@ -714,23 +648,13 @@ depends-member:
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "utf8"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "hashValue"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "utf8"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "utf8"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "utf8"]
-- !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
-- ["Ps8Hashable", "RawValue"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - ["Ps8Hashable", "_toAnyHashable"]
 - !private ["Ps8Hashable", "allocate"]
@@ -763,41 +687,12 @@ depends-member:
 - ["Ps8Hashable", "utf8"]
 - !private ["Ps8Hashable", "withMemoryRebound"]
 - ["Ps8Hashable", ""]
-- !private ["Ps9Indexable", "Element"]
-- !private ["Ps9Indexable", "IndexDistance"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "count"]
-- !private ["Ps9Indexable", "init"]
-- !private ["Ps13IndexableBase", "Element"]
-- !private ["Ps13IndexableBase", "IndexDistance"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "count"]
-- !private ["Ps13IndexableBase", "init"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
-- !private ["Si", "deinit"]
 - !private ["Si", "hashValue"]
 - !private ["Si", "init"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int32", "init"]
-- !private ["Vs5Int64", "deinit"]
 - !private ["Vs5Int64", "init"]
-- !private ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
 - !private ["Ps7Integer", "hashValue"]
 - !private ["Ps7Integer", "init"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps17IntegerArithmetic", "hashValue"]
 - !private ["Ps17IntegerArithmetic", "init"]
 - ["VC7MongoDB4BSON8Iterator", "BSON"]
@@ -825,30 +720,15 @@ depends-member:
 - ["VC7MongoDB4BSON8Iterator", "init"]
 - ["VC7MongoDB4BSON8Iterator", "iter"]
 - ["VC7MongoDB4BSON8Iterator", "next"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps25LosslessStringConvertible", "utf8"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "hashValue"]
 - !private ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "utf8"]
-- !private ["Ps17MutableCollection", "Element"]
-- !private ["Ps17MutableCollection", "IndexDistance"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "init"]
-- !private ["Ps16MutableIndexable", "Element"]
-- !private ["Ps16MutableIndexable", "IndexDistance"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "count"]
-- !private ["Ps16MutableIndexable", "init"]
 - ["C7MongoDB13NoDestroyBSON", "close"]
 - ["C7MongoDB13NoDestroyBSON", "deinit"]
 - !private ["C7MongoDB13NoDestroyBSON", "doc"]
@@ -864,37 +744,12 @@ depends-member:
 - ["VC7MongoDB4BSON3OID", "init"]
 - ["VC7MongoDB4BSON3OID", "oid"]
 - !private ["VC7MongoDB4BSON3OID", "ptr2Str"]
-- !private ["Sq", "deinit"]
-- !private ["Ps22RandomAccessCollection", "Element"]
-- !private ["Ps22RandomAccessCollection", "IndexDistance"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "init"]
-- !private ["Ps21RandomAccessIndexable", "Element"]
-- !private ["Ps21RandomAccessIndexable", "IndexDistance"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "count"]
-- !private ["Ps21RandomAccessIndexable", "init"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Element"]
-- !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps26RangeReplaceableCollection", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "Element"]
-- !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "count"]
-- !private ["Ps25RangeReplaceableIndexable", "init"]
-- ["Ps16RawRepresentable", "RawValue"]
 - ["Ps16RawRepresentable", "_toAnyHashable"]
 - ["Ps16RawRepresentable", "array"]
 - ["Ps16RawRepresentable", "binary"]
@@ -921,26 +776,13 @@ depends-member:
 - ["Ps16RawRepresentable", "undefined"]
 - ["Ps16RawRepresentable", "utf8"]
 - ["Ps16RawRepresentable", ""]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "IndexDistance"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "count"]
 - !private ["Ps8Sequence", "init"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
 - !private ["Ps13SignedInteger", "hashValue"]
 - !private ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Ps12SignedNumber", "hashValue"]
 - !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "allocate"]
 - !private ["Ps10Strideable", "deallocate"]
 - !private ["Ps10Strideable", "hashValue"]
@@ -954,18 +796,8 @@ depends-member:
 - !private ["Ps16TextOutputStream", "utf8"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "utf8"]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "Stride"]
-- !private ["Vs6UInt32", "deinit"]
 - !private ["Vs6UInt32", "init"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
-- !private ["VSS8UTF8View", "IndexDistance"]
 - !private ["VSS8UTF8View", "count"]
-- !private ["Sc", "deinit"]
-- !private ["SR", "Iterator"]
-- !private ["SR", "_Element"]
 - !private ["SR", "init"]
 - !private ["Sp", "allocate"]
 - !private ["Sp", "deallocate"]
@@ -974,33 +806,23 @@ depends-member:
 - !private ["SP", "pointee"]
 - !private ["SP", "subscript"]
 - !private ["SP", "withMemoryRebound"]
-- !private ["Ps15UnsignedInteger", "Stride"]
 - !private ["Ps15UnsignedInteger", "init"]
-- !private ["Ps14_ArrayProtocol", "Element"]
-- !private ["Ps14_ArrayProtocol", "IndexDistance"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "init"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "count"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
-- !private ["Ps24_DestructorSafeContainer", "Element"]
-- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "init"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "utf8"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "init"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "hashValue"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -1009,10 +831,8 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "utf8"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "utf8"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
-- ["Ps9_Hashable", "RawValue"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "utf8"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - ["Ps9_Hashable", "_toAnyHashable"]
 - !private ["Ps9_Hashable", "allocate"]
@@ -1045,36 +865,35 @@ depends-member:
 - ["Ps9_Hashable", "utf8"]
 - !private ["Ps9_Hashable", "withMemoryRebound"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - !private ["Ps14_Incrementable", "hashValue"]
 - !private ["Ps14_Incrementable", "init"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "count"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "count"]
+- !private ["Ps14_IndexableBase", "init"]
 - !private ["Ps8_Integer", "hashValue"]
 - !private ["Ps8_Integer", "init"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "hashValue"]
 - !private ["Ps18_IntegerArithmetic", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "count"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps8_Pointer", "allocate"]
 - !private ["Ps8_Pointer", "deallocate"]
 - !private ["Ps8_Pointer", "init"]
 - !private ["Ps8_Pointer", "pointee"]
 - !private ["Ps8_Pointer", "subscript"]
 - !private ["Ps8_Pointer", "withMemoryRebound"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "count"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "count"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 - !private ["Ps14_SignedInteger", "hashValue"]
 - !private ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 - !private ["Ps11_Strideable", "allocate"]
 - !private ["Ps11_Strideable", "deallocate"]
 - !private ["Ps11_Strideable", "hashValue"]
@@ -1122,17 +941,12 @@ depends-nominal:
 - "OC7MongoDB4BSON8BSONType"
 - "VC7MongoDB4BSON9BSONValue"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
 - !private "Ps19BinaryFloatingPoint"
 - !private "Ps17BitwiseOperations"
 - !private "Sb"
 - !private "Ps7CVarArg"
-- !private "Vs9Character"
-- !private "Vs11ClosedRange"
 - !private "Ps10Collection"
 - "Ps10Comparable"
-- !private "Vs20CountableClosedRange"
-- !private "Vs14CountableRange"
 - !private "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
@@ -1145,36 +959,23 @@ depends-nominal:
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps25ExpressibleByFloatLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
-- !private "Sf"
 - !private "Ps13FloatingPoint"
 - "Ps8Hashable"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
 - !private "Si"
-- !private "Vs5Int16"
 - !private "Vs5Int32"
 - !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - "VC7MongoDB4BSON8Iterator"
-- !private "Ps16IteratorProtocol"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - "C7MongoDB13NoDestroyBSON"
 - "VC7MongoDB4BSON3OID"
-- !private "Sq"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - "Ps16RawRepresentable"
 - !private "Ps8Sequence"
 - !private "Ps13SignedInteger"
@@ -1183,18 +984,14 @@ depends-nominal:
 - !private "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- !private "Su"
-- !private "Vs6UInt16"
 - !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
 - !private "VSS8UTF8View"
-- !private "Sc"
 - !private "SR"
 - !private "Sp"
 - !private "SP"
 - !private "Ps15UnsignedInteger"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps24_DestructorSafeContainer"
@@ -1206,12 +1003,17 @@ depends-nominal:
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
-- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps17_MutableIndexable"
 - !private "Ps8_Pointer"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 - !private "VVVSC13_bson_value_t21__Unnamed_union_value25__Unnamed_struct_v_binary"
@@ -1298,6 +1100,6 @@ depends-external:
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-config.h"
 - "/usr/local/Cellar/mongo-c-driver/1.6.0/include/libbson-1.0/bson-compat.h"
 - "/usr/local/include/libmongoc-1.0/mongoc.h"
-- "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/libmongoc-2.0.0/module.modulemap"
+- "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-mongo-c.git-4363366770464592526/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 interface-hash: "a391e4faf38c1ca06dd55ebff07695b6"

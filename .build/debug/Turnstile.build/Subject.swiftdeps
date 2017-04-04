@@ -10,20 +10,19 @@ provides-member:
 - ["V9Turnstile21AuthenticationDetails", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "TernaryPrecedence"
-- "Subject"
-- "String"
-- "Credentials"
 - !private "!="
-- "AuthenticationDetails"
-- "AssignmentPrecedence"
-- "Bool"
-- "Turnstile"
 - "Account"
+- "AssignmentPrecedence"
+- "AuthenticationDetails"
+- "Bool"
 - "BooleanLiteralType"
+- "Credentials"
 - !private "Session"
+- "String"
+- "Subject"
+- "TernaryPrecedence"
+- "Turnstile"
 depends-member:
-- ["P9Turnstile7Account", "deinit"]
 - !private ["Ps9AnyObject", "AuthenticationDetails"]
 - !private ["Ps9AnyObject", "Session"]
 - !private ["Ps9AnyObject", "authDetails"]
@@ -37,12 +36,9 @@ depends-member:
 - ["V9Turnstile21AuthenticationDetails", "String"]
 - ["V9Turnstile21AuthenticationDetails", "account"]
 - ["V9Turnstile21AuthenticationDetails", "credentialType"]
-- ["V9Turnstile21AuthenticationDetails", "deinit"]
 - ["V9Turnstile21AuthenticationDetails", "init"]
 - ["V9Turnstile21AuthenticationDetails", "sessionID"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- ["P9Turnstile11Credentials", "deinit"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -50,16 +46,12 @@ depends-member:
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
-- ["Sq", "deinit"]
 - !private ["P9Turnstile5Realm", "authenticate"]
-- ["P9Turnstile5Realm", "deinit"]
 - !private ["P9Turnstile5Realm", "register"]
 - !private ["V9Turnstile7Session", "deinit"]
 - !private ["P9Turnstile14SessionManager", "createSession"]
-- ["P9Turnstile14SessionManager", "deinit"]
 - !private ["P9Turnstile14SessionManager", "destroySession"]
 - !private ["P9Turnstile14SessionManager", "restoreAccount"]
-- ["SS", "deinit"]
 - ["C9Turnstile7Subject", "AuthenticationDetails"]
 - ["C9Turnstile7Subject", "Bool"]
 - ["C9Turnstile7Subject", "Credentials"]
@@ -75,19 +67,15 @@ depends-member:
 - ["C9Turnstile7Subject", "register"]
 - !private ["C9Turnstile7Subject", "restore"]
 - !private ["C9Turnstile7Subject", "turnstile"]
-- ["C9Turnstile9Turnstile", "deinit"]
 - !private ["C9Turnstile9Turnstile", "realm"]
 - !private ["C9Turnstile9Turnstile", "sessionManager"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
-- "P9Turnstile7Account"
 - "Ps9AnyObject"
 - "V9Turnstile21AuthenticationDetails"
-- "Sb"
-- "P9Turnstile11Credentials"
+- !private "Sb"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - !private "Ps23CustomStringConvertible"
@@ -95,26 +83,28 @@ depends-nominal:
 - !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps8Hashable"
 - !private "Ps25LosslessStringConvertible"
-- "Sq"
-- "P9Turnstile5Realm"
+- !private "P9Turnstile5Realm"
 - !private "V9Turnstile7Session"
-- "P9Turnstile14SessionManager"
-- "SS"
+- !private "P9Turnstile14SessionManager"
 - "C9Turnstile7Subject"
-- "C9Turnstile9Turnstile"
+- !private "C9Turnstile9Turnstile"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
-- "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 - "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/TurnstileCrypto.swiftmodule"
 interface-hash: "0589dce81b513fa0edce4f7574500286"

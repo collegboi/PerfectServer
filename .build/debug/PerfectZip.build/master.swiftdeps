@@ -1,6 +1,6 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "7d32f4f865bca2c889a334d15d88f8a2"
-build_time: [542976570, 736824000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "388a34a7693ce9a1eed142885af363e3"
+build_time: [544612495, 424096000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectZip-2.0.2/Sources/Utilities.swift": [540764136, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectZip-2.0.2/Sources/Zip.swift": [540764136, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Zip.git--2154399287504360177/Sources/Utilities.swift": [544612400, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Zip.git--2154399287504360177/Sources/Zip.swift": [544612400, 0]

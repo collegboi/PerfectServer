@@ -7,50 +7,47 @@ provides-member:
 - ["V10PerfectLib3Dir", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Dir"
-- !private "closedir"
-- !private "getcwd"
-- !private "&&"
-- !private "ThrowFileError"
-- !private "UnicodeScalarType"
-- !private "access"
-- !private "??"
-- "StringLiteralType"
-- !private "mkdir"
-- !private "rmdir"
-- "Bool"
-- !private "F_OK"
-- !private "||"
-- !private "CChar"
-- "UnsafeMutablePointer"
-- !private "chdir"
-- !private "Int8"
-- "CastingPrecedence"
-- !private "UInt8"
-- "AssignmentPrecedence"
-- "dirent"
-- "File"
-- !private "DT_DIR"
-- !private "+="
-- !private "=="
-- !private "!="
-- "Array"
-- !private "opendir"
 - !private "!"
-- !private "readdir_r"
-- !private "..<"
-- "DIR"
-- !private "Mirror"
+- !private "!="
+- !private "&&"
 - !private "+"
-- !private "UnsafeMutableRawPointer"
-- "String"
+- !private "+="
+- !private "..<"
+- !private "=="
+- !private "??"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "CChar"
+- "CastingPrecedence"
+- "DIR"
+- !private "DT_DIR"
+- "Dir"
+- !private "F_OK"
+- "File"
 - "Int32"
+- !private "Int8"
+- !private "Mirror"
+- "String"
+- "StringLiteralType"
 - "TernaryPrecedence"
+- !private "ThrowFileError"
+- !private "UInt8"
+- !private "UnicodeScalarType"
+- "UnsafeMutablePointer"
+- !private "UnsafeMutableRawPointer"
+- !private "access"
+- !private "chdir"
+- !private "closedir"
+- "dirent"
+- !private "getcwd"
+- !private "mkdir"
+- !private "opendir"
+- !private "readdir_r"
+- !private "rmdir"
+- !private "||"
 depends-member:
-- !private ["Vs13AnyCollection", "Iterator"]
-- ["Vs13AnyCollection", "deinit"]
 - !private ["Vs13AnyCollection", "makeIterator"]
-- ["Vs11AnyIterator", "deinit"]
 - !private ["Vs11AnyIterator", "next"]
 - ["Ps9AnyObject", "PermissionMode"]
 - !private ["Ps9AnyObject", "begins"]
@@ -62,30 +59,12 @@ depends-member:
 - !private ["Ps9AnyObject", "perms"]
 - !private ["Ps9AnyObject", "resolveTilde"]
 - !private ["Ps9AnyObject", "resolvingSymlinksInFilePath"]
-- !private ["Sa", "Iterator"]
-- !private ["Sa", "_Element"]
 - !private ["Sa", "append"]
-- ["Sa", "deinit"]
 - !private ["Sa", "init"]
-- !private ["Ps23BidirectionalCollection", "Iterator"]
-- !private ["Ps23BidirectionalCollection", "_Element"]
 - !private ["Ps23BidirectionalCollection", "append"]
 - !private ["Ps23BidirectionalCollection", "init"]
-- !private ["Ps22BidirectionalIndexable", "Iterator"]
-- !private ["Ps22BidirectionalIndexable", "_Element"]
-- !private ["Ps22BidirectionalIndexable", "append"]
-- !private ["Ps22BidirectionalIndexable", "init"]
-- !private ["Ps17BitwiseOperations", "IntegerLiteralType"]
-- !private ["Ps17BitwiseOperations", "Stride"]
-- !private ["Ps17BitwiseOperations", "_DisabledRangeIndex"]
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "IntegerLiteralType"]
-- !private ["Ps7CVarArg", "Iterator"]
-- !private ["Ps7CVarArg", "Stride"]
-- !private ["Ps7CVarArg", "_DisabledRangeIndex"]
-- !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "allocate"]
 - !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "begins"]
@@ -97,14 +76,9 @@ depends-member:
 - !private ["Ps7CVarArg", "lastFilePathComponent"]
 - !private ["Ps7CVarArg", "pointee"]
 - !private ["Ps7CVarArg", "resolvingSymlinksInFilePath"]
-- !private ["Ps10Collection", "Iterator"]
-- !private ["Ps10Collection", "_Element"]
 - !private ["Ps10Collection", "append"]
 - !private ["Ps10Collection", "init"]
 - !private ["Ps10Collection", "makeIterator"]
-- !private ["Ps10Comparable", "IntegerLiteralType"]
-- !private ["Ps10Comparable", "Stride"]
-- !private ["Ps10Comparable", "_DisabledRangeIndex"]
 - !private ["Ps10Comparable", "allocate"]
 - !private ["Ps10Comparable", "assumingMemoryBound"]
 - !private ["Ps10Comparable", "begins"]
@@ -116,11 +90,6 @@ depends-member:
 - !private ["Ps10Comparable", "lastFilePathComponent"]
 - !private ["Ps10Comparable", "pointee"]
 - !private ["Ps10Comparable", "resolvingSymlinksInFilePath"]
-- !private ["Vs14CountableRange", "Iterator"]
-- !private ["Vs14CountableRange", "_Element"]
-- ["Vs14CountableRange", "deinit"]
-- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
-- !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "allocate"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "assumingMemoryBound"]
@@ -133,9 +102,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "lastFilePathComponent"]
 - !private ["Ps28CustomDebugStringConvertible", "pointee"]
 - !private ["Ps28CustomDebugStringConvertible", "resolvingSymlinksInFilePath"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "IntegerLiteralType"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "allocate"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "assumingMemoryBound"]
@@ -148,11 +114,6 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "lastFilePathComponent"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "pointee"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "resolvingSymlinksInFilePath"]
-- !private ["Ps17CustomReflectable", "IntegerLiteralType"]
-- !private ["Ps17CustomReflectable", "Iterator"]
-- !private ["Ps17CustomReflectable", "Stride"]
-- !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
-- !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "allocate"]
 - !private ["Ps17CustomReflectable", "append"]
@@ -167,11 +128,6 @@ depends-member:
 - !private ["Ps17CustomReflectable", "lastFilePathComponent"]
 - !private ["Ps17CustomReflectable", "pointee"]
 - !private ["Ps17CustomReflectable", "resolvingSymlinksInFilePath"]
-- !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
-- !private ["Ps23CustomStringConvertible", "Iterator"]
-- !private ["Ps23CustomStringConvertible", "Stride"]
-- !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
-- !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "begins"]
@@ -203,7 +159,6 @@ depends-member:
 - !private ["V10PerfectLib3Dir", "chdir"]
 - !private ["V10PerfectLib3Dir", "closedir"]
 - ["V10PerfectLib3Dir", "create"]
-- ["V10PerfectLib3Dir", "deinit"]
 - ["V10PerfectLib3Dir", "delete"]
 - ["V10PerfectLib3Dir", "dirent"]
 - ["V10PerfectLib3Dir", "exists"]
@@ -223,12 +178,6 @@ depends-member:
 - !private ["V10PerfectLib3Dir", "rmdir"]
 - ["V10PerfectLib3Dir", "setAsWorkingDir"]
 - ["V10PerfectLib3Dir", "workingDir"]
-- !private ["Ps9Equatable", "Element"]
-- !private ["Ps9Equatable", "IntegerLiteralType"]
-- !private ["Ps9Equatable", "Iterator"]
-- !private ["Ps9Equatable", "Stride"]
-- !private ["Ps9Equatable", "_DisabledRangeIndex"]
-- !private ["Ps9Equatable", "_Element"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "allocate"]
 - !private ["Ps9Equatable", "assumingMemoryBound"]
@@ -245,9 +194,6 @@ depends-member:
 - !private ["Ps9Equatable", "rwxUser"]
 - !private ["Ps9Equatable", "rxGroup"]
 - !private ["Ps9Equatable", "rxOther"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
-- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
-- !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "append"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "rawValue"]
@@ -262,18 +208,8 @@ depends-member:
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "lastFilePathComponent"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "resolvingSymlinksInFilePath"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
-- !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
 - !private ["Ps23ExpressibleByNilLiteral", "assumingMemoryBound"]
-- !private ["Ps32ExpressibleByStringInterpolation", "begins"]
-- !private ["Ps32ExpressibleByStringInterpolation", "deletingLastFilePathComponent"]
-- !private ["Ps32ExpressibleByStringInterpolation", "ends"]
-- !private ["Ps32ExpressibleByStringInterpolation", "filePathComponents"]
-- ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "lastFilePathComponent"]
-- !private ["Ps32ExpressibleByStringInterpolation", "resolvingSymlinksInFilePath"]
 - !private ["Ps26ExpressibleByStringLiteral", "begins"]
 - !private ["Ps26ExpressibleByStringLiteral", "deletingLastFilePathComponent"]
 - !private ["Ps26ExpressibleByStringLiteral", "ends"]
@@ -289,13 +225,9 @@ depends-member:
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "lastFilePathComponent"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "resolvingSymlinksInFilePath"]
 - ["C10PerfectLib4File", "PermissionMode"]
-- ["C10PerfectLib4File", "deinit"]
 - !private ["C10PerfectLib4File", "init"]
 - !private ["C10PerfectLib4File", "perms"]
 - !private ["C10PerfectLib4File", "resolveTilde"]
-- !private ["Ps8Hashable", "IntegerLiteralType"]
-- !private ["Ps8Hashable", "Stride"]
-- !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "allocate"]
 - !private ["Ps8Hashable", "assumingMemoryBound"]
@@ -308,40 +240,10 @@ depends-member:
 - !private ["Ps8Hashable", "lastFilePathComponent"]
 - !private ["Ps8Hashable", "pointee"]
 - !private ["Ps8Hashable", "resolvingSymlinksInFilePath"]
-- ["SQ", "deinit"]
-- !private ["Ps9Indexable", "Iterator"]
-- !private ["Ps9Indexable", "_Element"]
-- !private ["Ps9Indexable", "append"]
-- !private ["Ps9Indexable", "init"]
-- !private ["Ps9Indexable", "makeIterator"]
-- !private ["Ps13IndexableBase", "Iterator"]
-- !private ["Ps13IndexableBase", "_Element"]
-- !private ["Ps13IndexableBase", "append"]
-- !private ["Ps13IndexableBase", "init"]
-- !private ["Ps13IndexableBase", "makeIterator"]
-- !private ["Vs16IndexingIterator", "Element"]
-- !private ["Si", "IntegerLiteralType"]
-- !private ["Si", "Stride"]
-- !private ["Si", "_DisabledRangeIndex"]
-- ["Si", "deinit"]
-- ["Vs5Int32", "deinit"]
 - !private ["Vs5Int32", "init"]
-- ["Vs4Int8", "deinit"]
-- !private ["Ps7Integer", "IntegerLiteralType"]
-- !private ["Ps7Integer", "Stride"]
-- !private ["Ps7Integer", "_DisabledRangeIndex"]
 - !private ["Ps7Integer", "init"]
-- !private ["Ps17IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps17IntegerArithmetic", "Stride"]
-- !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps17IntegerArithmetic", "init"]
-- !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps16IteratorProtocol", "next"]
-- !private ["P10PerfectLib15JSONConvertible", "IntegerLiteralType"]
-- !private ["P10PerfectLib15JSONConvertible", "Iterator"]
-- !private ["P10PerfectLib15JSONConvertible", "Stride"]
-- !private ["P10PerfectLib15JSONConvertible", "_DisabledRangeIndex"]
-- !private ["P10PerfectLib15JSONConvertible", "_Element"]
 - !private ["P10PerfectLib15JSONConvertible", "_getBuiltinLogicValue"]
 - !private ["P10PerfectLib15JSONConvertible", "append"]
 - !private ["P10PerfectLib15JSONConvertible", "assumingMemoryBound"]
@@ -361,11 +263,7 @@ depends-member:
 - !private ["Ps25LosslessStringConvertible", "lastFilePathComponent"]
 - !private ["Ps25LosslessStringConvertible", "resolvingSymlinksInFilePath"]
 - !private ["Vs6Mirror", "children"]
-- ["Vs6Mirror", "deinit"]
 - !private ["Vs6Mirror", "init"]
-- !private ["Ps10MirrorPath", "IntegerLiteralType"]
-- !private ["Ps10MirrorPath", "Stride"]
-- !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
 - !private ["Ps10MirrorPath", "begins"]
 - !private ["Ps10MirrorPath", "deletingLastFilePathComponent"]
 - !private ["Ps10MirrorPath", "ends"]
@@ -373,14 +271,8 @@ depends-member:
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps10MirrorPath", "lastFilePathComponent"]
 - !private ["Ps10MirrorPath", "resolvingSymlinksInFilePath"]
-- !private ["Ps17MutableCollection", "Iterator"]
-- !private ["Ps17MutableCollection", "_Element"]
 - !private ["Ps17MutableCollection", "append"]
 - !private ["Ps17MutableCollection", "init"]
-- !private ["Ps16MutableIndexable", "Iterator"]
-- !private ["Ps16MutableIndexable", "_Element"]
-- !private ["Ps16MutableIndexable", "append"]
-- !private ["Ps16MutableIndexable", "init"]
 - !private ["PSo8NSCoding", "begins"]
 - !private ["PSo8NSCoding", "deletingLastFilePathComponent"]
 - !private ["PSo8NSCoding", "ends"]
@@ -406,7 +298,6 @@ depends-member:
 - !private ["CSo8NSObject", "deletingLastFilePathComponent"]
 - !private ["CSo8NSObject", "ends"]
 - !private ["CSo8NSObject", "filePathComponents"]
-- ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "lastFilePathComponent"]
 - !private ["CSo8NSObject", "resolvingSymlinksInFilePath"]
 - !private ["PSo16NSObjectProtocol", "begins"]
@@ -430,72 +321,40 @@ depends-member:
 - ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "lastFilePathComponent"]
 - !private ["CSo8NSString", "resolvingSymlinksInFilePath"]
-- ["Os5Never", "deinit"]
-- !private ["Ps9OptionSet", "Element"]
 - !private ["Ps9OptionSet", "rawValue"]
 - !private ["Ps9OptionSet", "rwxUser"]
 - !private ["Ps9OptionSet", "rxGroup"]
 - !private ["Ps9OptionSet", "rxOther"]
 - !private ["Sq", "assumingMemoryBound"]
-- ["Sq", "deinit"]
-- !private ["VC10PerfectLib4File14PermissionMode", "Element"]
-- ["VC10PerfectLib4File14PermissionMode", "deinit"]
+- !private ["VC10PerfectLib4File14PermissionMode", "deinit"]
 - !private ["VC10PerfectLib4File14PermissionMode", "rawValue"]
 - !private ["VC10PerfectLib4File14PermissionMode", "rwxUser"]
 - !private ["VC10PerfectLib4File14PermissionMode", "rxGroup"]
 - !private ["VC10PerfectLib4File14PermissionMode", "rxOther"]
-- !private ["Ps22RandomAccessCollection", "Iterator"]
-- !private ["Ps22RandomAccessCollection", "_Element"]
 - !private ["Ps22RandomAccessCollection", "append"]
 - !private ["Ps22RandomAccessCollection", "init"]
-- !private ["Ps21RandomAccessIndexable", "Iterator"]
-- !private ["Ps21RandomAccessIndexable", "_Element"]
-- !private ["Ps21RandomAccessIndexable", "append"]
-- !private ["Ps21RandomAccessIndexable", "init"]
-- !private ["Vs5Range", "deinit"]
-- !private ["Ps26RangeReplaceableCollection", "Iterator"]
-- !private ["Ps26RangeReplaceableCollection", "_Element"]
 - !private ["Ps26RangeReplaceableCollection", "append"]
 - !private ["Ps26RangeReplaceableCollection", "init"]
-- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
-- !private ["Ps25RangeReplaceableIndexable", "_Element"]
-- !private ["Ps25RangeReplaceableIndexable", "append"]
-- !private ["Ps25RangeReplaceableIndexable", "init"]
-- !private ["Ps16RawRepresentable", "Element"]
 - !private ["Ps16RawRepresentable", "rawValue"]
 - !private ["Ps16RawRepresentable", "rwxUser"]
 - !private ["Ps16RawRepresentable", "rxGroup"]
 - !private ["Ps16RawRepresentable", "rxOther"]
-- !private ["Ps8Sequence", "Element"]
-- !private ["Ps8Sequence", "Iterator"]
-- !private ["Ps8Sequence", "_Element"]
 - !private ["Ps8Sequence", "append"]
 - !private ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "makeIterator"]
 - !private ["Ps8Sequence", "next"]
-- !private ["Ps10SetAlgebra", "Element"]
 - !private ["Ps10SetAlgebra", "rawValue"]
 - !private ["Ps10SetAlgebra", "rwxUser"]
 - !private ["Ps10SetAlgebra", "rxGroup"]
 - !private ["Ps10SetAlgebra", "rxOther"]
-- !private ["Ps13SignedInteger", "IntegerLiteralType"]
-- !private ["Ps13SignedInteger", "Stride"]
-- !private ["Ps13SignedInteger", "_DisabledRangeIndex"]
 - !private ["Ps13SignedInteger", "init"]
-- !private ["Ps12SignedNumber", "IntegerLiteralType"]
-- !private ["Ps12SignedNumber", "Stride"]
-- !private ["Ps12SignedNumber", "_DisabledRangeIndex"]
 - !private ["Ps12SignedNumber", "init"]
-- !private ["Ps10Strideable", "IntegerLiteralType"]
-- !private ["Ps10Strideable", "Stride"]
-- !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "allocate"]
 - !private ["Ps10Strideable", "assumingMemoryBound"]
 - !private ["Ps10Strideable", "deallocate"]
 - !private ["Ps10Strideable", "init"]
 - !private ["Ps10Strideable", "pointee"]
 - !private ["SS", "begins"]
-- ["SS", "deinit"]
 - !private ["SS", "deletingLastFilePathComponent"]
 - !private ["SS", "ends"]
 - !private ["SS", "filePathComponents"]
@@ -516,31 +375,18 @@ depends-member:
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "lastFilePathComponent"]
 - !private ["Ps20TextOutputStreamable", "resolvingSymlinksInFilePath"]
-- !private ["Vs6UInt16", "Stride"]
-- !private ["Vs6UInt16", "_DisabledRangeIndex"]
-- ["Vs6UInt16", "deinit"]
-- ["Vs5UInt8", "deinit"]
 - !private ["Sp", "allocate"]
 - !private ["Sp", "deallocate"]
-- ["Sp", "deinit"]
 - !private ["Sp", "pointee"]
 - !private ["Sv", "assumingMemoryBound"]
-- ["Sv", "deinit"]
 - !private ["Sv", "init"]
-- !private ["Ps15UnsignedInteger", "Stride"]
-- !private ["Ps15UnsignedInteger", "_DisabledRangeIndex"]
-- !private ["Ps22_AnyCollectionProtocol", "Iterator"]
 - !private ["Ps22_AnyCollectionProtocol", "makeIterator"]
-- !private ["Ps14_ArrayProtocol", "Iterator"]
-- !private ["Ps14_ArrayProtocol", "_Element"]
 - !private ["Ps14_ArrayProtocol", "append"]
 - !private ["Ps14_ArrayProtocol", "init"]
-- !private ["Ps24_DestructorSafeContainer", "Iterator"]
-- !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps23_BidirectionalIndexable", "append"]
+- !private ["Ps23_BidirectionalIndexable", "init"]
 - !private ["Ps24_DestructorSafeContainer", "append"]
 - !private ["Ps24_DestructorSafeContainer", "init"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
-- !private ["Ps28_DisallowMixedSignArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "begins"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "deletingLastFilePathComponent"]
@@ -549,9 +395,6 @@ depends-member:
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "lastFilePathComponent"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "resolvingSymlinksInFilePath"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
-- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "begins"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "deletingLastFilePathComponent"]
@@ -574,6 +417,13 @@ depends-member:
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "lastFilePathComponent"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "resolvingSymlinksInFilePath"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "begins"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "deletingLastFilePathComponent"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "ends"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "filePathComponents"]
+- ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "lastFilePathComponent"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "resolvingSymlinksInFilePath"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "begins"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "deletingLastFilePathComponent"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "ends"]
@@ -581,9 +431,6 @@ depends-member:
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "lastFilePathComponent"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "resolvingSymlinksInFilePath"]
-- !private ["Ps9_Hashable", "IntegerLiteralType"]
-- !private ["Ps9_Hashable", "Stride"]
-- !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "allocate"]
 - !private ["Ps9_Hashable", "assumingMemoryBound"]
@@ -596,23 +443,17 @@ depends-member:
 - !private ["Ps9_Hashable", "lastFilePathComponent"]
 - !private ["Ps9_Hashable", "pointee"]
 - !private ["Ps9_Hashable", "resolvingSymlinksInFilePath"]
-- !private ["Ps14_Incrementable", "IntegerLiteralType"]
-- !private ["Ps14_Incrementable", "Stride"]
-- !private ["Ps14_Incrementable", "_DisabledRangeIndex"]
 - !private ["Ps14_Incrementable", "init"]
-- !private ["Ps8_Integer", "IntegerLiteralType"]
-- !private ["Ps8_Integer", "Stride"]
-- !private ["Ps8_Integer", "_DisabledRangeIndex"]
+- !private ["Ps10_Indexable", "append"]
+- !private ["Ps10_Indexable", "init"]
+- !private ["Ps10_Indexable", "makeIterator"]
+- !private ["Ps14_IndexableBase", "append"]
+- !private ["Ps14_IndexableBase", "init"]
+- !private ["Ps14_IndexableBase", "makeIterator"]
 - !private ["Ps8_Integer", "init"]
-- !private ["Ps18_IntegerArithmetic", "IntegerLiteralType"]
-- !private ["Ps18_IntegerArithmetic", "Stride"]
-- !private ["Ps18_IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps18_IntegerArithmetic", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
-- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
-- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
-- !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
-- !private ["Ps21_ObjectiveCBridgeable", "_Element"]
+- !private ["Ps17_MutableIndexable", "append"]
+- !private ["Ps17_MutableIndexable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "append"]
 - !private ["Ps21_ObjectiveCBridgeable", "assumingMemoryBound"]
@@ -623,44 +464,36 @@ depends-member:
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "lastFilePathComponent"]
 - !private ["Ps21_ObjectiveCBridgeable", "resolvingSymlinksInFilePath"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps8_Pointer", "allocate"]
 - !private ["Ps8_Pointer", "assumingMemoryBound"]
 - !private ["Ps8_Pointer", "deallocate"]
 - !private ["Ps8_Pointer", "init"]
 - !private ["Ps8_Pointer", "pointee"]
-- !private ["Ps14_SignedInteger", "IntegerLiteralType"]
-- !private ["Ps14_SignedInteger", "Stride"]
-- !private ["Ps14_SignedInteger", "_DisabledRangeIndex"]
+- !private ["Ps22_RandomAccessIndexable", "append"]
+- !private ["Ps22_RandomAccessIndexable", "init"]
+- !private ["Ps26_RangeReplaceableIndexable", "append"]
+- !private ["Ps26_RangeReplaceableIndexable", "init"]
 - !private ["Ps14_SignedInteger", "init"]
-- !private ["Ps11_Strideable", "IntegerLiteralType"]
-- !private ["Ps11_Strideable", "Stride"]
-- !private ["Ps11_Strideable", "_DisabledRangeIndex"]
 - !private ["Ps11_Strideable", "allocate"]
 - !private ["Ps11_Strideable", "assumingMemoryBound"]
 - !private ["Ps11_Strideable", "deallocate"]
 - !private ["Ps11_Strideable", "init"]
 - !private ["Ps11_Strideable", "pointee"]
-- !private ["Ps14_StringElement", "Stride"]
-- !private ["Ps14_StringElement", "_DisabledRangeIndex"]
 - !private ["VSC6dirent", "d_name"]
 - !private ["VSC6dirent", "d_namlen"]
 - !private ["VSC6dirent", "d_type"]
-- ["VSC6dirent", "deinit"]
 - !private ["VSC6dirent", "init"]
 depends-nominal:
-- "Vs13AnyCollection"
-- "Vs11AnyIterator"
+- !private "Vs13AnyCollection"
+- !private "Vs11AnyIterator"
 - "Ps9AnyObject"
-- "Sa"
+- !private "Sa"
 - !private "Ps23BidirectionalCollection"
-- !private "Ps22BidirectionalIndexable"
 - !private "Ps17BitwiseOperations"
-- "Sb"
+- !private "Sb"
 - "Ps7CVarArg"
 - !private "Ps10Collection"
 - "Ps10Comparable"
-- "Vs14CountableRange"
 - "Ps28CustomDebugStringConvertible"
 - "Ps29CustomPlaygroundQuickLookable"
 - "Ps17CustomReflectable"
@@ -672,43 +505,31 @@ depends-nominal:
 - "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps27ExpressibleByIntegerLiteral"
 - !private "Ps23ExpressibleByNilLiteral"
-- "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - "C10PerfectLib4File"
 - "Ps8Hashable"
-- "SQ"
-- !private "Ps9Indexable"
-- !private "Ps13IndexableBase"
-- !private "Vs16IndexingIterator"
-- "Si"
-- "Vs5Int32"
-- "Vs4Int8"
+- !private "Vs5Int32"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
 - "P10PerfectLib15JSONConvertible"
 - "Ps25LosslessStringConvertible"
-- "Vs6Mirror"
+- !private "Vs6Mirror"
 - "Ps10MirrorPath"
 - !private "Ps17MutableCollection"
-- !private "Ps16MutableIndexable"
 - "PSo8NSCoding"
 - "PSo9NSCopying"
 - "PSo16NSMutableCopying"
-- "CSo8NSObject"
+- !private "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - "PSo14NSSecureCoding"
 - "CSo8NSString"
-- "Os5Never"
 - !private "Ps9OptionSet"
-- "Sq"
-- "VC10PerfectLib4File14PermissionMode"
+- !private "Sq"
+- !private "VC10PerfectLib4File14PermissionMode"
 - !private "Ps22RandomAccessCollection"
-- !private "Ps21RandomAccessIndexable"
-- !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
-- !private "Ps25RangeReplaceableIndexable"
 - !private "Ps16RawRepresentable"
 - !private "Ps8Sequence"
 - !private "Ps10SetAlgebra"
@@ -718,41 +539,47 @@ depends-nominal:
 - "SS"
 - "Ps16TextOutputStream"
 - "Ps20TextOutputStreamable"
-- "Vs6UInt16"
-- "Vs5UInt8"
-- "Sp"
-- "Sv"
-- !private "Ps15UnsignedInteger"
+- !private "Sp"
+- !private "Sv"
 - !private "Ps22_AnyCollectionProtocol"
 - !private "Ps14_ArrayProtocol"
+- !private "Ps23_BidirectionalIndexable"
 - !private "Ps24_DestructorSafeContainer"
-- !private "Ps28_DisallowMixedSignArithmetic"
 - !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
 - "Ps34_ExpressibleByBuiltinStringLiteral"
 - "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- "Ps33_ExpressibleByStringInterpolation"
 - "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps14_Incrementable"
+- !private "Ps10_Indexable"
+- !private "Ps14_IndexableBase"
 - !private "Ps8_Integer"
 - !private "Ps18_IntegerArithmetic"
+- !private "Ps17_MutableIndexable"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - !private "Ps8_Pointer"
+- !private "Ps22_RandomAccessIndexable"
+- !private "Ps26_RangeReplaceableIndexable"
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
-- !private "Ps14_StringElement"
-- "VSC6dirent"
+- !private "VSC6dirent"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
-interface-hash: "2809c89b8e92206e3cafe0c33a31d1aa"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
+interface-hash: "f140fc944849673db307ea40ea602bcd"

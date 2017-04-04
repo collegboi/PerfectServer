@@ -16,31 +16,36 @@ public class NotficationController {
     
         let notificationSettings = LocalDatabaseHandler.getCollection(appKey, "NotificationSetting", query: [:])
         
-        let notificationSetting = notificationSettings[0]
+        if notificationSettings.count > 0 {
+            
+            let notificationSetting = notificationSettings[0]
 
-        guard let notificationsTestId = notificationSetting["appID"] as? String else {
-            return ""// "barnard.com.DIT-Timetable"
-        }
+            guard let notificationsTestId = notificationSetting["appID"] as? String else {
+                return ""// "barnard.com.DIT-Timetable"
+            }
+            
+            guard let apnsTeamIdentifier = notificationSetting["teamID"] as? String else {
+                return ""//"4EU4PGMLU9"
+            }
+            guard let apnsKeyIdentifier = notificationSetting["keyID"] as? String else {
+                return ""//"BAKCFXE74R"
+            }
+            guard let apnsPrivateKey = notificationSetting["name"] as? String else {
+                return ""//
+            }
+            //let test = "APNSAuthKey_\(apnsKeyIdentifier).p8"
+            
+            NotificationPusher.development = development
+            
+            NotificationPusher.addConfigurationIOS(name: notificationsTestId,
+                                                   keyId: apnsKeyIdentifier,
+                                                   teamId: apnsTeamIdentifier,
+                                                   privateKeyPath: apnsPrivateKey)
         
-        guard let apnsTeamIdentifier = notificationSetting["teamID"] as? String else {
-            return ""//"4EU4PGMLU9"
+            return notificationsTestId
+        } else {
+            return "error"
         }
-        guard let apnsKeyIdentifier = notificationSetting["keyID"] as? String else {
-            return ""//"BAKCFXE74R"
-        }
-        guard let apnsPrivateKey = notificationSetting["name"] as? String else {
-            return ""//
-        }
-        //let test = "APNSAuthKey_\(apnsKeyIdentifier).p8"
-        
-        NotificationPusher.development = development
-        
-        NotificationPusher.addConfigurationIOS(name: notificationsTestId,
-                                               keyId: apnsKeyIdentifier,
-                                               teamId: apnsTeamIdentifier,
-                                               privateKeyPath: apnsPrivateKey)
-        
-        return notificationsTestId
     }
     
     private class func sendNotificationCompletion(_ appKey:String, deviceId: String, messsage: String, development: Bool, silent: Bool = false, notificationCompleted : @escaping (_ succeeded: Bool, _ resultStr: String, _ resultBool: Bool) -> ()) {

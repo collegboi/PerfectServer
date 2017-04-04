@@ -1,7 +1,7 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "b12567fb80ea367c28d04978c04930ce"
-build_time: [542976562, 640630000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "b009089b9e5638bdacbd5f1c20153942"
+build_time: [544612495, 205060000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/Cron.swift": [542976540, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/CronJob.swift": [542976540, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/SwiftCron-0.1.5/Sources/CronStorage.swift": [542976540, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftCron.git-4259541528342127174/Sources/Cron.swift": [544612391, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftCron.git-4259541528342127174/Sources/CronJob.swift": [544612391, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftCron.git-4259541528342127174/Sources/CronStorage.swift": [544612391, 0]

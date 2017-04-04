@@ -16,31 +16,29 @@ provides-member:
 - ["V10PerfectLib3Log", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "LOG_ERR"
-- !private "LOG_WARNING"
-- "ConsoleLogger"
-- "Never"
-- !private "LOG_INFO"
-- !private "LOG_CRIT"
-- !private "StringLiteralType"
 - !private "+"
-- !private "vsyslog"
-- "Int32"
-- !private "LOG_EMERG"
-- "String"
-- "SysLogger"
-- "Logger"
-- "Log"
-- !private "withVaList"
-- !private "print"
-- !private "fatalError"
 - "CVarArg"
+- "ConsoleLogger"
+- "Int32"
+- !private "LOG_CRIT"
 - !private "LOG_DEBUG"
+- !private "LOG_EMERG"
+- !private "LOG_ERR"
+- !private "LOG_INFO"
+- !private "LOG_WARNING"
+- "Log"
+- "Logger"
+- "Never"
+- "String"
+- !private "StringLiteralType"
+- "SysLogger"
+- !private "fatalError"
+- !private "print"
+- !private "vsyslog"
+- !private "withVaList"
 depends-member:
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "withCString"]
-- ["Sa", "deinit"]
-- !private ["Vs14CVaListPointer", "deinit"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "withCString"]
 - !private ["Ps10Comparable", "init"]
@@ -67,16 +65,12 @@ depends-member:
 - !private ["Ps9Equatable", "withCString"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "withCString"]
-- !private ["Ps32ExpressibleByStringInterpolation", "init"]
-- !private ["Ps32ExpressibleByStringInterpolation", "withCString"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "withCString"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "withCString"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "withCString"]
-- !private ["SQ", "deinit"]
-- !private ["Vs5Int32", "deinit"]
 - !private ["P10PerfectLib15JSONConvertible", "init"]
 - !private ["P10PerfectLib15JSONConvertible", "withCString"]
 - ["V10PerfectLib3Log", "ConsoleLogger"]
@@ -104,7 +98,6 @@ depends-member:
 - !private ["P10PerfectLib6Logger", "consoleEcho"]
 - ["P10PerfectLib6Logger", "critical"]
 - ["P10PerfectLib6Logger", "debug"]
-- ["P10PerfectLib6Logger", "deinit"]
 - ["P10PerfectLib6Logger", "error"]
 - ["P10PerfectLib6Logger", "info"]
 - ["P10PerfectLib6Logger", "init"]
@@ -125,7 +118,6 @@ depends-member:
 - !private ["PSo9NSCopying", "withCString"]
 - !private ["PSo16NSMutableCopying", "init"]
 - !private ["PSo16NSMutableCopying", "withCString"]
-- !private ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "withCString"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "withCString"]
@@ -133,10 +125,7 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "withCString"]
 - !private ["CSo8NSString", "init"]
 - !private ["CSo8NSString", "withCString"]
-- ["Os5Never", "deinit"]
-- ["Vs12StaticString", "deinit"]
 - !private ["Vs12StaticString", "init"]
-- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["SS", "withCString"]
 - ["V10PerfectLib9SysLogger", "CVarArg"]
@@ -165,8 +154,6 @@ depends-member:
 - !private ["Ps16TextOutputStream", "withCString"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - !private ["Ps20TextOutputStreamable", "withCString"]
-- ["Su", "deinit"]
-- !private ["SP", "deinit"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "withCString"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
@@ -175,6 +162,8 @@ depends-member:
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "withCString"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "withCString"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "init"]
+- !private ["Ps33_ExpressibleByStringInterpolation", "withCString"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "withCString"]
 - !private ["Ps9_Hashable", "init"]
@@ -183,8 +172,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "withCString"]
 depends-nominal:
 - !private "Ps9AnyObject"
-- "Sa"
-- !private "Vs14CVaListPointer"
 - !private "Ps7CVarArg"
 - !private "Ps10Comparable"
 - "V10PerfectLib13ConsoleLogger"
@@ -194,12 +181,9 @@ depends-nominal:
 - !private "Ps23CustomStringConvertible"
 - !private "Ps9Equatable"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
-- !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Ps8Hashable"
-- !private "SQ"
-- !private "Vs5Int32"
 - !private "P10PerfectLib15JSONConvertible"
 - "V10PerfectLib3Log"
 - "P10PerfectLib6Logger"
@@ -212,18 +196,16 @@ depends-nominal:
 - !private "PSo16NSObjectProtocol"
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
-- "Os5Never"
-- "Vs12StaticString"
-- "SS"
+- !private "Vs12StaticString"
+- !private "SS"
 - "V10PerfectLib9SysLogger"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
-- "Su"
-- !private "SP"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
 - !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps33_ExpressibleByStringInterpolation"
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - !private "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
@@ -231,10 +213,15 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreText.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.apinotesc"
 interface-hash: "b3905d2b4a4d39a1c10cc52cece63461"

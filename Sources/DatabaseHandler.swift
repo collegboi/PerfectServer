@@ -343,7 +343,7 @@ func mongoHandler(request: HTTPRequest, _ response: HTTPResponse) {
 
 func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
 
-    let storage = getStorageInstance(request: request, response)
+    let storage = getStorageInstanceCol(request: request, response)
     
     guard let objectID = request.urlVariables["objectid"] else {
         response.appendBody(string: ResultBody.errorBody(value: "no objectID"))
@@ -365,7 +365,7 @@ func removeCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
 
 func removeCollection(request: HTTPRequest, _ response: HTTPResponse) {
     
-   let storage = getStorageInstance(request: request, response)
+   let storage = getStorageInstanceCol(request: request, response)
     
     var resultBody = ResultBody.successBody(value:  "removed")
     
@@ -382,7 +382,7 @@ func removeCollection(request: HTTPRequest, _ response: HTTPResponse) {
 
 func safeRemoveCollectionDoc(request: HTTPRequest, _ response: HTTPResponse) {
     
-    let storage = getStorageInstance(request: request, response)
+    let storage = getStorageInstanceCol(request: request, response)
     
     guard let jsonStr = request.postBodyString else {
         response.appendBody(string: ResultBody.errorBody(value: "no json body"))

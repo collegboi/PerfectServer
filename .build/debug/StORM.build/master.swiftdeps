@@ -1,15 +1,15 @@
-version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
-options: "d3bcd90d4e1be83e73ac7b0041dbca94"
-build_time: [542976571, 122667000]
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "90919abc984ad775afb1510eca067b93"
+build_time: [544612495, 528830000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORM.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMConnect.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMCursor.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSource.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceCredentials.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMDataSourceOptions.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMError.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMJoins.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMProtocol.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMRow.swift": [540764074, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/StORM-1.0.1/Sources/StORM/StORMtResultSet.swift": [540764074, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORM.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMConnect.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMCursor.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSource.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSourceCredentials.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMDataSourceOptions.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMError.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMJoins.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMProtocol.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMRow.swift": [544612398, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/StORM.git-6077292811663054913/Sources/StORM/StORMtResultSet.swift": [544612398, 0]

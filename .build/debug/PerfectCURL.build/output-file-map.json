@@ -2,7 +2,7 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectCURL-2.0.4/Sources/cURL.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-CURL.git-8858624468322681619/Sources/cURL.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.build/cURL.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.build/cURL.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectCURL.build/cURL~partial.swiftmodule",

@@ -2,13 +2,13 @@
   "": {
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/master.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNotifications-2.0.4/Sources/JWTokenMaker.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Notifications.git-316435836557330814/Sources/JWTokenMaker.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/JWTokenMaker.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/JWTokenMaker.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/JWTokenMaker~partial.swiftmodule",
     "swift-dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/JWTokenMaker.swiftdeps"
   },
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/Packages/PerfectNotifications-2.0.4/Sources/NotificationPusher.swift": {
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Notifications.git-316435836557330814/Sources/NotificationPusher.swift": {
     "dependencies": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.d",
     "object": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher.swift.o",
     "swiftmodule": "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/debug/PerfectNotifications.build/NotificationPusher~partial.swiftmodule",
