@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "5a9ce709e357acd94e5dcf946104a1b4"
-build_time: [544612453, 848469000]
+build_time: [544645857, 463803000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/BCrypt.swift": [544612384, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/Random.swift": [544612384, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/URandom.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/BCrypt.swift": [544645233, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/Random.swift": [544645233, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/TurnstileCrypto/URandom.swift": [544645233, 0]

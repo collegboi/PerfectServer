@@ -1,10 +1,10 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "fc447b529efa1cc6c2f2e9322dd6d9ae"
-build_time: [544612453, 717534000]
+build_time: [544645860, 965592000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Duration.swift": [544612403, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Extensions.swift": [544612403, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Moment.swift": [544612403, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/MomentFromNow.swift": [544612403, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Operators.swift": [544612403, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/TimeUnit.swift": [544612403, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Duration.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Extensions.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Moment.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/MomentFromNow.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/Operators.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftMoment.git--2912679366309029826/Sources/SwiftMoment/TimeUnit.swift": [544645242, 0]

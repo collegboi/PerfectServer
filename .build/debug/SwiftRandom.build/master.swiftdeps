@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "e10a796578429283f97b5f2915296ad0"
-build_time: [544612453, 465277000]
+build_time: [544645857, 604596000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/Random.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/Randoms.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/URandom.swift": [544612386, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/Random.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/Randoms.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/SwiftRandom.git--6412955993590123727/Sources/SwiftRandom/URandom.swift": [544645234, 0]

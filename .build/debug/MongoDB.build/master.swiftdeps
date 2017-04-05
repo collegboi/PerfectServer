@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "fe82d480a8f9816b602c73ba9881a9d8"
-build_time: [544612471, 662223000]
+build_time: [544645857, 532227000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/BSON.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoClient.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoCollection.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoConnectionPool.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoCursor.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoDatabase.swift": [544612396, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoGridFS.swift": [544612396, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/BSON.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoClient.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoCollection.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoConnectionPool.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoCursor.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoDatabase.swift": [544645238, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-MongoDB.git--8154448075697536604/Sources/MongoDB/MongoGridFS.swift": [544645238, 0]

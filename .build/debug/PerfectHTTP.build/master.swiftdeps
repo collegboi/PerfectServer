@@ -1,13 +1,13 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "082397c3d1d3b5c83bf8fb9f43b500d3"
-build_time: [544612508, 958086000]
+build_time: [544645874, 50947000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPFilter.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPHeaders.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPMethod.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPRequest.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPResponse.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/MimeReader.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/MimeType.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/Routing.swift": [544612402, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/StaticFileHandler.swift": [544612402, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPFilter.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPHeaders.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPMethod.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPRequest.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/HTTPResponse.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/MimeReader.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/MimeType.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/Routing.swift": [544645242, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-HTTP.git--6392294032632002019/Sources/StaticFileHandler.swift": [544645242, 0]

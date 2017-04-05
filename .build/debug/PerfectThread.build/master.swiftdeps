@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "78614a9f50f45b70e78080ca15ac7b67"
-build_time: [544612453, 49865000]
+build_time: [544645857, 610027000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Promise.swift": [544612387, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Threading.swift": [544612387, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/ThreadQueue.swift": [544612387, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Promise.swift": [544645235, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/Threading.swift": [544645235, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Thread.git-6541237758607105655/Sources/ThreadQueue.swift": [544645235, 0]

@@ -1,11 +1,11 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "e8a2009a7803cc646b9eb1b48547a6d0"
-build_time: [544612498, 1865000]
+build_time: [544645869, 99696000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Algorithms.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/ByteIO.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Extensions.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/JWT.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Keys.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/OpenSSLInternal.swift": [544612386, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/PerfectCrypto.swift": [544612386, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Algorithms.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/ByteIO.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Extensions.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/JWT.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/Keys.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/OpenSSLInternal.swift": [544645234, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Crypto.git--5196635702121641122/Sources/PerfectCrypto.swift": [544645234, 0]

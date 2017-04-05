@@ -1,7 +1,7 @@
 version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
 options: "43d97e97e20c731e5cfbe290395e9541"
-build_time: [544612513, 883884000]
+build_time: [544645876, 31223000]
 inputs:
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/Convenience.swift": [544612391, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/MongoDBStORM.swift": [544612391, 0]
-  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/parseRows.swift": [544612391, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/Convenience.swift": [544645236, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/MongoDBStORM.swift": [544645236, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/MongoDB-StORM.git-1769883039421626426/Sources/parseRows.swift": [544645236, 0]
