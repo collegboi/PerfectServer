@@ -70,37 +70,39 @@ class SystemController {
 
     }
     
-    class func getDatabaseStatus() -> String {
+    class func getDatabaseStatus() -> [String:String] {
         
-        var returnString = "0"
+        var returnStr = [String:String]()
+        
+        returnStr["status"] = "1"
         
         do {
             guard let output = try runProc(cmd: "systemctrl", args: ["status", "mongodb"], read: true) else {
-                return returnString
+                return returnStr
             }
             
             if output.contains(string: "active (running)") {
-                returnString = "1"
+                returnStr["status"] = "1"
             }
             
             //print(output)
         } catch let error  {
             print(error)
         }
-
-        return returnString
+        
+        return returnStr
     }
     
     class func getLinuxStats() -> String {
         
-        var data = [String:AnyObject]()
-    
-        data["memory"] = SystemController.getMemoryLinuxUsuage() as AnyObject?
-        data["storage"] = SystemController.getStorageLinuxUsuage() as AnyObject?
-        data["cpu"] = SystemController.getCPULinuxUsuage() as AnyObject?
-        data["databaseStatus"] = SystemController.getDatabaseStatus() as AnyObject?
+        var data = [String:[String:String]]()
         
-         return  "{\"data\":\(JSONController.parseJSONToStr(dict: data))}"
+        data["memory"] = SystemController.getMemoryLinuxUsuage()
+        data["storage"] = SystemController.getStorageLinuxUsuage()
+        data["cpu"] = SystemController.getCPULinuxUsuage()
+        data["database"] = SystemController.getDatabaseStatus()
+        
+        return  "{\"data\":\(JSONController.parseJSONToStr(dict: data))}"
     }
     
     
