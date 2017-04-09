@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "59a988d57048442e890abee9a49f0603"
+build_time: [544612521, 224727000]
+inputs:
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Notifications.git-316435836557330814/Sources/JWTokenMaker.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Perfect-Notifications.git-316435836557330814/Sources/NotificationPusher.swift": [544612384, 0]

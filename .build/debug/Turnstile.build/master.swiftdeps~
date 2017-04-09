@@ -1,0 +1,17 @@
+version: "Apple Swift version 3.1 (swiftlang-802.0.48 clang-802.0.38)"
+options: "bfc93af5e76ec6cc77d49cc1f0e1f7dd"
+build_time: [544612495, 281568000]
+inputs:
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/TurnstileError.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Core/Subject.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Core/Turnstile.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Credentials/APIKey.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Credentials/Credentials.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Credentials/CredentialsError.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Credentials/Token.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Credentials/UsernamePassword.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Realm/Account.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Realm/MemoryRealm.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/Realm/Realm.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/SessionManager/MemorySessionManager.swift": [544612384, 0]
+  "/Users/timothybarnard/Documents/FYP/PerfectServer/.build/checkouts/Turnstile.git-2443676010155639616/Sources/Turnstile/SessionManager/SessionManager.swift": [544612384, 0]
