@@ -34,6 +34,7 @@ public func makeDatabaseRoutes() -> Routes {
     routes.add(method: .post, uri: "/storage/{collection}", handler: databaseCollectionPost)
     
     routes.add(method: .post, uri: "/api/{appkey}/replicate", handler: replicateDatabase)
+    routes.add(method: .post, uri: "/api/{appkey}/dropDatabase", handler: dropDatabase)
 
     print("\(routes.navigator.description)")
     
@@ -127,6 +128,20 @@ func replicateDatabase(request: HTTPRequest, _ response: HTTPResponse) {
     response.completed()
     
 }
+
+
+func dropDatabase(request: HTTPRequest, _ response: HTTPResponse) {
+    
+    
+    let storageObj = getStorageInstance(request: request, response)
+    
+    let result = storageObj?.dropDatabase()
+    
+    response.appendBody(string: ResultBody.successBody(value: result!))
+    response.completed()
+    
+}
+
 
 func mongoDropCollection(request: HTTPRequest, _ response: HTTPResponse) {
     

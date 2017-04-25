@@ -152,6 +152,37 @@ class DatabaseController {
         return collections
     }
     
+    func dropDatabase() -> String {
+        
+        // open a connection
+        let client = openMongoDB()
+        
+        
+        guard let db = connectDatabase(client) else {
+            return "Error with connecting"
+        }
+        
+        
+        // define collection
+        guard let collection = db.getCollection(name: self.collectioName) else {
+            return "Collection does not exist"
+        }
+        
+        defer {
+            self.closeMongoDB(collection, database: db, client: client)
+        }
+        
+        let result = db.drop()
+        
+        switch result {
+        case .success:
+            return "Succesful"
+        default:
+            return "Error"
+        }
+    }
+    
+    
     func retrieveCollectionString() -> String {
         
         
@@ -258,9 +289,15 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let _ = collection.drop()
+        let result = collection.drop()
         
-        return true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     
@@ -283,9 +320,15 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let _ = collection.rename(newDbName: db.name(), newCollectionName: newCollectionName, dropExisting: true)
+        let result = collection.rename(newDbName: db.name(), newCollectionName: newCollectionName, dropExisting: true)
         
-        return true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     @discardableResult
@@ -307,9 +350,15 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let _ = collection.dropIndex(name: index)
+        let result = collection.dropIndex(name: index)
         
-        return true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     
@@ -339,9 +388,14 @@ class DatabaseController {
         let indexBSON = BSON()
         indexBSON.append(key: index)
         
-        let _ = collection.createIndex(keys: indexBSON, options: mongoIndex)
-
-        return "index_"+index
+        let result = collection.createIndex(keys: indexBSON, options: mongoIndex)
+        
+        switch result {
+        case .success:
+            return "index_"+index
+        default:
+            return "error"
+        }
     }
     
     @discardableResult
@@ -382,14 +436,14 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let _ = collection.insert(documents: bsonArray)
+        let result = collection.insert(documents: bsonArray)
         
-        return ""
-        //        if returnValue == MongoResult.success {
-        //            return "Success"
-        //        } else {
-        //            return "Failure"
-        //        }
+        switch result {
+        case .success:
+            return "succesful"
+        default:
+            return "error"
+        }
     }
     
     private func nowDateTime() -> String {
@@ -432,14 +486,14 @@ class DatabaseController {
         document.append(key: "updated", string: self.nowDate )
         document.append(key: "deleted", string: "0")
         
-        let _ = collection.insert(document: document)
+        let result = collection.insert(document: document)
         
-        return newObjectID
-//        if returnValue == MongoResult.success {
-//            return "Success"
-//        } else {
-//            return "Failure"
-//        }
+        switch result {
+        case .success:
+            return newObjectID
+        default:
+            return "error"
+        }
     }
     
     
@@ -599,9 +653,15 @@ class DatabaseController {
         }
         
             
-        let _ = collection.update(selector: queryDocument, update: document)
+        let result = collection.update(selector: queryDocument, update: document)
         
-        return "Success"
+        switch result {
+        case .success:
+            return "success"
+        default:
+            return "error"
+        }
+
     }
 
     
@@ -707,9 +767,15 @@ class DatabaseController {
         
         query.append(key: "_id", string: documentID)
         
-        let _ = collection.update(selector: query, update: document)
+        let result = collection.update(selector: query, update: document)
         
-        return  true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     func removeCollection() -> Bool {
@@ -732,9 +798,15 @@ class DatabaseController {
             self.closeMongoDB(collection, database: db, client: client)
         }
         
-        let _ = collection.drop()
+        let result = collection.drop()
         
-        return  true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     func removeDatabase() -> Bool {
@@ -751,9 +823,15 @@ class DatabaseController {
             self.closeMongoDB(db, client: client)
         }
         
-        let _ = db.drop()
+        let result = db.drop()
         
-        return  true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
 
     
@@ -783,9 +861,15 @@ class DatabaseController {
         let query = BSON()
         query.append(key: "_id", string: documentID)
         
-        let _ = collection.remove(selector: query)
+        let result = collection.remove(selector: query)
         
-        return  true
+        switch result {
+        case .success:
+            return true
+        default:
+            return false
+        }
+
     }
     
     func retrieveCollectionDocumentID(_ documentID: String, skip: Int = 0, limit: Int = 100 ) -> [String] {

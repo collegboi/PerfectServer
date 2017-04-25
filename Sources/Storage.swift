@@ -250,6 +250,11 @@ class Storage {
         databaseController.dropCollection()
     }
     
+    func dropDatabase() -> String {
+        let databaseController = getDatabaseController()
+        return databaseController.dropDatabase()
+    }
+    
     class func replicateDatabase(_ appID: String) {
         
         let databaseController = DatabaseController()
@@ -266,8 +271,27 @@ class Storage {
                 databaseController.setTestMode(1)
                 databaseController.insertDocument(collectionData)
             }
-            
         }
+        
+        databaseController.setTestMode(0)
+        databaseController.setCollectiomName("TBApplication")
+        databaseController.setAppKey("JKHSDGHFKJGH454645GRRLKJF")
+        
+        let applicationQuery: [String:String] = ["appKey": appID]
+        let applicationQueryString = JSONController.parseJSONToStr(dict: applicationQuery)
+        let applicationArr = databaseController.retrieveCollectionQueryStr(applicationQueryString)
+        
+        var applicationObject = JSONController.parseJSONToDict(applicationArr)
+        
+        if applicationObject.count > 0 {
+            
+            applicationObject["testDB"] = "1"
+            
+            let appString = JSONController.parseJSONToStr(dict: applicationObject)
+            
+            databaseController.updateDocument(appString, query: applicationQueryString)
+        }
+        
         
     }
     
