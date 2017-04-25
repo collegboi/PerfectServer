@@ -36,23 +36,23 @@ class BackupService {
             collectionVals.append(collection)
         }
         
-        let zippy = Zip()
+        //let zippy = Zip()
         
-        #if os(Linux)
+        //#if os(Linux)
             let thisZipFile = "/home/collegboi/webroot/Backups/backup_"+nowDate+".zip"
-            let sourceDir = "/home/collegboi/webroot/backup/"
-        #else
-            let thisZipFile = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup_"+nowDate+".zip"
-            let sourceDir = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup"
-        #endif
+            let sourceDir = "/home/collegboi/webroot/backup"
+        //#else
+        //    let thisZipFile = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup_"+nowDate+".zip"
+        //    let sourceDir = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup"
+        //#endif
         
-        let ZipResult = zippy.zipFiles(
-            paths: [sourceDir],
-            zipFilePath: thisZipFile,
-            overwrite: true, password: ""
-        )
-        print("ZipResult Result: \(ZipResult.description)")
-        
+//        let ZipResult = zippy.zipFiles(
+//            paths: [sourceDir],
+//            zipFilePath: thisZipFile,
+//            overwrite: true, password: ""
+//        )
+//        print("ZipResult Result: \(ZipResult.description)")
+//        
         #if os(Linux)
             let configData: [String:AnyObject] = [
                 "collections": collectionVals as! AnyObject,
