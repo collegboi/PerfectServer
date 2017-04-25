@@ -86,7 +86,6 @@ public class JSONController {
         return result
     }
     
-    
     class func parseJSONToStr( dict: [String:Any] ) -> String  {
         
         var result = ""

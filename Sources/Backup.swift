@@ -52,15 +52,19 @@ class BackupService {
 //            overwrite: true, password: ""
 //        )
 //        print("ZipResult Result: \(ZipResult.description)")
-//        
+//      
+        
+        let collectionString = "[\(collections.joined(separator: ","))]"
+        
+        
         #if os(Linux)
             let configData: [String:AnyObject] = [
-                "collections": collectionVals as! AnyObject,
+                "collections": collectionString as! AnyObject,
                 "path_backup" : thisZipFile as! AnyObject
             ]
         #else
             let configData: [String:AnyObject] = [
-                "collections": collectionVals as AnyObject,
+                "collections": collectionString as AnyObject,
                 "path_backup" : thisZipFile as AnyObject
             ]
         #endif
