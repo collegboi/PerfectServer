@@ -38,8 +38,13 @@ class BackupService {
         
         let zippy = Zip()
         
-        let thisZipFile = "Backups/backup_"+nowDate+".zip"
-        let sourceDir = "Backups"
+        #if os(Linux)
+            let thisZipFile = "Backups/backup_"+nowDate+".zip"
+            let sourceDir = "backup"
+        #else
+            let thisZipFile = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup_"+nowDate+".zip"
+            let sourceDir = "/Users/timothybarnard/Library/Developer/Xcode/DerivedData/MyAwesomeProject-eyzphcspgetoixfjpdefxftmfpsd/Build/Products/Debug/webroot/backup"
+        #endif
         
         let ZipResult = zippy.zipFiles(
             paths: [sourceDir],
