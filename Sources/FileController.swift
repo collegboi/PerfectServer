@@ -189,7 +189,7 @@ public class FileController {
             
             self.createFileToWrite(filePath)
             thisFile = File(filePath)
-            
+            self.openFileToWrite(thisFile)
         } else {
             print(thisFile.path)
             self.openFileToWrite(thisFile)

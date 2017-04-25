@@ -103,7 +103,7 @@ class DatabaseController {
     
     private func connectDatabase(_ client: MongoClient, name: String = "") -> MongoDatabase? {
         
-        //self.testBasic(self.appKey + "-" + name)
+        self.testBasic(self.appKey + "-" + name)
         
         //Unique for creating apps
         if self.appKey == "JKHSDGHFKJGH454645GRRLKJF" {
