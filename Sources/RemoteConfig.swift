@@ -143,7 +143,6 @@ class RemoteConfig {
                 config = ["version": version]
             }
             
-            
             let configJSON = JSONController.parseJSONToStr(dict: config)
             
             let storage = Storage()

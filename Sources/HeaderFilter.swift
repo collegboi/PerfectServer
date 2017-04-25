@@ -15,8 +15,8 @@ public struct HeaderFilter: HTTPRequestFilter {
     
     public func filter(request: HTTPRequest, response: HTTPResponse, callback: (HTTPRequestFilterResult) -> ()) {
        
-        let headerAuthen = request.header(.custom(name: "authen_key"))
-        
+        let headerAuthen = request.header(.authorization)
+        print(headerAuthen ?? "empty")
         if headerAuthen == "123456" {
             callback(.continue(request, response))
             return

@@ -27,12 +27,12 @@ public func makeSystemRoutes() -> Routes {
 
 func restartDatabase(request: HTTPRequest, _ response: HTTPResponse) {
     
-    var returnStr = ResultBody.errorBody(value: "restarting")
+    let returnStr = ResultBody.successBody(value: "restarting")
     
     #if os(Linux)
-        returnStr = SystemController.restartDatabaseCMD()
+        SystemController.restartDatabaseCMD()
     #else
-        //returnStr = SystemController.getMemoryMacUsuage()
+        //SystemController.getMemoryMacUsuage()
     #endif
     
     response.appendBody(string: returnStr)
