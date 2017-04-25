@@ -55,31 +55,7 @@ class RCVersion {
         return result
     }
     
-    
     class func sendRemoteConfig(_ apid: String, jsonString: String ) -> Bool {
-        
-        let versionData = parseJSONConfig(key: "version", dataStr: jsonString)
-        let applicationID = parseJSONConfig(key: "applicationID", dataStr: jsonString)
-        let filePath = parseJSONConfig(key: "filePath", dataStr: jsonString)
-        let configVersion = parseJSONConfig(key: "configVersion", dataStr: jsonString)
-        let appTheme = parseJSONConfig(key: "appTheme", dataStr: jsonString)
-        let appLive = parseJSONConfig(key: "appLive", dataStr: jsonString)
-        
-        let configData: [String:String] = [
-            "version" : versionData,
-            "applicationID": applicationID,
-            "path" : filePath,
-            "configVersion": configVersion,
-            "appTheme":appTheme,
-            "appLive":appLive
-        ]
-        let configStr = JSONController.parseJSONToStr(dict: configData)
-        
-        let storage = Storage()
-        storage.setAppKey(apid)
-        storage.setCollectionName("RemoteConfig")
-        
-        storage.insertDocument(jsonStr: configStr)
         
         FileController.sharedFileHandler?.updateContentsOfFile(filePath,jsonString)
         
