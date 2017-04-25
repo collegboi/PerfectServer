@@ -99,5 +99,20 @@ public class JSONController {
         
         return result
     }
+    
+    class func parseJSONToStr( dict: [String:String] ) -> String  {
+        
+        var result = ""
+        
+        do {
+            result = try dict.jsonEncodedString()
+            
+        } catch let error {
+            print(error)
+        }
+        
+        return result
+    }
+
 
 }

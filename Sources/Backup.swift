@@ -58,14 +58,14 @@ class BackupService {
         
         
         #if os(Linux)
-            let configData: [String:AnyObject] = [
-                "collections": collectionString as! AnyObject,
-                "path_backup" : thisZipFile as! AnyObject
+            let configData: [String:String] = [
+                "collections": collectionString ,
+                "path_backup" : thisZipFile
             ]
         #else
-            let configData: [String:AnyObject] = [
-                "collections": collectionString as AnyObject,
-                "path_backup" : thisZipFile as AnyObject
+            let configData: [String:String] = [
+                "collections": collectionString,
+                "path_backup" : thisZipFile
             ]
         #endif
         
