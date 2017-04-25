@@ -59,7 +59,7 @@ class BackupService {
         
         #if os(Linux)
             let configData: [String:String] = [
-                "collections": collectionString ,
+                "collections": collectionString,
                 "path_backup" : thisZipFile
             ]
         #else
